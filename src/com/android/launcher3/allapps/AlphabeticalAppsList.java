@@ -49,7 +49,6 @@ import com.android.launcher3.views.ActivityContext;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Map;
 import java.util.Objects;
 import java.util.TreeMap;
@@ -116,6 +115,7 @@ public class AlphabeticalAppsList implements AllAppsStore.OnUpdateListener {
     private int mNumAppsPerRowAllApps;
     private int mNumAppRowsInAdapter;
     private Predicate<ItemInfo> mItemFilter;
+    private final boolean mSortSections;
 
     public AlphabeticalAppsList(ActivityContext activityContext, @Nullable AllAppsStore appsStore,
             WorkProfileManager workProfileManager, PrivateProfileManager privateProfileManager) {
@@ -140,6 +140,7 @@ public class AlphabeticalAppsList implements AllAppsStore.OnUpdateListener {
         mPrivateProfileDividerBadge.setSpan(new ImageSpan(context,
                         R.drawable.ic_private_profile_divider_badge, ImageSpan.ALIGN_CENTER),
                 0, 1, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        mSortSections = context.getResources().getBoolean(R.bool.config_appsListSortSections);
     }
 
     /** Set the number of apps per row when device profile changes. */
@@ -263,9 +264,7 @@ public class AlphabeticalAppsList implements AllAppsStore.OnUpdateListener {
 
         // As a special case for some languages (currently only Simplified Chinese), we may need to
         // coalesce sections
-        Locale curLocale = mActivityContext.asContext().getResources().getConfiguration().locale;
-        boolean localeRequiresSectionSorting = curLocale.equals(Locale.SIMPLIFIED_CHINESE);
-        if (localeRequiresSectionSorting) {
+        if (mSortSections) {
             // Compute the section headers. We use a TreeMap with the section name comparator to
             // ensure that the sections are ordered when we iterate over it later
             appSteam = appSteam.collect(Collectors.groupingBy(
