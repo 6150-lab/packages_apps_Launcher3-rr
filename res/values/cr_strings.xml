@@ -42,4 +42,6 @@
     <string name="dock_theme_title">Themed icons</string>
     <string name="dock_theme_summary">Use themed icons for search bar</string>
     <string name="search_radius_title">Corner radius</string>
+    <!-- Stroke -->
+    <string name="stroke_width_title">Stroke</string>
 </resources>

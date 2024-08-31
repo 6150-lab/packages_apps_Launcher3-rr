@@ -133,7 +133,8 @@ public class SettingsHomescreen extends CollapsingToolbarBaseActivity
                 LauncherPrefs.AUTO_HIDE_DOTS.getSharedPrefKey().equals(key) ||
                 LauncherPrefs.DOCK_THEME.getSharedPrefKey().equals(key) ||
                 LauncherPrefs.SEARCH_RADIUS_SIZE.getSharedPrefKey().equals(key) ||
-                LauncherPrefs.HOTSEAT_QSB_OPACITY.getSharedPrefKey().equals(key)) {
+                LauncherPrefs.HOTSEAT_QSB_OPACITY.getSharedPrefKey().equals(key) ||
+                LauncherPrefs.HOTSEAT_QSB_STROKE_WIDTH.getSharedPrefKey().equals(key)) {
             LauncherAppState.INSTANCE.executeIfCreated(app -> app.setNeedsRestart());
         }
     }
