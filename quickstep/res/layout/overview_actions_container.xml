@@ -32,7 +32,7 @@
 
         <Button
             android:id="@+id/action_screenshot"
-            style="@style/OverviewActionButton"
+            style="@style/OverviewActionButton.Glass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="6dp"
@@ -52,8 +52,29 @@
             android:visibility="gone" />
 
         <Button
+            android:id="@+id/action_share"
+            style="@style/OverviewActionButton.Glass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:text="@string/recents_share_title"
+            android:drawableStart="@drawable/ic_share"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/action2_share"
+            style="@style/OverviewActionChip"
+            android:layout_width="60dp"
+            android:layout_height="36dp"
+            android:layout_marginHorizontal="6dp"
+            android:tooltipText="@string/recents_share_title"
+            android:src="@drawable/ic_share"
+            android:contentDescription="@string/recents_share_title"
+            android:visibility="gone" />
+
+        <Button
             android:id="@+id/action_split"
-            style="@style/OverviewActionButton"
+            style="@style/OverviewActionButton.Glass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="6dp"
@@ -72,7 +93,7 @@
 
         <Button
             android:id="@+id/action_lens"
-            style="@style/OverviewActionButton"
+            style="@style/OverviewActionButton.Glass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="6dp"
@@ -93,7 +114,9 @@
 
         <Button
             android:id="@+id/action_clear_all"
-            style="@style/OverviewActionButton"
+            style="@style/OverviewActionButton.Glass"
+            android:textColor="?android:attr/colorAccent"
+            android:drawableTint="?android:attr/colorAccent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="6dp"
@@ -104,6 +127,7 @@
         <ImageButton
             android:id="@+id/action2_clear_all"
             style="@style/OverviewActionChip"
+            android:tint="?android:attr/colorAccent"
             android:layout_width="60dp"
             android:layout_height="36dp"
             android:layout_marginHorizontal="6dp"

@@ -241,6 +241,10 @@ public class TaskOverlayFactory {
             recentsView.dismissAllTasks();
         }
 
+        private void launchShare() {
+            mImageApi.startShareActivity(null);
+        }
+
         private void launchLens() {
             final RecentsView recentsView =
                     mTaskContainer.getTaskView().getRecentsView();
@@ -424,6 +428,15 @@ public class TaskOverlayFactory {
             }
 
             @Override
+            public void onShare() {
+                if (mIsAllowedByPolicy) {
+                    endLiveTileMode(TaskOverlay.this::launchShare);
+                } else {
+                    showBlockedByPolicyMessage();
+                }
+            }
+
+            @Override
             public void onLens() {
                 if (mIsAllowedByPolicy) {
                     endLiveTileMode(TaskOverlay.this::launchLens);
@@ -451,5 +464,8 @@ public class TaskOverlayFactory {
         void onClearAllTasksRequested();
 
         void onLens();
+
+        /** User wants to share a picture of the current task. */
+        default void onShare() { }
     }
 }

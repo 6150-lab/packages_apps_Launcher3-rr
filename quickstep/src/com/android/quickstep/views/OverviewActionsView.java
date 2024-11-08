@@ -195,6 +195,7 @@ public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayo
     private boolean mScreenshot;
     private boolean mClearAll;
     private boolean mLens;
+    private boolean mShare;
 
     private SharedPreferences mPrefs;
     private boolean mPrefsRegistered;
@@ -214,6 +215,7 @@ public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayo
         mScreenshot = LauncherPrefs.RECENTS_SCREENSHOT.get(context);
         mClearAll = LauncherPrefs.RECENTS_CLEAR_ALL.get(context);
         mLens = LauncherPrefs.RECENTS_LENS.get(context);
+        mShare = LauncherPrefs.RECENTS_SHARE.get(context);
     }
 
     @Override
@@ -245,6 +247,8 @@ public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayo
         if ((v = findViewById(R.id.action_save_app_pair)) != null) v.setOnClickListener(null);
         if ((v = findViewById(R.id.action_clear_all)) != null) v.setOnClickListener(null);
         if ((v = findViewById(R.id.action2_clear_all)) != null) v.setOnClickListener(null);
+        if ((v = findViewById(R.id.action_share)) != null) v.setOnClickListener(null);
+        if ((v = findViewById(R.id.action2_share)) != null) v.setOnClickListener(null);
         if ((v = findViewById(R.id.action_lens)) != null) v.setOnClickListener(null);
         if ((v = findViewById(R.id.action2_lens)) != null) v.setOnClickListener(null);
     }
@@ -339,6 +343,11 @@ public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayo
                 .setVisibility(GONE);
         findViewById(!mUseChips ? R.id.action2_lens : R.id.action_lens).setVisibility(GONE);
         findViewById(!mUseChips ? R.id.action2_split : R.id.action_split).setVisibility(GONE);
+        findViewById(!mUseChips ? R.id.action2_share : R.id.action_share).setVisibility(GONE);
+
+        View share = findViewById(mUseChips ? R.id.action2_share : R.id.action_share);
+        share.setOnClickListener(this);
+        share.setVisibility(mShare ? VISIBLE : GONE);
 
         View screenshot = findViewById(
                 mUseChips ? R.id.action2_screenshot : R.id.action_screenshot);
@@ -389,6 +398,8 @@ public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayo
             mCallbacks.onClearAllTasksRequested();
         } else if (id == R.id.action_lens || id == R.id.action2_lens) {
             mCallbacks.onLens();
+        } else if (id == R.id.action_share || id == R.id.action2_share) {
+            mCallbacks.onShare();
         }
     }
 
@@ -415,6 +426,8 @@ public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayo
             mClearAll = LauncherPrefs.RECENTS_CLEAR_ALL.get(getContext());
         } else if (LauncherPrefs.RECENTS_LENS.getSharedPrefKey().equals(key)) {
             mLens = LauncherPrefs.RECENTS_LENS.get(getContext());
+        } else if (LauncherPrefs.RECENTS_SHARE.getSharedPrefKey().equals(key)) {
+            mShare = LauncherPrefs.RECENTS_SHARE.get(getContext());
         }
         updateVisibilities();
     }

@@ -101,6 +101,12 @@
             launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
+            android:key="pref_recents_share"
+            android:title="@string/recents_share_title"
+            android:defaultValue="true"
+            launcher:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
             android:key="pref_recents_lens"
             android:title="@string/recents_lens_title"
             android:defaultValue="false"

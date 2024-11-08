@@ -119,4 +119,7 @@
     <string name="overview_gesture_action_split_screen">Start split screen</string>
     <string name="overview_gesture_threshold_title">Swipe distance</string>
     <string name="overview_gesture_threshold_summary">Lower values trigger sooner, higher values require a longer swipe</string>
+
+    <!-- Overview buttons -->
+    <string name="recents_share_title">Share</string>
 </resources>

@@ -274,6 +274,10 @@
         <item name="android:background">@drawable/overview_action_button_background_blur</item>
     </style>
 
+    <style name="OverviewActionButton.Glass">
+        <item name="android:background">@drawable/bg_overview_actions_button</item>
+    </style>
+
     <style name="OverviewActionChip" parent="@android:style/Widget.DeviceDefault.Button">
         <item name="android:background">@drawable/bg_overview_actions_button</item>
         <item name="android:minWidth">60dp</item>
