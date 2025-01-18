@@ -122,4 +122,8 @@
 
     <!-- Overview buttons -->
     <string name="recents_share_title">Share</string>
+    
+    <!-- Widgets -->
+    <string name="widget_battery_title">Battery widget</string>
+    <string name="widget_photo_title">Photo widget</string>
 </resources>
