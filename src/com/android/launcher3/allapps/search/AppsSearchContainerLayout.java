@@ -219,6 +219,11 @@ public class AppsSearchContainerLayout extends ExtendedEditText
     }
 
     @Override
+    public void focusSearchField() {
+        mSearchBarController.focusSearchField();
+    }
+
+    @Override
     public boolean isSearchQueryEmpty() {
         String query = Utilities.trim(getEditableText().toString());
         return query.isEmpty();
