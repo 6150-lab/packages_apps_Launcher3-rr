@@ -140,6 +140,7 @@ import com.android.launcher3.AbstractFloatingView;
 import com.android.launcher3.BuildConfig;
 import com.android.launcher3.DeviceProfile;
 import com.android.launcher3.Insettable;
+import com.android.launcher3.LauncherPrefs;
 import com.android.launcher3.MotionEventsUtils;
 import com.android.launcher3.PagedView;
 import com.android.launcher3.R;
@@ -577,6 +578,7 @@ public abstract class RecentsView<
     private float mTaskThumbnailSplashAlpha = 0;
     private boolean mBorderEnabled = false;
     private boolean mShowAsGridLastOnLayout = false;
+    private boolean mEnableOverlap = false;
     protected final IntSet mTopRowIdSet = new IntSet();
     private int mClearAllShortTotalWidthTranslation = 0;
 
@@ -1098,9 +1100,17 @@ public abstract class RecentsView<
         return true;
     }
 
+    private String mRecentsStyle = "default";
+
+    public void updateOverlapState() {
+        mRecentsStyle = LauncherPrefs.RECENTS_STYLE.get(getContext());
+        mEnableOverlap = !mRecentsStyle.equals("default");
+    }
+
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
+        updateOverlapState();
         updateTaskStackListenerState();
         if (!enableLowResThumbnailPreloading()) {
             mRecentsModel.getThumbnailCache().getHighResLoadingState().addCallback(this);
