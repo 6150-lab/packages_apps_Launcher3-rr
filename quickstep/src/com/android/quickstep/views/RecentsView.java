@@ -80,6 +80,7 @@ import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
 import android.app.ActivityManager;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.Intent;
 import android.content.LocusId;
 import android.content.res.Configuration;
@@ -1100,6 +1101,16 @@ public abstract class RecentsView<
         return true;
     }
 
+    private final SharedPreferences.OnSharedPreferenceChangeListener mPrefListener =
+            (prefs, key) -> {
+                if (LauncherPrefs.RECENTS_STYLE.getSharedPrefKey().equals(key)) {
+                    updateOverlapState();
+                    resetTaskVisuals();
+                    updatePageOffsets();
+                    requestLayout();
+                }
+            };
+
     private String mRecentsStyle = "default";
 
     public void updateOverlapState() {
@@ -1129,11 +1140,15 @@ public abstract class RecentsView<
         if (mIsMultipleDesktopFrontendEnabled) {
             mDesktopVisibilityController.registerDesktopVisibilityListener(mUtils);
         }
+        LauncherPrefs.getPrefs(getContext())
+                .registerOnSharedPreferenceChangeListener(mPrefListener);
     }
 
     @Override
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
+        LauncherPrefs.getPrefs(getContext())
+                .unregisterOnSharedPreferenceChangeListener(mPrefListener);
 
         updateTaskStackListenerState();
         if (!enableLowResThumbnailPreloading()) {
