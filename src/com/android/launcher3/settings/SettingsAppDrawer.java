@@ -117,6 +117,15 @@ public class SettingsAppDrawer extends CollapsingToolbarBaseActivity
                 LauncherPrefs.APP_DRAWER_CUSTOM_COLOR_DARK.getSharedPrefKey().equals(key)) {
             LauncherAppState.INSTANCE.executeIfCreated(app -> app.setNeedsRestart());
         }
+
+        if (LauncherPrefs.DRAWER_LIST.getSharedPrefKey().equals(key)) {
+            // Refresh the app list without a restart: onAppsUpdated() recategorizes the apps.
+            try {
+                LauncherAppState.getInstance(this).getModel().rebindCallbacks();
+            } catch (Exception e) {
+                LauncherAppState.INSTANCE.executeIfCreated(app -> app.setNeedsRestart());
+            }
+        }
     }
 
     private boolean startPreference(String fragment, Bundle args, String key) {
