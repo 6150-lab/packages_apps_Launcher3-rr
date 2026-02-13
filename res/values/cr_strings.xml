@@ -44,4 +44,5 @@
     <string name="search_radius_title">Corner radius</string>
     <!-- Stroke -->
     <string name="stroke_width_title">Stroke</string>
+    <string name="label_gemini_search">AI mode</string>
 </resources>
