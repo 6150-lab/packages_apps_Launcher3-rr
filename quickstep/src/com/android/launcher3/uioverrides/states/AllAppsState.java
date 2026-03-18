@@ -187,8 +187,16 @@ public class AllAppsState extends LauncherState {
             // No scrim.
             return super.getWorkspaceScrimColor(launcher);
         }
+        int color;
+        if (LauncherPrefs.APP_DRAWER_CUSTOM_COLOR_ENABLED.get(launcher)) {
+            color = com.android.launcher3.Utilities.isDarkTheme(launcher)
+                    ? LauncherPrefs.APP_DRAWER_CUSTOM_COLOR_DARK.get(launcher)
+                    : LauncherPrefs.APP_DRAWER_CUSTOM_COLOR_LIGHT.get(launcher);
+        } else {
+            color = Themes.getAttrColor(launcher, R.attr.allAppsScrimColor);
+        }
         int backgroundColor = ColorUtils.setAlphaComponent(
-                Themes.getAttrColor(launcher, R.attr.allAppsScrimColor),
+                color,
                 LauncherPrefs.APP_DRAWER_OPACITY.get(launcher) * 255 / 100);
         return new ScrimColors(backgroundColor, /* foregroundColor */ Color.TRANSPARENT);
     }
