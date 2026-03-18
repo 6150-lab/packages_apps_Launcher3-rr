@@ -947,6 +947,14 @@ public class ActivityAllAppsContainerView<T extends Context & ActivityContext>
     }
 
     protected void updateHeaderScroll(int scrolledOffset) {
+        if (AppDrawerStyle.isVerticalPaged(mAppDrawerStyle)) {
+            if (mHeaderColor != Color.TRANSPARENT || mTabsProtectionAlpha != 0) {
+                mHeaderColor = Color.TRANSPARENT;
+                mTabsProtectionAlpha = 0;
+                invalidateHeader();
+            }
+            return;
+        }
         float prog = Utilities.boundToRange((float) scrolledOffset / mHeaderThreshold, 0f, 1f);
         int headerColor = getHeaderColor(prog);
         int tabsAlpha = mHeader.getPeripheralProtectionHeight(/* expectedHeight */ false) == 0 ? 0
