@@ -334,6 +334,9 @@ constructor(@ApplicationContext private val encryptedContext: Context) {
         @JvmField val NAVBAR_BURN_IN_INTERVAL = backedUpItem("pref_navbar_burn_in_interval", 60)
         @JvmField val AUTO_HIDE_DOTS = backedUpItem("pref_auto_hide_dots", true)
         @JvmField val NOTIFICATION_BADGE_COUNT = backedUpItem("pref_notification_badge_count", false)
+        @JvmField val APP_DRAWER_CUSTOM_COLOR_ENABLED = backedUpItem("pref_app_drawer_custom_color_enabled", false)
+        @JvmField val APP_DRAWER_CUSTOM_COLOR_LIGHT = backedUpItem("pref_app_drawer_custom_color_light", -1)
+        @JvmField val APP_DRAWER_CUSTOM_COLOR_DARK = backedUpItem("pref_app_drawer_custom_color_dark", -16777216)
         @JvmField
         val WORKSPACE_SIZE =
             backedUpItem(DeviceGridState.KEY_WORKSPACE_SIZE, "", EncryptionType.ENCRYPTED)

@@ -981,9 +981,16 @@ public class ActivityAllAppsContainerView<T extends Context & ActivityContext>
     }
 
     int getBackgroundColor() {
-        int bgColor = isBackgroundBlurEnabled()
-                ? mBottomSheetBackgroundColorOverBlur
-                : mBottomSheetBackgroundColorBlurFallback;
+        int bgColor;
+        if (LauncherPrefs.APP_DRAWER_CUSTOM_COLOR_ENABLED.get(mContext)) {
+            bgColor = Utilities.isDarkTheme(mContext)
+                    ? LauncherPrefs.APP_DRAWER_CUSTOM_COLOR_DARK.get(mContext)
+                    : LauncherPrefs.APP_DRAWER_CUSTOM_COLOR_LIGHT.get(mContext);
+        } else {
+            bgColor = isBackgroundBlurEnabled()
+                    ? mBottomSheetBackgroundColorOverBlur
+                    : mBottomSheetBackgroundColorBlurFallback;
+        }
         return ColorUtils.setAlphaComponent(
                 bgColor, LauncherPrefs.APP_DRAWER_OPACITY.get(mContext) * 255 / 100);
     }
