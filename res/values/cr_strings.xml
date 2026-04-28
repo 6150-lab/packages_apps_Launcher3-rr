@@ -110,4 +110,10 @@
     <string name="recents_gestures_category_title">Gestures</string>
     <string name="swipe_down_to_lock_title">Swipe down on task to toggle lock</string>
     <string name="swipe_down_to_lock_summary">Swipe down on a recent task card to lock or unlock it from being cleared. When off, swiping down opens the app.</string>
+    <!-- Freeform gesture -->
+    <string name="freeform_gesture_title">Use gesture in recents to start freeform mode</string>
+    <string name="freeform_gesture_summary">Swipe up from the app and release at the top of the recents screen to trigger freeform mode</string>
+    <string name="freeform_gesture_progress_title">Freeform swipe threshold</string>
+    <string name="freeform_gesture_progress_summary">Lower values trigger freeform earlier, higher values require swiping closer to the top</string>
+    <string name="freeform_gesture_threshold_reached">Release to launch floating window</string>
 </resources>
