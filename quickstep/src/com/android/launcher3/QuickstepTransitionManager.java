@@ -874,6 +874,8 @@ public class QuickstepTransitionManager implements OnDeviceProfileChangeListener
                 wallpaperSurfaces, nonAppSurfaces, AnimatedSurface.Mode.OPENING);
         int rotationChange = getRotationChange(appSurfaces);
         Rect windowTargetBounds = getWindowTargetBounds(appSurfaces, rotationChange);
+        final int displayWidth = mDeviceProfile.getDeviceProperties().getWidthPx();
+        final int displayHeight = mDeviceProfile.getDeviceProperties().getHeightPx();
         final int[] bottomInsetPos = new int[]{
                 mSystemUiProxy.getHomeVisibilityState().getNavbarInsetPosition()};
         final AnimatedSurface surface = openingSurfaces.getFirstAppSurface();
@@ -894,6 +896,7 @@ public class QuickstepTransitionManager implements OnDeviceProfileChangeListener
                 true /* isOpening */);
         Rect crop = new Rect();
         Matrix matrix = new Matrix();
+        Rect closingTargetCrop = new Rect();
 
         SurfaceTransactionApplier surfaceApplier =
                 new SurfaceTransactionApplier(floatingView);
@@ -1041,8 +1044,7 @@ public class QuickstepTransitionManager implements OnDeviceProfileChangeListener
                 final int windowCropWidth = crop.width();
                 final int windowCropHeight = crop.height();
                 if (rotationChange != 0) {
-                    Utilities.rotateBounds(crop, mDeviceProfile.getDeviceProperties().getWidthPx(),
-                            mDeviceProfile.getDeviceProperties().getHeightPx(), rotationChange);
+                    Utilities.rotateBounds(crop, displayWidth, displayHeight, rotationChange);
                 }
 
                 // Scale the size of the icon to match the size of the window crop.
@@ -1089,14 +1091,14 @@ public class QuickstepTransitionManager implements OnDeviceProfileChangeListener
                         matrix.setScale(scale, scale);
                         if (rotationChange == 1) {
                             matrix.postTranslate(windowTransY0,
-                                    mDeviceProfile.getDeviceProperties().getWidthPx() - (windowTransX0 + scaledCropWidth));
+                                    displayWidth - (windowTransX0 + scaledCropWidth));
                         } else if (rotationChange == 2) {
                             matrix.postTranslate(
-                                    mDeviceProfile.getDeviceProperties().getWidthPx() - (windowTransX0 + scaledCropWidth),
-                                    mDeviceProfile.getDeviceProperties().getHeightPx() - (windowTransY0 + scaledCropHeight));
+                                    displayWidth - (windowTransX0 + scaledCropWidth),
+                                    displayHeight - (windowTransY0 + scaledCropHeight));
                         } else if (rotationChange == 3) {
                             matrix.postTranslate(
-                                    mDeviceProfile.getDeviceProperties().getHeightPx() - (windowTransY0 + scaledCropHeight),
+                                    displayHeight - (windowTransY0 + scaledCropHeight),
                                     windowTransX0);
                         } else {
                             matrix.postTranslate(windowTransX0, windowTransY0);
@@ -1115,20 +1117,20 @@ public class QuickstepTransitionManager implements OnDeviceProfileChangeListener
                         } else {
                             tmpPos.set(surface.position.x, surface.position.y);
                         }
-                        final Rect crop = new Rect(surface.screenSpaceBounds);
-                        crop.offsetTo(0, 0);
+                        closingTargetCrop.set(surface.screenSpaceBounds);
+                        closingTargetCrop.offsetTo(0, 0);
 
                         if ((rotationChange % 2) == 1) {
-                            int tmp = crop.right;
-                            crop.right = crop.bottom;
-                            crop.bottom = tmp;
+                            int tmp = closingTargetCrop.right;
+                            closingTargetCrop.right = closingTargetCrop.bottom;
+                            closingTargetCrop.bottom = tmp;
                             tmp = tmpPos.x;
                             tmpPos.x = tmpPos.y;
                             tmpPos.y = tmp;
                         }
                         matrix.setTranslate(tmpPos.x, tmpPos.y);
                         builder.setMatrix(matrix)
-                                .setWindowCrop(crop)
+                                .setWindowCrop(closingTargetCrop)
                                 .setAlpha(1f);
                     }
                 }
@@ -1865,6 +1867,7 @@ public class QuickstepTransitionManager implements OnDeviceProfileChangeListener
         Matrix matrix = new Matrix();
         Point tmpPos = new Point();
         Rect tmpRect = new Rect();
+        Rect fallbackCrop = new Rect();
         ValueAnimator closingAnimator = ValueAnimator.ofFloat(0, 1);
         int duration = CLOSING_TRANSITION_DURATION_MS;
         float windowCornerRadius = getWindowCornerRadius(mLauncher);
@@ -1895,14 +1898,14 @@ public class QuickstepTransitionManager implements OnDeviceProfileChangeListener
                         tmpPos.set(target.position.x, target.position.y);
                     }
 
-                    final Rect crop = new Rect(target.localBounds);
-                    crop.offsetTo(0, 0);
+                    fallbackCrop.set(target.localBounds);
+                    fallbackCrop.offsetTo(0, 0);
                     if (target.mode == MODE_CLOSING) {
                         tmpRect.set(target.screenSpaceBounds);
                         if ((rotationChange % 2) != 0) {
-                            final int right = crop.right;
-                            crop.right = crop.bottom;
-                            crop.bottom = right;
+                            final int right = fallbackCrop.right;
+                            fallbackCrop.right = fallbackCrop.bottom;
+                            fallbackCrop.bottom = right;
                         }
                         matrix.setScale(mScale.value, mScale.value,
                                 tmpRect.centerX(),
@@ -1910,14 +1913,14 @@ public class QuickstepTransitionManager implements OnDeviceProfileChangeListener
                         matrix.postTranslate(0, mDy.value);
                         matrix.postTranslate(tmpPos.x, tmpPos.y);
                         builder.setMatrix(matrix)
-                                .setWindowCrop(crop)
+                                .setWindowCrop(fallbackCrop)
                                 .setAlpha(mAlpha.value)
                                 .setCornerRadius(windowCornerRadius)
                                 .setShadowRadius(mShadowRadius.value);
                     } else if (target.mode == MODE_OPENING) {
                         matrix.setTranslate(tmpPos.x, tmpPos.y);
                         builder.setMatrix(matrix)
-                                .setWindowCrop(crop)
+                                .setWindowCrop(fallbackCrop)
                                 .setAlpha(1f);
                     }
                 }
