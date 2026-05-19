@@ -525,6 +525,7 @@ public abstract class RecentsView<
     protected boolean mEnableDrawingLiveTile = false;
     protected final Rect mTempRect = new Rect();
     protected final RectF mTempRectF = new RectF();
+    private final Rect mTempTaskBoundsRect = new Rect();
     private final PointF mTempPointF = new PointF();
     private final Matrix mTempMatrix = new Matrix();
     private final float[] mTempFloat = new float[1];
@@ -2361,16 +2362,20 @@ public abstract class RecentsView<
     }
 
     protected Rect getTaskBounds(TaskView taskView) {
+        Rect outRect = new Rect();
+        getTaskBounds(taskView, outRect);
+        return outRect;
+    }
+
+    protected void getTaskBounds(TaskView taskView, Rect outRect) {
         int selectedPage = indexOfChild(taskView);
         int primaryScroll = getPagedOrientationHandler().getPrimaryScroll(this);
         int selectedPageScroll = getScrollForPage(selectedPage);
         boolean isTopRow = mTopRowIdSet.contains(taskView.getTaskViewId());
-        Rect outRect = new Rect(
-                taskView.isGridTask() ? mLastComputedGridTaskSize : mLastComputedTaskSize);
+        outRect.set(taskView.isGridTask() ? mLastComputedGridTaskSize : mLastComputedTaskSize);
         outRect.offset(
                 -(primaryScroll - (selectedPageScroll + getOffsetFromScrollPosition(selectedPage))),
                 (int) (showAsGrid() && !isTopRow ? mTopBottomRowHeightDiff : 0));
-        return outRect;
     }
 
     /** Gets the last computed task size */
@@ -4218,7 +4223,8 @@ public abstract class RecentsView<
         }
 
         // First, get the position of the task relative to the top row.
-        Rect taskPosition = getTaskBounds(taskView);
+        Rect taskPosition = mTempTaskBoundsRect;
+        getTaskBounds(taskView, taskPosition);
 
         boolean isSelectedTaskTopRow = mTopRowIdSet.contains(getSelectedTaskView().getTaskViewId());
         boolean isChildTopRow = mTopRowIdSet.contains(taskView.getTaskViewId());
