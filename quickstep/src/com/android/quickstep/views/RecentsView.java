@@ -3919,6 +3919,16 @@ public abstract class RecentsView<
         updatePageOffsets();
     }
 
+    private boolean isCustomRecentsStyleActive() {
+        return mEnableOverlap && !showAsGrid()
+                && !mContainer.getDeviceProfile().getDeviceProperties().isTablet();
+    }
+
+    public boolean isStackRecentsStyleActive() {
+        return isCustomRecentsStyleActive() && (mRecentsStyle.equals("staple")
+                || mRecentsStyle.equals("ios") || mRecentsStyle.equals("oxygen"));
+    }
+
     private void updatePageOffsets() {
         float offset = mAdjacentPageHorizontalOffset;
         float modalOffset = ACCELERATE_0_75.getInterpolation(mTaskModalness);
