@@ -79,6 +79,7 @@ import com.android.launcher3.util.TransformingTouchDelegate
 import com.android.launcher3.util.ViewPool
 import com.android.launcher3.util.rects.set
 import com.android.quickstep.FullscreenDrawParams
+import com.android.quickstep.LockedTaskManager
 import com.android.quickstep.RemoteAnimationTargets
 import com.android.quickstep.RemoteTargetGluer.RemoteTargetHandle
 import com.android.quickstep.TaskOverlayFactory
@@ -322,6 +323,11 @@ constructor(
     var isEndQuickSwitchCuj = false
     var isBeingDraggedForDismissal = false
     var isBeingDismissed: Boolean = false
+    var isLocked: Boolean = false
+        private set
+
+    var lockedPackageName: String? = null
+        private set
 
     private val systemGestureExclusionRectList = listOf(Rect()) // We only need 1 exclusion Rect
 
@@ -813,6 +819,8 @@ constructor(
     override fun onRecycle() {
         isBeingDraggedForDismissal = false
         isBeingDismissed = false
+        isLocked = false
+        lockedPackageName = null
         resetPersistentViewTransforms()
 
         groupTask = null
@@ -1171,6 +1179,7 @@ constructor(
                 }
             }
             setOrientationState(orientedState)
+            updateLockState(firstTask?.key?.packageName)
         }
 
     private fun applyThumbnailSplashAlpha() {
@@ -1915,6 +1924,18 @@ constructor(
             it.taskContentView.cornerRadius = thumbnailFullscreenParams.currentCornerRadius
             it.overlay.setFullscreenParams(thumbnailFullscreenParams)
         }
+    }
+
+    fun updateLockState(packageName: String?) {
+        lockedPackageName = packageName
+        val chip = findViewById<IconAppChipView>(R.id.icon)
+        if (packageName == null) {
+            isLocked = false
+            chip?.setLockState(false)
+            return
+        }
+        isLocked = LockedTaskManager.getInstance(context).isPackageLocked(packageName)
+        chip?.setLockState(isLocked)
     }
 
     protected fun updateFullscreenParams(fullscreenParams: FullscreenDrawParams) {
