@@ -29,6 +29,9 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.ImageView;
+import android.view.animation.PathInterpolator;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
@@ -152,6 +155,17 @@ public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayo
 
     /** Container for the action buttons below a focused, non-split Overview tile. */
     protected LinearLayout mActionButtons;
+
+    private View mLockPillContainer;
+    private TextView mLockPillText;
+    private ImageView mLockPillIcon;
+    private boolean mLockPillShowing = false;
+    private boolean mLockPillAtThreshold = false;
+    private boolean mLockPillInitialLocked = false;
+
+    private static final long LOCK_PILL_FADE_DURATION = 180L;
+    private static final PathInterpolator LOCK_PILL_INTERP =
+            new PathInterpolator(0.2f, 0f, 0f, 1f);
     private View mSplitButton;
     /**
      * The "save app pair" button. Currently this is the only button that is not contained in
@@ -242,6 +256,9 @@ public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayo
         // These will take up the same space on the screen and alternate visibility as needed.
         // Currently, the only grouped task action is "save app pairs".
         mActionButtons = findViewById(R.id.action_buttons);
+        mLockPillContainer = findViewById(R.id.lock_pill_container);
+        mLockPillText = findViewById(R.id.lock_pill_text);
+        mLockPillIcon = findViewById(R.id.lock_pill_icon);
         mSaveAppPairButton = findViewById(R.id.action_save_app_pair);
         TypefaceUtils.setTypeface(mSaveAppPairButton, FontFamily.GSF_LABEL_LARGE);
         // Initialize a list to hold alphas for mActionButtons and any group action buttons.
@@ -260,6 +277,58 @@ public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayo
             }, 1f /* initialValue */);
         }
         updateVisibilities();
+    }
+
+    public void showLockPill(boolean isCurrentlyLocked) {
+        if (mLockPillContainer == null || mLockPillShowing) return;
+        mLockPillShowing = true;
+        mLockPillAtThreshold = false;
+        mLockPillInitialLocked = isCurrentlyLocked;
+        mLockPillIcon.setImageResource(isCurrentlyLocked
+                ? R.drawable.ic_protected_unlocked
+                : R.drawable.ic_protected_locked);
+        applyLockPillState();
+        mLockPillContainer.setAlpha(0f);
+        mLockPillContainer.setScaleX(0.85f);
+        mLockPillContainer.setScaleY(0.85f);
+        mLockPillContainer.setVisibility(VISIBLE);
+        mLockPillContainer.animate()
+                .alpha(1f).scaleX(1f).scaleY(1f)
+                .setInterpolator(LOCK_PILL_INTERP)
+                .setDuration(LOCK_PILL_FADE_DURATION).start();
+        mActionButtons.animate().alpha(0f).setDuration(LOCK_PILL_FADE_DURATION).start();
+    }
+
+    public void setLockPillAtThreshold(boolean atThreshold) {
+        if (mLockPillContainer == null || !mLockPillShowing) return;
+        if (mLockPillAtThreshold == atThreshold) return;
+        mLockPillAtThreshold = atThreshold;
+        applyLockPillState();
+    }
+
+    private void applyLockPillState() {
+        int textRes;
+        if (mLockPillAtThreshold) {
+            textRes = mLockPillInitialLocked
+                    ? R.string.unlock_app_release_to_confirm
+                    : R.string.lock_app_release_to_confirm;
+        } else {
+            textRes = mLockPillInitialLocked
+                    ? R.string.unlock_app_prompt
+                    : R.string.lock_app_prompt;
+        }
+        mLockPillText.setText(textRes);
+    }
+
+    public void hideLockPill() {
+        if (mLockPillContainer == null || !mLockPillShowing) return;
+        mLockPillShowing = false;
+        mLockPillContainer.animate()
+                .alpha(0f)
+                .setInterpolator(LOCK_PILL_INTERP)
+                .setDuration(LOCK_PILL_FADE_DURATION).withEndAction(() ->
+                        mLockPillContainer.setVisibility(GONE)).start();
+        mActionButtons.animate().alpha(1f).setDuration(LOCK_PILL_FADE_DURATION).start();
     }
 
     private void updateVisibilities() {

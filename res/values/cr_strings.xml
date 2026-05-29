@@ -93,4 +93,10 @@
     <string name="caddy_beta">Caddy (Beta)</string>
     <string name="recents_task_corner_radius_title">Task corner radius</string>
     <string name="recents_task_corner_radius_default">Default</string>
+
+    <!-- Swipe down to lock -->
+    <string name="lock_app_prompt">Swipe down to lock</string>
+    <string name="unlock_app_prompt">Swipe down to unlock</string>
+    <string name="lock_app_release_to_confirm">Release to lock</string>
+    <string name="unlock_app_release_to_confirm">Release to unlock</string>
 </resources>
