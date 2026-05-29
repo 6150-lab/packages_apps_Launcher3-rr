@@ -29,4 +29,8 @@
     <dimen name="taskbar_stashed_handle_height_smaller">2dp</dimen>
     <dimen name="taskbar_stashed_handle_height_small">3dp</dimen>
     <dimen name="taskbar_stashed_handle_height_tall">5dp</dimen>
+
+    <!-- Locked tasks -->
+    <dimen name="task_thumbnail_icon_menu_lock_icon_size">18dp</dimen>
+    <dimen name="task_thumbnail_icon_menu_lock_icon_padding">6dp</dimen>
 </resources>
