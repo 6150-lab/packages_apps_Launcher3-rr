@@ -347,6 +347,8 @@ constructor(@ApplicationContext private val encryptedContext: Context) {
         @JvmField val OVERSCROLL_VELOCITY_SCALE = backedUpItem("pref_overscroll_velocity_scale", 25)
         @JvmField val DRAWER_LIST = backedUpItem("pref_drawer_list", true)
         @JvmField
+        val RECENTS_TASK_CORNER_RADIUS = backedUpItem("pref_recents_task_corner_radius", 26)
+        @JvmField
         val WORKSPACE_SIZE =
             backedUpItem(DeviceGridState.KEY_WORKSPACE_SIZE, "", EncryptionType.ENCRYPTED)
         @JvmField

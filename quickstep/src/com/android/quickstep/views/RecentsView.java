@@ -1110,6 +1110,13 @@ public abstract class RecentsView<
                     resetTaskVisuals();
                     updatePageOffsets();
                     requestLayout();
+                } else if (LauncherPrefs.RECENTS_TASK_CORNER_RADIUS.getSharedPrefKey()
+                        .equals(key)) {
+                    for (TaskView taskView : getTaskViews()) {
+                        taskView.onTaskListVisibilityChanged(
+                                true /* visible */, TaskView.FLAG_UPDATE_CORNER_RADIUS);
+                        resetTaskVisuals(taskView);
+                    }
                 }
             };
 

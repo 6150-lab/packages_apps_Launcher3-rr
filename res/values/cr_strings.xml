@@ -91,5 +91,6 @@
     <string name="drawer_list_summary">Choose between default list view or categorized folders (Caddy)</string>
     <string name="feed_default">Default</string>
     <string name="caddy_beta">Caddy (Beta)</string>
-
+    <string name="recents_task_corner_radius_title">Task corner radius</string>
+    <string name="recents_task_corner_radius_default">Default</string>
 </resources>
