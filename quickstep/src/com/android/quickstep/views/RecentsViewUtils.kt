@@ -215,6 +215,9 @@ constructor(
                         recentsView.mTaskViewsDismissPrimaryTranslations.getOrDefault(taskView, 0),
                     )
                 }
+            } else if (recentsView.isStackRecentsStyleActive) {
+                // A stack shows more cards than the 2 either side of the central task.
+                taskViews.filter { recentsView.isTaskViewVisible(it) }
             } else {
                 val centerPageIndex: Int = recentsView.pageNearestToCenterOfScreen
                 // 2 tasks either side of the central task

@@ -692,7 +692,8 @@ constructor(
         var lastColumnOffset = taskViewOffsetPairs.first().second
         taskViewOffsetPairs
             .filter { (taskView, _) ->
-                willTaskBeVisibleAfterDismiss(taskView, dismissedTaskGap.roundToInt())
+                recentsView.isStackRecentsStyleActive ||
+                    willTaskBeVisibleAfterDismiss(taskView, dismissedTaskGap.roundToInt())
             }
             .forEach { (taskView, column) ->
                 val startValue =
@@ -1264,7 +1265,11 @@ constructor(
         val resourceProvider = DynamicResource.provider(recentsView.mContainer)
         return SpringForce(finalPosition)
             .setDampingRatio(
-                resourceProvider.getFloat(R.dimen.expressive_dismiss_task_trans_x_damping_ratio)
+                if (recentsView.isStackRecentsStyleActive) {
+                    STACK_STYLE_REFLOW_DAMPING_RATIO
+                } else {
+                    resourceProvider.getFloat(R.dimen.expressive_dismiss_task_trans_x_damping_ratio)
+                }
             )
             .setStiffness(
                 resourceProvider.getFloat(R.dimen.expressive_dismiss_task_trans_x_stiffness)
@@ -1473,6 +1478,7 @@ constructor(
     private companion object {
         // The additional damping to apply to tasks further from the dismissed task.
         private const val ADDITIONAL_DISMISS_DAMPING_RATIO = 0.15f
+        private const val STACK_STYLE_REFLOW_DAMPING_RATIO = 1f
         private const val RECENTS_SCALE_SPRING_MULTIPLIER = 1000f
         private const val DEFAULT_DISMISS_THRESHOLD_FRACTION = 0.5f
         private const val SPEED_UP_STIFFNESS = 100_000f

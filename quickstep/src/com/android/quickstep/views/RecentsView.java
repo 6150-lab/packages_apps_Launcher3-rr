@@ -23,6 +23,7 @@ import static android.os.Trace.traceEnd;
 import static android.view.View.MeasureSpec.EXACTLY;
 import static android.view.View.MeasureSpec.makeMeasureSpec;
 
+import static com.android.app.animation.Interpolators.FAST_OUT_SLOW_IN;
 import static com.android.app.animation.Interpolators.ACCELERATE_0_75;
 import static com.android.app.animation.Interpolators.ACCELERATE_DECELERATE;
 import static com.android.app.animation.Interpolators.DECELERATE_2;
@@ -1405,6 +1406,9 @@ public abstract class RecentsView<
     }
 
     public boolean isTaskViewVisible(TaskView tv) {
+        if (isStackRecentsStyleActive()) {
+            return isStackTaskWithinBounds(tv);
+        }
         if (showAsGrid()) {
             int screenStart = getPagedOrientationHandler().getPrimaryScroll(this);
             int screenEnd = screenStart + getPagedOrientationHandler().getMeasuredSize(this);
@@ -1413,6 +1417,14 @@ public abstract class RecentsView<
             // For now, just check if it's the active task or an adjacent task
             return Math.abs(indexOfChild(tv) - getNextPage()) <= 1;
         }
+    }
+
+    private boolean isStackTaskWithinBounds(TaskView taskView) {
+        mTempRectF.set(0f, 0f, taskView.getWidth(), taskView.getHeight());
+        taskView.getMatrix().mapRect(mTempRectF);
+        mTempRectF.offset(taskView.getLeft() - getScrollX(), taskView.getTop() - getScrollY());
+        return mTempRectF.right > 0f && mTempRectF.left < getWidth()
+                && mTempRectF.bottom > 0f && mTempRectF.top < getHeight();
     }
 
     public boolean isTaskViewFullyVisible(TaskView tv) {
@@ -3941,7 +3953,7 @@ public abstract class RecentsView<
 
     private boolean isCustomRecentsStyleActive() {
         return mEnableOverlap && !showAsGrid()
-                && !mContainer.getDeviceProfile().getDeviceProperties().isTablet();
+                && !mContainer.getDeviceProfile().getDeviceProperties().isLargeScreen();
     }
 
     public boolean isStackRecentsStyleActive() {
