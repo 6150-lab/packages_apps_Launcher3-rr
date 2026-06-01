@@ -333,6 +333,7 @@ constructor(@ApplicationContext private val encryptedContext: Context) {
         @JvmField val NAVBAR_BURN_IN_PROTECTION = backedUpItem("pref_navbar_burn_in_protection", true)
         @JvmField val NAVBAR_BURN_IN_INTERVAL = backedUpItem("pref_navbar_burn_in_interval", 60)
         @JvmField val AUTO_HIDE_DOTS = backedUpItem("pref_auto_hide_dots", true)
+        @JvmField val NOTIFICATION_BADGE_COUNT = backedUpItem("pref_notification_badge_count", false)
         @JvmField
         val WORKSPACE_SIZE =
             backedUpItem(DeviceGridState.KEY_WORKSPACE_SIZE, "", EncryptionType.ENCRYPTED)

@@ -4,4 +4,7 @@
     <!-- Auto-hide page indicator dots -->
     <string name="auto_hide_dots">Auto-hide page indicator</string>
     <string name="auto_hide_dots_summary">Hide the page indicator dots automatically</string>
+    <!-- Notification badges -->
+    <string name="notification_badge_count_title">Notification count</string>
+    <string name="notification_badge_count_desc">Show unread counts on notification dots</string>
 </resources>
