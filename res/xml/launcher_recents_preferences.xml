@@ -44,6 +44,18 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:title="@string/recents_gestures_category_title">
+
+        <SwitchPreferenceCompat
+            android:key="pref_swipe_down_to_lock"
+            android:title="@string/swipe_down_to_lock_title"
+            android:summary="@string/swipe_down_to_lock_summary"
+            android:defaultValue="true"
+            launcher:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/actions_category_title">
 
         <SwitchPreferenceCompat
