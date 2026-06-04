@@ -296,6 +296,7 @@ constructor(@ApplicationContext private val encryptedContext: Context) {
         @JvmField val IOS_STYLE_WORKSPACE_MIGRATED = nonRestorableItem("pref_ios_style_workspace_migrated", false)
         @JvmField val FONT_SIZE = backedUpItem("pref_custom_font_size", 100)
         @JvmField val FREEFORM_GESTURE = backedUpItem("pref_start_freeform_by_gesture", false)
+        @JvmField val OVERVIEW_GESTURE_ACTION = backedUpItem("pref_overview_gesture_action", "freeform")
         @JvmField val FREEFORM_GESTURE_PROGRESS = backedUpItem("pref_start_freeform_progress", 20)
         @JvmField val HOTSEAT_OPACITY = backedUpItem("pref_hotseat_opacity", 40)
         @JvmField val HOTSEAT_QSB_OPACITY = backedUpItem("pref_hotseat_qsb_opacity", 100)
