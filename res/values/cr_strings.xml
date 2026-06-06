@@ -57,4 +57,8 @@
     <string name="overscroll_max_stretch_summary">How far the list can be pulled past its edge, as a percentage of its size</string>
     <string name="overscroll_velocity_scale_title">Fling velocity scale</string>
     <string name="overscroll_velocity_scale_summary">How strongly a fling at the edge feeds into the overscroll spring</string>
+
+    <!-- Rename app shortcut -->
+    <string name="rename_app_label">Rename app</string>
+    <string name="rename_app_reset">Reset</string>
 </resources>
