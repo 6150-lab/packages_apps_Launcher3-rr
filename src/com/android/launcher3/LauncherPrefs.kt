@@ -343,7 +343,7 @@ constructor(@ApplicationContext private val encryptedContext: Context) {
         @JvmField val OVERSCROLL_STIFFNESS = backedUpItem("pref_overscroll_stiffness", 200)
         @JvmField val OVERSCROLL_DAMPING_RATIO = backedUpItem("pref_overscroll_damping_ratio", 50)
         @JvmField val OVERSCROLL_MAX_STRETCH = backedUpItem("pref_overscroll_max_stretch", 15)
-        @JvmField val OVERSCROLL_VELOCITY_SCALE = backedUpItem("pref_overscroll_velocity_scale", 60)
+        @JvmField val OVERSCROLL_VELOCITY_SCALE = backedUpItem("pref_overscroll_velocity_scale", 25)
         @JvmField
         val WORKSPACE_SIZE =
             backedUpItem(DeviceGridState.KEY_WORKSPACE_SIZE, "", EncryptionType.ENCRYPTED)
