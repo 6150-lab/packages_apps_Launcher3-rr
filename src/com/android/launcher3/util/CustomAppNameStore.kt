@@ -17,6 +17,7 @@ import com.android.launcher3.model.data.WorkspaceItemInfo
 object CustomAppNameStore {
 
     private const val CUSTOM_NAMES_PREFS = "custom_app_names"
+    private const val HIDDEN_NAMES_PREFS = "hidden_app_names"
 
     @JvmStatic
     fun supportsCustomName(info: ItemInfo?): Boolean =
@@ -47,6 +48,23 @@ object CustomAppNameStore {
     @JvmStatic
     fun hasCustomName(context: Context, info: ItemInfo): Boolean =
         getCustomName(context, info) != null
+
+    /** Stores visibility separately so search, sorting and accessibility retain the app name. */
+    @JvmStatic
+    fun setNameHidden(context: Context, info: ItemInfo, hidden: Boolean) {
+        val key = customNameKey(info) ?: return
+        val editor =
+            context.getSharedPreferences(HIDDEN_NAMES_PREFS, Context.MODE_PRIVATE).edit()
+        if (hidden) editor.putBoolean(key, true) else editor.remove(key)
+        editor.apply()
+    }
+
+    @JvmStatic
+    fun isNameHidden(context: Context, info: ItemInfo): Boolean =
+        customNameKey(info)?.let {
+            context.getSharedPreferences(HIDDEN_NAMES_PREFS, Context.MODE_PRIVATE)
+                .getBoolean(it, false)
+        } ?: false
 
     @JvmStatic
     fun removeCustomNamesForPackage(context: Context, packageName: String, user: UserHandle) {

@@ -805,6 +805,26 @@ public abstract class SystemShortcut<T extends ActivityContext> extends ItemInfo
                 return new RenameApp<>(activity, itemInfo, originalView);
             };
 
+    public static final Factory<Launcher> RESET_ICON_SIZE = (launcher, itemInfo, originalView) -> {
+        if (!(itemInfo instanceof WorkspaceItemInfo workspaceItem)
+                || workspaceItem.container != LauncherSettings.Favorites.CONTAINER_DESKTOP
+                || workspaceItem.iconSizeDp == 0
+                || !(originalView instanceof BubbleTextView icon)) {
+            return null;
+        }
+        return new SystemShortcut<Launcher>(R.drawable.ic_custom_seekbar_reset,
+                R.string.reset_icon_size, launcher, itemInfo, originalView, false) {
+            @Override
+            public void onClick(View view) {
+                AbstractFloatingView.closeAllOpenViews(launcher);
+                workspaceItem.iconSizeDp = 0;
+                icon.applyWorkspaceIconSize();
+                launcher.getModelWriter().updateItemInDatabase(workspaceItem);
+            }
+        };
+    };
+
+
     public static class RenameApp<T extends ActivityContext> extends SystemShortcut<T> {
         public RenameApp(T target, ItemInfo itemInfo, @NonNull View originalView) {
             super(getDrawableId(), R.string.rename_app_label, target,
