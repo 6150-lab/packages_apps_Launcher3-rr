@@ -71,4 +71,7 @@
     <!-- Size one icon -->
     <string name="resize_icon_label">Resize</string>
     <string name="show_app_name">Show app name</string>
+    <string name="folder_thumbnail_set">Folder thumbnail</string>
+    <string name="folder_thumbnail_reset">Reset thumbnail</string>
+    <string name="folder_thumbnail_failed">Couldn\'t use that image</string>
 </resources>
