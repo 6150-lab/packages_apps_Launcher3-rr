@@ -423,6 +423,9 @@ constructor(
             systemUiProxy?.onOverviewHidden(displayId)
         }
 
+    fun showCustomRecents() =
+        executeWithErrorLog({ "Failed call showCustomRecents" }) { systemUiProxy?.showCustomRecents() }
+
     @MainThread
     fun onStatusBarTouchEvent(event: MotionEvent) {
         Preconditions.assertUIThread()

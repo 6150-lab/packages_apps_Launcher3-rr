@@ -1,5 +1,7 @@
 package com.android.launcher3.settings;
 
+import static android.Manifest.permission.WRITE_SECURE_SETTINGS;
+import static android.content.pm.PackageManager.PERMISSION_GRANTED;
 import static android.provider.Settings.Global.DEVELOPMENT_SETTINGS_ENABLED;
 
 import static androidx.preference.PreferenceFragmentCompat.ARG_PREFERENCE_ROOT;
@@ -10,6 +12,7 @@ import static com.android.launcher3.InvariantDeviceProfile.TYPE_TABLET;
 import static com.android.launcher3.util.Executors.MAIN_EXECUTOR;
 
 import android.app.Activity;
+import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.net.Uri;
@@ -24,6 +27,7 @@ import androidx.annotation.VisibleForTesting;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceFragmentCompat.OnPreferenceStartFragmentCallback;
@@ -275,7 +279,35 @@ public class SettingsRecents extends CollapsingToolbarBaseActivity
             outState.putBoolean(SAVE_HIGHLIGHTED_KEY, mPreferenceHighlighted);
         }
 
+        private static final String KEY_RECENTS_STYLE = "pref_recents_style";
+        /** Settings.System int read by Quickstep and SystemUI. 0 overview, 1 slim, 2 spin. */
+        private static final String RECENTS_STYLE = "recents_style";
+        /** Old wheel switch. Honored only when recents_style was never written. */
+        private static final String LEGACY_SLIM_RECENTS = "slim_recents_enabled";
+
+        private static int readRecentsStyle(ContentResolver resolver) {
+            int style = Settings.System.getInt(resolver, RECENTS_STYLE, -1);
+            if (style < 0 || style > 2) {
+                style = Settings.System.getInt(resolver, LEGACY_SLIM_RECENTS, 0) == 1 ? 2 : 0;
+            }
+            return style;
+        }
+
         protected boolean initPreference(Preference preference) {
+            if (KEY_RECENTS_STYLE.equals(preference.getKey())) {
+                // Only Quickstep can write it, and only Quickstep routes overview to it.
+                if (getContext().checkSelfPermission(WRITE_SECURE_SETTINGS)
+                        != PERMISSION_GRANTED) {
+                    return false;
+                }
+                ContentResolver resolver = getContext().getContentResolver();
+                ListPreference list = (ListPreference) preference;
+                list.setSummaryProvider(ListPreference.SimpleSummaryProvider.getInstance());
+                list.setValue(Integer.toString(readRecentsStyle(resolver)));
+                list.setOnPreferenceChangeListener((pref, newValue) ->
+                        Settings.System.putInt(resolver, RECENTS_STYLE,
+                                Integer.parseInt((String) newValue)));
+            }
             return true;
         }
 

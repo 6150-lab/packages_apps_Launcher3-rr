@@ -156,6 +156,7 @@ import com.android.quickstep.util.InputProxyHandlerFactory;
 import com.android.quickstep.util.MotionPauseDetector;
 import com.android.quickstep.util.RecentsOrientedState;
 import com.android.quickstep.util.RectFSpringAnim;
+import com.android.quickstep.util.CustomRecents;
 import com.android.quickstep.util.StaggeredWorkspaceAnim;
 import com.android.quickstep.util.SurfaceTransaction;
 import com.android.quickstep.util.SurfaceTransactionApplier;
@@ -378,6 +379,7 @@ public abstract class AbsSwipeUpHandler<
     private final boolean mTaskbarAlreadyOpen;
     private final boolean mIsTaskbarAllAppsOpen;
     private final boolean mIsTransientTaskbar;
+    private final boolean mCustomRecents;
 
     // May be set to false when mIsTransientTaskbar is true.
     private boolean mCanSlowSwipeGoHome = true;
@@ -457,6 +459,7 @@ public abstract class AbsSwipeUpHandler<
                 && TaskbarFeatureEvaluator.INSTANCE.get(context).get(displayId).isTransient();
         mTaskbarAlreadyOpen = mGestureState.isTaskbarAlreadyOpen();
         mIsTaskbarAllAppsOpen = mGestureState.isTaskbarAllAppsOpen();
+        mCustomRecents = CustomRecents.isEnabled(context);
         mTaskbarAppWindowThreshold =
                 TaskbarThresholdUtils.getAppWindowThreshold(res, mDp);
         boolean swipeWillNotShowTaskbar = mTaskbarAlreadyOpen || mGestureState.isTrackpadGesture();
@@ -867,7 +870,8 @@ public abstract class AbsSwipeUpHandler<
             // The window is going away so make sure recents is always visible in this case.
             recentsAttachedToAppWindow = true;
         } else {
-            recentsAttachedToAppWindow = mHasMotionEverBeenPaused || mIsLikelyToStartNewTask;
+            recentsAttachedToAppWindow =
+                    (mHasMotionEverBeenPaused && !mCustomRecents) || mIsLikelyToStartNewTask;
         }
 
         if (!isGestureMode) {
@@ -1426,6 +1430,16 @@ public abstract class AbsSwipeUpHandler<
                     .append("]");
             ActiveGestureProtoLogProxy.logCalculateEndTargetResultAndReason(
                     "LAST_TASK", reasonString);
+            return LAST_TASK;
+        }
+
+        if (mCustomRecents && endTarget == RECENTS) {
+            reasonString.append("custom recents is on and endTarget = RECENTS [")
+                    .append(potentialReason)
+                    .append("]");
+            ActiveGestureProtoLogProxy.logCalculateEndTargetResultAndReason(
+                    "LAST_TASK", reasonString);
+            CustomRecents.show(mContext);
             return LAST_TASK;
         }
 

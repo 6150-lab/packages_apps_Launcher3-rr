@@ -7,6 +7,14 @@
     <PreferenceCategory
         android:title="@string/general_category_title">
 
+        <ListPreference
+            android:key="pref_recents_style"
+            android:persistent="false"
+            android:title="@string/pref_recents_style_title"
+            android:entries="@array/recents_style_entries"
+            android:entryValues="@array/recents_style_values"
+            launcher:iconSpaceReserved="false" />
+
         <com.android.launcher3.settings.preferences.CustomSeekBarPreference
             android:key="pref_recents_opacity"
             android:title="@string/background_opacity_title"

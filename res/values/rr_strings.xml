@@ -7,4 +7,17 @@
     <!-- Open keyboard -->
     <string name="drawer_open_keyboard_title">Swipe to start search</string>
     <string name="drawer_open_keyboard_summary">Open keyboard whenever app drawer becomes visible</string>
+
+    <!-- Recents style. Swipe up and hold, or press recents. -->
+    <string name="pref_recents_style_title">Recents</string>
+    <string-array name="recents_style_entries">
+        <item>Overview</item>
+        <item>Slim recents (side panel)</item>
+        <item>Spin recents (wheel)</item>
+    </string-array>
+    <string-array name="recents_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
 </resources>
