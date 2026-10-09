@@ -224,6 +224,8 @@ import java.util.concurrent.Executor;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
+import lineageos.providers.LineageSettings;
+
 /**
  * The {@link ActivityContext} with which we inflate Taskbar-related Views. This allows UI elements
  * that are used by both Launcher and Taskbar (such as Folder) to reference a generic
@@ -233,10 +235,10 @@ public class TaskbarActivityContext extends BaseTaskbarContext {
 
     private static final Uri URI_USER_SETUP_COMPLETE = Secure.getUriFor(Secure.USER_SETUP_COMPLETE);
     private static final Uri URI_NAV_BAR_KIDS_MODE = Secure.getUriFor(Secure.NAV_BAR_KIDS_MODE);
-    private static final Uri URI_ENABLE_TASKBAR = Settings.System.getUriFor(
-            Settings.System.ENABLE_TASKBAR);
-    private static final Uri URI_NAVIGATION_BAR_HINT = Settings.System.getUriFor(
-            Settings.System.NAVIGATION_BAR_HINT);
+    private static final Uri URI_ENABLE_TASKBAR = LineageSettings.System.getUriFor(
+            LineageSettings.System.ENABLE_TASKBAR);
+    private static final Uri URI_NAVIGATION_BAR_HINT = LineageSettings.System.getUriFor(
+            LineageSettings.System.NAVIGATION_BAR_HINT);
     private static final Uri URI_NAV_BAR_IME = Secure.getUriFor("sysui_show_nav_bar_ime");
 
     private static final String TAG = "TaskbarActivityContext";

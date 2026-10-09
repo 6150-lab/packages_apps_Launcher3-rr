@@ -41,6 +41,7 @@ import com.android.launcher3.taskbar.bubbles.stashing.BubbleStashController;
 import com.android.launcher3.util.Executors;
 import com.android.launcher3.util.MultiPropertyFactory;
 import com.android.launcher3.util.MultiValueAlpha;
+import com.android.launcher3.util.RrSettings;
 import com.android.wm.shell.shared.animation.PhysicsAnimator;
 import com.android.wm.shell.shared.bubbles.BubbleBarLocation;
 import com.android.wm.shell.shared.handles.RegionSamplingHelper;
@@ -100,7 +101,7 @@ public class BubbleStashedHandleViewController {
         Resources resources = mActivity.getResources();
 
         int handleHeightMode = Settings.System.getInt(mActivity.getContentResolver(),
-                Settings.System.GESTURE_NAVBAR_HEIGHT_MODE, 3);
+                RrSettings.GESTURE_NAVBAR_HEIGHT_MODE, 3);
         if (handleHeightMode == 0) {
             mStashedHandleHeight = resources.getDimensionPixelSize(
                     R.dimen.taskbar_stashed_handle_height_smallest);
@@ -119,7 +120,7 @@ public class BubbleStashedHandleViewController {
         }
 
         int handleWidthMode = Settings.System.getInt(mActivity.getContentResolver(),
-                Settings.System.GESTURE_NAVBAR_LENGTH_MODE, 1);
+                RrSettings.GESTURE_NAVBAR_LENGTH_MODE, 1);
         if (handleWidthMode == 0) {
             mStashedHandleWidth = resources.getDimensionPixelSize(
                     R.dimen.bubblebar_stashed_handle_width_short);

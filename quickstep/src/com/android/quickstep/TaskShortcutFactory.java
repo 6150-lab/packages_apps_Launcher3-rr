@@ -57,6 +57,7 @@ import com.android.launcher3.util.InstantAppResolver;
 import com.android.launcher3.util.PackageManagerHelper;
 import com.android.launcher3.util.SplitConfigurationOptions;
 import com.android.launcher3.util.SplitConfigurationOptions.SplitPositionOption;
+import com.android.launcher3.util.RrSettings;
 import com.android.quickstep.orientation.RecentsPagedOrientationHandler;
 import com.android.quickstep.views.GroupedTaskView;
 import com.android.quickstep.views.RecentsView;
@@ -637,7 +638,7 @@ public interface TaskShortcutFactory {
 
             String lockedTasks = Settings.System.getStringForUser(
                     mContext.getContentResolver(),
-                    Settings.System.RECENTS_LOCKED_TASKS,
+                    RrSettings.RECENTS_LOCKED_TASKS,
                     UserHandle.USER_CURRENT);
 
             if (mLockedTasks.size() == 0 && lockedTasks != null && !lockedTasks.isEmpty()) {
@@ -663,7 +664,7 @@ public interface TaskShortcutFactory {
                 }
             }
            Settings.System.putStringForUser(mContext.getContentResolver(),
-           Settings.System.RECENTS_LOCKED_TASKS, String.join(",", mLockedTasks),
+           RrSettings.RECENTS_LOCKED_TASKS, String.join(",", mLockedTasks),
                 UserHandle.USER_CURRENT);
         }
     }

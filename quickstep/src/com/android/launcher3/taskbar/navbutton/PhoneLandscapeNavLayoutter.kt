@@ -27,6 +27,7 @@ import android.widget.Space
 import com.android.launcher3.R
 import com.android.launcher3.Utilities
 import com.android.launcher3.taskbar.TaskbarActivityContext
+import com.android.launcher3.util.RrSettings
 import android.provider.Settings
 
 open class PhoneLandscapeNavLayoutter(
@@ -59,7 +60,7 @@ open class PhoneLandscapeNavLayoutter(
     override val orientation = LinearLayout.VERTICAL
 
     override fun layoutButtons(context: TaskbarActivityContext, isA11yButtonPersistent: Boolean) {
-        val layoutMode = Settings.Secure.getInt(context.contentResolver, Settings.Secure.NAVBAR_LAYOUT_MODE, 0)
+        val layoutMode = Settings.Secure.getInt(context.contentResolver, RrSettings.NAVBAR_LAYOUT_MODE, 0)
         val totalHeight = context.deviceProfile.deviceProperties.heightPx
         val homeButtonHeight =
             resources.getDimensionPixelSize(R.dimen.taskbar_phone_home_button_size)

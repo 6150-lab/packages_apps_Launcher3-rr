@@ -26,6 +26,7 @@ import android.widget.LinearLayout
 import android.widget.Space
 import com.android.launcher3.R
 import com.android.launcher3.taskbar.TaskbarActivityContext
+import com.android.launcher3.util.RrSettings
 import android.provider.Settings
 
 class PhonePortraitNavLayoutter(
@@ -56,7 +57,7 @@ class PhonePortraitNavLayoutter(
     ) {
 
     override fun layoutButtons(context: TaskbarActivityContext, isA11yButtonPersistent: Boolean) {
-        val layoutMode = Settings.Secure.getInt(context.contentResolver, Settings.Secure.NAVBAR_LAYOUT_MODE, 0)
+        val layoutMode = Settings.Secure.getInt(context.contentResolver, RrSettings.NAVBAR_LAYOUT_MODE, 0)
         val totalWidth = context.deviceProfile.deviceProperties.widthPx
         val homeButtonWidth =
             resources.getDimensionPixelSize(R.dimen.taskbar_phone_home_button_size)

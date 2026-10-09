@@ -90,6 +90,7 @@ import com.android.launcher3.util.SafeCloseable;
 import com.android.launcher3.util.SettingsCache;
 import com.android.launcher3.util.SimpleBroadcastReceiver;
 import com.android.launcher3.util.ThreadSafeRunnableList;
+import com.android.launcher3.util.RrSettings;
 import com.android.quickstep.AllAppsActionManager;
 import com.android.quickstep.BaseContainerInterface;
 import com.android.quickstep.DisplayModel;
@@ -121,6 +122,8 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Provider;
 
+import lineageos.providers.LineageSettings;
+
 /**
  * Class to manage taskbar lifecycle
  */
@@ -139,26 +142,26 @@ public class TaskbarManagerImpl {
     private static final Uri NAV_BAR_KIDS_MODE = Settings.Secure.getUriFor(
             Settings.Secure.NAV_BAR_KIDS_MODE);
 
-    public static final Uri ENABLE_TASKBAR_URI = Settings.System.getUriFor(
-            Settings.System.ENABLE_TASKBAR);
+    public static final Uri ENABLE_TASKBAR_URI = LineageSettings.System.getUriFor(
+            LineageSettings.System.ENABLE_TASKBAR);
 
-    public static final Uri NAVIGATION_BAR_HINT_URI = Settings.System.getUriFor(
-            Settings.System.NAVIGATION_BAR_HINT);
+    public static final Uri NAVIGATION_BAR_HINT_URI = LineageSettings.System.getUriFor(
+            LineageSettings.System.NAVIGATION_BAR_HINT);
 
     public static final Uri GESTURE_NAVBAR_LENGTH_MODE_URI = Settings.System.getUriFor(
-            Settings.System.GESTURE_NAVBAR_LENGTH_MODE);
+            RrSettings.GESTURE_NAVBAR_LENGTH_MODE);
 
     public static final Uri GESTURE_NAVBAR_HEIGHT_MODE_URI = Settings.System.getUriFor(
-            Settings.System.GESTURE_NAVBAR_HEIGHT_MODE);
+            RrSettings.GESTURE_NAVBAR_HEIGHT_MODE);
 
     public static final Uri GESTURE_NAVBAR_AUTO_HIDE_URI = Settings.System.getUriFor(
-            Settings.System.GESTURE_NAVBAR_AUTO_HIDE);
+            RrSettings.GESTURE_NAVBAR_AUTO_HIDE);
 
     public static final Uri NAV_BAR_IME = Settings.Secure.getUriFor(
             "sysui_show_nav_bar_ime");
 
     public static final Uri NAV_BAR_LAYOUT_URI = Settings.Secure.getUriFor(
-            Settings.Secure.NAVBAR_LAYOUT_MODE);
+            RrSettings.NAVBAR_LAYOUT_MODE);
 
     private final Context mBaseContext;
     private final int mPrimaryDisplayId;

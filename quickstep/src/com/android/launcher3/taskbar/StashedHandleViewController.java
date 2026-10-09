@@ -56,6 +56,7 @@ import com.android.launcher3.anim.RoundedRectRevealOutlineProvider;
 import com.android.launcher3.util.Executors;
 import com.android.launcher3.util.MultiValueAlpha;
 import com.android.launcher3.util.SettingsCache;
+import com.android.launcher3.util.RrSettings;
 import com.android.quickstep.NavHandle;
 import com.android.quickstep.TopTaskTracker;
 import com.android.systemui.shared.system.QuickStepContract.SystemUiStateFlags;
@@ -200,7 +201,7 @@ public class StashedHandleViewController implements TaskbarControllers.LoggableT
         Resources resources = activity.getResources();
 
         int handleHeightMode = Settings.System.getInt(activity.getContentResolver(),
-                Settings.System.GESTURE_NAVBAR_HEIGHT_MODE, 3);
+                RrSettings.GESTURE_NAVBAR_HEIGHT_MODE, 3);
         if (handleHeightMode == 0) {
             mStashedHandleHeight = resources
                     .getDimensionPixelSize(R.dimen.taskbar_stashed_handle_height_smallest);
@@ -219,7 +220,7 @@ public class StashedHandleViewController implements TaskbarControllers.LoggableT
         }
 
         int handleWidthMode = Settings.System.getInt(activity.getContentResolver(),
-                Settings.System.GESTURE_NAVBAR_LENGTH_MODE, 1);
+                RrSettings.GESTURE_NAVBAR_LENGTH_MODE, 1);
         if (activity.isPhoneGestureNavMode() || activity.isTinyTaskbar()
                 || activity.isBubbleBarOnPhone()) {
             mTaskbarSize = resources.getDimensionPixelSize(R.dimen.taskbar_phone_size);
@@ -548,7 +549,7 @@ public class StashedHandleViewController implements TaskbarControllers.LoggableT
                 && !activity.isThreeButtonNav()
                 && SettingsCache.INSTANCE.get(activity).getValue(NAVIGATION_BAR_HINT_URI)
                 && Settings.System.getIntForUser(activity.getContentResolver(),
-                        Settings.System.GESTURE_NAVBAR_AUTO_HIDE, 0,
+                        RrSettings.GESTURE_NAVBAR_AUTO_HIDE, 0,
                         UserHandle.USER_CURRENT) == 1;
     }
 

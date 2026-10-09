@@ -31,6 +31,7 @@ import android.widget.Space
 import com.android.launcher3.R
 import com.android.launcher3.taskbar.TaskbarActivityContext
 import com.android.launcher3.util.Themes
+import com.android.launcher3.util.RrSettings
 
 /** Layoutter for rendering task bar in large screen, both in 3-button and gesture nav mode. */
 class TaskbarNavLayoutter(
@@ -96,7 +97,7 @@ class TaskbarNavLayoutter(
         val layoutMode =
             Settings.Secure.getInt(
                 context.contentResolver,
-                Settings.Secure.NAVBAR_LAYOUT_MODE,
+                RrSettings.NAVBAR_LAYOUT_MODE,
                 0,
             )
         val endFactor =
@@ -148,7 +149,7 @@ class TaskbarNavLayoutter(
         val layoutMode =
             Settings.Secure.getInt(
                 navButtonContainer.context.contentResolver,
-                Settings.Secure.NAVBAR_LAYOUT_MODE,
+                RrSettings.NAVBAR_LAYOUT_MODE,
                 0,
             )
         val spaceInBetween =
