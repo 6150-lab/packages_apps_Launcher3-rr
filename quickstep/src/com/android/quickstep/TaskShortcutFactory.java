@@ -508,7 +508,7 @@ public interface TaskShortcutFactory {
         public List<SystemShortcut> getShortcuts(RecentsViewContainer container,
                 TaskContainer taskContainer) {
             final Task task  = taskContainer.getTask();
-            if (!task.isDockable) {
+            if (!task.isDockable || !Utilities.isLmoFreeformAvailable(container.asContext())) {
                 return null;
             }
 

@@ -715,8 +715,9 @@ public abstract class SystemShortcut<T extends ActivityContext> extends ItemInfo
     }
 
     public static final Factory<ActivityContext> FLOATING = (activity, itemInfo, originalView) -> {
-        if (!Utilities.isResizeableActivity(originalView.getContext(),
-                itemInfo.getTargetComponent())) {
+        if (!Utilities.isLmoFreeformAvailable(originalView.getContext())
+                || !Utilities.isResizeableActivity(originalView.getContext(),
+                        itemInfo.getTargetComponent())) {
             return null;
         }
         return new FloatingSystemShortcut(activity, itemInfo, originalView);

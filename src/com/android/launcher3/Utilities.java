@@ -1004,6 +1004,15 @@ public final class Utilities {
         return ActivityInfo.isResizeableMode(info.resizeMode);
     }
 
+    public static boolean isLmoFreeformAvailable(Context context) {
+        try {
+            context.getPackageManager().getPackageInfo(FREEFORM_PACKAGE, 0);
+            return true;
+        } catch (PackageManager.NameNotFoundException e) {
+            return false;
+        }
+    }
+
     public static void startLmoFreeform(Context context, ComponentName activity,
             int userId, int taskId) {
         final Intent intent = new Intent(FREEFORM_INTENT)
