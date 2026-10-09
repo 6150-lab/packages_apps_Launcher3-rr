@@ -352,8 +352,6 @@ object TaskOverlayModule {
             TaskShortcutFactory.SAVE_APP_PAIR,
             TaskShortcutFactory.SCREENSHOT,
             TaskShortcutFactory.MODAL,
-            TaskShortcutFactory.STORAGE_SCOPES,
-            TaskShortcutFactory.CONTACT_SCOPES,
         )
 }
 

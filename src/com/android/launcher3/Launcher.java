@@ -2913,10 +2913,7 @@ public class Launcher extends StatefulActivity<LauncherState>
                 return Stream.of(APP_INFO, WIDGETS, INSTALL);
             }
         }
-        return Stream.of(APP_INFO, WIDGETS, INSTALL, UNINSTALL
-                , com.android.launcher3.popup.SystemShortcut.STORAGE_SCOPES
-                , com.android.launcher3.popup.SystemShortcut.CONTACT_SCOPES
-        );
+        return Stream.of(APP_INFO, WIDGETS, INSTALL, UNINSTALL);
     }
 
     /**
