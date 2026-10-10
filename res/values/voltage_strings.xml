@@ -223,6 +223,7 @@
         <item>Remix paged</item>
         <item>Remix vertical</item>
         <item>Orbit</item>
+        <item>Neon sign</item>
     </string-array>
     <string-array name="quickspace_style_values" translatable="false">
         <item>0</item>
@@ -231,6 +232,7 @@
         <item>3</item>
         <item>4</item>
         <item>5</item>
+        <item>6</item>
     </string-array>
 
     <string name="quickspace_vertical_content_description">QuickSpace overview</string>

@@ -490,7 +490,7 @@ public class SettingsHomescreen extends CollapsingToolbarBaseActivity
             boolean isVoltageAccentStyle = "2".equals(quickspaceStyle) || "3".equals(quickspaceStyle);
             boolean isVoltagePagedStyle = "3".equals(quickspaceStyle);
             boolean isVoltageVerticalStyle = "4".equals(quickspaceStyle);
-            boolean isGlanceStyle = "5".equals(quickspaceStyle);
+            boolean isGlanceStyle = "5".equals(quickspaceStyle) || "6".equals(quickspaceStyle);
 
             if (mVoltageAccent != null) {
                 mVoltageAccent.setVisible(isVoltageAccentStyle);
