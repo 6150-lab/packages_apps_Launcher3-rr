@@ -490,6 +490,7 @@ public class SettingsHomescreen extends CollapsingToolbarBaseActivity
             boolean isVoltageAccentStyle = "2".equals(quickspaceStyle) || "3".equals(quickspaceStyle);
             boolean isVoltagePagedStyle = "3".equals(quickspaceStyle);
             boolean isVoltageVerticalStyle = "4".equals(quickspaceStyle);
+            boolean isGlanceStyle = "5".equals(quickspaceStyle);
 
             if (mVoltageAccent != null) {
                 mVoltageAccent.setVisible(isVoltageAccentStyle);
@@ -500,15 +501,16 @@ public class SettingsHomescreen extends CollapsingToolbarBaseActivity
             }
 
             if (mQuickspaceBattery != null) {
-                mQuickspaceBattery.setVisible(isVoltageFamilyStyle);
+                mQuickspaceBattery.setVisible(isVoltageFamilyStyle || isGlanceStyle);
             }
 
             if (mQuickspaceCalendar != null) {
-                mQuickspaceCalendar.setVisible(isVoltageFamilyStyle);
+                mQuickspaceCalendar.setVisible(isVoltageFamilyStyle || isGlanceStyle);
             }
 
             if (mQuickspaceWeatherCity != null) {
-                mQuickspaceWeatherCity.setVisible(!isVoltagePagedStyle && !isVoltageVerticalStyle);
+                mQuickspaceWeatherCity.setVisible(!isVoltagePagedStyle && !isVoltageVerticalStyle
+                        && !isGlanceStyle);
             }
 
             if (mQuickspaceWeatherText != null) {

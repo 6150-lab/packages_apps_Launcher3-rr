@@ -1703,6 +1703,9 @@ public class QuickSpaceView extends FrameLayout implements OnDataListener {
       case 4:
         layoutId = R.layout.quickspace_voltage_vertical;
         break;
+      case 5:
+        layoutId = R.layout.quickspace_orbit;
+        break;
       default:
         layoutId = R.layout.quickspace_doubleline;
     }

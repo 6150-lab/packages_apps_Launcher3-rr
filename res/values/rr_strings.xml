@@ -22,4 +22,7 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+
+    <!-- At a glance styles -->
+    <string name="glance_content_description">At a glance</string>
 </resources>
