@@ -1709,6 +1709,9 @@ public class QuickSpaceView extends FrameLayout implements OnDataListener {
       case 6:
         layoutId = R.layout.quickspace_neon;
         break;
+      case 7:
+        layoutId = R.layout.quickspace_glass;
+        break;
       default:
         layoutId = R.layout.quickspace_doubleline;
     }
