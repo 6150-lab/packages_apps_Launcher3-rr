@@ -161,13 +161,13 @@
 
         <!--
         Activity following gesture nav onboarding.
-        It's protected by android.permission.REBOOT to ensure that only system apps can start it
-        (setup wizard already has this permission)
+        Pixel Setup holds WRITE_SECURE_SETTINGS, not REBOOT, and it is the
+        wizard that starts this activity.
         -->
         <activity android:name="com.android.quickstep.interaction.AllSetActivity"
             android:autoRemoveFromRecents="true"
             android:excludeFromRecents="true"
-            android:permission="android.permission.REBOOT"
+            android:permission="android.permission.WRITE_SECURE_SETTINGS"
             android:theme="@style/AllSetTheme"
             android:enableOnBackInvokedCallback="false"
             android:label="@string/allset_title"
