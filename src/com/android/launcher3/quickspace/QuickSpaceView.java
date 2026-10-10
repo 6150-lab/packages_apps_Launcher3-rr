@@ -57,7 +57,6 @@ import com.android.launcher3.model.data.ItemInfo;
 import com.android.launcher3.quickspace.QuickspaceController.OnDataListener;
 import com.android.launcher3.quickspace.receivers.QuickSpaceActionReceiver;
 import com.android.launcher3.quickspace.views.AccentedTextClock;
-import com.android.launcher3.quickspace.views.VoltageVerticalView;
 import com.android.launcher3.util.Themes;
 import java.util.HashMap;
 import java.util.Locale;
@@ -283,17 +282,24 @@ public class QuickSpaceView extends FrameLayout implements OnDataListener {
     return (style == 2 || style == 3) && LauncherPrefs.QUICKSPACE_VOLTAGE_MINIMAL.get(getContext());
   }
 
+  /** Styles whose layout root binds its own data through {@link QuickSpaceStyleBinder}. */
+  private static boolean isBinderStyle(int style) {
+    return style >= 4 && style <= 7;
+  }
+
   private void updateView(int style) {
     if (mDestroyed || mPendingDestroy) {
       return;
     }
 
+    if (isBinderStyle(style)) {
+      if (mBinder != null) {
+        mBinder.onDataUpdated(!mIsLayoutSuppressed);
+      }
+      return;
+    }
+
     switch (style) {
-      case 4:
-        if (mBinder != null) {
-          mBinder.onDataUpdated(!mIsLayoutSuppressed);
-        }
-        break;
       case 2:
       case 3:
         loadLargeStyle();
@@ -1121,7 +1127,7 @@ public class QuickSpaceView extends FrameLayout implements OnDataListener {
 
     int targetColor = mColorStateList.getDefaultColor();
 
-    if (mCurrentStyle == 4 && mBinder != null) {
+    if (isBinderStyle(mCurrentStyle) && mBinder != null) {
       mBinder.applyColors(mColorStateList, mCachedUseBlackText);
       return;
     }
@@ -1559,9 +1565,9 @@ public class QuickSpaceView extends FrameLayout implements OnDataListener {
 
   private final void loadViews() {
     mQuickspaceContent = (ViewGroup) findViewById(R.id.quickspace_content);
-    if (mCurrentStyle == 4) {
-      if (mQuickspaceContent instanceof VoltageVerticalView) {
-        mBinder = (VoltageVerticalView) mQuickspaceContent;
+    if (isBinderStyle(mCurrentStyle)) {
+      if (mQuickspaceContent instanceof QuickSpaceStyleBinder) {
+        mBinder = (QuickSpaceStyleBinder) mQuickspaceContent;
       }
       return;
     }
@@ -1706,7 +1712,7 @@ public class QuickSpaceView extends FrameLayout implements OnDataListener {
     if (mBinder != null) {
       mBinder.onBind(mController);
     }
-    if (mCurrentStyle == 4) {
+    if (isBinderStyle(mCurrentStyle)) {
       refreshColorStateList();
       updateColorForViews();
     }
