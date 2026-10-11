@@ -742,25 +742,70 @@ public class Workspace<T extends View & PageIndicator> extends PagedView<T>
                     .inflate(R.layout.reserved_container_workspace, firstPage, false);
         }
 
-        int cellHSpan = mLauncher.getDeviceProfile().inv.numSearchContainerColumns;
+        if (!addFirstPagePinnedItem(firstPage)) {
+            Log.e(TAG, "Failed to add to item at (0, 0) to CellLayout");
+            mFirstPagePinnedItem = null;
+        }
+    }
+
+    private int getQuickspaceCellVSpan(CellLayout page) {
         int style = Integer.parseInt(LauncherPrefs.QUICKSPACE_UI_STYLE.get(getContext()));
         boolean minimalMode = LauncherPrefs.QUICKSPACE_VOLTAGE_MINIMAL.get(getContext());
-        
         int cellVSpan = 1;
         if (style == 2 || style == 3) {
             cellVSpan = minimalMode ? 2 : 3;
         } else if (style == 4 || style == 6 || style == 7) {
             cellVSpan = 2;
         }
-        cellVSpan = Math.max(1, Math.min(cellVSpan, firstPage.getCountY()));
-        CellLayoutLayoutParams lp = new CellLayoutLayoutParams(0, 0, cellHSpan, cellVSpan);
+        return Math.max(1, Math.min(cellVSpan, page.getCountY()));
+    }
 
-        lp.canReorder = false;
-        if (!firstPage.addViewToCellLayout(
-                mFirstPagePinnedItem, 0, R.id.reserved_container_workspace, lp, true)) {
-            Log.e(TAG, "Failed to add to item at (0, 0) to CellLayout");
-            mFirstPagePinnedItem = null;
+    /**
+     * Quickspace lives in the shortcut container. A rebuilt first page still has the
+     * old container as the view's parent, so detach that before adding it again.
+     */
+    private void detachFirstPagePinnedItem(CellLayout firstPage) {
+        if (mFirstPagePinnedItem.getParent() == null) {
+            return;
         }
+        firstPage.removeView(mFirstPagePinnedItem);
+        ViewParent parent = mFirstPagePinnedItem.getParent();
+        if (parent instanceof ViewGroup) {
+            ((ViewGroup) parent).removeView(mFirstPagePinnedItem);
+        }
+    }
+
+    private boolean addFirstPagePinnedItem(CellLayout firstPage) {
+        detachFirstPagePinnedItem(firstPage);
+        int cellHSpan = mLauncher.getDeviceProfile().inv.numSearchContainerColumns;
+        CellLayoutLayoutParams lp = new CellLayoutLayoutParams(
+                0, 0, cellHSpan, getQuickspaceCellVSpan(firstPage));
+        lp.canReorder = false;
+        return firstPage.addViewToCellLayout(
+                mFirstPagePinnedItem, 0, R.id.reserved_container_workspace, lp, true);
+    }
+
+    private void updateQuickspaceLayout(CellLayout firstPage) {
+        ViewGroup.LayoutParams rawLp = mFirstPagePinnedItem.getLayoutParams();
+        if (!(rawLp instanceof CellLayoutLayoutParams)) {
+            return;
+        }
+        int cellHSpan = mLauncher.getDeviceProfile().inv.numSearchContainerColumns;
+        int cellVSpan = getQuickspaceCellVSpan(firstPage);
+        CellLayoutLayoutParams lp = (CellLayoutLayoutParams) rawLp;
+        if (lp.getCellX() == 0 && lp.getCellY() == 0
+                && lp.cellHSpan == cellHSpan && lp.cellVSpan == cellVSpan
+                && !lp.canReorder) {
+            return;
+        }
+        firstPage.markCellsAsUnoccupiedForView(mFirstPagePinnedItem);
+        lp.setCellX(0);
+        lp.setCellY(0);
+        lp.cellHSpan = cellHSpan;
+        lp.cellVSpan = cellVSpan;
+        lp.canReorder = false;
+        mFirstPagePinnedItem.setLayoutParams(lp);
+        firstPage.markCellsAsOccupiedForView(mFirstPagePinnedItem);
     }
 
     public void removeAllWorkspaceScreens() {
@@ -1615,21 +1660,21 @@ public class Workspace<T extends View & PageIndicator> extends PagedView<T>
     }
 
     private void refreshFirstPageWidget() {
-        if (mFirstPagePinnedItem != null && getPageCount() > 0) {
-            CellLayout firstPage = (CellLayout) getPageAt(0);
-            if (firstPage != null && mFirstPagePinnedItem.getParent() == firstPage) {
-                firstPage.removeView(mFirstPagePinnedItem);
-            }
-
-            int cellHSpan = mLauncher.getDeviceProfile().inv.numSearchContainerColumns;
-            int style = Integer.parseInt(LauncherPrefs.QUICKSPACE_UI_STYLE.get(getContext()));
-            int cellVSpan = (style == 2 || style == 3 || style == 4 || style == 6 || style == 7)
-                    ? 2 : 1;
-            cellVSpan = Math.max(1, Math.min(cellVSpan, firstPage.getCountY()));
-            CellLayoutLayoutParams lp = new CellLayoutLayoutParams(0, 0, cellHSpan, cellVSpan);
-            lp.canReorder = false;
-            firstPage.addViewToCellLayout(
-                    mFirstPagePinnedItem, 0, R.id.reserved_container_workspace, lp, true);
+        if (mFirstPagePinnedItem == null) {
+            return;
+        }
+        CellLayout firstPage = mWorkspaceScreens.get(FIRST_SCREEN_ID);
+        if (firstPage == null) {
+            return;
+        }
+        // setupViews() already placed this view. Adding it again throws
+        // "child already has a parent" and crash-loops the launcher.
+        if (mFirstPagePinnedItem.getParent() == firstPage.getShortcutsAndWidgets()) {
+            updateQuickspaceLayout(firstPage);
+            return;
+        }
+        if (!addFirstPagePinnedItem(firstPage)) {
+            Log.e(TAG, "Failed to add to item at (0, 0) to CellLayout");
         }
     }
 
