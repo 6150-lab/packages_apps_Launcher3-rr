@@ -725,9 +725,13 @@ object InputConsumerUtils {
             (previousGestureState.isRunningAnimationToLauncher ||
                 deviceState.isPredictiveBackToHomeInProgress)
         val isInLiveTileMode: Boolean = containerInterface.isInLiveTileMode()
+        // RR: the Google feed is a LauncherClient window that holds focus over Launcher. Without
+        // focus the swipe only sent the home intent, so swipe up and hold never reached recents.
+        val isOverFeed = !hasWindowFocus && containerInterface.isLauncherOverlayShowing()
 
         reasonString.append(
             if (hasWindowFocus) "%sactivity has window focus"
+            else if (isOverFeed) "%sGoogle feed is showing"
             else if (isPreviousGestureAnimatingToLauncher)
                 (if (previousGestureState.isRunningAnimationToLauncher)
                     "%sprevious gesture is still animating to launcher"
@@ -736,7 +740,12 @@ object InputConsumerUtils {
             else "%sall overview focus conditions failed",
             SUBSTRING_PREFIX,
         )
-        return if (hasWindowFocus || isPreviousGestureAnimatingToLauncher || isInLiveTileMode) {
+        return if (
+            hasWindowFocus || isPreviousGestureAnimatingToLauncher || isInLiveTileMode || isOverFeed
+        ) {
+            if (isOverFeed) {
+                containerInterface.closeOverlay()
+            }
             reasonString.append(
                 "%soverview should have focus, using LauncherInputConsumer",
                 SUBSTRING_PREFIX,
