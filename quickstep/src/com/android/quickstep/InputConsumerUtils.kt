@@ -545,12 +545,8 @@ object InputConsumerUtils {
             (previousGestureState.isRunningAnimationToLauncher ||
                 deviceState.isPredictiveBackToHomeInProgress)
 
-        // If a task fragment within Launcher is resumed (-1 page)
-        val launcherChildActivityResumed =
-            runningTask?.isHomeTask == true &&
-                !previousGestureState.isRecentsAnimationRunning &&
-                overviewComponentObserver.isHomeAndOverviewSame &&
-                containerInterface.isLauncherOverlayShowing
+        // RR: the -1 page is a LauncherClient window, not a task fragment inside Launcher, so a
+        // swipe over it takes the launcher consumer like any other gesture on home.
 
         // with shell-transitions, home is resumed during recents animation, so
         // explicitly check against recents animation too.
@@ -564,8 +560,6 @@ object InputConsumerUtils {
                 desktopVisibilityController.isInDesktopModeAndNotInOverview(
                     gestureState.displayId
                 ) && !desktopState.shouldShowHomeBehindDesktop -> true
-                // Check launcherChildActivityResumed so that we don't override it below
-                launcherChildActivityResumed -> false
                 else -> runningTask?.isHomeTask == true
             }
 
@@ -621,7 +615,6 @@ object InputConsumerUtils {
             )
         } else if (
             deviceState.isGestureBlockedTask(runningTask) ||
-                launcherChildActivityResumed ||
                 ignoreNonTrackpadMouseEvent(context, gestureState, event)
         ) {
             getDefaultInputConsumer(
@@ -630,9 +623,7 @@ object InputConsumerUtils {
                 taskAnimationManager,
                 taskbarManager,
                 reasonString.append(
-                    if (launcherChildActivityResumed)
-                        "%sis launcher child-task, trying to use default input consumer"
-                    else if (deviceState.isGestureBlockedTask(runningTask))
+                    if (deviceState.isGestureBlockedTask(runningTask))
                         "%sis gesture-blocked task, trying to use default input consumer"
                     else "%sis non trackpad mouse event, trying to use default input consumer",
                     SUBSTRING_PREFIX,
