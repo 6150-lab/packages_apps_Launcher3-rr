@@ -59,6 +59,10 @@ public class LauncherIconProvider extends IconProvider {
         super(context);
         mThemeManager = themeManager;
         mThemedIconMap = FeatureFlags.USE_LOCAL_ICON_OVERRIDES.get() ? null : DISABLED_MAP;
+        com.android.launcher3.icons.mono.NeonIcons.enabled = com.android.launcher3.LauncherPrefs
+                .get(context).get(com.android.launcher3.LauncherPrefs.NEON_ICONS);
+        com.android.launcher3.icons.mono.NeonIcons.ringColor =
+                context.getColor(android.R.color.system_accent1_300);
     }
 
     @Override

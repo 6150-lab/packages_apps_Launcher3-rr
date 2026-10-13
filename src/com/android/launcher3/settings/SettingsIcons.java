@@ -277,6 +277,15 @@ public class SettingsIcons extends CollapsingToolbarBaseActivity
                 case "pref_themed_icons_overlay":
                     com.android.launcher3.Utilities.restart();
                     break;
+                case "pref_neon_icons":
+                    // Neon rings are drawn on themed icons, so turn those on with it.
+                    if (prefs.getBoolean(key, false)) {
+                        com.android.launcher3.dagger.LauncherComponentProvider.get(getContext())
+                                .getThemePreference().setValue(com.android.launcher3.graphics
+                                        .theme.ThemePreference.MONO_THEME_VALUE);
+                    }
+                    com.android.launcher3.Utilities.restart();
+                    break;
             }
         }
 

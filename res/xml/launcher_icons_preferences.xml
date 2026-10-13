@@ -15,6 +15,13 @@
         android:defaultValue="true"
         android:persistent="true" />
 
+    <SwitchPreference
+        android:key="pref_neon_icons"
+        android:title="@string/neon_icons_title"
+        android:summary="@string/neon_icons_summary"
+        android:defaultValue="false"
+        android:persistent="true" />
+
     <com.android.launcher3.settings.NotificationDotsPreference
         android:key="pref_icon_badging"
         android:title="@string/notification_dots_title"

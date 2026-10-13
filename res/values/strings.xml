@@ -708,4 +708,7 @@
     <string name="folder_creator_add" translatable="false">Add</string>
     <string name="folder_creator_cancel" translatable="false">Cancel</string>
 
+    <!-- RR neon icons -->
+    <string name="neon_icons_title">Neon icons</string>
+    <string name="neon_icons_summary">Each app\'s glyph in your accent, inside a glowing ring. Turns on themed icons.</string>
 </resources>
