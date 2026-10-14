@@ -15,12 +15,51 @@
         android:defaultValue="true"
         android:persistent="true" />
 
-    <SwitchPreference
-        android:key="pref_neon_icons"
-        android:title="@string/neon_icons_title"
-        android:summary="@string/neon_icons_summary"
-        android:defaultValue="false"
-        android:persistent="true" />
+    <ListPreference
+        android:key="pref_icon_style_rr"
+        android:title="@string/icon_style_rr_title"
+        android:entries="@array/icon_style_rr_entries"
+        android:entryValues="@array/icon_style_rr_values"
+        android:summary="%s"
+        android:persistent="false" />
+
+    <PreferenceCategory
+        android:key="pref_neon_category"
+        android:title="@string/neon_icons_title">
+
+        <ListPreference
+            android:key="pref_neon_ring_color"
+            android:title="@string/neon_ring_color_title"
+            android:entries="@array/neon_ring_color_entries"
+            android:entryValues="@array/neon_ring_color_values"
+            android:summary="%s"
+            android:defaultValue="accent"
+            android:persistent="true" />
+
+        <com.android.launcher3.settings.preferences.CustomSeekBarPreference
+            android:key="pref_neon_glow"
+            android:title="@string/neon_glow_title"
+            android:persistent="true"
+            android:max="100"
+            settings:min="0"
+            settings:units="%"
+            android:defaultValue="60" />
+
+        <ListPreference
+            android:key="pref_neon_ring"
+            android:title="@string/neon_ring_title"
+            android:entries="@array/neon_ring_entries"
+            android:entryValues="@array/neon_ring_values"
+            android:summary="%s"
+            android:defaultValue="1"
+            android:persistent="true" />
+
+        <SwitchPreference
+            android:key="pref_neon_folders"
+            android:title="@string/neon_folders_title"
+            android:defaultValue="true"
+            android:persistent="true" />
+    </PreferenceCategory>
 
     <com.android.launcher3.settings.NotificationDotsPreference
         android:key="pref_icon_badging"

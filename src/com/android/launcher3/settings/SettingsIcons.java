@@ -277,13 +277,10 @@ public class SettingsIcons extends CollapsingToolbarBaseActivity
                 case "pref_themed_icons_overlay":
                     com.android.launcher3.Utilities.restart();
                     break;
-                case "pref_neon_icons":
-                    // Neon rings are drawn on themed icons, so turn those on with it.
-                    if (prefs.getBoolean(key, false)) {
-                        com.android.launcher3.dagger.LauncherComponentProvider.get(getContext())
-                                .getThemePreference().setValue(com.android.launcher3.graphics
-                                        .theme.ThemePreference.MONO_THEME_VALUE);
-                    }
+                case "pref_neon_ring_color":
+                case "pref_neon_glow":
+                case "pref_neon_ring":
+                case "pref_neon_folders":
                     com.android.launcher3.Utilities.restart();
                     break;
             }
@@ -297,11 +294,41 @@ public class SettingsIcons extends CollapsingToolbarBaseActivity
             switch (key) {
                 case NOTIFICATION_DOTS_PREFERENCE_KEY:
                     return BuildConfig.NOTIFICATION_DOTS_ENABLED;
+                case "pref_icon_style_rr":
+                    setupIconStyle((androidx.preference.ListPreference) preference);
+                    return true;
+                case "pref_neon_category":
+                    preference.setVisible(LauncherPrefs.get(getContext())
+                            .get(LauncherPrefs.NEON_ICONS));
+                    return true;
                 case IconDatabase.KEY_ICON_PACK:
                     setupIconPackPreference(preference);
                     return true;
             }
             return true;
+        }
+
+        /**
+         * RR: Default, Themed or Neon. Themed and Neon both use the launcher's mono theme; Neon
+         * draws its icons as rings.
+         */
+        private void setupIconStyle(androidx.preference.ListPreference preference) {
+            com.android.launcher3.graphics.theme.ThemePreference theme =
+                    com.android.launcher3.dagger.LauncherComponentProvider.get(getContext())
+                            .getThemePreference();
+            boolean mono = com.android.launcher3.graphics.theme.ThemePreference.MONO_THEME_VALUE
+                    .equals(theme.getValue());
+            boolean neon = LauncherPrefs.get(getContext()).get(LauncherPrefs.NEON_ICONS);
+            preference.setValue(neon && mono ? "neon" : mono ? "themed" : "default");
+            preference.setOnPreferenceChangeListener((p, value) -> {
+                String style = (String) value;
+                LauncherPrefs.get(getContext()).putSync(
+                        kotlin.TuplesKt.to(LauncherPrefs.NEON_ICONS, "neon".equals(style)));
+                theme.setValue("default".equals(style) ? null
+                        : com.android.launcher3.graphics.theme.ThemePreference.MONO_THEME_VALUE);
+                com.android.launcher3.Utilities.restart();
+                return true;
+            });
         }
 
         @Override

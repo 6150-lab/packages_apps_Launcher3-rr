@@ -59,10 +59,28 @@ public class LauncherIconProvider extends IconProvider {
         super(context);
         mThemeManager = themeManager;
         mThemedIconMap = FeatureFlags.USE_LOCAL_ICON_OVERRIDES.get() ? null : DISABLED_MAP;
-        com.android.launcher3.icons.mono.NeonIcons.enabled = com.android.launcher3.LauncherPrefs
-                .get(context).get(com.android.launcher3.LauncherPrefs.NEON_ICONS);
+        loadNeonIcons(context);
+    }
+
+    /** RR: neon icon options, read by the icon drawables as they draw. */
+    private static void loadNeonIcons(Context context) {
+        com.android.launcher3.LauncherPrefs prefs = com.android.launcher3.LauncherPrefs.get(context);
+        com.android.launcher3.icons.mono.NeonIcons.enabled =
+                prefs.get(com.android.launcher3.LauncherPrefs.NEON_ICONS);
         com.android.launcher3.icons.mono.NeonIcons.ringColor =
                 context.getColor(android.R.color.system_accent1_300);
+        com.android.launcher3.icons.mono.NeonIcons.perAppColor =
+                "app".equals(prefs.get(com.android.launcher3.LauncherPrefs.NEON_RING_COLOR));
+        com.android.launcher3.icons.mono.NeonIcons.glow =
+                prefs.get(com.android.launcher3.LauncherPrefs.NEON_GLOW);
+        try {
+            com.android.launcher3.icons.mono.NeonIcons.thickness = Integer.parseInt(
+                    prefs.get(com.android.launcher3.LauncherPrefs.NEON_RING));
+        } catch (NumberFormatException e) {
+            com.android.launcher3.icons.mono.NeonIcons.thickness = 1;
+        }
+        com.android.launcher3.icons.mono.NeonIcons.folders =
+                prefs.get(com.android.launcher3.LauncherPrefs.NEON_FOLDERS);
     }
 
     @Override
@@ -78,7 +96,9 @@ public class LauncherIconProvider extends IconProvider {
                 mThemeManager.getIconState().isCircle())
             .withAdditionalValues(String.valueOf(
                     com.android.launcher3.LauncherPrefs.get(mContext)
-                            .get(com.android.launcher3.LauncherPrefs.THEMED_ICONS_OVERLAY)));
+                            .get(com.android.launcher3.LauncherPrefs.THEMED_ICONS_OVERLAY))
+                    // RR: neon icons cache letters for apps without a monochrome icon.
+                    + (com.android.launcher3.icons.mono.NeonIcons.enabled ? ",neon" : ""));
     }
 
     private Map<String, ThemeData> getThemedIconMap() {

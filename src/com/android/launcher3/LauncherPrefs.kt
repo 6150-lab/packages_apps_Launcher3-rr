@@ -280,6 +280,12 @@ constructor(@ApplicationContext private val encryptedContext: Context) {
         @JvmField val THEMED_ICONS_OVERLAY = backedUpItem("pref_themed_icons_overlay", true)
         /** RR: themed icons drawn as neon rings in the accent. */
         @JvmField val NEON_ICONS = backedUpItem("pref_neon_icons", false)
+        /** RR: "accent", or "app" for each app's own color. */
+        @JvmField val NEON_RING_COLOR = backedUpItem("pref_neon_ring_color", "accent")
+        @JvmField val NEON_GLOW = backedUpItem("pref_neon_glow", 60)
+        /** RR: "0" thin, "1" medium, "2" bold. */
+        @JvmField val NEON_RING = backedUpItem("pref_neon_ring", "1")
+        @JvmField val NEON_FOLDERS = backedUpItem("pref_neon_folders", true)
         @JvmField val APP_DRAWER_OPACITY = backedUpItem("pref_app_drawer_opacity", 60)
         @JvmField val DARK_STATUS_BAR = backedUpItem("pref_dark_status_bar", false)
         @JvmField val ALL_APPS_DARK_TEXT = backedUpItem("pref_all_apps_dark_text", false)

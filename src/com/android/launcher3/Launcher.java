@@ -507,6 +507,9 @@ public class Launcher extends StatefulActivity<LauncherState>
         getSystemUiController().updateUiState(SystemUiController.UI_STATE_BASE_WINDOW,
                 Themes.getAttrBoolean(this, R.attr.isWorkspaceDarkText)
                 || LauncherPrefs.DARK_STATUS_BAR.get(this));
+        // RR: neon icon discs turn white on a light wallpaper.
+        com.android.launcher3.icons.mono.NeonIcons.light =
+                Themes.getAttrBoolean(this, R.attr.isWorkspaceDarkText);
 
         mOverlayManager = getDefaultOverlay();
 

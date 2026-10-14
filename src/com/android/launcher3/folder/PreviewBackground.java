@@ -247,6 +247,14 @@ public class PreviewBackground extends DelegatedCellDrawing {
     }
 
     public void drawBackground(Canvas canvas) {
+        if (com.android.launcher3.icons.mono.NeonIcons.enabled
+                && com.android.launcher3.icons.mono.NeonIcons.folders) {
+            // RR: a neon ring around the folder, like the apps around it.
+            float radius = getScaledRadius();
+            com.android.launcher3.icons.mono.NeonIcons.drawFolderRing(canvas,
+                    getOffsetX() + radius, getOffsetY() + radius, radius, 255);
+            return;
+        }
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setColor(getBgColor());
 
