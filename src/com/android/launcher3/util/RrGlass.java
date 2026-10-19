@@ -14,8 +14,10 @@ import android.provider.Settings;
 
 /** Liquid Glass (Remixer): which Launcher surfaces may blur. */
 public final class RrGlass {
-    /** Folders and the long-press popup. */
+    /** The dock and folders. */
     public static final String HOME = "rr_glass_home";
+    /** Long-press menus. */
+    public static final String MENUS = "rr_glass_menus";
     /** Overview and the app drawer. */
     public static final String RECENTS = "rr_glass_recents";
 
@@ -25,7 +27,7 @@ public final class RrGlass {
         return Settings.System.getInt(context.getContentResolver(), key, 1) != 0;
     }
 
-    /** Runs {@code callback} on the main thread when either switch changes. */
+    /** Runs {@code callback} on the main thread when any of the switches changes. */
     public static SafeCloseable observe(Context context, Runnable callback) {
         final ContentResolver resolver = context.getContentResolver();
         final ContentObserver observer = new ContentObserver(new Handler(Looper.getMainLooper())) {
@@ -36,6 +38,7 @@ public final class RrGlass {
         };
         resolver.registerContentObserver(Settings.System.getUriFor(HOME), false, observer);
         resolver.registerContentObserver(Settings.System.getUriFor(RECENTS), false, observer);
+        resolver.registerContentObserver(Settings.System.getUriFor(MENUS), false, observer);
         return () -> resolver.unregisterContentObserver(observer);
     }
 }

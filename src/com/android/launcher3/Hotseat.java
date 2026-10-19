@@ -25,7 +25,9 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Context;
+import android.graphics.Canvas;
 import android.graphics.Rect;
+import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.MotionEvent;
@@ -41,9 +43,11 @@ import com.android.launcher3.ShortcutAndWidgetContainer.TranslationProvider;
 import com.android.launcher3.celllayout.CellLayoutLayoutParams;
 import com.android.launcher3.dagger.LauncherComponentProvider;
 import com.android.launcher3.dragndrop.SystemDragItemInfo;
+import com.android.launcher3.folder.FolderIcon;
 import com.android.launcher3.homescreenfiles.HomeScreenFilesUtilsKt;
 import com.android.launcher3.model.data.ItemInfo;
 import com.android.launcher3.model.data.LauncherAppWidgetInfo;
+import com.android.launcher3.util.BlurBackgroundHelper;
 import com.android.launcher3.util.HorizontalInsettableView;
 import com.android.launcher3.util.LauncherBindableItemsContainer.ItemOperator;
 import com.android.launcher3.util.MultiPropertyFactory;
@@ -99,6 +103,10 @@ public class Hotseat extends CellLayout implements Insettable {
 
     private final @Nullable View mQsb;
 
+    // Liquid Glass dock.
+    private final RectF mDockRect = new RectF();
+    private final Rect mDockIconBounds = new Rect();
+
     public Hotseat(Context context) {
         this(context, null);
     }
@@ -129,6 +137,69 @@ public class Hotseat extends CellLayout implements Insettable {
         mIconsAlphaChannels.setUpdateVisibility(true);
         mIconsTranslationXFactory = new MultiPropertyFactory<>(getShortcutsAndWidgets(),
                 VIEW_TRANSLATE_X, ICONS_TRANSLATION_X_CHANNELS_COUNT, Float::sum);
+        getShortcutsAndWidgets().setOnAlphaChanged(this::syncDockAlpha);
+    }
+
+    @Override
+    protected void dispatchDraw(Canvas canvas) {
+        drawDockGlass(canvas);
+        super.dispatchDraw(canvas);
+    }
+
+    @Override
+    public void setAlpha(float alpha) {
+        super.setAlpha(alpha);
+        syncDockAlpha();
+    }
+
+    private BlurBackgroundHelper dockBlur() {
+        return mActivity.getActivityComponent().getBlurBackgroundHelper();
+    }
+
+    // The blur region only takes its own alpha, so follow the dock's fades by hand.
+    private void syncDockAlpha() {
+        if (mActivity != null && getShortcutsAndWidgets() != null) {
+            dockBlur().setDockAlpha(getAlpha() * getShortcutsAndWidgets().getAlpha());
+        }
+    }
+
+    /** Liquid Glass: a glass panel behind the dock icons. */
+    private void drawDockGlass(Canvas canvas) {
+        final BlurBackgroundHelper blur = dockBlur();
+        final ShortcutAndWidgetContainer icons = getShortcutsAndWidgets();
+        if (mHasVerticalHotseat || !blur.isDockBlurEnabled()) {
+            blur.hideDockBlur();
+            return;
+        }
+        mDockRect.setEmpty();
+        float iconSize = 0;
+        for (int i = 0; i < icons.getChildCount(); i++) {
+            final View child = icons.getChildAt(i);
+            if (child.getVisibility() != VISIBLE) {
+                continue;
+            }
+            if (child instanceof BubbleTextView icon) {
+                icon.getIconBounds(mDockIconBounds);
+            } else if (child instanceof FolderIcon folder) {
+                folder.getPreviewBounds(mDockIconBounds);
+            } else {
+                continue;
+            }
+            iconSize = Math.max(iconSize, mDockIconBounds.height());
+            final float left = icons.getLeft() + icons.getTranslationX() + child.getLeft()
+                    + child.getTranslationX() + mDockIconBounds.left;
+            final float top = icons.getTop() + icons.getTranslationY() + child.getTop()
+                    + child.getTranslationY() + mDockIconBounds.top;
+            mDockRect.union(left, top, left + mDockIconBounds.width(),
+                    top + mDockIconBounds.height());
+        }
+        if (mDockRect.isEmpty()) {
+            blur.hideDockBlur();
+            return;
+        }
+        mDockRect.inset(-iconSize * 0.3f, -iconSize * 0.3f);
+        blur.drawDockBlur(canvas, mDockRect, mDockRect.height() * 0.38f,
+                getAlpha() * icons.getAlpha());
     }
 
     /** Provides translation X for hotseat icons for the channel. */

@@ -46,6 +46,9 @@ import com.android.launcher3.widget.LauncherAppWidgetHostView;
 import com.android.launcher3.widget.NavigableAppWidgetHostView;
 
 public class ShortcutAndWidgetContainer extends ViewGroup implements FolderIcon.FolderIconParent {
+
+    // Liquid Glass dock: told when this container's alpha changes.
+    private @Nullable Runnable mOnAlphaChanged;
     static final String TAG = "ShortcutAndWidgetContainer";
 
     // These are temporary variables to prevent having to allocate a new object just to
@@ -69,6 +72,19 @@ public class ShortcutAndWidgetContainer extends ViewGroup implements FolderIcon.
 
     @Nullable
     private TranslationProvider mTranslationProvider = null;
+
+    /** Runs {@code onAlphaChanged} whenever this container's alpha changes. */
+    public void setOnAlphaChanged(@Nullable Runnable onAlphaChanged) {
+        mOnAlphaChanged = onAlphaChanged;
+    }
+
+    @Override
+    public void setAlpha(float alpha) {
+        super.setAlpha(alpha);
+        if (mOnAlphaChanged != null) {
+            mOnAlphaChanged.run();
+        }
+    }
 
     public ShortcutAndWidgetContainer(Context context, @ContainerType int containerType) {
         super(context);

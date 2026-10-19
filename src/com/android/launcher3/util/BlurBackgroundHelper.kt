@@ -17,6 +17,7 @@
 package com.android.launcher3.util
 
 import android.graphics.Canvas
+import android.graphics.RectF
 import android.view.View
 import com.android.launcher3.dagger.ActivityContextSingleton
 import com.android.launcher3.folder.Folder
@@ -39,4 +40,25 @@ constructor() {
     open fun folderCloseComplete() {}
 
     open fun isBlurEnabled() = false
+
+    /** Liquid Glass long-press menus: whether the popup is drawn as glass. */
+    open fun isPopupBlurEnabled() = false
+
+    /** Captures the home screen to blur under a popup that is about to open. */
+    open fun prepareToOpenPopup() {}
+
+    /** Draws glass under the popup's [pieces] (rects in [view] coordinates, 8-value radii). */
+    open fun drawPopupBlur(canvas: Canvas, view: View, pieces: List<RectF>, radii: List<FloatArray>) {}
+
+    open fun popupCloseComplete() {}
+
+    /** Liquid Glass dock: whether a glass panel is drawn behind the hotseat icons. */
+    open fun isDockBlurEnabled() = false
+
+    /** Draws the dock's glass at [rect] in the hotseat's coordinates. */
+    open fun drawDockBlur(canvas: Canvas, rect: RectF, radius: Float, alpha: Float) {}
+
+    open fun setDockAlpha(alpha: Float) {}
+
+    open fun hideDockBlur() {}
 }

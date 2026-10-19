@@ -27,8 +27,10 @@ import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Rect;
+import android.graphics.RectF;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
@@ -47,6 +49,7 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.Px;
 import androidx.annotation.VisibleForTesting;
+import androidx.core.graphics.ColorUtils;
 
 import com.android.launcher3.AbstractFloatingView;
 import com.android.launcher3.InsettableFrameLayout;
@@ -54,10 +57,13 @@ import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.dragndrop.DragLayer;
 import com.android.launcher3.shortcuts.DeepShortcutView;
+import com.android.launcher3.util.BlurBackgroundHelper;
 import com.android.launcher3.util.RunnableList;
 import com.android.launcher3.util.Themes;
 import com.android.launcher3.views.ActivityContext;
 import com.android.launcher3.views.BaseDragLayer;
+
+import java.util.ArrayList;
 
 /**
  * A container for shortcuts to deep links and notifications associated with an app.
@@ -121,6 +127,12 @@ public abstract class ArrowPopup<T extends ActivityContext> extends AbstractFloa
     private final GradientDrawable mRoundedBottom;
 
     private RunnableList mOnCloseCallbacks = new RunnableList();
+
+    // Liquid Glass: translucent panels with the blurred home screen and wallpaper under them.
+    private static final int GLASS_ALPHA = 0xB8;
+    private boolean mGlass;
+    private final ArrayList<RectF> mGlassPieces = new ArrayList<>();
+    private final ArrayList<float[]> mGlassRadii = new ArrayList<>();
 
     // The rect string of the view that the arrow is attached to, in screen reference frame.
     protected int mArrowColor;
@@ -229,6 +241,14 @@ public abstract class ArrowPopup<T extends ActivityContext> extends AbstractFloa
         if (backgroundColor == Color.TRANSPARENT) {
             // Lazily get the colors so they match the current wallpaper colors.
             colors = mColors;
+            if (mGlass) {
+                colors = new int[mColors.length];
+                for (int i = 0; i < colors.length; i++) {
+                    colors[i] = ColorUtils.setAlphaComponent(mColors[i], GLASS_ALPHA);
+                }
+            }
+        } else if (mGlass) {
+            backgroundColor = ColorUtils.setAlphaComponent(backgroundColor, GLASS_ALPHA);
         }
 
         int count = viewGroup.getChildCount();
@@ -320,6 +340,11 @@ public abstract class ArrowPopup<T extends ActivityContext> extends AbstractFloa
      * Shows the popup at the desired location.
      */
     public void show() {
+        final BlurBackgroundHelper blur = blurHelper();
+        mGlass = blur.isPopupBlurEnabled();
+        if (mGlass) {
+            blur.prepareToOpenPopup();
+        }
         setupForDisplay();
         assignMarginsAndBackgrounds(this);
         if (shouldAddArrow()) {
@@ -742,7 +767,51 @@ public abstract class ArrowPopup<T extends ActivityContext> extends AbstractFloa
         mDeferContainerRemoval = false;
         getPopupContainer().removeView(this);
         getPopupContainer().removeView(mArrow);
+        if (mGlass) {
+            blurHelper().popupCloseComplete();
+            mGlass = false;
+        }
         mOnCloseCallbacks.executeAllAndClear();
+    }
+
+    @Override
+    protected void dispatchDraw(Canvas canvas) {
+        if (mGlass) {
+            mGlassPieces.clear();
+            mGlassRadii.clear();
+            collectGlassPieces(this, 0, 0);
+            blurHelper().drawPopupBlur(canvas, this, mGlassPieces, mGlassRadii);
+        }
+        super.dispatchDraw(canvas);
+    }
+
+    /** Finds the visible rounded panels, in this view's coordinates. */
+    private void collectGlassPieces(ViewGroup group, float dx, float dy) {
+        for (int i = 0; i < group.getChildCount(); i++) {
+            final View child = group.getChildAt(i);
+            if (child.getVisibility() != VISIBLE) {
+                continue;
+            }
+            final float left = dx + child.getLeft() + child.getTranslationX();
+            final float top = dy + child.getTop() + child.getTranslationY();
+            if (child.getBackground() instanceof GradientDrawable bg && bg.getColor() != null
+                    && Color.alpha(bg.getColor().getDefaultColor()) > 0) {
+                mGlassPieces.add(new RectF(left, top, left + child.getWidth(),
+                        top + child.getHeight()));
+                float[] radii = bg.getCornerRadii();
+                if (radii == null) {
+                    final float r = bg.getCornerRadius();
+                    radii = new float[] {r, r, r, r, r, r, r, r};
+                }
+                mGlassRadii.add(radii);
+            } else if (child instanceof ViewGroup childGroup && isShortcutContainer(child)) {
+                collectGlassPieces(childGroup, left, top);
+            }
+        }
+    }
+
+    private BlurBackgroundHelper blurHelper() {
+        return mActivityContext.getActivityComponent().getBlurBackgroundHelper();
     }
 
     /**
