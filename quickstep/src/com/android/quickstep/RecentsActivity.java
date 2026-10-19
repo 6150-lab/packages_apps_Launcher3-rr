@@ -87,6 +87,7 @@ import com.android.launcher3.util.ActivityOptionsWrapper;
 import com.android.launcher3.util.ContextTracker;
 import com.android.launcher3.display.DisplayController;
 import com.android.launcher3.util.ListenableRef;
+import com.android.launcher3.util.RrGlass;
 import com.android.launcher3.util.RunnableList;
 import com.android.launcher3.util.SystemUiController;
 import com.android.launcher3.util.Themes;
@@ -211,12 +212,13 @@ public final class RecentsActivity extends StatefulActivity<RecentsState> implem
             if (v != blurEnabled) recreate();
             return null;
         }));
+        closeOnDestroy(RrGlass.observe(this, this::recreate));
         mDepthController = new DepthController<>(this, blurState);
-        getTheme().applyStyle(blurEnabled ? R.style.OverviewBlurStyle
-                : R.style.OverviewBlurFallbackStyle, true);
+        getTheme().applyStyle(blurEnabled && RrGlass.isOn(this, RrGlass.RECENTS)
+                ? R.style.OverviewBlurStyle : R.style.OverviewBlurFallbackStyle, true);
         if (blurOnMoreSurfaces()) {
-            getTheme().applyStyle(blurEnabled ? R.style.FolderBlurStyle
-                    : R.style.FolderBlurFallbackStyle, true);
+            getTheme().applyStyle(blurEnabled && RrGlass.isOn(this, RrGlass.HOME)
+                    ? R.style.FolderBlurStyle : R.style.FolderBlurFallbackStyle, true);
         }
     }
 

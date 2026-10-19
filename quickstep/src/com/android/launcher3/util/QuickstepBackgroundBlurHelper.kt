@@ -152,6 +152,7 @@ constructor(
     }
 
     override fun isBlurEnabled(): Boolean {
-        return blurOnMoreSurfaces() && blurState.value
+        return blurOnMoreSurfaces() && blurState.value &&
+            RrGlass.isOn(activityContext.asContext(), RrGlass.HOME)
     }
 }

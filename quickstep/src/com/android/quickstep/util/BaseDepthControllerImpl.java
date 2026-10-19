@@ -42,6 +42,7 @@ import com.android.launcher3.statemanager.StatefulContainer;
 import com.android.launcher3.util.ListenableRef;
 import com.android.launcher3.util.MultiPropertyFactory;
 import com.android.launcher3.util.MultiPropertyFactory.MultiProperty;
+import com.android.launcher3.util.RrGlass;
 import com.android.systemui.shared.system.BlurUtils;
 
 /**
@@ -209,7 +210,8 @@ public class BaseDepthControllerImpl<
 
     protected boolean shouldBlur() {
         boolean hasOpaqueBg = mContainer.getScrimView().isFullyOpaque();
-        return mCrossWindowBlursEnabled && !hasOpaqueBg && !mPauseBlurs;
+        return mCrossWindowBlursEnabled && !hasOpaqueBg && !mPauseBlurs
+                && RrGlass.isOn(mContainer, RrGlass.RECENTS);
     }
 
     protected void onInvalidSurface() { }
