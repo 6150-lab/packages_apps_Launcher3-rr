@@ -198,7 +198,6 @@ import com.android.launcher3.util.OverviewCommandHelperProtoLogProxy;
 import com.android.launcher3.util.PackageManagerHelper;
 import com.android.launcher3.util.PendingRequestArgs;
 import com.android.launcher3.util.PendingSplitSelectInfo;
-import com.android.launcher3.util.RrGlass;
 import com.android.launcher3.util.RunnableList;
 import com.android.launcher3.util.SplitConfigurationOptions;
 import com.android.launcher3.util.SplitConfigurationOptions.SplitPositionOption;
@@ -342,14 +341,12 @@ public class QuickstepLauncher extends Launcher implements RecentsViewContainer,
             if (v != blurEnabled) mWallpaperThemeManager.recreateToUpdateTheme();
             return null;
         }));
-        closeOnDestroy(RrGlass.observe(this,
-                () -> mWallpaperThemeManager.recreateToUpdateTheme()));
         mDepthController = new LauncherDepthController(this, blurState);
-        getTheme().applyStyle(blurEnabled && RrGlass.isOn(this, RrGlass.RECENTS)
-                ? R.style.OverviewBlurStyle : R.style.OverviewBlurFallbackStyle, true);
+        getTheme().applyStyle(blurEnabled ? R.style.OverviewBlurStyle
+                : R.style.OverviewBlurFallbackStyle, true);
         if (blurOnMoreSurfaces()) {
-            getTheme().applyStyle(blurEnabled && RrGlass.isOn(this, RrGlass.HOME)
-                    ? R.style.FolderBlurStyle : R.style.FolderBlurFallbackStyle, true);
+            getTheme().applyStyle(blurEnabled ? R.style.FolderBlurStyle
+                    : R.style.FolderBlurFallbackStyle, true);
         }
     }
 
