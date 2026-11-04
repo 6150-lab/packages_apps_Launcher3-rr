@@ -62,4 +62,13 @@
     <string name="cloudy_shape_title">"Nuageux"</string>
     <string name="heart_shape_title">"Cœur"</string>
     <string name="scroll_shape_title">"Faire défiler"</string>
+    <string name="icon_size_title">Taille de l\'icône</string>
+    <string name="pause">Pause</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>"Masquer"</item>
+        <item>Haut</item>
+        <item>En bas</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">EN COURS DE LECTURE</string>
+    <string name="app_info_source">Source</string>
 </resources>

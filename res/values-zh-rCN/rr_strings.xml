@@ -6,4 +6,11 @@
     <string name="glance_content_description">资讯一览</string>
     <string name="icon_style_rr_title">图标样式</string>
     <string name="neon_ring_color_title">圆环颜色</string>
+    <string name="neon_glow_title">发光</string>
+    <string name="neon_ring_title">铃声</string>
+    <string-array name="neon_ring_entries">
+        <item>细</item>
+        <item>"中"</item>
+        <item>"粗体"</item>
+    </string-array>
 </resources>

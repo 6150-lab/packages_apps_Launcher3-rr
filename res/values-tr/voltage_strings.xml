@@ -70,4 +70,12 @@
     <string name="meow_shape_title">Miyav</string>
     <string name="scroll_shape_title">"Kaydırma"</string>
     <string name="stretched_shape_title">Esnetilmiş</string>
+    <string name="pause">Duraklat</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>Gizli</item>
+        <item>Üst</item>
+        <item>Alt</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">ŞİMDİ ÇALIYOR</string>
+    <string name="app_info_source">Kaynak</string>
 </resources>

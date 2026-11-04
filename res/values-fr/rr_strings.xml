@@ -4,4 +4,11 @@
     <string name="drawer_open_keyboard_summary">Ouvrir le clavier chaque fois que le tiroir d\'applis devient visible</string>
     <string name="pref_recents_style_title">"Récents"</string>
     <string name="glance_content_description">Aperçu</string>
+    <string name="neon_glow_title">Lueur</string>
+    <string name="neon_ring_title">Sonnerie</string>
+    <string-array name="neon_ring_entries">
+        <item>Fine</item>
+        <item>"Moyen"</item>
+        <item>"Gras"</item>
+    </string-array>
 </resources>

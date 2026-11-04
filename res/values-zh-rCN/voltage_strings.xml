@@ -73,4 +73,12 @@
     <string name="meow_shape_title">猫咪</string>
     <string name="scroll_shape_title">"滚动"</string>
     <string name="stretched_shape_title">拉伸</string>
+    <string name="pause">暂停</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>隐藏</item>
+        <item>顶部</item>
+        <item>底部</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">正在播放</string>
+    <string name="app_info_source">来源</string>
 </resources>
