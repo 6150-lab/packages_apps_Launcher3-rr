@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"Վերջինները"</string>
     <string name="glance_content_description">Հակիրճ գլխավորի մասին</string>
+    <string name="drawer_open_keyboard_title">Սահեցրու՝ որոնումը սկսելու համար</string>
+    <string name="drawer_open_keyboard_summary">Բացել ստեղնաշարը ամեն անգամ, երբ հավելվածների դարակը տեսանելի է դառնում</string>
+    <string-array name="recents_style_entries">
+        <item>"Համատեսք"</item>
+        <item>Նեղ վերջինները (կողային վահանակ)</item>
+        <item>Պտտվող վերջինները (անիվ)</item>
+    </string-array>
+    <string name="neon_icons_title">Նեոնային պատկերակներ</string>
+    <string name="neon_icons_summary">Յուրաքանչյուր հավելվածի պատկերանշանը ձեր շեշտադրման գույնով՝ փայլուն շրջանակի մեջ։ Միացնում է թեմայական պատկերակները։</string>
+    <string name="icon_style_rr_title">Պատկերակի ոճ</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Կանխադրված"</item>
+        <item>Թեմայական</item>
+        <item>Նեոն</item>
+    </string-array>
+    <string name="neon_ring_color_title">Շրջանակի գույն</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Շեշտ</item>
+        <item>Հավելվածի սեփական գույնը</item>
+    </string-array>
+    <string name="neon_glow_title">Փայլ</string>
+    <string name="neon_ring_title">Զանգի ձայն</string>
+    <string-array name="neon_ring_entries">
+        <item>Բարակ</item>
+        <item>"Միջին"</item>
+        <item>"Թավ"</item>
+    </string-array>
+    <string name="neon_folders_title">Նաև թղթապանակները</string>
 </resources>

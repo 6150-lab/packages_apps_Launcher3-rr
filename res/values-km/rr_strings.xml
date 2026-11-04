@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"ថ្មីៗ"</string>
     <string name="glance_content_description">មើលមួយភ្លែត</string>
+    <string name="drawer_open_keyboard_title">អូសដើម្បីចាប់ផ្តើមស្វែងរក</string>
+    <string name="drawer_open_keyboard_summary">បើកក្ដារចុចគ្រប់ពេលដែលផ្ទាំងកម្មវិធីបង្ហាញ</string>
+    <string-array name="recents_style_entries">
+        <item>"ទិដ្ឋភាព"</item>
+        <item>កម្មវិធីថ្មីៗស្តើង (ផ្ទាំងចំហៀង)</item>
+        <item>កម្មវិធីថ្មីៗវិល (កង់)</item>
+    </string-array>
+    <string name="neon_icons_title">រូបតំណាងនេអុង</string>
+    <string name="neon_icons_summary">រូបតំណាងកម្មវិធីនីមួយៗជាពណ៌ស្រាប់របស់អ្នក នៅក្នុងរង្វង់ភ្លឺ។ បើករូបតំណាងតាមប្រធានបទ។</string>
+    <string name="icon_style_rr_title">ទម្រង់រូបតំណាង</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"លំនាំដើម"</item>
+        <item>តាមប្រធានបទ</item>
+        <item>នេអុង</item>
+    </string-array>
+    <string name="neon_ring_color_title">ពណ៌រង្វង់</string>
+    <string-array name="neon_ring_color_entries">
+        <item>ពណ៌សំខាន់</item>
+        <item>ពណ៌ផ្ទាល់របស់កម្មវិធី</item>
+    </string-array>
+    <string name="neon_glow_title">ពន្លឺរលោង</string>
+    <string name="neon_ring_title">រង្វង់</string>
+    <string-array name="neon_ring_entries">
+        <item>ស្តើង</item>
+        <item>"មធ្យម"</item>
+        <item>"ដិត"</item>
+    </string-array>
+    <string name="neon_folders_title">ថតផងដែរ</string>
 </resources>

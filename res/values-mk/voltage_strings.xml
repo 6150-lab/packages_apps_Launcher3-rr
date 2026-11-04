@@ -25,4 +25,196 @@
     <string name="cloudy_shape_title">"Облачно"</string>
     <string name="heart_shape_title">"Срце"</string>
     <string name="scroll_shape_title">"Лизгање"</string>
+    <string name="action_lock">Заклучи/отклучи апликација</string>
+    <string name="unlock_app">Отклучена апликација во неодамнешни</string>
+    <string name="lock_app">Заклучена апликација во неодамнешни</string>
+    <string name="home_category_summary">Постави го панелот со Google now и повеќе</string>
+    <string name="icons_category_summary">Постави големина на икони и повеќе</string>
+    <string name="app_drawer_category_title">Фиока за апликации</string>
+    <string name="app_drawer_category_summary">Прилагодете ја вашата фиока за апликации</string>
+    <string name="recents_category_summary">Обновете го прегледот на неодамнешни</string>
+    <string name="interface_category_title">Интерфејс</string>
+    <string name="actions_category_title">Брзи дејства</string>
+    <string name="title_show_google_app">Повлечете за пристап до апликацијата Google</string>
+    <string name="msg_minus_one_on_left">Кога ќе повлечете надесно од главниот почетен екран</string>
+    <string name="msg_minus_one_on_right">Кога ќе повлечете налево од главниот почетен екран</string>
+    <string name="suggestion_pref_screen_desc">За сите апликации и предлози на почетниот екран</string>
+    <string name="pref_restart_summary">Рачно рестартирајте го лаунчерот за да ги примените сите чекачки поставки</string>
+    <string name="restarting_launcher">Се рестартира лаунчерот...</string>
+    <string name="restarting_launcher_changes">Се рестартира лаунчерот за да се применат промените...</string>
+    <string name="updating_launcher_components">Рестартирање на лаунчерот за ажурирање на компонентите на лаунчерот...</string>
+    <string name="pref_sleep_gesture_title">Двоен допир за заспивање</string>
+    <string name="pref_sleep_gesture_summary">Двоен допир на празно место на почетниот екран за исклучување на екранот</string>
+    <string name="pref_sleep_gesture_haptic_title">Вибрации при двоен допир за заспивање</string>
+    <string name="pref_sleep_gesture_haptic_summary">Дај тактилна повратна информација при движењето за двоен допир за заспивање</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">Се овозможува автоматски додека е активен стилот iOS</string>
+    <string name="settings_lock_layout_title">Заклучи распоред</string>
+    <string name="settings_lock_layout_summary_on">Икони и виџети не може да се додаваат, отстрануваат и преместуваат на почетниот екран</string>
+    <string name="settings_lock_layout_summary_off">Икони и виџети може да се додаваат, отстрануваат и преместуваат на почетниот екран</string>
+    <string name="settings_edit_widgets_error">Не е можно да се додаваат виџети на почетниот екран</string>
+    <string name="pref_themed_icons_title">Користи тематски икони во фиоката</string>
+    <string name="pref_themed_icons_summary">Следи тематски икони што се користат на почетниот екран</string>
+    <string name="themed_icons_overlay_title">Преклопени тематски икони</string>
+    <string name="themed_icons_overlay_summary">Користи прилагодено мапирање на тематски икони за апликации без матична тематска икона</string>
+    <string name="desktop_show_labels">Прикажи називи на икони на работната површина</string>
+    <string name="drawer_show_labels">Прикажи називи на икони во фиоката</string>
+    <string name="trust_apps_manager_name">Скриени и заштитени апликации</string>
+    <string name="trust_apps_auth_manager">Отклучете за управување со скриените и заштитените апликации</string>
+    <string name="trust_apps_auth_open_app">Заверете се за да ја отворите %1$s</string>
+    <string name="trust_apps_no_lock_error">Поставете безбеден заклучен екран за да го ограничите пристапот до апликациите</string>
+    <string name="trust_apps_info_hidden">Скриените апликации и нивните виџети се скриени од фиоката</string>
+    <string name="trust_apps_info_protected">Заштитените апликации бараат заверка за да се отворат од лаунчерот</string>
+    <string name="icon_size_title">Големина на иконата</string>
+    <string name="pause">Паузирај</string>
+    <string name="pause_apps_dialog_title">Да ја паузирам %1$s?</string>
+    <string name="pause_apps_dialog_message">Известувањата за %1$s ќе бидат паузирани</string>
+    <string name="paused_apps_dialog_title">Апликацијата е паузирана</string>
+    <string name="paused_apps_dialog_message">%1$s е директно паузирана од лаунчерот</string>
+    <string name="icon_two_lines_title">Користи два реда за називот на апликацијата</string>
+    <string name="recent_task_option_kill_app">Прекини</string>
+    <string name="recents_app_killed">Апликацијата е прекината</string>
+    <string name="row_height_title">Висина на редот</string>
+    <string name="hotseat_bg_title">Позадина на долниот ред</string>
+    <string name="hotseat_bg_summary">Додај полупроѕирна позадина на долниот ред со апликации</string>
+    <string name="pref_show_hotseat_qsb_title">Прикажи лента за пребарување</string>
+    <string name="pref_show_hotseat_qsb_summary">На дното од почетниот екран</string>
+    <string name="dock_search_widget_title">Виџет за пребарување</string>
+    <string name="dock_search_widget_summary">Користи компатибилен виџет за пребарување од трета страна во долниот ред</string>
+    <string name="dock_search_widget_picker_title">Избери виџет за пребарување</string>
+    <string name="dock_search_widget_default">Стандарден виџет за пребарување</string>
+    <string name="drawer_style_title">Стил на фиоката со апликации</string>
+    <string name="drawer_style_summary_ios_forced">Фиоката со апликации е исклучена во стилот iOS</string>
+    <string-array name="app_drawer_style_entries">
+        <item>Нормален (долен лист)</item>
+        <item>Хоризонтална листа</item>
+        <item>Вертикален (OneUI по страници)</item>
+        <item>Стил iOS</item>
+    </string-array>
+    <string name="drawer_search_title">Положба на лентата за пребарување апликации</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>Скриено</item>
+        <item>Горе</item>
+        <item>Долу</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">Овозможи закачени апликации</string>
+    <string name="pref_pinned_apps_enabled_summary">Прикажи ред закачени апликации под лентата за пребарување</string>
+    <string name="pref_pinned_apps_list_title">Список на закачени апликации</string>
+    <string name="pref_pinned_apps_list_summary">Избери апликации за закачување</string>
+    <string name="allow_wallpaper_scrolling">Движење на тапетот</string>
+    <string name="allow_wallpaper_scrolling_summary">Ефект на движење на тапетот за повеќе екрани</string>
+    <string name="allow_wallpaper_zooming">Зумирање на тапетот</string>
+    <string name="allow_wallpaper_zooming_summary">Зумирај или одзумирај го тапетот при користење на фиоката или неодамнешните апликации</string>
+    <string name="show_statusbar_title">Статусна лента</string>
+    <string name="show_top_shadow">Горна сенка</string>
+    <string name="meminfo_text">%1$s слободно | %2$s</string>
+    <string name="recents_meminfo_title">Информации за меморијата</string>
+    <string name="recents_meminfo_zram_title">Информации за ZRAM</string>
+    <string name="recents_chips_title">Користи компактен дизајн на дејствата</string>
+    <string name="recents_chips_summary">Може да биде потребно за прикажување големи количини дејства</string>
+    <string name="recents_lens_title">Леќа</string>
+    <string name="short_parallax_title">Дозволи краток паралакс</string>
+    <string name="short_parallax_summary">Овозможи целосен ефект на движење на тапетот при помал број страници наместо сечење на тапетот</string>
+    <string name="single_page_center_title">Центрирај на една страница</string>
+    <string name="single_page_center_summary">Центрирај го тапетот ако се користи само една страница</string>
+    <string name="drawer_scrollbar_title">Лента за движење</string>
+    <string name="drawer_scrollbar_summary">Лента за движење на страната од фиоката со апликации</string>
+    <string name="perf_dark_status_bar_title">Темна статусна лента</string>
+    <string name="perf_dark_status_bar_summary">Секогаш користи темна статусна лента на почетниот екран</string>
+    <string name="show_quickspace_title">At A Glance</string>
+    <string name="show_quickspace_summary">Прикажи на врвот од почетниот екран</string>
+    <string name="quickspace_style_title">Стил на At A Glance</string>
+    <string-array name="quickspace_style_entries">
+        <item>"Стандардно"</item>
+        <item>Проширен</item>
+        <item>Remix</item>
+        <item>Remix по страници</item>
+        <item>Remix вертикален</item>
+        <item>Орбита</item>
+        <item>Неонски натпис</item>
+        <item>Стакло</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">ВО ТЕК</string>
+    <string name="quickspace_vertical_note">ЗАБЕЛЕШКА</string>
+    <string name="quickspace_vertical_weather">ВРЕМЕ</string>
+    <string name="quickspace_vertical_calendar">КАЛЕНДАР</string>
+    <string name="quickspace_vertical_battery">БАТЕРИЈА</string>
+    <string name="quickspace_vertical_a11y_calendar">Отвори календар</string>
+    <string name="quickspace_vertical_a11y_weather">Отвори временска прогноза</string>
+    <string name="quickspace_vertical_a11y_calendar_event">Отвори настан во календарот</string>
+    <string name="quickspace_vertical_a11y_event">Отвори моментално пуштено</string>
+    <string name="quickspace_vertical_a11y_note">Отвори белешка</string>
+    <string name="quickspace_vertical_a11y_battery">Отвори поставки за батеријата</string>
+    <string name="quickspace_voltage_accent_title">Часовник во акцентна боја</string>
+    <string name="quickspace_voltage_accent_summary">Во стиловите Remix првата цифра на часовникот е во акцентна боја</string>
+    <string name="quickspace_voltage_minimal_title">Минимален режим</string>
+    <string name="quickspace_voltage_minimal_summary">Собери ги секундарните содржини на Remix во кликабилни брзи икони</string>
+    <string name="quickspace_grt_morning">Добро утро.</string>
+    <string name="quickspace_grt_evening">Добра вечер.</string>
+    <string name="quickspace_grt_afternoon">Добар ден.</string>
+    <string name="quickspace_grt_night">Лака ноќ.</string>
+    <string name="quickspace_grt_general">Добар ден.</string>
+    <string name="quickspace_ext_one">Денес е</string>
+    <string name="quickspace_ext_two">Тоа е</string>
+    <string name="qe_now_playing_unknown_artist">Непознат извођач</string>
+    <string name="qe_now_playing_ext_one">Моментално се пушта</string>
+    <string name="qe_now_playing_by">Од</string>
+    <string name="quickspace_now_playing_title">Моментално се пушта</string>
+    <string name="quickspace_now_playing_summary">Прикажи ја песната што ја пуштате</string>
+    <string name="quickspace_alternate_style_title">Проширен стил</string>
+    <string name="quickspace_alternate_style_summary">Премини на проширен стил</string>
+    <string name="quickspace_psa_title">Случајни пораки</string>
+    <string name="quickspace_psa_summary">Направи го твојот придружник поживо со случајни пораки</string>
+    <string name="intent_no_app_clock_found">Не може да се најде активност за календар или часовник</string>
+    <string name="quick_event_ambient_weather_title">Ажурирање на временската прогноза</string>
+    <string name="quick_event_ambient_weather_summary">Прикажи ја тековната временска прогноза</string>
+    <string name="quick_event_ambient_weather_enabled_info">Бара овозможена услуга за временска прогноза</string>
+    <string name="quick_event_weather_rain">Дождливо</string>
+    <string name="quick_event_weather_clear">Ведро небо</string>
+    <string name="quick_event_weather_storm">Невреме</string>
+    <string name="quick_event_weather_snow">Снежно</string>
+    <string name="quick_event_weather_wind">Ветровито</string>
+    <string name="quick_event_weather_mist">Магла</string>
+    <string name="quick_event_weather_city_title">Тековна локација</string>
+    <string name="quick_event_weather_city_summary">Прикажи ја тековната локација за временската прогноза</string>
+    <string name="quick_event_weather_text_title">Тековна состојба</string>
+    <string name="quick_event_weather_text_summary">Прикажи краток опис на тековната временска состојба</string>
+    <string name="quickspace_battery_title">Батерија на уредот</string>
+    <string name="quickspace_battery_summary">Прикажи ја батеријата на телефонот и поврзаниот Bluetooth уред во стиловите Remix</string>
+    <string name="quickspace_calendar_summary">Прикажи го следниот настан од кој било овозможен календар</string>
+    <string name="quickspace_calendar_untitled">Настан без наслов</string>
+    <string name="all_apps_dark_text_title">Темни називи на апликации</string>
+    <string name="all_apps_dark_text_summary">Секогаш користи темен текст за називите на апликациите во фиоката</string>
+    <string name="app_info_title">Информации за апликацијата</string>
+    <string name="app_info_source">Извор</string>
+    <string name="app_info_last_update">Последно ажурирање</string>
+    <string name="icon_pack_title">Пакет икони</string>
+    <string name="icon_pack_add">Инсталирај повеќе</string>
+    <string name="icon_pack_no_market">Нема достапна продавница за апликации</string>
+    <string name="pebble_shape_title">Pebble</string>
+    <string name="vessel_shape_title">Vessel</string>
+    <string name="pure_square_shape_title">Чист квадрат</string>
+    <string name="squircle_shape_title">Squircle</string>
+    <string name="tapered_rect_shape_title">Конусен правоаголник</string>
+    <string name="teardrop_shape_title">Солза</string>
+    <string name="rounded_rect_shape_title">Заоблен правоаголник</string>
+    <string name="cylindrical_shape_title">Цилиндричен</string>
+    <string name="flower_shape_title">Цвет</string>
+    <string name="hexagon_shape_title">Шестаголник</string>
+    <string name="ios_style_shape_title">Стил iOS</string>
+    <string name="leaf_shape_title">Лист</string>
+    <string name="meow_shape_title">Mjau</string>
+    <string name="samsung_style_shape_title">Стил Samsung</string>
+    <string name="stretched_shape_title">Растегнат</string>
+    <string name="home_screen_actions">Дејства на почетниот екран</string>
+    <string name="remove_all_views_from_home_screen">Исчисти го почетниот екран</string>
+    <string name="remove_all_views_from_home_screen_desc">Почетниот екран ќе биде исчистен. Дали сакаш да продолжиш?</string>
+    <string name="home_screen_all_views_removed_msg">Почетниот екран е исчистен</string>
+    <string name="sort_alphabetical">Подреди по азбука</string>
+    <string name="sort_install_date">Подреди по датум на инсталирање</string>
+    <string name="sort_usage">Подреди по користење</string>
+    <string name="navbar_burn_in_protection_title">Заштита од впечатување на навигациската лента</string>
+    <string name="navbar_burn_in_protection_summary">Периодично поместувај ја навигациската рачка за да се спречи впечатување на екранот</string>
+    <string name="navbar_burn_in_interval_title">Интервал на поместување</string>
+    <string name="pref_blur_background_at_app_launch_title">Замаглување на позадината при отворање/затворање на апликација</string>
+    <string name="pref_blur_background_at_app_launch_summary">Замати ја позадината при анимациите за отворање и затворање на апликации</string>
 </resources>

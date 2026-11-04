@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"તાજેતરના"</string>
     <string name="glance_content_description">એક નજરમાં</string>
+    <string name="drawer_open_keyboard_title">સર્ચ શરૂ કરવા સ્વાઇપ કરો</string>
+    <string name="drawer_open_keyboard_summary">ડ્રૉઅર દેખાય ત્યારે હંમેશાં કીબોર્ડ ખોલો</string>
+    <string-array name="recents_style_entries">
+        <item>"ઝલક"</item>
+        <item>સ્લિમ તાજેતરના (સાઇડ પેનલ)</item>
+        <item>સ્પિન તાજેતરના (વ્હીલ)</item>
+    </string-array>
+    <string name="neon_icons_title">નિયૉન આઇકન</string>
+    <string name="neon_icons_summary">દરેક ઍપનો ગ્લિફ તમારા ઍક્સન્ટ રંગમાં, ચમકતી રિંગની અંદર. થીમ્ડ આઇકન ચાલુ કરે છે.</string>
+    <string name="icon_style_rr_title">આઇકન શૈલી</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"ડિફૉલ્ટ"</item>
+        <item>થીમ્ડ</item>
+        <item>નિયૉન</item>
+    </string-array>
+    <string name="neon_ring_color_title">રિંગનો રંગ</string>
+    <string-array name="neon_ring_color_entries">
+        <item>ઍક્સેન્ટ</item>
+        <item>ઍપનો પોતાનો રંગ</item>
+    </string-array>
+    <string name="neon_glow_title">ગ્લો</string>
+    <string name="neon_ring_title">રિંગ</string>
+    <string-array name="neon_ring_entries">
+        <item>હળવું પાતળું</item>
+        <item>"મધ્યમ"</item>
+        <item>"બોલ્ડ"</item>
+    </string-array>
+    <string name="neon_folders_title">ફોલ્ડર્સ પણ</string>
 </resources>

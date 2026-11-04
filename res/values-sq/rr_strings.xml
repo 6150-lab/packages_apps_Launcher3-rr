@@ -4,4 +4,30 @@
     <string name="drawer_open_keyboard_summary">Hap tastierën çdo herë që sirtari i aplikacionit hapet</string>
     <string name="pref_recents_style_title">"Të fundit"</string>
     <string name="glance_content_description">Shkurtimisht</string>
+    <string-array name="recents_style_entries">
+        <item>"Përmbledhje"</item>
+        <item>Të fundit të holla (panel anësor)</item>
+        <item>Të fundit rrotulluese (rrotë)</item>
+    </string-array>
+    <string name="neon_icons_title">Ikona neon</string>
+    <string name="neon_icons_summary">Simboli i çdo aplikacioni në ngjyrën tënde të theksit, brenda një rrethi që shkëlqen. Aktivizon ikonat me temë.</string>
+    <string name="icon_style_rr_title">Stili i ikonës</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"E parazgjedhur"</item>
+        <item>Me temë</item>
+        <item>Neon</item>
+    </string-array>
+    <string name="neon_ring_color_title">Ngjyra e rrethit</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Theksi</item>
+        <item>Ngjyra e aplikacionit</item>
+    </string-array>
+    <string name="neon_glow_title">Shkëlqimi</string>
+    <string name="neon_ring_title">Zilja</string>
+    <string-array name="neon_ring_entries">
+        <item>I hollë</item>
+        <item>"Mesatar"</item>
+        <item>"I trashësuar"</item>
+    </string-array>
+    <string name="neon_folders_title">Edhe dosjet</string>
 </resources>

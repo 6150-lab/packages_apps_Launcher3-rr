@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"حالیہ"</string>
     <string name="glance_content_description">ایک نظر میں</string>
+    <string name="drawer_open_keyboard_title">سرچ شروع کرنے کے لیے سوائپ کریں</string>
+    <string name="drawer_open_keyboard_summary">ایپ ڈرawer نظر آتے ہی کی بورڈ کھولیں</string>
+    <string-array name="recents_style_entries">
+        <item>"عمومی جائزہ"</item>
+        <item>پتلے حالیہ (سائیڈ پینل)</item>
+        <item>گھومتے حالیہ (پہیہ)</item>
+    </string-array>
+    <string name="neon_icons_title">نیین آئیکنز</string>
+    <string name="neon_icons_summary">ہر ایپ کا گلیف آپ کے لہجے کے رنگ میں، چمکتے ہوئے حلقے کے اندر۔ تھیمڈ آئیکنز فعال کرتا ہے۔</string>
+    <string name="icon_style_rr_title">آئیکن انداز</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"ڈیفالٹ"</item>
+        <item>تھیمڈ</item>
+        <item>نیون</item>
+    </string-array>
+    <string name="neon_ring_color_title">حلقے کا رنگ</string>
+    <string-array name="neon_ring_color_entries">
+        <item>لہجہ</item>
+        <item>ایپ کا اپنا رنگ</item>
+    </string-array>
+    <string name="neon_glow_title">چمک</string>
+    <string name="neon_ring_title">رنگ</string>
+    <string-array name="neon_ring_entries">
+        <item>پتلا</item>
+        <item>"متوسط"</item>
+        <item>"بولڈ"</item>
+    </string-array>
+    <string name="neon_folders_title">فولڈرز بھی</string>
 </resources>

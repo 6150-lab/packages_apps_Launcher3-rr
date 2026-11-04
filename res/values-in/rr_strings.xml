@@ -13,4 +13,21 @@
         <item>"Sedang"</item>
         <item>"Tebal"</item>
     </string-array>
+    <string-array name="recents_style_entries">
+        <item>"Ringkasan"</item>
+        <item>Terbaru ramping (panel samping)</item>
+        <item>Terbaru berputar (roda)</item>
+    </string-array>
+    <string name="neon_icons_title">Ikon neon</string>
+    <string name="neon_icons_summary">Glyph setiap aplikasi dengan warna aksen Anda, di dalam cincin bercahaya. Mengaktifkan ikon bertema.</string>
+    <string-array name="icon_style_rr_entries">
+        <item>Default</item>
+        <item>Bertema</item>
+        <item>Neon</item>
+    </string-array>
+    <string-array name="neon_ring_color_entries">
+        <item>Aksen</item>
+        <item>Warna aplikasi</item>
+    </string-array>
+    <string name="neon_folders_title">Folder juga</string>
 </resources>

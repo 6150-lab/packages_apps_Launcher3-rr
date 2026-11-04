@@ -6,4 +6,28 @@
     <string name="glance_content_description">Xem nhanh</string>
     <string name="icon_style_rr_title">Kiểu biểu tượng</string>
     <string name="neon_ring_color_title">Màu tùy chỉnh của vòng</string>
+    <string-array name="recents_style_entries">
+        <item>"Tổng quan"</item>
+        <item>Gần đây gọn (bảng bên)</item>
+        <item>Gần đây quay (bánh xe)</item>
+    </string-array>
+    <string name="neon_icons_title">Biểu tượng neon</string>
+    <string name="neon_icons_summary">Biểu tượng mỗi ứng dụng có màu nhấn của bạn, nằm trong một vòng sáng phát quang. Bật biểu tượng theo giao diện.</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Mặc định"</item>
+        <item>Theo giao diện</item>
+        <item>Neon</item>
+    </string-array>
+    <string-array name="neon_ring_color_entries">
+        <item>Nhấn mạnh</item>
+        <item>Màu riêng của ứng dụng</item>
+    </string-array>
+    <string name="neon_glow_title">Phát sáng</string>
+    <string name="neon_ring_title">Chuông</string>
+    <string-array name="neon_ring_entries">
+        <item>Mỏng</item>
+        <item>"Trung bình"</item>
+        <item>"Đậm"</item>
+    </string-array>
+    <string name="neon_folders_title">Cả thư mục nữa</string>
 </resources>

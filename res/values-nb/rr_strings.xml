@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"Nylige"</string>
     <string name="glance_content_description">Kort fortalt</string>
+    <string name="drawer_open_keyboard_title">Sveip for å starte søk</string>
+    <string name="drawer_open_keyboard_summary">Åpne tastaturet når appskuffen vises</string>
+    <string-array name="recents_style_entries">
+        <item>"Oversikt"</item>
+        <item>Smale nylige apper (sidepanel)</item>
+        <item>Snurrende nylige apper (hjul)</item>
+    </string-array>
+    <string name="neon_icons_title">Neonikoner</string>
+    <string name="neon_icons_summary">Hvert apps symbol i aksentfargen din, inni en lysende ring. Slår på temaikoner.</string>
+    <string name="icon_style_rr_title">Ikonstil</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Standard"</item>
+        <item>Tematisk</item>
+        <item>Neon</item>
+    </string-array>
+    <string name="neon_ring_color_title">Ringfarge</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Aksent</item>
+        <item>Appens egen farge</item>
+    </string-array>
+    <string name="neon_glow_title">Glød</string>
+    <string name="neon_ring_title">Ring</string>
+    <string-array name="neon_ring_entries">
+        <item>Tynn</item>
+        <item>"Middels"</item>
+        <item>"Fet"</item>
+    </string-array>
+    <string name="neon_folders_title">Mapper også</string>
 </resources>

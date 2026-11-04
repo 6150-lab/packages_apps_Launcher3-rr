@@ -4,4 +4,30 @@
     <string name="glance_content_description">Snabböversikt</string>
     <string name="icon_style_rr_title">Ikonstil</string>
     <string name="neon_ring_color_title">Ringfärg</string>
+    <string name="drawer_open_keyboard_title">Svep för att starta sökning</string>
+    <string name="drawer_open_keyboard_summary">Öppna tangentbordet när appfacket visas</string>
+    <string-array name="recents_style_entries">
+        <item>"Översikt"</item>
+        <item>Smal senaste appar (sidopanel)</item>
+        <item>Snurrande senaste appar (hjul)</item>
+    </string-array>
+    <string name="neon_icons_title">Neonikoner</string>
+    <string name="neon_icons_summary">Varje apps symbol i din accentfärg, inom en glödande ring. Aktiverar temanpassade ikoner.</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Standard"</item>
+        <item>Temanpassad</item>
+        <item>Neon</item>
+    </string-array>
+    <string-array name="neon_ring_color_entries">
+        <item>Accent</item>
+        <item>Appens egen färg</item>
+    </string-array>
+    <string name="neon_glow_title">Glöd</string>
+    <string name="neon_ring_title">Ring</string>
+    <string-array name="neon_ring_entries">
+        <item>Tunn</item>
+        <item>"Medel"</item>
+        <item>"Djärv"</item>
+    </string-array>
+    <string name="neon_folders_title">Mappar också</string>
 </resources>

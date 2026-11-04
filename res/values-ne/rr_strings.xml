@@ -1,4 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"हालैका"</string>
+    <string name="drawer_open_keyboard_title">खोज सुरु गर्न स्वाइप गर्नुहोस्</string>
+    <string name="drawer_open_keyboard_summary">एप ड्रअर देखिने बित्तिकै कुञ्जीपाटी खोल्नुहोस्</string>
+    <string-array name="recents_style_entries">
+        <item>"सारांश"</item>
+        <item>पातलो हालैका (साइड प्यानल)</item>
+        <item>घुमाउने हालैका (पाङ्ग्रा)</item>
+    </string-array>
+    <string name="glance_content_description">एक नजरमा</string>
+    <string name="neon_icons_title">नियन अइकनहरू</string>
+    <string name="neon_icons_summary">प्रत्येक एपको ग्लिफ तपाईंको एक्सेन्टमा, चम्kिलो रिङभित्र देखिन्छ। थिम गरिएका आइकनहरू सक्षम गर्छ।</string>
+    <string name="icon_style_rr_title">आइकन शैली</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"डिफल्ट"</item>
+        <item>थिम गरिएको</item>
+        <item>Neon</item>
+    </string-array>
+    <string name="neon_ring_color_title">रिङको रंग</string>
+    <string-array name="neon_ring_color_entries">
+        <item>एक्सेन्ट</item>
+        <item>एपकै आफ्नै रंग</item>
+    </string-array>
+    <string name="neon_glow_title">चमक</string>
+    <string name="neon_ring_title">रिङ</string>
+    <string-array name="neon_ring_entries">
+        <item>सानो मोटाइ</item>
+        <item>"मध्यम"</item>
+        <item>"बोल्ड"</item>
+    </string-array>
+    <string name="neon_folders_title">फोल्डरहरू पनि</string>
 </resources>

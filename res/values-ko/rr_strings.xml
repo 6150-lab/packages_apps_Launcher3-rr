@@ -6,4 +6,28 @@
     <string name="glance_content_description">한눈에 보기</string>
     <string name="icon_style_rr_title">아이콘 스타일</string>
     <string name="neon_ring_color_title">링 컬러</string>
+    <string-array name="recents_style_entries">
+        <item>"최근 사용"</item>
+        <item>얇은 최근 앱 (측면 패널)</item>
+        <item>회전 최근 앱 (휠)</item>
+    </string-array>
+    <string name="neon_icons_title">네온 아이콘</string>
+    <string name="neon_icons_summary">각 앱의 아이콘 글리프를 강조 색상으로 표시하고 빛나는 원 안에 넣습니다. 테마 아이콘을 켭니다.</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"기본값"</item>
+        <item>테마 적용</item>
+        <item>네온</item>
+    </string-array>
+    <string-array name="neon_ring_color_entries">
+        <item>강조</item>
+        <item>앱 고유 색상</item>
+    </string-array>
+    <string name="neon_glow_title">글로우</string>
+    <string name="neon_ring_title">벨소리</string>
+    <string-array name="neon_ring_entries">
+        <item>얇게</item>
+        <item>"보통"</item>
+        <item>"볼드"</item>
+    </string-array>
+    <string name="neon_folders_title">폴더에도 적용</string>
 </resources>

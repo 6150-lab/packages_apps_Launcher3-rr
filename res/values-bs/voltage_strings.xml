@@ -28,4 +28,193 @@
     <string name="cloudy_shape_title">"Oblačno"</string>
     <string name="heart_shape_title">"Srce"</string>
     <string name="scroll_shape_title">"Klizanje"</string>
+    <string name="action_lock">Zaključaj/otključaj aplikaciju</string>
+    <string name="unlock_app">Aplikacija otključana u nedavnim</string>
+    <string name="lock_app">Aplikacija zaključana u nedavnim</string>
+    <string name="home_category_summary">Postavi Google panel i više</string>
+    <string name="icons_category_summary">Postavi veličinu ikona i više</string>
+    <string name="app_drawer_category_title">Ladica aplikacija</string>
+    <string name="app_drawer_category_summary">Prilagodite ladicu aplikacija</string>
+    <string name="recents_category_summary">Preradite pregled</string>
+    <string name="interface_category_title">Sučelje</string>
+    <string name="actions_category_title">Brze radnje</string>
+    <string name="title_show_google_app">Prevucite za pristup Google aplikaciji</string>
+    <string name="msg_minus_one_on_left">Kada prevučete udesno s glavnog početnog ekrana</string>
+    <string name="msg_minus_one_on_right">Kada prevučete ulijevo s glavnog početnog ekrana</string>
+    <string name="suggestion_pref_screen_desc">Za sve aplikacije i prijedloge na početnom ekranu</string>
+    <string name="pref_restart_summary">Ručno ponovo pokrenite pokretač da primijenite sve čekajuće postavke</string>
+    <string name="restarting_launcher">Ponovno pokretanje pokretača...</string>
+    <string name="restarting_launcher_changes">Ponovno pokretanje pokretača da se primijene promjene...</string>
+    <string name="updating_launcher_components">Ponovno pokretanje pokretača radi ažuriranja komponenti...</string>
+    <string name="pref_sleep_gesture_title">Dvostruki dodir za spavanje</string>
+    <string name="pref_sleep_gesture_summary">Dvaput dodirnite prazan prostor na početnom ekranu da isključite ekran</string>
+    <string name="pref_sleep_gesture_haptic_title">Vibracija pri dvostrukom dodiru za spavanje</string>
+    <string name="pref_sleep_gesture_haptic_summary">Pružite haptičku povratnu informaciju pri pokretu dvostrukog dodira za spavanje</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">Automatski omogućeno dok je aktivan stil iOS</string>
+    <string name="settings_lock_layout_title">Zaključaj raspored</string>
+    <string name="settings_lock_layout_summary_on">Ikone i widgeti se ne mogu dodavati, uklanjati ni premještati na početnom ekranu</string>
+    <string name="settings_lock_layout_summary_off">Ikone i widgeti se mogu dodavati, uklanjati i premještati na početnom ekranu</string>
+    <string name="settings_edit_widgets_error">Nije moguće dodati widgete na početni ekran</string>
+    <string name="pref_themed_icons_title">Koristi tematske ikone u ladici</string>
+    <string name="pref_themed_icons_summary">Prati tematske ikone koje se koriste na početnom ekranu</string>
+    <string name="themed_icons_overlay_title">Preklopljene tematske ikone</string>
+    <string name="themed_icons_overlay_summary">Koristi prilagođeno mapiranje tematskih ikona za aplikacije bez izvorne tematske ikone</string>
+    <string name="desktop_show_labels">Prikaži nazive ikona na radnoj površini</string>
+    <string name="drawer_show_labels">Prikaži nazive ikona u ladici</string>
+    <string name="trust_apps_manager_name">Skrivene i zaštićene aplikacije</string>
+    <string name="trust_apps_auth_manager">Otključajte da upravljate skrivenim i zaštićenim aplikacijama</string>
+    <string name="trust_apps_auth_open_app">Autentifikujte se da otvorite %1$s</string>
+    <string name="trust_apps_no_lock_error">Postavite siguran zaključani ekran da ograničite pristup aplikacijama</string>
+    <string name="trust_apps_info_hidden">Skrivene aplikacije i njihovi widgeti se sakrivaju iz ladice</string>
+    <string name="trust_apps_info_protected">Zaštićene aplikacije zahtijevaju autentifikaciju da bi se otvorile iz pokretača</string>
+    <string name="icon_size_title">Veličina ikone</string>
+    <string name="pause">Pauziraj</string>
+    <string name="pause_apps_dialog_title">Pauzirati %1$s?</string>
+    <string name="pause_apps_dialog_message">Obavještenja za %1$s bit će pauzirana</string>
+    <string name="paused_apps_dialog_title">Aplikacija pauzirana</string>
+    <string name="paused_apps_dialog_message">%1$s je direktno pauziran iz pokretača</string>
+    <string name="icon_two_lines_title">Koristi dva reda za naziv aplikacije</string>
+    <string name="recent_task_option_kill_app">Prekini</string>
+    <string name="recents_app_killed">Aplikacija prekinuta</string>
+    <string name="row_height_title">Visina reda</string>
+    <string name="hotseat_bg_title">Pozadina donje trake</string>
+    <string name="hotseat_bg_summary">Dodaj polutransparentnu pozadinu donjoj traci aplikacija</string>
+    <string name="pref_show_hotseat_qsb_title">Prikaži traku za pretragu</string>
+    <string name="pref_show_hotseat_qsb_summary">Na dnu vašeg početnog ekrana</string>
+    <string name="dock_search_widget_title">Widget za pretragu</string>
+    <string name="dock_search_widget_summary">Koristi kompatibilni widget za pretragu treće strane u donjoj traci</string>
+    <string name="dock_search_widget_picker_title">Odaberi widget za pretragu</string>
+    <string name="dock_search_widget_default">Zadani widget za pretragu</string>
+    <string name="drawer_style_title">Stil ladice aplikacija</string>
+    <string name="drawer_style_summary_ios_forced">Ladica aplikacija onemogućena u stilu iOS</string>
+    <string-array name="app_drawer_style_entries">
+        <item>Normalno (donji list)</item>
+        <item>Horizontalna lista</item>
+        <item>Vertikalno (OneUI stranice)</item>
+        <item>Stil iOS</item>
+    </string-array>
+    <string name="drawer_search_title">Položaj trake za pretragu aplikacija</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>"Sakriven"</item>
+        <item>Vrh</item>
+        <item>Dolje</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">Omogući prikvačene aplikacije</string>
+    <string name="pref_pinned_apps_enabled_summary">Prikaži red prikvačenih aplikacija ispod trake za pretragu</string>
+    <string name="pref_pinned_apps_list_title">Lista prikvačenih aplikacija</string>
+    <string name="pref_pinned_apps_list_summary">Odaberite aplikacije za prikvačivanje</string>
+    <string name="allow_wallpaper_scrolling">Pomicanje pozadinske slike</string>
+    <string name="allow_wallpaper_scrolling_summary">Efekat pomicanja pozadinske slike za više ekrana</string>
+    <string name="allow_wallpaper_zooming">Zumiranje pozadinske slike</string>
+    <string name="allow_wallpaper_zooming_summary">Uvećaj ili umanji pozadinsku sliku pri korištenju ladice ili nedavnih aplikacija</string>
+    <string name="show_statusbar_title">Statusna traka</string>
+    <string name="show_top_shadow">Gornja sjenka</string>
+    <string name="meminfo_text">%1$s dostupno | %2$s</string>
+    <string name="recents_meminfo_title">Informacije o memoriji</string>
+    <string name="recents_meminfo_zram_title">Informacije o ZRAM-u</string>
+    <string name="recents_chips_title">Koristi kompaktan dizajn radnji</string>
+    <string name="recents_chips_summary">Može biti potrebno za prikaz velikog broja radnji</string>
+    <string name="short_parallax_title">Dozvoli kratki paralaks</string>
+    <string name="short_parallax_summary">Omogući puni efekat pomicanja pozadine na manjem broju stranica umjesto rezanja pozadinske slike</string>
+    <string name="single_page_center_title">Središte za jednu stranicu</string>
+    <string name="single_page_center_summary">Centriraj pozadinsku sliku ako koristite samo jednu stranicu</string>
+    <string name="drawer_scrollbar_title">Klizač</string>
+    <string name="drawer_scrollbar_summary">Klizač sa strane ladice aplikacija</string>
+    <string name="perf_dark_status_bar_title">Tamna statusna traka</string>
+    <string name="perf_dark_status_bar_summary">Uvijek koristi tamnu statusnu traku na početnom ekranu</string>
+    <string name="show_quickspace_title">At A Glance</string>
+    <string name="show_quickspace_summary">Prikaži na vrhu početnog ekrana</string>
+    <string name="quickspace_style_title">Stil At A Glance</string>
+    <string-array name="quickspace_style_entries">
+        <item>"Zadano"</item>
+        <item>Prošireno</item>
+        <item>Remiks</item>
+        <item>Remix stranice</item>
+        <item>Remix vertikalno</item>
+        <item>Orbit</item>
+        <item>Neonski znak</item>
+        <item>Staklo</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">REPRODUKCIJA</string>
+    <string name="quickspace_vertical_note">NAPOMENA</string>
+    <string name="quickspace_vertical_weather">VREMENSKA PROGNOZA</string>
+    <string name="quickspace_vertical_calendar">KALENDAR</string>
+    <string name="quickspace_vertical_battery">BATERIJA</string>
+    <string name="quickspace_vertical_a11y_calendar">Otvori kalendar</string>
+    <string name="quickspace_vertical_a11y_weather">Otvori vremensku prognozu</string>
+    <string name="quickspace_vertical_a11y_calendar_event">Otvori događaj iz kalendara</string>
+    <string name="quickspace_vertical_a11y_event">Otvori trenutno reproduciranje</string>
+    <string name="quickspace_vertical_a11y_note">Otvori bilješku</string>
+    <string name="quickspace_vertical_a11y_battery">Otvori postavke baterije</string>
+    <string name="quickspace_voltage_accent_title">Naglašeni sat bojom</string>
+    <string name="quickspace_voltage_accent_summary">Oboji prvu cifru sata u Remix stilovima</string>
+    <string name="quickspace_voltage_minimal_title">Minimalni način rada</string>
+    <string name="quickspace_voltage_minimal_summary">Sažmi sekundarni sadržaj Remix stilova u ikone za dodir</string>
+    <string name="quickspace_grt_morning">Dobro jutro.</string>
+    <string name="quickspace_grt_evening">Dobro veče.</string>
+    <string name="quickspace_grt_afternoon">Dobar dan.</string>
+    <string name="quickspace_grt_night">Laku noć.</string>
+    <string name="quickspace_grt_general">Dobar dan.</string>
+    <string name="quickspace_ext_one">Danas je</string>
+    <string name="quickspace_ext_two">Sada je</string>
+    <string name="qe_now_playing_unknown_artist">Nepoznat izvođač</string>
+    <string name="qe_now_playing_by">Izvođač:</string>
+    <string name="quickspace_now_playing_summary">Prikaži pjesmu koja se trenutno reproducira</string>
+    <string name="quickspace_alternate_style_title">Prošireni stil</string>
+    <string name="quickspace_alternate_style_summary">Pređi na prošireni stil</string>
+    <string name="quickspace_psa_title">Nasumične poruke</string>
+    <string name="quickspace_psa_summary">Učinite svog pratioca življim nasumičnim porukama</string>
+    <string name="intent_no_app_clock_found">Nije moguće pronaći aktivnost kalendara ili sata</string>
+    <string name="quick_event_ambient_weather_title">Ažuriranje vremenske prognoze</string>
+    <string name="quick_event_ambient_weather_summary">Prikaži trenutno stanje vremenske prognoze</string>
+    <string name="quick_event_ambient_weather_enabled_info">Zahtijeva omogućenu uslugu vremenske prognoze</string>
+    <string name="quick_event_weather_rain">Kišovito</string>
+    <string name="quick_event_weather_clear">Vedro nebo</string>
+    <string name="quick_event_weather_storm">Oluja</string>
+    <string name="quick_event_weather_snow">Snijeg</string>
+    <string name="quick_event_weather_wind">Vjetrovito</string>
+    <string name="quick_event_weather_mist">Maglovito</string>
+    <string name="quick_event_weather_city_title">Trenutna lokacija</string>
+    <string name="quick_event_weather_city_summary">Prikaži trenutnu lokaciju vremenske prognoze</string>
+    <string name="quick_event_weather_text_title">Trenutno stanje</string>
+    <string name="quick_event_weather_text_summary">Prikaži sažetak trenutnog stanja vremenske prognoze</string>
+    <string name="quickspace_battery_title">Baterija uređaja</string>
+    <string name="quickspace_battery_summary">Prikaži bateriju telefona i povezanog Bluetooth uređaja u Remix stilovima</string>
+    <string name="quickspace_calendar_summary">Prikaži vaš sljedeći događaj iz bilo kojeg omogućenog kalendara</string>
+    <string name="quickspace_calendar_untitled">Događaj bez naziva</string>
+    <string name="all_apps_dark_text_title">Tamni nazivi aplikacija</string>
+    <string name="all_apps_dark_text_summary">Uvijek koristi tamni tekst za nazive aplikacija u ladici</string>
+    <string name="app_info_title">Informacije o aplikaciji</string>
+    <string name="app_info_source">Izvor</string>
+    <string name="app_info_last_update">Posljednje ažuriranje</string>
+    <string name="icon_pack_title">Paket ikona</string>
+    <string name="icon_pack_add">Instaliraj još</string>
+    <string name="icon_pack_no_market">Nema dostupne prodavnice aplikacija</string>
+    <string name="pebble_shape_title">Pebble</string>
+    <string name="vessel_shape_title">Vessel</string>
+    <string name="pure_square_shape_title">Čist kvadrat</string>
+    <string name="squircle_shape_title">Squircle</string>
+    <string name="tapered_rect_shape_title">Suženi pravougaonik</string>
+    <string name="teardrop_shape_title">Suza</string>
+    <string name="rounded_rect_shape_title">Zaobljeni pravougaonik</string>
+    <string name="cylindrical_shape_title">Cilindrično</string>
+    <string name="flower_shape_title">Cvijet</string>
+    <string name="hexagon_shape_title">Šestougao</string>
+    <string name="ios_style_shape_title">Stil iOS</string>
+    <string name="leaf_shape_title">List</string>
+    <string name="meow_shape_title">Meow</string>
+    <string name="samsung_style_shape_title">Stil Samsung</string>
+    <string name="stretched_shape_title">Razvučeno</string>
+    <string name="home_screen_actions">Radnje početnog ekrana</string>
+    <string name="remove_all_views_from_home_screen">Očisti početni ekran</string>
+    <string name="remove_all_views_from_home_screen_desc">Početni ekran će biti očišćen. Želite li nastaviti?</string>
+    <string name="home_screen_all_views_removed_msg">Početni ekran očišćen</string>
+    <string name="sort_alphabetical">Sortiraj po abecedi</string>
+    <string name="sort_install_date">Sortiraj po datumu instalacije</string>
+    <string name="sort_usage">Sortiraj po upotrebi</string>
+    <string name="navbar_burn_in_protection_title">Zaštita navigacione trake od utiskivanja</string>
+    <string name="navbar_burn_in_protection_summary">Povremeno pomjeraj navigacijsku ručicu da spriječiš utiskivanje na ekranu</string>
+    <string name="navbar_burn_in_interval_title">Interval pomjeranja</string>
+    <string name="pref_blur_background_at_app_launch_title">Zamućenje pozadine pri pokretanju/zatvaranju aplikacije</string>
+    <string name="pref_blur_background_at_app_launch_summary">Zamuti pozadinu tokom animacija pokretanja i zatvaranja aplikacije</string>
 </resources>

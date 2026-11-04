@@ -31,4 +31,190 @@
     <string name="cloudy_shape_title">"মেঘলা"</string>
     <string name="heart_shape_title">"হার্ট"</string>
     <string name="scroll_shape_title">"স্ক্রল করুন"</string>
+    <string name="action_lock">অ্যাপ লক/আনলক করুন</string>
+    <string name="unlock_app">সাম্প্রতিকে অ্যাপ আনলক করা হয়েছে</string>
+    <string name="lock_app">সাম্প্রতিকে অ্যাপ লক করা হয়েছে</string>
+    <string name="home_category_summary">Google now প্যানেল ও আরও সেট করুন</string>
+    <string name="icons_category_summary">আইকনের আকার ও আরও সেট করুন</string>
+    <string name="app_drawer_category_title">অ্যাপ ড্রয়ার</string>
+    <string name="app_drawer_category_summary">আপনার অ্যাপ ড্রয়ার কাস্টমাইজ করুন</string>
+    <string name="recents_category_summary">ওভারভিউ স্ক্রিন নতুন করে সাজান</string>
+    <string name="actions_category_title">দ্রুত ক্রিয়া</string>
+    <string name="title_show_google_app">Google অ্যাপ অ্যাক্সেস করতে সোয়াইপ করুন</string>
+    <string name="msg_minus_one_on_right">মূল হোম স্ক্রিন থেকে বাঁদিকে সোয়াইপ করলে</string>
+    <string name="suggestion_pref_screen_desc">সব অ্যাপ ও হোম স্ক্রিনের পরামর্শের জন্য</string>
+    <string name="pref_restart_summary">বাকি সেটিংস প্রয়োগ করতে লঞ্চার ম্যানুয়ালি রিস্টার্ট করুন</string>
+    <string name="restarting_launcher">লঞ্চার রিস্টার্ট হচ্ছে...</string>
+    <string name="restarting_launcher_changes">পরিবর্তন প্রয়োগ করতে লঞ্চার রিস্টার্ট হচ্ছে...</string>
+    <string name="updating_launcher_components">লঞ্চার কম্পোনেন্ট আপডেট করতে লঞ্চার রিস্টার্ট হচ্ছে...</string>
+    <string name="pref_sleep_gesture_title">ডাবল ট্যাপে ঘুম</string>
+    <string name="pref_sleep_gesture_summary">স্ক্রিন বন্ধ করতে হোম স্ক্রিনের ফাঁকা জায়গায় ডাবল ট্যাপ করুন</string>
+    <string name="pref_sleep_gesture_haptic_title">ডাবল ট্যাপে ঘুমে ভাইব্রেট করুন</string>
+    <string name="pref_sleep_gesture_haptic_summary">ডাবল ট্যাপে ঘুম আকৃতিতে হ্যাপটিক প্রতিক্রিয়া দিন</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">iOS স্টাইল সক্রিয় থাকলে স্বয়ংক্রিয়ভাবে চালু হবে</string>
+    <string name="settings_lock_layout_summary_on">হোম স্ক্রিনে আইকন ও উইজেট যোগ, সরানো এবং স্থানান্তর করা যাবে না</string>
+    <string name="settings_lock_layout_summary_off">হোম স্ক্রিনে আইকন ও উইজেট যোগ, সরানো ও স্থানান্তর করা যাবে</string>
+    <string name="settings_edit_widgets_error">হোম স্ক্রিনে উইজেট যোগ করা সম্ভব নয়</string>
+    <string name="pref_themed_icons_title">ড্রয়ারে থিমড আইকন ব্যবহার করুন</string>
+    <string name="pref_themed_icons_summary">হোম স্ক্রিনে ব্যবহৃত থিমড আইকন অনুসরণ করুন</string>
+    <string name="themed_icons_overlay_title">ওভারলেড থিমড আইকন</string>
+    <string name="themed_icons_overlay_summary">কাস্টম থিমযুক্ত আইকন ম্যাপিং ব্যবহার করুন, যেসব অ্যাপে নেটিভ থিমযুক্ত আইকন নেই</string>
+    <string name="desktop_show_labels">ডেস্কটপে আইকনের লেবেল দেখান</string>
+    <string name="drawer_show_labels">ড্রয়ারে আইকনের লেবেল দেখান</string>
+    <string name="trust_apps_manager_name">লুকানো ও সুরক্ষিত অ্যাপ</string>
+    <string name="trust_apps_auth_manager">লুকানো ও সুরক্ষিত অ্যাপ পরিচালনা করতে আনলক করুন</string>
+    <string name="trust_apps_auth_open_app">%1$s খুলতে প্রমাণীকরণ করুন</string>
+    <string name="trust_apps_no_lock_error">অ্যাপ অ্যাক্সেস সীমিত করতে একটি নিরাপদ লক স্ক্রিন সেট আপ করুন</string>
+    <string name="trust_apps_info_hidden">লুকানো অ্যাপ এবং সেগুলোর উইজেট ড্রয়ার থেকে লুকানো থাকবে</string>
+    <string name="trust_apps_info_protected">সুরক্ষিত অ্যাপ লঞ্চার থেকে খুলতে প্রমাণীকরণ প্রয়োজন</string>
+    <string name="icon_size_title">আইকনের আকার</string>
+    <string name="pause">বিরতি</string>
+    <string name="pause_apps_dialog_title">%1$s-এর বিজ্ঞপ্তি বিরতি দেবেন?</string>
+    <string name="pause_apps_dialog_message">%1$s-এর বিজ্ঞপ্তি বিরতি দেওয়া হবে</string>
+    <string name="paused_apps_dialog_title">অ্যাপের কার্যক্রম বিরতি দেওয়া হয়েছে</string>
+    <string name="paused_apps_dialog_message">লঞ্চার থেকে %1$s সরাসরি বিরতি দেওয়া হয়েছে</string>
+    <string name="icon_two_lines_title">অ্যাপের লেবেলের জন্য দুই লাইন ব্যবহার করুন</string>
+    <string name="recent_task_option_kill_app">বন্ধ করুন</string>
+    <string name="recents_app_killed">অ্যাপ বন্ধ করা হয়েছে</string>
+    <string name="row_height_title">সারির উচ্চতা</string>
+    <string name="hotseat_bg_title">হটসিট ব্যাকগ্রাউন্ড</string>
+    <string name="hotseat_bg_summary">অ্যাপ ডকে স্বচ্ছ ব্যাকগ্রাউন্ড যোগ করুন</string>
+    <string name="pref_show_hotseat_qsb_title">সার্চ বার দেখান</string>
+    <string name="pref_show_hotseat_qsb_summary">আপনার হোম স্ক্রিনের নিচে</string>
+    <string name="dock_search_widget_title">সার্চ উইজেট</string>
+    <string name="dock_search_widget_summary">ডকে সামঞ্জস্যপূর্ণ তৃতীয় পক্ষের সার্চ উইজেট ব্যবহার করুন</string>
+    <string name="dock_search_widget_picker_title">সার্চ উইজেট বেছে নিন</string>
+    <string name="dock_search_widget_default">ডিফল্ট সার্চ উইজেট</string>
+    <string name="drawer_style_title">অ্যাপ ড্রয়ারের স্টাইল</string>
+    <string name="drawer_style_summary_ios_forced">iOS স্টাইলে অ্যাপ ড্রয়ার নিষ্ক্রিয়</string>
+    <string-array name="app_drawer_style_entries">
+        <item>স্বাভাবিক (নিচের শিট)</item>
+        <item>অনুভূমিক তালিকা</item>
+        <item>উল্লম্ব (OneUI পেজড)</item>
+        <item>iOS স্টাইল</item>
+    </string-array>
+    <string name="drawer_search_title">অ্যাপ সার্চ বারের অবস্থান</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>"লুকানো"</item>
+        <item>উপরে</item>
+        <item>নিচে</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">পিন করা অ্যাপ সক্রিয় করুন</string>
+    <string name="pref_pinned_apps_enabled_summary">সার্চ বারের নিচে পিন করা অ্যাপের একটি সারি দেখান</string>
+    <string name="pref_pinned_apps_list_title">পিন করা অ্যাপের তালিকা</string>
+    <string name="pref_pinned_apps_list_summary">পিন করার জন্য অ্যাপ বেছে নিন</string>
+    <string name="allow_wallpaper_scrolling">ওয়ালপেপার স্ক্রোলিং</string>
+    <string name="allow_wallpaper_scrolling_summary">একাধিক স্ক্রিনের জন্য ওয়ালপেপার স্ক্রোলিং ইফেক্ট</string>
+    <string name="allow_wallpaper_zooming">ওয়ালপেপার জুম</string>
+    <string name="allow_wallpaper_zooming_summary">ড্রয়ার বা সাম্প্রতিক অ্যাপ ব্যবহারের সময় ওয়ালপেপার জুম ইন বা আউট করুন</string>
+    <string name="show_top_shadow">উপরের ছায়া</string>
+    <string name="meminfo_text">%1$s উপলব্ধ | %2$s</string>
+    <string name="recents_meminfo_title">মেমরির তথ্য</string>
+    <string name="recents_meminfo_zram_title">ZRAM-এর তথ্য</string>
+    <string name="recents_chips_title">কম্প্যাক্ট অ্যাকশন ডিজাইন ব্যবহার করুন</string>
+    <string name="recents_chips_summary">বহু সংখ্যক অ্যাকশন দেখানোর জন্য প্রয়োজন হতে পারে</string>
+    <string name="recents_lens_title">লেন্স</string>
+    <string name="short_parallax_title">সংক্ষিপ্ত প্যারালাক্স চালু করুন</string>
+    <string name="short_parallax_summary">ছোট করে ক্রপ করার বদলে কম সংখ্যক পেজে পূর্ণ ওয়ালপেপার স্ক্রোল ইফেক্ট চালু করুন</string>
+    <string name="single_page_center_title">একক পেজে মাঝখানে</string>
+    <string name="single_page_center_summary">শুধু একটি পেজ ব্যবহার করলে ওয়ালপেপার মাঝখানে রাখুন</string>
+    <string name="drawer_scrollbar_title">স্ক্রলবার</string>
+    <string name="drawer_scrollbar_summary">অ্যাপ ড্রয়ারের পাশে স্ক্রলবার</string>
+    <string name="perf_dark_status_bar_title">গাঢ় স্ট্যাটাস বার</string>
+    <string name="perf_dark_status_bar_summary">হোম স্ক্রিনে সবসময় গাঢ় স্ট্যাটাস বার ব্যবহার করুন</string>
+    <string name="show_quickspace_title">অ্যাট এ গ্লান্স</string>
+    <string name="show_quickspace_summary">আপনার হোম স্ক্রিনের উপরে দেখান</string>
+    <string name="quickspace_style_title">অ্যাট এ গ্লান্স স্টাইল</string>
+    <string-array name="quickspace_style_entries">
+        <item>"ডিফল্ট"</item>
+        <item>বর্ধিত</item>
+        <item>রিমিক্স</item>
+        <item>Remix পেজড</item>
+        <item>Remix উল্লম্ব</item>
+        <item>অরবিট</item>
+        <item>নিয়ন সাইন</item>
+        <item>গ্লাস</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">এখন চলছে</string>
+    <string name="quickspace_vertical_note">নোট</string>
+    <string name="quickspace_vertical_weather">আবহাওয়া</string>
+    <string name="quickspace_vertical_calendar">ক্যালেন্ডার</string>
+    <string name="quickspace_vertical_battery">ব্যাটারি</string>
+    <string name="quickspace_vertical_a11y_calendar">ক্যালেন্ডার খুলুন</string>
+    <string name="quickspace_vertical_a11y_weather">আবহাওয়া খুলুন</string>
+    <string name="quickspace_vertical_a11y_calendar_event">ক্যালেন্ডার ইভেন্ট খুলুন</string>
+    <string name="quickspace_vertical_a11y_event">এখন চলছে খুলুন</string>
+    <string name="quickspace_vertical_a11y_note">নোট খুলুন</string>
+    <string name="quickspace_vertical_a11y_battery">ব্যাটারি সেটিংস খুলুন</string>
+    <string name="quickspace_voltage_accent_title">অ্যাকসেন্ট রঙের ঘড়ি</string>
+    <string name="quickspace_voltage_accent_summary">Remix স্টাইলে ঘড়ির প্রথম সংখ্যাটি অ্যাকসেন্ট রঙে দেখান</string>
+    <string name="quickspace_voltage_minimal_title">ন্যূনতম মোড</string>
+    <string name="quickspace_voltage_minimal_summary">Remix-এর অতিরিক্ত কনটেন্ট ট্যাপযোগ্য দ্রুত আইকনে সংকুচিত করুন</string>
+    <string name="quickspace_grt_morning">শুভ সকাল।</string>
+    <string name="quickspace_grt_evening">শুভ সন্ধ্যা।</string>
+    <string name="quickspace_grt_afternoon">শুভ অপরাহ্ন।</string>
+    <string name="quickspace_grt_night">শুভ রাত্রি।</string>
+    <string name="quickspace_grt_general">শুভ দিন।</string>
+    <string name="quickspace_ext_one">আজ হলো</string>
+    <string name="quickspace_ext_two">এখন</string>
+    <string name="qe_now_playing_unknown_artist">অজানা শিল্পী</string>
+    <string name="qe_now_playing_ext_one">এখন চলছে</string>
+    <string name="qe_now_playing_by">শিল্পী</string>
+    <string name="quickspace_now_playing_title">এখন চলছে</string>
+    <string name="quickspace_now_playing_summary">আপনি যে গানটি চালাচ্ছেন সেটি দেখান</string>
+    <string name="quickspace_alternate_style_title">বর্ধিত স্টাইল</string>
+    <string name="quickspace_alternate_style_summary">বর্ধিত স্টাইলে যান</string>
+    <string name="quickspace_psa_title">এলোমেলো বার্তা</string>
+    <string name="quickspace_psa_summary">এলোমেলো বার্তার মাধ্যমে আপনার সঙ্গীকে আরও প্রাণবন্ত করুন</string>
+    <string name="intent_no_app_clock_found">ক্যালেন্ডার বা ঘড়ির কার্যক্রম খুঁজে পাওয়া যায়নি</string>
+    <string name="quick_event_ambient_weather_title">আবহাওয়ার আপডেট</string>
+    <string name="quick_event_ambient_weather_summary">বর্তমান আবহাওয়ার আপডেট দেখান</string>
+    <string name="quick_event_ambient_weather_enabled_info">আবহাওয়া সেবা চালু থাকা প্রয়োজন</string>
+    <string name="quick_event_weather_rain">বৃষ্টি</string>
+    <string name="quick_event_weather_clear">পরিষ্কার আকাশ</string>
+    <string name="quick_event_weather_storm">ঝড়ো</string>
+    <string name="quick_event_weather_snow">তুষারপাত</string>
+    <string name="quick_event_weather_mist">কুয়াশা</string>
+    <string name="quick_event_weather_city_title">বর্তমান অবস্থান</string>
+    <string name="quick_event_weather_city_summary">বর্তমান আবহাওয়ার অবস্থান দেখান</string>
+    <string name="quick_event_weather_text_title">বর্তমান অবস্থা</string>
+    <string name="quick_event_weather_text_summary">বর্তমান আবহাওয়ার সংক্ষিপ্ত অবস্থা দেখান</string>
+    <string name="quickspace_battery_title">ডিভাইসের ব্যাটারি</string>
+    <string name="quickspace_battery_summary">Remix স্টাইলে ফোন ও সংযুক্ত ব্লুটুথ ডিভাইসের ব্যাটারি দেখান</string>
+    <string name="quickspace_calendar_summary">সক্রিয় যেকোনো ক্যালেন্ডার থেকে আপনার পরবর্তী ইভেন্ট দেখান</string>
+    <string name="quickspace_calendar_untitled">নামহীন ইভেন্ট</string>
+    <string name="all_apps_dark_text_title">গাঢ় অ্যাপের লেবেল</string>
+    <string name="all_apps_dark_text_summary">অ্যাপ ড্রয়ারে অ্যাপের লেবেলের জন্য সবসময় গাঢ় টেক্সট ব্যবহার করুন</string>
+    <string name="app_info_title">অ্যাপের তথ্য</string>
+    <string name="app_info_source">উৎস</string>
+    <string name="app_info_last_update">শেষ আপডেট</string>
+    <string name="icon_pack_add">আরও ইনস্টল করুন</string>
+    <string name="icon_pack_no_market">কোনো অ্যাপ স্টোর পাওয়া যায়নি</string>
+    <string name="pebble_shape_title">পেবল</string>
+    <string name="vessel_shape_title">ভেসেল</string>
+    <string name="pure_square_shape_title">বিশুদ্ধ বর্গ</string>
+    <string name="squircle_shape_title">স্কোয়ার্কল</string>
+    <string name="tapered_rect_shape_title">ট্যাপারড রেক্ট</string>
+    <string name="teardrop_shape_title">টিয়ারড্রপ</string>
+    <string name="rounded_rect_shape_title">গোলাকার রেক্ট</string>
+    <string name="cylindrical_shape_title">বেলনাকার</string>
+    <string name="flower_shape_title">ফুল</string>
+    <string name="hexagon_shape_title">ষড়ভুজ</string>
+    <string name="ios_style_shape_title">iOS স্টাইল</string>
+    <string name="leaf_shape_title">পাতা</string>
+    <string name="meow_shape_title">ম্যাও</string>
+    <string name="samsung_style_shape_title">Samsung স্টাইল</string>
+    <string name="stretched_shape_title">প্রসারিত</string>
+    <string name="home_screen_actions">হোম স্ক্রিনের অ্যাকশন</string>
+    <string name="remove_all_views_from_home_screen">হোম স্ক্রিন পরিষ্কার করুন</string>
+    <string name="remove_all_views_from_home_screen_desc">হোম স্ক্রিন পরিষ্কার করা হবে। আপনি কি চালিয়ে যেতে চান?</string>
+    <string name="home_screen_all_views_removed_msg">হোম স্ক্রিন পরিষ্কার করা হয়েছে</string>
+    <string name="sort_alphabetical">বর্ণানুক্রমে সাজান</string>
+    <string name="sort_install_date">ইনস্টলের তারিখ অনুযায়ী সাজান</string>
+    <string name="sort_usage">ব্যবহার অনুযায়ী সাজান</string>
+    <string name="navbar_burn_in_protection_title">নেভবার বার্ন-ইন সুরক্ষা</string>
+    <string name="navbar_burn_in_protection_summary">ডিসপ্লে বার্ন-ইন রোধ করতে নেভিগেশন হ্যান্ডেল পর্যায়ক্রমে সরান</string>
+    <string name="navbar_burn_in_interval_title">সরানোর ব্যবধান</string>
+    <string name="pref_blur_background_at_app_launch_title">অ্যাপ চালু/বন্ধ হওয়ার সময় ব্যাকগ্রাউন্ড ব্লার</string>
+    <string name="pref_blur_background_at_app_launch_summary">অ্যাপ চালু ও বন্ধের অ্যানিমেশনের সময় ব্যাকগ্রাউন্ড ঝাপসা করুন</string>
 </resources>

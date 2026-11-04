@@ -4,4 +4,30 @@
     <string name="drawer_open_keyboard_summary">Otevřít klávesnici vždy, když je seznam aplikací viditelný</string>
     <string name="pref_recents_style_title">"Poslední"</string>
     <string name="glance_content_description">Přehled událostí</string>
+    <string-array name="recents_style_entries">
+        <item>"Přehled"</item>
+        <item>Štíhlé poslední (boční panel)</item>
+        <item>Otočné poslední (kolo)</item>
+    </string-array>
+    <string name="neon_icons_title">Neonové ikony</string>
+    <string name="neon_icons_summary">Symbol každé aplikace v barvě zvýraznění uvnitř zářícího kruhu. Zapíná motivové ikony.</string>
+    <string name="icon_style_rr_title">Styl ikon</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Výchozí"</item>
+        <item>Motivové</item>
+        <item>Neon</item>
+    </string-array>
+    <string name="neon_ring_color_title">Barva kruhu</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Akcent</item>
+        <item>Vlastní barva aplikace</item>
+    </string-array>
+    <string name="neon_glow_title">Záře</string>
+    <string name="neon_ring_title">Vyzvánění</string>
+    <string-array name="neon_ring_entries">
+        <item>Tenké</item>
+        <item>"Střední"</item>
+        <item>"Výrazné"</item>
+    </string-array>
+    <string name="neon_folders_title">Včetně složek</string>
 </resources>

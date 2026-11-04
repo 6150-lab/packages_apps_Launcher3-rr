@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"Naujausi"</string>
     <string name="glance_content_description">Apžvalga</string>
+    <string name="drawer_open_keyboard_title">Braukite, kad pradėtumėte paiešką</string>
+    <string name="drawer_open_keyboard_summary">Atidaryti klaviatūrą, kai tik rodomas programų stalčius</string>
+    <string-array name="recents_style_entries">
+        <item>"Apžvalga"</item>
+        <item>Plona naujausių juosta (šoninis skydelis)</item>
+        <item>Sukama naujausių juosta (ratas)</item>
+    </string-array>
+    <string name="neon_icons_title">Neoninės piktogramos</string>
+    <string name="neon_icons_summary">Kiekvienos programos piktograma jūsų pagrindine spalva, įdėta į švytintį žiedą. Įjungia temines piktogramas.</string>
+    <string name="icon_style_rr_title">Piktogramos stilius</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Numatytasis"</item>
+        <item>Pagal temą</item>
+        <item>Neoninis</item>
+    </string-array>
+    <string name="neon_ring_color_title">Žiedo spalva</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Akcentas</item>
+        <item>Programos spalva</item>
+    </string-array>
+    <string name="neon_glow_title">Švytėjimas</string>
+    <string name="neon_ring_title">Garsas</string>
+    <string-array name="neon_ring_entries">
+        <item>Plonas</item>
+        <item>"Vidutinis"</item>
+        <item>"Pusjuodė"</item>
+    </string-array>
+    <string name="neon_folders_title">Ir aplankai</string>
 </resources>

@@ -6,4 +6,28 @@
     <string name="glance_content_description">Riepilogo</string>
     <string name="icon_style_rr_title">Stile icone</string>
     <string name="neon_ring_color_title">Colore dell\'anello</string>
+    <string-array name="recents_style_entries">
+        <item>"Panoramica"</item>
+        <item>Recenti sottili (pannello laterale)</item>
+        <item>Recenti a ruota (ruota)</item>
+    </string-array>
+    <string name="neon_icons_title">Icone neon</string>
+    <string name="neon_icons_summary">Il glifo di ogni app nel tuo colore primario, all\'interno di un anello luminoso. Attiva le icone tematizzate.</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Predefinito"</item>
+        <item>Tematizzate</item>
+        <item>Neon</item>
+    </string-array>
+    <string-array name="neon_ring_color_entries">
+        <item>Accento</item>
+        <item>Colore dell\'app</item>
+    </string-array>
+    <string name="neon_glow_title">Bagliore</string>
+    <string name="neon_ring_title">Suoneria</string>
+    <string-array name="neon_ring_entries">
+        <item>Sottile</item>
+        <item>"Medio"</item>
+        <item>"Deciso"</item>
+    </string-array>
+    <string name="neon_folders_title">Anche le cartelle</string>
 </resources>

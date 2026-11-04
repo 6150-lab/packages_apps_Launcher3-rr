@@ -78,4 +78,143 @@
     </string-array>
     <string name="quickspace_vertical_now_playing">ŞİMDİ ÇALIYOR</string>
     <string name="app_info_source">Kaynak</string>
+    <string name="action_lock">Uygulamayı kilitle/kilidi aç</string>
+    <string name="unlock_app">Son Kullanılanlar\'da uygulama kilidi açıldı</string>
+    <string name="lock_app">Son Kullanılanlar\'da uygulama kilitlendi</string>
+    <string name="home_category_summary">Google şimdi panelini ve daha fazlasını ayarla</string>
+    <string name="icons_category_summary">Simge boyutunu ve daha fazlasını ayarla</string>
+    <string name="app_drawer_category_title">Uygulama çekmecesi</string>
+    <string name="app_drawer_category_summary">Uygulama çekmecenizi özelleştirin</string>
+    <string name="recents_category_summary">Genel bakış ekranını yenileyin</string>
+    <string name="actions_category_title">Hızlı eylemler</string>
+    <string name="title_show_google_app">Google uygulamasına erişmek için kaydırın</string>
+    <string name="suggestion_pref_screen_desc">Tüm Uygulamalar ve Ana ekran önerileri için</string>
+    <string name="pref_restart_summary">Bekleyen ayarları uygulamak için başlatıcıyı elle yeniden başlatın</string>
+    <string name="restarting_launcher">Başlatıcı yeniden başlatılıyor...</string>
+    <string name="restarting_launcher_changes">Değişiklikleri uygulamak için başlatıcı yeniden başlatılıyor...</string>
+    <string name="updating_launcher_components">Başlatıcı bileşenleri güncellenmek üzere başlatıcı yeniden başlatılıyor...</string>
+    <string name="pref_sleep_gesture_title">Çift dokunarak uyut</string>
+    <string name="pref_sleep_gesture_summary">Ekranı kapatmak için ana ekranda boş bir alana çift dokunun</string>
+    <string name="pref_sleep_gesture_haptic_title">Çift dokunarak uykuya almada titreşim</string>
+    <string name="pref_sleep_gesture_haptic_summary">Çift dokunarak uyutma hareketinde dokunsal geri bildirim sağla</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">iOS stili etkin olduğunda otomatik olarak etkinleştirilir</string>
+    <string name="themed_icons_overlay_title">Üst üste bindirilmiş temalı simgeler</string>
+    <string name="themed_icons_overlay_summary">Yerel temalı simgesi olmayan uygulamalar için özel temalı simge eşlemesi kullan</string>
+    <string name="pause_apps_dialog_title">%1$s duraklatılsın mı?</string>
+    <string name="pause_apps_dialog_message">%1$s için bildirimler duraklatılacak</string>
+    <string name="paused_apps_dialog_title">Uygulama duraklatıldı</string>
+    <string name="paused_apps_dialog_message">%1$s, başlatıcıdan doğrudan duraklatıldı</string>
+    <string name="icon_two_lines_title">Uygulama etiketi için iki satır kullan</string>
+    <string name="recent_task_option_kill_app">Sonlandır</string>
+    <string name="recents_app_killed">Uygulama sonlandırıldı</string>
+    <string name="row_height_title">Satır yüksekliği</string>
+    <string name="hotseat_bg_title">Alt çubuk arka planı</string>
+    <string name="hotseat_bg_summary">Uygulama dock\'una yarı saydam arka plan ekle</string>
+    <string name="pref_show_hotseat_qsb_title">Arama çubuğunu göster</string>
+    <string name="pref_show_hotseat_qsb_summary">Ana ekranınızın alt kısmında</string>
+    <string name="dock_search_widget_title">Arama widget\'ı</string>
+    <string name="dock_search_widget_summary">Dock\'ta uyumlu bir üçüncü taraf arama widget\'ı kullan</string>
+    <string name="dock_search_widget_picker_title">Arama widget\'ı seç</string>
+    <string name="dock_search_widget_default">Varsayılan arama widget\'ı</string>
+    <string name="drawer_style_title">Uygulama çekmecesi stili</string>
+    <string name="drawer_style_summary_ios_forced">iOS stilinde uygulama çekmecesi devre dışı</string>
+    <string-array name="app_drawer_style_entries">
+        <item>Normal (alt sayfa)</item>
+        <item>Yatay liste</item>
+        <item>Dikey (OneUI sayfalı)</item>
+        <item>iOS stili</item>
+    </string-array>
+    <string name="drawer_search_title">Uygulama arama çubuğu konumu</string>
+    <string name="pref_pinned_apps_enabled_title">Sabitlenmiş uygulamaları etkinleştir</string>
+    <string name="pref_pinned_apps_enabled_summary">Arama çubuğunun altında sabitlenmiş uygulamalar satırını göster</string>
+    <string name="pref_pinned_apps_list_title">Sabitlenmiş uygulamalar listesi</string>
+    <string name="pref_pinned_apps_list_summary">Sabitlenecek uygulamaları seçin</string>
+    <string name="allow_wallpaper_scrolling">Duvar kağıdı kaydırma</string>
+    <string name="allow_wallpaper_scrolling_summary">Birden fazla ekran için duvar kağıdı kaydırma efekti</string>
+    <string name="allow_wallpaper_zooming">Duvar kağıdı yakınlaştırma</string>
+    <string name="allow_wallpaper_zooming_summary">Çekmece veya son uygulamalar kullanılırken duvar kağıdını yakınlaştır veya uzaklaştır</string>
+    <string name="show_top_shadow">Üst gölge</string>
+    <string name="meminfo_text">%1$s kullanılabilir | %2$s</string>
+    <string name="recents_meminfo_title">Bellek bilgisi</string>
+    <string name="recents_meminfo_zram_title">ZRAM bilgisi</string>
+    <string name="recents_chips_title">Kompakt eylem tasarımını kullan</string>
+    <string name="recents_chips_summary">Çok sayıda eylemin görüntülenmesi için gerekli olabilir</string>
+    <string name="recents_lens_title">Lens</string>
+    <string name="short_parallax_title">Kısa paralaks etkinleştir</string>
+    <string name="short_parallax_summary">Duvar kağıdını kırpmak yerine az sayıda sayfada tam duvar kağıdı kaydırma efektini etkinleştir</string>
+    <string name="single_page_center_title">Tek sayfa ortalama</string>
+    <string name="single_page_center_summary">Yalnızca tek sayfa kullanılıyorsa duvar kağıdını ortala</string>
+    <string name="drawer_scrollbar_title">Kaydırma çubuğu</string>
+    <string name="drawer_scrollbar_summary">Uygulama çekmecesinin kenarında kaydırma çubuğu</string>
+    <string name="perf_dark_status_bar_title">Koyu durum çubuğu</string>
+    <string name="perf_dark_status_bar_summary">Ana ekranda her zaman koyu durum çubuğu kullan</string>
+    <string name="show_quickspace_title">Bir Bakışta</string>
+    <string name="show_quickspace_summary">Ana ekranınızın üst kısmında göster</string>
+    <string name="quickspace_style_title">Bir Bakışta stili</string>
+    <string-array name="quickspace_style_entries">
+        <item>"Varsayılan"</item>
+        <item>Genişletilmiş</item>
+        <item>Remix</item>
+        <item>Remix sayfalı</item>
+        <item>Remix dikey</item>
+        <item>Yörünge</item>
+        <item>Neon tabela</item>
+        <item>Cam</item>
+    </string-array>
+    <string name="quickspace_vertical_note">NOT</string>
+    <string name="quickspace_vertical_weather">HAVA DURUMU</string>
+    <string name="quickspace_vertical_calendar">TAKVİM</string>
+    <string name="quickspace_vertical_battery">PİL</string>
+    <string name="quickspace_vertical_a11y_calendar">Takvimi aç</string>
+    <string name="quickspace_vertical_a11y_weather">Hava durumunu aç</string>
+    <string name="quickspace_vertical_a11y_calendar_event">Takvim etkinliğini aç</string>
+    <string name="quickspace_vertical_a11y_event">Şu an çalan parçayı aç</string>
+    <string name="quickspace_vertical_a11y_note">Notu aç</string>
+    <string name="quickspace_vertical_a11y_battery">Pil ayarlarını aç</string>
+    <string name="quickspace_voltage_accent_title">Vurgu renkli saat</string>
+    <string name="quickspace_voltage_accent_summary">Remix stillerinde saatin ilk rakamını vurgu rengiyle göster</string>
+    <string name="quickspace_voltage_minimal_title">Minimal mod</string>
+    <string name="quickspace_voltage_minimal_summary">Remix ikincil içeriğini dokunulabilir hızlı simgelere daralt</string>
+    <string name="quickspace_grt_morning">Günaydın.</string>
+    <string name="quickspace_grt_evening">İyi akşamlar.</string>
+    <string name="quickspace_grt_afternoon">İyi öğleden sonralar.</string>
+    <string name="quickspace_grt_night">İyi geceler.</string>
+    <string name="quickspace_grt_general">İyi günler.</string>
+    <string name="quickspace_ext_one">Bugün</string>
+    <string name="quickspace_ext_two">Saat</string>
+    <string name="qe_now_playing_unknown_artist">Bilinmeyen sanatçı</string>
+    <string name="qe_now_playing_by">Yapan:</string>
+    <string name="quickspace_now_playing_summary">Çalan şarkıyı göster</string>
+    <string name="quickspace_alternate_style_title">Genişletilmiş stil</string>
+    <string name="quickspace_alternate_style_summary">Genişletilmiş stile geç</string>
+    <string name="quickspace_psa_title">Rastgele mesajlar</string>
+    <string name="quickspace_psa_summary">Rastgele mesajlarla yoldaşınızı daha canlı hale getirin</string>
+    <string name="intent_no_app_clock_found">Takvim veya saat etkinliği bulunamadı</string>
+    <string name="quickspace_battery_title">Cihaz pili</string>
+    <string name="quickspace_battery_summary">Remix stillerinde telefon ve bağlı Bluetooth cihazının pilini göster</string>
+    <string name="quickspace_calendar_summary">Etkin herhangi bir takvimdeki bir sonraki etkinliğinizi gösterin</string>
+    <string name="quickspace_calendar_untitled">Adsız etkinlik</string>
+    <string name="all_apps_dark_text_title">Koyu uygulama etiketleri</string>
+    <string name="all_apps_dark_text_summary">Uygulama çekmecesinde uygulama etiketleri için her zaman koyu metin kullan</string>
+    <string name="app_info_title">Uygulama bilgisi</string>
+    <string name="app_info_last_update">Son güncelleme</string>
+    <string name="icon_pack_add">Daha fazla yükle</string>
+    <string name="icon_pack_no_market">Kullanılabilir bir uygulama mağazası yok</string>
+    <string name="pure_square_shape_title">Tam kare</string>
+    <string name="tapered_rect_shape_title">Sivri dikdörtgen</string>
+    <string name="rounded_rect_shape_title">Yuvarlatılmış dikdörtgen</string>
+    <string name="ios_style_shape_title">iOS stili</string>
+    <string name="samsung_style_shape_title">Samsung stili</string>
+    <string name="home_screen_actions">Ana ekran eylemleri</string>
+    <string name="remove_all_views_from_home_screen">Ana ekranı temizle</string>
+    <string name="remove_all_views_from_home_screen_desc">Ana ekran temizlenecek. Devam etmek istiyor musunuz?</string>
+    <string name="home_screen_all_views_removed_msg">Ana ekran temizlendi</string>
+    <string name="sort_alphabetical">Alfabetik sırala</string>
+    <string name="sort_install_date">Yüklenme tarihine göre sırala</string>
+    <string name="sort_usage">Kullanıma göre sırala</string>
+    <string name="navbar_burn_in_protection_title">Gezinme çubuğu yanmaya karşı koruma</string>
+    <string name="navbar_burn_in_protection_summary">Ekran yanmasını önlemek için gezinme tutamacını periyodik olarak kaydır</string>
+    <string name="navbar_burn_in_interval_title">Kaydırma aralığı</string>
+    <string name="pref_blur_background_at_app_launch_title">Uygulama açılırken/kapanırken arka plan bulanıklığı</string>
+    <string name="pref_blur_background_at_app_launch_summary">Uygulama açılış ve kapanış animasyonları sırasında arka planı bulanıklaştır</string>
 </resources>

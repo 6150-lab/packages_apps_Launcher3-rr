@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"Recentes"</string>
     <string name="glance_content_description">Dunha ollada</string>
+    <string name="drawer_open_keyboard_title">Deslizar para iniciar a busca</string>
+    <string name="drawer_open_keyboard_summary">Abrir o teclado sempre que o caixón de aplicacións sexa visible</string>
+    <string-array name="recents_style_entries">
+        <item>"Visión xeral"</item>
+        <item>Recentes finos (panel lateral)</item>
+        <item>Recentes en espiral (roda)</item>
+    </string-array>
+    <string name="neon_icons_title">Iconas en neón</string>
+    <string name="neon_icons_summary">O glifo de cada aplicación na túa cor de énfase, dentro dun anel luminoso. Activa as iconas con tema.</string>
+    <string name="icon_style_rr_title">Estilo de icona</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Predeterminado"</item>
+        <item>Con tema</item>
+        <item>Neón</item>
+    </string-array>
+    <string name="neon_ring_color_title">Cor do anel</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Acento</item>
+        <item>Cor propia da aplicación</item>
+    </string-array>
+    <string name="neon_glow_title">Brillo</string>
+    <string name="neon_ring_title">Timbre</string>
+    <string-array name="neon_ring_entries">
+        <item>Fina</item>
+        <item>"Medio"</item>
+        <item>"Grosa"</item>
+    </string-array>
+    <string name="neon_folders_title">Tamén as carpetas</string>
 </resources>

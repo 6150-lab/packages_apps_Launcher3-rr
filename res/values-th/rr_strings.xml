@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"ล่าสุด"</string>
     <string name="glance_content_description">ข้อมูลโดยย่อ</string>
+    <string name="drawer_open_keyboard_title">ปัดเพื่อเริ่มการค้นหา</string>
+    <string name="drawer_open_keyboard_summary">เปิดแป้นพิมพ์ทุกครั้งที่ลิ้นชักแอปปรากฏ</string>
+    <string-array name="recents_style_entries">
+        <item>"ภาพรวม"</item>
+        <item>แอปล่าสุดแบบบาง (แผงด้านข้าง)</item>
+        <item>แอปล่าสุดแบบหมุน (วงล้อ)</item>
+    </string-array>
+    <string name="neon_icons_title">ไอคอนนีออน</string>
+    <string name="neon_icons_summary">แสดงไอคอนของแต่ละแอปด้วยสีเน้นของคุณภายในวงแหวนเรืองแสง เปิดการใช้ไอคอนตามธีม</string>
+    <string name="icon_style_rr_title">สไตล์ไอคอน</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"ค่าเริ่มต้น"</item>
+        <item>ตามธีม</item>
+        <item>นีออน</item>
+    </string-array>
+    <string name="neon_ring_color_title">สีวงแหวน</string>
+    <string-array name="neon_ring_color_entries">
+        <item>สีเน้น</item>
+        <item>สีของแอปเอง</item>
+    </string-array>
+    <string name="neon_glow_title">เรืองแสง</string>
+    <string name="neon_ring_title">เสียงเรียก</string>
+    <string-array name="neon_ring_entries">
+        <item>บาง</item>
+        <item>"ปานกลาง"</item>
+        <item>"โดดเด่น"</item>
+    </string-array>
+    <string name="neon_folders_title">รวมโฟลเดอร์ด้วย</string>
 </resources>

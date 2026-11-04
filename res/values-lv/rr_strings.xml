@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"Nesenie"</string>
     <string name="glance_content_description">Īsumā</string>
+    <string name="drawer_open_keyboard_title">Vilkt, lai sāktu meklēšanu</string>
+    <string name="drawer_open_keyboard_summary">Atvērt tastatūru, kad vien lietotņu atvilktne kļūst redzama</string>
+    <string-array name="recents_style_entries">
+        <item>"Pārskats"</item>
+        <item>Šaurie nesenie (sānu panelis)</item>
+        <item>Griežamie nesenie (ritenis)</item>
+    </string-array>
+    <string name="neon_icons_title">Neona ikonas</string>
+    <string name="neon_icons_summary">Katras lietotnes simbols jūsu uzsvara krāsā spīdošā gredzenā. Ieslēdz tematiskās ikonas.</string>
+    <string name="icon_style_rr_title">Ikonu stils</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Noklusējums"</item>
+        <item>Tematiskās</item>
+        <item>Neona</item>
+    </string-array>
+    <string name="neon_ring_color_title">Gredzena krāsa</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Akcents</item>
+        <item>Lietotnes pašas krāsa</item>
+    </string-array>
+    <string name="neon_glow_title">Spīdums</string>
+    <string name="neon_ring_title">Zvans</string>
+    <string-array name="neon_ring_entries">
+        <item>Plāns</item>
+        <item>"Vidējs"</item>
+        <item>"Spilgts"</item>
+    </string-array>
+    <string name="neon_folders_title">Arī mapes</string>
 </resources>

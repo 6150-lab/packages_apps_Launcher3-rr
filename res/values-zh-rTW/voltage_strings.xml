@@ -73,4 +73,140 @@
     </string-array>
     <string name="quickspace_vertical_now_playing">正在播放</string>
     <string name="app_info_source">來源</string>
+    <string name="action_lock">鎖定/解鎖應用程式</string>
+    <string name="unlock_app">最近任務中已解鎖的應用程式</string>
+    <string name="lock_app">最近任務中已鎖定的應用程式</string>
+    <string name="home_category_summary">設定 Google 即時面板等</string>
+    <string name="icons_category_summary">設定圖示大小等</string>
+    <string name="app_drawer_category_title">應用程式抽屜</string>
+    <string name="app_drawer_category_summary">自定義應用程式抽屜</string>
+    <string name="recents_category_summary">重新設計概覽螢幕</string>
+    <string name="actions_category_title">快捷操作</string>
+    <string name="title_show_google_app">滑動以訪問 Google 應用程式</string>
+    <string name="suggestion_pref_screen_desc">用於所有應用程式和主螢幕建議</string>
+    <string name="pref_restart_summary">手動重啟啟動器以套用所有待定設定</string>
+    <string name="restarting_launcher">正在重啟啟動器…</string>
+    <string name="restarting_launcher_changes">正在重啟啟動器以套用更改…</string>
+    <string name="updating_launcher_components">正在重啟啟動器以更新元件…</string>
+    <string name="pref_sleep_gesture_haptic_title">雙擊休眠時振動</string>
+    <string name="pref_sleep_gesture_haptic_summary">雙擊休眠手勢時提供觸覺反饋</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">iOS 風格啟用時自動啟用</string>
+    <string name="themed_icons_overlay_title">疊加主題圖示</string>
+    <string name="themed_icons_overlay_summary">對沒有原生主題圖示的應用程式使用自定義主題圖示對映</string>
+    <string name="pause_apps_dialog_title">暫停 %1$s？</string>
+    <string name="pause_apps_dialog_message">將暫停 %1$s 的通知</string>
+    <string name="paused_apps_dialog_title">應用程式已暫停</string>
+    <string name="paused_apps_dialog_message">%1$s 已從啟動器直接暫停</string>
+    <string name="icon_two_lines_title">應用程式名稱使用兩行</string>
+    <string name="recent_task_option_kill_app">終止</string>
+    <string name="recents_app_killed">應用程式已終止</string>
+    <string name="row_height_title">行高</string>
+    <string name="hotseat_bg_title">底部欄背景</string>
+    <string name="hotseat_bg_summary">為應用程式塢新增半透明背景</string>
+    <string name="dock_search_widget_title">搜尋小部件</string>
+    <string name="dock_search_widget_summary">在塢中使用相容的第三方搜尋小部件</string>
+    <string name="dock_search_widget_picker_title">選擇搜尋小部件</string>
+    <string name="dock_search_widget_default">預設搜尋小部件</string>
+    <string name="drawer_style_title">應用程式抽屜樣式</string>
+    <string name="drawer_style_summary_ios_forced">iOS 風格下已禁用應用程式抽屜</string>
+    <string-array name="app_drawer_style_entries">
+        <item>普通（底部彈窗）</item>
+        <item>水平列表</item>
+        <item>垂直（OneUI 分頁）</item>
+        <item>iOS 風格</item>
+    </string-array>
+    <string name="drawer_search_title">應用程式搜尋欄位置</string>
+    <string name="pref_pinned_apps_enabled_title">啟用置頂應用程式</string>
+    <string name="pref_pinned_apps_enabled_summary">在搜尋欄下方顯示一行置頂應用程式</string>
+    <string name="pref_pinned_apps_list_title">置頂應用程式列表</string>
+    <string name="pref_pinned_apps_list_summary">選擇要置頂的應用程式</string>
+    <string name="allow_wallpaper_scrolling">桌布滾動</string>
+    <string name="allow_wallpaper_scrolling_summary">多螢幕桌布滾動效果</string>
+    <string name="allow_wallpaper_zooming">桌布縮放</string>
+    <string name="allow_wallpaper_zooming_summary">使用抽屜或最近任務時放大或縮小桌布</string>
+    <string name="show_top_shadow">頂部陰影</string>
+    <string name="meminfo_text">可用 %1$s | %2$s</string>
+    <string name="recents_meminfo_title">記憶體資訊</string>
+    <string name="recents_meminfo_zram_title">ZRAM 資訊</string>
+    <string name="recents_chips_title">使用緊湊操作設計</string>
+    <string name="recents_chips_summary">操作較多時可能需要顯示</string>
+    <string name="short_parallax_title">允許短視差</string>
+    <string name="short_parallax_summary">頁數較少時啟用完整桌布滾動效果，而不是裁剪桌布</string>
+    <string name="single_page_center_title">單頁居中</string>
+    <string name="single_page_center_summary">僅使用單頁時居中桌布</string>
+    <string name="drawer_scrollbar_title">捲軸</string>
+    <string name="drawer_scrollbar_summary">應用程式抽屜側邊的捲軸</string>
+    <string name="perf_dark_status_bar_title">深色狀態列</string>
+    <string name="perf_dark_status_bar_summary">主螢幕始終使用深色狀態列</string>
+    <string name="show_quickspace_title">一覽</string>
+    <string name="show_quickspace_summary">顯示在主螢幕頂部</string>
+    <string name="quickspace_style_title">一覽樣式</string>
+    <string-array name="quickspace_style_entries">
+        <item>"預設"</item>
+        <item>擴充套件</item>
+        <item>Remix</item>
+        <item>Remix 分頁</item>
+        <item>Remix 垂直</item>
+        <item>軌道</item>
+        <item>霓虹燈</item>
+        <item>玻璃</item>
+    </string-array>
+    <string name="quickspace_vertical_note">備註</string>
+    <string name="quickspace_vertical_weather">天氣</string>
+    <string name="quickspace_vertical_calendar">日曆</string>
+    <string name="quickspace_vertical_battery">電池</string>
+    <string name="quickspace_vertical_a11y_calendar">開啟日曆</string>
+    <string name="quickspace_vertical_a11y_weather">開啟天氣</string>
+    <string name="quickspace_vertical_a11y_calendar_event">開啟日曆事件</string>
+    <string name="quickspace_vertical_a11y_event">開啟正在播放</string>
+    <string name="quickspace_vertical_a11y_note">開啟備註</string>
+    <string name="quickspace_vertical_a11y_battery">開啟電池設定</string>
+    <string name="quickspace_voltage_accent_title">強調色時鐘</string>
+    <string name="quickspace_voltage_accent_summary">在 Remix 樣式中為時鐘的第一個數字著色</string>
+    <string name="quickspace_voltage_minimal_title">極簡模式</string>
+    <string name="quickspace_voltage_minimal_summary">將 Remix 次要內容摺疊為可點選的快捷圖示</string>
+    <string name="quickspace_grt_morning">早上好。</string>
+    <string name="quickspace_grt_evening">晚上好。</string>
+    <string name="quickspace_grt_afternoon">下午好。</string>
+    <string name="quickspace_grt_night">晚安。</string>
+    <string name="quickspace_grt_general">你好。</string>
+    <string name="quickspace_ext_one">今天是</string>
+    <string name="quickspace_ext_two">現在是</string>
+    <string name="qe_now_playing_unknown_artist">未知藝術家</string>
+    <string name="qe_now_playing_by">作者</string>
+    <string name="quickspace_now_playing_summary">顯示正在播放的歌曲</string>
+    <string name="quickspace_alternate_style_title">擴充套件樣式</string>
+    <string name="quickspace_alternate_style_summary">切換到擴充套件樣式</string>
+    <string name="quickspace_psa_title">隨機訊息</string>
+    <string name="quickspace_psa_summary">用隨機訊息讓小助手更生動</string>
+    <string name="intent_no_app_clock_found">找不到日曆或時鐘活動</string>
+    <string name="quick_event_weather_rain">下雨</string>
+    <string name="quick_event_weather_clear">晴朗</string>
+    <string name="quick_event_weather_storm">暴風雨</string>
+    <string name="quick_event_weather_snow">下雪</string>
+    <string name="quick_event_weather_mist">有霧</string>
+    <string name="quickspace_battery_title">裝置電池</string>
+    <string name="quickspace_battery_summary">在 Remix 樣式中顯示手機和已連線藍芽裝置的電量</string>
+    <string name="quickspace_calendar_summary">顯示已啟用日曆中的下一個事件</string>
+    <string name="quickspace_calendar_untitled">無標題事件</string>
+    <string name="all_apps_dark_text_title">深色應用程式名稱</string>
+    <string name="all_apps_dark_text_summary">應用程式抽屜中始終使用深色應用程式名稱文字</string>
+    <string name="app_info_title">應用程式資訊</string>
+    <string name="app_info_last_update">最近更新</string>
+    <string name="icon_pack_add">安裝更多</string>
+    <string name="icon_pack_no_market">沒有可用的應用程式商店</string>
+    <string name="ios_style_shape_title">iOS 風格</string>
+    <string name="samsung_style_shape_title">三星風格</string>
+    <string name="home_screen_actions">主螢幕操作</string>
+    <string name="remove_all_views_from_home_screen">清空主螢幕</string>
+    <string name="remove_all_views_from_home_screen_desc">主螢幕將被清空。要繼續嗎？</string>
+    <string name="home_screen_all_views_removed_msg">主螢幕已清空</string>
+    <string name="sort_alphabetical">按字母排序</string>
+    <string name="sort_install_date">按安裝日期排序</string>
+    <string name="sort_usage">按使用情況排序</string>
+    <string name="navbar_burn_in_protection_title">導航欄防燒屏</string>
+    <string name="navbar_burn_in_protection_summary">定期移動導航條以防止螢幕燒屏</string>
+    <string name="navbar_burn_in_interval_title">移動間隔</string>
+    <string name="pref_blur_background_at_app_launch_title">應用程式啟動/關閉時模糊背景</string>
+    <string name="pref_blur_background_at_app_launch_summary">在應用程式啟動和關閉動畫期間模糊背景</string>
 </resources>

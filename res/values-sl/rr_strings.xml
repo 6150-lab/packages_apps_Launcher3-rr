@@ -4,4 +4,30 @@
     <string name="drawer_open_keyboard_summary">Odpri tipkovnico kadar koli predal aplikacij postane viden</string>
     <string name="pref_recents_style_title">"Nedavno"</string>
     <string name="glance_content_description">Hitri pregled</string>
+    <string-array name="recents_style_entries">
+        <item>"Pregled"</item>
+        <item>Vitke nedavne aplikacije (stranski panel)</item>
+        <item>Vrteče se nedavne aplikacije (kolo)</item>
+    </string-array>
+    <string name="neon_icons_title">Neonske ikone</string>
+    <string name="neon_icons_summary">Simbol vsake aplikacije v vaši barvi poudarka znotraj sijočega obroča. Vklopi tematske ikone.</string>
+    <string name="icon_style_rr_title">Slog ikon</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Privzeto"</item>
+        <item>Tematski</item>
+        <item>Neon</item>
+    </string-array>
+    <string name="neon_ring_color_title">Barva obroča</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Poudarek</item>
+        <item>Lastna barva aplikacije</item>
+    </string-array>
+    <string name="neon_glow_title">Sij</string>
+    <string name="neon_ring_title">Zvonjenje</string>
+    <string-array name="neon_ring_entries">
+        <item>Tanko</item>
+        <item>"Srednje"</item>
+        <item>"Krepko"</item>
+    </string-array>
+    <string name="neon_folders_title">Tudi mape</string>
 </resources>

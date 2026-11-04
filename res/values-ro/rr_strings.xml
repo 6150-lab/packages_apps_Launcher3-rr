@@ -4,4 +4,30 @@
     <string name="drawer_open_keyboard_summary">Deschide tastatura ori de câte ori sertarul de aplicații devine vizibil</string>
     <string name="pref_recents_style_title">"Recente"</string>
     <string name="glance_content_description">Pe scurt</string>
+    <string-array name="recents_style_entries">
+        <item>"Recente"</item>
+        <item>Recente subțiri (panou lateral)</item>
+        <item>Recente rotitoare (roată)</item>
+    </string-array>
+    <string name="neon_icons_title">Pictograme neon</string>
+    <string name="neon_icons_summary">Pictograma fiecărei aplicații în culoarea accentului, într-un inel luminos. Activează pictogramele tematice.</string>
+    <string name="icon_style_rr_title">Stil pictogramă</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Prestabilit"</item>
+        <item>Tematic</item>
+        <item>Neon</item>
+    </string-array>
+    <string name="neon_ring_color_title">Culoarea inelului</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Accent</item>
+        <item>Culoarea proprie a aplicației</item>
+    </string-array>
+    <string name="neon_glow_title">Strălucire</string>
+    <string name="neon_ring_title">Sonerie</string>
+    <string-array name="neon_ring_entries">
+        <item>Subțire</item>
+        <item>"Mediu"</item>
+        <item>"Aldin"</item>
+    </string-array>
+    <string name="neon_folders_title">Și dosarele</string>
 </resources>

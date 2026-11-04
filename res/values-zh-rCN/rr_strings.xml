@@ -13,4 +13,21 @@
         <item>"中"</item>
         <item>"粗体"</item>
     </string-array>
+    <string-array name="recents_style_entries">
+        <item>"概览"</item>
+        <item>精简最近任务（侧边栏）</item>
+        <item>旋转最近任务（转盘）</item>
+    </string-array>
+    <string name="neon_icons_title">霓虹图标</string>
+    <string name="neon_icons_summary">每个应用的图标以你的强调色显示，并置于发光的圆环中。开启主题图标。</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"默认"</item>
+        <item>主题化</item>
+        <item>霓虹</item>
+    </string-array>
+    <string-array name="neon_ring_color_entries">
+        <item>强调色</item>
+        <item>应用自身颜色</item>
+    </string-array>
+    <string name="neon_folders_title">文件夹也应用</string>
 </resources>

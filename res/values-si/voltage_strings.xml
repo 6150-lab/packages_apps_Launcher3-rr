@@ -26,4 +26,195 @@
     <string name="cloudy_shape_title">"නොපැහැදිලි"</string>
     <string name="heart_shape_title">"හදවත"</string>
     <string name="scroll_shape_title">"අනුචලනය කරන්න"</string>
+    <string name="action_lock">යෙදුම අගුලු දමන්න/අගුලු හරින්න</string>
+    <string name="unlock_app">මෑත වලදී යෙදුම අගුලු හැරිණි</string>
+    <string name="lock_app">මෑත වලදී යෙදුම අගුලු දමා ඇත</string>
+    <string name="home_category_summary">Google now පැනලය සහ තවත් දේ සකසන්න</string>
+    <string name="icons_category_summary">නිරූපක ප්‍රමාණය සහ තවත් දේ සකසන්න</string>
+    <string name="app_drawer_category_title">යෙදුම් ලාච්චුව</string>
+    <string name="app_drawer_category_summary">ඔබේ යෙදුම් ලාච්චුව අභිරුචිකරණය කරන්න</string>
+    <string name="recents_category_summary">දළ විශ්ලේෂණ තිරය නැවත සකසන්න</string>
+    <string name="interface_category_title">අතුරුමුහුණත</string>
+    <string name="actions_category_title">ක්ෂණික ක්‍රියාවන්</string>
+    <string name="title_show_google_app">Google යෙදුම වෙත යාමට ස්වයිප් කරන්න</string>
+    <string name="msg_minus_one_on_left">මුල් පිටු තිරයේ සිට දකුණට ස්වයිප් කළ විට</string>
+    <string name="msg_minus_one_on_right">මුල් පිටු තිරයේ සිට වමට ස්වයිප් කළ විට</string>
+    <string name="suggestion_pref_screen_desc">සියලු යෙදුම් සහ මුල් පිටු යෝජනා සඳහා</string>
+    <string name="pref_restart_summary">පොරොත්තු සැකසීම් යෙදීමට දියත්කරණය යළි අරඹන්න</string>
+    <string name="restarting_launcher">දියත්කරණය යළි අරඹමින්...</string>
+    <string name="restarting_launcher_changes">වෙනස්කම් යෙදීමට දියත්කරණය යළි අරඹමින්...</string>
+    <string name="updating_launcher_components">දියත්කරණ සංරචක යාවත්කාලීන කිරීමට දියත්කරණය යළි අරඹමින්...</string>
+    <string name="pref_sleep_gesture_title">දෙවරක් තට්ටු කර නිදාගන්වන්න</string>
+    <string name="pref_sleep_gesture_summary">තිර ක්‍රියාවිරහිත කිරීමට මුල් පිටු තිරයේ හිස් ඉඩ දෙවරක් තට්ටු කරන්න</string>
+    <string name="pref_sleep_gesture_haptic_title">දෙවරක් තට්ටු කර නිදාගැන්වීමේදී කම්පනය</string>
+    <string name="pref_sleep_gesture_haptic_summary">දෙවරක් තට්ටු කර නිදාගැන්වීමේ ඉංගිතයේදී ස්පර්ශ ප්‍රතිපෝෂණය ලබා දෙන්න</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">iOS විලාසය සක්‍රිය වී ඇති විට ස්වයංක්‍රීයව සක්‍රිය වේ</string>
+    <string name="settings_lock_layout_summary_on">මුල් පිටු තිරයේ නිරූපක සහ විජට් එකතු කිරීම, ඉවත් කිරීම හෝ ගෙන යාම කළ නොහැක</string>
+    <string name="settings_lock_layout_summary_off">මුල් පිටු තිරයේ නිරූපක සහ විජට් එකතු කිරීම, ඉවත් කිරීම සහ ගෙන යාම කළ හැක</string>
+    <string name="settings_edit_widgets_error">මුල් පිටු තිරයට විජට් එකතු කිරීම කළ නොහැක</string>
+    <string name="pref_themed_icons_title">ලාච්චුවේ තේමා නිරූපක භාවිතා කරන්න</string>
+    <string name="pref_themed_icons_summary">මුල් පිටු තිරයේ භාවිතා වන තේමා නිරූපක අනුගමනය කරන්න</string>
+    <string name="themed_icons_overlay_title">උඩින් තැබූ තේමා නිරූපක</string>
+    <string name="themed_icons_overlay_summary">ස්වදේශීය තේමා නිරූපකක් නැති යෙදුම් සඳහා අභිරුචි තේමා නිරූපක සිතියම්ගත කිරීම භාවිතා කරන්න</string>
+    <string name="desktop_show_labels">ඩෙස්ක්ටොප් එකේ නිරූපක ලේබල පෙන්වන්න</string>
+    <string name="drawer_show_labels">ලාච්චුවේ නිරූපක ලේබල පෙන්වන්න</string>
+    <string name="trust_apps_manager_name">සඟවන සහ ආරක්ෂිත යෙදුම්</string>
+    <string name="trust_apps_auth_manager">සඟවන සහ ආරක්ෂිත යෙදුම් කළමනාකරණය කිරීමට අගුලු හරින්න</string>
+    <string name="trust_apps_auth_open_app">%1$s විවෘත කිරීමට සත්‍යාපනය කරන්න</string>
+    <string name="trust_apps_no_lock_error">යෙදුම් ප්‍රවේශය සීමා කිරීමට ආරක්ෂිත අගුලු තිරයක් සකසන්න</string>
+    <string name="trust_apps_info_hidden">සඟවන යෙදුම් සහ ඒවායේ විජට් ලාච්චුවෙන් සඟවා ඇත</string>
+    <string name="trust_apps_info_protected">ආරක්ෂිත යෙදුම් දියත්කරණයෙන් විවෘත කිරීමට සත්‍යාපනය අවශ්‍ය වේ</string>
+    <string name="icon_size_title">නිරූපක ප්‍රමාණය</string>
+    <string name="pause">විරාම</string>
+    <string name="pause_apps_dialog_title">%1$s විරාම කරන්නද?</string>
+    <string name="pause_apps_dialog_message">%1$s සඳහා දැනුම්දීම් විරාම කෙරෙනු ඇත</string>
+    <string name="paused_apps_dialog_title">යෙදුම විරාම කර ඇත</string>
+    <string name="paused_apps_dialog_message">%1$s දියත්කරණයෙන් සෘජුවම විරාම කරන ලදි</string>
+    <string name="icon_two_lines_title">යෙදුම් ලේබලය සඳහා පේළි දෙකක් භාවිතා කරන්න</string>
+    <string name="recent_task_option_kill_app">මරන්න</string>
+    <string name="recents_app_killed">යෙදුම මරා ඇත</string>
+    <string name="row_height_title">පේළි උස</string>
+    <string name="hotseat_bg_title">හොට්සීට් පසුබිම</string>
+    <string name="hotseat_bg_summary">යෙදුම් ඩොක් එකට විනිවිද පෙනෙන පසුබිමක් එකතු කරන්න</string>
+    <string name="pref_show_hotseat_qsb_title">සෙවුම් තීරුව පෙන්වන්න</string>
+    <string name="pref_show_hotseat_qsb_summary">ඔබේ මුල් පිටු තිරයේ පහළ කොටසේ</string>
+    <string name="dock_search_widget_title">සෙවුම් විජටය</string>
+    <string name="dock_search_widget_summary">ඩොක් එකේ අනුකූල තෙවන පාර්ශ්ව සෙවුම් විජටයක් භාවිතා කරන්න</string>
+    <string name="dock_search_widget_picker_title">සෙවුම් විජටය තෝරන්න</string>
+    <string name="dock_search_widget_default">පෙරනිමි සෙවුම් විජටය</string>
+    <string name="drawer_style_title">යෙදුම් ලාච්චුවේ විලාසය</string>
+    <string name="drawer_style_summary_ios_forced">iOS විලාසයේදී යෙදුම් ලාච්චුව අක්‍රියයි</string>
+    <string-array name="app_drawer_style_entries">
+        <item>සාමාන්‍ය (පහළ පත්‍රය)</item>
+        <item>තිරස් ලැයිස්තුව</item>
+        <item>සිරස් (OneUI පිටු)</item>
+        <item>iOS විලාසය</item>
+    </string-array>
+    <string name="drawer_search_title">යෙදුම් සෙවුම් තීරුවේ ස්ථානය</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>"සැඟවුණු"</item>
+        <item>ඉහල</item>
+        <item>පහළ</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">අමුණන ලද යෙදුම් සක්‍රිය කරන්න</string>
+    <string name="pref_pinned_apps_enabled_summary">සෙවුම් තීරුවට පහළින් අමුණන ලද යෙදුම්වල පේළියක් පෙන්වන්න</string>
+    <string name="pref_pinned_apps_list_title">අමුණන ලද යෙදුම් ලැයිස්තුව</string>
+    <string name="pref_pinned_apps_list_summary">අමුණන යෙදුම් තෝරන්න</string>
+    <string name="allow_wallpaper_scrolling">වෝල්පේපර අනුචලනය</string>
+    <string name="allow_wallpaper_scrolling_summary">තිර කිහිපයක් සඳහා වෝල්පේපර අනුචලන ඵලය</string>
+    <string name="allow_wallpaper_zooming">වෝල්පේපර විශාලනය</string>
+    <string name="allow_wallpaper_zooming_summary">ලාච්චුව හෝ මෑත යෙදුම් භාවිත කරන විට වෝල්පේපරය විශාල කරන්න හෝ කුඩා කරන්න</string>
+    <string name="show_statusbar_title">තත්ත්ව තීරුව</string>
+    <string name="show_top_shadow">ඉහළ සෙවනැල්ල</string>
+    <string name="meminfo_text">%1$s ලබා ගත හැක | %2$s</string>
+    <string name="recents_meminfo_title">මතක තොරතුරු</string>
+    <string name="recents_meminfo_zram_title">ZRAM තොරතුරු</string>
+    <string name="recents_chips_title">සංක්ෂිප්ත ක්‍රියා සැලසුම භාවිතා කරන්න</string>
+    <string name="recents_chips_summary">බොහෝ ක්‍රියා සංඛ්‍යාවක් පෙන්වීමට අවශ්‍ය විය හැක</string>
+    <string name="recents_lens_title">ලෙන්ස්</string>
+    <string name="short_parallax_title">කෙටි පැරලැක්ස් ඉඩ දෙන්න</string>
+    <string name="short_parallax_summary">වෝල්පේපරය කපා හැරීම වෙනුවට අඩු පිටු ගණනකදී සම්පූර්ණ වෝල්පේපර අනුචලන ඵලය සක්‍රිය කරන්න</string>
+    <string name="single_page_center_title">තනි පිටු මධ්‍යය</string>
+    <string name="single_page_center_summary">එක් පිටුවක් පමණක් භාවිතා කරන්නේ නම් වෝල්පේපරය මධ්‍යගත කරන්න</string>
+    <string name="drawer_scrollbar_title">අනුචලක තීරුව</string>
+    <string name="drawer_scrollbar_summary">යෙදුම් ලාච්චුවේ පැත්තේ අනුචලක තීරුව</string>
+    <string name="perf_dark_status_bar_title">අඳුරු තත්ත්ව තීරුව</string>
+    <string name="perf_dark_status_bar_summary">මුල් පිටු තිරයේ සැමවිටම අඳුරු තත්ත්ව තීරුව භාවිත කරන්න</string>
+    <string name="show_quickspace_title">එක් බැල්මට</string>
+    <string name="show_quickspace_summary">ඔබේ මුල් පිටු තිරයේ ඉහළ කොටසේ පෙන්වන්න</string>
+    <string name="quickspace_style_title">එක් බැල්මට විලාසය</string>
+    <string-array name="quickspace_style_entries">
+        <item>"පෙරනිමි"</item>
+        <item>දීර්ඝ</item>
+        <item>Remix</item>
+        <item>Remix පිටු</item>
+        <item>Remix සිරස්</item>
+        <item>කක්ෂය</item>
+        <item>නියෝන් සං‍ඥාව</item>
+        <item>වීදුරු</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">දැන් වාදනය වෙයි</string>
+    <string name="quickspace_vertical_note">සටහන</string>
+    <string name="quickspace_vertical_weather">කාලගුණය</string>
+    <string name="quickspace_vertical_calendar">දින දර්ශනය</string>
+    <string name="quickspace_vertical_battery">බැටරිය</string>
+    <string name="quickspace_vertical_a11y_calendar">දින දර්ශනය විවෘත කරන්න</string>
+    <string name="quickspace_vertical_a11y_weather">කාලගුණය විවෘත කරන්න</string>
+    <string name="quickspace_vertical_a11y_calendar_event">දින දර්ශන සිදුවීම විවෘත කරන්න</string>
+    <string name="quickspace_vertical_a11y_event">දැන් වාදනය වන දේ විවෘත කරන්න</string>
+    <string name="quickspace_vertical_a11y_note">සටහන විවෘත කරන්න</string>
+    <string name="quickspace_vertical_a11y_battery">බැටරි සැකසීම් විවෘත කරන්න</string>
+    <string name="quickspace_voltage_accent_title">උච්චාරණ වර්ණ ඔරලෝසුව</string>
+    <string name="quickspace_voltage_accent_summary">Remix විලාසවල ඔරලෝසුවේ පළමු ඉලක්කම උච්චාරණ වර්ණයෙන් පෙන්වන්න</string>
+    <string name="quickspace_voltage_minimal_title">අවම මාදිලිය</string>
+    <string name="quickspace_voltage_minimal_summary">Remix ද්විතීයික අන්තර්ගතය තට්ටු කළ හැකි ඉක්මන් නිරූපක බවට හකුළන්න</string>
+    <string name="quickspace_grt_morning">සුභ උදෑසනක්.</string>
+    <string name="quickspace_grt_evening">සුභ සන්ධ්‍යාවක්.</string>
+    <string name="quickspace_grt_afternoon">සුභ දහවලක්.</string>
+    <string name="quickspace_grt_night">සුභ රාත්‍රියක්.</string>
+    <string name="quickspace_grt_general">සුභ දවසක්.</string>
+    <string name="quickspace_ext_one">අද දිනය</string>
+    <string name="quickspace_ext_two">දැන්</string>
+    <string name="qe_now_playing_unknown_artist">නොදන්නා කලාකරු</string>
+    <string name="qe_now_playing_ext_one">දැන් වාදනය වේ</string>
+    <string name="qe_now_playing_by">විසින්</string>
+    <string name="quickspace_now_playing_title">දැන් වාදනය වේ</string>
+    <string name="quickspace_now_playing_summary">ඔබ වාදනය කරන ගීතය පෙන්වන්න</string>
+    <string name="quickspace_alternate_style_title">දීර්ඝ විලාසය</string>
+    <string name="quickspace_alternate_style_summary">දීර්ඝ විලාසයට මාරු වන්න</string>
+    <string name="quickspace_psa_title">අහඹු පණිවිඩ</string>
+    <string name="quickspace_psa_summary">අහඹු පණිවිඩ සමඟ ඔබේ සහචරයා තවත් ජීවමාන කරන්න</string>
+    <string name="intent_no_app_clock_found">දින දර්ශන හෝ ඔරලෝසු ක්‍රියාකාරකම සොයා ගත නොහැක</string>
+    <string name="quick_event_ambient_weather_title">කාලගුණ යාවත්කාලීන කිරීම</string>
+    <string name="quick_event_ambient_weather_summary">වත්මන් කාලගුණ යාවත්කාලීන කිරීම පෙන්වන්න</string>
+    <string name="quick_event_ambient_weather_enabled_info">කාලගුණ සේවාව සක්‍රිය කර තිබිය යුතුය</string>
+    <string name="quick_event_weather_rain">වර්ෂාව</string>
+    <string name="quick_event_weather_clear">පැහැදිලි අහස</string>
+    <string name="quick_event_weather_storm">කුණාටු</string>
+    <string name="quick_event_weather_snow">හිම</string>
+    <string name="quick_event_weather_wind">සුළං</string>
+    <string name="quick_event_weather_mist">මීදුම</string>
+    <string name="quick_event_weather_city_title">වත්මන් ස්ථානය</string>
+    <string name="quick_event_weather_city_summary">වත්මන් කාලගුණ ස්ථානය පෙන්වන්න</string>
+    <string name="quick_event_weather_text_title">වත්මන් තත්ත්වය</string>
+    <string name="quick_event_weather_text_summary">වත්මන් කාලගුණ තත්ත්ව සාරාංශය පෙන්වන්න</string>
+    <string name="quickspace_battery_title">උපාංග බැටරිය</string>
+    <string name="quickspace_battery_summary">Remix විලාසවල දුරකථන සහ සම්බන්ධිත බ්ලූටූත් උපාංග බැටරිය පෙන්වන්න</string>
+    <string name="quickspace_calendar_summary">සක්‍රිය කළ ඕනෑම දින දර්ශනයකින් ඔබේ ඊළඟ සිදුවීම පෙන්වන්න</string>
+    <string name="quickspace_calendar_untitled">නම් නොකළ සිදුවීම</string>
+    <string name="all_apps_dark_text_title">අඳුරු යෙදුම් ලේබල</string>
+    <string name="all_apps_dark_text_summary">යෙදුම් ලාච්චුවේ යෙදුම් ලේබල සඳහා සැමවිටම අඳුරු පෙළ භාවිත කරන්න</string>
+    <string name="app_info_title">යෙදුම් තොරතුරු</string>
+    <string name="app_info_source">මූලය</string>
+    <string name="app_info_last_update">අවසන් යාවත්කාලීනය</string>
+    <string name="icon_pack_title">නිරූපක ඇසුර</string>
+    <string name="icon_pack_add">තව ස්ථාපනය කරන්න</string>
+    <string name="icon_pack_no_market">ලබා ගත හැකි යෙදුම් වෙළඳසැලක් නැත</string>
+    <string name="pebble_shape_title">පෙබල්</string>
+    <string name="vessel_shape_title">වෙසල්</string>
+    <string name="pure_square_shape_title">පිරිසිදු හතරැස</string>
+    <string name="squircle_shape_title">ස්කියර්ල්</string>
+    <string name="tapered_rect_shape_title">ටේපර්ඩ් සෘජුාස්‍රය</string>
+    <string name="teardrop_shape_title">කඳුළු බිංදුව</string>
+    <string name="rounded_rect_shape_title">වටකුරු සෘජුාස්‍රය</string>
+    <string name="cylindrical_shape_title">සිලින්ඩරාකාර</string>
+    <string name="flower_shape_title">මලක්</string>
+    <string name="hexagon_shape_title">ෂඩාස්‍රය</string>
+    <string name="ios_style_shape_title">iOS විලාසය</string>
+    <string name="leaf_shape_title">කොළය</string>
+    <string name="meow_shape_title">මියාව්</string>
+    <string name="samsung_style_shape_title">Samsung විලාසය</string>
+    <string name="stretched_shape_title">ඇඳි</string>
+    <string name="home_screen_actions">මුල් පිටු තිරයේ ක්‍රියා</string>
+    <string name="remove_all_views_from_home_screen">මුල් පිටු තිරය හිස් කරන්න</string>
+    <string name="remove_all_views_from_home_screen_desc">මුල් පිටු තිරය හිස් කෙරෙනු ඇත. ඔබට ඉදිරියට යාමට අවශ්‍යද?</string>
+    <string name="home_screen_all_views_removed_msg">මුල් පිටු තිරය හිස් කරන ලදි</string>
+    <string name="sort_alphabetical">අක්ෂර මාලාවට අනුව වර්ග කරන්න</string>
+    <string name="sort_install_date">ස්ථාපනය කළ දින අනුව වර්ග කරන්න</string>
+    <string name="sort_usage">භාවිතය අනුව වර්ග කරන්න</string>
+    <string name="navbar_burn_in_protection_title">සංචලන තීරුව පිළිස්සීම වැළැක්වීම</string>
+    <string name="navbar_burn_in_protection_summary">දර්ශන පිළිස්සීම වළක්වා ගැනීමට සංචලන හසුරුව වරින් වර ගෙන යන්න</string>
+    <string name="navbar_burn_in_interval_title">ගෙන යාමේ කාල පරතරය</string>
+    <string name="pref_blur_background_at_app_launch_title">යෙදුම ආරම්භ/වසා දැමීමේදී පසුබිම බොඳ කිරීම</string>
+    <string name="pref_blur_background_at_app_launch_summary">යෙදුම් ආරම්භ සහ වසා දැමීමේ සජීවිකරණ අතරතුර පසුබිම බොඳ කරන්න</string>
 </resources>

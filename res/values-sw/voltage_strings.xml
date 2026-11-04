@@ -28,4 +28,193 @@
     <string name="cloudy_shape_title">"Mawingu"</string>
     <string name="heart_shape_title">"Moyo"</string>
     <string name="scroll_shape_title">"Sogeza"</string>
+    <string name="action_lock">Funga/Fungua programu</string>
+    <string name="unlock_app">Programu imefunguliwa kwenye zilizotumika majuzi</string>
+    <string name="lock_app">Programu imefungwa kwenye zilizotumika majuzi</string>
+    <string name="home_category_summary">Weka paneli ya Google Now na zaidi</string>
+    <string name="icons_category_summary">Weka ukubwa wa aikoni na zaidi</string>
+    <string name="app_drawer_category_title">Droo ya programu</string>
+    <string name="app_drawer_category_summary">Binafsisha droo yako ya programu</string>
+    <string name="recents_category_summary">Badilisha skrini ya muhtasari</string>
+    <string name="interface_category_title">Kiolesura</string>
+    <string name="actions_category_title">Vitendo vya haraka</string>
+    <string name="title_show_google_app">Telezesha kulia kufikia programu ya Google</string>
+    <string name="msg_minus_one_on_left">Unapotelezesha kulia kutoka skrini kuu ya kwanza</string>
+    <string name="msg_minus_one_on_right">Unapotelezesha kushoto kutoka skrini kuu ya kwanza</string>
+    <string name="suggestion_pref_screen_desc">Kwa Programu Zote na mapendekezo ya Skrini ya kwanza</string>
+    <string name="pref_restart_summary">Anzisha upya kizindua mwenyewe ili kutumia mipangilio inayosubiri</string>
+    <string name="restarting_launcher">Inaanzisha upya kizindua...</string>
+    <string name="restarting_launcher_changes">Inaanzisha upya kizindua ili kutumia mabadiliko...</string>
+    <string name="updating_launcher_components">Inaanzisha upya kizindua ili kusasisha vipengele vya kizindua...</string>
+    <string name="pref_sleep_gesture_title">Gusa mara mbili ili kulala</string>
+    <string name="pref_sleep_gesture_summary">Gusa mara mbili nafasi tupu kwenye skrini ya kwanza ili kuzima skrini</string>
+    <string name="pref_sleep_gesture_haptic_title">Tetema unapogusa mara mbili ili kulala</string>
+    <string name="pref_sleep_gesture_haptic_summary">Toa mtetemo wa kugusa unapotumia mwendo wa kugusa mara mbili ili kulala</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">Huwashwa kiotomatiki wakati mtindo wa iOS unatumika</string>
+    <string name="settings_lock_layout_title">Funga mpangilio</string>
+    <string name="settings_lock_layout_summary_on">Aikoni na wijeti haziwezi kuongezwa, kuondolewa au kuhamishwa kwenye skrini ya kwanza</string>
+    <string name="settings_lock_layout_summary_off">Aikoni na wijeti zinaweza kuongezwa, kuondolewa na kuhamishwa kwenye skrini ya kwanza</string>
+    <string name="settings_edit_widgets_error">Haiwezekani kuongeza wijeti kwenye skrini ya kwanza</string>
+    <string name="pref_themed_icons_title">Tumia aikoni zenye mandhari kwenye droo</string>
+    <string name="pref_themed_icons_summary">Fuata aikoni zenye mandhari zinazotumika kwenye skrini ya kwanza</string>
+    <string name="themed_icons_overlay_title">Aikoni zenye mandhari zilizowekwa juu</string>
+    <string name="themed_icons_overlay_summary">Tumia ramani maalum ya aikoni zenye mandhari kwa programu zisizo na aikoni yenye mandhari asilia</string>
+    <string name="desktop_show_labels">Onyesha lebo za aikoni kwenye eneo-kazi</string>
+    <string name="drawer_show_labels">Onyesha lebo za aikoni kwenye droo</string>
+    <string name="trust_apps_manager_name">Programu zilizofichwa na zilizolindwa</string>
+    <string name="trust_apps_auth_manager">Fungua ili kudhibiti programu zilizofichwa na zilizolindwa</string>
+    <string name="trust_apps_auth_open_app">Thibitisha ili kufungua %1$s</string>
+    <string name="trust_apps_no_lock_error">Tafadhali weka skrini iliyofungwa salama ili kuzuia ufikiaji wa programu</string>
+    <string name="trust_apps_info_hidden">Programu zilizofichwa na wijeti zake zimefichwa kwenye droo</string>
+    <string name="trust_apps_info_protected">Programu zilizolindwa zinahitaji uthibitisho ili kufunguliwa kutoka kwenye kizindua</string>
+    <string name="icon_size_title">Ukubwa wa ikoni</string>
+    <string name="pause">Sitisha</string>
+    <string name="pause_apps_dialog_title">Sitisha %1$s?</string>
+    <string name="pause_apps_dialog_message">Arifa za %1$s zitasitishwa</string>
+    <string name="paused_apps_dialog_title">Programu imesitishwa</string>
+    <string name="paused_apps_dialog_message">%1$s ilisitishwa moja kwa moja kutoka kwenye kizindua</string>
+    <string name="icon_two_lines_title">Tumia mistari miwili kwa lebo ya programu</string>
+    <string name="recent_task_option_kill_app">Ua</string>
+    <string name="recents_app_killed">Programu imeuawa</string>
+    <string name="row_height_title">Urefu wa safu</string>
+    <string name="hotseat_bg_title">Usuli wa kizimba cha chini</string>
+    <string name="hotseat_bg_summary">Ongeza usuli wa uwazi nusu kwenye gati la programu</string>
+    <string name="pref_show_hotseat_qsb_title">Onyesha upau wa kutafuta</string>
+    <string name="pref_show_hotseat_qsb_summary">Chini ya skrini yako ya kwanza</string>
+    <string name="dock_search_widget_title">Wijeti ya kutafuta</string>
+    <string name="dock_search_widget_summary">Tumia wijeti ya kutafuta ya mtu wa tatu inayooana kwenye gati</string>
+    <string name="dock_search_widget_picker_title">Chagua wijeti ya kutafuta</string>
+    <string name="dock_search_widget_default">Wijeti chaguomsingi ya kutafuta</string>
+    <string name="drawer_style_title">Mtindo wa droo ya programu</string>
+    <string name="drawer_style_summary_ios_forced">Droo ya programu imezimwa katika mtindo wa iOS</string>
+    <string-array name="app_drawer_style_entries">
+        <item>Kawaida (karatasi ya chini)</item>
+        <item>Orodha ya mlalo</item>
+        <item>Wima (kurasa za OneUI)</item>
+        <item>Mtindo wa iOS</item>
+    </string-array>
+    <string name="drawer_search_title">Nafasi ya upau wa kutafuta programu</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>"Imefichwa"</item>
+        <item>Juu</item>
+        <item>Chini</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">Wezesha programu zilizobandikwa</string>
+    <string name="pref_pinned_apps_enabled_summary">Onyesha safu ya programu zilizobandikwa chini ya upau wa kutafuta</string>
+    <string name="pref_pinned_apps_list_title">Orodha ya programu zilizobandikwa</string>
+    <string name="pref_pinned_apps_list_summary">Chagua programu za kubandika</string>
+    <string name="allow_wallpaper_scrolling">Kusogeza mandhari</string>
+    <string name="allow_wallpaper_scrolling_summary">Athari ya kusogeza mandhari kwa skrini nyingi</string>
+    <string name="allow_wallpaper_zooming">Kukuza mandhari</string>
+    <string name="allow_wallpaper_zooming_summary">Kuza ndani au nje mandhari unapotumia droo au programu zilizotumika majuzi</string>
+    <string name="show_statusbar_title">Sehemu ya kuonyesha hali</string>
+    <string name="show_top_shadow">Kivuli cha juu</string>
+    <string name="meminfo_text">%1$s zinapatikana | %2$s</string>
+    <string name="recents_meminfo_title">Taarifa ya kumbukumbu</string>
+    <string name="recents_meminfo_zram_title">Taarifa ya ZRAM</string>
+    <string name="recents_chips_title">Tumia muundo mdogo wa vitendo</string>
+    <string name="recents_chips_summary">Huenda ikahitajika kuonyesha vitendo vingi</string>
+    <string name="short_parallax_title">Ruhusu parallax fupi</string>
+    <string name="short_parallax_summary">Wezesha athari kamili ya kusogeza mandhari kwa kurasa chache badala ya kukata mandhari</string>
+    <string name="single_page_center_title">Ukurasa mmoja katikati</string>
+    <string name="single_page_center_summary">Weka mandhari katikati ikiwa unatumia ukurasa mmoja tu</string>
+    <string name="drawer_scrollbar_title">Upau wa kusogeza</string>
+    <string name="drawer_scrollbar_summary">Upau wa kusogeza upande wa droo ya programu</string>
+    <string name="perf_dark_status_bar_title">Sehemu ya kuonyesha hali yenye giza</string>
+    <string name="perf_dark_status_bar_summary">Tumia sehemu ya kuonyesha hali yenye giza kila wakati kwenye skrini ya kwanza</string>
+    <string name="show_quickspace_title">Kwa Mtazamo</string>
+    <string name="show_quickspace_summary">Onyesha juu ya skrini yako ya kwanza</string>
+    <string name="quickspace_style_title">Mtindo wa Kwa Mtazamo</string>
+    <string-array name="quickspace_style_entries">
+        <item>"Chaguomsingi"</item>
+        <item>Iliyopanuliwa</item>
+        <item>Remix</item>
+        <item>Remix ya kurasa</item>
+        <item>Remix wima</item>
+        <item>Obiti</item>
+        <item>Ishara ya neon</item>
+        <item>Kioo</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">INACHEZA SASA</string>
+    <string name="quickspace_vertical_note">KUMBUKA</string>
+    <string name="quickspace_vertical_weather">HALI YA HEWA</string>
+    <string name="quickspace_vertical_calendar">KALENDA</string>
+    <string name="quickspace_vertical_battery">BETRI</string>
+    <string name="quickspace_vertical_a11y_calendar">Fungua kalenda</string>
+    <string name="quickspace_vertical_a11y_weather">Fungua hali ya hewa</string>
+    <string name="quickspace_vertical_a11y_calendar_event">Fungua tukio la kalenda</string>
+    <string name="quickspace_vertical_a11y_event">Fungua inayocheza sasa</string>
+    <string name="quickspace_vertical_a11y_note">Fungua dokezo</string>
+    <string name="quickspace_vertical_a11y_battery">Fungua mipangilio ya betri</string>
+    <string name="quickspace_voltage_accent_title">Saa yenye rangi ya lafudhi</string>
+    <string name="quickspace_voltage_accent_summary">Paka rangi nambari ya kwanza ya saa katika mitindo ya Remix</string>
+    <string name="quickspace_voltage_minimal_title">Hali ndogo</string>
+    <string name="quickspace_voltage_minimal_summary">Kunja maudhui ya pili ya Remix kuwa aikoni ndogo zinazoweza kugusika</string>
+    <string name="quickspace_grt_morning">Habari za asubuhi.</string>
+    <string name="quickspace_grt_evening">Habari za jioni.</string>
+    <string name="quickspace_grt_afternoon">Habari za mchana.</string>
+    <string name="quickspace_grt_night">Usiku mwema.</string>
+    <string name="quickspace_grt_general">Habari za siku.</string>
+    <string name="quickspace_ext_one">Leo ni</string>
+    <string name="quickspace_ext_two">Ni</string>
+    <string name="qe_now_playing_unknown_artist">Msanii asiyejulikana</string>
+    <string name="qe_now_playing_by">Na</string>
+    <string name="quickspace_now_playing_summary">Onyesha wimbo unaocheza</string>
+    <string name="quickspace_alternate_style_title">Mtindo uliopanuliwa</string>
+    <string name="quickspace_alternate_style_summary">Badili hadi mtindo uliopanuliwa</string>
+    <string name="quickspace_psa_title">Ujumbe wa nasibu</string>
+    <string name="quickspace_psa_summary">Fanya mwandamani wako awe hai zaidi kwa ujumbe wa nasibu</string>
+    <string name="intent_no_app_clock_found">Imeshindwa kupata shughuli ya kalenda au saa</string>
+    <string name="quick_event_ambient_weather_title">Sasisho la hali ya hewa</string>
+    <string name="quick_event_ambient_weather_summary">Onyesha sasisho la sasa la hali ya hewa</string>
+    <string name="quick_event_ambient_weather_enabled_info">Inahitaji huduma ya hali ya hewa kuwashwa</string>
+    <string name="quick_event_weather_rain">Mvua</string>
+    <string name="quick_event_weather_clear">Anga safi</string>
+    <string name="quick_event_weather_storm">Dhoruba</string>
+    <string name="quick_event_weather_snow">Theluji</string>
+    <string name="quick_event_weather_wind">Upepo</string>
+    <string name="quick_event_weather_mist">Ukungu</string>
+    <string name="quick_event_weather_city_title">Mahali pa sasa</string>
+    <string name="quick_event_weather_city_summary">Onyesha mahali pa sasa pa hali ya hewa</string>
+    <string name="quick_event_weather_text_title">Hali ya sasa</string>
+    <string name="quick_event_weather_text_summary">Onyesha muhtasari wa hali ya sasa ya hewa</string>
+    <string name="quickspace_battery_title">Betri ya kifaa</string>
+    <string name="quickspace_battery_summary">Onyesha betri ya simu na kifaa cha Bluetooth kilichounganishwa katika mitindo ya Remix</string>
+    <string name="quickspace_calendar_summary">Onyesha tukio lako lijalo kutoka kalenda yoyote iliyowezeshwa</string>
+    <string name="quickspace_calendar_untitled">Tukio lisilo na jina</string>
+    <string name="all_apps_dark_text_title">Lebo za programu zenye giza</string>
+    <string name="all_apps_dark_text_summary">Tumia maandishi meusi kila wakati kwa lebo za programu kwenye droo ya programu</string>
+    <string name="app_info_title">Maelezo ya programu</string>
+    <string name="app_info_source">Chanzo</string>
+    <string name="app_info_last_update">Sasisho la mwisho</string>
+    <string name="icon_pack_title">Kifurushi cha aikoni</string>
+    <string name="icon_pack_add">Sakinisha zaidi</string>
+    <string name="icon_pack_no_market">Hakuna duka la programu linalopatikana</string>
+    <string name="pebble_shape_title">Kokoto</string>
+    <string name="vessel_shape_title">Chombo</string>
+    <string name="pure_square_shape_title">Mraba safi</string>
+    <string name="squircle_shape_title">Squircle</string>
+    <string name="tapered_rect_shape_title">Mstatili uliopunguka</string>
+    <string name="teardrop_shape_title">Tone</string>
+    <string name="rounded_rect_shape_title">Mstatili wenye pembe za mviringo</string>
+    <string name="cylindrical_shape_title">Silinda</string>
+    <string name="flower_shape_title">Ua</string>
+    <string name="hexagon_shape_title">Heksagoni</string>
+    <string name="ios_style_shape_title">Mtindo wa iOS</string>
+    <string name="leaf_shape_title">Jani</string>
+    <string name="meow_shape_title">Meow</string>
+    <string name="samsung_style_shape_title">Mtindo wa Samsung</string>
+    <string name="stretched_shape_title">Kunyooshwa</string>
+    <string name="home_screen_actions">Vitendo vya skrini ya kwanza</string>
+    <string name="remove_all_views_from_home_screen">Futa skrini ya kwanza</string>
+    <string name="remove_all_views_from_home_screen_desc">Skrini ya kwanza itafutwa. Je, unataka kuendelea?</string>
+    <string name="home_screen_all_views_removed_msg">Skrini ya kwanza imefutwa</string>
+    <string name="sort_alphabetical">Panga kwa alfabeti</string>
+    <string name="sort_install_date">Panga kwa tarehe ya kusakinisha</string>
+    <string name="sort_usage">Panga kwa matumizi</string>
+    <string name="navbar_burn_in_protection_title">Ulinzi wa kuungua kwa upau wa viungo</string>
+    <string name="navbar_burn_in_protection_summary">Hamisha mpini wa urambazaji mara kwa mara ili kuzuia skrini kuungua</string>
+    <string name="navbar_burn_in_interval_title">Muda wa kuhamisha</string>
+    <string name="pref_blur_background_at_app_launch_title">Ukungu wa usuli wakati wa kufungua/kufunga programu</string>
+    <string name="pref_blur_background_at_app_launch_summary">Fifisha usuli wakati wa uhuishaji wa kufungua na kufunga programu</string>
 </resources>

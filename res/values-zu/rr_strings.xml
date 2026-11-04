@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"Okwakamuva"</string>
     <string name="glance_content_description">Ngokubuka nje</string>
+    <string name="drawer_open_keyboard_title">Swayipha ukuze uqale ukusesha</string>
+    <string name="drawer_open_keyboard_summary">Vula ikhibhodi noma kukhona umzabalazo wezinhlelo ovela</string>
+    <string-array name="recents_style_entries">
+        <item>"Buka konke"</item>
+        <item>Okwakamuva okuncane (ipanele elisecaleni)</item>
+        <item>Okwakamuva okuzungezayo (isondo)</item>
+    </string-array>
+    <string name="neon_icons_title">Izithonjana ze-Neon</string>
+    <string name="neon_icons_summary">I-glyph ye-app ngamunye ngombala wakho wokugqamisa, ngaphakathi kwendandatho ekhanyayo. Ivula izithonjana ezine-theme.</string>
+    <string name="icon_style_rr_title">Isitayela sezithonjana</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Okuzenzakalelayo"</item>
+        <item>Ine-theme</item>
+        <item>I-Neon</item>
+    </string-array>
+    <string name="neon_ring_color_title">Umbala wendandatho</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Umbala oyinhloko</item>
+        <item>Umbala ka-app ngokwayo</item>
+    </string-array>
+    <string name="neon_glow_title">Ukukhanya</string>
+    <string name="neon_ring_title">Ishaywa</string>
+    <string-array name="neon_ring_entries">
+        <item>Mncane</item>
+        <item>"Okuphakathi"</item>
+        <item>"Okugqamile"</item>
+    </string-array>
+    <string name="neon_folders_title">Namafolda nawo</string>
 </resources>

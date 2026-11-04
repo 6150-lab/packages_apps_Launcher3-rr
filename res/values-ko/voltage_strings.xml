@@ -66,4 +66,155 @@
     <string name="meow_shape_title">야옹</string>
     <string name="scroll_shape_title">"스크롤"</string>
     <string name="stretched_shape_title">늘인 모양</string>
+    <string name="action_lock">앱 잠금/잠금 해제</string>
+    <string name="unlock_app">최근 화면에서 잠금 해제된 앱</string>
+    <string name="lock_app">최근 화면에서 잠긴 앱</string>
+    <string name="home_category_summary">Google 나우 패널 등 설정</string>
+    <string name="icons_category_summary">아이콘 크기 등 설정</string>
+    <string name="app_drawer_category_title">앱 서랍</string>
+    <string name="app_drawer_category_summary">앱 서랍을 맞춤설정하세요</string>
+    <string name="recents_category_summary">최근 앱 화면을 새롭게 디자인하세요</string>
+    <string name="actions_category_title">빠른 작업</string>
+    <string name="title_show_google_app">스와이프하여 Google 앱 열기</string>
+    <string name="suggestion_pref_screen_desc">모든 앱 및 홈 화면 제안용</string>
+    <string name="pref_restart_summary">대기 중인 설정을 적용하려면 런처를 수동으로 재시작하세요</string>
+    <string name="restarting_launcher">런처를 재시작하는 중...</string>
+    <string name="restarting_launcher_changes">변경 사항을 적용하려고 런처를 재시작하는 중...</string>
+    <string name="updating_launcher_components">런처 구성 요소를 업데이트하려고 런처를 재시작하는 중...</string>
+    <string name="pref_sleep_gesture_title">두 번 탭하여 절전</string>
+    <string name="pref_sleep_gesture_summary">홈 화면의 빈 공간을 두 번 탭하여 화면을 끄세요</string>
+    <string name="pref_sleep_gesture_haptic_title">두 번 탭하여 절전 시 진동</string>
+    <string name="pref_sleep_gesture_haptic_summary">두 번 탭하여 절전 제스처에 촉각 피드백을 제공합니다</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">iOS 스타일이 활성화된 동안 자동으로 활성화됩니다</string>
+    <string name="themed_icons_overlay_title">테마 아이콘 오버레이</string>
+    <string name="themed_icons_overlay_summary">기본 테마 아이콘이 없는 앱에 사용자 지정 테마 아이콘 매핑을 사용합니다</string>
+    <string name="pause">일시정지</string>
+    <string name="pause_apps_dialog_title">%1$s을(를) 일시정지할까요?</string>
+    <string name="pause_apps_dialog_message">%1$s의 알림이 일시정지됩니다</string>
+    <string name="paused_apps_dialog_title">앱이 일시정지됨</string>
+    <string name="paused_apps_dialog_message">%1$s이(가) 런처에서 직접 일시정지되었습니다</string>
+    <string name="icon_two_lines_title">앱 이름에 두 줄 사용</string>
+    <string name="recent_task_option_kill_app">강제 종료</string>
+    <string name="recents_app_killed">앱이 강제 종료됨</string>
+    <string name="row_height_title">행 높이</string>
+    <string name="hotseat_bg_title">핫시트 배경</string>
+    <string name="hotseat_bg_summary">앱 독에 반투명 배경을 추가합니다</string>
+    <string name="pref_show_hotseat_qsb_title">검색창 표시</string>
+    <string name="pref_show_hotseat_qsb_summary">홈 화면 하단에 표시됩니다</string>
+    <string name="dock_search_widget_title">검색 위젯</string>
+    <string name="dock_search_widget_summary">독에 호환되는 타사 검색 위젯을 사용합니다</string>
+    <string name="dock_search_widget_picker_title">검색 위젯 선택</string>
+    <string name="dock_search_widget_default">기본 검색 위젯</string>
+    <string name="drawer_style_title">앱 서랍 스타일</string>
+    <string name="drawer_style_summary_ios_forced">iOS 스타일에서는 앱 서랍을 사용할 수 없습니다</string>
+    <string-array name="app_drawer_style_entries">
+        <item>일반 (하단 시트)</item>
+        <item>가로 목록</item>
+        <item>세로 (OneUI 페이지)</item>
+        <item>iOS 스타일</item>
+    </string-array>
+    <string name="drawer_search_title">앱 검색창 위치</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>숨김</item>
+        <item>위</item>
+        <item>아래쪽</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">고정된 앱 사용</string>
+    <string name="pref_pinned_apps_enabled_summary">검색창 아래에 고정된 앱 행을 표시합니다</string>
+    <string name="pref_pinned_apps_list_title">고정된 앱 목록</string>
+    <string name="pref_pinned_apps_list_summary">고정할 앱 선택</string>
+    <string name="allow_wallpaper_scrolling">배경화면 스크롤</string>
+    <string name="allow_wallpaper_scrolling_summary">여러 화면에서 배경화면 스크롤 효과</string>
+    <string name="allow_wallpaper_zooming">배경화면 확대/축소</string>
+    <string name="allow_wallpaper_zooming_summary">앱 서랍이나 최근 앱을 사용할 때 배경화면을 확대하거나 축소합니다</string>
+    <string name="show_top_shadow">상단 그림자</string>
+    <string name="meminfo_text">%1$s 사용 가능 | %2$s</string>
+    <string name="recents_meminfo_title">메모리 정보</string>
+    <string name="recents_meminfo_zram_title">ZRAM 정보</string>
+    <string name="recents_chips_title">간결한 작업 디자인 사용</string>
+    <string name="recents_chips_summary">많은 작업을 표시해야 할 때 필요할 수 있습니다</string>
+    <string name="short_parallax_title">짧은 패럴랙스 허용</string>
+    <string name="short_parallax_summary">페이지 수가 적을 때 배경화면을 자르지 않고 전체 스크롤 효과를 사용합니다</string>
+    <string name="single_page_center_title">단일 페이지 중앙 정렬</string>
+    <string name="single_page_center_summary">페이지가 하나뿐일 때 배경화면을 가운데에 맞춥니다</string>
+    <string name="drawer_scrollbar_title">스크롤바</string>
+    <string name="drawer_scrollbar_summary">앱 서랍 측면에 스크롤바 표시</string>
+    <string name="perf_dark_status_bar_title">어두운 상태 표시줄</string>
+    <string name="perf_dark_status_bar_summary">홈 화면에서 항상 어두운 상태 표시줄 사용</string>
+    <string name="show_quickspace_title">한눈에 보기</string>
+    <string name="show_quickspace_summary">홈 화면 상단에 표시합니다</string>
+    <string name="quickspace_style_title">한눈에 보기 스타일</string>
+    <string-array name="quickspace_style_entries">
+        <item>"기본값"</item>
+        <item>확장형</item>
+        <item>리믹스</item>
+        <item>Remix 페이지형</item>
+        <item>Remix 세로형</item>
+        <item>궤도</item>
+        <item>네온 사인</item>
+        <item>글래스</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">재생 중</string>
+    <string name="quickspace_vertical_note">메모</string>
+    <string name="quickspace_vertical_weather">날씨</string>
+    <string name="quickspace_vertical_calendar">캘린더</string>
+    <string name="quickspace_vertical_battery">배터리</string>
+    <string name="quickspace_vertical_a11y_calendar">캘린더 열기</string>
+    <string name="quickspace_vertical_a11y_weather">날씨 열기</string>
+    <string name="quickspace_vertical_a11y_calendar_event">캘린더 일정 열기</string>
+    <string name="quickspace_vertical_a11y_event">재생 중 열기</string>
+    <string name="quickspace_vertical_a11y_note">메모 열기</string>
+    <string name="quickspace_vertical_a11y_battery">배터리 설정 열기</string>
+    <string name="quickspace_voltage_accent_title">강조 색상 시계</string>
+    <string name="quickspace_voltage_accent_summary">Remix 스타일에서 시계의 첫 번째 숫자를 강조 색상으로 표시합니다</string>
+    <string name="quickspace_voltage_minimal_title">최소 모드</string>
+    <string name="quickspace_voltage_minimal_summary">Remix 보조 콘텐츠를 탭 가능한 빠른 아이콘으로 접습니다</string>
+    <string name="quickspace_grt_morning">좋은 아침입니다.</string>
+    <string name="quickspace_grt_evening">좋은 저녁입니다.</string>
+    <string name="quickspace_grt_afternoon">좋은 오후입니다.</string>
+    <string name="quickspace_grt_night">안녕히 주무세요.</string>
+    <string name="quickspace_grt_general">좋은 하루입니다.</string>
+    <string name="quickspace_ext_one">오늘은</string>
+    <string name="quickspace_ext_two">지금은</string>
+    <string name="qe_now_playing_unknown_artist">알 수 없는 아티스트</string>
+    <string name="qe_now_playing_by">아티스트:</string>
+    <string name="quickspace_now_playing_summary">재생 중인 곡 표시</string>
+    <string name="quickspace_alternate_style_title">확장 스타일</string>
+    <string name="quickspace_alternate_style_summary">확장 스타일로 전환</string>
+    <string name="quickspace_psa_title">무작위 메시지</string>
+    <string name="quickspace_psa_summary">무작위 메시지로 동반자를 더 활기차게 만드세요</string>
+    <string name="intent_no_app_clock_found">캘린더 또는 시계 활동을 찾을 수 없습니다</string>
+    <string name="quick_event_weather_rain">비</string>
+    <string name="quick_event_weather_clear">맑음</string>
+    <string name="quick_event_weather_storm">폭풍</string>
+    <string name="quick_event_weather_snow">눈</string>
+    <string name="quick_event_weather_mist">안개</string>
+    <string name="quickspace_battery_title">기기 배터리</string>
+    <string name="quickspace_battery_summary">Remix 스타일에서 휴대폰 및 연결된 블루투스 기기 배터리 표시</string>
+    <string name="quickspace_calendar_summary">사용 설정된 캘린더의 다음 일정 표시</string>
+    <string name="quickspace_calendar_untitled">제목 없는 일정</string>
+    <string name="all_apps_dark_text_title">어두운 앱 이름</string>
+    <string name="all_apps_dark_text_summary">앱 서랍에서 앱 이름을 항상 어두운 텍스트로 표시</string>
+    <string name="app_info_title">앱 정보</string>
+    <string name="app_info_source">소스</string>
+    <string name="app_info_last_update">마지막 업데이트</string>
+    <string name="icon_pack_add">더 많은 앱 설치</string>
+    <string name="icon_pack_no_market">사용 가능한 앱 스토어가 없습니다</string>
+    <string name="pure_square_shape_title">순수 사각형</string>
+    <string name="tapered_rect_shape_title">사다리꼴 직사각형</string>
+    <string name="rounded_rect_shape_title">둥근 직사각형</string>
+    <string name="ios_style_shape_title">iOS 스타일</string>
+    <string name="samsung_style_shape_title">Samsung 스타일</string>
+    <string name="home_screen_actions">홈 화면 작업</string>
+    <string name="remove_all_views_from_home_screen">홈 화면 비우기</string>
+    <string name="remove_all_views_from_home_screen_desc">홈 화면이 비워집니다. 계속하시겠습니까?</string>
+    <string name="home_screen_all_views_removed_msg">홈 화면을 비웠습니다</string>
+    <string name="sort_alphabetical">알파벳순 정렬</string>
+    <string name="sort_install_date">설치 날짜순 정렬</string>
+    <string name="sort_usage">사용량순 정렬</string>
+    <string name="navbar_burn_in_protection_title">탐색 메뉴 번인 방지</string>
+    <string name="navbar_burn_in_protection_summary">디스플레이 번인을 방지하려고 탐색 핸들을 주기적으로 이동합니다</string>
+    <string name="navbar_burn_in_interval_title">이동 간격</string>
+    <string name="pref_blur_background_at_app_launch_title">앱 실행/종료 시 배경 흐리기</string>
+    <string name="pref_blur_background_at_app_launch_summary">앱 실행 및 종료 애니메이션 중에 배경을 흐리게 처리합니다</string>
 </resources>

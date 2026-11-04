@@ -52,4 +52,169 @@
     <string name="cloudy_shape_title">"Bewolkt"</string>
     <string name="heart_shape_title">"Hartje"</string>
     <string name="scroll_shape_title">"Scrollen"</string>
+    <string name="action_lock">App vergrendelen/ontgrendelen</string>
+    <string name="unlock_app">Ontgrendelde app in recent</string>
+    <string name="lock_app">Vergrendelde app in recent</string>
+    <string name="home_category_summary">Google Nu-paneel instellen en meer</string>
+    <string name="icons_category_summary">Pictogramgrootte instellen en meer</string>
+    <string name="app_drawer_category_title">App-lade</string>
+    <string name="app_drawer_category_summary">Pas je app-lade aan</string>
+    <string name="recents_category_summary">Het overzichtsscherm vernieuwen</string>
+    <string name="interface_category_title">Interface</string>
+    <string name="actions_category_title">Snelle acties</string>
+    <string name="title_show_google_app">Swipe om de Google-app te openen</string>
+    <string name="suggestion_pref_screen_desc">Voor Alle apps- en startschermsuggesties</string>
+    <string name="pref_restart_summary">Start de launcher handmatig opnieuw om wachtende instellingen toe te passen</string>
+    <string name="restarting_launcher">Launcher wordt opnieuw gestart...</string>
+    <string name="restarting_launcher_changes">Launcher wordt opnieuw gestart om wijzigingen toe te passen...</string>
+    <string name="updating_launcher_components">Launcher wordt opnieuw gestart om launcheronderdelen bij te werken...</string>
+    <string name="pref_sleep_gesture_title">Dubbeltik om te slapen</string>
+    <string name="pref_sleep_gesture_summary">Dubbeltik op een lege plek op het startscherm om het scherm uit te schakelen</string>
+    <string name="pref_sleep_gesture_haptic_title">Trillen bij dubbeltik om te slapen</string>
+    <string name="pref_sleep_gesture_haptic_summary">Haptische feedback geven bij het dubbeltik-slapengebaar</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">Wordt automatisch ingeschakeld terwijl iOS-stijl actief is</string>
+    <string name="themed_icons_overlay_title">Pictogrammen met thema als overlay</string>
+    <string name="themed_icons_overlay_summary">Aangepaste themapictogrammen gebruiken voor apps zonder eigen themapictogram</string>
+    <string name="icon_size_title">Pictogramgrootte</string>
+    <string name="pause">Pauzeren</string>
+    <string name="pause_apps_dialog_title">%1$s pauzeren?</string>
+    <string name="pause_apps_dialog_message">Meldingen voor %1$s worden gepauzeerd</string>
+    <string name="paused_apps_dialog_title">App gepauzeerd</string>
+    <string name="paused_apps_dialog_message">%1$s is rechtstreeks vanuit de launcher gepauzeerd</string>
+    <string name="icon_two_lines_title">Twee regels gebruiken voor app-label</string>
+    <string name="recent_task_option_kill_app">Beëindigen</string>
+    <string name="recents_app_killed">App beëindigd</string>
+    <string name="row_height_title">Rijhoogte</string>
+    <string name="hotseat_bg_title">Achtergrond hotseat</string>
+    <string name="hotseat_bg_summary">Doorschijnende achtergrond toevoegen aan de app-dock</string>
+    <string name="pref_show_hotseat_qsb_title">Zoekbalk tonen</string>
+    <string name="pref_show_hotseat_qsb_summary">Onderaan je startscherm</string>
+    <string name="dock_search_widget_title">Zoekwidget</string>
+    <string name="dock_search_widget_summary">Een compatibele zoekwidget van derden in de dock gebruiken</string>
+    <string name="dock_search_widget_picker_title">Zoekwidget selecteren</string>
+    <string name="dock_search_widget_default">Standaard zoekwidget</string>
+    <string name="drawer_style_title">Stijl app-lade</string>
+    <string name="drawer_style_summary_ios_forced">App-lade uitgeschakeld in iOS-stijl</string>
+    <string-array name="app_drawer_style_entries">
+        <item>Normaal (onderste paneel)</item>
+        <item>Horizontale lijst</item>
+        <item>Verticaal (OneUI gepagineerd)</item>
+        <item>iOS-stijl</item>
+    </string-array>
+    <string name="drawer_search_title">Plaatsing app-zoekbalk</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>Verborgen</item>
+        <item>Boven</item>
+        <item>Onder</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">Vastgezette apps inschakelen</string>
+    <string name="pref_pinned_apps_enabled_summary">Een rij vastgezette apps tonen onder de zoekbalk</string>
+    <string name="pref_pinned_apps_list_title">Lijst met vastgezette apps</string>
+    <string name="pref_pinned_apps_list_summary">Apps selecteren om vast te zetten</string>
+    <string name="allow_wallpaper_scrolling">Achtergrond scrollen</string>
+    <string name="allow_wallpaper_scrolling_summary">Achtergrond-scrolleffect voor meerdere schermen</string>
+    <string name="allow_wallpaper_zooming">Achtergrond zoomen</string>
+    <string name="allow_wallpaper_zooming_summary">Zoom in of uit op de achtergrond bij gebruik van de app-lade of recente apps</string>
+    <string name="show_top_shadow">Bovenschaduw</string>
+    <string name="meminfo_text">%1$s beschikbaar | %2$s</string>
+    <string name="recents_meminfo_title">Geheugeninfo</string>
+    <string name="recents_meminfo_zram_title">ZRAM-info</string>
+    <string name="recents_chips_title">Compact actieontwerp gebruiken</string>
+    <string name="recents_chips_summary">Kan nodig zijn om grote aantallen acties te tonen</string>
+    <string name="recents_lens_title">Lens</string>
+    <string name="short_parallax_title">Korte parallax toestaan</string>
+    <string name="short_parallax_summary">Volledig achtergrond-scrolleffect inschakelen bij minder pagina\'s in plaats van de achtergrond bij te snijden</string>
+    <string name="single_page_center_title">Enkele pagina centreren</string>
+    <string name="single_page_center_summary">Achtergrond centreren als er maar één pagina wordt gebruikt</string>
+    <string name="drawer_scrollbar_title">Scrollbalk</string>
+    <string name="drawer_scrollbar_summary">Scrollbalk aan de zijkant van de app-lade</string>
+    <string name="perf_dark_status_bar_title">Donkere statusbalk</string>
+    <string name="perf_dark_status_bar_summary">Altijd een donkere statusbalk gebruiken op het startscherm</string>
+    <string name="show_quickspace_title">At A Glance</string>
+    <string name="show_quickspace_summary">Bovenaan je startscherm tonen</string>
+    <string name="quickspace_style_title">Stijl At A Glance</string>
+    <string-array name="quickspace_style_entries">
+        <item>"Standaard"</item>
+        <item>Uitgebreid</item>
+        <item>Remix</item>
+        <item>Remix gepagineerd</item>
+        <item>Remix verticaal</item>
+        <item>Orbit</item>
+        <item>Neonbord</item>
+        <item>Glas</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">NU AFGESPEELD</string>
+    <string name="quickspace_vertical_note">NOTITIE</string>
+    <string name="quickspace_vertical_weather">WEER</string>
+    <string name="quickspace_vertical_calendar">AGENDA</string>
+    <string name="quickspace_vertical_battery">BATTERIJ</string>
+    <string name="quickspace_vertical_a11y_calendar">Agenda openen</string>
+    <string name="quickspace_vertical_a11y_weather">Weer openen</string>
+    <string name="quickspace_vertical_a11y_calendar_event">Agenda-afspraak openen</string>
+    <string name="quickspace_vertical_a11y_event">Huidige weergave openen</string>
+    <string name="quickspace_vertical_a11y_note">Notitie openen</string>
+    <string name="quickspace_vertical_a11y_battery">Batterij-instellingen openen</string>
+    <string name="quickspace_voltage_accent_title">Klok in accentkleur</string>
+    <string name="quickspace_voltage_accent_summary">Het eerste cijfer van de klok in de Remix-stijlen kleuren</string>
+    <string name="quickspace_voltage_minimal_title">Minimale modus</string>
+    <string name="quickspace_voltage_minimal_summary">Secundaire Remix-inhoud samenvouwen tot tikbare snelpictogrammen</string>
+    <string name="quickspace_grt_morning">Goedemorgen.</string>
+    <string name="quickspace_grt_evening">Goedenavond.</string>
+    <string name="quickspace_grt_afternoon">Goedemiddag.</string>
+    <string name="quickspace_grt_night">Welterusten.</string>
+    <string name="quickspace_grt_general">Goedendag.</string>
+    <string name="quickspace_ext_one">Vandaag is het</string>
+    <string name="quickspace_ext_two">Het is</string>
+    <string name="qe_now_playing_unknown_artist">Onbekende artiest</string>
+    <string name="qe_now_playing_by">Door</string>
+    <string name="quickspace_now_playing_summary">Het nummer tonen dat je afspeelt</string>
+    <string name="quickspace_alternate_style_title">Uitgebreide stijl</string>
+    <string name="quickspace_alternate_style_summary">Overschakelen naar uitgebreide stijl</string>
+    <string name="quickspace_psa_title">Willekeurige berichten</string>
+    <string name="quickspace_psa_summary">Laat je metgezel levendiger lijken met willekeurige berichten</string>
+    <string name="intent_no_app_clock_found">Kan geen agenda- of kloktoepassing vinden</string>
+    <string name="quick_event_weather_rain">Regenachtig</string>
+    <string name="quick_event_weather_clear">Helder</string>
+    <string name="quick_event_weather_storm">Stormachtig</string>
+    <string name="quick_event_weather_snow">Sneeuw</string>
+    <string name="quick_event_weather_wind">Winderig</string>
+    <string name="quick_event_weather_mist">Mistig</string>
+    <string name="quickspace_battery_title">Batterij van apparaat</string>
+    <string name="quickspace_battery_summary">De batterij van de telefoon en van het verbonden Bluetooth-apparaat tonen in de Remix-stijlen</string>
+    <string name="quickspace_calendar_summary">Je volgende afspraak tonen uit elke ingeschakelde agenda</string>
+    <string name="quickspace_calendar_untitled">Afspraak zonder titel</string>
+    <string name="all_apps_dark_text_title">Donkere appnamen</string>
+    <string name="all_apps_dark_text_summary">Gebruik altijd donkere tekst voor appnamen in de app-lade</string>
+    <string name="app_info_title">App-info</string>
+    <string name="app_info_source">Bron</string>
+    <string name="app_info_last_update">Laatste update</string>
+    <string name="icon_pack_add">Meer installeren</string>
+    <string name="icon_pack_no_market">Er is geen beschikbare app-winkel</string>
+    <string name="pebble_shape_title">Pebble</string>
+    <string name="vessel_shape_title">Vessel</string>
+    <string name="pure_square_shape_title">Pure vierkant</string>
+    <string name="squircle_shape_title">Squircle</string>
+    <string name="tapered_rect_shape_title">Taps toelopende rechthoek</string>
+    <string name="teardrop_shape_title">Druppel</string>
+    <string name="rounded_rect_shape_title">Afgeronde rechthoek</string>
+    <string name="cylindrical_shape_title">Cilindrisch</string>
+    <string name="flower_shape_title">Bloem</string>
+    <string name="hexagon_shape_title">Zeshoek</string>
+    <string name="ios_style_shape_title">iOS-stijl</string>
+    <string name="leaf_shape_title">Blad</string>
+    <string name="meow_shape_title">Meow</string>
+    <string name="samsung_style_shape_title">Samsung-stijl</string>
+    <string name="stretched_shape_title">Uitgerekt</string>
+    <string name="home_screen_actions">Acties startscherm</string>
+    <string name="remove_all_views_from_home_screen">Startscherm leegmaken</string>
+    <string name="remove_all_views_from_home_screen_desc">Het startscherm wordt leeggemaakt. Wil je doorgaan?</string>
+    <string name="home_screen_all_views_removed_msg">Startscherm leeggemaakt</string>
+    <string name="sort_alphabetical">Sorteren op alfabet</string>
+    <string name="sort_install_date">Sorteren op installatiedatum</string>
+    <string name="sort_usage">Sorteren op gebruik</string>
+    <string name="navbar_burn_in_protection_title">Bescherming tegen inbranden van navigatiebalk</string>
+    <string name="navbar_burn_in_protection_summary">De navigatiebalk periodiek verschuiven om inbranden van het scherm te voorkomen</string>
+    <string name="navbar_burn_in_interval_title">Verschuivingsinterval</string>
+    <string name="pref_blur_background_at_app_launch_title">Achtergrond vervagen bij openen/sluiten van app</string>
+    <string name="pref_blur_background_at_app_launch_summary">De achtergrond vervagen tijdens de animaties bij het openen en sluiten van apps</string>
 </resources>

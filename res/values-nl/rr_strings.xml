@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"Recent"</string>
     <string name="glance_content_description">Snel overzicht</string>
+    <string name="drawer_open_keyboard_title">Swipe om zoeken te starten</string>
+    <string name="drawer_open_keyboard_summary">Toetsenbord openen zodra de app-lade zichtbaar wordt</string>
+    <string-array name="recents_style_entries">
+        <item>"Overzicht"</item>
+        <item>Dunne recente apps (zijpaneel)</item>
+        <item>Draaiende recente apps (wiel)</item>
+    </string-array>
+    <string name="neon_icons_title">Neon-pictogrammen</string>
+    <string name="neon_icons_summary">Het pictogram van elke app in uw accentkleur, binnen een gloeiende ring. Schakelt thematische pictogrammen in.</string>
+    <string name="icon_style_rr_title">Pictogramstijl</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Standaard"</item>
+        <item>Thematisch</item>
+        <item>Neon</item>
+    </string-array>
+    <string name="neon_ring_color_title">Ringkleur</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Accent</item>
+        <item>Eigen kleur van de app</item>
+    </string-array>
+    <string name="neon_glow_title">Gloed</string>
+    <string name="neon_ring_title">Beltoon</string>
+    <string-array name="neon_ring_entries">
+        <item>Dun</item>
+        <item>"Gemiddeld"</item>
+        <item>"Gedurfd"</item>
+    </string-array>
+    <string name="neon_folders_title">Ook mappen</string>
 </resources>

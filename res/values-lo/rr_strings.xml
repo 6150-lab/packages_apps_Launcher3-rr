@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"ຫຼ້າສຸດ"</string>
     <string name="glance_content_description">ຂໍ້ມູນໂດຍຫຍໍ້</string>
+    <string name="drawer_open_keyboard_title">ປັດເພື່ອເລີ່ມຄົ້ນຫາ</string>
+    <string name="drawer_open_keyboard_summary">ເປີດແປ້ນພິມທຸກຄັ້ງທີ່ລິ້ນຊັກແອັບປາກົດ</string>
+    <string-array name="recents_style_entries">
+        <item>"​ພາບ​ຮວມ"</item>
+        <item>ແອັບຫຼ້າສຸດແບບບາງ (ແຜງດ້ານຂ້າງ)</item>
+        <item>ແອັບຫຼ້າສຸດແບບໝຸນ (ວົງລໍ້)</item>
+    </string-array>
+    <string name="neon_icons_title">ໄອຄອນນີອອນ</string>
+    <string name="neon_icons_summary">ສັນຍະລັກຂອງແຕ່ລະແອັບໃນສີຂອງການເນັ້ນຂອງທ່ານ ພາຍໃນວົງແຫວນເຮືອງແສງ. ເປີດໄອຄອນຕາມຮູບແບບທີ່ກຳນົດເອງ.</string>
+    <string name="icon_style_rr_title">ຮູບແບບໄອຄອນ</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"ຄ່າເລີ່ມຕົ້ນ"</item>
+        <item>ຕາມຮູບແບບ</item>
+        <item>ນີອອນ</item>
+    </string-array>
+    <string name="neon_ring_color_title">ສີວົງແຫວນ</string>
+    <string-array name="neon_ring_color_entries">
+        <item>ສີເນັ້ນ</item>
+        <item>ສີເປັນຂອງແອັບນັ້ນ</item>
+    </string-array>
+    <string name="neon_glow_title">ແສງເຮືອງ</string>
+    <string name="neon_ring_title">ສຽງຣິງ</string>
+    <string-array name="neon_ring_entries">
+        <item>ບາງ</item>
+        <item>"ປານກາງ"</item>
+        <item>"ໂດດເດັ່ນ"</item>
+    </string-array>
+    <string name="neon_folders_title">ລວມເຖິງໂຟລເດີ</string>
 </resources>

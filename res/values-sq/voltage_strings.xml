@@ -53,4 +53,168 @@
     <string name="cloudy_shape_title">"Vranësirë"</string>
     <string name="heart_shape_title">"Zemër"</string>
     <string name="scroll_shape_title">"Lëviz"</string>
+    <string name="action_lock">Kyç/Zhkyç aplikacionin</string>
+    <string name="unlock_app">Aplikacioni u zhkyç te të fundit</string>
+    <string name="lock_app">Aplikacioni u kyç te të fundit</string>
+    <string name="home_category_summary">Cakto panelin Google Now dhe më shumë</string>
+    <string name="icons_category_summary">Cakto madhësinë e ikonave dhe më shumë</string>
+    <string name="app_drawer_category_title">Sirtari i aplikacioneve</string>
+    <string name="app_drawer_category_summary">Personalizo sirtarin e aplikacioneve</string>
+    <string name="recents_category_summary">Ripunon ekranin e përmbledhjes</string>
+    <string name="interface_category_title">Ndërfaqja</string>
+    <string name="actions_category_title">Veprime të shpejta</string>
+    <string name="title_show_google_app">Rrëshqit për të hyrë te aplikacioni Google</string>
+    <string name="suggestion_pref_screen_desc">Për sugjerimet e të gjitha aplikacioneve dhe ekranit bazë</string>
+    <string name="pref_restart_summary">Rinis launcher-in manualisht për të aplikuar cilësimet në pritje</string>
+    <string name="restarting_launcher">Po rinisët launcher-in...</string>
+    <string name="restarting_launcher_changes">Po rinisët launcher-in për të aplikuar ndryshimet...</string>
+    <string name="updating_launcher_components">Po rinisët launcher-in për të përditësuar përbërësit e tij...</string>
+    <string name="pref_sleep_gesture_haptic_title">Dridhje në prekjen e dyfishtë për të fjetur</string>
+    <string name="pref_sleep_gesture_haptic_summary">Jep reagim me dridhje te gjesti i prekjes së dyfishtë për të fjetur</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">Aktivizohet automatikisht kur është aktiv stili iOS</string>
+    <string name="themed_icons_overlay_title">Ikona të temuara të mbivendosura</string>
+    <string name="themed_icons_overlay_summary">Përdor hartën e personalizuar të ikonave të temuara për aplikacionet pa ikonë të temuar vendase</string>
+    <string name="icon_size_title">Madhësia e ikonës</string>
+    <string name="pause">Pauzë</string>
+    <string name="pause_apps_dialog_title">Ta pauzoj %1$s?</string>
+    <string name="pause_apps_dialog_message">Njoftimet për %1$s do të pauzohen</string>
+    <string name="paused_apps_dialog_title">Aplikacioni u pauzua</string>
+    <string name="paused_apps_dialog_message">%1$s u pauzua drejtpërdrejt nga launcher-i</string>
+    <string name="icon_two_lines_title">Përdor dy rreshta për emrin e aplikacionit</string>
+    <string name="recent_task_option_kill_app">Mbyll</string>
+    <string name="recents_app_killed">Aplikacioni u mbyll</string>
+    <string name="row_height_title">Lartësia e rreshtit</string>
+    <string name="hotseat_bg_title">Sfondi i dock-ut</string>
+    <string name="hotseat_bg_summary">Shto sfond gjysmë-transparent te dock-u i aplikacioneve</string>
+    <string name="pref_show_hotseat_qsb_title">Shfaq shiritin e kërkimit</string>
+    <string name="pref_show_hotseat_qsb_summary">Në fund të ekranit bazë</string>
+    <string name="dock_search_widget_title">Widget-i i kërkimit</string>
+    <string name="dock_search_widget_summary">Përdor një widget kërkimi të përputhshëm të palës së tretë në dock</string>
+    <string name="dock_search_widget_picker_title">Zgjidh widget-in e kërkimit</string>
+    <string name="dock_search_widget_default">Widget-i i parazgjedhur i kërkimit</string>
+    <string name="drawer_style_title">Stili i sirtarit të aplikacioneve</string>
+    <string name="drawer_style_summary_ios_forced">Sirtari i aplikacioneve është çaktivizuar në stilin iOS</string>
+    <string-array name="app_drawer_style_entries">
+        <item>Normal (fleta poshtë)</item>
+        <item>Listë horizontale</item>
+        <item>Vertikal (me faqe OneUI)</item>
+        <item>Stili iOS</item>
+    </string-array>
+    <string name="drawer_search_title">Vendndodhja e shiritit të kërkimit të aplikacioneve</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>"E fshehur"</item>
+        <item>Lart</item>
+        <item>Poshtë</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">Aktivizo aplikacionet e fiksuara</string>
+    <string name="pref_pinned_apps_enabled_summary">Shfaq një rresht me aplikacione të fiksuara nën shiritin e kërkimit</string>
+    <string name="pref_pinned_apps_list_title">Lista e aplikacioneve të fiksuara</string>
+    <string name="pref_pinned_apps_list_summary">Zgjidh aplikacionet për t\'i fiksuar</string>
+    <string name="allow_wallpaper_scrolling">Lëvizja e sfondit</string>
+    <string name="allow_wallpaper_scrolling_summary">Efekti i lëvizjes së sfondit për disa ekrane</string>
+    <string name="allow_wallpaper_zooming">Zmadhimi i sfondit</string>
+    <string name="allow_wallpaper_zooming_summary">Zmadho ose zvogëlo sfondin kur përdor sirtarin ose aplikacionet e fundit</string>
+    <string name="show_statusbar_title">Shiriti i statusit</string>
+    <string name="show_top_shadow">Hija e sipërme</string>
+    <string name="meminfo_text">%1$s të lira | %2$s</string>
+    <string name="recents_meminfo_title">Informacion për memorien</string>
+    <string name="recents_meminfo_zram_title">Informacion për ZRAM</string>
+    <string name="recents_chips_title">Përdor dizajn kompakt të veprimeve</string>
+    <string name="recents_chips_summary">Mund të kërkohet për shumë veprime që të shfaqen</string>
+    <string name="short_parallax_title">Lejo paralaksë të shkurtër</string>
+    <string name="short_parallax_summary">Aktivizo efektin e plotë të lëvizjes së sfondit kur ka pak faqe, në vend që ta prerë sfondin</string>
+    <string name="single_page_center_title">Faqe e vetme në qendër</string>
+    <string name="single_page_center_summary">Qendërzo sfondin kur përdoret vetëm një faqe</string>
+    <string name="drawer_scrollbar_title">Shiriti i lëvizjes</string>
+    <string name="drawer_scrollbar_summary">Shiriti i lëvizjes në anë të sirtarit të aplikacioneve</string>
+    <string name="perf_dark_status_bar_title">Shiriti i statusit i errët</string>
+    <string name="perf_dark_status_bar_summary">Përdor gjithmonë shiritin e errët të statusit në ekranin bazë</string>
+    <string name="show_quickspace_title">Me një vështrim</string>
+    <string name="show_quickspace_summary">Shfaq në krye të ekranit bazë</string>
+    <string name="quickspace_style_title">Stili i Me një vështrim</string>
+    <string-array name="quickspace_style_entries">
+        <item>"E parazgjedhur"</item>
+        <item>Të zgjeruar</item>
+        <item>Remix</item>
+        <item>Remix me faqe</item>
+        <item>Remix vertikal</item>
+        <item>Orbitë</item>
+        <item>Tabelë neoni</item>
+        <item>Xham</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">NË LUAJTJE</string>
+    <string name="quickspace_vertical_note">SHËNIM</string>
+    <string name="quickspace_vertical_weather">MOTI</string>
+    <string name="quickspace_vertical_calendar">KALENDARI</string>
+    <string name="quickspace_vertical_battery">BATERIA</string>
+    <string name="quickspace_vertical_a11y_calendar">Hap kalendarin</string>
+    <string name="quickspace_vertical_a11y_weather">Hap motin</string>
+    <string name="quickspace_vertical_a11y_calendar_event">Hap ngjarjen e kalendarit</string>
+    <string name="quickspace_vertical_a11y_event">Hap luajtjen aktuale</string>
+    <string name="quickspace_vertical_a11y_note">Hap shënimin</string>
+    <string name="quickspace_vertical_a11y_battery">Hap cilësimet e baterisë</string>
+    <string name="quickspace_voltage_accent_title">Ora me ngjyrë theksi</string>
+    <string name="quickspace_voltage_accent_summary">Ngjyros shifrën e parë të orës te stilet Remix</string>
+    <string name="quickspace_voltage_minimal_title">Modaliteti minimal</string>
+    <string name="quickspace_voltage_minimal_summary">Palos përmbajtjen dytësore Remix në ikona të shpejta që prekën</string>
+    <string name="quickspace_grt_morning">Mirëmëngjes.</string>
+    <string name="quickspace_grt_evening">Mirëmbrëma.</string>
+    <string name="quickspace_grt_afternoon">Mirëdita.</string>
+    <string name="quickspace_grt_night">Natën e mirë.</string>
+    <string name="quickspace_grt_general">Mirëdita.</string>
+    <string name="quickspace_ext_one">Sot është</string>
+    <string name="quickspace_ext_two">Është</string>
+    <string name="qe_now_playing_unknown_artist">Artist i panjohur</string>
+    <string name="qe_now_playing_by">Nga</string>
+    <string name="quickspace_now_playing_summary">Shfaq këngën që po luan</string>
+    <string name="quickspace_alternate_style_title">Stili i zgjeruar</string>
+    <string name="quickspace_alternate_style_summary">Kalo te stili i zgjeruar</string>
+    <string name="quickspace_psa_title">Mesazhe të rastësishme</string>
+    <string name="quickspace_psa_summary">Bëje shoqëruesin tënd më të gjallë me mesazhe të rastësishme</string>
+    <string name="intent_no_app_clock_found">Nuk mund të gjendet aktiviteti i kalendarit ose orës</string>
+    <string name="quick_event_ambient_weather_title">Përditësimi i motit</string>
+    <string name="quick_event_ambient_weather_summary">Shfaq përditësimin aktual të motit</string>
+    <string name="quick_event_ambient_weather_enabled_info">Kërkon që shërbimi i motit të jetë i aktivizuar</string>
+    <string name="quick_event_weather_rain">Me shi</string>
+    <string name="quick_event_weather_clear">Qiell i pastër</string>
+    <string name="quick_event_weather_storm">Me stuhi</string>
+    <string name="quick_event_weather_snow">Me borë</string>
+    <string name="quick_event_weather_wind">Me erë</string>
+    <string name="quick_event_weather_mist">Me mjegull</string>
+    <string name="quick_event_weather_city_title">Vendndodhja aktuale</string>
+    <string name="quick_event_weather_city_summary">Shfaq vendndodhjen aktuale të motit</string>
+    <string name="quick_event_weather_text_title">Gjendja aktuale</string>
+    <string name="quick_event_weather_text_summary">Shfaq përmbledhjen e gjendjes aktuale të motit</string>
+    <string name="quickspace_battery_title">Bateria e pajisjes</string>
+    <string name="quickspace_battery_summary">Shfaq baterinë e telefonit dhe të pajisjes Bluetooth të lidhur në stilet Remix</string>
+    <string name="quickspace_calendar_summary">Shfaq ngjarjen tënde të ardhshme nga çdo kalendar i aktivizuar</string>
+    <string name="quickspace_calendar_untitled">Ngjarje e paemërtuar</string>
+    <string name="all_apps_dark_text_title">Etiketa të errëta të aplikacioneve</string>
+    <string name="all_apps_dark_text_summary">Përdor gjithmonë tekst të errët për etiketat e aplikacioneve në sirtarin e aplikacioneve</string>
+    <string name="app_info_title">Informacioni i aplikacionit</string>
+    <string name="app_info_source">Burimi</string>
+    <string name="app_info_last_update">Përditësimi i fundit</string>
+    <string name="icon_pack_title">Paketa e ikonave</string>
+    <string name="icon_pack_add">Instalo më shumë</string>
+    <string name="icon_pack_no_market">Nuk ka dyqan aplikacionesh të disponueshëm</string>
+    <string name="cylindrical_shape_title">Cilindrike</string>
+    <string name="flower_shape_title">Lule</string>
+    <string name="hexagon_shape_title">Gjashtëkëndore</string>
+    <string name="ios_style_shape_title">Stili iOS</string>
+    <string name="leaf_shape_title">Gjethe</string>
+    <string name="meow_shape_title">Mjau</string>
+    <string name="samsung_style_shape_title">Stili Samsung</string>
+    <string name="stretched_shape_title">E shtrirë</string>
+    <string name="home_screen_actions">Veprimet e ekranit bazë</string>
+    <string name="remove_all_views_from_home_screen">Pastro ekranin bazë</string>
+    <string name="remove_all_views_from_home_screen_desc">Ekrani bazë do të pastrohet. Dëshiron të vazhdosh?</string>
+    <string name="home_screen_all_views_removed_msg">Ekrani bazë u pastrua</string>
+    <string name="sort_alphabetical">Rendit sipas alfabetit</string>
+    <string name="sort_install_date">Rendit sipas datës së instalimit</string>
+    <string name="sort_usage">Rendit sipas përdorimit</string>
+    <string name="navbar_burn_in_protection_title">Mbrojtja e shiritit të navigimit nga djegia</string>
+    <string name="navbar_burn_in_protection_summary">Zhvendos periodikisht dorezën e navigimit për të parandaluar djegien e ekranit</string>
+    <string name="navbar_burn_in_interval_title">Intervali i zhvendosjes</string>
+    <string name="pref_blur_background_at_app_launch_title">Turbullim i sfondit gjatë hapjes/mbylljes së aplikacionit</string>
+    <string name="pref_blur_background_at_app_launch_summary">Turbullo sfondin gjatë animacioneve të hapjes dhe mbylljes së aplikacionit</string>
 </resources>

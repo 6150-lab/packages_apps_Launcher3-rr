@@ -40,4 +40,181 @@
     <string name="cloudy_shape_title">"Воблачна"</string>
     <string name="heart_shape_title">"Сэрца"</string>
     <string name="scroll_shape_title">"Гартанне"</string>
+    <string name="action_lock">Заблакаваць/разблакаваць праграму</string>
+    <string name="unlock_app">Разблакаваная праграма ў нядаўніх</string>
+    <string name="lock_app">Заблакаваная праграма ў нядаўніх</string>
+    <string name="home_category_summary">Наладзьце панэль Google Now і іншае</string>
+    <string name="icons_category_summary">Налада памеру значкоў і іншае</string>
+    <string name="app_drawer_category_title">Панэль праграм</string>
+    <string name="app_drawer_category_summary">Наладзьце панэль праграм</string>
+    <string name="recents_category_summary">Перарабіць экран агляду</string>
+    <string name="actions_category_title">Хуткія дзеянні</string>
+    <string name="title_show_google_app">Гартайце, каб адкрыць праграму Google</string>
+    <string name="msg_minus_one_on_left">Пры гартанні направа з галоўнага экрана</string>
+    <string name="msg_minus_one_on_right">Пры гартанні налева з галоўнага экрана</string>
+    <string name="suggestion_pref_screen_desc">Для прапаноў «Усе праграмы» &amp; галоўнага экрана</string>
+    <string name="pref_restart_summary">Перазапусціце лаўнчар уручную, каб прымяніць апошнія налады</string>
+    <string name="restarting_launcher">Перазапуск лаўнчара…</string>
+    <string name="restarting_launcher_changes">Перазапуск лаўнчара для прымянення змяненняў…</string>
+    <string name="updating_launcher_components">Перазапуск лаўнчара для абнаўлення яго кампанентаў…</string>
+    <string name="pref_sleep_gesture_title">Двайны націск для сну</string>
+    <string name="pref_sleep_gesture_summary">Двойчы націсніце пустое месца на галоўным экране, каб выключыць экран</string>
+    <string name="pref_sleep_gesture_haptic_title">Вібрацыя пры двайным націску для сну</string>
+    <string name="pref_sleep_gesture_haptic_summary">Тактыльны водгук пры жэсце двайнога націску для сну</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">Уключаецца аўтаматычна, пакуль актыўны стыль iOS</string>
+    <string name="settings_lock_layout_title">Заблакаваць разметку</string>
+    <string name="settings_lock_layout_summary_on">Значкі і віджэты нельга дадаваць, выдаляць і перамяшчаць на галоўным экране</string>
+    <string name="settings_lock_layout_summary_off">Значкі і віджэты можна дадаваць, выдаляць і перамяшчаць на галоўным экране</string>
+    <string name="pref_themed_icons_title">Выкарыстоўваць значкі з тэмай у панэлі праграм</string>
+    <string name="pref_themed_icons_summary">Выкарыстоўваць тыя ж значкі з тэмай, што на галоўным экране</string>
+    <string name="themed_icons_overlay_title">Накладзеныя значкі з тэмай</string>
+    <string name="themed_icons_overlay_summary">Выкарыстоўваць уласныя тэматычныя значкі для праграм, якія не падтрымліваюць іх</string>
+    <string name="desktop_show_labels">Паказваць подпісы значкоў на працоўным стале</string>
+    <string name="drawer_show_labels">Паказваць подпісы значкоў у шуфлядзе</string>
+    <string name="trust_apps_manager_name">Схаваныя і абаронаныя праграмы</string>
+    <string name="trust_apps_auth_manager">Разблакіруйце, каб кіраваць схаванымі і абароненымі праграмамі</string>
+    <string name="trust_apps_no_lock_error">Наладзьце бяспечны экран блакіроўкі, каб абмежаваць доступ да праграм</string>
+    <string name="trust_apps_info_hidden">Схаваныя праграмы і іх віджэты не паказваюцца ў шуфлядзе</string>
+    <string name="trust_apps_info_protected">Абароненыя праграмы патрабуюць аўтэнтыфікацыі для адкрыцця з лаўнчара</string>
+    <string name="icon_size_title">Памер значка</string>
+    <string name="pause">Паўза</string>
+    <string name="pause_apps_dialog_title">Прыпыніць %1$s?</string>
+    <string name="pause_apps_dialog_message">Апавяшчэнні для %1$s будуць прыпыненыя</string>
+    <string name="paused_apps_dialog_title">Праграма прыпынена</string>
+    <string name="paused_apps_dialog_message">%1$s была прыпынена непасрэдна з лаўнчара</string>
+    <string name="icon_two_lines_title">Выкарыстоўваць два радкі для подпісу праграмы</string>
+    <string name="recent_task_option_kill_app">Прымусова спыніць</string>
+    <string name="recents_app_killed">Праграма прымусова спынена</string>
+    <string name="row_height_title">Вышыня радка</string>
+    <string name="hotseat_bg_title">Фон панэлі хуткага доступу</string>
+    <string name="hotseat_bg_summary">Дадаць паўпразрысты фон для панэлі праграм</string>
+    <string name="pref_show_hotseat_qsb_title">Паказваць панэль пошуку</string>
+    <string name="pref_show_hotseat_qsb_summary">Унізе галоўнага экрана</string>
+    <string name="dock_search_widget_title">Віджэт пошуку</string>
+    <string name="dock_search_widget_summary">Выкарыстоўваць сумяшчальны віджэт пошуку ад трэціх бакоў на панэлі</string>
+    <string name="dock_search_widget_picker_title">Выберыце віджэт пошуку</string>
+    <string name="dock_search_widget_default">Віджэт пошуку па змаўчанні</string>
+    <string name="drawer_style_title">Стыль шуфлядзі праграм</string>
+    <string name="drawer_style_summary_ios_forced">Шуфляда праграм адключана ў стылі iOS</string>
+    <string-array name="app_drawer_style_entries">
+        <item>Звычайная (ніжняя панэль)</item>
+        <item>Гарызантальны спіс</item>
+        <item>Вертыкальная (са старонкамі OneUI)</item>
+        <item>Стыль iOS</item>
+    </string-array>
+    <string name="drawer_search_title">Размяшчэнне панэлі пошуку праграм</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>"Схаваны"</item>
+        <item>Уверсе</item>
+        <item>Унізе</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">Уключыць замацаваныя праграмы</string>
+    <string name="pref_pinned_apps_enabled_summary">Паказваць радок замацаваных праграм пад панэллю пошуку</string>
+    <string name="pref_pinned_apps_list_title">Спіс замацаваных праграм</string>
+    <string name="pref_pinned_apps_list_summary">Выберыце праграмы для замацавання</string>
+    <string name="allow_wallpaper_scrolling">Прагортванне шпалер</string>
+    <string name="allow_wallpaper_scrolling_summary">Эфект прагортвання шпалер для некалькіх экранаў</string>
+    <string name="allow_wallpaper_zooming">Маштабаванне шпалер</string>
+    <string name="allow_wallpaper_zooming_summary">Павялічваць або паменшваць шпалеры пры выкарыстанні шуфлядзі ці нядаўніх праграм</string>
+    <string name="show_top_shadow">Верхні зацень</string>
+    <string name="meminfo_text">Даступна %1$s | %2$s</string>
+    <string name="recents_meminfo_title">Інфармацыя аб памяці</string>
+    <string name="recents_meminfo_zram_title">Інфармацыя пра ZRAM</string>
+    <string name="recents_chips_title">Выкарыстоўваць кампактны дызайн дзеянняў</string>
+    <string name="recents_chips_summary">Можа спатрэбіцца для адлюстравання вялікай колькасці дзеянняў</string>
+    <string name="short_parallax_title">Дазволіць кароткі паралакс</string>
+    <string name="short_parallax_summary">Уключыць поўны эфект прагортвання шпалер для невялікай колькасці старонак замест абрэзкі шпалер</string>
+    <string name="single_page_center_title">Цэнтраванне для адной старонкі</string>
+    <string name="single_page_center_summary">Цэнтраваць шпалеры, калі выкарыстоўваецца толькі адна старонка</string>
+    <string name="drawer_scrollbar_title">Паласа прагортвання</string>
+    <string name="drawer_scrollbar_summary">Паласа прагортвання збоку шуфлядзі праграм</string>
+    <string name="perf_dark_status_bar_title">Цёмная панэль стану</string>
+    <string name="perf_dark_status_bar_summary">Заўсёды выкарыстоўваць цёмную панэль стану на галоўным экране</string>
+    <string name="show_quickspace_title">At A Glance</string>
+    <string name="show_quickspace_summary">Паказваць уверсе галоўнага экрана</string>
+    <string name="quickspace_style_title">Стыль At A Glance</string>
+    <string-array name="quickspace_style_entries">
+        <item>"Стандартна"</item>
+        <item>Пашыраны</item>
+        <item>Remix</item>
+        <item>Remix са старонкамі</item>
+        <item>Remix вертыкальны</item>
+        <item>Орбіта</item>
+        <item>Неонавы знак</item>
+        <item>Шкло</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">ЗАРАЗ ГУЧЫЦЬ</string>
+    <string name="quickspace_vertical_note">ЗАМЕТКА</string>
+    <string name="quickspace_vertical_weather">ПАГОДА</string>
+    <string name="quickspace_vertical_calendar">КАЛЕНДАР</string>
+    <string name="quickspace_vertical_battery">БАТАРЭЯ</string>
+    <string name="quickspace_vertical_a11y_calendar">Адкрыць каляндар</string>
+    <string name="quickspace_vertical_a11y_weather">Адкрыць надвор\'е</string>
+    <string name="quickspace_vertical_a11y_calendar_event">Адкрыць падзею календара</string>
+    <string name="quickspace_vertical_a11y_event">Адкрыць цяперашні прайгравальнік</string>
+    <string name="quickspace_vertical_a11y_note">Адкрыць нататку</string>
+    <string name="quickspace_vertical_a11y_battery">Адкрыць налады батарэі</string>
+    <string name="quickspace_voltage_accent_title">Гадзіннік у колеры акцэнту</string>
+    <string name="quickspace_voltage_accent_summary">Фарбаваць першую лічбу гадзінніка ў стылях Remix</string>
+    <string name="quickspace_voltage_minimal_title">Мінімальны рэжым</string>
+    <string name="quickspace_voltage_minimal_summary">Згортваць другасны змест Remix у значкі для націсквання</string>
+    <string name="quickspace_grt_morning">Добрай раніцы.</string>
+    <string name="quickspace_grt_evening">Добрага вечара.</string>
+    <string name="quickspace_grt_afternoon">Добры дзень.</string>
+    <string name="quickspace_grt_night">Добрай ночы.</string>
+    <string name="quickspace_grt_general">Добры дзень.</string>
+    <string name="quickspace_ext_one">Сёння</string>
+    <string name="quickspace_ext_two">Зараз</string>
+    <string name="qe_now_playing_unknown_artist">Невядомы выканаўца</string>
+    <string name="qe_now_playing_by">Выканаўца:</string>
+    <string name="quickspace_now_playing_summary">Паказваць песню, якая іграе</string>
+    <string name="quickspace_alternate_style_title">Пашыраны стыль</string>
+    <string name="quickspace_alternate_style_summary">Пераключыцца на пашыраны стыль</string>
+    <string name="quickspace_psa_title">Выпадковыя паведамленні</string>
+    <string name="quickspace_psa_summary">Зрабіце свайго кампаньёна больш жывым з дапамогай выпадковых паведамленняў</string>
+    <string name="intent_no_app_clock_found">Не ўдалося знайсці дзеянне календара або гадзінніка</string>
+    <string name="quick_event_weather_rain">Дождж</string>
+    <string name="quick_event_weather_clear">Ясна</string>
+    <string name="quick_event_weather_storm">Штормава</string>
+    <string name="quick_event_weather_snow">Снег</string>
+    <string name="quick_event_weather_wind">Вецер</string>
+    <string name="quick_event_weather_mist">Туман</string>
+    <string name="quickspace_battery_title">Батарэя прылады</string>
+    <string name="quickspace_battery_summary">Паказваць узровень зараду тэлефона і падключаных прылад Bluetooth у стылях Remix</string>
+    <string name="quickspace_calendar_summary">Паказваць вашу наступную падзею з любога ўключанага календара</string>
+    <string name="quickspace_calendar_untitled">Падзея без назвы</string>
+    <string name="all_apps_dark_text_title">Цёмныя подпісы праграм</string>
+    <string name="all_apps_dark_text_summary">Заўсёды выкарыстоўваць цёмны тэкст для подпісаў праграм у шуфлядзі</string>
+    <string name="app_info_title">Інфармацыя пра праграму</string>
+    <string name="app_info_source">Крыніца</string>
+    <string name="app_info_last_update">Апошняе абнаўленне</string>
+    <string name="icon_pack_add">Усталяваць больш</string>
+    <string name="icon_pack_no_market">Няма даступнай крамы праграм</string>
+    <string name="pebble_shape_title">Галька</string>
+    <string name="vessel_shape_title">Судзіна</string>
+    <string name="pure_square_shape_title">Чысты квадрат</string>
+    <string name="squircle_shape_title">Скругленны квадрат</string>
+    <string name="tapered_rect_shape_title">Звужаны прамавугольнік</string>
+    <string name="teardrop_shape_title">Кропля</string>
+    <string name="rounded_rect_shape_title">Скругленны прамавугольнік</string>
+    <string name="cylindrical_shape_title">Цыліндр</string>
+    <string name="flower_shape_title">Кветка</string>
+    <string name="hexagon_shape_title">Шасцікутнік</string>
+    <string name="ios_style_shape_title">Стыль iOS</string>
+    <string name="leaf_shape_title">Ліст</string>
+    <string name="meow_shape_title">Мяў</string>
+    <string name="samsung_style_shape_title">Стыль Samsung</string>
+    <string name="stretched_shape_title">Расцягнуты</string>
+    <string name="home_screen_actions">Дзеянні галоўнага экрана</string>
+    <string name="remove_all_views_from_home_screen">Ачысціць галоўны экран</string>
+    <string name="remove_all_views_from_home_screen_desc">Галоўны экран будзе ачышчаны. Працягнуць?</string>
+    <string name="home_screen_all_views_removed_msg">Галоўны экран ачышчаны</string>
+    <string name="sort_alphabetical">Сартаваць па алфавіце</string>
+    <string name="sort_install_date">Сартаваць па даце ўсталёўкі</string>
+    <string name="sort_usage">Сартаваць па выкарыстанні</string>
+    <string name="navbar_burn_in_protection_title">Абарона панэлі навігацыі ад выгарання</string>
+    <string name="navbar_burn_in_protection_summary">Перыядычна зрушваць маркер навігацыі, каб прадухіліць выгаранне экрана</string>
+    <string name="navbar_burn_in_interval_title">Інтэрвал зрушвання</string>
+    <string name="pref_blur_background_at_app_launch_title">Размыццё фону пры запуску/закрыцці праграмы</string>
+    <string name="pref_blur_background_at_app_launch_summary">Размываць фон падчас анімацый запуску і закрыцця праграм</string>
 </resources>

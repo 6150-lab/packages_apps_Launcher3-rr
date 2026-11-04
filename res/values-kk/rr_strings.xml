@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"Жақындағылар"</string>
     <string name="glance_content_description">Қысқаша мәлімет</string>
+    <string name="drawer_open_keyboard_title">Іздеуді бастау үшін сырғыту</string>
+    <string name="drawer_open_keyboard_summary">Қолданбалар жәшігі көрінген сайын пернетақтаны ашу</string>
+    <string-array name="recents_style_entries">
+        <item>"Шолу"</item>
+        <item>Ықшам жақындағылар (бүйір панель)</item>
+        <item>Айналмалы жақындағылар (дөңгелек)</item>
+    </string-array>
+    <string name="neon_icons_title">Неон белгішелері</string>
+    <string name="neon_icons_summary">Әр қолданбаның белгішесі акцент түсімен, жарқыраған сақина ішінде көрсетіледі. Тақырыптық белгішелерді қосады.</string>
+    <string name="icon_style_rr_title">Белгіше стилі</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Әдепкі"</item>
+        <item>Тақырыптық</item>
+        <item>Неон</item>
+    </string-array>
+    <string name="neon_ring_color_title">Сақина түсі</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Акцент</item>
+        <item>Қолданбаның өз түсі</item>
+    </string-array>
+    <string name="neon_glow_title">Жарқыраңқы</string>
+    <string name="neon_ring_title">Ring</string>
+    <string-array name="neon_ring_entries">
+        <item>Жұқа</item>
+        <item>"Орташа"</item>
+        <item>"Жуан"</item>
+    </string-array>
+    <string name="neon_folders_title">Қалталар да</string>
 </resources>

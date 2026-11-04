@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"Azkenaldikoak"</string>
     <string name="glance_content_description">Begi-kolpean</string>
+    <string name="drawer_open_keyboard_title">Bilatzeko, irristatu</string>
+    <string name="drawer_open_keyboard_summary">Aplikazio-kajoia agertzen den bakoitzean, teklatua ireki</string>
+    <string-array name="recents_style_entries">
+        <item>"Ikuspegi orokorra"</item>
+        <item>Azkenaldikoak, alboko panel mehea</item>
+        <item>Azkenaldikoak, gurpila</item>
+    </string-array>
+    <string name="neon_icons_title">Neon ikonoak</string>
+    <string name="neon_icons_summary">Aplikazio bakoitzaren glifoa zure azentu-koloreko, distira egiten duen eraztun baten barruan. Gai-ikonoak aktibatzen ditu.</string>
+    <string name="icon_style_rr_title">Ikonoaren estiloa</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Lehenetsia"</item>
+        <item>Gaiarekin bat</item>
+        <item>Neoia</item>
+    </string-array>
+    <string name="neon_ring_color_title">Eraztunaren kolorea</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Azentua</item>
+        <item>Aplikazioaren kolore propioa</item>
+    </string-array>
+    <string name="neon_glow_title">Distira</string>
+    <string name="neon_ring_title">Tonua</string>
+    <string-array name="neon_ring_entries">
+        <item>Mehea</item>
+        <item>"Ertaina"</item>
+        <item>"Lodia"</item>
+    </string-array>
+    <string name="neon_folders_title">Karpetak ere bai</string>
 </resources>

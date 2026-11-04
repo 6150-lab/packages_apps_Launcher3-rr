@@ -4,4 +4,30 @@
     <string name="drawer_open_keyboard_summary">هر زمان که کشوی برنامه نمایان شد، صفحه کلید را باز کنید</string>
     <string name="pref_recents_style_title">"موارد اخیر"</string>
     <string name="glance_content_description">در یک نگاه</string>
+    <string-array name="recents_style_entries">
+        <item>"نمای کلی"</item>
+        <item>موارد اخیر باریک (پنل کناری)</item>
+        <item>موارد اخیر چرخان (چرخ)</item>
+    </string-array>
+    <string name="neon_icons_title">آیکون‌های نئونی</string>
+    <string name="neon_icons_summary">نماد هر برنامه با رنگ تأکیدی شما، درون یک حلقه درخشان. آیکون‌های تمی را فعال می‌کند.</string>
+    <string name="icon_style_rr_title">سبک آیکون</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"پیش‌فرض"</item>
+        <item>تم‌دار</item>
+        <item>نئونی</item>
+    </string-array>
+    <string name="neon_ring_color_title">رنگ حلقه</string>
+    <string-array name="neon_ring_color_entries">
+        <item>لهجه</item>
+        <item>رنگ خود برنامه</item>
+    </string-array>
+    <string name="neon_glow_title">درخشش</string>
+    <string name="neon_ring_title">زنگ</string>
+    <string-array name="neon_ring_entries">
+        <item>نازک</item>
+        <item>"متوسط"</item>
+        <item>"پررنگ"</item>
+    </string-array>
+    <string name="neon_folders_title">پوشه‌ها هم</string>
 </resources>

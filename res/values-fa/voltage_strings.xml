@@ -66,4 +66,155 @@
     <string name="cloudy_shape_title">"ابری"</string>
     <string name="heart_shape_title">"قلب"</string>
     <string name="scroll_shape_title">"پیمایش"</string>
+    <string name="action_lock">قفل/باز کردن قفل برنامه</string>
+    <string name="unlock_app">برنامه باز‌شده در موارد اخیر</string>
+    <string name="lock_app">برنامه قفل‌شده در موارد اخیر</string>
+    <string name="home_category_summary">تنظیم پنل Google Now و موارد بیشتر</string>
+    <string name="icons_category_summary">تنظیم اندازه آیکون و موارد بیشتر</string>
+    <string name="app_drawer_category_title">کشوی برنامه</string>
+    <string name="app_drawer_category_summary">شخصی‌سازی کشوی برنامه</string>
+    <string name="recents_category_summary">بازطراحی صفحه نمای کلی</string>
+    <string name="actions_category_title">اقدامات سریع</string>
+    <string name="title_show_google_app">برای دسترسی به برنامه گوگل بکشید</string>
+    <string name="suggestion_pref_screen_desc">برای پیشنهادهای همه برنامه‌ها و صفحه اصلی</string>
+    <string name="pref_restart_summary">برای اعمال تنظیمات معلق، لانچر را به‌صورت دستی راه‌اندازی مجدد کنید</string>
+    <string name="restarting_launcher">در حال راه‌اندازی مجدد لانچر...</string>
+    <string name="restarting_launcher_changes">در حال راه‌اندازی مجدد لانچر برای اعمال تغییرات...</string>
+    <string name="updating_launcher_components">در حال راه‌اندازی مجدد لانچر برای به‌روزرسانی اجزای آن...</string>
+    <string name="pref_sleep_gesture_haptic_title">با دو بار ضربه زدن برای خاموش کردن، ویبره کن</string>
+    <string name="pref_sleep_gesture_haptic_summary">بازخورد لمسی با حرکت دو بار ضربه زدن برای خاموش کردن صفحه ارائه می‌شود</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">هنگام فعال بودن سبک iOS، به‌طور خودکار فعال می‌شود</string>
+    <string name="themed_icons_overlay_title">آیکون‌های تم‌دار با پوشش</string>
+    <string name="themed_icons_overlay_summary">از نقشه‌برداری آیکون‌های تم‌دار سفارشی برای برنامه‌هایی که آیکون تم‌دار بومی ندارند استفاده کنید</string>
+    <string name="icon_size_title">اندازه آیکن</string>
+    <string name="pause">مکث</string>
+    <string name="pause_apps_dialog_title">%1$s متوقف شود؟</string>
+    <string name="pause_apps_dialog_message">اعلان‌های %1$s متوقف خواهند شد</string>
+    <string name="paused_apps_dialog_title">برنامه متوقف شد</string>
+    <string name="paused_apps_dialog_message">%1$s مستقیماً از لانچر متوقف شد</string>
+    <string name="icon_two_lines_title">استفاده از دو خط برای برچسب برنامه</string>
+    <string name="recent_task_option_kill_app">خاتمه</string>
+    <string name="recents_app_killed">برنامه خاتمه یافت</string>
+    <string name="row_height_title">ارتفاع ردیف</string>
+    <string name="hotseat_bg_title">پس‌زمینه کفشک</string>
+    <string name="hotseat_bg_summary">افزودن پس‌زمینه نیمه‌شفاف به کفشک برنامه</string>
+    <string name="dock_search_widget_title">ویجت جستجو</string>
+    <string name="dock_search_widget_summary">استفاده از یک ویجت جستجوی سازگار شخص ثالث در کفشک</string>
+    <string name="dock_search_widget_picker_title">انتخاب ویجت جستجو</string>
+    <string name="dock_search_widget_default">ویجت جستجوی پیش‌فرض</string>
+    <string name="drawer_style_title">سبک کشوی برنامه</string>
+    <string name="drawer_style_summary_ios_forced">کشوی برنامه در سبک iOS غیرفعال است</string>
+    <string-array name="app_drawer_style_entries">
+        <item>عادی (صفحه پایینی)</item>
+        <item>فهرست افقی</item>
+        <item>عمودی (صفحه‌بندی OneUI)</item>
+        <item>سبک iOS</item>
+    </string-array>
+    <string name="drawer_search_title">محل نوار جستجوی برنامه</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>"پنهان"</item>
+        <item>بالا</item>
+        <item>پایین</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">فعال‌سازی برنامه‌های سنجاق‌شده</string>
+    <string name="pref_pinned_apps_enabled_summary">نمایش ردیفی از برنامه‌های سنجاق‌شده زیر نوار جستجو</string>
+    <string name="pref_pinned_apps_list_title">فهرست برنامه‌های سنجاق‌شده</string>
+    <string name="pref_pinned_apps_list_summary">انتخاب برنامه‌ها برای سنجاق کردن</string>
+    <string name="allow_wallpaper_scrolling">پیمایش کاغذدیواری</string>
+    <string name="allow_wallpaper_scrolling_summary">جلوه پیمایش کاغذدیواری برای چند صفحه</string>
+    <string name="allow_wallpaper_zooming">بزرگ‌نمایی کاغذدیواری</string>
+    <string name="allow_wallpaper_zooming_summary">بزرگ‌نمایی یا کوچک‌نمایی کاغذدیواری هنگام استفاده از کشو یا برنامه‌های اخیر</string>
+    <string name="show_top_shadow">سایه بالایی</string>
+    <string name="meminfo_text">%1$s موجود | %2$s</string>
+    <string name="recents_meminfo_title">اطلاعات حافظه</string>
+    <string name="recents_meminfo_zram_title">اطلاعات ZRAM</string>
+    <string name="recents_chips_title">استفاده از طراحی فشرده اقدامات</string>
+    <string name="recents_chips_summary">ممکن است برای نمایش تعداد زیاد اقدامات لازم باشد</string>
+    <string name="short_parallax_title">مجاز کردن پارالاکس کوتاه</string>
+    <string name="short_parallax_summary">فعال کردن جلوه کامل پیمایش کاغذدیواری برای تعداد کم صفحه، به‌جای برش کاغذدیواری</string>
+    <string name="single_page_center_title">صفحه تک‌صفحه‌ای در مرکز</string>
+    <string name="single_page_center_summary">اگر فقط از یک صفحه استفاده می‌شود، کاغذدیواری را در مرکز قرار دهید</string>
+    <string name="drawer_scrollbar_title">نوار پیمایش</string>
+    <string name="drawer_scrollbar_summary">نوار پیمایش در کنار کشوی برنامه</string>
+    <string name="perf_dark_status_bar_title">نوار وضعیت تیره</string>
+    <string name="perf_dark_status_bar_summary">همیشه در صفحه اصلی از نوار وضعیت تیره استفاده کن</string>
+    <string name="show_quickspace_title">نگاهی به همه‌چیز</string>
+    <string name="show_quickspace_summary">در بالای صفحه اصلی نمایش داده شود</string>
+    <string name="quickspace_style_title">سبک «نگاهی به همه‌چیز»</string>
+    <string-array name="quickspace_style_entries">
+        <item>"پیش‌فرض"</item>
+        <item>گسترده</item>
+        <item>ریمیکس</item>
+        <item>صفحه‌بندی Remix</item>
+        <item>عمودی Remix</item>
+        <item>مدار</item>
+        <item>تابلوی نئونی</item>
+        <item>شیشه‌ای</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">در حال پخش</string>
+    <string name="quickspace_vertical_note">یادداشت</string>
+    <string name="quickspace_vertical_weather">آب‌وهوا</string>
+    <string name="quickspace_vertical_calendar">تقویم</string>
+    <string name="quickspace_vertical_battery">باتری</string>
+    <string name="quickspace_vertical_a11y_calendar">باز کردن تقویم</string>
+    <string name="quickspace_vertical_a11y_weather">باز کردن آب‌وهوا</string>
+    <string name="quickspace_vertical_a11y_calendar_event">باز کردن رویداد تقویم</string>
+    <string name="quickspace_vertical_a11y_event">باز کردن در حال پخش</string>
+    <string name="quickspace_vertical_a11y_note">باز کردن یادداشت</string>
+    <string name="quickspace_vertical_a11y_battery">باز کردن تنظیمات باتری</string>
+    <string name="quickspace_voltage_accent_title">ساعت با رنگ تاکیدی</string>
+    <string name="quickspace_voltage_accent_summary">رنگ‌دادن رقم اول ساعت در سبک‌های Remix</string>
+    <string name="quickspace_voltage_minimal_title">حالت مینیمال</string>
+    <string name="quickspace_voltage_minimal_summary">تبدیل محتوای ثانویه Remix به آیکون‌های سریع قابل لمس</string>
+    <string name="quickspace_grt_morning">صبح بخیر.</string>
+    <string name="quickspace_grt_evening">عصر بخیر.</string>
+    <string name="quickspace_grt_afternoon">ظهر بخیر.</string>
+    <string name="quickspace_grt_night">شب بخیر.</string>
+    <string name="quickspace_grt_general">روز بخیر.</string>
+    <string name="quickspace_ext_one">امروز</string>
+    <string name="quickspace_ext_two">ساعت است</string>
+    <string name="qe_now_playing_unknown_artist">هنرمند ناشناس</string>
+    <string name="qe_now_playing_by">از</string>
+    <string name="quickspace_now_playing_summary">نمایش آهنگی که پخش می‌کنید</string>
+    <string name="quickspace_alternate_style_title">سبک گسترده</string>
+    <string name="quickspace_alternate_style_summary">تغییر به سبک گسترده</string>
+    <string name="quickspace_psa_title">پیام‌های تصادفی</string>
+    <string name="quickspace_psa_summary">با پیام‌های تصادفی همراهت را پرجنب‌وجوش‌تر کن</string>
+    <string name="intent_no_app_clock_found">فعالیت تقویم یا ساعت پیدا نشد</string>
+    <string name="quick_event_weather_rain">بارانی</string>
+    <string name="quick_event_weather_clear">آسمان صاف</string>
+    <string name="quick_event_weather_storm">طوفانی</string>
+    <string name="quick_event_weather_snow">برفی</string>
+    <string name="quick_event_weather_mist">مه‌آلود</string>
+    <string name="quickspace_battery_title">باتری دستگاه</string>
+    <string name="quickspace_battery_summary">نمایش باتری تلفن و دستگاه بلوتوث متصل در سبک‌های Remix</string>
+    <string name="quickspace_calendar_summary">نمایش رویداد بعدی شما از هر تقویم فعال</string>
+    <string name="quickspace_calendar_untitled">رویداد بدون عنوان</string>
+    <string name="all_apps_dark_text_title">برچسب‌های تیره برنامه</string>
+    <string name="all_apps_dark_text_summary">همیشه از متن تیره برای برچسب برنامه‌ها در کشوی برنامه استفاده کن</string>
+    <string name="app_info_title">اطلاعات برنامه</string>
+    <string name="app_info_source">منبع</string>
+    <string name="app_info_last_update">آخرین به‌روزرسانی</string>
+    <string name="icon_pack_add">نصب موارد بیشتر</string>
+    <string name="icon_pack_no_market">فروشگاه برنامه‌ای در دسترس نیست</string>
+    <string name="cylindrical_shape_title">استوانه‌ای</string>
+    <string name="flower_shape_title">گل</string>
+    <string name="hexagon_shape_title">شش‌ضلعی</string>
+    <string name="ios_style_shape_title">سبک iOS</string>
+    <string name="leaf_shape_title">برگ</string>
+    <string name="meow_shape_title">میو</string>
+    <string name="samsung_style_shape_title">سبک Samsung</string>
+    <string name="stretched_shape_title">کشیده</string>
+    <string name="home_screen_actions">اقدامات صفحه اصلی</string>
+    <string name="remove_all_views_from_home_screen">پاک کردن صفحه اصلی</string>
+    <string name="remove_all_views_from_home_screen_desc">صفحه اصلی پاک خواهد شد. آیا می‌خواهید ادامه دهید؟</string>
+    <string name="home_screen_all_views_removed_msg">صفحه اصلی پاک شد</string>
+    <string name="sort_alphabetical">مرتب‌سازی بر اساس الفبا</string>
+    <string name="sort_install_date">مرتب‌سازی بر اساس تاریخ نصب</string>
+    <string name="sort_usage">مرتب‌سازی بر اساس میزان استفاده</string>
+    <string name="navbar_burn_in_protection_title">محافظت نواربار ناوبری در برابر ماندگاری تصویر</string>
+    <string name="navbar_burn_in_protection_summary">دسته‌ای جابه‌جا کردن دستگیره ناوبری برای جلوگیری از ماندگاری تصویر روی صفحه</string>
+    <string name="navbar_burn_in_interval_title">فاصله جابه‌جایی</string>
+    <string name="pref_blur_background_at_app_launch_title">محو کردن پس‌زمینه هنگام باز و بسته شدن برنامه</string>
+    <string name="pref_blur_background_at_app_launch_summary">محو کردن پس‌زمینه در انیمیشن باز و بسته شدن برنامه</string>
 </resources>

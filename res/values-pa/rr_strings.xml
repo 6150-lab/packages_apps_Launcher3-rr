@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"ਹਾਲੀਆ"</string>
     <string name="glance_content_description">ਇੱਕ ਨਜ਼ਰ ਵਿੱਚ</string>
+    <string name="drawer_open_keyboard_title">ਖੋਜ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਸਵਾਈਪ ਕਰੋ</string>
+    <string name="drawer_open_keyboard_summary">ਜਦੋਂ ਵੀ ਐਪ ਦਰਾਜ਼ ਦਿਖਾਈ ਦੇਵੇ ਤਾਂ ਕੀਬੋਰਡ ਖੋਲ੍ਹੋ</string>
+    <string-array name="recents_style_entries">
+        <item>"ਰੂਪ-ਰੇਖਾ"</item>
+        <item>ਪਤਲਾ ਹਾਲੀਆ (ਸਾਈਡ ਪੈਨਲ)</item>
+        <item>ਘੁੰਮਦਾ ਹਾਲੀਆ (ਪਹੀਆ)</item>
+    </string-array>
+    <string name="neon_icons_title">ਨਿਓਨ ਆਈਕਨ</string>
+    <string name="neon_icons_summary">ਹਰ ਐਪ ਦਾ ਗਲਿਫ਼ ਤੁਹਾਡੇ ਐਕਸੈਂਟ ਰੰਗ ਵਿੱਚ, ਚਮਕਦੀ ਰਿੰਗ ਦੇ ਅੰਦਰ। ਥੀਮਡ ਆਈਕਨ ਚਾਲੂ ਕਰਦਾ ਹੈ।</string>
+    <string name="icon_style_rr_title">ਆਈਕਨ ਸਟਾਈਲ</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"ਪੂਰਵ-ਨਿਰਧਾਰਿਤ"</item>
+        <item>ਥੀਮਡ</item>
+        <item>ਨਿਓਨ</item>
+    </string-array>
+    <string name="neon_ring_color_title">ਰਿੰਗ ਦਾ ਰੰਗ</string>
+    <string-array name="neon_ring_color_entries">
+        <item>ਐਕਸੈਂਟ</item>
+        <item>ਐਪ ਦਾ ਆਪਣਾ ਰੰਗ</item>
+    </string-array>
+    <string name="neon_glow_title">ਗਲੋ</string>
+    <string name="neon_ring_title">ਰਿੰਗ</string>
+    <string-array name="neon_ring_entries">
+        <item>ਪਤਲਾ</item>
+        <item>"ਦਰਮਿਆਨਾ"</item>
+        <item>"ਬੋਲਡ"</item>
+    </string-array>
+    <string name="neon_folders_title">ਫੋਲਡਰ ਵੀ</string>
 </resources>

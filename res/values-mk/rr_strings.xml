@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"Неодамнешни"</string>
     <string name="glance_content_description">На прв поглед</string>
+    <string name="drawer_open_keyboard_title">Повлечи за да започнеш пребарување</string>
+    <string name="drawer_open_keyboard_summary">Отвори ја тастатурата секогаш кога фиоката со апликации ќе се појави</string>
+    <string-array name="recents_style_entries">
+        <item>"Краток преглед"</item>
+        <item>Тенки неодамнешни (странична панел)</item>
+        <item>Ротирачки неодамнешни (тркало)</item>
+    </string-array>
+    <string name="neon_icons_title">Неон икони</string>
+    <string name="neon_icons_summary">Симболот на секоја апликација во вашата акцентна боја, во сјаен прстен. Ги вклучува тематските икони.</string>
+    <string name="icon_style_rr_title">Стил на икони</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Стандардно"</item>
+        <item>Тематски</item>
+        <item>Неон</item>
+    </string-array>
+    <string name="neon_ring_color_title">Боја на прстенот</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Акцент</item>
+        <item>Сопствена боја на апликацијата</item>
+    </string-array>
+    <string name="neon_glow_title">Сјај</string>
+    <string name="neon_ring_title">Ѕвонење</string>
+    <string-array name="neon_ring_entries">
+        <item>Тенко</item>
+        <item>"Средно"</item>
+        <item>"Нагласена"</item>
+    </string-array>
+    <string name="neon_folders_title">И фолдерите</string>
 </resources>

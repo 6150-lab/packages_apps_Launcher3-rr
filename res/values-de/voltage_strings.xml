@@ -69,4 +69,152 @@
     </string-array>
     <string name="quickspace_vertical_now_playing">LÄUFT GERADE</string>
     <string name="app_info_source">Quelle</string>
+    <string name="action_lock">App sperren/entsperren</string>
+    <string name="unlock_app">App in „Letzte“ entsperrt</string>
+    <string name="lock_app">App in „Letzte“ gesperrt</string>
+    <string name="home_category_summary">Google-Now-Panel und mehr einstellen</string>
+    <string name="icons_category_summary">Symbolgröße und mehr einstellen</string>
+    <string name="app_drawer_category_title">App-Schublade</string>
+    <string name="app_drawer_category_summary">App-Schublade anpassen</string>
+    <string name="recents_category_summary">Übersichtsbildschirm überarbeiten</string>
+    <string name="actions_category_title">Schnellaktionen</string>
+    <string name="title_show_google_app">Wische, um die Google-App zu öffnen</string>
+    <string name="suggestion_pref_screen_desc">Für Vorschläge in „Alle Apps“ und auf dem Startbildschirm</string>
+    <string name="pref_restart_summary">Starte den Launcher manuell neu, um ausstehende Einstellungen anzuwenden</string>
+    <string name="restarting_launcher">Launcher wird neu gestartet …</string>
+    <string name="restarting_launcher_changes">Launcher wird neu gestartet, um Änderungen anzuwenden …</string>
+    <string name="updating_launcher_components">Launcher wird neu gestartet, um Launcher-Komponenten zu aktualisieren …</string>
+    <string name="pref_sleep_gesture_haptic_title">Bei Doppeltippen zum Schlafen vibrieren</string>
+    <string name="pref_sleep_gesture_haptic_summary">Haptisches Feedback bei der Geste „Doppeltippen zum Schlafen“ geben</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">Wird automatisch aktiviert, solange der iOS-Stil aktiv ist</string>
+    <string name="themed_icons_overlay_title">Überlagerte Design-Symbole</string>
+    <string name="themed_icons_overlay_summary">Eigene Zuordnung für Design-Symbole verwenden für Apps ohne eigenes Design-Symbol</string>
+    <string name="pause_apps_dialog_title">%1$s pausieren?</string>
+    <string name="pause_apps_dialog_message">Benachrichtigungen für %1$s werden pausiert</string>
+    <string name="paused_apps_dialog_title">App pausiert</string>
+    <string name="paused_apps_dialog_message">%1$s wurde direkt über den Launcher pausiert</string>
+    <string name="icon_two_lines_title">Zwei Zeilen für App-Namen verwenden</string>
+    <string name="recent_task_option_kill_app">Beenden</string>
+    <string name="recents_app_killed">App beendet</string>
+    <string name="row_height_title">Zeilenhöhe</string>
+    <string name="hotseat_bg_title">Hintergrund der Hotseat</string>
+    <string name="hotseat_bg_summary">Transparenten Hintergrund für die App-Leiste hinzufügen</string>
+    <string name="pref_show_hotseat_qsb_title">Suchleiste anzeigen</string>
+    <string name="pref_show_hotseat_qsb_summary">Unten auf dem Startbildschirm</string>
+    <string name="dock_search_widget_title">Suchwidget</string>
+    <string name="dock_search_widget_summary">Ein kompatibles Drittanbieter-Suchwidget in der Leiste verwenden</string>
+    <string name="dock_search_widget_picker_title">Suchwidget auswählen</string>
+    <string name="dock_search_widget_default">Standard-Suchwidget</string>
+    <string name="drawer_style_title">Stil der App-Schublade</string>
+    <string name="drawer_style_summary_ios_forced">App-Schublade im iOS-Stil deaktiviert</string>
+    <string-array name="app_drawer_style_entries">
+        <item>Normal (Bottom Sheet)</item>
+        <item>Horizontale Liste</item>
+        <item>Vertikal (OneUI-Seiten)</item>
+        <item>iOS-Stil</item>
+    </string-array>
+    <string name="drawer_search_title">Platzierung der App-Suchleiste</string>
+    <string name="pref_pinned_apps_enabled_title">Angeheftete Apps aktivieren</string>
+    <string name="pref_pinned_apps_enabled_summary">Eine Reihe angehefteter Apps unter der Suchleiste anzeigen</string>
+    <string name="pref_pinned_apps_list_title">Liste angehefteter Apps</string>
+    <string name="pref_pinned_apps_list_summary">Apps zum Anheften auswählen</string>
+    <string name="allow_wallpaper_scrolling">Scrollen des Hintergrunds</string>
+    <string name="allow_wallpaper_scrolling_summary">Scroll-Effekt des Hintergrunds für mehrere Bildschirme</string>
+    <string name="allow_wallpaper_zooming">Zoomen des Hintergrunds</string>
+    <string name="allow_wallpaper_zooming_summary">Hintergrund beim Öffnen der Schublade oder der letzten Apps vergrößern oder verkleinern</string>
+    <string name="show_top_shadow">Oberer Schatten</string>
+    <string name="meminfo_text">%1$s verfügbar | %2$s</string>
+    <string name="recents_meminfo_title">Speicherinfo</string>
+    <string name="recents_meminfo_zram_title">ZRAM-Info</string>
+    <string name="recents_chips_title">Kompaktes Aktionsdesign verwenden</string>
+    <string name="recents_chips_summary">Kann erforderlich sein, damit viele Aktionen angezeigt werden</string>
+    <string name="recents_lens_title">Lens</string>
+    <string name="short_parallax_title">Kurze Parallaxe zulassen</string>
+    <string name="short_parallax_summary">Den vollen Scroll-Effekt des Hintergrunds auch bei wenigen Seiten nutzen, statt den Hintergrund zuzuschneiden</string>
+    <string name="single_page_center_title">Einzelseite zentrieren</string>
+    <string name="single_page_center_summary">Hintergrund zentrieren, wenn nur eine Seite verwendet wird</string>
+    <string name="drawer_scrollbar_title">Scrollleiste</string>
+    <string name="drawer_scrollbar_summary">Scrollleiste an der Seite der App-Schublade</string>
+    <string name="perf_dark_status_bar_title">Dunkle Statusleiste</string>
+    <string name="perf_dark_status_bar_summary">Auf dem Startbildschirm immer dunkle Statusleiste verwenden</string>
+    <string name="show_quickspace_title">At A Glance</string>
+    <string name="show_quickspace_summary">Oben auf dem Startbildschirm anzeigen</string>
+    <string name="quickspace_style_title">Stil von At A Glance</string>
+    <string-array name="quickspace_style_entries">
+        <item>"Standard"</item>
+        <item>Erweitert</item>
+        <item>Remix</item>
+        <item>Remix-Seiten</item>
+        <item>Remix vertikal</item>
+        <item>Orbit</item>
+        <item>Neonschild</item>
+        <item>Glas</item>
+    </string-array>
+    <string name="quickspace_vertical_note">NOTIZ</string>
+    <string name="quickspace_vertical_weather">WETTER</string>
+    <string name="quickspace_vertical_calendar">KALENDER</string>
+    <string name="quickspace_vertical_battery">AKKU</string>
+    <string name="quickspace_vertical_a11y_calendar">Kalender öffnen</string>
+    <string name="quickspace_vertical_a11y_weather">Wetter öffnen</string>
+    <string name="quickspace_vertical_a11y_calendar_event">Kalenderereignis öffnen</string>
+    <string name="quickspace_vertical_a11y_event">Aktuelle Wiedergabe öffnen</string>
+    <string name="quickspace_vertical_a11y_note">Notiz öffnen</string>
+    <string name="quickspace_vertical_a11y_battery">Akkueinstellungen öffnen</string>
+    <string name="quickspace_voltage_accent_title">Akzentfarbige Uhr</string>
+    <string name="quickspace_voltage_accent_summary">Die erste Ziffer der Uhr in den Remix-Stilen in der Akzentfarbe anzeigen</string>
+    <string name="quickspace_voltage_minimal_title">Minimalmodus</string>
+    <string name="quickspace_voltage_minimal_summary">Sekundäre Remix-Inhalte in antippbare Schnellsymbole einklappen</string>
+    <string name="quickspace_grt_morning">Guten Morgen.</string>
+    <string name="quickspace_grt_evening">Guten Abend.</string>
+    <string name="quickspace_grt_afternoon">Guten Tag.</string>
+    <string name="quickspace_grt_night">Gute Nacht.</string>
+    <string name="quickspace_grt_general">Schönen Tag.</string>
+    <string name="quickspace_ext_one">Heute ist</string>
+    <string name="quickspace_ext_two">Es ist</string>
+    <string name="qe_now_playing_unknown_artist">Unbekannter Künstler</string>
+    <string name="qe_now_playing_by">Von</string>
+    <string name="quickspace_now_playing_summary">Den gerade abgespielten Titel anzeigen</string>
+    <string name="quickspace_alternate_style_title">Erweiterter Stil</string>
+    <string name="quickspace_alternate_style_summary">Zum erweiterten Stil wechseln</string>
+    <string name="quickspace_psa_title">Zufällige Nachrichten</string>
+    <string name="quickspace_psa_summary">Mach deinen Begleiter mit zufälligen Nachrichten lebendiger</string>
+    <string name="intent_no_app_clock_found">Kalender- oder Uhr-Aktivität konnte nicht gefunden werden</string>
+    <string name="quick_event_weather_rain">Regnerisch</string>
+    <string name="quick_event_weather_clear">Klarer Himmel</string>
+    <string name="quick_event_weather_storm">Stürmisch</string>
+    <string name="quick_event_weather_snow">Schneereich</string>
+    <string name="quick_event_weather_mist">Neblig</string>
+    <string name="quickspace_battery_title">Gerätakku</string>
+    <string name="quickspace_battery_summary">Akkustand des Telefons und des verbundenen Bluetooth-Geräts in den Remix-Stilen anzeigen</string>
+    <string name="quickspace_calendar_summary">Dein nächstes Ereignis aus jedem aktivierten Kalender anzeigen</string>
+    <string name="quickspace_calendar_untitled">Ereignis ohne Titel</string>
+    <string name="all_apps_dark_text_title">Dunkle App-Namen</string>
+    <string name="all_apps_dark_text_summary">Im App-Schubladen immer dunklen Text für App-Namen verwenden</string>
+    <string name="app_info_title">App-Info</string>
+    <string name="app_info_source_system">System</string>
+    <string name="app_info_last_update">Letztes Update</string>
+    <string name="app_info_version">Version</string>
+    <string name="icon_pack_add">Weitere installieren</string>
+    <string name="icon_pack_no_market">Kein App-Store verfügbar</string>
+    <string name="vessel_shape_title">Gefäß</string>
+    <string name="cylindrical_shape_title">Zylindrisch</string>
+    <string name="flower_shape_title">Blume</string>
+    <string name="hexagon_shape_title">Sechseck</string>
+    <string name="ios_style_shape_title">iOS-Stil</string>
+    <string name="leaf_shape_title">Blatt</string>
+    <string name="meow_shape_title">Miau</string>
+    <string name="samsung_style_shape_title">Samsung-Stil</string>
+    <string name="stretched_shape_title">Gestreckt</string>
+    <string name="home_screen_actions">Aktionen für den Startbildschirm</string>
+    <string name="remove_all_views_from_home_screen">Startbildschirm leeren</string>
+    <string name="remove_all_views_from_home_screen_desc">Der Startbildschirm wird geleert. Möchtest du fortfahren?</string>
+    <string name="home_screen_all_views_removed_msg">Startbildschirm geleert</string>
+    <string name="sort_alphabetical">Alphabetisch sortieren</string>
+    <string name="sort_install_date">Nach Installationsdatum sortieren</string>
+    <string name="sort_usage">Nach Nutzung sortieren</string>
+    <string name="navbar_burn_in_protection_title">Schutz vor Einbrennen der Navigationsleiste</string>
+    <string name="navbar_burn_in_protection_summary">Den Navigationsgriff regelmäßig verschieben, um Einbrennen des Displays zu verhindern</string>
+    <string name="navbar_burn_in_interval_title">Verschiebeintervall</string>
+    <string name="pref_blur_background_at_app_launch_title">Hintergrund beim Starten/Schließen von Apps unscharf</string>
+    <string name="pref_blur_background_at_app_launch_summary">Hintergrund während der Animationen zum Öffnen und Schließen von Apps weichzeichnen</string>
 </resources>

@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"अलीकडील"</string>
     <string name="glance_content_description">एक दृष्‍टिक्षेप</string>
+    <string name="drawer_open_keyboard_title">शोध सुरू करण्यासाठी स्वाइप करा</string>
+    <string name="drawer_open_keyboard_summary">ॲप ड्रॉवर दिसताच कीबोर्ड उघडा</string>
+    <string-array name="recents_style_entries">
+        <item>"अवलोकन"</item>
+        <item>स्लिम अलीकडील (साइड पॅनल)</item>
+        <item>स्पिन अलीकडील (चाक)</item>
+    </string-array>
+    <string name="neon_icons_title">निऑन आयकॉन्स</string>
+    <string name="neon_icons_summary">प्रत्येक अ‍ॅपचा ग्लिफ तुमच्या अ‍ॅक्सेंट रंगात, चमकणाऱ्या रिंगमध्ये. थीम्ड आयकॉन्स चालू करते.</string>
+    <string name="icon_style_rr_title">आयकॉन शैली</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"डीफॉल्ट"</item>
+        <item>थीम्ड</item>
+        <item>निऑन</item>
+    </string-array>
+    <string name="neon_ring_color_title">रिंगचा रंग</string>
+    <string-array name="neon_ring_color_entries">
+        <item>ॲक्सेंट</item>
+        <item>अ‍ॅपचा स्वतःचा रंग</item>
+    </string-array>
+    <string name="neon_glow_title">ग्लो</string>
+    <string name="neon_ring_title">रिंग</string>
+    <string-array name="neon_ring_entries">
+        <item>बारीक</item>
+        <item>"मध्‍यम"</item>
+        <item>"ठळक"</item>
+    </string-array>
+    <string name="neon_folders_title">फोल्डर्सनाही लागू करा</string>
 </resources>

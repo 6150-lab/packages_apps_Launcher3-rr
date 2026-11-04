@@ -29,4 +29,192 @@
     <string name="cloudy_shape_title">"ابر آلود"</string>
     <string name="heart_shape_title">"دل"</string>
     <string name="scroll_shape_title">"اسکرول کریں"</string>
+    <string name="action_lock">ایپ لاک/ان لاک کریں</string>
+    <string name="unlock_app">حالیہ میں ایپ ان لاک ہو گئی</string>
+    <string name="lock_app">حالیہ میں ایپ لاک ہو گئی</string>
+    <string name="home_category_summary">Google now پینل اور مزید سیٹ کریں</string>
+    <string name="icons_category_summary">آئیکن سائز اور مزید سیٹ کریں</string>
+    <string name="app_drawer_category_title">ایپ ڈراور</string>
+    <string name="app_drawer_category_summary">اپنا ایپ ڈراور حسب ضرورت بنائیں</string>
+    <string name="recents_category_summary">اوور ویو اسکرین کو نیا رنگ دیں</string>
+    <string name="actions_category_title">فوری اقدامات</string>
+    <string name="title_show_google_app">Google ایپ تک رسائی کے لیے سوائپ کریں</string>
+    <string name="msg_minus_one_on_left">مرکزی ہوم اسکرین سے دائیں سوائپ کرنے پر</string>
+    <string name="msg_minus_one_on_right">مرکزی ہوم اسکرین سے بائیں سوائپ کرنے پر</string>
+    <string name="suggestion_pref_screen_desc">تمام ایپس اور ہوم اسکرین کی تجاویز کے لیے</string>
+    <string name="pref_restart_summary">زیر التواء ترتیبات لاگو کرنے کے لیے لانچر کو دستی طور پر دوبارہ شروع کریں</string>
+    <string name="restarting_launcher">لانچر دوبارہ شروع ہو رہا ہے...</string>
+    <string name="restarting_launcher_changes">تبدیلیاں لاگو کرنے کے لیے لانچر دوبارہ شروع ہو رہا ہے...</string>
+    <string name="updating_launcher_components">لانچر کے اجزاء اپڈیٹ کرنے کے لیے لانچر دوبارہ شروع ہو رہا ہے...</string>
+    <string name="pref_sleep_gesture_title">سلیپ کے لیے دو بار تھپتھپائیں</string>
+    <string name="pref_sleep_gesture_summary">اسکرین بند کرنے کے لیے ہوم اسکرین کی خالی جگہ پر دو بار تھپتھپائیں</string>
+    <string name="pref_sleep_gesture_haptic_title">دو بار تھپتھپانے سے سلیپ پر وائبریٹ کریں</string>
+    <string name="pref_sleep_gesture_haptic_summary">ڈبل ٹیپ سے سلیپ اشارے پر ہیپٹک فیڈبیک فراہم کریں</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">iOS اسٹائل فعال ہونے پر خودکار طور پر فعال</string>
+    <string name="settings_lock_layout_title">لے آؤٹ مقفل کریں</string>
+    <string name="settings_lock_layout_summary_on">آئیکنز اور ویجیٹس ہوم اسکرین پر شامل، ہٹائے یا منتقل نہیں کیے جا سکتے</string>
+    <string name="settings_lock_layout_summary_off">آئیکنز اور ویجیٹس ہوم اسکرین پر شامل، ہٹائے اور منتقل کیے جا سکتے ہیں</string>
+    <string name="settings_edit_widgets_error">ہوم اسکرین پر ویجیٹس شامل کرنا ممکن نہیں</string>
+    <string name="pref_themed_icons_title">ڈرawer میں تھیم والے آئیکنز استعمال کریں</string>
+    <string name="pref_themed_icons_summary">ہوم اسکرین پر استعمال ہونے والے تھیم والے آئیکنز کی پیروی کریں</string>
+    <string name="themed_icons_overlay_title">اوورلے شدہ تھیم والے آئیکنز</string>
+    <string name="themed_icons_overlay_summary">ایسی ایپس کے لیے جن کا اپنا تھیم والا آئیکن نہیں، حسب ضرورت تھیم آئیکن میپنگ استعمال کریں</string>
+    <string name="desktop_show_labels">ڈیسک ٹاپ پر آئیکن لیبلز دکھائیں</string>
+    <string name="drawer_show_labels">ڈرawer میں آئیکن لیبلز دکھائیں</string>
+    <string name="trust_apps_manager_name">چھپی ہوئی اور محفوظ ایپس</string>
+    <string name="trust_apps_auth_manager">چھپی ہوئی اور محفوظ ایپس کا انتظام کرنے کے لیے غیر مقفل کریں</string>
+    <string name="trust_apps_auth_open_app">%1$s کھولنے کے لیے تصدیق کریں</string>
+    <string name="trust_apps_no_lock_error">ایپ تک رسائی محدود کرنے کے لیے براہ کرم ایک محفوظ لاک اسکرین ترتیب دیں</string>
+    <string name="trust_apps_info_hidden">چھپی ہوئی ایپس اور ان کے ویجیٹس ڈرawer سے چھپے رہتے ہیں</string>
+    <string name="trust_apps_info_protected">محفوظ ایپس کو لانچر سے کھولنے کے لیے تصدیق درکار ہے</string>
+    <string name="icon_size_title">آئیکن کا سائز</string>
+    <string name="pause">روکیں</string>
+    <string name="pause_apps_dialog_title">%1$s روکیں؟</string>
+    <string name="pause_apps_dialog_message">%1$s کی اطلاعات روک دی جائیں گی</string>
+    <string name="paused_apps_dialog_title">ایپ روک دی گئی</string>
+    <string name="paused_apps_dialog_message">%1$s کو لانچر سے براہ راست روکا گیا تھا</string>
+    <string name="icon_two_lines_title">ایپ کے لیبل کے لیے دو سطریں استعمال کریں</string>
+    <string name="recent_task_option_kill_app">بند کریں</string>
+    <string name="recents_app_killed">ایپ بند کر دی گئی</string>
+    <string name="row_height_title">قطار کی اونچائی</string>
+    <string name="hotseat_bg_title">ہاٹ سیٹ کا پس منظر</string>
+    <string name="hotseat_bg_summary">ایپ ڈاک میں شفاف پس منظر شامل کریں</string>
+    <string name="pref_show_hotseat_qsb_title">سرچ بار دکھائیں</string>
+    <string name="pref_show_hotseat_qsb_summary">ہوم اسکرین کے نچلے حصے میں</string>
+    <string name="dock_search_widget_title">سرچ ویجیٹ</string>
+    <string name="dock_search_widget_summary">ڈاک میں موافق تھرڈ پارٹی سرچ ویجیٹ استعمال کریں</string>
+    <string name="dock_search_widget_picker_title">سرچ ویجیٹ منتخب کریں</string>
+    <string name="dock_search_widget_default">ڈیفالٹ سرچ ویجیٹ</string>
+    <string name="drawer_style_title">ایپ ڈرawer کا انداز</string>
+    <string name="drawer_style_summary_ios_forced">iOS اسٹائل میں ایپ ڈرawer غیر فعال ہے</string>
+    <string-array name="app_drawer_style_entries">
+        <item>عام (نچلی شیٹ)</item>
+        <item>افقی فہرست</item>
+        <item>عمودی (OneUI صفحہ بندی)</item>
+        <item>iOS اسٹائل</item>
+    </string-array>
+    <string name="drawer_search_title">ایپ سرچ بار کی جگہ</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>"مخفی"</item>
+        <item>اوپر</item>
+        <item>پیندہ</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">پن شدہ ایپس فعال کریں</string>
+    <string name="pref_pinned_apps_enabled_summary">سرچ بار کے نیچے پن شدہ ایپس کی ایک قطار دکھائیں</string>
+    <string name="pref_pinned_apps_list_title">پن شدہ ایپس کی فہرست</string>
+    <string name="pref_pinned_apps_list_summary">پن کرنے کے لیے ایپس منتخب کریں</string>
+    <string name="allow_wallpaper_scrolling">وال پیپر اسکرولنگ</string>
+    <string name="allow_wallpaper_scrolling_summary">متعدد اسکرینز کے لیے وال پیپر اسکرولنگ اثر</string>
+    <string name="allow_wallpaper_zooming">وال پیپر زوم</string>
+    <string name="allow_wallpaper_zooming_summary">ڈرawer یا حالیہ ایپس استعمال کرتے وقت وال پیپر کو زوم ان یا زوم آؤٹ کریں</string>
+    <string name="show_top_shadow">اوپری سایہ</string>
+    <string name="meminfo_text">%1$s دستیاب | %2$s</string>
+    <string name="recents_meminfo_title">میموری کی معلومات</string>
+    <string name="recents_meminfo_zram_title">ZRAM کی معلومات</string>
+    <string name="recents_chips_title">کمپیکٹ ایکشن ڈیزائن استعمال کریں</string>
+    <string name="recents_chips_summary">بڑی تعداد میں ایکشنز دکھانے کے لیے ضروری ہو سکتا ہے</string>
+    <string name="short_parallax_title">مختصر پیرالیکس کی اجازت دیں</string>
+    <string name="short_parallax_summary">کم صفحات پر وال پیپر کو کاٹنے کے بجائے مکمل وال پیپر اسکرولنگ اثر فعال کریں</string>
+    <string name="single_page_center_title">واحد صفحہ مرکز</string>
+    <string name="single_page_center_summary">صرف ایک صفحہ استعمال ہونے پر وال پیپر کو مرکز میں رکھیں</string>
+    <string name="drawer_scrollbar_title">اسکرول بار</string>
+    <string name="drawer_scrollbar_summary">ایپ ڈرawer کے کنارے پر اسکرول بار</string>
+    <string name="perf_dark_status_bar_title">ڈارک اسٹیٹس بار</string>
+    <string name="perf_dark_status_bar_summary">ہوم اسکرین پر ہمیشہ ڈارک اسٹیٹس بار استعمال کریں</string>
+    <string name="show_quickspace_title">ایٹ اے گلانس</string>
+    <string name="show_quickspace_summary">ہوم اسکرین کے اوپری حصے میں دکھائیں</string>
+    <string name="quickspace_style_title">ایٹ اے گلانس کا انداز</string>
+    <string-array name="quickspace_style_entries">
+        <item>"ڈیفالٹ"</item>
+        <item>توسیع شدہ</item>
+        <item>ریمکس</item>
+        <item>ریمکس صفحہ بند</item>
+        <item>ریمکس عمودی</item>
+        <item>آربٹ</item>
+        <item>نیون سائن</item>
+        <item>گلاس</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">اب چل رہا ہے</string>
+    <string name="quickspace_vertical_note">نوٹ</string>
+    <string name="quickspace_vertical_weather">موسم</string>
+    <string name="quickspace_vertical_calendar">کیلنڈر</string>
+    <string name="quickspace_vertical_battery">بیٹری</string>
+    <string name="quickspace_vertical_a11y_calendar">کیلنڈر کھولیں</string>
+    <string name="quickspace_vertical_a11y_weather">موسم کھولیں</string>
+    <string name="quickspace_vertical_a11y_calendar_event">کیلنڈر ایونٹ کھولیں</string>
+    <string name="quickspace_vertical_a11y_event">اب چل رہا ہے کھولیں</string>
+    <string name="quickspace_vertical_a11y_note">نوٹ کھولیں</string>
+    <string name="quickspace_vertical_a11y_battery">بیٹری کی ترتیبات کھولیں</string>
+    <string name="quickspace_voltage_accent_title">لہجے کے رنگ والی گھڑی</string>
+    <string name="quickspace_voltage_accent_summary">ریمکس انداز میں گھڑی کا پہلا ہندسہ لہجے کے رنگ میں دکھائیں</string>
+    <string name="quickspace_voltage_minimal_title">کم سے کم موڈ</string>
+    <string name="quickspace_voltage_minimal_summary">ریمکس کے ثانوی مواد کو ٹیپ ہونے والے فوری آئیکنز میں سمیٹیں</string>
+    <string name="quickspace_grt_morning">صبح بخیر۔</string>
+    <string name="quickspace_grt_evening">شام بخیر۔</string>
+    <string name="quickspace_grt_afternoon">دوپہر بخیر۔</string>
+    <string name="quickspace_grt_night">شب بخیر۔</string>
+    <string name="quickspace_grt_general">اچھا دن ہو۔</string>
+    <string name="quickspace_ext_one">آج ہے</string>
+    <string name="quickspace_ext_two">یہ ہے</string>
+    <string name="qe_now_playing_unknown_artist">نامعلوم فنکار</string>
+    <string name="qe_now_playing_ext_one">اب چل رہا ہے</string>
+    <string name="qe_now_playing_by">از</string>
+    <string name="quickspace_now_playing_title">اب چل رہا ہے</string>
+    <string name="quickspace_now_playing_summary">جو گانا آپ چلا رہے ہیں وہ دکھائیں</string>
+    <string name="quickspace_alternate_style_title">توسیع شدہ انداز</string>
+    <string name="quickspace_alternate_style_summary">توسیع شدہ انداز پر جائیں</string>
+    <string name="quickspace_psa_title">بے ترتیب پیغامات</string>
+    <string name="quickspace_psa_summary">بے ترتیب پیغامات کے ساتھ اپنے ساتھی کو مزید زندہ دل بنائیں</string>
+    <string name="intent_no_app_clock_found">کیلنڈر یا گھڑی کی سرگرمی نہیں ملی</string>
+    <string name="quick_event_ambient_weather_title">موسم کی تازہ کاری</string>
+    <string name="quick_event_ambient_weather_summary">موجودہ موسم کی تازہ کاری دکھائیں</string>
+    <string name="quick_event_ambient_weather_enabled_info">موسم کی سروس فعال ہونا ضروری ہے</string>
+    <string name="quick_event_weather_rain">بارش</string>
+    <string name="quick_event_weather_clear">صاف آسمان</string>
+    <string name="quick_event_weather_storm">طوفانی</string>
+    <string name="quick_event_weather_snow">برفباری</string>
+    <string name="quick_event_weather_wind">ہوا</string>
+    <string name="quick_event_weather_mist">دھندلا</string>
+    <string name="quick_event_weather_city_title">موجودہ مقام</string>
+    <string name="quick_event_weather_city_summary">موجودہ موسم کا مقام دکھائیں</string>
+    <string name="quick_event_weather_text_title">موجودہ حالت</string>
+    <string name="quick_event_weather_text_summary">موجودہ موسم کی حالت کا خلاصہ دکھائیں</string>
+    <string name="quickspace_battery_title">ڈیوائس کی بیٹری</string>
+    <string name="quickspace_battery_summary">ریمکس انداز میں فون اور منسلک بلوٹوتھ ڈیوائس کی بیٹری دکھائیں</string>
+    <string name="quickspace_calendar_summary">فعال کسی بھی کیلنڈر سے اپنا اگلا ایونٹ دکھائیں</string>
+    <string name="quickspace_calendar_untitled">بے عنوان ایونٹ</string>
+    <string name="all_apps_dark_text_title">ڈارک ایپ لیبلز</string>
+    <string name="all_apps_dark_text_summary">ایپ ڈرawer میں ایپ لیبلز کے لیے ہمیشہ ڈارک ٹیکسٹ استعمال کریں</string>
+    <string name="app_info_title">ایپ کی معلومات</string>
+    <string name="app_info_source">ماخذ</string>
+    <string name="app_info_last_update">آخری تازہ کاری</string>
+    <string name="icon_pack_add">مزید انسٹال کریں</string>
+    <string name="icon_pack_no_market">کوئی دستیاب ایپ اسٹور نہیں</string>
+    <string name="pebble_shape_title">پیبل</string>
+    <string name="vessel_shape_title">ویسل</string>
+    <string name="pure_square_shape_title">خالص مربع</string>
+    <string name="squircle_shape_title">اسکوئرکل</string>
+    <string name="tapered_rect_shape_title">ٹیپرڈ رکٹ</string>
+    <string name="teardrop_shape_title">ٹیئر ڈراپ</string>
+    <string name="rounded_rect_shape_title">گول کونوں والا مستطیل</string>
+    <string name="cylindrical_shape_title">بیلنڈریکل</string>
+    <string name="flower_shape_title">پھول</string>
+    <string name="hexagon_shape_title">ہیکساگن</string>
+    <string name="ios_style_shape_title">iOS اسٹائل</string>
+    <string name="leaf_shape_title">پتا</string>
+    <string name="meow_shape_title">میاؤ</string>
+    <string name="samsung_style_shape_title">سیم سنگ اسٹائل</string>
+    <string name="stretched_shape_title">کھینچا ہوا</string>
+    <string name="home_screen_actions">ہوم اسکرین کے ایکشنز</string>
+    <string name="remove_all_views_from_home_screen">ہوم اسکرین صاف کریں</string>
+    <string name="remove_all_views_from_home_screen_desc">ہوم اسکرین صاف کر دی جائے گی۔ کیا آپ جاری رکھنا چاہتے ہیں؟</string>
+    <string name="home_screen_all_views_removed_msg">ہوم اسکرین صاف کر دی گئی</string>
+    <string name="sort_alphabetical">حروف تہجی کے لحاظ سے ترتیب دیں</string>
+    <string name="sort_install_date">انسٹال کی تاریخ کے لحاظ سے ترتیب دیں</string>
+    <string name="sort_usage">استعمال کے لحاظ سے ترتیب دیں</string>
+    <string name="navbar_burn_in_protection_title">نیویگیشن بار برن ان سے تحفظ</string>
+    <string name="navbar_burn_in_protection_summary">ڈسپلے برن ان سے بچنے کے لیے نیویگیشن ہینڈل کو وقتاً فوقتاً منتقل کریں</string>
+    <string name="navbar_burn_in_interval_title">منتقلی کا وقفہ</string>
+    <string name="pref_blur_background_at_app_launch_title">ایپ کھولنے/بند کرنے پر پس منظر دھندلا کریں</string>
+    <string name="pref_blur_background_at_app_launch_summary">ایپ کھولنے اور بند کرنے کے دوران پس منظر کو دھندلا کریں</string>
 </resources>

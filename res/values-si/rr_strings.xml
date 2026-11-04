@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"මෑත"</string>
     <string name="glance_content_description">එක් බැල්මකින්</string>
+    <string name="drawer_open_keyboard_title">සෙවීම ආරම්භ කිරීමට ස්වයිප් කරන්න</string>
+    <string name="drawer_open_keyboard_summary">යෙදුම් ලාච්චුව දෘශ්‍යමාන වන සෑම විටම යතුරු පුවරුව විවෘත කරන්න</string>
+    <string-array name="recents_style_entries">
+        <item>"දළ විශ්ලේෂණය"</item>
+        <item>සිහින් මෑත (පැති පුවරුව)</item>
+        <item>කරකවන මෑත (රෝදය)</item>
+    </string-array>
+    <string name="neon_icons_title">නියොන් නිරූපක</string>
+    <string name="neon_icons_summary">ඔබේ උච්චාරණ වර්ණයෙන් සෑම යෙදුමකම රූපකය දීප්තිමත් වළල්ලක් තුළ පෙන්වයි. තේමා නිරූපක ක්‍රියාත්මක කරයි.</string>
+    <string name="icon_style_rr_title">නිරූපක ශෛලිය</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"පෙරනිමි"</item>
+        <item>තේමාගත</item>
+        <item>නියොන්</item>
+    </string-array>
+    <string name="neon_ring_color_title">වළල්ලේ වර්ණය</string>
+    <string-array name="neon_ring_color_entries">
+        <item>උච්චාරණ</item>
+        <item>යෙදුමේ තමන්ගේම වර්ණය</item>
+    </string-array>
+    <string name="neon_glow_title">දීප්තිය</string>
+    <string name="neon_ring_title">රින්ග්</string>
+    <string-array name="neon_ring_entries">
+        <item>සිහින්</item>
+        <item>"මධ්‍යම"</item>
+        <item>"තදකුරු"</item>
+    </string-array>
+    <string name="neon_folders_title">ෆෝල්ඩර ද</string>
 </resources>

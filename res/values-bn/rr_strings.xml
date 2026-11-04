@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"সাম্প্রতিক"</string>
     <string name="glance_content_description">এক ঝলকে</string>
+    <string name="drawer_open_keyboard_title">সার্চ শুরু করতে সোয়াইপ করুন</string>
+    <string name="drawer_open_keyboard_summary">অ্যাপ ড্রয়ার দৃশ্যমান হলেই কীবোর্ড খুলুন</string>
+    <string-array name="recents_style_entries">
+        <item>"এক নজরে"</item>
+        <item>সংকীর্ণ সাম্প্রতিক (পাশের প্যানেল)</item>
+        <item>ঘূর্ণায়মান সাম্প্রতিক (চাকা)</item>
+    </string-array>
+    <string name="neon_icons_title">নিয়ন আইকন</string>
+    <string name="neon_icons_summary">প্রতিটি অ্যাপের গ্লিফ আপনার অ্যাকসেন্ট রঙে, একটি উজ্জ্বল বৃত্তের ভেতরে। থিমড আইকন চালু করে।</string>
+    <string name="icon_style_rr_title">আইকন স্টাইল</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"ডিফল্ট"</item>
+        <item>থিমড</item>
+        <item>নিয়ন</item>
+    </string-array>
+    <string name="neon_ring_color_title">রিং রঙ</string>
+    <string-array name="neon_ring_color_entries">
+        <item>অ্যাকসেন্ট</item>
+        <item>অ্যাপের নিজস্ব রঙ</item>
+    </string-array>
+    <string name="neon_glow_title">গ্লো</string>
+    <string name="neon_ring_title">রিং</string>
+    <string-array name="neon_ring_entries">
+        <item>চিকন</item>
+        <item>"মাঝারি"</item>
+        <item>"বোল্ড"</item>
+    </string-array>
+    <string name="neon_folders_title">ফোল্ডারেও</string>
 </resources>

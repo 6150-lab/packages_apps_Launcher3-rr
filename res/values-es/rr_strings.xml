@@ -18,4 +18,16 @@
         <item>"Medio"</item>
         <item>"Intenso"</item>
     </string-array>
+    <string name="neon_icons_title">Iconos neón</string>
+    <string name="neon_icons_summary">El glifo de cada app en tu color de acento, dentro de un anillo brillante. Activa los iconos temáticos.</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Predeterminado"</item>
+        <item>Temático</item>
+        <item>Neón</item>
+    </string-array>
+    <string-array name="neon_ring_color_entries">
+        <item>Acento</item>
+        <item>Color propio de la app</item>
+    </string-array>
+    <string name="neon_folders_title">También carpetas</string>
 </resources>

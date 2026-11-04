@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"Oxirgilar"</string>
     <string name="glance_content_description">Eng asosiy</string>
+    <string name="drawer_open_keyboard_title">Qidiruvni boshlash uchun surish</string>
+    <string name="drawer_open_keyboard_summary">Ilovalar jadvali ko\'ringanda klaviaturani ochish</string>
+    <string-array name="recents_style_entries">
+        <item>"Umumiy nazar"</item>
+        <item>Ingichka oxirgilar (yon panel)</item>
+        <item>Aylanuvchi oxirgilar (g\'ildirak)</item>
+    </string-array>
+    <string name="neon_icons_title">Neon belgilar</string>
+    <string name="neon_icons_summary">Har bir ilovaning belgisi urg‘u rangida, yorqin halqa ichida. Mavzulashtirilgan belgilarni yoqadi.</string>
+    <string name="icon_style_rr_title">Belgi uslubi</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Standart"</item>
+        <item>Mavzulashtirilgan</item>
+        <item>Neon</item>
+    </string-array>
+    <string name="neon_ring_color_title">Halqa rangi</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Aksent</item>
+        <item>Ilovaning o‘z rangi</item>
+    </string-array>
+    <string name="neon_glow_title">Yorqinlik</string>
+    <string name="neon_ring_title">Signal</string>
+    <string-array name="neon_ring_entries">
+        <item>Ingichka</item>
+        <item>"Oʻrtacha"</item>
+        <item>"Qalin"</item>
+    </string-array>
+    <string name="neon_folders_title">Jildlar ham</string>
 </resources>

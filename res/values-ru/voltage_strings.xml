@@ -80,4 +80,141 @@
     </string-array>
     <string name="quickspace_vertical_now_playing">СЕЙЧАС ИГРАЕТ</string>
     <string name="app_info_source">Источник</string>
+    <string name="action_lock">Блокировка/разблокировка приложения</string>
+    <string name="unlock_app">Разблокированное приложение в недавних</string>
+    <string name="lock_app">Заблокированное приложение в недавних</string>
+    <string name="home_category_summary">Настроить панель Google Now и другое</string>
+    <string name="icons_category_summary">Настроить размер значков и другое</string>
+    <string name="app_drawer_category_title">Панель приложений</string>
+    <string name="app_drawer_category_summary">Настройте панель приложений</string>
+    <string name="recents_category_summary">Переработать экран обзора</string>
+    <string name="actions_category_title">Быстрые действия</string>
+    <string name="title_show_google_app">Проведите для доступа к приложению Google</string>
+    <string name="suggestion_pref_screen_desc">Для предложений на панели приложений и главном экране</string>
+    <string name="pref_restart_summary">Перезапустите лаунчер вручную, чтобы применить ожидающие настройки</string>
+    <string name="restarting_launcher">Перезапуск лаунчера…</string>
+    <string name="restarting_launcher_changes">Перезапуск лаунчера для применения изменений…</string>
+    <string name="updating_launcher_components">Перезапуск лаунчера для обновления его компонентов…</string>
+    <string name="pref_sleep_gesture_haptic_title">Вибрация при двойном касании для сна</string>
+    <string name="pref_sleep_gesture_haptic_summary">Тактильная отдача при жесте двойного касания для сна</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">Включается автоматически, пока активен стиль iOS</string>
+    <string name="themed_icons_overlay_title">Оформленные значки с наложением</string>
+    <string name="themed_icons_overlay_summary">Использовать пользовательское сопоставление оформленных значков для приложений без собственного оформленного значка</string>
+    <string name="pause_apps_dialog_title">Приостановить %1$s?</string>
+    <string name="pause_apps_dialog_message">Уведомления от %1$s будут приостановлены</string>
+    <string name="paused_apps_dialog_title">Приложение приостановлено</string>
+    <string name="paused_apps_dialog_message">%1$s было приостановлено из лаунчера</string>
+    <string name="icon_two_lines_title">Использовать две строки для названия приложения</string>
+    <string name="recent_task_option_kill_app">Завершить</string>
+    <string name="recents_app_killed">Приложение завершено</string>
+    <string name="row_height_title">Высота строки</string>
+    <string name="hotseat_bg_title">Фон панели избранного</string>
+    <string name="hotseat_bg_summary">Добавить полупрозрачный фон для панели приложений</string>
+    <string name="dock_search_widget_title">Виджет поиска</string>
+    <string name="dock_search_widget_summary">Использовать совместимый сторонний виджет поиска на панели</string>
+    <string name="dock_search_widget_picker_title">Выберите виджет поиска</string>
+    <string name="dock_search_widget_default">Виджет поиска по умолчанию</string>
+    <string name="drawer_style_title">Стиль панели приложений</string>
+    <string name="drawer_style_summary_ios_forced">Панель приложений отключена в стиле iOS</string>
+    <string-array name="app_drawer_style_entries">
+        <item>Обычный (нижняя панель)</item>
+        <item>Горизонтальный список</item>
+        <item>Вертикальный (страницы OneUI)</item>
+        <item>Стиль iOS</item>
+    </string-array>
+    <string name="drawer_search_title">Расположение строки поиска приложений</string>
+    <string name="pref_pinned_apps_enabled_title">Включить закреплённые приложения</string>
+    <string name="pref_pinned_apps_enabled_summary">Показывать ряд закреплённых приложений под строкой поиска</string>
+    <string name="pref_pinned_apps_list_title">Список закреплённых приложений</string>
+    <string name="pref_pinned_apps_list_summary">Выберите приложения для закрепления</string>
+    <string name="allow_wallpaper_scrolling">Прокрутка обоев</string>
+    <string name="allow_wallpaper_scrolling_summary">Эффект прокрутки обоев для нескольких экранов</string>
+    <string name="allow_wallpaper_zooming">Масштабирование обоев</string>
+    <string name="allow_wallpaper_zooming_summary">Увеличивать или уменьшать обои при открытии панели приложений или недавних</string>
+    <string name="show_top_shadow">Верхняя тень</string>
+    <string name="meminfo_text">Доступно %1$s | %2$s</string>
+    <string name="recents_meminfo_title">Сведения о памяти</string>
+    <string name="recents_meminfo_zram_title">Сведения о ZRAM</string>
+    <string name="recents_chips_title">Использовать компактный дизайн действий</string>
+    <string name="recents_chips_summary">Может понадобиться для отображения большого количества действий</string>
+    <string name="short_parallax_title">Разрешить короткий параллакс</string>
+    <string name="short_parallax_summary">Включить полный эффект прокрутки обоев на небольшом числе страниц вместо обрезки обоев</string>
+    <string name="single_page_center_title">Одна страница по центру</string>
+    <string name="single_page_center_summary">Центрировать обои, если используется только одна страница</string>
+    <string name="drawer_scrollbar_title">Полоса прокрутки</string>
+    <string name="drawer_scrollbar_summary">Полоса прокрутки сбоку панели приложений</string>
+    <string name="perf_dark_status_bar_title">Тёмная строка состояния</string>
+    <string name="perf_dark_status_bar_summary">Всегда использовать тёмную строку состояния на главном экране</string>
+    <string name="show_quickspace_title">At A Glance</string>
+    <string name="show_quickspace_summary">Показывать в верхней части главного экрана</string>
+    <string name="quickspace_style_title">Стиль At A Glance</string>
+    <string-array name="quickspace_style_entries">
+        <item>"По умолчанию"</item>
+        <item>Расширенный</item>
+        <item>Remix</item>
+        <item>Remix постранично</item>
+        <item>Remix вертикально</item>
+        <item>Орбита</item>
+        <item>Неоновая вывеска</item>
+        <item>Стекло</item>
+    </string-array>
+    <string name="quickspace_vertical_note">ЗАМЕТКА</string>
+    <string name="quickspace_vertical_weather">ПОГОДА</string>
+    <string name="quickspace_vertical_calendar">КАЛЕНДАРЬ</string>
+    <string name="quickspace_vertical_battery">БАТАРЕЯ</string>
+    <string name="quickspace_vertical_a11y_calendar">Открыть календарь</string>
+    <string name="quickspace_vertical_a11y_weather">Открыть погоду</string>
+    <string name="quickspace_vertical_a11y_calendar_event">Открыть событие календаря</string>
+    <string name="quickspace_vertical_a11y_event">Открыть текущее воспроизведение</string>
+    <string name="quickspace_vertical_a11y_note">Открыть заметку</string>
+    <string name="quickspace_vertical_a11y_battery">Открыть настройки батареи</string>
+    <string name="quickspace_voltage_accent_title">Часы в цвете акцента</string>
+    <string name="quickspace_voltage_accent_summary">Окрашивать первую цифру часов в стилях Remix</string>
+    <string name="quickspace_voltage_minimal_title">Минимальный режим</string>
+    <string name="quickspace_voltage_minimal_summary">Сворачивать вторичное содержимое Remix в значки быстрого доступа</string>
+    <string name="quickspace_grt_morning">Доброе утро.</string>
+    <string name="quickspace_grt_evening">Добрый вечер.</string>
+    <string name="quickspace_grt_afternoon">Добрый день.</string>
+    <string name="quickspace_grt_night">Спокойной ночи.</string>
+    <string name="quickspace_grt_general">Добрый день.</string>
+    <string name="quickspace_ext_one">Сегодня</string>
+    <string name="quickspace_ext_two">Сейчас</string>
+    <string name="qe_now_playing_unknown_artist">Неизвестный исполнитель</string>
+    <string name="qe_now_playing_by">Исполнитель:</string>
+    <string name="quickspace_now_playing_summary">Показывать песню, которая воспроизводится</string>
+    <string name="quickspace_alternate_style_title">Расширенный стиль</string>
+    <string name="quickspace_alternate_style_summary">Переключиться на расширенный стиль</string>
+    <string name="quickspace_psa_title">Случайные сообщения</string>
+    <string name="quickspace_psa_summary">Делайте своего спутника живее со случайными сообщениями</string>
+    <string name="intent_no_app_clock_found">Не удалось найти активность календаря или часов</string>
+    <string name="quickspace_battery_title">Батарея устройства</string>
+    <string name="quickspace_battery_summary">Показывать заряд телефона и подключённых Bluetooth-устройств в стилях Remix</string>
+    <string name="quickspace_calendar_summary">Показывать ближайшее событие из любого включённого календаря</string>
+    <string name="quickspace_calendar_untitled">Событие без названия</string>
+    <string name="all_apps_dark_text_title">Тёмные подписи приложений</string>
+    <string name="all_apps_dark_text_summary">Всегда использовать тёмный текст для подписей приложений на панели приложений</string>
+    <string name="app_info_title">Сведения о приложении</string>
+    <string name="app_info_last_update">Последнее обновление</string>
+    <string name="icon_pack_add">Установить больше</string>
+    <string name="icon_pack_no_market">Нет доступного магазина приложений</string>
+    <string name="cylindrical_shape_title">Цилиндрический</string>
+    <string name="flower_shape_title">Цветок</string>
+    <string name="hexagon_shape_title">Шестиугольник</string>
+    <string name="ios_style_shape_title">Стиль iOS</string>
+    <string name="leaf_shape_title">Лист</string>
+    <string name="meow_shape_title">Мяу</string>
+    <string name="samsung_style_shape_title">Стиль Samsung</string>
+    <string name="stretched_shape_title">Растянутый</string>
+    <string name="home_screen_actions">Действия главного экрана</string>
+    <string name="remove_all_views_from_home_screen">Очистить главный экран</string>
+    <string name="remove_all_views_from_home_screen_desc">Главный экран будет очищен. Продолжить?</string>
+    <string name="home_screen_all_views_removed_msg">Главный экран очищен</string>
+    <string name="sort_alphabetical">Сортировать по алфавиту</string>
+    <string name="sort_install_date">Сортировать по дате установки</string>
+    <string name="sort_usage">Сортировать по использованию</string>
+    <string name="navbar_burn_in_protection_title">Защита панели навигации от выгорания</string>
+    <string name="navbar_burn_in_protection_summary">Периодически смещать ручку навигации, чтобы предотвратить выгорание экрана</string>
+    <string name="navbar_burn_in_interval_title">Интервал смещения</string>
+    <string name="pref_blur_background_at_app_launch_title">Размытие фона при запуске и закрытии приложений</string>
+    <string name="pref_blur_background_at_app_launch_summary">Размывать фон во время анимаций запуска и закрытия приложений</string>
 </resources>

@@ -13,4 +13,21 @@
         <item>"中"</item>
         <item>"強烈"</item>
     </string-array>
+    <string-array name="recents_style_entries">
+        <item>"總覽"</item>
+        <item>精簡最近任務（側邊欄）</item>
+        <item>旋轉最近任務（轉盤）</item>
+    </string-array>
+    <string name="neon_icons_title">霓虹圖示</string>
+    <string name="neon_icons_summary">每個應用程式的圖示以你的強調色顯示，並置於發光的圓環中。開啟主題圖示。</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"預設"</item>
+        <item>主題化</item>
+        <item>霓虹</item>
+    </string-array>
+    <string-array name="neon_ring_color_entries">
+        <item>強調色</item>
+        <item>應用程式自身顏色</item>
+    </string-array>
+    <string name="neon_folders_title">資料夾也應用程式</string>
 </resources>

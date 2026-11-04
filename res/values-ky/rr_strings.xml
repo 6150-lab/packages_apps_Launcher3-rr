@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"Акыркылар"</string>
     <string name="glance_content_description">Дароо көрүү</string>
+    <string name="drawer_open_keyboard_title">Издөөнү баштоо үчүн сыпыруу</string>
+    <string name="drawer_open_keyboard_summary">Колдонмолор тизмеси көрүнгөндө ар дайым клавиатураны ачуу</string>
+    <string-array name="recents_style_entries">
+        <item>"Назар"</item>
+        <item>Ичке акыркылар (капталдык панель)</item>
+        <item>Айланма акыркылар (дөңгөлөк)</item>
+    </string-array>
+    <string name="neon_icons_title">Неон белгилери</string>
+    <string name="neon_icons_summary">Ар бир колдонмонун белгиси сиздин акцент түсүңүздө, жаркыраган шакекчеде. Темага ылайыктуу белгилерди күйгүзөт.</string>
+    <string name="icon_style_rr_title">Белги стили</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Демейки"</item>
+        <item>Теманын</item>
+        <item>Неон</item>
+    </string-array>
+    <string name="neon_ring_color_title">Шакекченин түсү</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Акцент</item>
+        <item>Колдонмонун өз түсү</item>
+    </string-array>
+    <string name="neon_glow_title">Жаркыроо</string>
+    <string name="neon_ring_title">Шыңгыroo</string>
+    <string-array name="neon_ring_entries">
+        <item>Жука</item>
+        <item>"Орточо"</item>
+        <item>"Жоон"</item>
+    </string-array>
+    <string name="neon_folders_title">Папкалар да</string>
 </resources>

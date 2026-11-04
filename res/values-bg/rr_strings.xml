@@ -4,4 +4,30 @@
     <string name="drawer_open_keyboard_summary">Показвай клавиатурата винаги когато списъкът с приложения е видим</string>
     <string name="pref_recents_style_title">"Скорошни"</string>
     <string name="glance_content_description">Бърз поглед</string>
+    <string-array name="recents_style_entries">
+        <item>"Общ преглед"</item>
+        <item>Тесни скорошни (страничен панел)</item>
+        <item>Въртящи се скорошни (колело)</item>
+    </string-array>
+    <string name="neon_icons_title">Неонови икони</string>
+    <string name="neon_icons_summary">Иконата на всяко приложение в цвета на акцента ви, в светещ пръстен. Включва тематични икони.</string>
+    <string name="icon_style_rr_title">Стил на иконите</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"По подразбиране"</item>
+        <item>Тематичен</item>
+        <item>Неон</item>
+    </string-array>
+    <string name="neon_ring_color_title">Цвят на пръстена</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Акцент</item>
+        <item>Собствен цвят на приложението</item>
+    </string-array>
+    <string name="neon_glow_title">Сияние</string>
+    <string name="neon_ring_title">Звънене</string>
+    <string-array name="neon_ring_entries">
+        <item>Тънка</item>
+        <item>"Среден"</item>
+        <item>"Откроено"</item>
+    </string-array>
+    <string name="neon_folders_title">Включи и папките</string>
 </resources>

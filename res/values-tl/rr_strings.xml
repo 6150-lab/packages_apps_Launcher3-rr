@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"Mga Kamakailan"</string>
     <string name="glance_content_description">Sa isang sulyap</string>
+    <string name="drawer_open_keyboard_title">Mag-swipe para simulan ang paghahanap</string>
+    <string name="drawer_open_keyboard_summary">Buksan ang keyboard tuwing lalabas ang app drawer</string>
+    <string-array name="recents_style_entries">
+        <item>Pangkalahatang-tanaw</item>
+        <item>Manipis na Recents (side panel)</item>
+        <item>Umiikot na Recents (gulong)</item>
+    </string-array>
+    <string name="neon_icons_title">Neon na icon</string>
+    <string name="neon_icons_summary">Ang glyph ng bawat app sa iyong accent, sa loob ng nagniningning na ring. Ino-on ang mga naka-tema na icon.</string>
+    <string name="icon_style_rr_title">Istilo ng icon</string>
+    <string-array name="icon_style_rr_entries">
+        <item>Default</item>
+        <item>Naka-tema</item>
+        <item>Neon</item>
+    </string-array>
+    <string name="neon_ring_color_title">Kulay ng ring</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Accent</item>
+        <item>Sariling kulay ng app</item>
+    </string-array>
+    <string name="neon_glow_title">Glow</string>
+    <string name="neon_ring_title">Ring</string>
+    <string-array name="neon_ring_entries">
+        <item>Manipis</item>
+        <item>"Katamtaman"</item>
+        <item>"I-bold"</item>
+    </string-array>
+    <string name="neon_folders_title">Pati mga folder</string>
 </resources>

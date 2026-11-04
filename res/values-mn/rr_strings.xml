@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"Саяхны"</string>
     <string name="glance_content_description">Гялс харах</string>
+    <string name="drawer_open_keyboard_title">Гулсуулж хайлт эхлүүлэх</string>
+    <string name="drawer_open_keyboard_summary">Аппликэйшний жагсаалт харагдах бүрт гарыг нээх</string>
+    <string-array name="recents_style_entries">
+        <item>"Тойм"</item>
+        <item>Нарийн саяхны (хажуугийн самбар)</item>
+        <item>Эргэдэг саяхны (дугуй)</item>
+    </string-array>
+    <string name="neon_icons_title">Неон дүрс тэмдэг</string>
+    <string name="neon_icons_summary">Апп бүрийн дүрс тэмдгийг таны акцент өнгөөр, гэрэлтсэн цагираган дотор харуулна. Загвартай дүрс тэмдгийг идэвхжүүлнэ.</string>
+    <string name="icon_style_rr_title">Дүрс тэмдгийн хэв маяг</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Өгөгдмөл"</item>
+        <item>Загвартай</item>
+        <item>Неон</item>
+    </string-array>
+    <string name="neon_ring_color_title">Цагиргийн өнгө</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Акцент</item>
+        <item>Аппын өөрийн өнгө</item>
+    </string-array>
+    <string name="neon_glow_title">Гэрэл</string>
+    <string name="neon_ring_title">Хонх</string>
+    <string-array name="neon_ring_entries">
+        <item>Нимгэн</item>
+        <item>"Дунд зэрэг"</item>
+        <item>"Тод"</item>
+    </string-array>
+    <string name="neon_folders_title">Хавтаснууд мөн</string>
 </resources>

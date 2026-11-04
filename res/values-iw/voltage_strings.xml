@@ -64,4 +64,157 @@
     <string name="cloudy_shape_title">"מעונן"</string>
     <string name="heart_shape_title">"לב"</string>
     <string name="scroll_shape_title">"גלילה"</string>
+    <string name="action_lock">נעילה/ביטול נעילה של אפליקציה</string>
+    <string name="unlock_app">אפליקציה לא נעולה במהזמן האחרון</string>
+    <string name="lock_app">אפליקציה נעולה במהזמן האחרון</string>
+    <string name="home_category_summary">הגדר את פאנל Google Now ועוד</string>
+    <string name="icons_category_summary">הגדר גודל סמלים ועוד</string>
+    <string name="app_drawer_category_title">מגירת אפליקציות</string>
+    <string name="app_drawer_category_summary">התאם אישית את מגירת האפליקציות</string>
+    <string name="recents_category_summary">עצב מחדש את מסך הסקירה</string>
+    <string name="actions_category_title">פעולות מהירות</string>
+    <string name="title_show_google_app">החלק כדי לגשת לאפליקציית Google</string>
+    <string name="suggestion_pref_screen_desc">להצעות של כל האפליקציות ומסך הבית</string>
+    <string name="pref_restart_summary">הפעל מחדש את המפעיל ידנית כדי להחיל הגדרות ממתינות</string>
+    <string name="restarting_launcher">מפעיל מופעל מחדש...</string>
+    <string name="restarting_launcher_changes">מפעיל מופעל מחדש כדי להחיל שינויים...</string>
+    <string name="updating_launcher_components">מפעיל מופעל מחדש כדי לעדכן את רכיביו...</string>
+    <string name="pref_sleep_gesture_haptic_title">רטט בנגיעה כפולה לשינה</string>
+    <string name="pref_sleep_gesture_haptic_summary">ספק משוב רטט בעת מחוות נגיעה כפולה לשינה</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">מופעל אוטומטית כשסגנון iOS פעיל</string>
+    <string name="themed_icons_overlay_title">סמלי עיצוב מותאמים</string>
+    <string name="themed_icons_overlay_summary">השתמש במיפוי סמלי עיצוב מותאמים אישית לאפליקציות ללא סמל עיצוב מקורי</string>
+    <string name="icon_size_title">גודל אייקון</string>
+    <string name="pause">השהיה</string>
+    <string name="pause_apps_dialog_title">להשהות את %1$s?</string>
+    <string name="pause_apps_dialog_message">ההתראות של %1$s יושהו</string>
+    <string name="paused_apps_dialog_title">האפליקציה הושהתה</string>
+    <string name="paused_apps_dialog_message">%1$s הושהתה ישירות מהמפעיל</string>
+    <string name="icon_two_lines_title">השתמש בשתי שורות לשם האפליקציה</string>
+    <string name="recent_task_option_kill_app">סגור בכוח</string>
+    <string name="recents_app_killed">האפליקציה נסגרה בכוח</string>
+    <string name="row_height_title">גובה שורה</string>
+    <string name="hotseat_bg_title">רקע הזזה מהירה</string>
+    <string name="hotseat_bg_summary">הוסף רקע שקוף מעט לסרגל האפליקציות התחתון</string>
+    <string name="dock_search_widget_title">ווידג\'ט חיפוש</string>
+    <string name="dock_search_widget_summary">השתמש בווידג\'ט חיפוש תואם של צד שלישי בסרגל התחתון</string>
+    <string name="dock_search_widget_picker_title">בחר ווידג\'ט חיפוש</string>
+    <string name="dock_search_widget_default">ווידג\'ט חיפוש ברירת מחדל</string>
+    <string name="drawer_style_title">סגנון מגירת אפליקציות</string>
+    <string name="drawer_style_summary_ios_forced">מגירת האפליקציות מושבתת בסגנון iOS</string>
+    <string-array name="app_drawer_style_entries">
+        <item>רגיל (גיליון תחתון)</item>
+        <item>רשימה אופקית</item>
+        <item>אנכי (מדורג בסגנון OneUI)</item>
+        <item>סגנון iOS</item>
+    </string-array>
+    <string name="drawer_search_title">מיקום שורת החיפוש באפליקציות</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>מוסתר</item>
+        <item>למעלה</item>
+        <item>למטה</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">הפעל אפליקציות מוצמדות</string>
+    <string name="pref_pinned_apps_enabled_summary">הצג שורה של אפליקציות מוצמדות מתחת לשורת החיפוש</string>
+    <string name="pref_pinned_apps_list_title">רשימת אפליקציות מוצמדות</string>
+    <string name="pref_pinned_apps_list_summary">בחר אפליקציות להצמדה</string>
+    <string name="allow_wallpaper_scrolling">גלילת טפט</string>
+    <string name="allow_wallpaper_scrolling_summary">אפקט גלילת טפט למספר מסכים</string>
+    <string name="allow_wallpaper_zooming">זום לטפט</string>
+    <string name="allow_wallpaper_zooming_summary">הגדל או הקטן את הטפט בעת שימוש במגירה או באפליקציות האחרונות</string>
+    <string name="show_top_shadow">צל עליון</string>
+    <string name="meminfo_text">%1$s זמינים | %2$s</string>
+    <string name="recents_meminfo_title">מידע זיכרון</string>
+    <string name="recents_meminfo_zram_title">מידע ZRAM</string>
+    <string name="recents_chips_title">השתמש בעיצוב פעולות קומפקטי</string>
+    <string name="recents_chips_summary">עשוי להידרש להצגת מספר רב של פעולות</string>
+    <string name="recents_lens_title">עדשה</string>
+    <string name="short_parallax_title">אפשר הזזה קצרה בפרלקסה</string>
+    <string name="short_parallax_summary">הפעל אפקט גלילה מלא של הטפט במספר קטן של עמודים במקום לחתוך את הטפט</string>
+    <string name="single_page_center_title">עמוד יחיד במרכז</string>
+    <string name="single_page_center_summary">מרכז את הטפט אם נעשה שימוש בעמוד יחיד</string>
+    <string name="drawer_scrollbar_title">פס גלילה</string>
+    <string name="drawer_scrollbar_summary">פס גלילה בצד מגירת האפליקציות</string>
+    <string name="perf_dark_status_bar_title">שורת סטטוס כהה</string>
+    <string name="perf_dark_status_bar_summary">השתמש תמיד בשורת סטטוס כהה במסך הבית</string>
+    <string name="show_quickspace_title">במבט חטוף</string>
+    <string name="show_quickspace_summary">הצג בראש מסך הבית</string>
+    <string name="quickspace_style_title">סגנון במבט חטוף</string>
+    <string-array name="quickspace_style_entries">
+        <item>"ברירת מחדל"</item>
+        <item>מורחב</item>
+        <item>Remix</item>
+        <item>Remix בעמודים</item>
+        <item>Remix אנכי</item>
+        <item>מסלול</item>
+        <item>שלט ניאון</item>
+        <item>זכוכית</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">מתנגן כעת</string>
+    <string name="quickspace_vertical_note">הערה</string>
+    <string name="quickspace_vertical_weather">מזג אוויר</string>
+    <string name="quickspace_vertical_calendar">לוח שנה</string>
+    <string name="quickspace_vertical_battery">סוללה</string>
+    <string name="quickspace_vertical_a11y_calendar">פתח לוח שנה</string>
+    <string name="quickspace_vertical_a11y_weather">פתח מזג אוויר</string>
+    <string name="quickspace_vertical_a11y_calendar_event">פתח אירוע בלוח השנה</string>
+    <string name="quickspace_vertical_a11y_event">פתח מה מתנגן עכשיו</string>
+    <string name="quickspace_vertical_a11y_note">פתח הערה</string>
+    <string name="quickspace_vertical_a11y_battery">פתח הגדרות סוללה</string>
+    <string name="quickspace_voltage_accent_title">שעון בצבע הדגשה</string>
+    <string name="quickspace_voltage_accent_summary">צבע את הספרה הראשונה של השעון בסגנונות Remix</string>
+    <string name="quickspace_voltage_minimal_title">מצב מינימלי</string>
+    <string name="quickspace_voltage_minimal_summary">כווץ תוכן משני של Remix לסמלי קיצור לחיצים</string>
+    <string name="quickspace_grt_morning">בוקר טוב.</string>
+    <string name="quickspace_grt_evening">ערב טוב.</string>
+    <string name="quickspace_grt_afternoon">צהריים טובים.</string>
+    <string name="quickspace_grt_night">לילה טוב.</string>
+    <string name="quickspace_grt_general">יום טוב.</string>
+    <string name="quickspace_ext_one">היום זה</string>
+    <string name="quickspace_ext_two">השעה</string>
+    <string name="qe_now_playing_unknown_artist">אמן לא ידוע</string>
+    <string name="qe_now_playing_by">מאת</string>
+    <string name="quickspace_now_playing_summary">הצג את השיר שמתנגן</string>
+    <string name="quickspace_alternate_style_title">סגנון מורחב</string>
+    <string name="quickspace_alternate_style_summary">עבור לסגנון מורחב</string>
+    <string name="quickspace_psa_title">הודעות אקראיות</string>
+    <string name="quickspace_psa_summary">הפוך את הלוויין שלך לחי יותר עם הודעות אקראיות</string>
+    <string name="intent_no_app_clock_found">לא נמצאה פעילות של לוח שנה או שעון</string>
+    <string name="quick_event_weather_rain">גשום</string>
+    <string name="quick_event_weather_clear">שמיים בהירים</string>
+    <string name="quick_event_weather_storm">סערה</string>
+    <string name="quick_event_weather_snow">מושלג</string>
+    <string name="quick_event_weather_wind">רוח</string>
+    <string name="quick_event_weather_mist">Misty</string>
+    <string name="quickspace_battery_title">סוללת המכשיר</string>
+    <string name="quickspace_battery_summary">הצג את הסוללה של הטלפון ושל מכשיר ה-Bluetooth המחובר בסגנונות Remix</string>
+    <string name="quickspace_calendar_summary">הצג את האירוע הבא שלך מכל לוח שנה פעיל</string>
+    <string name="quickspace_calendar_untitled">אירוע ללא שם</string>
+    <string name="all_apps_dark_text_title">שמות אפליקציות כהים</string>
+    <string name="all_apps_dark_text_summary">השתמש תמיד בטקסט כהה לשמות האפליקציות במגירה</string>
+    <string name="app_info_title">מידע על האפליקציה</string>
+    <string name="app_info_source">מקור</string>
+    <string name="app_info_last_update">עדכון אחרון</string>
+    <string name="icon_pack_add">התקן עוד</string>
+    <string name="icon_pack_no_market">אין חנות אפליקציות זמינה</string>
+    <string name="cylindrical_shape_title">גלילי</string>
+    <string name="flower_shape_title">פרח</string>
+    <string name="hexagon_shape_title">משושה</string>
+    <string name="ios_style_shape_title">סגנון iOS</string>
+    <string name="leaf_shape_title">עלה</string>
+    <string name="meow_shape_title">מיאו</string>
+    <string name="samsung_style_shape_title">סגנון Samsung</string>
+    <string name="stretched_shape_title">מתוח</string>
+    <string name="home_screen_actions">פעולות מסך הבית</string>
+    <string name="remove_all_views_from_home_screen">נקה מסך הבית</string>
+    <string name="remove_all_views_from_home_screen_desc">מסך הבית ינוקה. האם להמשיך?</string>
+    <string name="home_screen_all_views_removed_msg">מסך הבית נוקה</string>
+    <string name="sort_alphabetical">מיון לפי אלפבית</string>
+    <string name="sort_install_date">מיון לפי תאריך התקנה</string>
+    <string name="sort_usage">מיון לפי שימוש</string>
+    <string name="navbar_burn_in_protection_title">הגנה משריפת מסך בסרגל הניווט</string>
+    <string name="navbar_burn_in_protection_summary">הזז את ידית הניווט מעת לעת כדי למנוע שריפת מסך</string>
+    <string name="navbar_burn_in_interval_title">מרווח הזזה</string>
+    <string name="pref_blur_background_at_app_launch_title">טשטוש רקע בהפעלה/סגירה של אפליקציה</string>
+    <string name="pref_blur_background_at_app_launch_summary">טשטש את הרקע במהלך אנימציות הפעלה וסגירה של אפליקציה</string>
 </resources>

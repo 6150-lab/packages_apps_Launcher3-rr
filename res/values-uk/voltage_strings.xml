@@ -63,4 +63,158 @@
     <string name="leaf_shape_title">Лист</string>
     <string name="scroll_shape_title">"Прокрутити"</string>
     <string name="stretched_shape_title">Розтягнутий</string>
+    <string name="action_lock">Заблокувати/розблокувати застосунок</string>
+    <string name="unlock_app">Застосунок розблоковано в нещодавніх</string>
+    <string name="lock_app">Застосунок заблоковано в нещодавніх</string>
+    <string name="home_category_summary">Налаштувати панель Google Now та інше</string>
+    <string name="icons_category_summary">Налаштувати розмір значків та інше</string>
+    <string name="app_drawer_category_title">Панель застосунків</string>
+    <string name="app_drawer_category_summary">Налаштуйте панель застосунків</string>
+    <string name="recents_category_summary">Оновіть екран огляду</string>
+    <string name="actions_category_title">Швидкі дії</string>
+    <string name="title_show_google_app">Проведіть для доступу до застосунку Google</string>
+    <string name="msg_minus_one_on_left">Коли ви проводите праворуч з головного екрана</string>
+    <string name="msg_minus_one_on_right">Коли ви проводите ліворуч з головного екрана</string>
+    <string name="suggestion_pref_screen_desc">Для пропозицій у всіх застосунках і на головному екрані</string>
+    <string name="pref_restart_summary">Перезапустіть лаунчер вручну, щоб застосувати відкладені налаштування</string>
+    <string name="restarting_launcher">Перезапуск лаунчера…</string>
+    <string name="restarting_launcher_changes">Перезапуск лаунчера, щоб застосувати зміни…</string>
+    <string name="updating_launcher_components">Перезапуск лаунчера, щоб оновити його компоненти…</string>
+    <string name="pref_sleep_gesture_title">Подвійне торкання для сну</string>
+    <string name="pref_sleep_gesture_summary">Двічі торкніться порожнього місця на головному екрані, щоб вимкнути екран</string>
+    <string name="pref_sleep_gesture_haptic_title">Вібрація при подвійному торканні для сну</string>
+    <string name="pref_sleep_gesture_haptic_summary">Вібраційний відгук під час жесту подвійного торкання для сну</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">Вмикається автоматично, поки активний стиль iOS</string>
+    <string name="settings_edit_widgets_error">Неможливо додати віджети на головний екран</string>
+    <string name="pref_themed_icons_title">Використовувати тематичні значки в панелі</string>
+    <string name="pref_themed_icons_summary">Використовувати тематичні значки, як на головному екрані</string>
+    <string name="themed_icons_overlay_title">Накладені тематичні значки</string>
+    <string name="themed_icons_overlay_summary">Використовувати власне відображення тематичних значків для застосунків без рідного тематичного значка</string>
+    <string name="trust_apps_auth_open_app">Автентифікуйтеся, щоб відкрити %1$s</string>
+    <string name="trust_apps_no_lock_error">Налаштуйте захищене блокування екрана, щоб обмежити доступ до застосунків</string>
+    <string name="pause">Пауза</string>
+    <string name="pause_apps_dialog_title">Призупинити %1$s?</string>
+    <string name="pause_apps_dialog_message">Сповіщення від %1$s буде призупинено</string>
+    <string name="paused_apps_dialog_title">Застосунок призупинено</string>
+    <string name="paused_apps_dialog_message">%1$s було призупинено безпосередньо з лаунчера</string>
+    <string name="icon_two_lines_title">Використовувати два рядки для назви застосунку</string>
+    <string name="recent_task_option_kill_app">Завершити</string>
+    <string name="recents_app_killed">Застосунок завершено</string>
+    <string name="row_height_title">Висота рядка</string>
+    <string name="hotseat_bg_title">Фон док-панелі</string>
+    <string name="hotseat_bg_summary">Додати напівпрозорий фон до док-панелі застосунків</string>
+    <string name="pref_show_hotseat_qsb_title">Показати панель пошуку</string>
+    <string name="pref_show_hotseat_qsb_summary">Унизу головного екрана</string>
+    <string name="dock_search_widget_title">Віджет пошуку</string>
+    <string name="dock_search_widget_summary">Використовувати сумісний сторонній віджет пошуку в док-панелі</string>
+    <string name="dock_search_widget_picker_title">Вибрати віджет пошуку</string>
+    <string name="dock_search_widget_default">Віджет пошуку за замовчуванням</string>
+    <string name="drawer_style_title">Стиль панелі застосунків</string>
+    <string name="drawer_style_summary_ios_forced">Панель застосунків вимкнено у стилі iOS</string>
+    <string-array name="app_drawer_style_entries">
+        <item>Звичайна (нижній аркуш)</item>
+        <item>Горизонтальний список</item>
+        <item>Вертикальна (сторінки OneUI)</item>
+        <item>Стиль iOS</item>
+    </string-array>
+    <string name="drawer_search_title">Розташування панелі пошуку застосунків</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>"Сховано"</item>
+        <item>Угорі</item>
+        <item>Знизу</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">Увімкнути закріплені застосунки</string>
+    <string name="pref_pinned_apps_enabled_summary">Показувати ряд закріплених застосунків під панеллю пошуку</string>
+    <string name="pref_pinned_apps_list_title">Список закріплених застосунків</string>
+    <string name="pref_pinned_apps_list_summary">Вибрати застосунки для закріплення</string>
+    <string name="allow_wallpaper_scrolling">Прокрутка фонового малюнка</string>
+    <string name="allow_wallpaper_scrolling_summary">Ефект прокрутки фонового малюнка для кількох екранів</string>
+    <string name="allow_wallpaper_zooming">Масштабування фонового малюнка</string>
+    <string name="allow_wallpaper_zooming_summary">Масштабувати фоновий малюнок під час використання панелі або нещодавніх застосунків</string>
+    <string name="show_top_shadow">Верхня тінь</string>
+    <string name="meminfo_text">Доступно %1$s | %2$s</string>
+    <string name="recents_meminfo_title">Інформація про пам\'ять</string>
+    <string name="recents_meminfo_zram_title">Інформація про ZRAM</string>
+    <string name="recents_chips_title">Використовувати компактний дизайн дій</string>
+    <string name="recents_chips_summary">Може знадобитися для відображення великої кількості дій</string>
+    <string name="short_parallax_title">Дозволити короткий паралакс</string>
+    <string name="short_parallax_summary">Увімкнути повний ефект прокрутки фонового малюнка на меншій кількості сторінок замість обрізання</string>
+    <string name="single_page_center_title">Одна сторінка по центру</string>
+    <string name="single_page_center_summary">Центрувати фоновий малюнок, якщо використовується лише одна сторінка</string>
+    <string name="drawer_scrollbar_title">Смуга прокрутки</string>
+    <string name="drawer_scrollbar_summary">Смуга прокрутки збоку панелі застосунків</string>
+    <string name="perf_dark_status_bar_title">Темний рядок стану</string>
+    <string name="perf_dark_status_bar_summary">Завжди використовувати темний рядок стану на головному екрані</string>
+    <string name="show_quickspace_title">At A Glance</string>
+    <string name="show_quickspace_summary">Показувати у верхній частині головного екрана</string>
+    <string name="quickspace_style_title">Стиль At A Glance</string>
+    <string-array name="quickspace_style_entries">
+        <item>"За умовчанням"</item>
+        <item>Розширений</item>
+        <item>Ремікс</item>
+        <item>Remix по сторінках</item>
+        <item>Remix вертикально</item>
+        <item>Орбіта</item>
+        <item>Неонова вивіска</item>
+        <item>Скло</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">ЗАРА�  ВІДТВОРЮЄТЬСЯ</string>
+    <string name="quickspace_vertical_note">ПРИМІТКА</string>
+    <string name="quickspace_vertical_weather">ПОГОДА</string>
+    <string name="quickspace_vertical_calendar">КАЛЕНДАР</string>
+    <string name="quickspace_vertical_battery">АКУМУЛЯТОР</string>
+    <string name="quickspace_vertical_a11y_calendar">Відкрити календар</string>
+    <string name="quickspace_vertical_a11y_weather">Відкрити погоду</string>
+    <string name="quickspace_vertical_a11y_calendar_event">Відкрити подію календаря</string>
+    <string name="quickspace_vertical_a11y_event">Відкрити програвач</string>
+    <string name="quickspace_vertical_a11y_note">Відкрити нотатку</string>
+    <string name="quickspace_vertical_a11y_battery">Відкрити налаштування батареї</string>
+    <string name="quickspace_voltage_accent_title">Годинник кольору акценту</string>
+    <string name="quickspace_voltage_accent_summary">Пофарбувати першу цифру годинника в стилях Remix</string>
+    <string name="quickspace_voltage_minimal_title">Мінімальний режим</string>
+    <string name="quickspace_voltage_minimal_summary">Згорнути додатковий вміст Remix у значки, на які можна натиснути</string>
+    <string name="quickspace_grt_morning">Доброго ранку.</string>
+    <string name="quickspace_grt_evening">Добрий вечір.</string>
+    <string name="quickspace_grt_afternoon">Добрий день.</string>
+    <string name="quickspace_grt_night">Доброї ночі.</string>
+    <string name="quickspace_grt_general">Гарного дня.</string>
+    <string name="quickspace_ext_one">Сьогодні</string>
+    <string name="quickspace_ext_two">Зараз</string>
+    <string name="qe_now_playing_unknown_artist">Невідомий виконавець</string>
+    <string name="qe_now_playing_by">Від</string>
+    <string name="quickspace_now_playing_summary">Показувати пісню, що відтворюється</string>
+    <string name="quickspace_alternate_style_title">Розширений стиль</string>
+    <string name="quickspace_alternate_style_summary">Перейти на розширений стиль</string>
+    <string name="quickspace_psa_title">Випадкові повідомлення</string>
+    <string name="quickspace_psa_summary">Зробіть вашого супутника живішим за допомогою випадкових повідомлень</string>
+    <string name="intent_no_app_clock_found">Не вдалося знайти активність календаря чи годинника</string>
+    <string name="quickspace_battery_title">Батарея пристрою</string>
+    <string name="quickspace_battery_summary">Показувати заряд телефону та підключених пристроїв Bluetooth у стилях Remix</string>
+    <string name="quickspace_calendar_summary">Показувати найближчу подію з будь-якого увімкненого календаря</string>
+    <string name="quickspace_calendar_untitled">Подія без назви</string>
+    <string name="all_apps_dark_text_title">Темні підписи програм</string>
+    <string name="all_apps_dark_text_summary">Завжди використовувати темний текст для підписів програм у шухляді застосунків</string>
+    <string name="app_info_title">Відомості про застосунок</string>
+    <string name="app_info_source">Джерело</string>
+    <string name="app_info_last_update">Останнє оновлення</string>
+    <string name="icon_pack_add">Встановити більше</string>
+    <string name="icon_pack_no_market">Немає доступного магазину застосунків</string>
+    <string name="pure_square_shape_title">Квадрат без заокруглень</string>
+    <string name="tapered_rect_shape_title">Звужений прямокутник</string>
+    <string name="rounded_rect_shape_title">Прямокутник із заокругленнями</string>
+    <string name="ios_style_shape_title">Стиль iOS</string>
+    <string name="meow_shape_title">Мяу</string>
+    <string name="samsung_style_shape_title">Стиль Samsung</string>
+    <string name="home_screen_actions">Дії головного екрана</string>
+    <string name="remove_all_views_from_home_screen">Очистити головний екран</string>
+    <string name="remove_all_views_from_home_screen_desc">Головний екран буде очищено. Продовжити?</string>
+    <string name="home_screen_all_views_removed_msg">Головний екран очищено</string>
+    <string name="sort_alphabetical">Сортувати за алфавітом</string>
+    <string name="sort_install_date">Сортувати за датою встановлення</string>
+    <string name="sort_usage">Сортувати за використанням</string>
+    <string name="navbar_burn_in_protection_title">Захист навігаційної панелі від вигорання</string>
+    <string name="navbar_burn_in_protection_summary">Періодично зсувати маркер навігації, щоб запобігти вигоранню екрана</string>
+    <string name="navbar_burn_in_interval_title">Інтервал зсуву</string>
+    <string name="pref_blur_background_at_app_launch_title">Розмиття фону під час запуску/закриття застосунку</string>
+    <string name="pref_blur_background_at_app_launch_summary">Розмивати фон під час анімацій запуску та закриття застосунків</string>
 </resources>

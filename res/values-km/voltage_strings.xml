@@ -25,4 +25,196 @@
     <string name="cloudy_shape_title">"ពពក"</string>
     <string name="heart_shape_title">"បេះដូង"</string>
     <string name="scroll_shape_title">"រំកិល"</string>
+    <string name="action_lock">ចាក់សោ/ដោះសោកម្មវិធី</string>
+    <string name="unlock_app">កម្មវិធីដែលបានដោះសោក្នុងថ្មីៗ</string>
+    <string name="lock_app">កម្មវិធីដែលបានចាក់សោក្នុងថ្មីៗ</string>
+    <string name="home_category_summary">កំណត់ផ្ទាំងបញ្ជា Google now និងច្រើនទៀត</string>
+    <string name="icons_category_summary">កំណត់ទំហំរូបតំណាង និងច្រើនទៀត</string>
+    <string name="app_drawer_category_title">ឧបករណ៍ចាប់កម្មវិធី</string>
+    <string name="app_drawer_category_summary">ប្ដូរតាមបំណងឧបករណ៍ចាប់កម្មវិធីរបស់អ្នក</string>
+    <string name="recents_category_summary">កែលម្អអេក្រង់ទិដ្ឋភាពទូទៅ</string>
+    <string name="interface_category_title">ចំណុចប្រទាក់</string>
+    <string name="actions_category_title">សកម្មភាពរហ័ស</string>
+    <string name="title_show_google_app">អូសដើម្បីចូលកម្មវិធី Google</string>
+    <string name="msg_minus_one_on_left">នៅពេលអូសទៅស្ដាំពីអេក្រង់ដើមចម្បង</string>
+    <string name="msg_minus_one_on_right">នៅពេលអូសទៅឆ្វេងពីអេក្រង់ដើមចម្បង</string>
+    <string name="suggestion_pref_screen_desc">សម្រាប់ការណែនាំកម្មវិធីទាំងអស់ &amp; អេក្រង់ដើម</string>
+    <string name="pref_restart_summary">ចាប់ផ្តើមឧបករណ៍បើកអេក្រង់ដើមឡើងវិញដោយដៃ ដើម្បីអនុវត្តការកំណត់ដែលរង់ចាំ</string>
+    <string name="restarting_launcher">កំពុងចាប់ផ្តើមឧបករណ៍បើកអេក្រង់ដើមឡើងវិញ...</string>
+    <string name="restarting_launcher_changes">កំពុងចាប់ផ្តើមឧបករណ៍បើកអេក្រង់ដើមឡើងវិញ ដើម្បីអនុវត្តការផ្លាស់ប្តូរ...</string>
+    <string name="updating_launcher_components">កំពុងចាប់ផ្តើមឧបករណ៍បើកអេក្រង់ដើមឡើងវិញ ដើម្បីធ្វើបច្ចុប្បន្នភាពសមាសធាតុ...</string>
+    <string name="pref_sleep_gesture_title">ចុចពីរដងដើម្បីដេក</string>
+    <string name="pref_sleep_gesture_summary">ចុចពីរដងលើចន្លោះទទេនៅអេក្រង់ដើម ដើម្បីបិទអេក្រង់</string>
+    <string name="pref_sleep_gesture_haptic_title">ញ័រពេលចុចពីរដងដើម្បីដេក</string>
+    <string name="pref_sleep_gesture_haptic_summary">ផ្តល់មតិត្រឡប់ញ័រនៅពេលធ្វើចលនាចុចពីរដងដើម្បីដេក</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">បើកដោយស្វ័យប្រវត្តិ ខណៈរចនាប័ទ្ម iOS កំពុងដំណើរការ</string>
+    <string name="settings_lock_layout_title">ចាក់សោការរៀបចំ</string>
+    <string name="settings_lock_layout_summary_on">មិនអាចបន្ថែម ដក ឬផ្លាស់ទីរូបតំណាង និងវិដ្ហេតនៅលើអេក្រង់ដើមបានទេ</string>
+    <string name="settings_lock_layout_summary_off">អាចបន្ថែម ដក និងផ្លាស់ទីរូបតំណាង និងវិដ្ហេតនៅលើអេក្រង់ដើមបាន</string>
+    <string name="settings_edit_widgets_error">មិនអាចបន្ថែមវិដ្ហេតទៅអេក្រង់ដើមបានទេ</string>
+    <string name="pref_themed_icons_title">ប្រើរូបតំណាងតាមរចនាប័ទ្មនៅក្នុងផ្ទាំងកម្មវិធី</string>
+    <string name="pref_themed_icons_summary">ធ្វើតាមរូបតំណាងតាមរចនាប័ទ្មដែលប្រើនៅអេក្រង់ដើម</string>
+    <string name="themed_icons_overlay_title">រូបតំណាងតាមរចនាប័ទ្មដែលត្រួតលើគ្នា</string>
+    <string name="themed_icons_overlay_summary">ប្រើការភ្ជាប់រូបតំណាងតាមរចនាប័ទ្មផ្ទាល់ខ្លួន សម្រាប់កម្មវិធីដែលគ្មានរូបតំណាងតាមរចនាប័ទ្មដើម</string>
+    <string name="desktop_show_labels">បង្ហាញស្លាករូបតំណាងនៅលើអេក្រង់ដើម</string>
+    <string name="drawer_show_labels">បង្ហាញស្លាករូបតំណាងនៅក្នុងផ្ទាំងកម្មវិធី</string>
+    <string name="trust_apps_manager_name">កម្មវិធីលាក់ &amp; ការពារ</string>
+    <string name="trust_apps_auth_manager">ដោះសោដើម្បីគ្រប់គ្រងកម្មវិធីដែលបានលាក់ និងការពារ</string>
+    <string name="trust_apps_auth_open_app">ផ្ទៀងផ្ទាត់ដើម្បីបើក %1$s</string>
+    <string name="trust_apps_no_lock_error">សូមកំណត់អេក្រង់ចាក់សោសុវត្ថិភាព ដើម្បីកំណត់ការចូលប្រើកម្មវិធី</string>
+    <string name="trust_apps_info_hidden">កម្មវិធីដែលបានលាក់ និងវិដ្ហេតរបស់វា ត្រូវបានលាក់ពីផ្ទាំងកម្មវិធី</string>
+    <string name="trust_apps_info_protected">កម្មវិធីដែលបានការពារ តម្រូវឲ្យផ្ទៀងផ្ទាត់ ដើម្បីបើកពីឧបករណ៍បើកអេក្រង់ដើម</string>
+    <string name="icon_size_title">ទំហំរូបតំណាង</string>
+    <string name="pause">ផ្អាក</string>
+    <string name="pause_apps_dialog_title">ផ្អាក %1$s?</string>
+    <string name="pause_apps_dialog_message">ការជូនដំណឹងសម្រាប់ %1$s នឹងត្រូវបានផ្អាក</string>
+    <string name="paused_apps_dialog_title">កម្មវិធីត្រូវបានផ្អាក</string>
+    <string name="paused_apps_dialog_message">%1$s ត្រូវបានផ្អាកដោយផ្ទាល់ពីឧបករណ៍បើកអេក្រង់ដើម</string>
+    <string name="icon_two_lines_title">ប្រើពីរបន្ទាត់សម្រាប់ស្លាកកម្មវិធី</string>
+    <string name="recent_task_option_kill_app">បញ្ឈប់</string>
+    <string name="recents_app_killed">កម្មវិធីត្រូវបានបញ្ឈប់</string>
+    <string name="row_height_title">កម្ពស់ជួរ</string>
+    <string name="hotseat_bg_title">ផ្ទៃខាងក្រោយរបារកម្មវិធីខាងក្រោម</string>
+    <string name="hotseat_bg_summary">បន្ថែមផ្ទៃខាងក្រោមពាក់កណ្ដាលថ្លាទៅរបារកម្មវិធីខាងក្រោម</string>
+    <string name="pref_show_hotseat_qsb_title">បង្ហាញរបារស្វែងរក</string>
+    <string name="pref_show_hotseat_qsb_summary">នៅផ្នែកខាងក្រោមនៃអេក្រង់ដើមរបស់អ្នក</string>
+    <string name="dock_search_widget_title">វិដ្ហេតស្វែងរក</string>
+    <string name="dock_search_widget_summary">ប្រើវិដ្ហេតស្វែងរកភាគីទីបីដែលត្រូវគ្នា នៅក្នុងរបារខាងក្រោម</string>
+    <string name="dock_search_widget_picker_title">ជ្រើសរើសវិដ្ហេតស្វែងរក</string>
+    <string name="dock_search_widget_default">វិដ្ហេតស្វែងរកលំនាំដើម</string>
+    <string name="drawer_style_title">រចនាប័ទ្មផ្ទាំងកម្មវិធី</string>
+    <string name="drawer_style_summary_ios_forced">ផ្ទាំងកម្មវិធីត្រូវបានបិទនៅរចនាប័ទ្ម iOS</string>
+    <string-array name="app_drawer_style_entries">
+        <item>ធម្មតា (ផ្ទាំងខាងក្រោម)</item>
+        <item>បញ្ជីផ្ដេក</item>
+        <item>បញ្ឈរ (ជាទំព័រ OneUI)</item>
+        <item>រចនាប័ទ្ម iOS</item>
+    </string-array>
+    <string name="drawer_search_title">ទីតាំងរបារស្វែងរកកម្មវិធី</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>"បាន​លាក់"</item>
+        <item>ខាងលើ</item>
+        <item>ខាងក្រោម</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">បើកកម្មវិធីដែលបានខ្ទាស់</string>
+    <string name="pref_pinned_apps_enabled_summary">បង្ហាញជួរកម្មវិធីដែលបានខ្ទាស់ នៅក្រោមរបារស្វែងរក</string>
+    <string name="pref_pinned_apps_list_title">បញ្ជីកម្មវិធីដែលបានខ្ទាស់</string>
+    <string name="pref_pinned_apps_list_summary">ជ្រើសរើសកម្មវិធីដើម្បីខ្ទាស់</string>
+    <string name="allow_wallpaper_scrolling">ការរំកិលផ្ទាំងរូបភាព</string>
+    <string name="allow_wallpaper_scrolling_summary">បែបផែនរំកិលផ្ទាំងរូបភាពសម្រាប់អេក្រង់ច្រើន</string>
+    <string name="allow_wallpaper_zooming">ការពង្រីកផ្ទាំងរូបភាព</string>
+    <string name="allow_wallpaper_zooming_summary">ពង្រីក ឬបង្រួមផ្ទាំងរូបភាព នៅពេលប្រើផ្ទាំងកម្មវិធី ឬកម្មវិធីថ្មីៗ</string>
+    <string name="show_statusbar_title">របារស្ថានភាព</string>
+    <string name="show_top_shadow">ស្រមោលខាងលើ</string>
+    <string name="meminfo_text">%1$s អាចប្រើបាន | %2$s</string>
+    <string name="recents_meminfo_title">ព័ត៌មានអង្គចងចាំ</string>
+    <string name="recents_meminfo_zram_title">ព័ត៌មាន ZRAM</string>
+    <string name="recents_chips_title">ប្រើការរចនាសកម្មភាពបង្រួម</string>
+    <string name="recents_chips_summary">អាចត្រូវការសម្រាប់បង្ហាញសកម្មភាពច្រើន</string>
+    <string name="recents_lens_title">កែវថត</string>
+    <string name="short_parallax_title">អនុញ្ញាតប៉ារ៉ាឡាក់ខ្លី</string>
+    <string name="short_parallax_summary">បើកបែបផែនរំកិលផ្ទាំងរូបភាពពេញលេញ សម្រាប់ចំនួនទំព័រតិច ជំនួសឲ្យការកាត់ផ្ទាំងរូបភាព</string>
+    <string name="single_page_center_title">កណ្ដាលទំព័រតែមួយ</string>
+    <string name="single_page_center_summary">ដាក់ផ្ទាំងរូបភាពនៅកណ្ដាល ប្រសិនបើប្រើទំព័រតែមួយ</string>
+    <string name="drawer_scrollbar_title">របាររំកិល</string>
+    <string name="drawer_scrollbar_summary">របាររំកិលនៅចំហៀងផ្ទាំងកម្មវិធី</string>
+    <string name="perf_dark_status_bar_title">របារស្ថានភាពងងឹត</string>
+    <string name="perf_dark_status_bar_summary">ប្រើរបារស្ថានភាពងងឹតជានិច្ចនៅអេក្រង់ដើម</string>
+    <string name="show_quickspace_title">ទិដ្ឋភាពរួម</string>
+    <string name="show_quickspace_summary">បង្ហាញនៅផ្នែកខាងលើនៃអេក្រង់ដើមរបស់អ្នក</string>
+    <string name="quickspace_style_title">រចនាប័ទ្មទិដ្ឋភាពរួម</string>
+    <string-array name="quickspace_style_entries">
+        <item>"លំនាំដើម"</item>
+        <item>ពង្រីក</item>
+        <item>Remix</item>
+        <item>Remix ជាទំព័រ</item>
+        <item>Remix បញ្ឈរ</item>
+        <item>គន្លង</item>
+        <item>ស្លាកភ្លើងនេអុង</item>
+        <item>កញ្ចក់</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">កំពុងចាក់</string>
+    <string name="quickspace_vertical_note">កំណត់ចំណាំ</string>
+    <string name="quickspace_vertical_weather">អាកាសធាតុ</string>
+    <string name="quickspace_vertical_calendar">ប្រតិទិន</string>
+    <string name="quickspace_vertical_battery">ថ្ម</string>
+    <string name="quickspace_vertical_a11y_calendar">បើកប្រតិទិន</string>
+    <string name="quickspace_vertical_a11y_weather">បើកអាកាសធាតុ</string>
+    <string name="quickspace_vertical_a11y_calendar_event">បើកព្រឹត្តិការណ៍ប្រតិទិន</string>
+    <string name="quickspace_vertical_a11y_event">បើកកំពុងចាក់</string>
+    <string name="quickspace_vertical_a11y_note">បើកកំណត់ចំណាំ</string>
+    <string name="quickspace_vertical_a11y_battery">បើកការកំណត់ថ្ម</string>
+    <string name="quickspace_voltage_accent_title">នាឡិកាពណ៌លេចធ្លោ</string>
+    <string name="quickspace_voltage_accent_summary">ដាក់ពណ៌លេខដំបូងនៃនាឡិកាក្នុងរចនាប័ទ្ម Remix</string>
+    <string name="quickspace_voltage_minimal_title">របៀបអប្បបរមា</string>
+    <string name="quickspace_voltage_minimal_summary">បង្រួមខ្លឹមសាររងរបស់ Remix ទៅជារូបតំណាងរហ័សដែលអាចចុចបាន</string>
+    <string name="quickspace_grt_morning">អរុណសួស្តី។</string>
+    <string name="quickspace_grt_evening">ល្ងាចសួស្តី។</string>
+    <string name="quickspace_grt_afternoon">រសៀលសួស្តី។</string>
+    <string name="quickspace_grt_night">រាត្រីសួស្តី។</string>
+    <string name="quickspace_grt_general">ថ្ងៃល្អ។</string>
+    <string name="quickspace_ext_one">ថ្ងៃនេះគឺ</string>
+    <string name="quickspace_ext_two">វាគឺ</string>
+    <string name="qe_now_playing_unknown_artist">អ្នកសិល្បៈមិនស្គាល់</string>
+    <string name="qe_now_playing_ext_one">កំពុងចាក់</string>
+    <string name="qe_now_playing_by">ដោយ</string>
+    <string name="quickspace_now_playing_title">កំពុងចាក់</string>
+    <string name="quickspace_now_playing_summary">បង្ហាញបទចម្រៀងដែលកំពុងចាក់</string>
+    <string name="quickspace_alternate_style_title">រចនាប័ទ្មពង្រីក</string>
+    <string name="quickspace_alternate_style_summary">ប្ដូរទៅរចនាប័ទ្មពង្រីក</string>
+    <string name="quickspace_psa_title">សារចៃដន្យ</string>
+    <string name="quickspace_psa_summary">ធ្វើឲ្យគូកនរបស់អ្នករស់រវើកជាងមុន ដោយសារចៃដន្យ</string>
+    <string name="intent_no_app_clock_found">មិនអាចរកឃើញសកម្មភាពប្រតិទិន ឬនាឡិកាបានទេ</string>
+    <string name="quick_event_ambient_weather_title">ការអាប់ដេតអាកាសធាតុ</string>
+    <string name="quick_event_ambient_weather_summary">បង្ហាញការអាប់ដេតអាកាសធាតុបច្ចុប្បន្ន</string>
+    <string name="quick_event_ambient_weather_enabled_info">តម្រូវឲ្យបើកសេវាអាកាសធាតុ</string>
+    <string name="quick_event_weather_rain">ភ្លៀង</string>
+    <string name="quick_event_weather_clear">មេឃស្រឡះ</string>
+    <string name="quick_event_weather_storm">ព្យុះ</string>
+    <string name="quick_event_weather_snow">ព្រិល</string>
+    <string name="quick_event_weather_wind">ខ្យល់</string>
+    <string name="quick_event_weather_mist">ស្រអាប់</string>
+    <string name="quick_event_weather_city_title">ទីតាំងបច្ចុប្បន្ន</string>
+    <string name="quick_event_weather_city_summary">បង្ហាញទីតាំងអាកាសធាតុបច្ចុប្បន្ន</string>
+    <string name="quick_event_weather_text_title">ស្ថានភាពបច្ចុប្បន្ន</string>
+    <string name="quick_event_weather_text_summary">បង្ហាញសេចក្ដីសង្ខេបស្ថានភាពអាកាសធាតុបច្ចុប្បន្ន</string>
+    <string name="quickspace_battery_title">ថ្មឧបករណ៍</string>
+    <string name="quickspace_battery_summary">បង្ហាញថ្មទូរស័ព្ទ និងឧបករណ៍ប្លូធូសដែលបានភ្ជាប់ ក្នុងរចនាប័ទ្ម Remix</string>
+    <string name="quickspace_calendar_summary">បង្ហាញព្រឹត្តិការណ៍បន្ទាប់របស់អ្នកពីប្រតិទិនណាមួយដែលបើក</string>
+    <string name="quickspace_calendar_untitled">ព្រឹត្តិការណ៍គ្មានចំណងជើង</string>
+    <string name="all_apps_dark_text_title">ស្លាកកម្មវិធីងងឹត</string>
+    <string name="all_apps_dark_text_summary">ប្រើអក្សរងងឹតសម្រាប់ស្លាកកម្មវិធីជានិច្ច នៅក្នុងផ្ទាំងកម្មវិធី</string>
+    <string name="app_info_title">ព័ត៌មានកម្មវិធី</string>
+    <string name="app_info_source">ប្រភព</string>
+    <string name="app_info_last_update">ការអាប់ដេតចុងក្រោយ</string>
+    <string name="icon_pack_title">កញ្ចប់រូបតំណាង</string>
+    <string name="icon_pack_add">ដំឡើងបន្ថែម</string>
+    <string name="icon_pack_no_market">គ្មានហាងកម្មវិធីដែលអាចប្រើបានទេ</string>
+    <string name="pebble_shape_title">ដុំថ្ម</string>
+    <string name="vessel_shape_title">ធុង</string>
+    <string name="pure_square_shape_title">ការេសុទ្ធ</string>
+    <string name="squircle_shape_title">ការេមូល</string>
+    <string name="tapered_rect_shape_title">ចតុកោណចុង</string>
+    <string name="teardrop_shape_title">ទឹកភ្នែក</string>
+    <string name="rounded_rect_shape_title">ចតុកោណមូល</string>
+    <string name="cylindrical_shape_title">ស៊ីឡាំង</string>
+    <string name="flower_shape_title">ផ្កា</string>
+    <string name="hexagon_shape_title">ប្រាំមួយជ្រុង</string>
+    <string name="ios_style_shape_title">រចនាប័ទ្ម iOS</string>
+    <string name="leaf_shape_title">ស្លឹក</string>
+    <string name="meow_shape_title">ម្យាវ</string>
+    <string name="samsung_style_shape_title">រចនាប័ទ្ម Samsung</string>
+    <string name="stretched_shape_title">លាតសន្ធឹង</string>
+    <string name="home_screen_actions">សកម្មភាពអេក្រង់ដើម</string>
+    <string name="remove_all_views_from_home_screen">សម្អាតអេក្រង់ដើម</string>
+    <string name="remove_all_views_from_home_screen_desc">អេក្រង់ដើមនឹងត្រូវបានសម្អាត។ តើអ្នកចង់បន្តដែរឬទេ?</string>
+    <string name="home_screen_all_views_removed_msg">អេក្រង់ដើមត្រូវបានសម្អាតហើយ</string>
+    <string name="sort_alphabetical">តម្រៀបតាមអក្ខរក្រម</string>
+    <string name="sort_install_date">តម្រៀបតាមថ្ងៃដំឡើង</string>
+    <string name="sort_usage">តម្រៀបតាមការប្រើប្រាស់</string>
+    <string name="navbar_burn_in_protection_title">ការការពារស្លាកស្នាមនៃរបាររុករក</string>
+    <string name="navbar_burn_in_protection_summary">ផ្លាស់ទីរបាររុករកជាប់ៗ ដើម្បីការពារស្លាកស្នាមអេក្រង់</string>
+    <string name="navbar_burn_in_interval_title">ចន្លោះពេលផ្លាស់ទី</string>
+    <string name="pref_blur_background_at_app_launch_title">ព្រិលផ្ទៃខាងក្រោយពេលបើក/បិទកម្មវិធី</string>
+    <string name="pref_blur_background_at_app_launch_summary">ធ្វើឲ្យផ្ទៃខាងក្រោយព្រិលក្នុងអំឡុងចលនាបើក និងបិទកម្មវិធី</string>
 </resources>

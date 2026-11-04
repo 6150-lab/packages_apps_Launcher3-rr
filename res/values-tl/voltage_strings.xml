@@ -23,4 +23,198 @@
     <string name="cloudy_shape_title">"Maulap"</string>
     <string name="heart_shape_title">"Puso"</string>
     <string name="scroll_shape_title">"Mag-scroll"</string>
+    <string name="action_lock">I-lock/I-unlock ang app</string>
+    <string name="unlock_app">Na-unlock na app sa Mga Kamakailan</string>
+    <string name="lock_app">Naka-lock na app sa Mga Kamakailan</string>
+    <string name="home_category_title">Home screen</string>
+    <string name="home_category_summary">Itakda ang panel ng Google Now at iba pa</string>
+    <string name="icons_category_summary">Itakda ang laki ng icon at iba pa</string>
+    <string name="app_drawer_category_title">Drawer ng app</string>
+    <string name="app_drawer_category_summary">I-customize ang iyong drawer ng app</string>
+    <string name="recents_category_summary">I-revamp ang screen ng Mga Kamakailan</string>
+    <string name="misc_category_title">Iba pa</string>
+    <string name="interface_category_title">Interface</string>
+    <string name="actions_category_title">Mabilisang aksyon</string>
+    <string name="title_show_google_app">Mag-swipe para mabuksan ang Google app</string>
+    <string name="msg_minus_one_on_left">Kapag nag-swipe pakanan mula sa pangunahing home screen</string>
+    <string name="msg_minus_one_on_right">Kapag nag-swipe pakaliwa mula sa pangunahing home screen</string>
+    <string name="suggestion_pref_screen_desc">Para sa All Apps &amp; mga mungkahi sa home screen</string>
+    <string name="pref_restart_summary">I-restart nang manu-mano ang launcher para ma-apply ang anumang nakabinbing setting</string>
+    <string name="restarting_launcher">Nire-restart ang launcher...</string>
+    <string name="restarting_launcher_changes">Nire-restart ang launcher para ma-apply ang mga pagbabago...</string>
+    <string name="updating_launcher_components">Nire-restart ang launcher para i-update ang mga bahagi ng launcher...</string>
+    <string name="pref_sleep_gesture_title">I-double tap para mag-sleep</string>
+    <string name="pref_sleep_gesture_summary">I-double tap ang bakanteng espasyo sa home screen para i-off ang screen</string>
+    <string name="pref_sleep_gesture_haptic_title">Mag-vibrate kapag nag-double tap para mag-sleep</string>
+    <string name="pref_sleep_gesture_haptic_summary">Magbigay ng haptic feedback sa galaw na double tap para mag-sleep</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">Awtomatikong naka-enable habang aktibo ang iOS style</string>
+    <string name="settings_lock_layout_title">I-lock ang layout</string>
+    <string name="settings_lock_layout_summary_on">Hindi maaaring idagdag, alisin, o ilipat ang mga icon at widget sa homescreen</string>
+    <string name="settings_lock_layout_summary_off">Maaaring idagdag, alisin, at ilipat ang mga icon at widget sa homescreen</string>
+    <string name="settings_edit_widgets_error">Hindi posibleng magdagdag ng widget sa home screen</string>
+    <string name="pref_themed_icons_title">Gamitin ang mga themed na icon sa drawer</string>
+    <string name="pref_themed_icons_summary">Sundin ang mga themed na icon na ginagamit sa home screen</string>
+    <string name="themed_icons_overlay_title">Mga naka-overlay na themed na icon</string>
+    <string name="themed_icons_overlay_summary">Gamitin ang custom na mapping ng themed icon para sa mga app na walang sariling themed icon</string>
+    <string name="desktop_show_labels">Ipakita ang mga label ng icon sa desktop</string>
+    <string name="drawer_show_labels">Ipakita ang mga label ng icon sa drawer</string>
+    <string name="trust_apps_manager_name">Mga Nakatagong at Protektadong app</string>
+    <string name="trust_apps_auth_manager">I-unlock para pamahalaan ang mga nakatagong at protektadong app</string>
+    <string name="trust_apps_auth_open_app">Mag-authenticate para buksan ang %1$s</string>
+    <string name="trust_apps_no_lock_error">Mangyaring mag-set up ng secure na lock screen para limitahan ang pag-access sa app</string>
+    <string name="trust_apps_info_hidden">Nakatago sa drawer ang mga nakatagong app at ang kanilang mga widget</string>
+    <string name="trust_apps_info_protected">Kailangan ng authentication para mabuksan ang mga protektadong app mula sa launcher</string>
+    <string name="icon_size_title">Laki ng icon</string>
+    <string name="pause">I-pause</string>
+    <string name="pause_apps_dialog_title">I-pause ang %1$s?</string>
+    <string name="pause_apps_dialog_message">Ipi-pause ang mga Notification ng %1$s</string>
+    <string name="paused_apps_dialog_title">Naka-pause ang app</string>
+    <string name="paused_apps_dialog_message">Direktang na-pause ang %1$s mula sa launcher</string>
+    <string name="icon_two_lines_title">Gumamit ng dalawang linya para sa label ng app</string>
+    <string name="recent_task_option_kill_app">Patayin</string>
+    <string name="recents_app_killed">Napatay ang app</string>
+    <string name="row_height_title">Taas ng hanay</string>
+    <string name="hotseat_bg_title">Background ng hotseat</string>
+    <string name="hotseat_bg_summary">Magdagdag ng semi-transparent na background sa app dock</string>
+    <string name="pref_show_hotseat_qsb_title">Ipakita ang search bar</string>
+    <string name="pref_show_hotseat_qsb_summary">Sa ibaba ng iyong home screen</string>
+    <string name="dock_search_widget_title">Search widget</string>
+    <string name="dock_search_widget_summary">Gumamit ng compatible na third-party na search widget sa dock</string>
+    <string name="dock_search_widget_picker_title">Piliin ang search widget</string>
+    <string name="dock_search_widget_default">Default na search widget</string>
+    <string name="drawer_style_title">Estilo ng app drawer</string>
+    <string name="drawer_style_summary_ios_forced">Naka-disable ang drawer ng app sa iOS style</string>
+    <string-array name="app_drawer_style_entries">
+        <item>Normal (bottom sheet)</item>
+        <item>Pahalang na listahan</item>
+        <item>Patayong (OneUI paged)</item>
+        <item>iOS style</item>
+    </string-array>
+    <string name="drawer_search_title">Posisyon ng search bar ng app</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>"Nakatago"</item>
+        <item>Sa itaas</item>
+        <item>Ibaba</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">I-enable ang mga naka-pin na app</string>
+    <string name="pref_pinned_apps_enabled_summary">Magpakita ng isang hilera ng naka-pin na app sa ibaba ng search bar</string>
+    <string name="pref_pinned_apps_list_title">Listahan ng mga naka-pin na app</string>
+    <string name="pref_pinned_apps_list_summary">Pumili ng mga app na i-pin</string>
+    <string name="allow_wallpaper_scrolling">Pag-scroll ng wallpaper</string>
+    <string name="allow_wallpaper_scrolling_summary">Epekto ng pag-scroll ng wallpaper para sa maraming screen</string>
+    <string name="allow_wallpaper_zooming">Pag-zoom ng wallpaper</string>
+    <string name="allow_wallpaper_zooming_summary">Mag-zoom in o out sa wallpaper kapag gumagamit ng drawer o Mga Kamakailan</string>
+    <string name="show_statusbar_title">Status Bar</string>
+    <string name="show_top_shadow">Anino sa itaas</string>
+    <string name="meminfo_text">%1$s ang available | %2$s</string>
+    <string name="recents_meminfo_title">Impormasyon ng memory</string>
+    <string name="recents_meminfo_zram_title">Impormasyon ng ZRAM</string>
+    <string name="recents_chips_title">Gumamit ng compact na disenyo ng aksyon</string>
+    <string name="recents_chips_summary">Maaaring kailanganin para maipakita ang maraming aksyon</string>
+    <string name="recents_lens_title">Lens</string>
+    <string name="short_parallax_title">Payagan ang maikling parallax</string>
+    <string name="short_parallax_summary">I-enable ang buong epekto ng pag-scroll ng wallpaper sa mas kaunting pahina sa halip na i-crop ang wallpaper</string>
+    <string name="single_page_center_title">Iisang pahina sa gitna</string>
+    <string name="single_page_center_summary">Ilagay sa gitna ang wallpaper kung iisang pahina lang ang gamit</string>
+    <string name="drawer_scrollbar_title">Scrollbar</string>
+    <string name="drawer_scrollbar_summary">Scrollbar sa gilid ng drawer ng app</string>
+    <string name="perf_dark_status_bar_title">Madilim na status bar</string>
+    <string name="perf_dark_status_bar_summary">Laging gumamit ng madilim na status bar sa home screen</string>
+    <string name="show_quickspace_title">At A Glance</string>
+    <string name="show_quickspace_summary">Ipakita sa itaas ng iyong home screen</string>
+    <string name="quickspace_style_title">Estilo ng At A Glance</string>
+    <string-array name="quickspace_style_entries">
+        <item>Default</item>
+        <item>Pinalawak</item>
+        <item>Remix</item>
+        <item>Remix paged</item>
+        <item>Patayong Remix</item>
+        <item>Orbit</item>
+        <item>Neon sign</item>
+        <item>Glass</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">NAGPE-PLAY</string>
+    <string name="quickspace_vertical_note">TALA</string>
+    <string name="quickspace_vertical_weather">PANAHON</string>
+    <string name="quickspace_vertical_calendar">KALENDARYO</string>
+    <string name="quickspace_vertical_battery">BATTERY</string>
+    <string name="quickspace_vertical_a11y_calendar">Buksan ang kalendaryo</string>
+    <string name="quickspace_vertical_a11y_weather">Buksan ang panahon</string>
+    <string name="quickspace_vertical_a11y_calendar_event">Buksan ang event sa kalendaryo</string>
+    <string name="quickspace_vertical_a11y_event">Buksan ang kasalukuyang tumutugtog</string>
+    <string name="quickspace_vertical_a11y_note">Buksan ang tala</string>
+    <string name="quickspace_vertical_a11y_battery">Buksan ang mga setting ng battery</string>
+    <string name="quickspace_voltage_accent_title">Orasan na may kulay ng accent</string>
+    <string name="quickspace_voltage_accent_summary">Kulayan ang unang numero ng orasan sa mga Remix style</string>
+    <string name="quickspace_voltage_minimal_title">Minimal na mode</string>
+    <string name="quickspace_voltage_minimal_summary">Pagsamahin ang secondary content ng Remix sa mga icon na maaaring pindutin</string>
+    <string name="quickspace_grt_morning">Magandang umaga.</string>
+    <string name="quickspace_grt_evening">Magandang gabi.</string>
+    <string name="quickspace_grt_afternoon">Magandang hapon.</string>
+    <string name="quickspace_grt_night">Magandang gabi.</string>
+    <string name="quickspace_grt_general">Magandang araw.</string>
+    <string name="quickspace_ext_one">Ngayon ay</string>
+    <string name="quickspace_ext_two">Ito ay</string>
+    <string name="qe_now_playing_unknown_artist">Hindi kilalang Artist</string>
+    <string name="qe_now_playing_by">ni</string>
+    <string name="quickspace_now_playing_summary">Ipakita ang kanta na pinapatugtog mo</string>
+    <string name="quickspace_alternate_style_title">Pinalawak na style</string>
+    <string name="quickspace_alternate_style_summary">Lumipat sa pinalawak na style</string>
+    <string name="quickspace_psa_title">Random na mensahe</string>
+    <string name="quickspace_psa_summary">Gawing mas masigla ang iyong kasama sa pamamagitan ng random na mensahe</string>
+    <string name="intent_no_app_clock_found">Hindi mahanap ang aktibidad ng kalendaryo o orasan</string>
+    <string name="quick_event_ambient_weather_title">Update sa panahon</string>
+    <string name="quick_event_ambient_weather_summary">Ipakita ang kasalukuyang update sa panahon</string>
+    <string name="quick_event_ambient_weather_enabled_info">Kailangang naka-enable ang weather service</string>
+    <string name="quick_event_weather_rain">Maulan</string>
+    <string name="quick_event_weather_clear">Maaliwalas na Langit</string>
+    <string name="quick_event_weather_storm">Mabagyo</string>
+    <string name="quick_event_weather_snow">Maniyebe</string>
+    <string name="quick_event_weather_wind">Mahangin</string>
+    <string name="quick_event_weather_mist">Misty</string>
+    <string name="quick_event_weather_city_title">Kasalukuyang lokasyon</string>
+    <string name="quick_event_weather_city_summary">Ipakita ang kasalukuyang lokasyon ng panahon</string>
+    <string name="quick_event_weather_text_title">Kasalukuyang kondisyon</string>
+    <string name="quick_event_weather_text_summary">Ipakita ang buod ng kasalukuyang kondisyon ng panahon</string>
+    <string name="quickspace_battery_title">Baterya ng device</string>
+    <string name="quickspace_battery_summary">Ipakita ang baterya ng telepono at ng nakakonektang bluetooth device sa mga istilo ng Remix</string>
+    <string name="quickspace_calendar_summary">Ipakita ang susunod mong event mula sa anumang naka-enable na kalendaryo</string>
+    <string name="quickspace_calendar_untitled">Event na walang pamagat</string>
+    <string name="all_apps_dark_text_title">Madilim na label ng app</string>
+    <string name="all_apps_dark_text_summary">Laging gumamit ng madilim na teksto para sa label ng app sa drawer ng app</string>
+    <string name="app_info_title">Impormasyon ng app</string>
+    <string name="app_info_source">Pinagmulan</string>
+    <string name="app_info_source_system">System</string>
+    <string name="app_info_last_update">Huling update</string>
+    <string name="icon_pack_title">Icon pack</string>
+    <string name="icon_pack_default_label">Default</string>
+    <string name="icon_pack_add">Mag-install pa</string>
+    <string name="icon_pack_no_market">Walang available na app store</string>
+    <string name="pebble_shape_title">Pebble</string>
+    <string name="vessel_shape_title">Vessel</string>
+    <string name="pure_square_shape_title">Purong parisukat</string>
+    <string name="squircle_shape_title">Squircle</string>
+    <string name="tapered_rect_shape_title">Pakitid na parihaba</string>
+    <string name="teardrop_shape_title">Teardrop</string>
+    <string name="rounded_rect_shape_title">Bilugang parihaba</string>
+    <string name="cylindrical_shape_title">Silindro</string>
+    <string name="flower_shape_title">Bulaklak</string>
+    <string name="hexagon_shape_title">Heksagono</string>
+    <string name="ios_style_shape_title">iOS Style</string>
+    <string name="leaf_shape_title">Dahon</string>
+    <string name="meow_shape_title">Meow</string>
+    <string name="samsung_style_shape_title">Samsung Style</string>
+    <string name="stretched_shape_title">Nakaunat</string>
+    <string name="home_screen_actions">Mga aksyon sa home screen</string>
+    <string name="remove_all_views_from_home_screen">I-clear ang home screen</string>
+    <string name="remove_all_views_from_home_screen_desc">Made-clear ang home screen. Gusto mo bang magpatuloy?</string>
+    <string name="home_screen_all_views_removed_msg">Na-clear ang home screen</string>
+    <string name="sort_alphabetical">Ayusin ayon sa alpabeto</string>
+    <string name="sort_install_date">Ayusin ayon sa petsa ng pag-install</string>
+    <string name="sort_usage">Ayusin ayon sa paggamit</string>
+    <string name="navbar_burn_in_protection_title">Proteksyon sa burn-in ng navbar</string>
+    <string name="navbar_burn_in_protection_summary">Pana-panahong ilipat ang navigation handle para maiwasan ang burn-in ng display</string>
+    <string name="navbar_burn_in_interval_title">Agwat ng paglipat</string>
+    <string name="pref_blur_background_at_app_launch_title">Malabong background kapag binubuksan o isinasara ang app</string>
+    <string name="pref_blur_background_at_app_launch_summary">Lagyan ng blur ang background habang nag-a-animate ang pagbukas at pagsara ng app</string>
 </resources>

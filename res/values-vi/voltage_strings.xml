@@ -72,4 +72,149 @@
     <string name="meow_shape_title">Meo meo</string>
     <string name="scroll_shape_title">"Cuộn"</string>
     <string name="stretched_shape_title">Kéo giãn</string>
+    <string name="action_lock">Khóa/Mở khóa ứng dụng</string>
+    <string name="unlock_app">Ứng dụng đã mở khóa trong Gần đây</string>
+    <string name="lock_app">Ứng dụng đã khóa trong Gần đây</string>
+    <string name="home_category_summary">Thiết lập bảng Google Now và các mục khác</string>
+    <string name="icons_category_summary">Đặt kích thước biểu tượng và các mục khác</string>
+    <string name="app_drawer_category_title">Ngăn ứng dụng</string>
+    <string name="app_drawer_category_summary">Tùy chỉnh ngăn ứng dụng của bạn</string>
+    <string name="recents_category_summary">Làm mới màn hình tổng quan</string>
+    <string name="actions_category_title">Thao tác nhanh</string>
+    <string name="title_show_google_app">Vuốt để mở ứng dụng Google</string>
+    <string name="suggestion_pref_screen_desc">Cho Tất cả ứng dụng &amp; Đề xuất màn hình chính</string>
+    <string name="pref_restart_summary">Khởi động lại trình khởi chạy thủ công để áp dụng các cài đặt đang chờ</string>
+    <string name="restarting_launcher">Đang khởi động lại trình khởi chạy...</string>
+    <string name="restarting_launcher_changes">Đang khởi động lại trình khởi chạy để áp dụng thay đổi...</string>
+    <string name="updating_launcher_components">Đang khởi động lại trình khởi chạy để cập nhật các thành phần của trình khởi chạy...</string>
+    <string name="pref_sleep_gesture_haptic_title">Rung khi chạm đúp để tắt màn hình</string>
+    <string name="pref_sleep_gesture_haptic_summary">Phản hồi xúc giác khi dùng cử chỉ chạm đúp để tắt màn hình</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">Tự động bật khi kiểu iOS đang hoạt động</string>
+    <string name="themed_icons_overlay_title">Biểu tượng theo giao diện phủ lớp</string>
+    <string name="themed_icons_overlay_summary">Dùng ánh xạ biểu tượng theo giao diện tùy chỉnh cho ứng dụng không có biểu tượng theo giao diện gốc</string>
+    <string name="pause">Tạm dừng</string>
+    <string name="pause_apps_dialog_title">Tạm dừng %1$s?</string>
+    <string name="pause_apps_dialog_message">Thông báo của %1$s sẽ bị tạm dừng</string>
+    <string name="paused_apps_dialog_title">Ứng dụng đã tạm dừng</string>
+    <string name="paused_apps_dialog_message">%1$s đã được tạm dừng trực tiếp từ trình khởi chạy</string>
+    <string name="icon_two_lines_title">Dùng hai dòng cho nhãn ứng dụng</string>
+    <string name="recent_task_option_kill_app">Buộc dừng</string>
+    <string name="recents_app_killed">Đã buộc dừng ứng dụng</string>
+    <string name="row_height_title">Chiều cao hàng</string>
+    <string name="hotseat_bg_title">Nền thanh ứng dụng dưới cùng</string>
+    <string name="hotseat_bg_summary">Thêm nền mờ cho thanh ứng dụng</string>
+    <string name="dock_search_widget_title">Tiện ích tìm kiếm</string>
+    <string name="dock_search_widget_summary">Dùng tiện ích tìm kiếm của bên thứ ba tương thích trong thanh ứng dụng</string>
+    <string name="dock_search_widget_picker_title">Chọn tiện ích tìm kiếm</string>
+    <string name="dock_search_widget_default">Tiện ích tìm kiếm mặc định</string>
+    <string name="drawer_style_title">Kiểu ngăn ứng dụng</string>
+    <string name="drawer_style_summary_ios_forced">Ngăn ứng dụng bị tắt trong kiểu iOS</string>
+    <string-array name="app_drawer_style_entries">
+        <item>Thông thường (trang dưới)</item>
+        <item>Danh sách ngang</item>
+        <item>Dọc (phân trang OneUI)</item>
+        <item>Kiểu iOS</item>
+    </string-array>
+    <string name="drawer_search_title">Vị trí thanh tìm kiếm ứng dụng</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>Ẩn</item>
+        <item>Trên cùng</item>
+        <item>Dưới</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">Bật ứng dụng đã ghim</string>
+    <string name="pref_pinned_apps_enabled_summary">Hiện một hàng ứng dụng đã ghim bên dưới thanh tìm kiếm</string>
+    <string name="pref_pinned_apps_list_title">Danh sách ứng dụng đã ghim</string>
+    <string name="pref_pinned_apps_list_summary">Chọn ứng dụng để ghim</string>
+    <string name="allow_wallpaper_scrolling">Cuộn hình nền</string>
+    <string name="allow_wallpaper_scrolling_summary">Hiệu ứng cuộn hình nền cho nhiều màn hình</string>
+    <string name="allow_wallpaper_zooming">Phóng to hình nền</string>
+    <string name="allow_wallpaper_zooming_summary">Phóng to hoặc thu nhỏ hình nền khi dùng ngăn ứng dụng hoặc Gần đây</string>
+    <string name="show_top_shadow">Bóng phía trên</string>
+    <string name="meminfo_text">%1$s khả dụng | %2$s</string>
+    <string name="recents_meminfo_title">Thông tin bộ nhớ</string>
+    <string name="recents_meminfo_zram_title">Thông tin ZRAM</string>
+    <string name="recents_chips_title">Dùng thiết kế thao tác gọn</string>
+    <string name="recents_chips_summary">Có thể cần khi hiển thị nhiều thao tác</string>
+    <string name="short_parallax_title">Cho phép thị sai ngắn</string>
+    <string name="short_parallax_summary">Bật hiệu ứng cuộn hình nền đầy đủ khi có ít trang thay vì cắt hình nền</string>
+    <string name="single_page_center_title">Căn giữa khi một trang</string>
+    <string name="single_page_center_summary">Căn giữa hình nền khi chỉ dùng một trang</string>
+    <string name="drawer_scrollbar_title">Thanh cuộn</string>
+    <string name="drawer_scrollbar_summary">Thanh cuộn ở cạnh ngăn ứng dụng</string>
+    <string name="perf_dark_status_bar_title">Thanh trạng thái tối</string>
+    <string name="perf_dark_status_bar_summary">Luôn dùng thanh trạng thái tối trên màn hình chính</string>
+    <string name="show_quickspace_title">At A Glance</string>
+    <string name="show_quickspace_summary">Hiện ở đầu màn hình chính</string>
+    <string name="quickspace_style_title">Kiểu At A Glance</string>
+    <string-array name="quickspace_style_entries">
+        <item>"Mặc định"</item>
+        <item>Mở rộng</item>
+        <item>Phối</item>
+        <item>Remix phân trang</item>
+        <item>Remix dọc</item>
+        <item>Orbit</item>
+        <item>Biển neon</item>
+        <item>Kính</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">ĐANG PHÁT</string>
+    <string name="quickspace_vertical_note">GHI CHÚ</string>
+    <string name="quickspace_vertical_weather">THỜI TIẾT</string>
+    <string name="quickspace_vertical_calendar">LỊCH</string>
+    <string name="quickspace_vertical_battery">PIN</string>
+    <string name="quickspace_vertical_a11y_calendar">Mở lịch</string>
+    <string name="quickspace_vertical_a11y_weather">Mở thời tiết</string>
+    <string name="quickspace_vertical_a11y_calendar_event">Mở sự kiện lịch</string>
+    <string name="quickspace_vertical_a11y_event">Mở mục đang phát</string>
+    <string name="quickspace_vertical_a11y_note">Mở ghi chú</string>
+    <string name="quickspace_vertical_a11y_battery">Mở cài đặt pin</string>
+    <string name="quickspace_voltage_accent_title">Đồng hồ màu nhấn</string>
+    <string name="quickspace_voltage_accent_summary">Tô màu số đầu tiên của đồng hồ trong các kiểu Remix</string>
+    <string name="quickspace_voltage_minimal_title">Chế độ tối giản</string>
+    <string name="quickspace_voltage_minimal_summary">Thu gọn nội dung phụ của Remix thành các biểu tượng nhanh có thể chạm</string>
+    <string name="quickspace_grt_morning">Chào buổi sáng.</string>
+    <string name="quickspace_grt_evening">Chào buổi tối.</string>
+    <string name="quickspace_grt_afternoon">Chào buổi chiều.</string>
+    <string name="quickspace_grt_night">Chúc ngủ ngon.</string>
+    <string name="quickspace_grt_general">Chúc một ngày tốt lành.</string>
+    <string name="quickspace_ext_one">Hôm nay là</string>
+    <string name="quickspace_ext_two">Bây giờ là</string>
+    <string name="qe_now_playing_unknown_artist">Nghệ sĩ không xác định</string>
+    <string name="qe_now_playing_by">Bởi</string>
+    <string name="quickspace_now_playing_summary">Hiện bài hát đang phát</string>
+    <string name="quickspace_alternate_style_title">Kiểu mở rộng</string>
+    <string name="quickspace_alternate_style_summary">Chuyển sang kiểu mở rộng</string>
+    <string name="quickspace_psa_title">Tin nhắn ngẫu nhiên</string>
+    <string name="quickspace_psa_summary">Làm cho người bạn đồng hành sinh động hơn với tin nhắn ngẫu nhiên</string>
+    <string name="intent_no_app_clock_found">Không tìm thấy hoạt động lịch hoặc đồng hồ</string>
+    <string name="quick_event_weather_rain">Có mưa</string>
+    <string name="quick_event_weather_clear">Trời quang</string>
+    <string name="quick_event_weather_storm">Có bão</string>
+    <string name="quick_event_weather_snow">Có tuyết</string>
+    <string name="quick_event_weather_mist">Có sương mù</string>
+    <string name="quickspace_battery_title">Pin thiết bị</string>
+    <string name="quickspace_battery_summary">Hiện pin điện thoại và thiết bị Bluetooth đã kết nối trong các kiểu Remix</string>
+    <string name="quickspace_calendar_summary">Hiện sự kiện tiếp theo từ bất kỳ lịch đã bật nào</string>
+    <string name="quickspace_calendar_untitled">Sự kiện không có tiêu đề</string>
+    <string name="all_apps_dark_text_title">Nhãn ứng dụng tối</string>
+    <string name="all_apps_dark_text_summary">Luôn dùng chữ tối cho nhãn ứng dụng trong ngăn ứng dụng</string>
+    <string name="app_info_title">Thông tin ứng dụng</string>
+    <string name="app_info_source">Nguồn</string>
+    <string name="app_info_last_update">Cập nhật lần cuối</string>
+    <string name="icon_pack_add">Cài thêm</string>
+    <string name="icon_pack_no_market">Không có cửa hàng ứng dụng nào</string>
+    <string name="vessel_shape_title">Vessel</string>
+    <string name="ios_style_shape_title">Kiểu iOS</string>
+    <string name="samsung_style_shape_title">Kiểu Samsung</string>
+    <string name="home_screen_actions">Thao tác màn hình chính</string>
+    <string name="remove_all_views_from_home_screen">Xóa màn hình chính</string>
+    <string name="remove_all_views_from_home_screen_desc">Màn hình chính sẽ bị xóa. Bạn có muốn tiếp tục không?</string>
+    <string name="home_screen_all_views_removed_msg">Đã xóa màn hình chính</string>
+    <string name="sort_alphabetical">Sắp xếp theo bảng chữ cái</string>
+    <string name="sort_install_date">Sắp xếp theo ngày cài đặt</string>
+    <string name="sort_usage">Sắp xếp theo mức sử dụng</string>
+    <string name="navbar_burn_in_protection_title">Chống cháy màn hình thanh điều hướng</string>
+    <string name="navbar_burn_in_protection_summary">Định kỳ dịch chuyển thanh điều hướng để tránh cháy màn hình</string>
+    <string name="navbar_burn_in_interval_title">Khoảng dịch chuyển</string>
+    <string name="pref_blur_background_at_app_launch_title">Làm mờ nền khi mở/đóng ứng dụng</string>
+    <string name="pref_blur_background_at_app_launch_summary">Làm mờ nền trong hoạt ảnh mở và đóng ứng dụng</string>
 </resources>

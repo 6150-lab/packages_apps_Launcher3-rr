@@ -79,4 +79,142 @@
     <string name="quickspace_vertical_now_playing">SEDANG DIPUTAR</string>
     <string name="app_info_source">Sumber</string>
     <string name="icon_pack_default_label">Default</string>
+    <string name="action_lock">Kunci/Buka kunci aplikasi</string>
+    <string name="unlock_app">Aplikasi dibuka kuncinya di terbaru</string>
+    <string name="lock_app">Aplikasi dikunci di terbaru</string>
+    <string name="home_category_summary">Atur panel Google Now dan lainnya</string>
+    <string name="icons_category_summary">Atur ukuran ikon dan lainnya</string>
+    <string name="app_drawer_category_title">Laci aplikasi</string>
+    <string name="app_drawer_category_summary">Sesuaikan laci aplikasi Anda</string>
+    <string name="recents_category_summary">Rombak layar ikhtisar</string>
+    <string name="actions_category_title">Tindakan cepat</string>
+    <string name="title_show_google_app">Geser untuk mengakses aplikasi Google</string>
+    <string name="suggestion_pref_screen_desc">Untuk saran Semua Aplikasi &amp; Layar utama</string>
+    <string name="pref_restart_summary">Mulai ulang launcher secara manual untuk menerapkan setelan yang tertunda</string>
+    <string name="restarting_launcher">Memulai ulang launcher...</string>
+    <string name="restarting_launcher_changes">Memulai ulang launcher untuk menerapkan perubahan...</string>
+    <string name="updating_launcher_components">Memulai ulang launcher untuk memperbarui komponen launcher...</string>
+    <string name="pref_sleep_gesture_summary">Ketuk dua kali ruang kosong di layar utama untuk mematikan layar</string>
+    <string name="pref_sleep_gesture_haptic_title">Getar saat ketuk dua kali untuk tidur</string>
+    <string name="pref_sleep_gesture_haptic_summary">Berikan umpan balik haptik saat gerakan ketuk dua kali untuk tidur</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">Otomatis aktif saat gaya iOS aktif</string>
+    <string name="themed_icons_overlay_title">Ikon bertema yang ditumpangkan</string>
+    <string name="themed_icons_overlay_summary">Gunakan pemetaan ikon bertema khusus untuk aplikasi tanpa ikon bertema bawaan</string>
+    <string name="pause_apps_dialog_title">Jeda %1$s?</string>
+    <string name="pause_apps_dialog_message">Notifikasi untuk %1$s akan dijeda</string>
+    <string name="paused_apps_dialog_title">Aplikasi dijeda</string>
+    <string name="paused_apps_dialog_message">%1$s dijeda langsung dari launcher</string>
+    <string name="icon_two_lines_title">Gunakan dua baris untuk label aplikasi</string>
+    <string name="recent_task_option_kill_app">Hentikan</string>
+    <string name="recents_app_killed">Aplikasi dihentikan</string>
+    <string name="row_height_title">Tinggi baris</string>
+    <string name="hotseat_bg_title">Latar belakang hotseat</string>
+    <string name="hotseat_bg_summary">Tambahkan latar belakang transparan ke dok aplikasi</string>
+    <string name="pref_show_hotseat_qsb_title">Tampilkan bilah pencarian</string>
+    <string name="pref_show_hotseat_qsb_summary">Di bagian bawah layar utama Anda</string>
+    <string name="dock_search_widget_title">Widget pencarian</string>
+    <string name="dock_search_widget_summary">Gunakan widget pencarian pihak ketiga yang kompatibel di dok</string>
+    <string name="dock_search_widget_picker_title">Pilih widget pencarian</string>
+    <string name="dock_search_widget_default">Widget pencarian bawaan</string>
+    <string name="drawer_style_title">Gaya laci aplikasi</string>
+    <string name="drawer_style_summary_ios_forced">Laci aplikasi dinonaktifkan dalam gaya iOS</string>
+    <string-array name="app_drawer_style_entries">
+        <item>Normal (lembar bawah)</item>
+        <item>Daftar horizontal</item>
+        <item>Vertikal (halaman OneUI)</item>
+        <item>Gaya iOS</item>
+    </string-array>
+    <string name="drawer_search_title">Penempatan bilah pencarian aplikasi</string>
+    <string name="pref_pinned_apps_enabled_title">Aktifkan aplikasi tersemat</string>
+    <string name="pref_pinned_apps_enabled_summary">Tampilkan baris aplikasi tersemat di bawah bilah pencarian</string>
+    <string name="pref_pinned_apps_list_title">Daftar aplikasi tersemat</string>
+    <string name="pref_pinned_apps_list_summary">Pilih aplikasi untuk disematkan</string>
+    <string name="allow_wallpaper_scrolling">Gulir wallpaper</string>
+    <string name="allow_wallpaper_scrolling_summary">Efek gulir wallpaper untuk beberapa layar</string>
+    <string name="allow_wallpaper_zooming">Zoom wallpaper</string>
+    <string name="allow_wallpaper_zooming_summary">Perbesar atau perkecil wallpaper saat menggunakan laci atau aplikasi terbaru</string>
+    <string name="show_top_shadow">Bayangan atas</string>
+    <string name="meminfo_text">%1$s tersedia | %2$s</string>
+    <string name="recents_meminfo_title">Info memori</string>
+    <string name="recents_meminfo_zram_title">Info ZRAM</string>
+    <string name="recents_chips_title">Gunakan desain tindakan ringkas</string>
+    <string name="recents_chips_summary">Mungkin diperlukan untuk menampilkan banyak tindakan</string>
+    <string name="recents_lens_title">Lensa</string>
+    <string name="short_parallax_title">Izinkan paralaks singkat</string>
+    <string name="short_parallax_summary">Aktifkan efek gulir wallpaper penuh untuk jumlah halaman yang sedikit, bukan memotong wallpaper</string>
+    <string name="single_page_center_title">Halaman tunggal di tengah</string>
+    <string name="single_page_center_summary">Pusatkan wallpaper jika hanya menggunakan satu halaman</string>
+    <string name="drawer_scrollbar_title">Bilah gulir</string>
+    <string name="drawer_scrollbar_summary">Bilah gulir di sisi laci aplikasi</string>
+    <string name="perf_dark_status_bar_title">Bilah status gelap</string>
+    <string name="perf_dark_status_bar_summary">Selalu gunakan bilah status gelap di layar utama</string>
+    <string name="show_quickspace_title">At A Glance</string>
+    <string name="show_quickspace_summary">Tampilkan di bagian atas layar utama Anda</string>
+    <string name="quickspace_style_title">Gaya At A Glance</string>
+    <string-array name="quickspace_style_entries">
+        <item>Default</item>
+        <item>Diperluas</item>
+        <item>Remix</item>
+        <item>Remix berhalaman</item>
+        <item>Remix vertikal</item>
+        <item>Orbit</item>
+        <item>Papan neon</item>
+        <item>Kaca</item>
+    </string-array>
+    <string name="quickspace_vertical_note">CATATAN</string>
+    <string name="quickspace_vertical_weather">CUACA</string>
+    <string name="quickspace_vertical_calendar">KALENDER</string>
+    <string name="quickspace_vertical_battery">BATERAI</string>
+    <string name="quickspace_vertical_a11y_calendar">Buka kalender</string>
+    <string name="quickspace_vertical_a11y_weather">Buka cuaca</string>
+    <string name="quickspace_vertical_a11y_calendar_event">Buka acara kalender</string>
+    <string name="quickspace_vertical_a11y_event">Buka sedang diputar</string>
+    <string name="quickspace_vertical_a11y_note">Buka catatan</string>
+    <string name="quickspace_vertical_a11y_battery">Buka setelan baterai</string>
+    <string name="quickspace_voltage_accent_title">Jam berwarna aksen</string>
+    <string name="quickspace_voltage_accent_summary">Warnai angka pertama jam dalam gaya Remix</string>
+    <string name="quickspace_voltage_minimal_title">Mode minimal</string>
+    <string name="quickspace_voltage_minimal_summary">Ciutkan konten sekunder Remix menjadi ikon cepat yang dapat diketuk</string>
+    <string name="quickspace_grt_morning">Selamat pagi.</string>
+    <string name="quickspace_grt_evening">Selamat malam.</string>
+    <string name="quickspace_grt_afternoon">Selamat siang.</string>
+    <string name="quickspace_grt_night">Selamat tidur.</string>
+    <string name="quickspace_grt_general">Selamat hari.</string>
+    <string name="quickspace_ext_one">Hari ini</string>
+    <string name="quickspace_ext_two">Sekarang pukul</string>
+    <string name="qe_now_playing_unknown_artist">Artis tidak dikenal</string>
+    <string name="qe_now_playing_by">Oleh</string>
+    <string name="quickspace_now_playing_summary">Tampilkan lagu yang sedang Anda putar</string>
+    <string name="quickspace_alternate_style_title">Gaya diperluas</string>
+    <string name="quickspace_alternate_style_summary">Beralih ke gaya diperluas</string>
+    <string name="quickspace_psa_title">Pesan acak</string>
+    <string name="quickspace_psa_summary">Buat pendampingmu lebih hidup dengan pesan acak</string>
+    <string name="intent_no_app_clock_found">Tidak dapat menemukan aktivitas kalender atau jam</string>
+    <string name="quickspace_battery_title">Baterai perangkat</string>
+    <string name="quickspace_battery_summary">Tampilkan baterai ponsel dan perangkat Bluetooth yang terhubung dalam gaya Remix</string>
+    <string name="quickspace_calendar_summary">Tampilkan acara berikutnya dari kalender mana pun yang aktif</string>
+    <string name="quickspace_calendar_untitled">Acara tanpa judul</string>
+    <string name="all_apps_dark_text_title">Label aplikasi gelap</string>
+    <string name="all_apps_dark_text_summary">Selalu gunakan teks gelap untuk label aplikasi di laci aplikasi</string>
+    <string name="app_info_title">Info aplikasi</string>
+    <string name="app_info_last_update">Pembaruan terakhir</string>
+    <string name="icon_pack_add">Instal lainnya</string>
+    <string name="icon_pack_no_market">Tidak ada toko aplikasi yang tersedia</string>
+    <string name="pure_square_shape_title">Persegi murni</string>
+    <string name="ios_style_shape_title">Gaya iOS</string>
+    <string name="leaf_shape_title">Daun</string>
+    <string name="samsung_style_shape_title">Gaya Samsung</string>
+    <string name="scroll_shape_title">Gulir</string>
+    <string name="home_screen_actions">Tindakan layar utama</string>
+    <string name="remove_all_views_from_home_screen">Kosongkan layar utama</string>
+    <string name="remove_all_views_from_home_screen_desc">Layar utama akan dikosongkan. Apakah Anda ingin melanjutkan?</string>
+    <string name="home_screen_all_views_removed_msg">Layar utama dikosongkan</string>
+    <string name="sort_alphabetical">Urutkan berdasarkan abjad</string>
+    <string name="sort_install_date">Urutkan berdasarkan tanggal instal</string>
+    <string name="sort_usage">Urutkan berdasarkan penggunaan</string>
+    <string name="navbar_burn_in_protection_title">Perlindungan burn-in bilah navigasi</string>
+    <string name="navbar_burn_in_protection_summary">Geser pegangan navigasi secara berkala untuk mencegah burn-in layar</string>
+    <string name="navbar_burn_in_interval_title">Interval pergeseran</string>
+    <string name="pref_blur_background_at_app_launch_title">Buram latar belakang saat aplikasi dibuka/ditutup</string>
+    <string name="pref_blur_background_at_app_launch_summary">Buramkan latar belakang selama animasi membuka dan menutup aplikasi</string>
 </resources>

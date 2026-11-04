@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"हाल ही के"</string>
     <string name="glance_content_description">एक नज़र में</string>
+    <string name="drawer_open_keyboard_title">खोज शुरू करने के लिए स्वाइप करें</string>
+    <string name="drawer_open_keyboard_summary">ड्रॉअर दिखने पर हर बार कीबोर्ड खोलें</string>
+    <string-array name="recents_style_entries">
+        <item>"खास जानकारी"</item>
+        <item>पतला हाल ही के ऐप्स (साइड पैनल)</item>
+        <item>घूमने वाला हाल ही के ऐप्स (पहिया)</item>
+    </string-array>
+    <string name="neon_icons_title">नियॉन आइकन</string>
+    <string name="neon_icons_summary">हर ऐप का ग्लिफ़ आपके एक्सेंट रंग में, चमकती रिंग के अंदर। थीम वाले आइकन चालू करता है।</string>
+    <string name="icon_style_rr_title">आइकन स्टाइल</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"डिफ़ॉल्ट"</item>
+        <item>थीम वाला</item>
+        <item>नियॉन</item>
+    </string-array>
+    <string name="neon_ring_color_title">रिंग का रंग</string>
+    <string-array name="neon_ring_color_entries">
+        <item>एक्सेंट</item>
+        <item>ऐप का अपना रंग</item>
+    </string-array>
+    <string name="neon_glow_title">ग्लो</string>
+    <string name="neon_ring_title">रिंग</string>
+    <string-array name="neon_ring_entries">
+        <item>हल्का पतला</item>
+        <item>"मीडियम"</item>
+        <item>"बोल्ड"</item>
+    </string-array>
+    <string name="neon_folders_title">फ़ोल्डर भी</string>
 </resources>

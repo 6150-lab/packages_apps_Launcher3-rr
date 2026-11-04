@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"ବର୍ତ୍ତମାନର"</string>
     <string name="glance_content_description">ଏକ ନଜରରେ</string>
+    <string name="drawer_open_keyboard_title">ସର୍ଚ୍ଚ ଆରମ୍ଭ କରିବାକୁ ସ୍ୱାଇପ କରନ୍ତୁ</string>
+    <string name="drawer_open_keyboard_summary">ଆପ ଡ୍ରଓ୍ୟାର ଦେଖାଯିବା ସମୟରେ କୀବୋର୍ଡ ଖୋଲନ୍ତୁ</string>
+    <string-array name="recents_style_entries">
+        <item>"ଓଭରଭିଉ"</item>
+        <item>ପତଳା ବର୍ତ୍ତମାନର (ସାଇଡ ପ୍ୟାନେଲ)</item>
+        <item>ଘୂର୍ଣ୍ଣନ ବର୍ତ୍ତମାନର (ଚକ)</item>
+    </string-array>
+    <string name="neon_icons_title">ନିଅନ ଆଇକନ</string>
+    <string name="neon_icons_summary">ପ୍ରତ୍ୟେକ ଆପ୍‌ର ଗ୍ଲିଫ୍‌ ଆପଣଙ୍କ ଆକ୍ସେଣ୍ଟ ରଙ୍ଗରେ, ଏକ ଉଜ୍ଜ୍ୱଳ ରିଙ୍ଗ ଭିତରେ। ଥିମ୍ ଆଇକନ ଅନ କରେ।</string>
+    <string name="icon_style_rr_title">ଆଇକନ ଶୈଳୀ</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"ଡିଫଲ୍ଟ"</item>
+        <item>ଥିମ୍</item>
+        <item>ନିଅନ</item>
+    </string-array>
+    <string name="neon_ring_color_title">ରିଙ୍ଗ ରଙ୍ଗ</string>
+    <string-array name="neon_ring_color_entries">
+        <item>ଆକ୍ସେଣ୍ଟ</item>
+        <item>ଆପ୍‌ର ନିଜର ରଙ୍ଗ</item>
+    </string-array>
+    <string name="neon_glow_title">ଗ୍ଲୋ</string>
+    <string name="neon_ring_title">ରିଙ୍ଗ</string>
+    <string-array name="neon_ring_entries">
+        <item>ପତଳା</item>
+        <item>"ମଧ୍ୟମ"</item>
+        <item>"ବୋଲ୍ଡ କରନ୍ତୁ"</item>
+    </string-array>
+    <string name="neon_folders_title">ଫୋଲ୍ଡରଗୁଡ଼ିକ ମଧ୍ୟ</string>
 </resources>

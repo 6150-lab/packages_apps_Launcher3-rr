@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"ಇತ್ತೀಚಿನವು"</string>
     <string name="glance_content_description">ಇಣುಕು ನೋಟ</string>
+    <string name="drawer_open_keyboard_title">ಹುಡುಕಾಟ ಆರಂಭಿಸಲು ಸ್ವೈಪ್ ಮಾಡಿ</string>
+    <string name="drawer_open_keyboard_summary">ಆ್ಯಪ್ ಡ್ರಾಯರ್ ಗೋಚರಿಸಿದಾಗಲೆಲ್ಲಾ ಕೀಬೋರ್ಡ್ ತೆರೆಯಿರಿ</string>
+    <string-array name="recents_style_entries">
+        <item>"ಸಮಗ್ರ ನೋಟ"</item>
+        <item>ತೆಳುವಾದ ಇತ್ತೀಚಿನವು (ಸೈಡ್ ಪ್ಯಾನಲ್)</item>
+        <item>ತಿರುಗುವ ಇತ್ತೀಚಿನವು (ಚಕ್ರ)</item>
+    </string-array>
+    <string name="neon_icons_title">ನಿಯಾನ್ ಐಕಾನ್‌ಗಳು</string>
+    <string name="neon_icons_summary">ಪ್ರತಿ ಆ್ಯಪ್‌ನ ಗ್ಲಿಫ್ ನಿಮ್ಮ ಆಕ್ಸೆಂಟ್ ಬಣ್ಣದಲ್ಲಿ, ಹೊಳೆಯುವ ರಿಂಗ್‌ನೊಳಗೆ. ಥೀಮ್ ಮಾಡಲಾದ ಐಕಾನ್‌ಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುತ್ತದೆ.</string>
+    <string name="icon_style_rr_title">ಐಕಾನ್ ಶೈಲಿ</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"ಡೀಫಾಲ್ಟ್"</item>
+        <item>ಥೀಮ್ ಮಾಡಲಾದ</item>
+        <item>ನಿಯಾನ್</item>
+    </string-array>
+    <string name="neon_ring_color_title">ರಿಂಗ್ ಬಣ್ಣ</string>
+    <string-array name="neon_ring_color_entries">
+        <item>ಆಕ್ಸೆಂಟ್</item>
+        <item>ಆ್ಯಪ್‌ನ ಸ್ವಂತ ಬಣ್ಣ</item>
+    </string-array>
+    <string name="neon_glow_title">ಗ್ಲೋ</string>
+    <string name="neon_ring_title">ರಿಂಗ್</string>
+    <string-array name="neon_ring_entries">
+        <item>ಸಣ್ಣ ದಪ್ಪ</item>
+        <item>"ಮಧ್ಯಮ"</item>
+        <item>"ಬೋಲ್ಡ್"</item>
+    </string-array>
+    <string name="neon_folders_title">ಫೋಲ್ಡರ್‌ಗಳಿಗೂ</string>
 </resources>

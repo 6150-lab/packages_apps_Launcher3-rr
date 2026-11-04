@@ -4,4 +4,30 @@
     <string name="drawer_open_keyboard_summary">Άνοιγμα πληκτρολογίου κάθε φορά που το συρτάρι εφαρμογών γίνεται ορατό</string>
     <string name="pref_recents_style_title">"Πρόσφατα"</string>
     <string name="glance_content_description">Με μια ματιά</string>
+    <string-array name="recents_style_entries">
+        <item>"Επισκόπηση"</item>
+        <item>Λεπτά πρόσφατα (πλευρικό panel)</item>
+        <item>Περιστρεφόμενα πρόσφατα (τροχός)</item>
+    </string-array>
+    <string name="neon_icons_title">Εικονίδια Neon</string>
+    <string name="neon_icons_summary">Το εικονίδιο κάθε εφαρμογής με το χρώμα έμφασης, μέσα σε λαμπερό δακτύλιο. Ενεργοποιεί τα εικονίδια θέματος.</string>
+    <string name="icon_style_rr_title">Στυλ εικονιδίων</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Προεπιλογή"</item>
+        <item>Θέμα</item>
+        <item>Neon</item>
+    </string-array>
+    <string name="neon_ring_color_title">Χρώμα δακτυλίου</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Έμφαση</item>
+        <item>Δικό του χρώμα εφαρμογής</item>
+    </string-array>
+    <string name="neon_glow_title">Λάμψη</string>
+    <string name="neon_ring_title">Ήχος κλήσεων</string>
+    <string-array name="neon_ring_entries">
+        <item>Λεπτή</item>
+        <item>"Μέτρια"</item>
+        <item>"Έντονη γραφή"</item>
+    </string-array>
+    <string name="neon_folders_title">Και οι φάκελοι</string>
 </resources>

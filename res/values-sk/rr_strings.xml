@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"Nedávne"</string>
     <string name="glance_content_description">Prehľad udalostí</string>
+    <string name="drawer_open_keyboard_title">Potiahnutím spustiť hľadanie</string>
+    <string name="drawer_open_keyboard_summary">Otvoriť klávesnicu vždy, keď sa zobrazí zásuvka aplikácií</string>
+    <string-array name="recents_style_entries">
+        <item>"Prehľad"</item>
+        <item>Štíhle nedávne (bočný panel)</item>
+        <item>Otáčavé nedávne (koleso)</item>
+    </string-array>
+    <string name="neon_icons_title">Neónové ikony</string>
+    <string name="neon_icons_summary">Ikona každej aplikácie vo vašej farbe zvýraznenia v žiarivom kruhu. Zapína motívové ikony.</string>
+    <string name="icon_style_rr_title">Štýl ikon</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Predvolené"</item>
+        <item>Motívové</item>
+        <item>Neón</item>
+    </string-array>
+    <string name="neon_ring_color_title">Farba kruhu</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Zvýraznenie</item>
+        <item>Vlastná farba aplikácie</item>
+    </string-array>
+    <string name="neon_glow_title">Žiara</string>
+    <string name="neon_ring_title">Zvonenie</string>
+    <string-array name="neon_ring_entries">
+        <item>Tenký</item>
+        <item>"Stredný"</item>
+        <item>"Výrazné"</item>
+    </string-array>
+    <string name="neon_folders_title">Aj priečinky</string>
 </resources>

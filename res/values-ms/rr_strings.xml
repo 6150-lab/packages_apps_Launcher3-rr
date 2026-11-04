@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"Terbaharu"</string>
     <string name="glance_content_description">Sekilas pandang</string>
+    <string name="drawer_open_keyboard_title">Leret untuk mula carian</string>
+    <string name="drawer_open_keyboard_summary">Buka papan kekunci setiap kali laci apl kelihatan</string>
+    <string-array name="recents_style_entries">
+        <item>"Ikhtisar"</item>
+        <item>Terbaharu nipis (panel sisi)</item>
+        <item>Terbaharu berputar (roda)</item>
+    </string-array>
+    <string name="neon_icons_title">Ikon neon</string>
+    <string name="neon_icons_summary">Glif setiap apl dalam warna aksen anda, di dalam cincin bercahaya. Menghidupkan ikon bertema.</string>
+    <string name="icon_style_rr_title">Gaya ikon</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Lalai"</item>
+        <item>Bertema</item>
+        <item>Neon</item>
+    </string-array>
+    <string name="neon_ring_color_title">Warna cincin</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Aksen</item>
+        <item>Warna asal apl</item>
+    </string-array>
+    <string name="neon_glow_title">Berkilau</string>
+    <string name="neon_ring_title">Deringan</string>
+    <string-array name="neon_ring_entries">
+        <item>Nipis</item>
+        <item>"Sederhana"</item>
+        <item>"Huruf tebal"</item>
+    </string-array>
+    <string name="neon_folders_title">Folder juga</string>
 </resources>

@@ -6,4 +6,28 @@
     <string name="glance_content_description">スナップショット</string>
     <string name="icon_style_rr_title">アイコンスタイル</string>
     <string name="neon_ring_color_title">リングの色</string>
+    <string-array name="recents_style_entries">
+        <item>"最近"</item>
+        <item>スリムな最近 (サイド パネル)</item>
+        <item>回転する最近 (ホイール)</item>
+    </string-array>
+    <string name="neon_icons_title">ネオンアイコン</string>
+    <string name="neon_icons_summary">各アプリのグリフをアクセントカラーで表示し、光るリングで囲みます。テーマ別アイコンを有効にします。</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"デフォルト"</item>
+        <item>テーマ別</item>
+        <item>ネオン</item>
+    </string-array>
+    <string-array name="neon_ring_color_entries">
+        <item>アクセント</item>
+        <item>アプリ固有の色</item>
+    </string-array>
+    <string name="neon_glow_title">グロー</string>
+    <string name="neon_ring_title">着信音</string>
+    <string-array name="neon_ring_entries">
+        <item>細い</item>
+        <item>"中"</item>
+        <item>"鮮やか"</item>
+    </string-array>
+    <string name="neon_folders_title">フォルダにも適用</string>
 </resources>

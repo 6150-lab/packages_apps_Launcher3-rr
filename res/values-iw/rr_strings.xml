@@ -4,4 +4,30 @@
     <string name="drawer_open_keyboard_summary">הפעל מקלדת, כשמגירת האפליקציה מוצגת</string>
     <string name="pref_recents_style_title">"מהזמן האחרון"</string>
     <string name="glance_content_description">בקצרה</string>
+    <string-array name="recents_style_entries">
+        <item>"סקירה"</item>
+        <item>אפליקציות אחרונות דקות (פאנל צדדי)</item>
+        <item>אפליקציות אחרונות מסתובבות (גלגל)</item>
+    </string-array>
+    <string name="neon_icons_title">אייקונים ניאון</string>
+    <string name="neon_icons_summary">הסמל של כל אפליקציה בצבע ההדגשה שלך, בתוך טבעת זוהרת. מפעיל אייקונים בעיצוב אחיד.</string>
+    <string name="icon_style_rr_title">סגנון אייקונים</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"ברירת מחדל"</item>
+        <item>לפי עיצוב</item>
+        <item>ניאון</item>
+    </string-array>
+    <string name="neon_ring_color_title">צבע טבעת</string>
+    <string-array name="neon_ring_color_entries">
+        <item>הדגשה</item>
+        <item>הצבע של האפליקציה</item>
+    </string-array>
+    <string name="neon_glow_title">זוהר</string>
+    <string name="neon_ring_title">צלצול</string>
+    <string-array name="neon_ring_entries">
+        <item>דק</item>
+        <item>"בינוני"</item>
+        <item>"מודגש"</item>
+    </string-array>
+    <string name="neon_folders_title">גם תיקיות</string>
 </resources>

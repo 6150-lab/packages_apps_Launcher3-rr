@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"ఇటీవలివి"</string>
     <string name="glance_content_description">డైనమిక్ డిస్‌ప్లే</string>
+    <string name="drawer_open_keyboard_title">సెర్చ్ ప్రారంభించడానికి స్వైప్ చేయండి</string>
+    <string name="drawer_open_keyboard_summary">యాప్ డ్రాయర్ కనిపించినప్పుడల్లా కీబోర్డ్ తెరవండి</string>
+    <string-array name="recents_style_entries">
+        <item>"ఓవర్‌వ్యూ"</item>
+        <item>స్లిమ్ ఇటీవలివి (సైడ్ ప్యానెల్)</item>
+        <item>స్పిన్ ఇటీవలివి (చక్రం)</item>
+    </string-array>
+    <string name="neon_icons_title">నియాన్ ఐకాన్‌లు</string>
+    <string name="neon_icons_summary">ప్రతి యాప్ గ్లిఫ్‌ను మీ యాక్సెంట్ రంగులో, మెరుస్తున్న రింగ్ లోపల చూపుతుంది. థీమ్డ్ ఐకాన్‌లను ఆన్ చేస్తుంది.</string>
+    <string name="icon_style_rr_title">ఐకాన్ శైలి</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"ఆటోమేటిక్"</item>
+        <item>థీమ్డ్</item>
+        <item>నియాన్‌</item>
+    </string-array>
+    <string name="neon_ring_color_title">రింగ్ రంగు</string>
+    <string-array name="neon_ring_color_entries">
+        <item>యాక్సెంట్</item>
+        <item>యాప్ సొంత రంగు</item>
+    </string-array>
+    <string name="neon_glow_title">గ్లో</string>
+    <string name="neon_ring_title">రింగ్</string>
+    <string-array name="neon_ring_entries">
+        <item>సన్నని</item>
+        <item>"మధ్యస్థం"</item>
+        <item>"బోల్డ్"</item>
+    </string-array>
+    <string name="neon_folders_title">ఫోల్డర్‌లు కూడా</string>
 </resources>

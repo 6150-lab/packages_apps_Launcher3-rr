@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"പുതിയവ"</string>
     <string name="glance_content_description">ഒറ്റനോട്ടത്തിൽ</string>
+    <string name="drawer_open_keyboard_title">സെർച്ച് തുടങ്ങാൻ സ്വൈപ്പ് ചെയ്യുക</string>
+    <string name="drawer_open_keyboard_summary">ആപ്പ് ഡ്രോയർ ദൃശ്യമാകുമ്പോഴെല്ലാം കീബോർഡ് തുറക്കുക</string>
+    <string-array name="recents_style_entries">
+        <item>"അവലോകനം"</item>
+        <item>സ്ലിം പുതിയവ (സൈഡ് പാനൽ)</item>
+        <item>സ്പിൻ പുതിയവ (വീൽ)</item>
+    </string-array>
+    <string name="neon_icons_title">നിയോൺ ഐക്കണുകൾ</string>
+    <string name="neon_icons_summary">ഓരോ ആപ്പിന്റെയും ഗ്ലിഫ് നിങ്ങളുടെ ആക്സന്റ് നിറത്തിൽ, തിളങ്ങുന്ന വളയത്തിനുള്ളിൽ. തീം ഐക്കണുകൾ ഓണാക്കുന്നു.</string>
+    <string name="icon_style_rr_title">ഐക്കൺ ശൈലി</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"ഡിഫോൾട്ട്"</item>
+        <item>തീം</item>
+        <item>Neon</item>
+    </string-array>
+    <string name="neon_ring_color_title">വളയത്തിന്റെ നിറം</string>
+    <string-array name="neon_ring_color_entries">
+        <item>ആക്സന്റ്</item>
+        <item>ആപ്പിന്റെ സ്വന്തം നിറം</item>
+    </string-array>
+    <string name="neon_glow_title">ഗ്ലോ</string>
+    <string name="neon_ring_title">റിംഗ്</string>
+    <string-array name="neon_ring_entries">
+        <item>നേർത്തത്</item>
+        <item>"ഇടത്തരം"</item>
+        <item>"ബോൾഡ്"</item>
+    </string-array>
+    <string name="neon_folders_title">ഫോൾഡറുകളിലും</string>
 </resources>

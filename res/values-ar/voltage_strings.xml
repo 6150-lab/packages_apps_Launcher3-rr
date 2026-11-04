@@ -65,4 +65,156 @@
     <string name="meow_shape_title">مواء</string>
     <string name="scroll_shape_title">"الانتقال للأسفل أو للأعلى"</string>
     <string name="stretched_shape_title">ممتد</string>
+    <string name="action_lock">قفل/فتح التطبيق</string>
+    <string name="unlock_app">تطبيق مفتوح في الأحدث</string>
+    <string name="lock_app">تطبيق مقفل في الأحدث</string>
+    <string name="home_category_summary">إعداد لوحة Google Now والمزيد</string>
+    <string name="icons_category_summary">ضبط حجم الأيقونات والمزيد</string>
+    <string name="app_drawer_category_title">درج التطبيقات</string>
+    <string name="app_drawer_category_summary">خصّص درج التطبيقات</string>
+    <string name="recents_category_summary">أعد تصميم شاشة النظرة العامة</string>
+    <string name="actions_category_title">إجراءات سريعة</string>
+    <string name="title_show_google_app">اسحب للوصول إلى تطبيق Google</string>
+    <string name="suggestion_pref_screen_desc">لجميع التطبيقات واقتراحات الشاشة الرئيسية</string>
+    <string name="pref_restart_summary">أعد تشغيل المشغّل يدوياً لتطبيق أي إعدادات معلّقة</string>
+    <string name="restarting_launcher">جارٍ إعادة تشغيل المشغّل…</string>
+    <string name="restarting_launcher_changes">جارٍ إعادة تشغيل المشغّل لتطبيق التغييرات…</string>
+    <string name="updating_launcher_components">جارٍ إعادة تشغيل المشغّل لتحديث مكوّناته…</string>
+    <string name="pref_sleep_gesture_title">انقر مرتين للإيقاف</string>
+    <string name="pref_sleep_gesture_summary">انقر مرتين على مساحة فارغة في الشاشة الرئيسية لإطفاء الشاشة</string>
+    <string name="pref_sleep_gesture_haptic_title">الاهتزاز عند النقر المزدوج للإيقاف</string>
+    <string name="pref_sleep_gesture_haptic_summary">إرسال استجابة لمسية عند إيماءة النقر المزدوج للإيقاف</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">يُفعَّل تلقائياً أثناء تفعيل نمط iOS</string>
+    <string name="themed_icons_overlay_title">أيقونات متراكبة بالسمة</string>
+    <string name="themed_icons_overlay_summary">استخدم تعيين أيقونات السمة المخصص للتطبيقات التي لا تملك أيقونة سمة أصلية</string>
+    <string name="icon_size_title">حجم الرمز</string>
+    <string name="pause">إيقاف مؤقت</string>
+    <string name="pause_apps_dialog_title">إيقاف %1$s مؤقتاً؟</string>
+    <string name="pause_apps_dialog_message">سيتم إيقاف إشعارات %1$s مؤقتاً</string>
+    <string name="paused_apps_dialog_title">التطبيق متوقف مؤقتاً</string>
+    <string name="paused_apps_dialog_message">تم إيقاف %1$s مؤقتاً مباشرةً من المشغّل</string>
+    <string name="icon_two_lines_title">استخدم سطرين لاسم التطبيق</string>
+    <string name="recent_task_option_kill_app">إنهاء</string>
+    <string name="recents_app_killed">تم إنهاء التطبيق</string>
+    <string name="row_height_title">ارتفاع الصف</string>
+    <string name="hotseat_bg_title">خلفية شريط التطبيقات المفضلة</string>
+    <string name="hotseat_bg_summary">أضف خلفية شفافة إلى شريط التطبيقات السفلي</string>
+    <string name="pref_show_hotseat_qsb_title">أظهر شريط البحث</string>
+    <string name="pref_show_hotseat_qsb_summary">في أسفل الشاشة الرئيسية</string>
+    <string name="dock_search_widget_title">أداة البحث</string>
+    <string name="dock_search_widget_summary">استخدم أداة بحث متوافقة من طرف ثالث في الشريط السفلي</string>
+    <string name="dock_search_widget_picker_title">اختر أداة البحث</string>
+    <string name="dock_search_widget_default">أداة البحث الافتراضية</string>
+    <string name="drawer_style_title">نمط درج التطبيقات</string>
+    <string name="drawer_style_summary_ios_forced">درج التطبيقات معطّل في نمط iOS</string>
+    <string-array name="app_drawer_style_entries">
+        <item>عادي (ورقة سفلية)</item>
+        <item>قائمة أفقية</item>
+        <item>عمودي (صفحات OneUI)</item>
+        <item>نمط iOS</item>
+    </string-array>
+    <string name="drawer_search_title">موضع شريط بحث التطبيقات</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>مخفي</item>
+        <item>أعلى</item>
+        <item>أسفل</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">فعّل التطبيقات المثبّتة</string>
+    <string name="pref_pinned_apps_enabled_summary">أظهر صفاً من التطبيقات المثبّتة أسفل شريط البحث</string>
+    <string name="pref_pinned_apps_list_title">قائمة التطبيقات المثبّتة</string>
+    <string name="pref_pinned_apps_list_summary">اختر التطبيقات للتثبيت</string>
+    <string name="allow_wallpaper_scrolling">تمرير الخلفية</string>
+    <string name="allow_wallpaper_scrolling_summary">تأثير تمرير الخلفية عبر عدة شاشات</string>
+    <string name="allow_wallpaper_zooming">تكبير الخلفية</string>
+    <string name="allow_wallpaper_zooming_summary">كبّر الخلفية أو صغّرها عند استخدام الدرج أو التطبيقات الأخيرة</string>
+    <string name="show_top_shadow">ظل علوي</string>
+    <string name="meminfo_text">%1$s متاح | %2$s</string>
+    <string name="recents_meminfo_title">معلومات الذاكرة</string>
+    <string name="recents_meminfo_zram_title">معلومات ZRAM</string>
+    <string name="recents_chips_title">استخدم تصميم إجراءات مضغوط</string>
+    <string name="recents_chips_summary">قد يكون مطلوباً لعرض عدد كبير من الإجراءات</string>
+    <string name="short_parallax_title">السماح بالحركة الموازية القصيرة</string>
+    <string name="short_parallax_summary">فعّل تأثير تمرير الخلفية كاملاً عند عدد صفحات قليل بدلاً من قصّ الخلفية</string>
+    <string name="single_page_center_title">صفحة واحدة في المنتصف</string>
+    <string name="single_page_center_summary">توسيط الخلفية عند استخدام صفحة واحدة فقط</string>
+    <string name="drawer_scrollbar_title">شريط التمرير</string>
+    <string name="drawer_scrollbar_summary">شريط تمرير على جانب درج التطبيقات</string>
+    <string name="perf_dark_status_bar_title">شريط حالة داكن</string>
+    <string name="perf_dark_status_bar_summary">استخدم شريط الحالة الداكن دائماً في الشاشة الرئيسية</string>
+    <string name="show_quickspace_title">نظرة سريعة</string>
+    <string name="show_quickspace_summary">يظهر في أعلى الشاشة الرئيسية</string>
+    <string name="quickspace_style_title">نمط نظرة سريعة</string>
+    <string-array name="quickspace_style_entries">
+        <item>"تلقائي"</item>
+        <item>موسّع</item>
+        <item>Remix</item>
+        <item>Remix بصفحات</item>
+        <item>Remix عمودي</item>
+        <item>مدار</item>
+        <item>لافتة نيون</item>
+        <item>زجاجي</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">قيد التشغيل</string>
+    <string name="quickspace_vertical_note">ملاحظة</string>
+    <string name="quickspace_vertical_weather">الطقس</string>
+    <string name="quickspace_vertical_calendar">التقويم</string>
+    <string name="quickspace_vertical_battery">البطارية</string>
+    <string name="quickspace_vertical_a11y_calendar">افتح التقويم</string>
+    <string name="quickspace_vertical_a11y_weather">افتح الطقس</string>
+    <string name="quickspace_vertical_a11y_calendar_event">افتح حدث التقويم</string>
+    <string name="quickspace_vertical_a11y_event">افتح التشغيل الحالي</string>
+    <string name="quickspace_vertical_a11y_note">افتح الملاحظة</string>
+    <string name="quickspace_vertical_a11y_battery">افتح إعدادات البطارية</string>
+    <string name="quickspace_voltage_accent_title">ساعة بلون التمييز</string>
+    <string name="quickspace_voltage_accent_summary">لوّن الرقم الأول من الساعة في أنماط Remix</string>
+    <string name="quickspace_voltage_minimal_title">الوضع المصغّر</string>
+    <string name="quickspace_voltage_minimal_summary">اطوِ المحتوى الثانوي لـ Remix في أيقونات سريعة قابلة للنقر</string>
+    <string name="quickspace_grt_morning">صباح الخير.</string>
+    <string name="quickspace_grt_evening">مساء الخير.</string>
+    <string name="quickspace_grt_afternoon">مساء الخير.</string>
+    <string name="quickspace_grt_night">تصبح على خير.</string>
+    <string name="quickspace_grt_general">يوم سعيد.</string>
+    <string name="quickspace_ext_one">اليوم هو</string>
+    <string name="quickspace_ext_two">الساعة</string>
+    <string name="qe_now_playing_unknown_artist">فنان غير معروف</string>
+    <string name="qe_now_playing_by">بواسطة</string>
+    <string name="quickspace_now_playing_summary">أظهر الأغنية التي تشغّلها</string>
+    <string name="quickspace_alternate_style_title">النمط الموسّع</string>
+    <string name="quickspace_alternate_style_summary">التبديل إلى النمط الموسّع</string>
+    <string name="quickspace_psa_title">رسائل عشوائية</string>
+    <string name="quickspace_psa_summary">اجعل رفيقك أكثر حيوية برسائل عشوائية</string>
+    <string name="intent_no_app_clock_found">تعذّر العثور على نشاط التقويم أو الساعة</string>
+    <string name="quick_event_weather_rain">ممطر</string>
+    <string name="quick_event_weather_clear">صافٍ</string>
+    <string name="quick_event_weather_storm">عاصف</string>
+    <string name="quick_event_weather_snow">ثلجي</string>
+    <string name="quick_event_weather_mist">ضبابي</string>
+    <string name="quickspace_battery_title">بطارية الجهاز</string>
+    <string name="quickspace_battery_summary">إظهار بطارية الهاتف وجهاز البلوتوث المتصل في أنماط Remix</string>
+    <string name="quickspace_calendar_summary">إظهار حدثك التالي من أي تقويم مفعّل</string>
+    <string name="quickspace_calendar_untitled">حدث بدون عنوان</string>
+    <string name="all_apps_dark_text_title">نصوص التطبيقات الداكنة</string>
+    <string name="all_apps_dark_text_summary">استخدام النص الداكن دائمًا لأسماء التطبيقات في درج التطبيقات</string>
+    <string name="app_info_title">معلومات التطبيق</string>
+    <string name="app_info_source">المصدر</string>
+    <string name="app_info_last_update">آخر تحديث</string>
+    <string name="icon_pack_add">تثبيت المزيد</string>
+    <string name="icon_pack_no_market">لا يوجد متجر تطبيقات متاح</string>
+    <string name="pure_square_shape_title">مربع بزوايا حادة</string>
+    <string name="tapered_rect_shape_title">مستطيل مدبّب</string>
+    <string name="rounded_rect_shape_title">مستطيل بزوايا دائرية</string>
+    <string name="ios_style_shape_title">نمط iOS</string>
+    <string name="samsung_style_shape_title">نمط Samsung</string>
+    <string name="home_screen_actions">إجراءات الشاشة الرئيسية</string>
+    <string name="remove_all_views_from_home_screen">مسح الشاشة الرئيسية</string>
+    <string name="remove_all_views_from_home_screen_desc">سيتم مسح الشاشة الرئيسية. هل تريد المتابعة؟</string>
+    <string name="home_screen_all_views_removed_msg">تم مسح الشاشة الرئيسية</string>
+    <string name="sort_alphabetical">الترتيب أبجديًا</string>
+    <string name="sort_install_date">الترتيب حسب تاريخ التثبيت</string>
+    <string name="sort_usage">الترتيب حسب الاستخدام</string>
+    <string name="navbar_burn_in_protection_title">الحماية من احتراق شريط التنقل</string>
+    <string name="navbar_burn_in_protection_summary">تحريك مقبض التنقل بشكل دوري لمنع احتراق الشاشة</string>
+    <string name="navbar_burn_in_interval_title">الفاصل الزمني للتحريك</string>
+    <string name="pref_blur_background_at_app_launch_title">تمويه الخلفية عند فتح التطبيق/إغلاقه</string>
+    <string name="pref_blur_background_at_app_launch_summary">تمويه الخلفية أثناء رسوم فتح التطبيق وإغلاقه المتحركة</string>
 </resources>

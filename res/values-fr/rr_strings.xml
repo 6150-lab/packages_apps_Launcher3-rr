@@ -11,4 +11,23 @@
         <item>"Moyen"</item>
         <item>"Gras"</item>
     </string-array>
+    <string-array name="recents_style_entries">
+        <item>"Récents"</item>
+        <item>Récents fins (panneau latéral)</item>
+        <item>Récents en rotation (roue)</item>
+    </string-array>
+    <string name="neon_icons_title">Icônes néon</string>
+    <string name="neon_icons_summary">Le symbole de chaque application dans votre couleur d\'accentuation, dans un anneau lumineux. Active les icônes thématisées.</string>
+    <string name="icon_style_rr_title">Style d\'icône</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Par défaut"</item>
+        <item>Thématisé</item>
+        <item>Néon</item>
+    </string-array>
+    <string name="neon_ring_color_title">Couleur de l\'anneau</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Accent</item>
+        <item>Couleur propre à l\'application</item>
+    </string-array>
+    <string name="neon_folders_title">Dossiers aussi</string>
 </resources>

@@ -26,4 +26,195 @@
     <string name="cloudy_shape_title">"बादलु"</string>
     <string name="heart_shape_title">"मुटु"</string>
     <string name="scroll_shape_title">"स्क्रोल गर्नुहोस्"</string>
+    <string name="action_lock">एप लक/अनलक गर्नुहोस्</string>
+    <string name="unlock_app">हालैका सूचीमा एप अनलक भयो</string>
+    <string name="lock_app">हालैका सूचीमा एप लक भयो</string>
+    <string name="home_category_summary">Google now प्यानल र अरू सेट गर्नुहोस्</string>
+    <string name="icons_category_summary">आइकन आकार र अरू सेट गर्नुहोस्</string>
+    <string name="app_drawer_category_title">एप ड्रअर</string>
+    <string name="app_drawer_category_summary">आफ्नो एप ड्रअर अनुकूलन गर्नुहोस्</string>
+    <string name="recents_category_summary">ओभरभ्यू स्क्रिन पुनः डिजाइन गर्नुहोस्</string>
+    <string name="interface_category_title">इन्टरफेस</string>
+    <string name="actions_category_title">द्रुत कार्यहरू</string>
+    <string name="title_show_google_app">Google एप पहुँच गर्न स्वाइप गर्नुहोस्</string>
+    <string name="msg_minus_one_on_left">मुख्य होम स्क्रिनबाट दायाँतिर स्वाइप गर्दा</string>
+    <string name="msg_minus_one_on_right">मुख्य होम स्क्रिनबाट बायाँतिर स्वाइप गर्दा</string>
+    <string name="suggestion_pref_screen_desc">सबै एप र होम स्क्रिनका सुझावहरूका लागि</string>
+    <string name="pref_restart_summary">बाँकी सेटिङहरू लागू गर्न लन्चर म्यानुअली पुनः सुरु गर्नुहोस्</string>
+    <string name="restarting_launcher">लन्चर पुनः सुरु गर्दै...</string>
+    <string name="restarting_launcher_changes">परिवर्तनहरू लागू गर्न लन्चर पुनः सुरु गर्दै...</string>
+    <string name="updating_launcher_components">लन्चर कम्पोनेन्टहरू अद्यावधिक गर्न लन्चर पुनः सुरु गर्दै...</string>
+    <string name="pref_sleep_gesture_title">सुत्न डबल ट्याप गर्नुहोस्</string>
+    <string name="pref_sleep_gesture_summary">स्क्रिन बन्द गर्न होम स्क्रिनको खाली ठाउँमा डबल ट्याप गर्नुहोस्</string>
+    <string name="pref_sleep_gesture_haptic_title">सुत्न डबल ट्याप गर्दा कम्पन गराउनुहोस्</string>
+    <string name="pref_sleep_gesture_haptic_summary">सुत्न डबल ट्याप जेस्चरमा हप्टिक प्रतिक्रिया दिनुहोस्</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">iOS शैली सक्रिय हुँदा स्वतः सक्षम हुन्छ</string>
+    <string name="settings_lock_layout_title">लेआउट लक गर्नुहोस्</string>
+    <string name="settings_lock_layout_summary_on">होम स्क्रिनमा आइकन र विजेटहरू थप्न, हटाउन वा सार्न मिल्दैन</string>
+    <string name="settings_lock_layout_summary_off">होम स्क्रिनमा आइकन र विजेटहरू थप्न, हटाउन र सार्न मिल्छ</string>
+    <string name="settings_edit_widgets_error">होम स्क्रिनमा विजेटहरू थप्न मिल्दैन</string>
+    <string name="pref_themed_icons_title">ड्रअरमा थिमयुक्त आइकनहरू प्रयोग गर्नुहोस्</string>
+    <string name="pref_themed_icons_summary">होम स्क्रिनमा प्रयोग गरिएका थिमयुक्त आइकनहरू पछ्याउनुहोस्</string>
+    <string name="themed_icons_overlay_title">ओभरले गरिएका थिमयुक्त आइकनहरू</string>
+    <string name="themed_icons_overlay_summary">मूल थिमयुक्त आइकन नभएका एपहरूका लागि आफ्नो थिमयुक्त आइकन म्यापिङ प्रयोग गर्नुहोस्</string>
+    <string name="desktop_show_labels">डेस्कटपमा आइकनका लेबलहरू देखाउनुहोस्</string>
+    <string name="drawer_show_labels">ड्रअरमा आइकनका लेबलहरू देखाउनुहोस्</string>
+    <string name="trust_apps_manager_name">लुकाइएका र सुरक्षित एपहरू</string>
+    <string name="trust_apps_auth_manager">लुकाइएका र सुरक्षित एपहरू व्यवस्थापन गर्न अनलक गर्नुहोस्</string>
+    <string name="trust_apps_auth_open_app">%1$s खोल्न प्रमाणीकरण गर्नुहोस्</string>
+    <string name="trust_apps_no_lock_error">एप पहुँच सीमित गर्न सुरक्षित लक स्क्रिन सेट गर्नुहोस्</string>
+    <string name="trust_apps_info_hidden">लुकाइएका एप र तिनका विजेटहरू ड्रअरबाट लुकाइएका छन्</string>
+    <string name="trust_apps_info_protected">सुरक्षित एपहरू लन्चरबाट खोल्न प्रमाणीकरण आवश्यक छ</string>
+    <string name="icon_size_title">आइकनको आकार</string>
+    <string name="pause">रोक्नुहोस्</string>
+    <string name="pause_apps_dialog_title">%1$s रोक्ने हो?</string>
+    <string name="pause_apps_dialog_message">%1$s का सूचनाहरू रोकिनेछन्</string>
+    <string name="paused_apps_dialog_title">एप रोकियो</string>
+    <string name="paused_apps_dialog_message">%1$s लन्चरबाट सिधै रोकियो</string>
+    <string name="icon_two_lines_title">एपको लेबलका लागि दुई पङ्क्ति प्रयोग गर्नुहोस्</string>
+    <string name="recent_task_option_kill_app">बन्द गर्नुहोस्</string>
+    <string name="recents_app_killed">एप बन्द गरियो</string>
+    <string name="row_height_title">पङ्क्तिको उचाइ</string>
+    <string name="hotseat_bg_title">हटसिट पृष्ठभूमि</string>
+    <string name="hotseat_bg_summary">एप डकमा पारदर्शी पृष्ठभूमि थप्नुहोस्</string>
+    <string name="pref_show_hotseat_qsb_title">खोज पट्टी देखाउनुहोस्</string>
+    <string name="pref_show_hotseat_qsb_summary">होम स्क्रिनको तल्लो भागमा</string>
+    <string name="dock_search_widget_title">खोज विजेट</string>
+    <string name="dock_search_widget_summary">डकमा मिल्दो तेस्रो-पक्ष खोज विजेट प्रयोग गर्नुहोस्</string>
+    <string name="dock_search_widget_picker_title">खोज विजेट चयन गर्नुहोस्</string>
+    <string name="dock_search_widget_default">पूर्वनिर्धारित खोज विजेट</string>
+    <string name="drawer_style_title">एप ड्रअर शैली</string>
+    <string name="drawer_style_summary_ios_forced">iOS शैलीमा एप ड्रअर असक्षम छ</string>
+    <string-array name="app_drawer_style_entries">
+        <item>सामान्य (तल्लो पाना)</item>
+        <item>तेर्सो सूची</item>
+        <item>ठाडो (OneUI पृष्ठ)</item>
+        <item>iOS शैली</item>
+    </string-array>
+    <string name="drawer_search_title">एप खोज पट्टीको स्थान</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>"लुकेको"</item>
+        <item>माथि</item>
+        <item>तल</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">पिन गरिएका एप सक्षम गर्नुहोस्</string>
+    <string name="pref_pinned_apps_enabled_summary">खोज पट्टीमुनि पिन गरिएका एपहरूको पङ्क्ति देखाउनुहोस्</string>
+    <string name="pref_pinned_apps_list_title">पिन गरिएका एपहरूको सूची</string>
+    <string name="pref_pinned_apps_list_summary">पिन गर्न एपहरू चयन गर्नुहोस्</string>
+    <string name="allow_wallpaper_scrolling">वालपेपर स्क्रोलिङ</string>
+    <string name="allow_wallpaper_scrolling_summary">धेरै स्क्रिनका लागि वालपेपर स्क्रोलिङ प्रभाव</string>
+    <string name="allow_wallpaper_zooming">वालपेपर जुम</string>
+    <string name="allow_wallpaper_zooming_summary">ड्रअर वा हालैका एप प्रयोग गर्दा वालपेपर जुम इन वा आउट गर्नुहोस्</string>
+    <string name="show_statusbar_title">स्थिति पट्टी</string>
+    <string name="show_top_shadow">माथिल्लो छाया</string>
+    <string name="meminfo_text">%1$s उपलब्ध | %2$s</string>
+    <string name="recents_meminfo_title">मेमोरी जानकारी</string>
+    <string name="recents_meminfo_zram_title">ZRAM जानकारी</string>
+    <string name="recents_chips_title">कम्प्याक्ट कार्य डिजाइन प्रयोग गर्नुहोस्</string>
+    <string name="recents_chips_summary">धेरै कार्यहरू देखाउन आवश्यक हुन सक्छ</string>
+    <string name="short_parallax_title">छोटो प्यारालाक्स अनुमति दिनुहोस्</string>
+    <string name="short_parallax_summary">वालपेपर काट्नुको सट्टा थोरै पृष्ठहरूमा पूर्ण वालपेपर स्क्रोल प्रभाव सक्षम गर्नुहोस्</string>
+    <string name="single_page_center_title">एउटा पृष्ठ केन्द्र</string>
+    <string name="single_page_center_summary">एउटा मात्र पृष्ठ प्रयोग गर्दा वालपेपर केन्द्रमा राख्नुहोस्</string>
+    <string name="drawer_scrollbar_title">स्क्रोलबार</string>
+    <string name="drawer_scrollbar_summary">एप ड्रअरको छेउमा स्क्रोलबार</string>
+    <string name="perf_dark_status_bar_title">गाढा स्थिति पट्टी</string>
+    <string name="perf_dark_status_bar_summary">होम स्क्रिनमा सधैं गाढा स्थिति पट्टी प्रयोग गर्नुहोस्</string>
+    <string name="show_quickspace_title">एक नजरमा</string>
+    <string name="show_quickspace_summary">होम स्क्रिनको माथिल्लो भागमा देखाउनुहोस्</string>
+    <string name="quickspace_style_title">एक नजरमा शैली</string>
+    <string-array name="quickspace_style_entries">
+        <item>"डिफल्ट"</item>
+        <item>विस्तारित</item>
+        <item>Remix</item>
+        <item>Remix पृष्ठ</item>
+        <item>Remix ठाडो</item>
+        <item>Orbit</item>
+        <item>नियन साइन</item>
+        <item>Glass</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">अहिले बजिरहेको</string>
+    <string name="quickspace_vertical_note">नोट</string>
+    <string name="quickspace_vertical_weather">मौसम</string>
+    <string name="quickspace_vertical_calendar">पात्रो</string>
+    <string name="quickspace_vertical_battery">ब्याट्री</string>
+    <string name="quickspace_vertical_a11y_calendar">पात्रो खोल्नुहोस्</string>
+    <string name="quickspace_vertical_a11y_weather">मौसम खोल्नुहोस्</string>
+    <string name="quickspace_vertical_a11y_calendar_event">पात्रो घटना खोल्नुहोस्</string>
+    <string name="quickspace_vertical_a11y_event">अहिले बजिरहेको खोल्नुहोस्</string>
+    <string name="quickspace_vertical_a11y_note">नोट खोल्नुहोस्</string>
+    <string name="quickspace_vertical_a11y_battery">ब्याट्री सेटिङ खोल्नुहोस्</string>
+    <string name="quickspace_voltage_accent_title">एक्सेन्ट रङको घडी</string>
+    <string name="quickspace_voltage_accent_summary">Remix शैलीहरूमा घडीको पहिलो अङ्क एक्सेन्ट रङमा राख्नुहोस्</string>
+    <string name="quickspace_voltage_minimal_title">न्यूनतम मोड</string>
+    <string name="quickspace_voltage_minimal_summary">Remix का सहायक सामग्रीलाई ट्याप गर्न मिल्ने द्रुत आइकनमा सङ्कुचित गर्नुहोस्</string>
+    <string name="quickspace_grt_morning">शुभ प्रभात।</string>
+    <string name="quickspace_grt_evening">शुभ सन्ध्या।</string>
+    <string name="quickspace_grt_afternoon">शुभ दिउँसो।</string>
+    <string name="quickspace_grt_night">शुभ रात्रि।</string>
+    <string name="quickspace_grt_general">शुभ दिन।</string>
+    <string name="quickspace_ext_one">आज हो</string>
+    <string name="quickspace_ext_two">अहिले</string>
+    <string name="qe_now_playing_unknown_artist">अज्ञात कलाकार</string>
+    <string name="qe_now_playing_ext_one">अहिले चलिरहेको</string>
+    <string name="qe_now_playing_by">द्वारा</string>
+    <string name="quickspace_now_playing_title">अहिले चलिरहेको</string>
+    <string name="quickspace_now_playing_summary">तपाईंले बजाइरहनुभएको गीत देखाउनुहोस्</string>
+    <string name="quickspace_alternate_style_title">विस्तारित शैली</string>
+    <string name="quickspace_alternate_style_summary">विस्तारित शैलीमा जानुहोस्</string>
+    <string name="quickspace_psa_title">अनियमित सन्देशहरू</string>
+    <string name="quickspace_psa_summary">अनियमित सन्देशहरूसँग आफ्नो साथीलाई अझ जीवन्त बनाउनुहोस्</string>
+    <string name="intent_no_app_clock_found">पात्रो वा घडी गतिविधि फेला पार्न सकिएन</string>
+    <string name="quick_event_ambient_weather_title">मौसम अद्यावधिक</string>
+    <string name="quick_event_ambient_weather_summary">हालको मौसम अद्यावधिक देखाउनुहोस्</string>
+    <string name="quick_event_ambient_weather_enabled_info">मौसम सेवा सक्षम हुनु आवश्यक छ</string>
+    <string name="quick_event_weather_rain">वर्षा</string>
+    <string name="quick_event_weather_clear">सफा आकाश</string>
+    <string name="quick_event_weather_storm">आँधीबेहरी</string>
+    <string name="quick_event_weather_snow">हिउँदे</string>
+    <string name="quick_event_weather_wind">हावाहुरी</string>
+    <string name="quick_event_weather_mist">कुहिरो</string>
+    <string name="quick_event_weather_city_title">हालको स्थान</string>
+    <string name="quick_event_weather_city_summary">हालको मौसमको स्थान देखाउनुहोस्</string>
+    <string name="quick_event_weather_text_title">हालको अवस्था</string>
+    <string name="quick_event_weather_text_summary">हालको मौसम अवस्थाको सारांश देखाउनुहोस्</string>
+    <string name="quickspace_battery_title">उपकरणको ब्याट्री</string>
+    <string name="quickspace_battery_summary">Remix शैलीहरूमा फोन र जडित ब्लुटुथ उपकरणको ब्याट्री देखाउनुहोस्</string>
+    <string name="quickspace_calendar_summary">कुनै सक्षम पात्रोबाट तपाईंको अर्को घटना देखाउनुहोस्</string>
+    <string name="quickspace_calendar_untitled">शीर्षकविहीन घटना</string>
+    <string name="all_apps_dark_text_title">गाढा एप लेबलहरू</string>
+    <string name="all_apps_dark_text_summary">एप ड्रअरमा एप लेबलका लागि सधैं गाढा पाठ प्रयोग गर्नुहोस्</string>
+    <string name="app_info_title">एप जानकारी</string>
+    <string name="app_info_source">स्रोत</string>
+    <string name="app_info_last_update">अन्तिम अद्यावधिक</string>
+    <string name="icon_pack_title">आइकन प्याक</string>
+    <string name="icon_pack_add">थप स्थापना गर्नुहोस्</string>
+    <string name="icon_pack_no_market">कुनै उपलब्ध एप स्टोर छैन</string>
+    <string name="pebble_shape_title">पेबल</string>
+    <string name="vessel_shape_title">भेसल</string>
+    <string name="pure_square_shape_title">शुद्ध वर्ग</string>
+    <string name="squircle_shape_title">स्क्विर्कल</string>
+    <string name="tapered_rect_shape_title">टेपर्ड आयत</string>
+    <string name="teardrop_shape_title">टियरड्रप</string>
+    <string name="rounded_rect_shape_title">गोलो आयत</string>
+    <string name="cylindrical_shape_title">बेलनाकार</string>
+    <string name="flower_shape_title">फूल</string>
+    <string name="hexagon_shape_title">षटकोण</string>
+    <string name="ios_style_shape_title">iOS शैली</string>
+    <string name="leaf_shape_title">पात</string>
+    <string name="meow_shape_title">म्याउ</string>
+    <string name="samsung_style_shape_title">Samsung शैली</string>
+    <string name="stretched_shape_title">तन्केको</string>
+    <string name="home_screen_actions">होम स्क्रिन कार्यहरू</string>
+    <string name="remove_all_views_from_home_screen">होम स्क्रिन खाली गर्नुहोस्</string>
+    <string name="remove_all_views_from_home_screen_desc">होम स्क्रिन खाली गरिनेछ। के तपाईं जारी राख्न चाहनुहुन्छ?</string>
+    <string name="home_screen_all_views_removed_msg">होम स्क्रिन खाली गरियो</string>
+    <string name="sort_alphabetical">वर्णमाला अनुसार क्रमबद्ध गर्नुहोस्</string>
+    <string name="sort_install_date">स्थापना मिति अनुसार क्रमबद्ध गर्नुहोस्</string>
+    <string name="sort_usage">प्रयोग अनुसार क्रमबद्ध गर्नुहोस्</string>
+    <string name="navbar_burn_in_protection_title">नेभबार बर्न-इन सुरक्षा</string>
+    <string name="navbar_burn_in_protection_summary">डिस्प्ले बर्न-इन रोक्न नेभिगेसन ह्यान्डल आवधिक रूपमा सार्नुहोस्</string>
+    <string name="navbar_burn_in_interval_title">सिफ्ट अन्तराल</string>
+    <string name="pref_blur_background_at_app_launch_title">एप खोल्दा/बन्द गर्दा पृष्ठभूमि धमिलो गर्नुहोस्</string>
+    <string name="pref_blur_background_at_app_launch_summary">एप खोल्ने र बन्द गर्ने एनिमेसनका बेला पृष्ठभूमि धमिलो गर्नुहोस्</string>
 </resources>

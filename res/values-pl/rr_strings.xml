@@ -6,4 +6,28 @@
     <string name="glance_content_description">W skrócie</string>
     <string name="icon_style_rr_title">Styl ikony</string>
     <string name="neon_ring_color_title">Kolor pierścienia</string>
+    <string-array name="recents_style_entries">
+        <item>"Przegląd"</item>
+        <item>Smukłe ostatnie (panel boczny)</item>
+        <item>Obrotowe ostatnie (koło)</item>
+    </string-array>
+    <string name="neon_icons_title">Neonowe ikony</string>
+    <string name="neon_icons_summary">Ikona każdej aplikacji w kolorze akcentu, w świecącym pierścieniu. Włącza ikony w motywie.</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Domyślny"</item>
+        <item>Motyw</item>
+        <item>Neon</item>
+    </string-array>
+    <string-array name="neon_ring_color_entries">
+        <item>Akcent</item>
+        <item>Kolor aplikacji</item>
+    </string-array>
+    <string name="neon_glow_title">Poświata</string>
+    <string name="neon_ring_title">Dzwonek</string>
+    <string-array name="neon_ring_entries">
+        <item>Cienki</item>
+        <item>"Średni"</item>
+        <item>"Wyrazisty"</item>
+    </string-array>
+    <string name="neon_folders_title">Także foldery</string>
 </resources>

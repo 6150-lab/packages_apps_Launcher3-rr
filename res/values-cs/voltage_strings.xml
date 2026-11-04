@@ -53,4 +53,168 @@
     <string name="cloudy_shape_title">"Zataženo"</string>
     <string name="heart_shape_title">"Srdíčko"</string>
     <string name="scroll_shape_title">"Posunutí"</string>
+    <string name="action_lock">Uzamknout/odemknout aplikaci</string>
+    <string name="unlock_app">Aplikace odemčena v posledních</string>
+    <string name="lock_app">Aplikace uzamčena v posledních</string>
+    <string name="home_category_summary">Nastavit panel Google Now a další</string>
+    <string name="icons_category_summary">Nastavit velikost ikon a další</string>
+    <string name="app_drawer_category_title">Zásuvka aplikací</string>
+    <string name="app_drawer_category_summary">Přizpůsobte si zásuvku aplikací</string>
+    <string name="recents_category_summary">Přepracovat přehled</string>
+    <string name="actions_category_title">Rychlé akce</string>
+    <string name="title_show_google_app">Přejetím otevřete aplikaci Google</string>
+    <string name="suggestion_pref_screen_desc">Návrhy pro všechny aplikace a plochu</string>
+    <string name="pref_restart_summary">Spouštěč restartujte ručně a použijte čekající nastavení</string>
+    <string name="restarting_launcher">Restartování spouštěče...</string>
+    <string name="restarting_launcher_changes">Restartování spouštěče kvůli použití změn...</string>
+    <string name="updating_launcher_components">Restartování spouštěče kvůli aktualizaci jeho součástí...</string>
+    <string name="pref_sleep_gesture_title">Dvojklepnutím uspat</string>
+    <string name="pref_sleep_gesture_summary">Dvojklepnutím na prázdné místo plochy vypnete obrazovku</string>
+    <string name="pref_sleep_gesture_haptic_title">Vibrovat při dvojklepnutí pro uspání</string>
+    <string name="pref_sleep_gesture_haptic_summary">Poskytovat haptickou odezvu při gestu dvojklepnutí pro uspání</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">Zapíná se automaticky, když je aktivní styl iOS</string>
+    <string name="themed_icons_overlay_title">Překryté motivové ikony</string>
+    <string name="themed_icons_overlay_summary">Použít vlastní mapování motivových ikon pro aplikace bez nativní motivové ikony</string>
+    <string name="icon_size_title">Velikost ikony</string>
+    <string name="pause">Pozastavit</string>
+    <string name="pause_apps_dialog_title">Pozastavit %1$s?</string>
+    <string name="pause_apps_dialog_message">Oznámení aplikace %1$s budou pozastavena</string>
+    <string name="paused_apps_dialog_title">Aplikace pozastavena</string>
+    <string name="paused_apps_dialog_message">Aplikace %1$s byla pozastavena přímo ze spouštěče</string>
+    <string name="icon_two_lines_title">Použít dva řádky pro název aplikace</string>
+    <string name="recent_task_option_kill_app">Ukončit</string>
+    <string name="recents_app_killed">Aplikace ukončena</string>
+    <string name="row_height_title">Výška řádku</string>
+    <string name="hotseat_bg_title">Pozadí dolní lišty</string>
+    <string name="hotseat_bg_summary">Přidat poloprůhledné pozadí do lišty aplikací</string>
+    <string name="pref_show_hotseat_qsb_title">Zobrazit vyhledávací pole</string>
+    <string name="pref_show_hotseat_qsb_summary">Ve spodní části plochy</string>
+    <string name="dock_search_widget_title">Widget vyhledávání</string>
+    <string name="dock_search_widget_summary">Použít kompatibilní vyhledávací widget třetí strany v liště aplikací</string>
+    <string name="dock_search_widget_picker_title">Vyberte vyhledávací widget</string>
+    <string name="dock_search_widget_default">Výchozí vyhledávací widget</string>
+    <string name="drawer_style_title">Styl zásuvky aplikací</string>
+    <string name="drawer_style_summary_ios_forced">Zásuvka aplikací je v stylu iOS zakázána</string>
+    <string-array name="app_drawer_style_entries">
+        <item>Běžný (spodní list)</item>
+        <item>Vodorovný seznam</item>
+        <item>Svislý (stránkovaný OneUI)</item>
+        <item>Styl iOS</item>
+    </string-array>
+    <string name="drawer_search_title">Umístění vyhledávacího pole aplikací</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>"Skrytý"</item>
+        <item>Nahoře</item>
+        <item>Dole</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">Povolit připnuté aplikace</string>
+    <string name="pref_pinned_apps_enabled_summary">Zobrazit řádek připnutých aplikací pod vyhledávacím polem</string>
+    <string name="pref_pinned_apps_list_title">Seznam připnutých aplikací</string>
+    <string name="pref_pinned_apps_list_summary">Vyberte aplikace k připnutí</string>
+    <string name="allow_wallpaper_scrolling">Posouvání tapety</string>
+    <string name="allow_wallpaper_scrolling_summary">Efekt posouvání tapety pro více obrazovek</string>
+    <string name="allow_wallpaper_zooming">Přibližování tapety</string>
+    <string name="allow_wallpaper_zooming_summary">Přiblížit nebo oddálit tapetu při použití zásuvky nebo posledních aplikací</string>
+    <string name="show_top_shadow">Horní stín</string>
+    <string name="meminfo_text">K dispozici %1$s | %2$s</string>
+    <string name="recents_meminfo_title">Informace o paměti</string>
+    <string name="recents_meminfo_zram_title">Informace o ZRAM</string>
+    <string name="recents_chips_title">Použít kompaktní návrh akcí</string>
+    <string name="recents_chips_summary">Může být potřeba pro zobrazení velkého počtu akcí</string>
+    <string name="recents_lens_title">Čočka</string>
+    <string name="short_parallax_title">Povolit krátký paralaxní efekt</string>
+    <string name="short_parallax_summary">Při menším počtu stránek použít plný efekt posouvání tapety místo jejího oříznutí</string>
+    <string name="single_page_center_title">Jedna stránka uprostřed</string>
+    <string name="single_page_center_summary">Při použití jedné stránky vycentrovat tapetu</string>
+    <string name="drawer_scrollbar_title">Posuvník</string>
+    <string name="drawer_scrollbar_summary">Posuvník na straně zásuvky aplikací</string>
+    <string name="perf_dark_status_bar_title">Tmavý stavový řádek</string>
+    <string name="perf_dark_status_bar_summary">Vždy používat tmavý stavový řádek na ploše</string>
+    <string name="show_quickspace_title">Na první pohled</string>
+    <string name="show_quickspace_summary">Zobrazit v horní části plochy</string>
+    <string name="quickspace_style_title">Styl Na první pohled</string>
+    <string-array name="quickspace_style_entries">
+        <item>"Výchozí"</item>
+        <item>Rozšířený</item>
+        <item>Remix</item>
+        <item>Remix stránkovaný</item>
+        <item>Remix svislý</item>
+        <item>Orbit</item>
+        <item>Neonová cedule</item>
+        <item>Sklo</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">PRÁVĚ HRAJE</string>
+    <string name="quickspace_vertical_note">POZNÁMKA</string>
+    <string name="quickspace_vertical_weather">POČASÍ</string>
+    <string name="quickspace_vertical_calendar">KALENDÁŘ</string>
+    <string name="quickspace_vertical_battery">BATERIE</string>
+    <string name="quickspace_vertical_a11y_calendar">Otevřít kalendář</string>
+    <string name="quickspace_vertical_a11y_weather">Otevřít počasí</string>
+    <string name="quickspace_vertical_a11y_calendar_event">Otevřít událost v kalendáři</string>
+    <string name="quickspace_vertical_a11y_event">Otevřít přehrávání</string>
+    <string name="quickspace_vertical_a11y_note">Otevřít poznámku</string>
+    <string name="quickspace_vertical_a11y_battery">Otevřít nastavení baterie</string>
+    <string name="quickspace_voltage_accent_title">Hodiny v barvě akcentu</string>
+    <string name="quickspace_voltage_accent_summary">Obarvit první číslici hodin ve stylech Remixu</string>
+    <string name="quickspace_voltage_minimal_title">Minimální režim</string>
+    <string name="quickspace_voltage_minimal_summary">Sbalit sekundární obsah Remixu do klepnutelných rychlých ikon</string>
+    <string name="quickspace_grt_morning">Dobré ráno.</string>
+    <string name="quickspace_grt_evening">Dobrý večer.</string>
+    <string name="quickspace_grt_afternoon">Dobré odpoledne.</string>
+    <string name="quickspace_grt_night">Dobrou noc.</string>
+    <string name="quickspace_grt_general">Dobrý den.</string>
+    <string name="quickspace_ext_one">Dnes je</string>
+    <string name="quickspace_ext_two">Je</string>
+    <string name="qe_now_playing_unknown_artist">Neznámý interpret</string>
+    <string name="qe_now_playing_by">Od</string>
+    <string name="quickspace_now_playing_summary">Zobrazit právě přehrávanou skladbu</string>
+    <string name="quickspace_alternate_style_title">Rozšířený styl</string>
+    <string name="quickspace_alternate_style_summary">Přepnout na rozšířený styl</string>
+    <string name="quickspace_psa_title">Náhodné zprávy</string>
+    <string name="quickspace_psa_summary">Oživte svého společníka náhodnými zprávami</string>
+    <string name="intent_no_app_clock_found">Nepodařilo se najít aktivitu kalendáře nebo hodin</string>
+    <string name="quick_event_weather_rain">Deštivo</string>
+    <string name="quick_event_weather_clear">Jasno</string>
+    <string name="quick_event_weather_storm">Bouřlivo</string>
+    <string name="quick_event_weather_snow">Sněžení</string>
+    <string name="quick_event_weather_wind">Větrno</string>
+    <string name="quick_event_weather_mist">Mlhavo</string>
+    <string name="quickspace_battery_title">Baterie zařízení</string>
+    <string name="quickspace_battery_summary">Zobrazit baterii telefonu a připojených zařízení Bluetooth ve stylech Remix</string>
+    <string name="quickspace_calendar_summary">Zobrazit vaši další událost z libovolného zapnutého kalendáře</string>
+    <string name="quickspace_calendar_untitled">Událost bez názvu</string>
+    <string name="all_apps_dark_text_title">Tmavé popisky aplikací</string>
+    <string name="all_apps_dark_text_summary">Vždy používat tmavý text pro popisky aplikací v zásobníku aplikací</string>
+    <string name="app_info_title">Informace o aplikaci</string>
+    <string name="app_info_source">Zdroj</string>
+    <string name="app_info_last_update">Poslední aktualizace</string>
+    <string name="icon_pack_add">Nainstalovat více</string>
+    <string name="icon_pack_no_market">Není k dispozici žádný obchod s aplikacemi</string>
+    <string name="pebble_shape_title">Pebble</string>
+    <string name="vessel_shape_title">Vessel</string>
+    <string name="pure_square_shape_title">Čtverec</string>
+    <string name="squircle_shape_title">Squircle</string>
+    <string name="tapered_rect_shape_title">Zúžený obdélník</string>
+    <string name="teardrop_shape_title">Kapka</string>
+    <string name="rounded_rect_shape_title">Zaoblený obdélník</string>
+    <string name="cylindrical_shape_title">Válcový</string>
+    <string name="flower_shape_title">Květina</string>
+    <string name="hexagon_shape_title">Šestiúhelník</string>
+    <string name="ios_style_shape_title">Styl iOS</string>
+    <string name="leaf_shape_title">List</string>
+    <string name="meow_shape_title">Mňau</string>
+    <string name="samsung_style_shape_title">Styl Samsung</string>
+    <string name="stretched_shape_title">Roztažený</string>
+    <string name="home_screen_actions">Akce plochy</string>
+    <string name="remove_all_views_from_home_screen">Vyčistit plochu</string>
+    <string name="remove_all_views_from_home_screen_desc">Plocha bude vyčištěna. Chcete pokračovat?</string>
+    <string name="home_screen_all_views_removed_msg">Plocha vyčištěna</string>
+    <string name="sort_alphabetical">Řadit podle abecedy</string>
+    <string name="sort_install_date">Řadit podle data instalace</string>
+    <string name="sort_usage">Řadit podle využití</string>
+    <string name="navbar_burn_in_protection_title">Ochrana navigačního panelu proti vypálení</string>
+    <string name="navbar_burn_in_protection_summary">Pravidelně posouvat navigační rukojeť, aby se zabránilo vypálení displeje</string>
+    <string name="navbar_burn_in_interval_title">Interval posunu</string>
+    <string name="pref_blur_background_at_app_launch_title">Rozmazání pozadí při spouštění/zavírání aplikace</string>
+    <string name="pref_blur_background_at_app_launch_summary">Rozmazat pozadí během animací spouštění a zavírání aplikací</string>
 </resources>

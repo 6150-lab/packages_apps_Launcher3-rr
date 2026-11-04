@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"Seneste"</string>
     <string name="glance_content_description">Overblik</string>
+    <string name="drawer_open_keyboard_title">Stryg for at starte søgning</string>
+    <string name="drawer_open_keyboard_summary">Åbn tastaturet, når appskuffen vises</string>
+    <string-array name="recents_style_entries">
+        <item>"Oversigt"</item>
+        <item>Smal seneste (sidepanel)</item>
+        <item>Roterende seneste (hjul)</item>
+    </string-array>
+    <string name="neon_icons_title">Neonikoner</string>
+    <string name="neon_icons_summary">Hvert apps symbol i din accentfarve inden for en lysende ring. Aktiverer temabaserede ikoner.</string>
+    <string name="icon_style_rr_title">Ikonstil</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Standard"</item>
+        <item>Tema</item>
+        <item>Neon</item>
+    </string-array>
+    <string name="neon_ring_color_title">Ringfarve</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Accent</item>
+        <item>Appens egen farve</item>
+    </string-array>
+    <string name="neon_glow_title">Glød</string>
+    <string name="neon_ring_title">Ringning</string>
+    <string-array name="neon_ring_entries">
+        <item>Tynd</item>
+        <item>"Mellem"</item>
+        <item>"Fed"</item>
+    </string-array>
+    <string name="neon_folders_title">Mapper også</string>
 </resources>

@@ -4,4 +4,30 @@
     <string name="drawer_open_keyboard_summary">இழுவைதோன்றின் விசைப்பலகைதிற</string>
     <string name="pref_recents_style_title">"சமீபத்தியவை"</string>
     <string name="glance_content_description">முகப்புத் தகவல்</string>
+    <string-array name="recents_style_entries">
+        <item>"மேலோட்டப் பார்வை"</item>
+        <item>ஒல்லியான சமீபத்தியவை (பக்கப் பலகம்)</item>
+        <item>சுழலும் சமீபத்தியவை (சக்கரம்)</item>
+    </string-array>
+    <string name="neon_icons_title">நியான் ஐகான்கள்</string>
+    <string name="neon_icons_summary">ஒளிரும் வளையத்திற்குள், ஒவ்வொரு ஆப்பின் சின்னமும் உங்கள் உச்சரிப்பு நிறத்தில் இருக்கும். தீம் ஐகான்களை இயக்கும்.</string>
+    <string name="icon_style_rr_title">ஐகான் பாணி</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"இயல்பு"</item>
+        <item>தீம்</item>
+        <item>நியான்</item>
+    </string-array>
+    <string name="neon_ring_color_title">வளைய நிறம்</string>
+    <string-array name="neon_ring_color_entries">
+        <item>உச்சரிப்பு</item>
+        <item>ஆப்பின் சொந்த நிறம்</item>
+    </string-array>
+    <string name="neon_glow_title">ஒளிர்வு</string>
+    <string name="neon_ring_title">ரிங்</string>
+    <string-array name="neon_ring_entries">
+        <item>ஒல்லியான</item>
+        <item>"நடுத்தரம்"</item>
+        <item>"தடிமன்"</item>
+    </string-array>
+    <string name="neon_folders_title">கோப்புறைகளுக்கும்</string>
 </resources>

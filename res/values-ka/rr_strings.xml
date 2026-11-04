@@ -4,4 +4,30 @@
     <string name="drawer_open_keyboard_summary">კლავიატურის გამოჩენა მაშივე, როცა პროგრამების სია ხილული იქნება</string>
     <string name="pref_recents_style_title">"ბოლოდროინდელი"</string>
     <string name="glance_content_description">მოკლე მიმოხილვა</string>
+    <string-array name="recents_style_entries">
+        <item>"მიმოხილვა"</item>
+        <item>გამოყენებული აპლიკაციების ვიწრო პანელი (გვერდითი პანელი)</item>
+        <item>გამოყენებული აპლიკაციების ბორბალი</item>
+    </string-array>
+    <string name="neon_icons_title">ნეონის ხატულები</string>
+    <string name="neon_icons_summary">თითოეული აპის ხატულა თქვენი აქცენტის ფერით, მბზინავ წრეში. ჩართავს თემურ ხატულებს.</string>
+    <string name="icon_style_rr_title">ხატულების სტილი</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"ნაგულისხმევი"</item>
+        <item>თემური</item>
+        <item>ნეონი</item>
+    </string-array>
+    <string name="neon_ring_color_title">წრის ფერი</string>
+    <string-array name="neon_ring_color_entries">
+        <item>აქცენტი</item>
+        <item>აპის საკუთარი ფერი</item>
+    </string-array>
+    <string name="neon_glow_title">ბზინვარება</string>
+    <string name="neon_ring_title">ზარი</string>
+    <string-array name="neon_ring_entries">
+        <item>თხელი</item>
+        <item>"საშუალო"</item>
+        <item>"მუქი"</item>
+    </string-array>
+    <string name="neon_folders_title">საქაღალდეებიც</string>
 </resources>

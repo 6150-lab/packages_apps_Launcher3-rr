@@ -13,4 +13,21 @@
         <item>"Médio"</item>
         <item>"Negrito"</item>
     </string-array>
+    <string-array name="recents_style_entries">
+        <item>"Visão geral"</item>
+        <item>Recentes estreitos (painel lateral)</item>
+        <item>Recentes giratórios (roda)</item>
+    </string-array>
+    <string name="neon_icons_title">Ícones neon</string>
+    <string name="neon_icons_summary">O glifo de cada app na sua cor de destaque, dentro de um anel luminoso. Ativa ícones temáticos.</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Predefinição"</item>
+        <item>Temático</item>
+        <item>Neon</item>
+    </string-array>
+    <string-array name="neon_ring_color_entries">
+        <item>Destaque</item>
+        <item>Cor própria do app</item>
+    </string-array>
+    <string name="neon_folders_title">Pastas também</string>
 </resources>

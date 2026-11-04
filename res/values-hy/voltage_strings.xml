@@ -26,4 +26,195 @@
     <string name="cloudy_shape_title">"Ամպամած"</string>
     <string name="heart_shape_title">"Սիրտ"</string>
     <string name="scroll_shape_title">"Ոլորել"</string>
+    <string name="action_lock">Կողպել/ապակողպել հավելվածը</string>
+    <string name="unlock_app">Հավելվածն ապակողպված է վերջինների մեջ</string>
+    <string name="lock_app">Հավելվածն կողպված է վերջինների մեջ</string>
+    <string name="home_category_summary">Կարգավորել Google-ի ընթացիկ վահանակը և ավելին</string>
+    <string name="icons_category_summary">Կարգավորել պատկերակի չափը և ավելին</string>
+    <string name="app_drawer_category_title">Հավելվածների դարակ</string>
+    <string name="app_drawer_category_summary">Հարմարեցրեք ձեր հավելվածների դարակը</string>
+    <string name="recents_category_summary">Վերանայել ընդհանուր տեսքի էկրանը</string>
+    <string name="interface_category_title">Ինտերֆեյս</string>
+    <string name="actions_category_title">Արագ գործողություններ</string>
+    <string name="title_show_google_app">Սահեցրու՝ Google հավելվածը բացելու համար</string>
+    <string name="msg_minus_one_on_left">Երբ աջ սահեցնես հիմնական էկրանից</string>
+    <string name="msg_minus_one_on_right">Երբ ձախ սահեցնես հիմնական էկրանից</string>
+    <string name="suggestion_pref_screen_desc">Բոլոր հավելվածների և հիմնական էկրանի առաջարկների համար</string>
+    <string name="pref_restart_summary">Ձեռքով վերագործարկիր գործարկիչը՝ սպասվող կարգավորումները կիրառելու համար</string>
+    <string name="restarting_launcher">Գործարկիչը վերագործարկվում է...</string>
+    <string name="restarting_launcher_changes">Գործարկիչը վերագործարկվում է փոփոխությունները կիրառելու համար...</string>
+    <string name="updating_launcher_components">Գործարկիչը վերագործարկվում է՝ բաղադրիչները թարմացնելու համար...</string>
+    <string name="pref_sleep_gesture_title">Կրկնակի հպիր՝ քնելու համար</string>
+    <string name="pref_sleep_gesture_summary">Կրկնակի հպիր հիմնական էկրանի դատարկ տարածքին՝ էկրանը անջատելու համար</string>
+    <string name="pref_sleep_gesture_haptic_title">Թրթռալ կրկնակի հպելիս՝ քնելու համար</string>
+    <string name="pref_sleep_gesture_haptic_summary">Հապտիկ արձագանք տալ կրկնակի հպման ժեստով քնելու համար</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">Ավտոմատ միացված է, երբ iOS ոճն ակտիվ է</string>
+    <string name="settings_lock_layout_title">Կողպել դասավորությունը</string>
+    <string name="settings_lock_layout_summary_on">Հիմնական էկրանի վրա պատկերակներ և վիջեթներ ավելացնել, հեռացնել և տեղափոխել հնարավոր չէ</string>
+    <string name="settings_lock_layout_summary_off">Հիմնական էկրանի վրա պատկերակներ և վիջեթներ կարելի է ավելացնել, հեռացնել և տեղափոխել</string>
+    <string name="settings_edit_widgets_error">Հիմնական էկրանին վիջեթներ ավելացնել հնարավոր չէ</string>
+    <string name="pref_themed_icons_title">Օգտագործել թեմայական պատկերակներ դարակում</string>
+    <string name="pref_themed_icons_summary">Հետևել հիմնական էկրանին օգտագործվող թեմայական պատկերակներին</string>
+    <string name="themed_icons_overlay_title">Վերադրված թեմայական պատկերակներ</string>
+    <string name="themed_icons_overlay_summary">Օգտագործել սովորական թեմայական պատկերակների քարտեզագրում այն հավելվածների համար, որոնք բնիկ թեմայական պատկերակ չունեն</string>
+    <string name="desktop_show_labels">Ցույց տալ պատկերակների անունները հիմնական էկրանին</string>
+    <string name="drawer_show_labels">Ցույց տալ պատկերակների անունները դարակում</string>
+    <string name="trust_apps_manager_name">Թաքնված և պաշտպանված հավելվածներ</string>
+    <string name="trust_apps_auth_manager">Ապակողպիր՝ թաքնված և պաշտպանված հավելվածները կառավարելու համար</string>
+    <string name="trust_apps_auth_open_app">Նույնականացիր՝ %1$s բացելու համար</string>
+    <string name="trust_apps_no_lock_error">Խնդրում ենք կարգավորել ապահով կողպէկրան՝ հավելվածների հասանելիությունը սահմանափակելու համար</string>
+    <string name="trust_apps_info_hidden">Թաքնված հավելվածները և դրանց վիջեթները չեն ցուցադրվում դարակում</string>
+    <string name="trust_apps_info_protected">Պաշտպանված հավելվածները գործարկիչից բացելու համար պահանջվում է նույնականացում</string>
+    <string name="icon_size_title">Պատկերակի չափը</string>
+    <string name="pause">Դադար</string>
+    <string name="pause_apps_dialog_title">Դադարեցնել %1$s-ը՞</string>
+    <string name="pause_apps_dialog_message">%1$s-ի ծանուցումները կդադարեցվեն</string>
+    <string name="paused_apps_dialog_title">Հավելվածը դադարեցվեց</string>
+    <string name="paused_apps_dialog_message">%1$s-ը ուղղակիորեն դադարեցվեց գործարկչից</string>
+    <string name="icon_two_lines_title">Օգտագործել երկու տող հավելվածի անվան համար</string>
+    <string name="recent_task_option_kill_app">Փակել</string>
+    <string name="recents_app_killed">Հավելվածը փակվեց</string>
+    <string name="row_height_title">Տողի բարձրություն</string>
+    <string name="hotseat_bg_title">Հիմնական գոտու ֆոն</string>
+    <string name="hotseat_bg_summary">Ավելացնել կիսաթափանցիկ ֆոն հավելվածների գոտուն</string>
+    <string name="pref_show_hotseat_qsb_title">Ցույց տալ որոնման գոտին</string>
+    <string name="pref_show_hotseat_qsb_summary">Հիմնական էկրանի ներքևում</string>
+    <string name="dock_search_widget_title">Որոնման վիջեթ</string>
+    <string name="dock_search_widget_summary">Օգտագործել համատեղելի երրորդ կողմի որոնման վիջեթ գոտում</string>
+    <string name="dock_search_widget_picker_title">Ընտրել որոնման վիջեթ</string>
+    <string name="dock_search_widget_default">Լռելյայն որոնման վիջեթ</string>
+    <string name="drawer_style_title">Հավելվածների դարակի ոճ</string>
+    <string name="drawer_style_summary_ios_forced">Հավելվածների դարակն անջատված է iOS ոճում</string>
+    <string-array name="app_drawer_style_entries">
+        <item>Սովորական (ներքևի թերթ)</item>
+        <item>Հորիզոնական ցանկ</item>
+        <item>Ուղղահայաց (OneUI էջավորված)</item>
+        <item>iOS ոճ</item>
+    </string-array>
+    <string name="drawer_search_title">Հավելվածների որոնման գոտու տեղադրություն</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>"Թաքցված"</item>
+        <item>Վերև</item>
+        <item>Ներքև</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">Միացնել ամրացված հավելվածները</string>
+    <string name="pref_pinned_apps_enabled_summary">Ցույց տալ ամրացված հավելվածների շարք որոնման գոտու տակ</string>
+    <string name="pref_pinned_apps_list_title">Ամրացված հավելվածների ցանկ</string>
+    <string name="pref_pinned_apps_list_summary">Ընտրել ամրացնելու հավելվածները</string>
+    <string name="allow_wallpaper_scrolling">Պաստառի ոլորում</string>
+    <string name="allow_wallpaper_scrolling_summary">Պաստառի ոլորման էֆեկտ բազմաթիվ էկրանների համար</string>
+    <string name="allow_wallpaper_zooming">Պաստառի մասշտաբավորում</string>
+    <string name="allow_wallpaper_zooming_summary">Մեծացնել կամ փոքրացնել պաստառը դարակը կամ վերջին հավելվածները օգտագործելիս</string>
+    <string name="show_statusbar_title">Կարգավիճակի գոտի</string>
+    <string name="show_top_shadow">Վերևի ստվեր</string>
+    <string name="meminfo_text">%1$s հասանելի է | %2$s</string>
+    <string name="recents_meminfo_title">Հիշողության տեղեկություն</string>
+    <string name="recents_meminfo_zram_title">ZRAM տեղեկություն</string>
+    <string name="recents_chips_title">Օգտագործել սեղմ գործողությունների ձև</string>
+    <string name="recents_chips_summary">Կարող է անհրաժեշտ լինել մեծ քանակությամբ գործողությունների ցուցադրման համար</string>
+    <string name="short_parallax_title">Թույլատրել կարճ պարալաքս</string>
+    <string name="short_parallax_summary">Միացնել պաստառի լրիվ ոլորման էֆեկտը քիչ էջերի դեպքում՝ պաստառը կտրելու փոխարեն</string>
+    <string name="single_page_center_title">Մեկ էջի կենտրոն</string>
+    <string name="single_page_center_summary">Կենտրոնացնել պաստառը, եթե օգտագործվում է միայն մեկ էջ</string>
+    <string name="drawer_scrollbar_title">Ոլորման գոտի</string>
+    <string name="drawer_scrollbar_summary">Ոլորման գոտի դարակի կողքին</string>
+    <string name="perf_dark_status_bar_title">Մուգ կարգավիճակի գոտի</string>
+    <string name="perf_dark_status_bar_summary">Միշտ օգտագործել մուգ կարգավիճակի գոտի հիմնական էկրանին</string>
+    <string name="show_quickspace_title">At A Glance</string>
+    <string name="show_quickspace_summary">Ցույց տալ հիմնական էկրանի վերևում</string>
+    <string name="quickspace_style_title">At A Glance ոճ</string>
+    <string-array name="quickspace_style_entries">
+        <item>"Կանխադրված"</item>
+        <item>Ընդլայնված</item>
+        <item>Remix</item>
+        <item>Remix էջավորված</item>
+        <item>Remix ուղղահայաց</item>
+        <item>Orbit</item>
+        <item>Neon sign</item>
+        <item>Ապակե</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">ՆՎԱԳԱՐԿՎՈՒՄ Է</string>
+    <string name="quickspace_vertical_note">ՆՇՈՒՄ</string>
+    <string name="quickspace_vertical_weather">ԵՂԱՆԱԿ</string>
+    <string name="quickspace_vertical_calendar">ՕՐԱՑՈՒՅՑ</string>
+    <string name="quickspace_vertical_battery">ՄԱՐՄՆԻ ԼԻՑՔ</string>
+    <string name="quickspace_vertical_a11y_calendar">Բացել օրացույցը</string>
+    <string name="quickspace_vertical_a11y_weather">Բացել եղանակը</string>
+    <string name="quickspace_vertical_a11y_calendar_event">Բացել օրացույցի իրադարձությունը</string>
+    <string name="quickspace_vertical_a11y_event">Բացել այժմ նվագվողը</string>
+    <string name="quickspace_vertical_a11y_note">Բացել նշումը</string>
+    <string name="quickspace_vertical_a11y_battery">Բացել մարտկոցի կարգավորումները</string>
+    <string name="quickspace_voltage_accent_title">Ակցենտ գույնի ժամացույց</string>
+    <string name="quickspace_voltage_accent_summary">Ներկել ժամացույցի առաջին թիվը Remix ոճերում</string>
+    <string name="quickspace_voltage_minimal_title">Նվազագույն ռեժիմ</string>
+    <string name="quickspace_voltage_minimal_summary">Ծալել Remix երկրորդային բովանդակությունը հպելի արագ պատկերակների</string>
+    <string name="quickspace_grt_morning">Բարի լույս։</string>
+    <string name="quickspace_grt_evening">Բարի երեկո։</string>
+    <string name="quickspace_grt_afternoon">Բարի կեսօր։</string>
+    <string name="quickspace_grt_night">Բարի գիշեր։</string>
+    <string name="quickspace_grt_general">Բարի օր։</string>
+    <string name="quickspace_ext_one">Այսօր է</string>
+    <string name="quickspace_ext_two">Ժամը</string>
+    <string name="qe_now_playing_unknown_artist">Անհայտ կատարող</string>
+    <string name="qe_now_playing_ext_one">Հիմա նվագարկվում է</string>
+    <string name="qe_now_playing_by">Կատարող՝</string>
+    <string name="quickspace_now_playing_title">Հիմա նվագարկվում է</string>
+    <string name="quickspace_now_playing_summary">Ցույց տալ այն երգը, որ նվագում ես</string>
+    <string name="quickspace_alternate_style_title">Ընդլայնված ոճ</string>
+    <string name="quickspace_alternate_style_summary">Անցնել ընդլայնված ոճի</string>
+    <string name="quickspace_psa_title">Պատահական հաղորդագրություններ</string>
+    <string name="quickspace_psa_summary">Ավելի կենդանի դարձրու ընկերոջդ պատահական հաղորդագրություններով</string>
+    <string name="intent_no_app_clock_found">Չհաջողվեց գտնել օրացույցի կամ ժամացույցի գործունեությունը</string>
+    <string name="quick_event_ambient_weather_title">Եղանակի թարմացում</string>
+    <string name="quick_event_ambient_weather_summary">Ցույց տալ ընթացիկ եղանակի թարմացումը</string>
+    <string name="quick_event_ambient_weather_enabled_info">Պահանջվում է եղանակի ծառայությունը միացված լինի</string>
+    <string name="quick_event_weather_rain">Անձրևային</string>
+    <string name="quick_event_weather_clear">Պարզ երկինք</string>
+    <string name="quick_event_weather_storm">Փոթորկային</string>
+    <string name="quick_event_weather_snow">Ձնառատ</string>
+    <string name="quick_event_weather_wind">Քամոտ</string>
+    <string name="quick_event_weather_mist">Մառախլապատ</string>
+    <string name="quick_event_weather_city_title">Ընթացիկ տեղորոշում</string>
+    <string name="quick_event_weather_city_summary">Ցույց տալ ընթացիկ եղանակի տեղորոշումը</string>
+    <string name="quick_event_weather_text_title">Ընթացիկ պայման</string>
+    <string name="quick_event_weather_text_summary">Ցույց տալ ընթացիկ եղանակի պայմանի ամփոփումը</string>
+    <string name="quickspace_battery_title">Սարքի մարտկոց</string>
+    <string name="quickspace_battery_summary">Ցույց տալ հեռախոսի և միացված Bluetooth սարքի մարտկոցը Remix ոճերում</string>
+    <string name="quickspace_calendar_summary">Ցույց տալ քո հաջորդ իրադարձությունը ցանկացած միացված օրացույցից</string>
+    <string name="quickspace_calendar_untitled">Անանուն իրադարձություն</string>
+    <string name="all_apps_dark_text_title">Մուգ հավելվածների անուններ</string>
+    <string name="all_apps_dark_text_summary">Միշտ օգտագործել մուգ տեքստ հավելվածների անունների համար դարակում</string>
+    <string name="app_info_title">Հավելվածի տեղեկություն</string>
+    <string name="app_info_source">Աղբյուր</string>
+    <string name="app_info_last_update">Վերջին թարմացում</string>
+    <string name="icon_pack_title">Պատկերակների փաթեթ</string>
+    <string name="icon_pack_add">Տեղադրել ավելին</string>
+    <string name="icon_pack_no_market">Հասանելի հավելվածների խանութ չկա</string>
+    <string name="pebble_shape_title">Pebble</string>
+    <string name="vessel_shape_title">Vessel</string>
+    <string name="pure_square_shape_title">Մաքուր քառակուսի</string>
+    <string name="squircle_shape_title">Squircle</string>
+    <string name="tapered_rect_shape_title">Սեղմված ուղղանկյուն</string>
+    <string name="teardrop_shape_title">Արցունքաձև</string>
+    <string name="rounded_rect_shape_title">Կլորացված ուղղանկյուն</string>
+    <string name="cylindrical_shape_title">Գլանաձև</string>
+    <string name="flower_shape_title">Ծաղիկ</string>
+    <string name="hexagon_shape_title">Վեցանկյուն</string>
+    <string name="ios_style_shape_title">iOS ոճ</string>
+    <string name="leaf_shape_title">Տերև</string>
+    <string name="meow_shape_title">Meow</string>
+    <string name="samsung_style_shape_title">Samsung ոճ</string>
+    <string name="stretched_shape_title">Ձգված</string>
+    <string name="home_screen_actions">Հիմնական էկրանի գործողություններ</string>
+    <string name="remove_all_views_from_home_screen">Մաքրել հիմնական էկրանը</string>
+    <string name="remove_all_views_from_home_screen_desc">Հիմնական էկրանը կմաքրվի։ Շարունակե՞լ։</string>
+    <string name="home_screen_all_views_removed_msg">Հիմնական էկրանը մաքրվեց</string>
+    <string name="sort_alphabetical">Դասավորել ըստ այբբենական կարգի</string>
+    <string name="sort_install_date">Դասավորել ըստ տեղադրման ամսաթվի</string>
+    <string name="sort_usage">Դասավորել ըստ օգտագործման</string>
+    <string name="navbar_burn_in_protection_title">Նավիգացիայի գոտու այրման պաշտպանություն</string>
+    <string name="navbar_burn_in_protection_summary">Պարբերաբար տեղափոխել նավիգացիայի բռնակը՝ էկրանի այրումը կանխելու համար</string>
+    <string name="navbar_burn_in_interval_title">Տեղաշարժի ինտերվալ</string>
+    <string name="pref_blur_background_at_app_launch_title">Ֆոնի թարթում հավելվածի բացման/փակման ժամանակ</string>
+    <string name="pref_blur_background_at_app_launch_summary">Ֆոնը աղոտացնել հավելվածի բացման և փակման անիմացիաների ընթացքում</string>
 </resources>

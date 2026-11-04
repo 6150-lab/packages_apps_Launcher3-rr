@@ -50,4 +50,171 @@
     <string name="cloudy_shape_title">"Pilves"</string>
     <string name="heart_shape_title">"Süda"</string>
     <string name="scroll_shape_title">"Keri"</string>
+    <string name="action_lock">Lukusta/ava rakendus</string>
+    <string name="unlock_app">Rakendus avatud hiljutistes</string>
+    <string name="lock_app">Rakendus lukustatud hiljutistes</string>
+    <string name="home_category_summary">Google\'i paneeli ja muu seadistamine</string>
+    <string name="icons_category_summary">Ikoonide suuruse ja muu seadistamine</string>
+    <string name="app_drawer_category_title">Rakenduste sahtel</string>
+    <string name="app_drawer_category_summary">Kohanda oma rakenduste sahtlit</string>
+    <string name="recents_category_summary">Ülevaatuse ekraani uuendamine</string>
+    <string name="actions_category_title">Kiirtoimingud</string>
+    <string name="title_show_google_app">Pühi, et avada Google\'i rakendus</string>
+    <string name="suggestion_pref_screen_desc">Rakenduste sahtli ja avakuva soovitustele</string>
+    <string name="pref_restart_summary">Taaskäivita käivitaja käsitsi, et rakendada ootel seaded</string>
+    <string name="restarting_launcher">Käivitaja taaskäivitamine…</string>
+    <string name="restarting_launcher_changes">Muudatuste rakendamiseks taaskäivitatakse käivitaja…</string>
+    <string name="updating_launcher_components">Käivitaja komponentide värskendamiseks taaskäivitatakse käivitaja…</string>
+    <string name="pref_sleep_gesture_title">Topeltpuudutusega uinumine</string>
+    <string name="pref_sleep_gesture_summary">Topeltpuudutus tühjal avakuval lülitab ekraani välja</string>
+    <string name="pref_sleep_gesture_haptic_title">Vibreeri topeltpuudutusega uinumisel</string>
+    <string name="pref_sleep_gesture_haptic_summary">Anna topeltpuudutusega uinumisžesti korral haptiline tagasiside</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">Lülitub automaatselt sisse, kui iOS-i stiil on aktiivne</string>
+    <string name="settings_lock_layout_title">Lukusta paigutus</string>
+    <string name="pref_themed_icons_title">Kasuta sahtlis teematud ikoone</string>
+    <string name="pref_themed_icons_summary">Kasuta avakuval kasutatavaid teematud ikoone</string>
+    <string name="themed_icons_overlay_title">Ülekattega teematud ikoonid</string>
+    <string name="themed_icons_overlay_summary">Kasuta kohandatud teematud ikoonide vastavust rakendustele, millel pole oma teematud ikooni</string>
+    <string name="icon_size_title">Ikooni suurus</string>
+    <string name="pause">Peata</string>
+    <string name="pause_apps_dialog_title">Kas peatada %1$s?</string>
+    <string name="pause_apps_dialog_message">Märguanded rakendusele %1$s peatatakse</string>
+    <string name="paused_apps_dialog_title">Rakendus peatatud</string>
+    <string name="paused_apps_dialog_message">Rakendus %1$s peatati otse käivitajast</string>
+    <string name="icon_two_lines_title">Rakenduse nimi kahel real</string>
+    <string name="recent_task_option_kill_app">Sulge</string>
+    <string name="recents_app_killed">Rakendus suleti</string>
+    <string name="row_height_title">Rea kõrgus</string>
+    <string name="hotseat_bg_title">Kiirrakenduste riba taust</string>
+    <string name="hotseat_bg_summary">Lisa rakenduste riba taha läbipaistev taust</string>
+    <string name="pref_show_hotseat_qsb_title">Kuva otsinguriba</string>
+    <string name="pref_show_hotseat_qsb_summary">Avakuva allservas</string>
+    <string name="dock_search_widget_title">Otsinguvidin</string>
+    <string name="dock_search_widget_summary">Kasuta riba jaoks ühilduvat kolmanda osapoole otsinguvidinat</string>
+    <string name="dock_search_widget_picker_title">Vali otsinguvidin</string>
+    <string name="dock_search_widget_default">Vaikimisi otsinguvidin</string>
+    <string name="drawer_style_title">Rakendusesahtli stiil</string>
+    <string name="drawer_style_summary_ios_forced">Rakendusesahtel on iOS-stiilis keelatud</string>
+    <string-array name="app_drawer_style_entries">
+        <item>Tavaline (alumine paneel)</item>
+        <item>Horisontaalne loend</item>
+        <item>Vertikaalne (OneUI lehitud)</item>
+        <item>iOS-stiil</item>
+    </string-array>
+    <string name="drawer_search_title">Rakenduste otsinguriba asukoht</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>Peidetud</item>
+        <item>Ülal</item>
+        <item>All</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">Luba kinnitatud rakendused</string>
+    <string name="pref_pinned_apps_enabled_summary">Kuva otsinguriba all rida kinnitatud rakendusi</string>
+    <string name="pref_pinned_apps_list_title">Kinnitatud rakenduste loend</string>
+    <string name="pref_pinned_apps_list_summary">Vali kinnitatavad rakendused</string>
+    <string name="allow_wallpaper_scrolling">Taustapildi kerimine</string>
+    <string name="allow_wallpaper_scrolling_summary">Taustapildi kerimisefekt mitme ekraani puhul</string>
+    <string name="allow_wallpaper_zooming">Taustapildi suumimine</string>
+    <string name="allow_wallpaper_zooming_summary">Suumi taustapilti sisse või välja rakendusesahtli või hiljutiste kasutamisel</string>
+    <string name="show_top_shadow">Ülemine vari</string>
+    <string name="meminfo_text">%1$s saadaval | %2$s</string>
+    <string name="recents_meminfo_title">Mälu teave</string>
+    <string name="recents_meminfo_zram_title">ZRAM-i teave</string>
+    <string name="recents_chips_title">Kasuta kompaktset tegevuste kujundust</string>
+    <string name="recents_chips_summary">Võib olla vajalik suure hulga tegevuste kuvamiseks</string>
+    <string name="recents_lens_title">Objektiiv</string>
+    <string name="short_parallax_title">Luba lühike paralaks</string>
+    <string name="short_parallax_summary">Luba väiksema arvu lehtede korral täielik taustapildi kerimisefekt taustapildi lõikamise asemel</string>
+    <string name="single_page_center_title">Ühe lehe keskjoondus</string>
+    <string name="single_page_center_summary">Tsentreeri taustapilt, kui kasutatakse ainult ühte lehte</string>
+    <string name="drawer_scrollbar_title">Kerimisriba</string>
+    <string name="drawer_scrollbar_summary">Kerimisriba rakendusesahtli küljel</string>
+    <string name="perf_dark_status_bar_title">Tume olekuriba</string>
+    <string name="perf_dark_status_bar_summary">Kasuta avakuval alati tumedat olekuriba</string>
+    <string name="show_quickspace_title">At A Glance</string>
+    <string name="show_quickspace_summary">Kuva avakuva ülaosas</string>
+    <string name="quickspace_style_title">At A Glance\'i stiil</string>
+    <string-array name="quickspace_style_entries">
+        <item>"Vaikeseade"</item>
+        <item>Laiendatud</item>
+        <item>Remiks</item>
+        <item>Remix lehitud</item>
+        <item>Remix vertikaalne</item>
+        <item>Orbit</item>
+        <item>Neoonsilt</item>
+        <item>Klaas</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">ESITATAKSE</string>
+    <string name="quickspace_vertical_note">MÄRKMED</string>
+    <string name="quickspace_vertical_weather">ILM</string>
+    <string name="quickspace_vertical_calendar">KALENDER</string>
+    <string name="quickspace_vertical_battery">AKU</string>
+    <string name="quickspace_vertical_a11y_calendar">Ava kalender</string>
+    <string name="quickspace_vertical_a11y_weather">Ava ilm</string>
+    <string name="quickspace_vertical_a11y_calendar_event">Ava kalendrisündmus</string>
+    <string name="quickspace_vertical_a11y_event">Ava praegu esitatav</string>
+    <string name="quickspace_vertical_a11y_note">Ava märge</string>
+    <string name="quickspace_vertical_a11y_battery">Ava akuseaded</string>
+    <string name="quickspace_voltage_accent_title">Aktsentvärviline kell</string>
+    <string name="quickspace_voltage_accent_summary">Värvi kella esimene number Remixi stiilides aktsendivärviga</string>
+    <string name="quickspace_voltage_minimal_title">Minimaalne režiim</string>
+    <string name="quickspace_voltage_minimal_summary">Ahenda Remixi lisasisu puudutatavateks kiirikoonideks</string>
+    <string name="quickspace_grt_morning">Head hommikut.</string>
+    <string name="quickspace_grt_evening">Head õhtut.</string>
+    <string name="quickspace_grt_afternoon">Head pärastlõunat.</string>
+    <string name="quickspace_grt_night">Head ööd.</string>
+    <string name="quickspace_grt_general">Head päeva.</string>
+    <string name="quickspace_ext_one">Täna on</string>
+    <string name="quickspace_ext_two">On</string>
+    <string name="qe_now_playing_unknown_artist">Tundmatu esitaja</string>
+    <string name="qe_now_playing_by">Esitaja</string>
+    <string name="quickspace_now_playing_summary">Kuva praegu esitatav laul</string>
+    <string name="quickspace_alternate_style_title">Laiendatud stiil</string>
+    <string name="quickspace_alternate_style_summary">Lülitu laiendatud stiilile</string>
+    <string name="quickspace_psa_title">Juhuslikud sõnumid</string>
+    <string name="quickspace_psa_summary">Muuda kaaslane juhuslike sõnumitega elavamaks</string>
+    <string name="intent_no_app_clock_found">Kalendri- või kellategevust ei leitud</string>
+    <string name="quick_event_weather_rain">Vihmane</string>
+    <string name="quick_event_weather_clear">Selge taevas</string>
+    <string name="quick_event_weather_storm">Tormine</string>
+    <string name="quick_event_weather_snow">Lumine</string>
+    <string name="quick_event_weather_wind">Tuuline</string>
+    <string name="quick_event_weather_mist">Udune</string>
+    <string name="quickspace_battery_title">Seadme aku</string>
+    <string name="quickspace_battery_summary">Kuva Remixi stiilides telefoni ja ühendatud Bluetooth-seadme aku</string>
+    <string name="quickspace_calendar_summary">Kuva järgmine sündmus mistahes lubatud kalendrist</string>
+    <string name="quickspace_calendar_untitled">Nimetu sündmus</string>
+    <string name="all_apps_dark_text_title">Tumedad rakenduste sildid</string>
+    <string name="all_apps_dark_text_summary">Kasuta rakendusesahtlis rakenduste siltidel alati tumedat teksti</string>
+    <string name="app_info_title">Rakenduse teave</string>
+    <string name="app_info_source">Allikas</string>
+    <string name="app_info_last_update">Viimane uuendus</string>
+    <string name="icon_pack_add">Installi veel</string>
+    <string name="icon_pack_no_market">Saadaval pole ühtegi rakenduste poodi</string>
+    <string name="pebble_shape_title">Kivi</string>
+    <string name="vessel_shape_title">Anum</string>
+    <string name="pure_square_shape_title">Puhas ruut</string>
+    <string name="squircle_shape_title">Squircle</string>
+    <string name="tapered_rect_shape_title">Kitsenev ristkülik</string>
+    <string name="teardrop_shape_title">Pisar</string>
+    <string name="rounded_rect_shape_title">Ümarate nurkadega ristkülik</string>
+    <string name="cylindrical_shape_title">Silindriline</string>
+    <string name="flower_shape_title">Lill</string>
+    <string name="hexagon_shape_title">Kuusnurk</string>
+    <string name="ios_style_shape_title">iOS-stiil</string>
+    <string name="leaf_shape_title">Leht</string>
+    <string name="meow_shape_title">Meow</string>
+    <string name="samsung_style_shape_title">Samsung-stiil</string>
+    <string name="stretched_shape_title">Venitatud</string>
+    <string name="home_screen_actions">Avakuva tegevused</string>
+    <string name="remove_all_views_from_home_screen">Tühjenda avakuva</string>
+    <string name="remove_all_views_from_home_screen_desc">Avakuva tühjendatakse. Kas soovid jätkata?</string>
+    <string name="home_screen_all_views_removed_msg">Avakuva tühjendatud</string>
+    <string name="sort_alphabetical">Sordi tähestiku järgi</string>
+    <string name="sort_install_date">Sordi installimise kuupäeva järgi</string>
+    <string name="sort_usage">Sordi kasutuse järgi</string>
+    <string name="navbar_burn_in_protection_title">Navigeerimisriba põlemiskaitse</string>
+    <string name="navbar_burn_in_protection_summary">Nihuta navigeerimispidet perioodiliselt, et vältida ekraani põlemist</string>
+    <string name="navbar_burn_in_interval_title">Nihke intervall</string>
+    <string name="pref_blur_background_at_app_launch_title">Taustahägu rakenduse avamisel/sulgemisel</string>
+    <string name="pref_blur_background_at_app_launch_summary">Hägusta taust rakenduse avamise ja sulgemise animatsioonide ajal</string>
 </resources>

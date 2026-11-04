@@ -3,4 +3,31 @@
     <string name="drawer_open_keyboard_title">Llisca per iniciar la cerca</string>
     <string name="drawer_open_keyboard_summary">Obre el teclat sempre que el calaix d\'aplicacions sigui visible</string>
     <string name="glance_content_description">D\'una ullada</string>
+    <string name="pref_recents_style_title">Recents</string>
+    <string-array name="recents_style_entries">
+        <item>"Aplicacions recents"</item>
+        <item>Recents estrets (panell lateral)</item>
+        <item>Recents giratoris (roda)</item>
+    </string-array>
+    <string name="neon_icons_title">Icones de neó</string>
+    <string name="neon_icons_summary">El glif de cada aplicació en el teu color d\'accent, dins d\'un anell lluminós. Activa les icones amb tema.</string>
+    <string name="icon_style_rr_title">Estil d\'icona</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Predeterminat"</item>
+        <item>Amb tema</item>
+        <item>Neó</item>
+    </string-array>
+    <string name="neon_ring_color_title">Color de l\'anell</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Accent</item>
+        <item>Color propi de l\'aplicació</item>
+    </string-array>
+    <string name="neon_glow_title">Brillantor</string>
+    <string name="neon_ring_title">Timbre</string>
+    <string-array name="neon_ring_entries">
+        <item>Fi</item>
+        <item>"Mitjà"</item>
+        <item>"Atrevit"</item>
+    </string-array>
+    <string name="neon_folders_title">També les carpetes</string>
 </resources>

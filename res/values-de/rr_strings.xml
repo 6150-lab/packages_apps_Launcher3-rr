@@ -11,4 +11,23 @@
         <item>"Mittel"</item>
         <item>"Fett"</item>
     </string-array>
+    <string-array name="recents_style_entries">
+        <item>"Übersicht"</item>
+        <item>Schmale letzte Apps (Seitenleiste)</item>
+        <item>Gedrehte letzte Apps (Rad)</item>
+    </string-array>
+    <string name="neon_icons_title">Neon-Symbole</string>
+    <string name="neon_icons_summary">Das Symbol jeder App in deiner Akzentfarbe, innerhalb eines leuchtenden Rings. Aktiviert designbasierte Symbole.</string>
+    <string name="icon_style_rr_title">Symbolstil</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Standard"</item>
+        <item>Designbasiert</item>
+        <item>Neon</item>
+    </string-array>
+    <string name="neon_ring_color_title">Ringfarbe</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Akzent</item>
+        <item>Eigene Farbe der App</item>
+    </string-array>
+    <string name="neon_folders_title">Auch Ordner</string>
 </resources>

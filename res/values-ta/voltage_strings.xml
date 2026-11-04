@@ -55,4 +55,166 @@
     <string name="cloudy_shape_title">"மேகமூட்டம்"</string>
     <string name="heart_shape_title">"இதயம்"</string>
     <string name="scroll_shape_title">"நகர்த்தும்"</string>
+    <string name="action_lock">ஆப்பைப் பூட்டு/திற</string>
+    <string name="unlock_app">சமீபத்தியவையில் ஆப் திறக்கப்பட்டது</string>
+    <string name="lock_app">சமீபத்தியவையில் ஆப் பூட்டப்பட்டது</string>
+    <string name="home_category_summary">Google now பலகம் மற்றும் பலவற்றை அமை</string>
+    <string name="icons_category_summary">ஐகான் அளவை அமை மற்றும் பலவற்றை</string>
+    <string name="app_drawer_category_title">ஆப் டிராயர்</string>
+    <string name="app_drawer_category_summary">உங்கள் ஆப் டிராயரைத் தனிப்பயனாக்கவும்</string>
+    <string name="recents_category_summary">மேலோட்டத் திரையை மாற்றியமைக்கவும்</string>
+    <string name="actions_category_title">விரைவுச் செயல்கள்</string>
+    <string name="title_show_google_app">Google ஆப்பை அணுக ஸ்வைப் செய்யவும்</string>
+    <string name="suggestion_pref_screen_desc">அனைத்து ஆப்கள் &amp; முகப்புத் திரை பரிந்துரைகளுக்கு</string>
+    <string name="pref_restart_summary">நிலுவையில் உள்ள அமைப்புகளைப் பயன்படுத்த துவக்கியை கைமுறையாக மறுதொடக்கம் செய்யவும்</string>
+    <string name="restarting_launcher">துவக்கி மறுதொடக்கம் செய்யப்படுகிறது...</string>
+    <string name="restarting_launcher_changes">மாற்றங்களைப் பயன்படுத்த துவக்கி மறுதொடக்கம் செய்யப்படுகிறது...</string>
+    <string name="updating_launcher_components">துவக்கி கூறுகளைப் புதுப்பிக்க துவக்கி மறுதொடக்கம் செய்யப்படுகிறது...</string>
+    <string name="pref_sleep_gesture_haptic_title">தூங்க இரு முறை தட்டும்போது அதிர்வு</string>
+    <string name="pref_sleep_gesture_haptic_summary">தூங்க இரு முறை தட்டும் சைகையில் ஹேப்டிக் பின்னூட்டம் வழங்கு</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">iOS பாணி செயலில் இருக்கும்போது தானாக இயக்கப்படும்</string>
+    <string name="themed_icons_overlay_title">மேலடுக்கு தீம் ஐகான்கள்</string>
+    <string name="themed_icons_overlay_summary">சொந்த தீம் ஐகான் இல்லாத ஆப்களுக்குத் தனிப்பயன் தீம் ஐகான் வரைபடத்தைப் பயன்படுத்து</string>
+    <string name="icon_size_title">ஐகான் அளவு</string>
+    <string name="pause">இடைநிறுத்து</string>
+    <string name="pause_apps_dialog_title">%1$s-ஐ இடைநிறுத்தவா?</string>
+    <string name="pause_apps_dialog_message">%1$s-க்கான அறிவிப்புகள் இடைநிறுத்தப்படும்</string>
+    <string name="paused_apps_dialog_title">ஆப் இடைநிறுத்தப்பட்டது</string>
+    <string name="paused_apps_dialog_message">%1$s துவக்கியிலிருந்து நேரடியாக இடைநிறுத்தப்பட்டது</string>
+    <string name="icon_two_lines_title">ஆப் பெயருக்கு இரண்டு வரிகளைப் பயன்படுத்து</string>
+    <string name="recent_task_option_kill_app">நிறுத்து</string>
+    <string name="recents_app_killed">ஆப் நிறுத்தப்பட்டது</string>
+    <string name="row_height_title">வரிசை உயரம்</string>
+    <string name="hotseat_bg_title">ஹாட்சீட் பின்னணி</string>
+    <string name="hotseat_bg_summary">ஆப் டாக்கில் ஒளி ஊடுருவும் பின்னணியைச் சேர்</string>
+    <string name="pref_show_hotseat_qsb_title">தேடல் பட்டியைக் காட்டு</string>
+    <string name="pref_show_hotseat_qsb_summary">முகப்புத் திரையின் கீழே</string>
+    <string name="dock_search_widget_title">தேடல் விட்ஜெட்</string>
+    <string name="dock_search_widget_summary">டாக்கில் இணக்கமான மூன்றாம் தரப்பு தேடல் விட்ஜெட்டைப் பயன்படுத்து</string>
+    <string name="dock_search_widget_picker_title">தேடல் விட்ஜெட்டைத் தேர்ந்தெடு</string>
+    <string name="dock_search_widget_default">இயல்புநிலை தேடல் விட்ஜெட்</string>
+    <string name="drawer_style_title">ஆப் டிராயர் பாணி</string>
+    <string name="drawer_style_summary_ios_forced">iOS பாணியில் ஆப் டிராயர் முடக்கப்பட்டது</string>
+    <string-array name="app_drawer_style_entries">
+        <item>சாதாரண (கீழ்த் தாள்)</item>
+        <item>கிடைமட்டப் பட்டியல்</item>
+        <item>செங்குத்து (OneUI பக்கங்கள்)</item>
+        <item>iOS பாணி</item>
+    </string-array>
+    <string name="drawer_search_title">ஆப் தேடல் பட்டி இடம்</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>"மறைக்கப்பட்டவை"</item>
+        <item>மேல்</item>
+        <item>கீழ்</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">பின் செய்த ஆப்களை இயக்கு</string>
+    <string name="pref_pinned_apps_enabled_summary">தேடல் பட்டிக்குக் கீழே பின் செய்த ஆப்களின் வரிசையைக் காட்டு</string>
+    <string name="pref_pinned_apps_list_title">பின் செய்த ஆப்களின் பட்டியல்</string>
+    <string name="pref_pinned_apps_list_summary">பின் செய்ய ஆப்களைத் தேர்ந்தெடு</string>
+    <string name="allow_wallpaper_scrolling">வால்பேப்பர் ஸ்க்ரோலிங்</string>
+    <string name="allow_wallpaper_scrolling_summary">பல திரைகளுக்கான வால்பேப்பர் ஸ்க்ரோலிங் விளைவு</string>
+    <string name="allow_wallpaper_zooming">வால்பேப்பர் ஜூம்</string>
+    <string name="allow_wallpaper_zooming_summary">ஆப் டிராயர் அல்லது சமீபத்திய ஆப்களைப் பயன்படுத்தும்போது வால்பேப்பரை பெரிதாக்கு அல்லது சிறிதாக்கு</string>
+    <string name="show_top_shadow">மேல் நிழல்</string>
+    <string name="meminfo_text">%1$s கிடைக்கிறது | %2$s</string>
+    <string name="recents_meminfo_title">நினைவக தகவல்</string>
+    <string name="recents_meminfo_zram_title">ZRAM தகவல்</string>
+    <string name="recents_chips_title">சுருக்கமான செயல் வடிவமைப்பைப் பயன்படுத்து</string>
+    <string name="recents_chips_summary">அதிக எண்ணிக்கையிலான செயல்களைக் காட்ட தேவைப்படலாம்</string>
+    <string name="recents_lens_title">லென்ஸ்</string>
+    <string name="short_parallax_title">குறுகிய பாராலாக்ஸை அனுமதி</string>
+    <string name="short_parallax_summary">வால்பேப்பரை வெட்டாமல், குறைவான பக்கங்களில் முழு வால்பேப்பர் ஸ்க்ரோல் விளைவை இயக்கு</string>
+    <string name="single_page_center_title">ஒற்றைப் பக்க மையம்</string>
+    <string name="single_page_center_summary">ஒரு பக்கம் மட்டும் பயன்படுத்தினால் வால்பேப்பரை மையப்படுத்து</string>
+    <string name="drawer_scrollbar_title">ஸ்க்ரோல்பார்</string>
+    <string name="drawer_scrollbar_summary">ஆப் டிராயரின் பக்கத்தில் ஸ்க்ரோல்பார்</string>
+    <string name="perf_dark_status_bar_title">இருண்ட நிலைப் பட்டி</string>
+    <string name="perf_dark_status_bar_summary">முகப்புத் திரையில் எப்போதும் இருண்ட நிலைப் பட்டியைப் பயன்படுத்து</string>
+    <string name="show_quickspace_title">ஒரு பார்வையில்</string>
+    <string name="show_quickspace_summary">முகப்புத் திரையின் மேலே காட்டு</string>
+    <string name="quickspace_style_title">ஒரு பார்வையில் பாணி</string>
+    <string-array name="quickspace_style_entries">
+        <item>"இயல்பு"</item>
+        <item>விரிவான</item>
+        <item>Remix</item>
+        <item>Remix பக்கங்கள்</item>
+        <item>Remix செங்குத்து</item>
+        <item>ஆர்பிட்</item>
+        <item>நியான் பலகை</item>
+        <item>கண்ணாடி</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">இப்போது இயங்குகிறது</string>
+    <string name="quickspace_vertical_note">குறிப்பு</string>
+    <string name="quickspace_vertical_weather">வானிலை</string>
+    <string name="quickspace_vertical_calendar">நாட்காட்டி</string>
+    <string name="quickspace_vertical_battery">பேட்டரி</string>
+    <string name="quickspace_vertical_a11y_calendar">நாட்காட்டியைத் திற</string>
+    <string name="quickspace_vertical_a11y_weather">வானிலையைத் திற</string>
+    <string name="quickspace_vertical_a11y_calendar_event">நாட்காட்டி நிகழ்வைத் திற</string>
+    <string name="quickspace_vertical_a11y_event">இப்போது இயங்குவதைத் திற</string>
+    <string name="quickspace_vertical_a11y_note">குறிப்பைத் திற</string>
+    <string name="quickspace_vertical_a11y_battery">பேட்டரி அமைப்புகளைத் திற</string>
+    <string name="quickspace_voltage_accent_title">உச்சரிப்பு நிறக் கடிகாரம்</string>
+    <string name="quickspace_voltage_accent_summary">Remix பாணிகளில் கடிகாரத்தின் முதல் எண்ணுக்கு உச்சரிப்பு நிறத்தைத் தரு</string>
+    <string name="quickspace_voltage_minimal_title">குறைந்தபட்ச பயன்முறை</string>
+    <string name="quickspace_voltage_minimal_summary">Remix கூடுதல் உள்ளடக்கத்தைத் தட்டக்கூடிய விரைவு ஐகான்களாக சுருக்கு</string>
+    <string name="quickspace_grt_morning">காலை வணக்கம்.</string>
+    <string name="quickspace_grt_evening">மாலை வணக்கம்.</string>
+    <string name="quickspace_grt_afternoon">மதிய வணக்கம்.</string>
+    <string name="quickspace_grt_night">இனிய இரவு.</string>
+    <string name="quickspace_grt_general">நல்ல நாள்.</string>
+    <string name="quickspace_ext_one">இன்று</string>
+    <string name="quickspace_ext_two">இப்போது</string>
+    <string name="qe_now_playing_unknown_artist">தெரியாத கலைஞர்</string>
+    <string name="qe_now_playing_by">வழங்கியவர்</string>
+    <string name="quickspace_now_playing_summary">நீங்கள் இயக்கும் பாடலைக் காட்டு</string>
+    <string name="quickspace_alternate_style_title">விரிவான பாணி</string>
+    <string name="quickspace_alternate_style_summary">விரிவான பாணிக்கு மாறு</string>
+    <string name="quickspace_psa_title">சீரற்ற செய்திகள்</string>
+    <string name="quickspace_psa_summary">சீரற்ற செய்திகளுடன் உங்கள் துணையை மேலும் உயிரோட்டமாக்கு</string>
+    <string name="intent_no_app_clock_found">நாட்காட்டி அல்லது கடிகார செயல்பாட்டைக் கண்டறிய முடியவில்லை</string>
+    <string name="quick_event_ambient_weather_title">வானிலை புதுப்பிப்பு</string>
+    <string name="quick_event_ambient_weather_summary">தற்போதைய வானிலை புதுப்பிப்பைக் காட்டு</string>
+    <string name="quick_event_ambient_weather_enabled_info">வானிலை சேவை இயக்கப்பட்டிருக்க வேண்டும்</string>
+    <string name="quick_event_weather_rain">மழை</string>
+    <string name="quick_event_weather_clear">தெளிவான வானம்</string>
+    <string name="quick_event_weather_storm">புயல்</string>
+    <string name="quick_event_weather_snow">பனி</string>
+    <string name="quick_event_weather_wind">காற்று</string>
+    <string name="quick_event_weather_mist">மூடுபனி</string>
+    <string name="quick_event_weather_city_title">தற்போதைய இடம்</string>
+    <string name="quick_event_weather_city_summary">தற்போதைய வானிலை இருப்பிடத்தைக் காட்டு</string>
+    <string name="quick_event_weather_text_title">தற்போதைய நிலை</string>
+    <string name="quick_event_weather_text_summary">தற்போதைய வானிலை நிலைச் சுருக்கத்தைக் காட்டு</string>
+    <string name="quickspace_battery_title">சாதனப் பேட்டரி</string>
+    <string name="quickspace_battery_summary">Remix பாணிகளில் ஃபோன் மற்றும் இணைக்கப்பட்ட புளூடூத் சாதனத்தின் பேட்டரியைக் காட்டு</string>
+    <string name="quickspace_calendar_summary">இயக்கப்பட்ட எந்த நாட்காட்டியிலிருந்தும் உங்கள் அடுத்த நிகழ்வைக் காட்டு</string>
+    <string name="quickspace_calendar_untitled">பெயரிடப்படாத நிகழ்வு</string>
+    <string name="all_apps_dark_text_title">இருண்ட ஆப் லேபிள்கள்</string>
+    <string name="all_apps_dark_text_summary">ஆப் டிராயரில் ஆப் லேபிள்களுக்கு எப்போதும் இருண்ட உரையைப் பயன்படுத்து</string>
+    <string name="app_info_title">ஆப் தகவல்</string>
+    <string name="app_info_source">மூலம்</string>
+    <string name="app_info_last_update">கடைசி புதுப்பிப்பு</string>
+    <string name="icon_pack_add">மேலும் நிறுவு</string>
+    <string name="icon_pack_no_market">கிடைக்கக்கூடிய ஆப் ஸ்டோர் இல்லை</string>
+    <string name="cylindrical_shape_title">உருளை</string>
+    <string name="flower_shape_title">மலர்</string>
+    <string name="hexagon_shape_title">அறுகோணம்</string>
+    <string name="ios_style_shape_title">iOS பாணி</string>
+    <string name="leaf_shape_title">இலை</string>
+    <string name="meow_shape_title">மியாவ்</string>
+    <string name="samsung_style_shape_title">Samsung பாணி</string>
+    <string name="stretched_shape_title">நீட்டப்பட்ட</string>
+    <string name="home_screen_actions">முகப்புத் திரை செயல்கள்</string>
+    <string name="remove_all_views_from_home_screen">முகப்புத் திரையை அழி</string>
+    <string name="remove_all_views_from_home_screen_desc">முகப்புத் திரை அழிக்கப்படும். தொடர விரும்புகிறீர்களா?</string>
+    <string name="home_screen_all_views_removed_msg">முகப்புத் திரை அழிக்கப்பட்டது</string>
+    <string name="sort_alphabetical">அகர வரிசைப்படி வரிசைப்படுத்து</string>
+    <string name="sort_install_date">நிறுவிய தேதியின்படி வரிசைப்படுத்து</string>
+    <string name="sort_usage">பயன்பாட்டின்படி வரிசைப்படுத்து</string>
+    <string name="navbar_burn_in_protection_title">நேவ்பார் பர்ன்-இன் பாதுகாப்பு</string>
+    <string name="navbar_burn_in_protection_summary">திரை பர்ன்-இன் ஆவதைத் தடுக்க வழிசெலுத்தல் கைப்பிடியை அவ்வப்போது நகர்த்து</string>
+    <string name="navbar_burn_in_interval_title">நகர்த்தும் இடைவெளி</string>
+    <string name="pref_blur_background_at_app_launch_title">ஆப் தொடக்க/மூடல் நேரத்தில் பின்னணி மங்கல்</string>
+    <string name="pref_blur_background_at_app_launch_summary">ஆப் தொடக்க மற்றும் மூடல் அனிமேஷன்களின்போது பின்னணியை மங்கலாக்கு</string>
 </resources>

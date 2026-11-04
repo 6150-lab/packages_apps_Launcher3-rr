@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"Nedavno"</string>
     <string name="glance_content_description">Kratki pregled</string>
+    <string name="drawer_open_keyboard_title">Prevuci za početak pretraživanja</string>
+    <string name="drawer_open_keyboard_summary">Otvori tipkovnicu kad god se ladica aplikacija prikaže</string>
+    <string-array name="recents_style_entries">
+        <item>"Pregled"</item>
+        <item>Tanki nedavni (bočni panel)</item>
+        <item>Kotačić nedavnih (kotač)</item>
+    </string-array>
+    <string name="neon_icons_title">Neonske ikone</string>
+    <string name="neon_icons_summary">Glif svake aplikacije u vašoj naglašenoj boji, unutar sjajnog prstena. Uključuje tematske ikone.</string>
+    <string name="icon_style_rr_title">Stil ikona</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Zadano"</item>
+        <item>Tematski</item>
+        <item>Neon</item>
+    </string-array>
+    <string name="neon_ring_color_title">Boja prstena</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Naglasak</item>
+        <item>Vlastita boja aplikacije</item>
+    </string-array>
+    <string name="neon_glow_title">Sjaj</string>
+    <string name="neon_ring_title">Zvonjenje</string>
+    <string-array name="neon_ring_entries">
+        <item>Tanko</item>
+        <item>"Srednja"</item>
+        <item>"Veći kontrast"</item>
+    </string-array>
+    <string name="neon_folders_title">Mape također</string>
 </resources>

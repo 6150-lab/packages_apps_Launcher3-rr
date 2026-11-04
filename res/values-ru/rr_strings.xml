@@ -12,4 +12,22 @@
         <item>"Средний"</item>
         <item>"Насыщенная"</item>
     </string-array>
+    <string-array name="recents_style_entries">
+        <item>"Обзор."</item>
+        <item>Узкие недавние (боковая панель)</item>
+        <item>Недавние по кругу (колесо)</item>
+    </string-array>
+    <string name="neon_icons_title">Неоновые значки</string>
+    <string name="neon_icons_summary">Значок каждого приложения в вашем цветовом акценте внутри светящегося кольца. Включает тематические значки.</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"По умолчанию"</item>
+        <item>Тематические</item>
+        <item>Неон</item>
+    </string-array>
+    <string name="neon_ring_color_title">Цвет кольца</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Акцент</item>
+        <item>Собственный цвет приложения</item>
+    </string-array>
+    <string name="neon_folders_title">Папки тоже</string>
 </resources>

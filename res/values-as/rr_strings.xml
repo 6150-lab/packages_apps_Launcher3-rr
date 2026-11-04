@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"শেহতীয়া"</string>
     <string name="glance_content_description">এক দৃষ্টিত</string>
+    <string name="drawer_open_keyboard_title">সন্ধান আৰম্ভ কৰিবলৈ স্ৱাইপ কৰক</string>
+    <string name="drawer_open_keyboard_summary">এপ্‌ ড্ৰয়াৰ দৃশ্যমান হওঁতে সদায় কি-বৰ্ড খোলক</string>
+    <string-array name="recents_style_entries">
+        <item>"অৱলোকন"</item>
+        <item>ৰোগা শেহতীয়া (পাৰ্শ্ব পেনেল)</item>
+        <item>ঘূৰণীয়া শেহতীয়া (চক্ৰ)</item>
+    </string-array>
+    <string name="neon_icons_title">নিঅন আইকন</string>
+    <string name="neon_icons_summary">প্ৰতিটো এপৰ গ্লিফ আপোনাৰ এক্সেণ্ট ৰঙত, এটা জিলিকা বলয়ৰ ভিতৰত। থীমযুক্ত আইকন অন কৰে।</string>
+    <string name="icon_style_rr_title">আইকনৰ শৈলী</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"ডিফ’ল্ট"</item>
+        <item>থীমযুক্ত</item>
+        <item>নিঅ\'ন</item>
+    </string-array>
+    <string name="neon_ring_color_title">বলয়ৰ ৰং</string>
+    <string-array name="neon_ring_color_entries">
+        <item>এক্সেণ্ট</item>
+        <item>এপৰ নিজস্ব ৰং</item>
+    </string-array>
+    <string name="neon_glow_title">উজ্জ্বল আভা</string>
+    <string name="neon_ring_title">ৰিং</string>
+    <string-array name="neon_ring_entries">
+        <item>পাতল</item>
+        <item>"মধ্যমীয়া"</item>
+        <item>"ব’ল্ড"</item>
+    </string-array>
+    <string name="neon_folders_title">ফ\'ল্ডাৰো</string>
 </resources>

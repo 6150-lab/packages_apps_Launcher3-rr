@@ -27,4 +27,194 @@
     <string name="cloudy_shape_title">"Kunamafu"</string>
     <string name="heart_shape_title">"Inhliziyo"</string>
     <string name="scroll_shape_title">"Skrola"</string>
+    <string name="action_lock">Khiya/vula uhlelo</string>
+    <string name="unlock_app">Uhlelo oluvuliwe kokwakamuva</string>
+    <string name="lock_app">Uhlelo olukhiyiwe kokwakamuva</string>
+    <string name="home_category_summary">Setha ipaneli yesikrini sikaGoogle nokunye</string>
+    <string name="icons_category_summary">Setha usayizi wezithonjana nokunye</string>
+    <string name="app_drawer_category_title">Idrowa yezinhlelo zokusebenza</string>
+    <string name="app_drawer_category_summary">Lungisa idrowa yakho yezinhlelo zokusebenza</string>
+    <string name="recents_category_summary">Vuselela isikrini sokubuka konke</string>
+    <string name="interface_category_title">Isixhumi</string>
+    <string name="actions_category_title">Izenzo ezisheshayo</string>
+    <string name="title_show_google_app">Swayipha ukuze ufinyelele uhlelo lwe-Google</string>
+    <string name="msg_minus_one_on_left">Lapho uswayipha ngakwesokudla usuka esikrinini sasekhaya esiyinhloko</string>
+    <string name="msg_minus_one_on_right">Lapho uswayipha ngakwesokunxele kusuka esikrinini sasekhaya esiyinhloko</string>
+    <string name="suggestion_pref_screen_desc">Ngezincomo ze-Zonke Izinhlelo kanye nesikrini sasekhaya</string>
+    <string name="pref_restart_summary">Qalisa kabusha i-launcher ngesandla ukuze usebenzise izilungiselelo ezilindile</string>
+    <string name="restarting_launcher">Iqalisa kabusha i-launcher...</string>
+    <string name="restarting_launcher_changes">Iqalisa kabusha i-launcher ukuze kusetshenziswe izinguquko...</string>
+    <string name="updating_launcher_components">Iqalisa kabusha i-launcher ukuze kubuyekezwe izingxenye ze-launcher...</string>
+    <string name="pref_sleep_gesture_title">Thinta kabili ukuze ulale</string>
+    <string name="pref_sleep_gesture_summary">Thinta kabili indawo engenalutho esikrinini sasekhaya ukuze uvale isikrini</string>
+    <string name="pref_sleep_gesture_haptic_title">Dlidliza uma uthinta kabili ukuze ulale</string>
+    <string name="pref_sleep_gesture_haptic_summary">Nikeza impendulo yokuthinta ekuthinteni kabili ukuze ulale</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">Ivulwa ngokuzenzakalelayo lapho isitayela se-iOS sisebenza</string>
+    <string name="settings_lock_layout_title">Khiya isakhiwo</string>
+    <string name="settings_lock_layout_summary_on">Izithonjana kanye nama-widget akunakufakwa, kususwe noma kuhanjiswe esikrinini sasekhaya</string>
+    <string name="settings_lock_layout_summary_off">Izithonjana kanye nama-widget kungafakwa, kususwe futhi kuhanjiswe esikrinini sasekhaya</string>
+    <string name="settings_edit_widgets_error">Akulungele ukungeza ama-widget esikrinini sasekhaya</string>
+    <string name="pref_themed_icons_title">Sebenzisa izithonjana zetimu emzabalazweni</string>
+    <string name="pref_themed_icons_summary">Landela izithonjana zetimu ezisetshenziswa esikrinini sasekhaya</string>
+    <string name="themed_icons_overlay_title">Izithonjana zetimu ezimbozwe</string>
+    <string name="themed_icons_overlay_summary">Sebenzisa imephu yezithonjana zetimu yezinhlelo ezingenayo isithonjana sangemva kwetimu</string>
+    <string name="desktop_show_labels">Bonisa amagama ezithonjana edeskithophu</string>
+    <string name="drawer_show_labels">Bonisa amagama ezithonjana emzabalazweni</string>
+    <string name="trust_apps_manager_name">Izinhlelo ezifihliwe nezivikelekile</string>
+    <string name="trust_apps_auth_manager">Vula ukuze uphathe izinhlelo ezifihliwe nezivikelekile</string>
+    <string name="trust_apps_auth_open_app">Qinisekisa ukuze uvule i-%1$s</string>
+    <string name="trust_apps_no_lock_error">Sicela usethe ukukhiya isikrini okuphephile ukuze ukhawulele ukufinyelela kwezinhlelo</string>
+    <string name="trust_apps_info_hidden">Izinhlelo ezifihliwe nama-widget azo azifihlwe emzabalazweni</string>
+    <string name="trust_apps_info_protected">Izinhlelo ezivikelekile zidinga ukuqinisekiswa ukuze zivulwe kusuka ku-launcher</string>
+    <string name="icon_size_title">Usayizi wesithonjana</string>
+    <string name="pause">Misa</string>
+    <string name="pause_apps_dialog_title">Misa i-%1$s?</string>
+    <string name="pause_apps_dialog_message">Izaziso ze-%1$s zizomiswa</string>
+    <string name="paused_apps_dialog_title">Uhlelo lumisiwe</string>
+    <string name="paused_apps_dialog_message">I-%1$s imiswe ngqo kusuka ku-launcher</string>
+    <string name="icon_two_lines_title">Sebenzisa imigqa emibili yegama lohlelo</string>
+    <string name="recent_task_option_kill_app">Bulala</string>
+    <string name="recents_app_killed">Uhlelo lubulawe</string>
+    <string name="row_height_title">Ukuphakama komugqa</string>
+    <string name="hotseat_bg_title">Ingemuva le-hotseat</string>
+    <string name="hotseat_bg_summary">Engeza ingemuva elibonakalayo kubhodi yezinhlelo</string>
+    <string name="pref_show_hotseat_qsb_title">Bonisa ibha yokusesha</string>
+    <string name="pref_show_hotseat_qsb_summary">Ngaphansi esikrinini sakho sasekhaya</string>
+    <string name="dock_search_widget_title">Iwidget yokusesha</string>
+    <string name="dock_search_widget_summary">Sebenzisa iwidget yokusesha yomhlinzeki wangaphandle ehambisanayo kubhodi yezinhlelo</string>
+    <string name="dock_search_widget_picker_title">Khetha iwidget yokusesha</string>
+    <string name="dock_search_widget_default">Iwidget yokusesha ezenzakalelayo</string>
+    <string name="drawer_style_title">Isitayela somzabalazo wezinhlelo</string>
+    <string name="drawer_style_summary_ios_forced">Umzabalazo wezinhlelo akusebenzi esitayelweni se-iOS</string>
+    <string-array name="app_drawer_style_entries">
+        <item>Okujwayelekile (ishidi elingaphansi)</item>
+        <item>Uhlu oluvundlile</item>
+        <item>Okuthikameke (OneUI ezikhasini)</item>
+        <item>Isitayela se-iOS</item>
+    </string-array>
+    <string name="drawer_search_title">Indawo yebha yokusesha izinhlelo</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>"Okufihliwe"</item>
+        <item>Phezulu</item>
+        <item>Phansi</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">Vula izinhlelo ezibethelwe</string>
+    <string name="pref_pinned_apps_enabled_summary">Bonisa umugqa wezinhlelo ezibethelwe ngaphansi kwebha yokusesha</string>
+    <string name="pref_pinned_apps_list_title">Uhlu lwezinhlelo ezibethelwe</string>
+    <string name="pref_pinned_apps_list_summary">Khetha izinhlelo ezibethelwe</string>
+    <string name="allow_wallpaper_scrolling">Ukuskrola kwesithombe sangemuva</string>
+    <string name="allow_wallpaper_scrolling_summary">Umphumela wokuskrola isithombe sangemuva kumaskrini amaningi</string>
+    <string name="allow_wallpaper_zooming">Ukusondeza isithombe sangemuva</string>
+    <string name="allow_wallpaper_zooming_summary">Sondeza noma ukhiphe isithombe sangemuva lapho usebenzisa umzabalazo noma izinhlelo zakamuva</string>
+    <string name="show_statusbar_title">Ibha yesimo</string>
+    <string name="show_top_shadow">Isithunzi esiphezulu</string>
+    <string name="meminfo_text">I-%1$s itholakala | %2$s</string>
+    <string name="recents_meminfo_title">Ulwazi lwenkumbulo</string>
+    <string name="recents_meminfo_zram_title">Ulwazi lwe-ZRAM</string>
+    <string name="recents_chips_title">Sebenzisa uyilo oluncane lwezenzo</string>
+    <string name="recents_chips_summary">Kungadingeka ukuze kuboniswe inani elikhulu lezenzo</string>
+    <string name="recents_lens_title">Ilensi</string>
+    <string name="short_parallax_title">Vumela ukuhamba kancane ngokuphambene</string>
+    <string name="short_parallax_summary">Vumela ukuskrola okugcwele kwesithombe sangemuva emakhasini amancane esikhundleni sokusika isithombe</string>
+    <string name="single_page_center_title">Ikhasi elilodwa maphakathi</string>
+    <string name="single_page_center_summary">Misa isithombe sangemuva uma usebenzisa ikhasi elilodwa kuphela</string>
+    <string name="drawer_scrollbar_title">Ibha yokuskrola</string>
+    <string name="drawer_scrollbar_summary">Ibha yokuskrola ngasohlangothini lomzabalazo wezinhlelo</string>
+    <string name="perf_dark_status_bar_title">Ibha yesimo emnyama</string>
+    <string name="perf_dark_status_bar_summary">Sebenzisa njalo ibha yesimo emnyama esikrinini sasekhaya</string>
+    <string name="show_quickspace_title">Ngokushesha</string>
+    <string name="show_quickspace_summary">Bonisa phezulu esikrinini sakho sasekhaya</string>
+    <string name="quickspace_style_title">Isitayela se-Ngokushesha</string>
+    <string-array name="quickspace_style_entries">
+        <item>"Okuzenzakalelayo"</item>
+        <item>Eliteleziwe</item>
+        <item>Ukuhlanganisa</item>
+        <item>Ikhasi le-Remix</item>
+        <item>Remix ngokuthikameke</item>
+        <item>Ijikeleza</item>
+        <item>Isibonakaliso sikaneon</item>
+        <item>Iglasi</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">KUDLALWAYO</string>
+    <string name="quickspace_vertical_note">QAPHELA</string>
+    <string name="quickspace_vertical_weather">ISIMO SOMOYA</string>
+    <string name="quickspace_vertical_calendar">IKHALENDA</string>
+    <string name="quickspace_vertical_battery">IBHETRI</string>
+    <string name="quickspace_vertical_a11y_calendar">Vula ikhalenda</string>
+    <string name="quickspace_vertical_a11y_weather">Vula isimo sezulu</string>
+    <string name="quickspace_vertical_a11y_calendar_event">Vula isenzakalo sekhalenda</string>
+    <string name="quickspace_vertical_a11y_event">Vula okudlalwayo manje</string>
+    <string name="quickspace_vertical_a11y_note">Vula inothi</string>
+    <string name="quickspace_vertical_a11y_battery">Vula izilungiselelo zebhetri</string>
+    <string name="quickspace_voltage_accent_title">Iwashi elinombala wesilinganiso</string>
+    <string name="quickspace_voltage_accent_summary">Nombala inombolo yokuqala yewashi ezitayelweni ze-Remix</string>
+    <string name="quickspace_voltage_minimal_title">Imodi encane</string>
+    <string name="quickspace_voltage_minimal_summary">Goqa okuqukethwe kwesibili kwe-Remix kube izithonjana ezisheshayo ezithintekayo</string>
+    <string name="quickspace_grt_morning">Sawubona ekuseni.</string>
+    <string name="quickspace_grt_evening">Sawubona entambama.</string>
+    <string name="quickspace_grt_afternoon">Sawubona ntambama.</string>
+    <string name="quickspace_grt_night">Lala kahle.</string>
+    <string name="quickspace_grt_general">Sawubona osuku.</string>
+    <string name="quickspace_ext_one">Namuhla kungu</string>
+    <string name="quickspace_ext_two">Kungu</string>
+    <string name="qe_now_playing_unknown_artist">Umculi Ongaziwa</string>
+    <string name="qe_now_playing_by">Ngu</string>
+    <string name="quickspace_now_playing_summary">Bonisa iculo olidlalayo</string>
+    <string name="quickspace_alternate_style_title">Isitayela esiteleziwe</string>
+    <string name="quickspace_alternate_style_summary">Shintshela esitayelweni esiteleziwe</string>
+    <string name="quickspace_psa_title">Imilayezo ngokungahleliwe</string>
+    <string name="quickspace_psa_summary">Yenza umngane wakho abe nempilo ngemilayezo engahleliwe</string>
+    <string name="intent_no_app_clock_found">Ayikwazi ukuthola isenzo sekhalenda noma iwashi</string>
+    <string name="quick_event_ambient_weather_title">Isibuyekezo sesimo sezulu</string>
+    <string name="quick_event_ambient_weather_summary">Bonisa isimo sezulu samanje</string>
+    <string name="quick_event_ambient_weather_enabled_info">Idinga inkonzo yesimo sezulu ukuthi ivuliwe</string>
+    <string name="quick_event_weather_rain">Kuyanethwa</string>
+    <string name="quick_event_weather_clear">Isibhakabhaka Esicacile</string>
+    <string name="quick_event_weather_storm">Kuyadlidlizela</string>
+    <string name="quick_event_weather_snow">Kuyashona iqhwa</string>
+    <string name="quick_event_weather_wind">Kuyaphepha</string>
+    <string name="quick_event_weather_mist">Misty</string>
+    <string name="quick_event_weather_city_title">Indawo yamanje</string>
+    <string name="quick_event_weather_city_summary">Bonisa indawo yesimo sezulu samanje</string>
+    <string name="quick_event_weather_text_title">Isimo samanje</string>
+    <string name="quick_event_weather_text_summary">Bonisa isifinyezo sesimo sezulu samanje</string>
+    <string name="quickspace_battery_title">Ibhetri yedivayisi</string>
+    <string name="quickspace_battery_summary">Bonisa ibhetri yefoni nedivayisi ye-bluetooth exhumekile ezitayelweni ze-Remix</string>
+    <string name="quickspace_calendar_summary">Bonisa isenzakalo sakho esilandelayo kunoma yiliphi ikhalenda elivuliwe</string>
+    <string name="quickspace_calendar_untitled">Isenzakalo esingenamagama</string>
+    <string name="all_apps_dark_text_title">Amagama ezinhlelo amnyama</string>
+    <string name="all_apps_dark_text_summary">Sebenzisa njalo umbhalo omnyama wamagama ezinhlelo emzabalazweni wezinhlelo</string>
+    <string name="app_info_title">Ulwazi lohlelo</string>
+    <string name="app_info_source">Umthombo</string>
+    <string name="app_info_last_update">Isibuyekezo sokugcina</string>
+    <string name="icon_pack_title">Iphakheji lezithonjana</string>
+    <string name="icon_pack_add">Faka okwengeziwe</string>
+    <string name="icon_pack_no_market">Asikho isitolo sezinhlelo esitholakalayo</string>
+    <string name="pebble_shape_title">Ipebble</string>
+    <string name="vessel_shape_title">Isitsha</string>
+    <string name="pure_square_shape_title">Isikwele esiphelele</string>
+    <string name="squircle_shape_title">Isikwele esigobile</string>
+    <string name="tapered_rect_shape_title">Unxande oluncipha</string>
+    <string name="teardrop_shape_title">Ithiyadrophu</string>
+    <string name="rounded_rect_shape_title">Ishaneli eliyindilinga</string>
+    <string name="cylindrical_shape_title">Esisilindrikhali</string>
+    <string name="flower_shape_title">Imbali</string>
+    <string name="hexagon_shape_title">Ihexagoni</string>
+    <string name="ios_style_shape_title">Isitayela se-iOS</string>
+    <string name="leaf_shape_title">Ihlamvu</string>
+    <string name="meow_shape_title">Meow</string>
+    <string name="samsung_style_shape_title">Isitayela se-Samsung</string>
+    <string name="stretched_shape_title">Eyelulwe</string>
+    <string name="home_screen_actions">Izenzo zesikrini sasekhaya</string>
+    <string name="remove_all_views_from_home_screen">Hlanza isikrini sasekhaya</string>
+    <string name="remove_all_views_from_home_screen_desc">Isikrini sasekhaya sizosulwa. Ufuna ukuqhubeka?</string>
+    <string name="home_screen_all_views_removed_msg">Isikrini sasekhaya sihlanziwe</string>
+    <string name="sort_alphabetical">Hlela ngokwamagama</string>
+    <string name="sort_install_date">Hlela ngosuku lokufakwa</string>
+    <string name="sort_usage">Hlela ngokusetshenziswa</string>
+    <string name="navbar_burn_in_protection_title">Ukuvikela ukushiswa kwebha yokuzula</string>
+    <string name="navbar_burn_in_protection_summary">Shintsha isibambi sokuzula njalo ukuze uvimbele ukushiswa kwesikrini</string>
+    <string name="navbar_burn_in_interval_title">Isikhathi sokushintsha</string>
+    <string name="pref_blur_background_at_app_launch_title">Ukufiphala kwemuva ekuvulweni/ekuvalweni kohlelo</string>
+    <string name="pref_blur_background_at_app_launch_summary">Fiphaza ingemuva phakathi kwezithombe zokuvula nokuvala izinhlelo</string>
 </resources>

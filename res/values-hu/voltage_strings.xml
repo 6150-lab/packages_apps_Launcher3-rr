@@ -77,4 +77,144 @@
     <string name="meow_shape_title">Miau</string>
     <string name="scroll_shape_title">"Papírtekercs"</string>
     <string name="stretched_shape_title">Nyújtott</string>
+    <string name="action_lock">Alkalmazás zárolása/feloldása</string>
+    <string name="unlock_app">Alkalmazás feloldva a legutóbbiak közt</string>
+    <string name="lock_app">Alkalmazás zárolva a legutóbbiak közt</string>
+    <string name="home_category_summary">Google-panel és egyebek beállítása</string>
+    <string name="icons_category_summary">Ikonméret és egyebek beállítása</string>
+    <string name="app_drawer_category_title">Alkalmazásfiók</string>
+    <string name="app_drawer_category_summary">Alkalmazásfiók testreszabása</string>
+    <string name="recents_category_summary">Az áttekintő képernyő átalakítása</string>
+    <string name="actions_category_title">Gyorsműveletek</string>
+    <string name="title_show_google_app">Csúsztatással érhető el a Google-alkalmazás</string>
+    <string name="suggestion_pref_screen_desc">Az összes alkalmazás és a kezdőképernyő javaslataihoz</string>
+    <string name="pref_restart_summary">Indítsa újra kézzel a kezdőlapot a függőben lévő beállítások alkalmazásához</string>
+    <string name="restarting_launcher">Kezdőlap újraindítása…</string>
+    <string name="restarting_launcher_changes">Kezdőlap újraindítása a módosítások alkalmazásához…</string>
+    <string name="updating_launcher_components">Kezdőlap újraindítása a komponensek frissítéséhez…</string>
+    <string name="pref_sleep_gesture_haptic_title">Koppintás duplán az alváshoz rezgés</string>
+    <string name="pref_sleep_gesture_haptic_summary">Rezgő visszajelzés a kétszeri koppintással történő alváshoz</string>
+    <string name="auto_add_shortcuts_forced_ios_summary">Automatikusan engedélyezve, amíg az iOS stílus aktív</string>
+    <string name="themed_icons_overlay_title">Ráírt témázott ikonok</string>
+    <string name="themed_icons_overlay_summary">Egyedi témázott ikonleképezés használata azokhoz az alkalmazásokhoz, amelyeknek nincs saját témázott ikonjuk</string>
+    <string name="pause">Szünet</string>
+    <string name="pause_apps_dialog_title">Szüneteltetni: %1$s?</string>
+    <string name="pause_apps_dialog_message">A(z) %1$s értesítései szüneteltetve lesznek</string>
+    <string name="paused_apps_dialog_title">Alkalmazás szüneteltetve</string>
+    <string name="paused_apps_dialog_message">A(z) %1$s alkalmazást közvetlenül szüneteltették a kezdőlapról</string>
+    <string name="icon_two_lines_title">Két sor az alkalmazásnévhez</string>
+    <string name="recent_task_option_kill_app">Leállítás</string>
+    <string name="recents_app_killed">Alkalmazás leállítva</string>
+    <string name="row_height_title">Sor magassága</string>
+    <string name="hotseat_bg_title">Kezdőképernyő alsó sávja</string>
+    <string name="hotseat_bg_summary">Félig áttetsző háttér az alkalmazássávon</string>
+    <string name="dock_search_widget_title">Keresőmodul</string>
+    <string name="dock_search_widget_summary">Kompatibilis harmadik féltől származó keresőmodul használata az alkalmazássávon</string>
+    <string name="dock_search_widget_picker_title">Keresőmodul kiválasztása</string>
+    <string name="dock_search_widget_default">Alapértelmezett keresőmodul</string>
+    <string name="drawer_style_title">Alkalmazásfiók stílusa</string>
+    <string name="drawer_style_summary_ios_forced">Az alkalmazásfiók le van tiltva iOS stílusban</string>
+    <string-array name="app_drawer_style_entries">
+        <item>Normál (alsó lap)</item>
+        <item>Vízszintes lista</item>
+        <item>Függőleges (OneUI lapozott)</item>
+        <item>iOS stílus</item>
+    </string-array>
+    <string name="drawer_search_title">Alkalmazáskereső sáv elhelyezése</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>Rejtett</item>
+        <item>Felül</item>
+        <item>Alul</item>
+    </string-array>
+    <string name="pref_pinned_apps_enabled_title">Rögzített alkalmazások engedélyezése</string>
+    <string name="pref_pinned_apps_enabled_summary">Rögzített alkalmazások sora a keresősáv alatt</string>
+    <string name="pref_pinned_apps_list_title">Rögzített alkalmazások listája</string>
+    <string name="pref_pinned_apps_list_summary">Rögzítendő alkalmazások kiválasztása</string>
+    <string name="allow_wallpaper_scrolling">Háttérkép görgetése</string>
+    <string name="allow_wallpaper_scrolling_summary">Háttérkép görgetési effektus több képernyőhöz</string>
+    <string name="allow_wallpaper_zooming">Háttérkép nagyítása</string>
+    <string name="allow_wallpaper_zooming_summary">A háttérkép nagyítása vagy kicsinyítése az alkalmazásfiók vagy a legutóbbi alkalmazások használatakor</string>
+    <string name="show_top_shadow">Felső árnyék</string>
+    <string name="meminfo_text">%1$s elérhető | %2$s</string>
+    <string name="recents_meminfo_title">Memóriainformáció</string>
+    <string name="recents_meminfo_zram_title">ZRAM-információ</string>
+    <string name="recents_chips_title">Kompakt műveletkialakítás használata</string>
+    <string name="recents_chips_summary">Szükséges lehet nagy számú művelet megjelenítéséhez</string>
+    <string name="recents_lens_title">Lencse</string>
+    <string name="short_parallax_title">Rövid parallaxis engedélyezése</string>
+    <string name="short_parallax_summary">Teljes háttérképgörgetési effektus kevesebb oldal esetén, a háttérkép levágása helyett</string>
+    <string name="single_page_center_title">Egy oldal középre</string>
+    <string name="single_page_center_summary">A háttérkép középre igazítása, ha csak egy oldal van</string>
+    <string name="drawer_scrollbar_title">Görgetősáv</string>
+    <string name="drawer_scrollbar_summary">Görgetősáv az alkalmazásfiók oldalán</string>
+    <string name="perf_dark_status_bar_title">Sötét állapotsor</string>
+    <string name="perf_dark_status_bar_summary">Mindig sötét állapotsor használata a kezdőképernyőn</string>
+    <string name="show_quickspace_title">Első pillantásra</string>
+    <string name="show_quickspace_summary">Megjelenítés a kezdőképernyő tetején</string>
+    <string name="quickspace_style_title">Első pillantásra stílusa</string>
+    <string-array name="quickspace_style_entries">
+        <item>"Alapértelmezett"</item>
+        <item>Kiterjesztett</item>
+        <item>Remix</item>
+        <item>Remix lapozott</item>
+        <item>Remix függőleges</item>
+        <item>Pálya</item>
+        <item>Neonfelirat</item>
+        <item>Üveg</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">LEJÁTSZÁS ALATT</string>
+    <string name="quickspace_vertical_note">MEGJEGYZÉS</string>
+    <string name="quickspace_vertical_weather">IDŐJÁRÁS</string>
+    <string name="quickspace_vertical_calendar">NAPTÁR</string>
+    <string name="quickspace_vertical_battery">AKKUMULÁTOR</string>
+    <string name="quickspace_vertical_a11y_calendar">Naptár megnyitása</string>
+    <string name="quickspace_vertical_a11y_weather">Időjárás megnyitása</string>
+    <string name="quickspace_vertical_a11y_calendar_event">Naptáresemény megnyitása</string>
+    <string name="quickspace_vertical_a11y_event">Most játszott megnyitása</string>
+    <string name="quickspace_vertical_a11y_note">Jegyzet megnyitása</string>
+    <string name="quickspace_vertical_a11y_battery">Akkumulátor-beállítások megnyitása</string>
+    <string name="quickspace_voltage_accent_title">Kiemelőszínű óra</string>
+    <string name="quickspace_voltage_accent_summary">Az óra első számjegyének színezése a Remix stílusokban</string>
+    <string name="quickspace_voltage_minimal_title">Minimális mód</string>
+    <string name="quickspace_voltage_minimal_summary">A Remix másodlagos tartalmának összecsukása koppintható gyorsikonokká</string>
+    <string name="quickspace_grt_morning">Jó reggelt!</string>
+    <string name="quickspace_grt_evening">Jó estét!</string>
+    <string name="quickspace_grt_afternoon">Jó napot!</string>
+    <string name="quickspace_grt_night">Jó éjszakát!</string>
+    <string name="quickspace_grt_general">Szép napot!</string>
+    <string name="quickspace_ext_one">Ma</string>
+    <string name="quickspace_ext_two">Ez a</string>
+    <string name="qe_now_playing_unknown_artist">Ismeretlen előadó</string>
+    <string name="qe_now_playing_by">Előadó:</string>
+    <string name="quickspace_now_playing_summary">A lejátszott dal megjelenítése</string>
+    <string name="quickspace_alternate_style_title">Kiterjesztett stílus</string>
+    <string name="quickspace_alternate_style_summary">Váltás kiterjesztett stílusra</string>
+    <string name="quickspace_psa_title">Véletlenszerű üzenetek</string>
+    <string name="quickspace_psa_summary">Tegye élénkebbé a társát véletlenszerű üzenetekkel</string>
+    <string name="intent_no_app_clock_found">Nem található naptár- vagy órafelület</string>
+    <string name="quickspace_battery_title">Eszköz akkumulátora</string>
+    <string name="quickspace_battery_summary">Telefon és csatlakoztatott Bluetooth-eszköz akkumulátorának megjelenítése a Remix stílusokban</string>
+    <string name="quickspace_calendar_summary">Az engedélyezett naptárak következő eseményének megjelenítése</string>
+    <string name="quickspace_calendar_untitled">Névtelen esemény</string>
+    <string name="all_apps_dark_text_title">Sötét alkalmazásnevek</string>
+    <string name="all_apps_dark_text_summary">Mindig sötét szöveg használata az alkalmazásnevekhez az alkalmazásfiókban</string>
+    <string name="app_info_title">Alkalmazás adatai</string>
+    <string name="app_info_source">Forrás</string>
+    <string name="app_info_last_update">Utolsó frissítés</string>
+    <string name="icon_pack_add">Továbbiak telepítése</string>
+    <string name="icon_pack_no_market">Nincs elérhető alkalmazásbolt</string>
+    <string name="ios_style_shape_title">iOS stílus</string>
+    <string name="samsung_style_shape_title">Samsung stílus</string>
+    <string name="home_screen_actions">Kezdőképernyő-műveletek</string>
+    <string name="remove_all_views_from_home_screen">Kezdőképernyő törlése</string>
+    <string name="remove_all_views_from_home_screen_desc">A kezdőképernyő törlődik. Folytatja?</string>
+    <string name="home_screen_all_views_removed_msg">Kezdőképernyő törölve</string>
+    <string name="sort_alphabetical">Rendezés ábécésorrendben</string>
+    <string name="sort_install_date">Rendezés telepítés dátuma szerint</string>
+    <string name="sort_usage">Rendezés használat szerint</string>
+    <string name="navbar_burn_in_protection_title">Navigációs sáv égésvédelme</string>
+    <string name="navbar_burn_in_protection_summary">A navigációs fogantyú időszakos eltolása a kijelző beégésének megelőzésére</string>
+    <string name="navbar_burn_in_interval_title">Eltolási időköz</string>
+    <string name="pref_blur_background_at_app_launch_title">Háttérelmosás alkalmazás indításakor/bezárásakor</string>
+    <string name="pref_blur_background_at_app_launch_summary">Háttér elmosása az alkalmazás indítási és bezárási animációja alatt</string>
 </resources>

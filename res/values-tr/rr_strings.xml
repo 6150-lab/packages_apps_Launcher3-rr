@@ -13,4 +13,21 @@
         <item>"Orta"</item>
         <item>"Kalın"</item>
     </string-array>
+    <string-array name="recents_style_entries">
+        <item>"Genel Bakış"</item>
+        <item>İnce Son Kullanılanlar (yan panel)</item>
+        <item>Döndürülen Son Kullanılanlar (çark)</item>
+    </string-array>
+    <string name="neon_icons_title">Neon simgeler</string>
+    <string name="neon_icons_summary">Her uygulamanın simgesi vurgu renginizde, parlayan bir halkanın içinde gösterilir. Temalı simgeleri açar.</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Varsayılan"</item>
+        <item>Temalı</item>
+        <item>Neon</item>
+    </string-array>
+    <string-array name="neon_ring_color_entries">
+        <item>Vurgu</item>
+        <item>Uygulamanın kendi rengi</item>
+    </string-array>
+    <string name="neon_folders_title">Klasörler de dahil</string>
 </resources>

@@ -4,4 +4,30 @@
     <string name="glance_content_description">Найважливіше</string>
     <string name="icon_style_rr_title">Стиль піктограм</string>
     <string name="neon_ring_color_title">Колір кільця</string>
+    <string name="drawer_open_keyboard_title">Проводьте, щоб почати пошук</string>
+    <string name="drawer_open_keyboard_summary">Відкривати клавіатуру щоразу, коли з\'являється шухляда застосунків</string>
+    <string-array name="recents_style_entries">
+        <item>"Огляд"</item>
+        <item>Компактні нещодавні (бічна панель)</item>
+        <item>Обертові нещодавні (колесо)</item>
+    </string-array>
+    <string name="neon_icons_title">Неонові значки</string>
+    <string name="neon_icons_summary">Гліф кожного застосунку в колірному акценті всередині світної обводки. Вмикає значки з темою.</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"За умовчанням"</item>
+        <item>За темою</item>
+        <item>Неон</item>
+    </string-array>
+    <string-array name="neon_ring_color_entries">
+        <item>Акцент</item>
+        <item>Власний колір застосунку</item>
+    </string-array>
+    <string name="neon_glow_title">Світіння</string>
+    <string name="neon_ring_title">Гучність дзвінка</string>
+    <string-array name="neon_ring_entries">
+        <item>Тонкий</item>
+        <item>"Середній"</item>
+        <item>"Жирний"</item>
+    </string-array>
+    <string name="neon_folders_title">Також для папок</string>
 </resources>

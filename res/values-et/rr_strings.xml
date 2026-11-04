@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"Hiljutised"</string>
     <string name="glance_content_description">Ülevaade</string>
+    <string name="drawer_open_keyboard_title">Otsingu alustamiseks libista</string>
+    <string name="drawer_open_keyboard_summary">Ava klaviatuur iga kord, kui rakendusesahtel nähtavaks muutub</string>
+    <string-array name="recents_style_entries">
+        <item>"Ülevaade"</item>
+        <item>Kitsas hiljutised (külgpaneel)</item>
+        <item>Pöörlev hiljutised (ratas)</item>
+    </string-array>
+    <string name="neon_icons_title">Neoonikoonid</string>
+    <string name="neon_icons_summary">Iga rakenduse sümbol sinu aktsentvärvis helendava ringi sees. Lülitab sisse teemakohased ikoonid.</string>
+    <string name="icon_style_rr_title">Ikooni stiil</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Vaikeseade"</item>
+        <item>Teemakohane</item>
+        <item>Neoon</item>
+    </string-array>
+    <string name="neon_ring_color_title">Ringi värv</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Aktsent</item>
+        <item>Rakenduse enda värv</item>
+    </string-array>
+    <string name="neon_glow_title">Hõõgumine</string>
+    <string name="neon_ring_title">Helitugevus</string>
+    <string-array name="neon_ring_entries">
+        <item>Õhuke</item>
+        <item>"Keskmine"</item>
+        <item>"Paks"</item>
+    </string-array>
+    <string name="neon_folders_title">Ka kaustad</string>
 </resources>

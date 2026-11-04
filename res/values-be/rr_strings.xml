@@ -2,4 +2,32 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_recents_style_title">"Нядаўнія"</string>
     <string name="glance_content_description">Кароткі агляд</string>
+    <string name="drawer_open_keyboard_title">Прагортваннем пачаць пошук</string>
+    <string name="drawer_open_keyboard_summary">Адкрываць клавіятуру пры кожным паказе шуфлядзі праграм</string>
+    <string-array name="recents_style_entries">
+        <item>"Агляд"</item>
+        <item>Тонкія нядаўнія (бакавая панэль)</item>
+        <item>Круцячыяся нядаўнія (кола)</item>
+    </string-array>
+    <string name="neon_icons_title">Неонавыя значкі</string>
+    <string name="neon_icons_summary">Гліф кожнай праграмы ў вашым асноўным колеры ўнутры свяцящагася кольца. Уключае тэматычныя значкі.</string>
+    <string name="icon_style_rr_title">Стыль значкоў</string>
+    <string-array name="icon_style_rr_entries">
+        <item>"Стандартна"</item>
+        <item>Тэматычны</item>
+        <item>Неон</item>
+    </string-array>
+    <string name="neon_ring_color_title">Колер кольца</string>
+    <string-array name="neon_ring_color_entries">
+        <item>Акцэнт</item>
+        <item>Уласны колер праграмы</item>
+    </string-array>
+    <string name="neon_glow_title">Свячэнне</string>
+    <string name="neon_ring_title">Званок</string>
+    <string-array name="neon_ring_entries">
+        <item>Тонкая</item>
+        <item>"Сярэдні"</item>
+        <item>"Кантрасная"</item>
+    </string-array>
+    <string name="neon_folders_title">І папкі таксама</string>
 </resources>
