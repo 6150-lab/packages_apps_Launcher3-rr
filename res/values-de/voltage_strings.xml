@@ -60,4 +60,13 @@
     <string name="cloudy_shape_title">"Bewölkt"</string>
     <string name="heart_shape_title">"Herz"</string>
     <string name="scroll_shape_title">"Scrollen"</string>
+    <string name="icon_size_title">Symbolgröße</string>
+    <string name="pause">Pausieren</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>Ausgeblendet</item>
+        <item>Oben</item>
+        <item>Unten</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">LÄUFT GERADE</string>
+    <string name="app_info_source">Quelle</string>
 </resources>

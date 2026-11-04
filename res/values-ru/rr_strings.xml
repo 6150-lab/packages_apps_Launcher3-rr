@@ -5,4 +5,11 @@
     <string name="pref_recents_style_title">"Недавние"</string>
     <string name="glance_content_description">Самое главное</string>
     <string name="icon_style_rr_title">Стиль иконок</string>
+    <string name="neon_glow_title">Свечение</string>
+    <string name="neon_ring_title">Звонок</string>
+    <string-array name="neon_ring_entries">
+        <item>Тонкая</item>
+        <item>"Средний"</item>
+        <item>"Насыщенная"</item>
+    </string-array>
 </resources>

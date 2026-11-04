@@ -70,4 +70,13 @@
     <string name="hexagon_shape_title">Segi enam</string>
     <string name="meow_shape_title">Meong</string>
     <string name="stretched_shape_title">Diregangkan</string>
+    <string name="pause">Jeda</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>Tersembunyi</item>
+        <item>Atas</item>
+        <item>Bawah</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">SEDANG DIPUTAR</string>
+    <string name="app_info_source">Sumber</string>
+    <string name="icon_pack_default_label">Default</string>
 </resources>

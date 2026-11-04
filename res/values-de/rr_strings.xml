@@ -4,4 +4,11 @@
     <string name="drawer_open_keyboard_summary">Tastatur immer öffnen, sobald die App-Übersicht sichtbar ist</string>
     <string name="pref_recents_style_title">"Letzte"</string>
     <string name="glance_content_description">Live-Anzeige</string>
+    <string name="neon_glow_title">Leuchten</string>
+    <string name="neon_ring_title">Klingelton</string>
+    <string-array name="neon_ring_entries">
+        <item>Dünn</item>
+        <item>"Mittel"</item>
+        <item>"Fett"</item>
+    </string-array>
 </resources>
