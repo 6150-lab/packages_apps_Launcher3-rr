@@ -75,4 +75,12 @@
     <string name="meow_shape_title">Miau</string>
     <string name="scroll_shape_title">"Rolar"</string>
     <string name="stretched_shape_title">Esticado</string>
+    <string name="pause">Pausar</string>
+    <string-array name="allapps_search_placement_entries">
+        <item>Oculto</item>
+        <item>Topo</item>
+        <item>Inferior</item>
+    </string-array>
+    <string name="quickspace_vertical_now_playing">TOCANDO AGORA</string>
+    <string name="app_info_source">Origem</string>
 </resources>

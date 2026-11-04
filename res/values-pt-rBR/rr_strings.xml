@@ -6,4 +6,11 @@
     <string name="glance_content_description">Resumo</string>
     <string name="icon_style_rr_title">Estilos do ícone</string>
     <string name="neon_ring_color_title">Cor do anel</string>
+    <string name="neon_glow_title">Brilho</string>
+    <string name="neon_ring_title">Toque</string>
+    <string-array name="neon_ring_entries">
+        <item>Fina</item>
+        <item>"Médio"</item>
+        <item>"Vívido"</item>
+    </string-array>
 </resources>
