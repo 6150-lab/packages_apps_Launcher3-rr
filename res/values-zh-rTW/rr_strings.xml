@@ -6,4 +6,11 @@
     <string name="glance_content_description">資訊一覽</string>
     <string name="icon_style_rr_title">圖示樣式</string>
     <string name="neon_ring_color_title">環圈顏色</string>
+    <string name="neon_glow_title">發光</string>
+    <string name="neon_ring_title">鈴聲</string>
+    <string-array name="neon_ring_entries">
+        <item>細</item>
+        <item>"中"</item>
+        <item>"強烈"</item>
+    </string-array>
 </resources>
