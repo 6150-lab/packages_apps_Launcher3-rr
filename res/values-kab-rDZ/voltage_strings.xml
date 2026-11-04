@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">Iγewwaṛen n ugdil agejdan</string>
+    <string name="home_category_title">Agdil agejdan</string>
+    <string name="recents_category_title">Ineggura</string>
+    <string name="general_category_title">Amatu</string>
+    <string name="suggestion_pref_screen_title">Isumar</string>
+    <string name="pref_restart_title">Ales tanekra</string>
+    <string name="trust_apps_loading">Asali\u2026</string>
+    <string name="trust_apps_help">Tallelt</string>
+    <string name="font_size_title">Teγzi n tsefsit</string>
+    <string name="background_opacity_title">Tiḍullest n ugilal</string>
+    <string name="recents_screenshot_title">Tuṭṭfa n wegdil</string>
+    <string name="recents_clear_all_title">Sfeḍ akk</string>
+    <string name="quickspace_calendar_title">Tidyanin n tsmektit</string>
+    <string name="app_info_source_system">Anagraw</string>
+    <string name="app_info_version">Lqem</string>
+    <string name="app_info_more">Ugar</string>
+    <string name="icon_pack_default_label">Akk-a kan</string>
+    <string name="scroll_shape_title">Adrudem</string>
+</resources>

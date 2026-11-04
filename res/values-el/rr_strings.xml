@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="drawer_open_keyboard_title">Σύρετε για έναρξη αναζήτησης</string>
+    <string name="drawer_open_keyboard_summary">Άνοιγμα πληκτρολογίου κάθε φορά που το συρτάρι εφαρμογών γίνεται ορατό</string>
+    <string name="pref_recents_style_title">"Πρόσφατα"</string>
+    <string name="glance_content_description">Με μια ματιά</string>
+</resources>

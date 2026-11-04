@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"Podešavanja početnog ekrana"</string>
+    <string name="home_category_title">"Početni ekran"</string>
+    <string name="icons_category_title">"Ikone"</string>
+    <string name="recents_category_title">"Nedavno"</string>
+    <string name="misc_category_title">"Razno"</string>
+    <string name="misc_category_summary">"Druge opcije"</string>
+    <string name="general_category_title">"Opšte"</string>
+    <string name="suggestion_pref_screen_title">"Predlozi"</string>
+    <string name="pref_restart_title">"Restartuj"</string>
+    <string name="trust_apps_loading">"Učitava se…"</string>
+    <string name="trust_apps_help">"Pomoć"</string>
+    <string name="font_size_title">"Veličina fonta"</string>
+    <string name="paused_apps_drop_target_label">"Pauziraj aplikaciju"</string>
+    <string name="background_opacity_title">"Neprozirnost pozadine"</string>
+    <string name="recents_screenshot_title">"Snimak ekrana"</string>
+    <string name="recents_clear_all_title">"Obriši sve"</string>
+    <string name="recents_lens_title">"Objektiv"</string>
+    <string name="qe_now_playing_ext_one">"Sada se reprodukuje"</string>
+    <string name="quickspace_now_playing_title">"Sada se reprodukuje"</string>
+    <string name="quick_event_weather_clouds">"Oblačno"</string>
+    <string name="quickspace_calendar_title">"Događaji u kalendaru"</string>
+    <string name="app_info_source_system">"Sistem"</string>
+    <string name="app_info_version">"Verzija"</string>
+    <string name="app_info_more">"Još"</string>
+    <string name="icon_pack_default_label">"Podrazumevano"</string>
+    <string name="cloudy_shape_title">"Oblačno"</string>
+    <string name="heart_shape_title">"Srce"</string>
+    <string name="scroll_shape_title">"Skrolujte"</string>
+</resources>

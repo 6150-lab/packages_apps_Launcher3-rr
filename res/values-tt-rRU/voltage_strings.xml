@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="recents_category_title">Соңгылары</string>
+    <string name="suggestion_pref_screen_title">Тәкъдимнәр</string>
+    <string name="trust_apps_loading">Йөкләү\u2026</string>
+    <string name="recents_clear_all_title">Барысын чистарту</string>
+    <string name="app_info_source_system">Система</string>
+    <string name="icon_pack_default_label">Гадәти</string>
+</resources>

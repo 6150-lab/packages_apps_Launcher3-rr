@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="drawer_open_keyboard_title">Geser untuk mulai mencari</string>
+    <string name="drawer_open_keyboard_summary">Buka keyboard setiap kali laci aplikasi terlihat</string>
+    <string name="pref_recents_style_title">"Terbaru"</string>
+    <string name="glance_content_description">Sekilas</string>
+    <string name="icon_style_rr_title">Gaya ikon</string>
+    <string name="neon_ring_color_title">Warna cincin</string>
+</resources>

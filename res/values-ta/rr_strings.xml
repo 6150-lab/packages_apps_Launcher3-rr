@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="drawer_open_keyboard_title">தேடல்தொடங்கத் தள்ளுக</string>
+    <string name="drawer_open_keyboard_summary">இழுவைதோன்றின் விசைப்பலகைதிற</string>
+    <string name="pref_recents_style_title">"சமீபத்தியவை"</string>
+    <string name="glance_content_description">முகப்புத் தகவல்</string>
+</resources>

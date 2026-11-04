@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="drawer_open_keyboard_title">Svaidhpeáil chun cuardach a thosú</string>
+    <string name="drawer_open_keyboard_summary">Méarchlár oscailte nuair a bhíonn tarraiceán app le feiceáil</string>
+    <string name="pref_recents_style_title">Le Déanaí</string>
+</resources>

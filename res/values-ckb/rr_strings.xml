@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="drawer_open_keyboard_title">خلیسکاندن بۆ دەستپێکردنی گەڕان[cite: 13]</string>
+    <string name="drawer_open_keyboard_summary">کردنەوەی تەختەکلیل هەرکاتێک لیستی بەرنامەکان دەردەکەوێت[cite: 13]</string>
+    <string name="pref_recents_style_title">دوایینەکان</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"હોમ સેટિંગ"</string>
+    <string name="home_category_title">"હોમ સ્ક્રીન"</string>
+    <string name="icons_category_title">"આઇકન"</string>
+    <string name="recents_category_title">"તાજેતરના"</string>
+    <string name="misc_category_title">"વિવિધ"</string>
+    <string name="misc_category_summary">"અન્ય વિકલ્પો"</string>
+    <string name="general_category_title">"સામાન્ય"</string>
+    <string name="suggestion_pref_screen_title">"સૂચનો"</string>
+    <string name="pref_restart_title">"ફરી શરૂ કરો"</string>
+    <string name="trust_apps_loading">"લોડ કરી રહ્યું છે…"</string>
+    <string name="trust_apps_help">"સહાય"</string>
+    <string name="font_size_title">"ફૉન્ટનું કદ"</string>
+    <string name="paused_apps_drop_target_label">"ઍપને થોભાવો"</string>
+    <string name="background_opacity_title">"બૅકગ્રાઉન્ડ અસ્પષ્ટતા"</string>
+    <string name="recents_screenshot_title">"સ્ક્રીનશૉટ"</string>
+    <string name="recents_clear_all_title">"બધું સાફ કરો"</string>
+    <string name="quick_event_weather_clouds">"વાદળછાયું"</string>
+    <string name="quickspace_calendar_title">"કૅલેન્ડર ઇવેન્ટ"</string>
+    <string name="app_info_source_system">"સિસ્ટમ"</string>
+    <string name="app_info_version">"વર્ઝન"</string>
+    <string name="app_info_more">"વધુ"</string>
+    <string name="icon_pack_default_label">"ડિફૉલ્ટ"</string>
+    <string name="cloudy_shape_title">"વાદળછાયું"</string>
+    <string name="heart_shape_title">"હૃદય"</string>
+    <string name="scroll_shape_title">"સ્ક્રોલ કરો"</string>
+</resources>

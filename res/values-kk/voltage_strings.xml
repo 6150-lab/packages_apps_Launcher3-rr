@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"Негізгі экран параметрлері"</string>
+    <string name="home_category_title">"Негізгі экран"</string>
+    <string name="icons_category_title">"Белгішелер"</string>
+    <string name="recents_category_title">"Жақындағылар"</string>
+    <string name="misc_category_title">"Әртүрлі"</string>
+    <string name="misc_category_summary">"Басқа опциялар"</string>
+    <string name="general_category_title">"Жалпы"</string>
+    <string name="suggestion_pref_screen_title">"Ұсыныстар"</string>
+    <string name="pref_restart_title">"Өшіріп қосу"</string>
+    <string name="trust_apps_loading">"Жүктелуде…"</string>
+    <string name="trust_apps_help">"Анықтама"</string>
+    <string name="font_size_title">"Қаріп өлшемі"</string>
+    <string name="paused_apps_drop_target_label">"Қолданбаны кідірту"</string>
+    <string name="background_opacity_title">"Артқы фон ашықтығы"</string>
+    <string name="recents_screenshot_title">"Скриншот"</string>
+    <string name="recents_clear_all_title">"Барлығын өшіру"</string>
+    <string name="quick_event_weather_clouds">"Бұлтты"</string>
+    <string name="quickspace_calendar_title">"Күнтізбедегі іс-шаралар"</string>
+    <string name="app_info_source_system">"Жүйе"</string>
+    <string name="app_info_version">"Нұсқа"</string>
+    <string name="app_info_more">"Жаю"</string>
+    <string name="icon_pack_default_label">"Әдепкі"</string>
+    <string name="cloudy_shape_title">"Бұлтты"</string>
+    <string name="heart_shape_title">"Жүрек"</string>
+    <string name="scroll_shape_title">"Айналдыру"</string>
+</resources>

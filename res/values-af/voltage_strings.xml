@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"Tuis-instellings"</string>
+    <string name="home_category_title">"Tuisskerm"</string>
+    <string name="icons_category_title">"Ikone"</string>
+    <string name="recents_category_title">"Onlangs"</string>
+    <string name="misc_category_title">"Diverse"</string>
+    <string name="misc_category_summary">"Ander opsies"</string>
+    <string name="general_category_title">"Algemeen"</string>
+    <string name="suggestion_pref_screen_title">"Voorstelle"</string>
+    <string name="pref_restart_title">"Herbegin"</string>
+    <string name="trust_apps_loading">"Laai tans …"</string>
+    <string name="trust_apps_help">"Hulp"</string>
+    <string name="font_size_title">"Lettergrootte"</string>
+    <string name="paused_apps_drop_target_label">"Onderbreek app"</string>
+    <string name="background_opacity_title">"Agtergrond-ondeursigtigheid"</string>
+    <string name="recents_screenshot_title">"Skermskoot"</string>
+    <string name="recents_clear_all_title">"Vee alles uit"</string>
+    <string name="qe_now_playing_ext_one">"Speel tans"</string>
+    <string name="quickspace_now_playing_title">"Speel tans"</string>
+    <string name="quick_event_weather_clouds">"Bewolk"</string>
+    <string name="quickspace_calendar_title">"Kalendergeleenthede"</string>
+    <string name="app_info_source_system">"Stelsel"</string>
+    <string name="app_info_version">"Weergawe"</string>
+    <string name="app_info_more">"Meer"</string>
+    <string name="icon_pack_default_label">"Verstek"</string>
+    <string name="cloudy_shape_title">"Bewolk"</string>
+    <string name="heart_shape_title">"Hartjie"</string>
+    <string name="scroll_shape_title">"Rollees"</string>
+</resources>

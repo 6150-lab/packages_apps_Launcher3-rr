@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"Valg for startskjerm"</string>
+    <string name="home_category_title">"Startskjerm"</string>
+    <string name="icons_category_title">"Ikoner"</string>
+    <string name="recents_category_title">"Nylige"</string>
+    <string name="misc_category_title">"Diverse"</string>
+    <string name="misc_category_summary">"Andre alternativer"</string>
+    <string name="general_category_title">"Generelt"</string>
+    <string name="suggestion_pref_screen_title">"Forslag"</string>
+    <string name="pref_restart_title">"Start på nytt"</string>
+    <string name="trust_apps_loading">"Laster inn …"</string>
+    <string name="trust_apps_help">"Hjelp"</string>
+    <string name="font_size_title">"Skriftstørrelse"</string>
+    <string name="paused_apps_drop_target_label">"Sett appen på pause"</string>
+    <string name="background_opacity_title">"Bakgrunnsopasitet"</string>
+    <string name="recents_screenshot_title">"Skjermbilde"</string>
+    <string name="recents_clear_all_title">"Fjern alt"</string>
+    <string name="qe_now_playing_ext_one">"Spilles nå"</string>
+    <string name="quickspace_now_playing_title">"Spilles nå"</string>
+    <string name="quick_event_weather_clouds">"Overskyet"</string>
+    <string name="quickspace_calendar_title">"Kalenderaktiviteter"</string>
+    <string name="app_info_version">"Versjon"</string>
+    <string name="app_info_more">"Mer"</string>
+    <string name="icon_pack_default_label">"Standard"</string>
+    <string name="cloudy_shape_title">"Overskyet"</string>
+    <string name="heart_shape_title">"Hjerte"</string>
+    <string name="scroll_shape_title">"Rull"</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"ပင်မဆက်တင်များ"</string>
+    <string name="home_category_title">"ပင်မစာမျက်နှာ"</string>
+    <string name="icons_category_title">"သင်္ကေတများ"</string>
+    <string name="recents_category_title">"လတ်တလော"</string>
+    <string name="misc_category_title">"အထွေထွေ"</string>
+    <string name="misc_category_summary">"အခြား ရွှေးစရာများ"</string>
+    <string name="general_category_title">"အထွေထွေ"</string>
+    <string name="suggestion_pref_screen_title">"အကြံပြုချက်များ"</string>
+    <string name="pref_restart_title">"ပြန်စရန်"</string>
+    <string name="trust_apps_loading">"ဖွင့်နေသည်…"</string>
+    <string name="trust_apps_help">"အကူအညီ"</string>
+    <string name="font_size_title">"ဖောင့်အရွယ်"</string>
+    <string name="paused_apps_drop_target_label">"အက်ပ် ခဏရပ်ရန်"</string>
+    <string name="background_opacity_title">"နောက်ခံ အလင်းအား"</string>
+    <string name="recents_screenshot_title">"ဖန်သားပြင်ပုံ"</string>
+    <string name="recents_clear_all_title">"အားလုံးရှင်းရန်"</string>
+    <string name="quick_event_weather_clouds">"မိုးတိမ်ထူထပ်"</string>
+    <string name="quickspace_calendar_title">"ပြက္ခဒိန်အစီအစဉ်များ"</string>
+    <string name="app_info_source_system">"စနစ်"</string>
+    <string name="app_info_version">"ဗားရှင်း"</string>
+    <string name="app_info_more">"နောက်ထပ်"</string>
+    <string name="icon_pack_default_label">"မူရင်း"</string>
+    <string name="cloudy_shape_title">"မိုးတိမ်ထူထပ်"</string>
+    <string name="heart_shape_title">"အသည်းပုံ"</string>
+    <string name="scroll_shape_title">"လှိမ့်ရန်"</string>
+</resources>

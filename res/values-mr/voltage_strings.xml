@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"होम सेटिंग्‍ज"</string>
+    <string name="home_category_title">"होम स्क्रीन"</string>
+    <string name="icons_category_title">"आयकन"</string>
+    <string name="recents_category_title">"अलीकडील"</string>
+    <string name="misc_category_title">"संकीर्ण"</string>
+    <string name="misc_category_summary">"इतर पर्याय"</string>
+    <string name="general_category_title">"सामान्य"</string>
+    <string name="suggestion_pref_screen_title">"सूचना"</string>
+    <string name="pref_restart_title">"रीस्टार्ट करा"</string>
+    <string name="trust_apps_loading">"लोड करत आहे…"</string>
+    <string name="trust_apps_help">"मदत"</string>
+    <string name="font_size_title">"फॉंटचा आकार"</string>
+    <string name="paused_apps_drop_target_label">"अ‍ॅप थांबवा"</string>
+    <string name="background_opacity_title">"पार्श्वभूमी अपारदर्शकता"</string>
+    <string name="recents_screenshot_title">"स्क्रीनशॉट"</string>
+    <string name="recents_clear_all_title">"सर्व साफ करा"</string>
+    <string name="quick_event_weather_clouds">"ढगाळ"</string>
+    <string name="quickspace_calendar_title">"कॅलेंडर इव्हेंट"</string>
+    <string name="app_info_source_system">"सिस्टीम"</string>
+    <string name="app_info_version">"आवृत्ती"</string>
+    <string name="app_info_more">"आणखी"</string>
+    <string name="icon_pack_default_label">"डीफॉल्ट"</string>
+    <string name="cloudy_shape_title">"ढगाळ"</string>
+    <string name="heart_shape_title">"हार्ट"</string>
+    <string name="scroll_shape_title">"स्क्रोल करा"</string>
+</resources>

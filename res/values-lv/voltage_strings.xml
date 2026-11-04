@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"Sākumlapas iestatījumi"</string>
+    <string name="home_category_title">"Sākuma ekrāns"</string>
+    <string name="icons_category_title">"Ikonas"</string>
+    <string name="recents_category_title">"Nesenie"</string>
+    <string name="misc_category_title">"Dažādi"</string>
+    <string name="misc_category_summary">"Citas iespējas"</string>
+    <string name="general_category_title">"Vispārīgi"</string>
+    <string name="suggestion_pref_screen_title">"Ieteikumi"</string>
+    <string name="pref_restart_title">"Restartēt"</string>
+    <string name="trust_apps_loading">"Notiek ielāde…"</string>
+    <string name="trust_apps_help">"Palīdzība"</string>
+    <string name="font_size_title">"Fonta lielums"</string>
+    <string name="paused_apps_drop_target_label">"Apturēt lietotni"</string>
+    <string name="background_opacity_title">"Fona necaurredzamība"</string>
+    <string name="recents_screenshot_title">"Ekrānuzņēmums"</string>
+    <string name="recents_clear_all_title">"Notīrīt visu"</string>
+    <string name="qe_now_playing_ext_one">"Pašlaik atskaņo"</string>
+    <string name="quickspace_now_playing_title">"Pašlaik atskaņo"</string>
+    <string name="quick_event_weather_clouds">"Mākoņains"</string>
+    <string name="quickspace_calendar_title">"Kalendāra pasākumi"</string>
+    <string name="app_info_source_system">"Sistēma"</string>
+    <string name="app_info_version">"Versija"</string>
+    <string name="app_info_more">"Vairāk"</string>
+    <string name="icon_pack_default_label">"Noklusējums"</string>
+    <string name="cloudy_shape_title">"Mākoņains"</string>
+    <string name="heart_shape_title">"Sirds"</string>
+    <string name="scroll_shape_title">"Ritināt"</string>
+</resources>

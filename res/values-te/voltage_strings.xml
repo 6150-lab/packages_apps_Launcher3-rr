@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"మొదటి స్క్రీన్ సెట్టింగ్‌లు"</string>
+    <string name="home_category_title">"మొదటి స్క్రీన్"</string>
+    <string name="icons_category_title">"చిహ్నాలు"</string>
+    <string name="recents_category_title">"ఇటీవలివి"</string>
+    <string name="misc_category_title">"ఇతరాలు"</string>
+    <string name="misc_category_summary">"ఇతర ఆప్షన్‌లు"</string>
+    <string name="general_category_title">"సాధారణం"</string>
+    <string name="suggestion_pref_screen_title">"సూచనలు"</string>
+    <string name="pref_restart_title">"రీస్టార్ట్ చేయండి"</string>
+    <string name="trust_apps_loading">"లోడ్ చేస్తోంది…"</string>
+    <string name="trust_apps_help">"సహాయం"</string>
+    <string name="font_size_title">"ఫాంట్ సైజ్"</string>
+    <string name="paused_apps_drop_target_label">"యాప్‌ను పాజ్ చేయండి"</string>
+    <string name="background_opacity_title">"నేపథ్య అపారదర్శకత"</string>
+    <string name="recents_screenshot_title">"స్క్రీన్‌షాట్"</string>
+    <string name="recents_clear_all_title">"అన్నీ క్లియర్ చేయండి"</string>
+    <string name="quick_event_weather_clouds">"మేఘావృతంగా"</string>
+    <string name="quickspace_calendar_title">"క్యాలెండర్ ఈవెంట్‌లు"</string>
+    <string name="app_info_source_system">"సిస్టమ్"</string>
+    <string name="app_info_version">"వెర్షన్"</string>
+    <string name="app_info_more">"మరిన్ని"</string>
+    <string name="icon_pack_default_label">"ఆటోమేటిక్"</string>
+    <string name="cloudy_shape_title">"మేఘావృతంగా"</string>
+    <string name="heart_shape_title">"హార్ట్"</string>
+    <string name="scroll_shape_title">"స్క్రోల్ చేయండి"</string>
+</resources>

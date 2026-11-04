@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="drawer_open_keyboard_title">Přejeďte prstem pro zahájení hledání</string>
+    <string name="drawer_open_keyboard_summary">Otevřít klávesnici vždy, když je seznam aplikací viditelný</string>
+    <string name="pref_recents_style_title">"Poslední"</string>
+    <string name="glance_content_description">Přehled událostí</string>
+</resources>

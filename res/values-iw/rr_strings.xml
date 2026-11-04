@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="drawer_open_keyboard_title">החלקה לתחילת חיפוש</string>
+    <string name="drawer_open_keyboard_summary">הפעל מקלדת, כשמגירת האפליקציה מוצגת</string>
+    <string name="pref_recents_style_title">"מהזמן האחרון"</string>
+    <string name="glance_content_description">בקצרה</string>
+</resources>

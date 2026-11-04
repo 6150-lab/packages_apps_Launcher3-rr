@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="drawer_open_keyboard_title">Przesuń, aby rozpocząć wyszukiwanie</string>
+    <string name="drawer_open_keyboard_summary">Otwieraj klawiaturę, gdy szuflada aplikacji staje się widoczna</string>
+    <string name="pref_recents_style_title">"Ostatnie"</string>
+    <string name="glance_content_description">W skrócie</string>
+    <string name="icon_style_rr_title">Styl ikony</string>
+    <string name="neon_ring_color_title">Kolor pierścienia</string>
+</resources>

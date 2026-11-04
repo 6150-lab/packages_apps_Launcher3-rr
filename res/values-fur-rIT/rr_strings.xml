@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="drawer_open_keyboard_title">Scor par scomençâ la ricercje</string>
+    <string name="drawer_open_keyboard_summary">Vierç la tastiere ogni volte che il scansel des aplicazions al devente visibil</string>
+    <string name="pref_recents_style_title">Resints</string>
+</resources>

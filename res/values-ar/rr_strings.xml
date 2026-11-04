@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="pref_recents_style_title">"الأحدث"</string>
+    <string name="glance_content_description">نظرة سريعة</string>
+    <string name="neon_ring_color_title">لون الحلقة</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"ການຕັ້ງຄ່າໜ້າຫຼັກ"</string>
+    <string name="home_category_title">"ໂຮມສະກຣີນ"</string>
+    <string name="icons_category_title">"ໄອຄອນ"</string>
+    <string name="recents_category_title">"ຫຼ້າສຸດ"</string>
+    <string name="misc_category_title">"ອື່ນໆ"</string>
+    <string name="misc_category_summary">"ໂຕເລືອກ​ອື່ນໆ"</string>
+    <string name="general_category_title">"ທົ່ວໄປ"</string>
+    <string name="suggestion_pref_screen_title">"ຄຳແນະນຳ"</string>
+    <string name="pref_restart_title">"ຣີສະຕາດ"</string>
+    <string name="trust_apps_loading">"ກຳລັງໂຫລດ…"</string>
+    <string name="trust_apps_help">"ຊ່ວຍເຫຼືອ"</string>
+    <string name="font_size_title">"ຂະໜາດຟອນ"</string>
+    <string name="paused_apps_drop_target_label">"ຢຸດແອັບຊົ່ວຄາວ"</string>
+    <string name="background_opacity_title">"ຄວາມໂປ່ງແສງຂອງພື້ນຫຼັງ"</string>
+    <string name="recents_screenshot_title">"ຮູບໜ້າຈໍ"</string>
+    <string name="recents_clear_all_title">"ລຶບລ້າງທັງໝົດ"</string>
+    <string name="quick_event_weather_clouds">"ຟ້າຄຶ້ມ"</string>
+    <string name="quickspace_calendar_title">"ນັດໝາຍປະຕິທິນ"</string>
+    <string name="app_info_source_system">"ລະບົບ"</string>
+    <string name="app_info_version">"ເວີຊັນ"</string>
+    <string name="app_info_more">"ເພີ່ມເຕີມ"</string>
+    <string name="icon_pack_default_label">"ຄ່າເລີ່ມຕົ້ນ"</string>
+    <string name="cloudy_shape_title">"ຟ້າຄຶ້ມ"</string>
+    <string name="heart_shape_title">"ຫົວໃຈ"</string>
+    <string name="scroll_shape_title">"ເລື່ອນ"</string>
+</resources>

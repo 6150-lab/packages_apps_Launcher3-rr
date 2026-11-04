@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="drawer_open_keyboard_title">Glisați pentru a începe căutarea</string>
+    <string name="drawer_open_keyboard_summary">Deschide tastatura ori de câte ori sertarul de aplicații devine vizibil</string>
+    <string name="pref_recents_style_title">"Recente"</string>
+    <string name="glance_content_description">Pe scurt</string>
+</resources>

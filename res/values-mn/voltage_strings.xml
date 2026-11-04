@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"Нүүр хуудасны тохиргоо"</string>
+    <string name="home_category_title">"Үндсэн нүүр"</string>
+    <string name="icons_category_title">"Дүрс тэмдэг"</string>
+    <string name="recents_category_title">"Саяхны"</string>
+    <string name="misc_category_title">"Бусад"</string>
+    <string name="misc_category_summary">"Бусад сонголтууд"</string>
+    <string name="general_category_title">"Ерөнхий"</string>
+    <string name="suggestion_pref_screen_title">"Зөвлөмж"</string>
+    <string name="pref_restart_title">"Дахин эхлүүлэх"</string>
+    <string name="trust_apps_loading">"Ачаалж байна…"</string>
+    <string name="trust_apps_help">"Тусламж"</string>
+    <string name="font_size_title">"Фонтын хэмжээ"</string>
+    <string name="paused_apps_drop_target_label">"Аппыг түр зогсоох"</string>
+    <string name="background_opacity_title">"Арын дэвсгэрийн тод байдал"</string>
+    <string name="recents_screenshot_title">"Дэлгэцийн зураг дарах"</string>
+    <string name="recents_clear_all_title">"Бүгдийг арилгах"</string>
+    <string name="quick_event_weather_clouds">"Үүлэрхэг"</string>
+    <string name="quickspace_calendar_title">"Календарийн үйл явдал"</string>
+    <string name="app_info_source_system">"Систем"</string>
+    <string name="app_info_version">"Хувилбар"</string>
+    <string name="app_info_more">"Бусад"</string>
+    <string name="icon_pack_default_label">"Өгөгдмөл"</string>
+    <string name="cloudy_shape_title">"Үүлэрхэг"</string>
+    <string name="heart_shape_title">"Зүрх"</string>
+    <string name="scroll_shape_title">"Гүйлгэх"</string>
+</resources>

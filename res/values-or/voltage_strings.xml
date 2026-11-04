@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"ହୋମ ସେଟିଂସ"</string>
+    <string name="home_category_title">"ହୋମ ସ୍କ୍ରିନ"</string>
+    <string name="icons_category_title">"ଆଇକନ"</string>
+    <string name="recents_category_title">"ବର୍ତ୍ତମାନର"</string>
+    <string name="misc_category_title">"ବିବିଧ"</string>
+    <string name="misc_category_summary">"ଅନ୍ୟ ବିକଲ୍ପଗୁଡ଼ିକ"</string>
+    <string name="general_category_title">"ସାଧାରଣ"</string>
+    <string name="suggestion_pref_screen_title">"ପରାମର୍ଶ"</string>
+    <string name="pref_restart_title">"ରିଷ୍ଟାର୍ଟ କରନ୍ତୁ"</string>
+    <string name="trust_apps_loading">"ଲୋଡ୍ ହେଉଛି…"</string>
+    <string name="trust_apps_help">"ସାହାଯ୍ୟ"</string>
+    <string name="font_size_title">"ଫଣ୍ଟ ସାଇଜ"</string>
+    <string name="paused_apps_drop_target_label">"ଆପ ବିରତ କରନ୍ତୁ"</string>
+    <string name="background_opacity_title">"ବ୍ୟାକ୍‌ଗ୍ରାଉଣ୍ଡର ଓପାସିଟି"</string>
+    <string name="recents_screenshot_title">"ସ୍କ୍ରିନସଟ"</string>
+    <string name="recents_clear_all_title">"ସବୁ ଖାଲି କରନ୍ତୁ"</string>
+    <string name="quickspace_calendar_title">"କେଲେଣ୍ଡର ଇଭେଣ୍ଟଗୁଡ଼ିକ"</string>
+    <string name="app_info_source_system">"ସିଷ୍ଟମ"</string>
+    <string name="app_info_version">"ସଂସ୍କରଣ"</string>
+    <string name="app_info_more">"ଅଧିକ"</string>
+    <string name="icon_pack_default_label">"ଡିଫଲ୍ଟ"</string>
+    <string name="heart_shape_title">"ହାର୍ଟ"</string>
+    <string name="scroll_shape_title">"ସ୍କ୍ରୋଲ କରନ୍ତୁ"</string>
+</resources>

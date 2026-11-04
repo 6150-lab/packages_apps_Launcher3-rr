@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"Mipangilio ya mwanzo"</string>
+    <string name="home_category_title">"Skrini ya kwanza"</string>
+    <string name="icons_category_title">"Aikoni"</string>
+    <string name="recents_category_title">"Zilizotumika majuzi"</string>
+    <string name="misc_category_title">"Zinginezo"</string>
+    <string name="misc_category_summary">"Chaguo nyinginezo"</string>
+    <string name="general_category_title">"Jumla"</string>
+    <string name="suggestion_pref_screen_title">"Mapendekezo"</string>
+    <string name="pref_restart_title">"Zima kisha uwashe"</string>
+    <string name="trust_apps_loading">"Inapakia…"</string>
+    <string name="trust_apps_help">"Usaidizi"</string>
+    <string name="font_size_title">"Ukubwa wa fonti"</string>
+    <string name="paused_apps_drop_target_label">"Sitisha programu"</string>
+    <string name="background_opacity_title">"Uvulivuli wa Mandhari"</string>
+    <string name="recents_screenshot_title">"Picha ya skrini"</string>
+    <string name="recents_clear_all_title">"Ondoa zote"</string>
+    <string name="recents_lens_title">"Lenzi"</string>
+    <string name="qe_now_playing_ext_one">"Inacheza sasa hivi"</string>
+    <string name="quickspace_now_playing_title">"Inacheza sasa hivi"</string>
+    <string name="quick_event_weather_clouds">"Mawingu"</string>
+    <string name="quickspace_calendar_title">"Matukio ya kalenda"</string>
+    <string name="app_info_source_system">"Mfumo"</string>
+    <string name="app_info_version">"Toleo"</string>
+    <string name="app_info_more">"Zaidi"</string>
+    <string name="icon_pack_default_label">"Chaguomsingi"</string>
+    <string name="cloudy_shape_title">"Mawingu"</string>
+    <string name="heart_shape_title">"Moyo"</string>
+    <string name="scroll_shape_title">"Sogeza"</string>
+</resources>

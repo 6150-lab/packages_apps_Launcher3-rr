@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"Tetapan skrin utama"</string>
+    <string name="home_category_title">"Skrin utama"</string>
+    <string name="icons_category_title">"Ikon"</string>
+    <string name="recents_category_title">"Terbaharu"</string>
+    <string name="misc_category_title">"Pelbagai"</string>
+    <string name="misc_category_summary">"Pilihan lain"</string>
+    <string name="general_category_title">"Umum"</string>
+    <string name="suggestion_pref_screen_title">"Cadangan"</string>
+    <string name="pref_restart_title">"Mulakan semula"</string>
+    <string name="trust_apps_loading">"Memuatkan…"</string>
+    <string name="trust_apps_help">"Bantuan"</string>
+    <string name="font_size_title">"Saiz fon"</string>
+    <string name="paused_apps_drop_target_label">"Jeda apl"</string>
+    <string name="background_opacity_title">"Kelegapan latar belakang"</string>
+    <string name="recents_screenshot_title">"Tangkapan skrin"</string>
+    <string name="recents_clear_all_title">"Kosongkan semua"</string>
+    <string name="qe_now_playing_ext_one">"Sedang dimainkan"</string>
+    <string name="quickspace_now_playing_title">"Sedang dimainkan"</string>
+    <string name="quick_event_weather_clouds">"Mendung"</string>
+    <string name="quickspace_calendar_title">"Acara kalendar"</string>
+    <string name="app_info_source_system">"Sistem"</string>
+    <string name="app_info_version">"Versi"</string>
+    <string name="app_info_more">"Lagi"</string>
+    <string name="icon_pack_default_label">"Lalai"</string>
+    <string name="cloudy_shape_title">"Mendung"</string>
+    <string name="heart_shape_title">"Hati"</string>
+    <string name="scroll_shape_title">"Tatal"</string>
+</resources>

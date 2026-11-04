@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"Bosh ekran sozlamalari"</string>
+    <string name="home_category_title">"Bosh ekran"</string>
+    <string name="icons_category_title">"Belgilar"</string>
+    <string name="recents_category_title">"Oxirgilar"</string>
+    <string name="misc_category_title">"Boshqa"</string>
+    <string name="misc_category_summary">"Boshqa variantlar"</string>
+    <string name="general_category_title">"Umumiy"</string>
+    <string name="suggestion_pref_screen_title">"Takliflar"</string>
+    <string name="pref_restart_title">"Qayta yoqish"</string>
+    <string name="trust_apps_loading">"Yuklanmoqda…"</string>
+    <string name="trust_apps_help">"Yordam"</string>
+    <string name="font_size_title">"Shrift hajmi"</string>
+    <string name="paused_apps_drop_target_label">"Pauza qilish"</string>
+    <string name="background_opacity_title">"Fon yarim tiniqligi"</string>
+    <string name="recents_screenshot_title">"Skrinshot"</string>
+    <string name="recents_clear_all_title">"Hammasini tozalash"</string>
+    <string name="quick_event_weather_clouds">"Bulutli"</string>
+    <string name="quickspace_calendar_title">"Taqvimdagi tadbirlar"</string>
+    <string name="app_info_source_system">"Tizim"</string>
+    <string name="app_info_version">"Versiya"</string>
+    <string name="app_info_more">"Yana"</string>
+    <string name="icon_pack_default_label">"Standart"</string>
+    <string name="cloudy_shape_title">"Bulutli"</string>
+    <string name="heart_shape_title">"Yurak"</string>
+    <string name="scroll_shape_title">"Aylantirish"</string>
+</resources>

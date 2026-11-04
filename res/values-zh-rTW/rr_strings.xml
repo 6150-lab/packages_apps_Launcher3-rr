@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="drawer_open_keyboard_title">滑動以開始搜尋</string>
+    <string name="drawer_open_keyboard_summary">當應用程式抽屜變為可見時，開啟鍵盤</string>
+    <string name="pref_recents_style_title">"最近"</string>
+    <string name="glance_content_description">資訊一覽</string>
+    <string name="icon_style_rr_title">圖示樣式</string>
+    <string name="neon_ring_color_title">環圈顏色</string>
+</resources>

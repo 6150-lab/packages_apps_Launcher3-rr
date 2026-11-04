@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"Поставки за почетен екран"</string>
+    <string name="home_category_title">"Почетен екран"</string>
+    <string name="icons_category_title">"Икони"</string>
+    <string name="recents_category_title">"Неодамнешни"</string>
+    <string name="misc_category_title">"Разно"</string>
+    <string name="misc_category_summary">"Други опции"</string>
+    <string name="general_category_title">"Општи"</string>
+    <string name="suggestion_pref_screen_title">"Предлози"</string>
+    <string name="pref_restart_title">"Рестартирај"</string>
+    <string name="trust_apps_loading">"Се вчитува…"</string>
+    <string name="trust_apps_help">"Помош"</string>
+    <string name="font_size_title">"Големина на фонтот"</string>
+    <string name="paused_apps_drop_target_label">"Паузирај апликација"</string>
+    <string name="background_opacity_title">"Непроѕирност на заднина"</string>
+    <string name="recents_screenshot_title">"Слика од екранот"</string>
+    <string name="recents_clear_all_title">"Избриши ги сите"</string>
+    <string name="quick_event_weather_clouds">"Облачно"</string>
+    <string name="quickspace_calendar_title">"Настани во календарот"</string>
+    <string name="app_info_source_system">"Систем"</string>
+    <string name="app_info_version">"Верзија"</string>
+    <string name="app_info_more">"Повеќе"</string>
+    <string name="icon_pack_default_label">"Стандардно"</string>
+    <string name="cloudy_shape_title">"Облачно"</string>
+    <string name="heart_shape_title">"Срце"</string>
+    <string name="scroll_shape_title">"Лизгање"</string>
+</resources>

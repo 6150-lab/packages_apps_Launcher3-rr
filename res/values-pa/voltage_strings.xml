@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"ਹੋਮ ਸੈਟਿੰਗਾਂ"</string>
+    <string name="home_category_title">"ਹੋਮ ਸਕ੍ਰੀਨ"</string>
+    <string name="icons_category_title">"ਪ੍ਰਤੀਕ"</string>
+    <string name="recents_category_title">"ਹਾਲੀਆ"</string>
+    <string name="misc_category_title">"ਫੁਟਕਲ"</string>
+    <string name="misc_category_summary">"ਹੋਰ ਚੋਣਾਂ"</string>
+    <string name="general_category_title">"ਸਧਾਰਨ"</string>
+    <string name="suggestion_pref_screen_title">"ਸੁਝਾਅ"</string>
+    <string name="pref_restart_title">"ਮੁੜ-ਸ਼ੁਰੂ ਕਰੋ"</string>
+    <string name="trust_apps_loading">"ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…"</string>
+    <string name="trust_apps_help">"ਮਦਦ"</string>
+    <string name="font_size_title">"ਫੌਂਟ ਸਾਈਜ਼"</string>
+    <string name="paused_apps_drop_target_label">"ਐਪ ਰੋਕੋ"</string>
+    <string name="background_opacity_title">"ਬੈਕਗ੍ਰਾਉਂਡ ਅਪਾਰਦਰਸ਼ਤਾ"</string>
+    <string name="recents_screenshot_title">"ਸਕ੍ਰੀਨਸ਼ਾਟ"</string>
+    <string name="recents_clear_all_title">"ਸਭ ਕਲੀਅਰ ਕਰੋ"</string>
+    <string name="quick_event_weather_clouds">"ਧੁੰਦਲਾ"</string>
+    <string name="quickspace_calendar_title">"ਕੈਲੰਡਰ ਇਵੈਂਟ"</string>
+    <string name="app_info_source_system">"ਸਿਸਟਮ"</string>
+    <string name="app_info_version">"ਵਰਜਨ"</string>
+    <string name="app_info_more">"ਹੋਰ"</string>
+    <string name="icon_pack_default_label">"ਪੂਰਵ-ਨਿਰਧਾਰਿਤ"</string>
+    <string name="cloudy_shape_title">"ਧੁੰਦਲਾ"</string>
+    <string name="heart_shape_title">"ਦਿਲ"</string>
+    <string name="scroll_shape_title">"ਸਕ੍ਰੋਲ ਕਰੋ"</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"গৃহ ছেটিং"</string>
+    <string name="home_category_title">"গৃহ স্ক্ৰীন"</string>
+    <string name="icons_category_title">"চিহ্ন"</string>
+    <string name="recents_category_title">"শেহতীয়া"</string>
+    <string name="misc_category_title">"সানমিহলি"</string>
+    <string name="misc_category_summary">"অন্য বিকল্পসমূহ"</string>
+    <string name="general_category_title">"সাধাৰণ"</string>
+    <string name="suggestion_pref_screen_title">"পৰামৰ্শ"</string>
+    <string name="pref_restart_title">"ৰিষ্টাৰ্ট কৰক"</string>
+    <string name="trust_apps_loading">"ল’ড হৈ আছে…"</string>
+    <string name="trust_apps_help">"সহায়"</string>
+    <string name="font_size_title">"ফণ্টৰ আকাৰ"</string>
+    <string name="paused_apps_drop_target_label">"এপ্‌ পজ কৰক"</string>
+    <string name="background_opacity_title">"বেকগ্ৰাউণ্ডৰ অস্বচ্ছতা"</string>
+    <string name="recents_screenshot_title">"স্ক্ৰীনশ্বট"</string>
+    <string name="recents_clear_all_title">"আটাইবোৰ মচক"</string>
+    <string name="recents_lens_title">"লেন্স"</string>
+    <string name="quickspace_calendar_title">"কেলেণ্ডাৰৰ অনুষ্ঠান"</string>
+    <string name="app_info_source_system">"ছিষ্টেম"</string>
+    <string name="app_info_version">"সংস্কৰণ"</string>
+    <string name="app_info_more">"অধিক"</string>
+    <string name="icon_pack_default_label">"ডিফ’ল্ট"</string>
+    <string name="heart_shape_title">"হৃদয়"</string>
+    <string name="scroll_shape_title">"স্ক্ৰ’ল কৰক"</string>
+</resources>

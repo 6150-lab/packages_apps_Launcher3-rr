@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="drawer_open_keyboard_title">Iscurre pro cumintzare sa chirca</string>
+    <string name="drawer_open_keyboard_summary">Aberi su tecladu semper chi su calàsciu de aplicatziones siat visìbile</string>
+    <string name="pref_recents_style_title">Reghentes</string>
+</resources>

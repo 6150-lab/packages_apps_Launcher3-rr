@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"ہوم ترتیبات"</string>
+    <string name="home_category_title">"ہوم اسکرین"</string>
+    <string name="icons_category_title">"آئیکنز"</string>
+    <string name="recents_category_title">"حالیہ"</string>
+    <string name="misc_category_title">"متفرقات"</string>
+    <string name="misc_category_summary">"دیگر اختیارات"</string>
+    <string name="general_category_title">"عام"</string>
+    <string name="interface_category_title">انٹرفیس</string>
+    <string name="suggestion_pref_screen_title">"تجاویز"</string>
+    <string name="pref_restart_title">"ری سٹارٹ کریں"</string>
+    <string name="trust_apps_loading">"لوڈ ہو رہا ہے…"</string>
+    <string name="trust_apps_help">"مدد"</string>
+    <string name="font_size_title">"فونٹ سائز"</string>
+    <string name="paused_apps_drop_target_label">"ایپ موقوف کریں"</string>
+    <string name="background_opacity_title">"پس منظر کا دھندلا پن"</string>
+    <string name="show_statusbar_title">حالت پٹی</string>
+    <string name="recents_screenshot_title">"اسکرین شاٹ"</string>
+    <string name="recents_clear_all_title">"سبھی کو صاف کریں"</string>
+    <string name="recents_lens_title">"‏Google لینز"</string>
+    <string name="quick_event_weather_clouds">"ابر آلود"</string>
+    <string name="quickspace_calendar_title">"کیلنڈر ایونٹس"</string>
+    <string name="app_info_source_system">"سسٹم"</string>
+    <string name="app_info_version">"ورژن"</string>
+    <string name="app_info_more">"مزید"</string>
+    <string name="icon_pack_title">آئیکون پیک</string>
+    <string name="icon_pack_default_label">"ڈیفالٹ"</string>
+    <string name="cloudy_shape_title">"ابر آلود"</string>
+    <string name="heart_shape_title">"دل"</string>
+    <string name="scroll_shape_title">"اسکرول کریں"</string>
+</resources>

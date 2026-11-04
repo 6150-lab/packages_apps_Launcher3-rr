@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="drawer_open_keyboard_title">برای شروع جستجو انگشت خود را بکشید</string>
+    <string name="drawer_open_keyboard_summary">هر زمان که کشوی برنامه نمایان شد، صفحه کلید را باز کنید</string>
+    <string name="pref_recents_style_title">"موارد اخیر"</string>
+    <string name="glance_content_description">در یک نگاه</string>
+</resources>

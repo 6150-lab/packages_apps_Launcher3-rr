@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="pref_recents_style_title">"Senaste"</string>
+    <string name="glance_content_description">Snabböversikt</string>
+    <string name="icon_style_rr_title">Ikonstil</string>
+    <string name="neon_ring_color_title">Ringfärg</string>
+</resources>

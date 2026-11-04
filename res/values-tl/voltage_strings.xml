@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"Mga setting ng Home"</string>
+    <string name="icons_category_title">"Mga Icon"</string>
+    <string name="recents_category_title">"Mga Kamakailan"</string>
+    <string name="misc_category_summary">"Iba pang pagpipilian"</string>
+    <string name="general_category_title">"Pangkalahatan"</string>
+    <string name="suggestion_pref_screen_title">"Mga Suhestyon"</string>
+    <string name="pref_restart_title">"I-restart"</string>
+    <string name="trust_apps_loading">"Naglo-load…"</string>
+    <string name="trust_apps_help">"Tulong"</string>
+    <string name="font_size_title">"Laki ng font"</string>
+    <string name="paused_apps_drop_target_label">"I-pause ang app"</string>
+    <string name="background_opacity_title">"Opacity ng background"</string>
+    <string name="recents_screenshot_title">"Screenshot"</string>
+    <string name="recents_clear_all_title">"I-clear lahat"</string>
+    <string name="qe_now_playing_ext_one">"Nagpe-play ngayon"</string>
+    <string name="quickspace_now_playing_title">"Nagpe-play ngayon"</string>
+    <string name="quick_event_weather_clouds">"Maulap"</string>
+    <string name="quickspace_calendar_title">"Mga event sa kalendaryo"</string>
+    <string name="app_info_version">"Bersyon"</string>
+    <string name="app_info_more">"Higit pa"</string>
+    <string name="cloudy_shape_title">"Maulap"</string>
+    <string name="heart_shape_title">"Puso"</string>
+    <string name="scroll_shape_title">"Mag-scroll"</string>
+</resources>

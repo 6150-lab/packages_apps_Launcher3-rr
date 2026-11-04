@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="drawer_open_keyboard_title">Vuốt để bắt đầu tìm kiếm</string>
+    <string name="drawer_open_keyboard_summary">Mở bàn phím bất cứ khi nào ngăn kéo ứng dụng xuất hiện</string>
+    <string name="pref_recents_style_title">"Gần đây"</string>
+    <string name="glance_content_description">Xem nhanh</string>
+    <string name="icon_style_rr_title">Kiểu biểu tượng</string>
+    <string name="neon_ring_color_title">Màu tùy chỉnh của vòng</string>
+</resources>

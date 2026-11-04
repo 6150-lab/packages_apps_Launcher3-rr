@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"የመነሻ ቅንብሮች"</string>
+    <string name="home_category_title">"መነሻ ገፅ"</string>
+    <string name="icons_category_title">"አዶዎች"</string>
+    <string name="recents_category_title">"የቅርብ ጊዜዎቹ"</string>
+    <string name="misc_category_title">"የተለያዩ"</string>
+    <string name="misc_category_summary">"ሌሎች አማራጮች"</string>
+    <string name="general_category_title">"አጠቃላይ"</string>
+    <string name="suggestion_pref_screen_title">"ጥቆማዎች"</string>
+    <string name="pref_restart_title">"ዳግም ጀምር"</string>
+    <string name="trust_apps_loading">"በመጫን ላይ…"</string>
+    <string name="trust_apps_help">"እገዛ"</string>
+    <string name="font_size_title">"የቅርጸ-ቁምፊ መጠን"</string>
+    <string name="paused_apps_drop_target_label">"መተግበሪያን ባለበት አቁም"</string>
+    <string name="background_opacity_title">"የጀርባ ግልጽነት"</string>
+    <string name="recents_screenshot_title">"ቅጽበታዊ ገፅ ዕይታ"</string>
+    <string name="recents_clear_all_title">"ሁሉንም አጽዳ"</string>
+    <string name="recents_lens_title">"ሌንስ"</string>
+    <string name="qe_now_playing_ext_one">"አሁን እየተጫወተ ያለ"</string>
+    <string name="quickspace_now_playing_title">"አሁን እየተጫወተ ያለ"</string>
+    <string name="quick_event_weather_clouds">"ደመናማ"</string>
+    <string name="quickspace_calendar_title">"የቀን መቁጠሪያ ክስተቶች"</string>
+    <string name="app_info_source_system">"ሥርዓት"</string>
+    <string name="app_info_version">"ስሪት"</string>
+    <string name="app_info_more">"ተጨማሪ"</string>
+    <string name="icon_pack_default_label">"ነባሪ"</string>
+    <string name="cloudy_shape_title">"ደመናማ"</string>
+    <string name="heart_shape_title">"ልብ"</string>
+    <string name="scroll_shape_title">"ሸብልል"</string>
+</resources>

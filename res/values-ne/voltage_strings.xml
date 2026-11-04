@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"होम पेजका सेटिङहरू"</string>
+    <string name="home_category_title">"होम स्क्रिन"</string>
+    <string name="icons_category_title">"आइकनहरू"</string>
+    <string name="recents_category_title">"हालैका"</string>
+    <string name="misc_category_title">"विविध"</string>
+    <string name="misc_category_summary">"अन्य विकल्पहरू"</string>
+    <string name="general_category_title">"सामान्य"</string>
+    <string name="suggestion_pref_screen_title">"सुझावहरू"</string>
+    <string name="pref_restart_title">"रिस्टार्ट गर्नुहोस्"</string>
+    <string name="trust_apps_loading">"लोड गर्दै…"</string>
+    <string name="trust_apps_help">"मद्दत"</string>
+    <string name="font_size_title">"फन्टको आकार"</string>
+    <string name="paused_apps_drop_target_label">"एप पज गर्नुहोस्"</string>
+    <string name="background_opacity_title">"पृष्ठभूमि अपारदर्शकता"</string>
+    <string name="recents_screenshot_title">"स्क्रिनसट"</string>
+    <string name="recents_clear_all_title">"सबै हटाउनुहोस्"</string>
+    <string name="recents_lens_title">"लेन्स"</string>
+    <string name="quick_event_weather_clouds">"बादलु"</string>
+    <string name="quickspace_calendar_title">"पात्रोमा सेट गरिएका कार्यक्रमहरू"</string>
+    <string name="app_info_source_system">"प्रणाली"</string>
+    <string name="app_info_version">"संस्करण"</string>
+    <string name="app_info_more">"थप"</string>
+    <string name="icon_pack_default_label">"डिफल्ट"</string>
+    <string name="cloudy_shape_title">"बादलु"</string>
+    <string name="heart_shape_title">"मुटु"</string>
+    <string name="scroll_shape_title">"स्क्रोल गर्नुहोस्"</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"ការកំណត់​ទំព័រដើម"</string>
+    <string name="home_category_title">"អេក្រង់ដើម"</string>
+    <string name="icons_category_title">"រូប​តំណាង"</string>
+    <string name="recents_category_title">"ថ្មីៗ"</string>
+    <string name="misc_category_title">"ផ្សេងៗ"</string>
+    <string name="misc_category_summary">"ជម្រើស​ផ្សេង​ៗ"</string>
+    <string name="general_category_title">"ទូទៅ"</string>
+    <string name="suggestion_pref_screen_title">"ការណែនាំ"</string>
+    <string name="pref_restart_title">"ចាប់ផ្ដើមឡើងវិញ"</string>
+    <string name="trust_apps_loading">"កំពុងផ្ទុក…"</string>
+    <string name="trust_apps_help">"ជំនួយ"</string>
+    <string name="font_size_title">"ទំហំ​ពុម្ព​អក្សរ"</string>
+    <string name="paused_apps_drop_target_label">"ផ្អាក​កម្មវិធី"</string>
+    <string name="background_opacity_title">"ភាព​ស្រអាប់​ផ្ទៃ​ខាងក្រោយ"</string>
+    <string name="recents_screenshot_title">"រូបថតអេក្រង់"</string>
+    <string name="recents_clear_all_title">"សម្អាត​ទាំងអស់"</string>
+    <string name="quick_event_weather_clouds">"ពពក"</string>
+    <string name="quickspace_calendar_title">"ព្រឹត្តិការណ៍ក្នុង​ប្រតិទិន"</string>
+    <string name="app_info_source_system">"ប្រព័ន្ធ"</string>
+    <string name="app_info_version">"កំណែ"</string>
+    <string name="app_info_more">"ច្រើនទៀត"</string>
+    <string name="icon_pack_default_label">"លំនាំដើម"</string>
+    <string name="cloudy_shape_title">"ពពក"</string>
+    <string name="heart_shape_title">"បេះដូង"</string>
+    <string name="scroll_shape_title">"រំកិល"</string>
+</resources>

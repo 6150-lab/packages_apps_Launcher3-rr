@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="drawer_open_keyboard_title">Aramaya başlamak için kaydır</string>
+    <string name="drawer_open_keyboard_summary">Uygulama çekmecesi göründüğünde klavye açılsın</string>
+    <string name="pref_recents_style_title">"Son Kullanılanlar"</string>
+    <string name="glance_content_description">Bir bakışta</string>
+    <string name="icon_style_rr_title">Simge stili</string>
+    <string name="neon_ring_color_title">Halka rengi</string>
+</resources>

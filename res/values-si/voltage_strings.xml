@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_title">"නිවසේ සැකසීම්"</string>
+    <string name="home_category_title">"මුල් පිටු තිරය"</string>
+    <string name="icons_category_title">"නිරූපක"</string>
+    <string name="recents_category_title">"මෑත"</string>
+    <string name="misc_category_title">"විවිධ"</string>
+    <string name="misc_category_summary">"වෙනත් විකල්ප"</string>
+    <string name="general_category_title">"පොදු"</string>
+    <string name="suggestion_pref_screen_title">"යෝජනා"</string>
+    <string name="pref_restart_title">"යළි අරඹන්න"</string>
+    <string name="settings_lock_layout_title">පිරිසැලසුම අගුළුලන්න</string>
+    <string name="trust_apps_loading">"පූරණය වේ…"</string>
+    <string name="trust_apps_help">"උදවු"</string>
+    <string name="font_size_title">"අකුරු විශාලත්වය"</string>
+    <string name="paused_apps_drop_target_label">"යෙදුම විරාමය"</string>
+    <string name="background_opacity_title">"පසුබිම් පාරාන්ධතාව"</string>
+    <string name="recents_screenshot_title">"තිර රුව"</string>
+    <string name="recents_clear_all_title">"සියල්ල හිස් කරන්න"</string>
+    <string name="quick_event_weather_clouds">"නොපැහැදිලි"</string>
+    <string name="quickspace_calendar_title">"දින දර්ශන සිදුවීම්"</string>
+    <string name="app_info_source_system">"පද්ධතිය"</string>
+    <string name="app_info_version">"අනුවාදය"</string>
+    <string name="app_info_more">"තව"</string>
+    <string name="icon_pack_default_label">"පෙරනිමි"</string>
+    <string name="cloudy_shape_title">"නොපැහැදිලි"</string>
+    <string name="heart_shape_title">"හදවත"</string>
+    <string name="scroll_shape_title">"අනුචලනය කරන්න"</string>
+</resources>

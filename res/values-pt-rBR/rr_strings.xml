@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="drawer_open_keyboard_title">Deslizar para iniciar pesquisa</string>
+    <string name="drawer_open_keyboard_summary">Abrir o teclado sempre que a gaveta de apps se tornar visível</string>
+    <string name="pref_recents_style_title">"Recentes"</string>
+    <string name="glance_content_description">Resumo</string>
+    <string name="icon_style_rr_title">Estilos do ícone</string>
+    <string name="neon_ring_color_title">Cor do anel</string>
+</resources>

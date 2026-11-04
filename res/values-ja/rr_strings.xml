@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="drawer_open_keyboard_title">スワイプして検索を開始</string>
+    <string name="drawer_open_keyboard_summary">アプリドロワーを表示したときキーボードを開きます</string>
+    <string name="pref_recents_style_title">"最近"</string>
+    <string name="glance_content_description">スナップショット</string>
+    <string name="icon_style_rr_title">アイコンスタイル</string>
+    <string name="neon_ring_color_title">リングの色</string>
+</resources>

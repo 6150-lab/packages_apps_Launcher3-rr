@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="drawer_open_keyboard_title">Eslizar p\'aniciar la busca</string>
+    <string name="drawer_open_keyboard_summary">Abre\'l tecláu siempre que\'l caxón d\'aplicaciones seya visible</string>
+    <string name="pref_recents_style_title">Elementos de recién</string>
+</resources>
