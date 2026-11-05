@@ -1928,7 +1928,7 @@ constructor(
 
     fun updateLockState(packageName: String?) {
         lockedPackageName = packageName
-        val chip = findViewById<IconAppChipView>(R.id.icon)
+        val chip = findViewById<View>(R.id.icon) as? IconAppChipView
         if (packageName == null) {
             isLocked = false
             chip?.setLockState(false)
