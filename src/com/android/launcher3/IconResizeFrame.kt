@@ -22,16 +22,20 @@ import android.graphics.Rect
 import android.graphics.RectF
 import android.os.Bundle
 import android.view.KeyEvent
+import android.view.LayoutInflater
 import android.view.MotionEvent
+import android.view.View
 import android.view.ViewConfiguration
 import android.view.ViewTreeObserver
 import android.view.accessibility.AccessibilityNodeInfo
+import android.widget.TextView
 import com.android.launcher3.DropTarget.DragObject
 import com.android.launcher3.LauncherSettings.Favorites.CONTAINER_DESKTOP
 import com.android.launcher3.dragndrop.DragController
 import com.android.launcher3.dragndrop.DragOptions
 import com.android.launcher3.model.data.WorkspaceItemInfo
 import com.android.launcher3.popup.PopupContainer
+import com.android.launcher3.util.CustomAppNameStore
 import com.android.launcher3.views.BaseDragLayer
 import kotlin.math.abs
 import kotlin.math.min
@@ -50,6 +54,8 @@ class IconResizeFrame private constructor(private val icon: BubbleTextView) :
     private val handleTouchBounds = RectF()
     private val iconBounds = Rect()
     private val position = FloatArray(2)
+    private val toolbar: View =
+        LayoutInflater.from(context).inflate(R.layout.icon_resize_toolbar, dragLayer, false)
     private val outlinePaint =
         Paint(Paint.ANTI_ALIAS_FLAG).apply {
             style = Paint.Style.STROKE
@@ -89,6 +95,57 @@ class IconResizeFrame private constructor(private val icon: BubbleTextView) :
         importantForAccessibility = IMPORTANT_FOR_ACCESSIBILITY_YES
         contentDescription = context.getString(R.string.icon_frame_name, item.title)
         alpha = if (ignoreCurrentTouch) 0f else 1f
+        setupToolbar()
+    }
+
+    private fun setupToolbar() {
+        toolbar.findViewById<View>(R.id.icon_resize_smaller).setOnClickListener {
+            performAccessibilityAction(AccessibilityNodeInfo.ACTION_SCROLL_BACKWARD, null)
+        }
+        toolbar.findViewById<View>(R.id.icon_resize_bigger).setOnClickListener {
+            performAccessibilityAction(AccessibilityNodeInfo.ACTION_SCROLL_FORWARD, null)
+        }
+        toolbar.findViewById<View>(R.id.icon_resize_reset).setOnClickListener {
+            performAccessibilityAction(R.string.reset_icon_size, null)
+        }
+        val hideName = toolbar.findViewById<TextView>(R.id.icon_resize_hide_name)
+        fun updateHideName() {
+            hideName.setText(
+                if (CustomAppNameStore.isNameHidden(context, item)) R.string.show_app_name
+                else R.string.rename_app_hide_name
+            )
+        }
+        updateHideName()
+        hideName.setOnClickListener {
+            CustomAppNameStore.setNameHidden(
+                context, item, !CustomAppNameStore.isNameHidden(context, item)
+            )
+            icon.applyLabel(item)
+            icon.requestLayout()
+            updateHideName()
+        }
+    }
+
+    /** Keeps the buttons under the icon, or over it when the dock is in the way. */
+    private fun updateToolbar(size: Float) {
+        toolbar.measure(UNSPECIFIED_SPEC, UNSPECIFIED_SPEC)
+        val lp = toolbar.layoutParams as BaseDragLayer.LayoutParams
+        val width = toolbar.measuredWidth
+        val height = toolbar.measuredHeight
+        val gap = (8 * density).roundToInt()
+        val x =
+            (position[0] + size / 2 - width / 2f).roundToInt()
+                .coerceIn(0, maxOf(0, dragLayer.width - width))
+        val below = (position[1] + size).roundToInt() + gap + icon.height - icon.iconSize
+        val y =
+            if (below + height <= launcher.hotseat.top) below
+            else (position[1] - height - gap).roundToInt().coerceAtLeast(0)
+        if (lp.x == x && lp.y == y && lp.width == width && lp.height == height) return
+        lp.x = x
+        lp.y = y
+        lp.width = width
+        lp.height = height
+        toolbar.requestLayout()
     }
 
     private fun updateFrame() {
@@ -101,6 +158,7 @@ class IconResizeFrame private constructor(private val icon: BubbleTextView) :
         val x = (position[0] - padding).roundToInt()
         val y = (position[1] - padding).roundToInt()
         val side = (size + 2 * padding).roundToInt()
+        updateToolbar(size)
         if (lp.x == x && lp.y == y && lp.width == side && lp.height == side &&
             outline.width() == size) return
         lp.x = x
@@ -151,6 +209,7 @@ class IconResizeFrame private constructor(private val icon: BubbleTextView) :
             alpha = 1f
         }
         if (event.actionMasked != MotionEvent.ACTION_DOWN) return false
+        if (dragLayer.isEventOverView(toolbar, event)) return false
         if (beginResize(event)) return true
         if (launcher.dragController.isDragging) return false
         val popup = PopupContainer.getOpen(launcher)
@@ -257,6 +316,7 @@ class IconResizeFrame private constructor(private val icon: BubbleTextView) :
 
     override fun handleClose(animate: Boolean) {
         cancelResize()
+        dragLayer.removeView(toolbar)
         dragLayer.removeView(this)
     }
 
@@ -280,6 +340,8 @@ class IconResizeFrame private constructor(private val icon: BubbleTextView) :
     }
 
     companion object {
+        private val UNSPECIFIED_SPEC = MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED)
+
         @JvmStatic
         fun showForIcon(icon: BubbleTextView) {
             val item = icon.tag as? WorkspaceItemInfo ?: return
@@ -290,6 +352,9 @@ class IconResizeFrame private constructor(private val icon: BubbleTextView) :
             val frame = IconResizeFrame(icon)
             frame.layoutParams = BaseDragLayer.LayoutParams(1, 1).apply { customPosition = true }
             launcher.dragLayer.addView(frame)
+            frame.toolbar.layoutParams =
+                BaseDragLayer.LayoutParams(1, 1).apply { customPosition = true }
+            launcher.dragLayer.addView(frame.toolbar)
             frame.mIsOpen = true
             launcher.dragController.addDragListener(frame)
             frame.viewTreeObserver.addOnPreDrawListener(frame.preDrawListener)

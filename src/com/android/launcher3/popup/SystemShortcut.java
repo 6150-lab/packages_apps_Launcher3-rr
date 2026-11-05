@@ -47,6 +47,8 @@ import com.android.launcher3.DropTargetHandler;
 import com.android.launcher3.Flags;
 import com.android.launcher3.LauncherAppState;
 import com.android.launcher3.LauncherModel;
+import com.android.launcher3.BubbleTextView;
+import com.android.launcher3.IconResizeFrame;
 import com.android.launcher3.Launcher;
 import com.android.launcher3.LauncherSettings;
 import com.android.launcher3.R;
@@ -804,6 +806,22 @@ public abstract class SystemShortcut<T extends ActivityContext> extends ItemInfo
                 }
                 return new RenameApp<>(activity, itemInfo, originalView);
             };
+
+    public static final Factory<Launcher> RESIZE_ICON = (launcher, itemInfo, originalView) -> {
+        if (!(itemInfo instanceof WorkspaceItemInfo workspaceItem)
+                || workspaceItem.container != LauncherSettings.Favorites.CONTAINER_DESKTOP
+                || !(originalView instanceof BubbleTextView icon)) {
+            return null;
+        }
+        return new SystemShortcut<Launcher>(R.drawable.ic_aspect_ratio,
+                R.string.resize_icon_label, launcher, itemInfo, originalView, false) {
+            @Override
+            public void onClick(View view) {
+                AbstractFloatingView.closeAllOpenViews(launcher);
+                IconResizeFrame.showForIcon(icon);
+            }
+        };
+    };
 
     public static final Factory<Launcher> RESET_ICON_SIZE = (launcher, itemInfo, originalView) -> {
         if (!(itemInfo instanceof WorkspaceItemInfo workspaceItem)

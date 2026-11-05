@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_icon_resize_toolbar"
+    android:elevation="4dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="4dp">
+
+    <TextView
+        android:id="@+id/icon_resize_smaller"
+        style="@style/IconResizeToolbarButton"
+        android:contentDescription="@string/decrease_icon_size"
+        android:text="−"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/icon_resize_bigger"
+        style="@style/IconResizeToolbarButton"
+        android:contentDescription="@string/increase_icon_size"
+        android:text="+"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/icon_resize_reset"
+        style="@style/IconResizeToolbarButton"
+        android:text="@string/reset_icon_size" />
+
+    <TextView
+        android:id="@+id/icon_resize_hide_name"
+        style="@style/IconResizeToolbarButton"
+        android:textColor="@color/materialColorPrimary" />
+</LinearLayout>

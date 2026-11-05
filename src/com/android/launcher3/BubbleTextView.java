@@ -764,7 +764,7 @@ public class BubbleTextView extends TextView implements ItemInfoUpdateReceiver,
     public void applyLabel(ItemInfo info) {
         mIsAppNameHidden = info.itemType == LauncherSettings.Favorites.ITEM_TYPE_APPLICATION
                 && (mDisplay == DISPLAY_WORKSPACE || mDisplay == DISPLAY_FOLDER
-                        || displayIsAppDrawer())
+                        || mDisplay == DISPLAY_ALL_APPS)
                 && CustomAppNameStore.isNameHidden(getContext(), info);
         applyLabel(info.title, info.contentDescription,
                 info instanceof ItemInfoWithIcon infoWithIcon
