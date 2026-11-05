@@ -1113,8 +1113,7 @@ public abstract class RecentsView<
                 } else if (LauncherPrefs.RECENTS_TASK_CORNER_RADIUS.getSharedPrefKey()
                         .equals(key)) {
                     for (TaskView taskView : getTaskViews()) {
-                        taskView.onTaskListVisibilityChanged(
-                                true /* visible */, TaskView.FLAG_UPDATE_CORNER_RADIUS);
+                        taskView.onTaskCornerRadiusChanged();
                         resetTaskVisuals(taskView);
                     }
                 }

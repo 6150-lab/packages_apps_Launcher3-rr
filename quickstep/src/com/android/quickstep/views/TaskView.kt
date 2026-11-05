@@ -1867,6 +1867,12 @@ constructor(
             SETTLED_PROGRESS_FAST_OUT_INTERPOLATOR.getInterpolation(1 - fullscreenProgress)
     }
 
+    /** The recents corner slider moved: open cards take the new radius straight away. */
+    fun onTaskCornerRadiusChanged() {
+        thumbnailFullscreenParams.updateCornerRadius(context)
+        updateFullscreenParams()
+    }
+
     protected open fun updateFullscreenParams() {
         updateFullscreenParams(thumbnailFullscreenParams)
         taskContainers.forEach {
