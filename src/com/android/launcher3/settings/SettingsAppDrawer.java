@@ -121,7 +121,7 @@ public class SettingsAppDrawer extends CollapsingToolbarBaseActivity
         if (LauncherPrefs.DRAWER_LIST.getSharedPrefKey().equals(key)) {
             // Refresh the app list without a restart: onAppsUpdated() recategorizes the apps.
             try {
-                LauncherAppState.getInstance(this).getModel().rebindCallbacks();
+                LauncherAppState.getInstance(this).getModel().rebindCallbacks("Drawer layout changed");
             } catch (Exception e) {
                 LauncherAppState.INSTANCE.executeIfCreated(app -> app.setNeedsRestart());
             }
