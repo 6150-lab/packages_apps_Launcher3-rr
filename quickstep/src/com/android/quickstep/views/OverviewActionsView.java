@@ -24,6 +24,7 @@ import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
@@ -66,6 +67,11 @@ import java.util.Arrays;
 public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayout
         implements OnClickListener, Insettable, SharedPreferences.OnSharedPreferenceChangeListener {
     public static final String TAG = "OverviewActionsView";
+
+    private static final int FIT_BUTTON_COUNT = 4;
+    private static final int FIT_MIN_TEXT_SP = 9;
+    private static final int FIT_MAX_TEXT_SP = 13;
+    private static final int DEFAULT_TEXT_SP = 14;
 
     private static final AccelerateInterpolator PRESS_DOWN_INTERPOLATOR =
             new AccelerateInterpolator(1.5f);
@@ -203,6 +209,11 @@ public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayo
     private boolean mClearAll;
     private boolean mLens;
     private boolean mShare;
+    private int mFitRowPadding;
+    private int mFitButtonMargin;
+    private int mFitButtonPadding;
+    private int mButtonMargin;
+    private int mButtonPadding;
 
     private SharedPreferences mPrefs;
     private boolean mPrefsRegistered;
@@ -223,6 +234,13 @@ public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayo
         mClearAll = LauncherPrefs.RECENTS_CLEAR_ALL.get(context);
         mLens = LauncherPrefs.RECENTS_LENS.get(context);
         mShare = LauncherPrefs.RECENTS_SHARE.get(context);
+        float density = getResources().getDisplayMetrics().density;
+        mFitRowPadding = Math.round(10 * density);
+        mFitButtonMargin = Math.round(3 * density);
+        mFitButtonPadding = Math.round(8 * density);
+        mButtonMargin = Math.round(6 * density);
+        mButtonPadding = getResources().getDimensionPixelSize(
+                R.dimen.overview_actions_button_horizontal_padding);
     }
 
     @Override
@@ -375,6 +393,41 @@ public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayo
         boolean actualLensVisibility = mLens && Utilities.isGSAEnabled(getContext())
                 && (mUseChips || !mScreenshot || !mClearAll || (mDp != null && mDp.getDeviceProperties().isLargeScreen()) || (!mUseChips && mScreenshot && mClearAll));
         lens.setVisibility(actualLensVisibility ? VISIBLE : GONE);
+        fitLabelledButtons();
+    }
+
+    /** RR: four labelled buttons share one phone-wide row and shrink their text to fit it. */
+    private void fitLabelledButtons() {
+        boolean fit = false;
+        if (!mUseChips && (mDp == null || !mDp.getDeviceProperties().isLargeScreen())) {
+            int count = 0;
+            for (int i = 0; i < mActionButtons.getChildCount(); i++) {
+                if (mActionButtons.getChildAt(i).getVisibility() != GONE) count++;
+            }
+            fit = count >= FIT_BUTTON_COUNT;
+        }
+        LayoutParams rowParams = (LayoutParams) mActionButtons.getLayoutParams();
+        rowParams.width = fit ? LayoutParams.MATCH_PARENT : LayoutParams.WRAP_CONTENT;
+        mActionButtons.setPadding(fit ? mFitRowPadding : 0, 0, fit ? mFitRowPadding : 0, 0);
+        for (int i = 0; i < mActionButtons.getChildCount(); i++) {
+            if (!(mActionButtons.getChildAt(i) instanceof Button button)) continue;
+            LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) button.getLayoutParams();
+            lp.width = fit ? 0 : LinearLayout.LayoutParams.WRAP_CONTENT;
+            lp.weight = fit ? 1f : 0f;
+            lp.setMarginStart(fit ? mFitButtonMargin : mButtonMargin);
+            lp.setMarginEnd(fit ? mFitButtonMargin : mButtonMargin);
+            int padding = fit ? mFitButtonPadding : mButtonPadding;
+            button.setPaddingRelative(padding, button.getPaddingTop(), padding,
+                    button.getPaddingBottom());
+            if (fit) {
+                button.setAutoSizeTextTypeUniformWithConfiguration(
+                        FIT_MIN_TEXT_SP, FIT_MAX_TEXT_SP, 1, TypedValue.COMPLEX_UNIT_SP);
+            } else {
+                button.setAutoSizeTextTypeWithDefaults(TextView.AUTO_SIZE_TEXT_TYPE_NONE);
+                button.setTextSize(TypedValue.COMPLEX_UNIT_SP, DEFAULT_TEXT_SP);
+            }
+        }
+        mActionButtons.requestLayout();
     }
 
     /**
