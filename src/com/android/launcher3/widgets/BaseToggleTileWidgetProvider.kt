@@ -22,6 +22,7 @@ import android.content.Intent
 import android.util.Log
 import android.widget.RemoteViews
 import com.android.launcher3.R
+import java.util.UUID
 
 abstract class BaseToggleTileWidgetProvider : BaseToggleWidgetProvider() {
 
@@ -40,7 +41,10 @@ abstract class BaseToggleTileWidgetProvider : BaseToggleWidgetProvider() {
 
     override fun onReceive(context: Context, intent: Intent) {
         super.onReceive(context, intent)
-        if (intent.action == getActionString()) {
+        // The provider is exported for the widget host, and Wi-Fi, data and Bluetooth are privileged
+        // here, so a toggle has to carry the token only this process can read.
+        if (intent.action == getActionString() &&
+                intent.getStringExtra(EXTRA_TOKEN) == toggleToken(context)) {
             try {
                 toggleService(context)
             } catch (e: SecurityException) {
@@ -69,6 +73,7 @@ abstract class BaseToggleTileWidgetProvider : BaseToggleWidgetProvider() {
                 ))
                 setImageViewResource(R.id.widget_icon, getIconResource(isActive))
                 val toggleIntent = getToggleActionIntent(context, appWidgetId)
+                    .putExtra(EXTRA_TOKEN, toggleToken(context))
                 val pendingIntent = PendingIntent.getBroadcast(
                     context,
                     appWidgetId,
@@ -89,7 +94,15 @@ abstract class BaseToggleTileWidgetProvider : BaseToggleWidgetProvider() {
 
     protected abstract fun getAppWidgetIds(context: Context): IntArray
 
+    private fun toggleToken(context: Context): String {
+        val prefs = context.getSharedPreferences(TOKEN_PREFS, Context.MODE_PRIVATE)
+        return prefs.getString(EXTRA_TOKEN, null)
+            ?: UUID.randomUUID().toString().also { prefs.edit().putString(EXTRA_TOKEN, it).apply() }
+    }
+
     private companion object {
         const val TAG = "ToggleTileWidget"
+        const val TOKEN_PREFS = "widget_toggles"
+        const val EXTRA_TOKEN = "toggle_token"
     }
 }

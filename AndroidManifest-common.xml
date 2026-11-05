@@ -67,8 +67,6 @@
 
     <uses-permission android:name="android.permission.ACCESS_CONTEXTUAL_SEARCH"/>
     <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-
     <!-- RR widgets: the Wi-Fi and mobile data tiles -->
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
@@ -329,14 +327,9 @@
                 android:resource="@xml/photo_widget_info" />
         </receiver>
 
-        <activity android:name=".widgets.PhotoPickerActivity" 
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.PICK" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".widgets.PhotoPickerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
 
         <receiver
             android:name=".widgets.WifiWidgetProvider"
