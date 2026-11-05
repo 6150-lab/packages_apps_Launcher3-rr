@@ -357,7 +357,20 @@ constructor(
 
                     // Remove all the task views now
                     finishRecentsAnimation(/* toHome */ true, /* shouldPip */ false) {
-                        uiHelperExecutor.execute { activityManagerWrapper.removeAllRecentTasks() }
+                        // RR's framework knows nothing of locked apps, so with any lock in place
+                        // the tasks go one by one.
+                        val lockedPackages = lockedPkgMgr.getLockedPackages()
+                        val unlockedTaskIds =
+                            mUtils.taskViews
+                                .filter { it.firstTask?.key?.packageName !in lockedPackages }
+                                .flatMap { it.taskIds.toList() }
+                        uiHelperExecutor.execute {
+                            if (lockedPackages.isEmpty()) {
+                                activityManagerWrapper.removeAllRecentTasks()
+                            } else {
+                                unlockedTaskIds.forEach { activityManagerWrapper.removeTask(it) }
+                            }
+                        }
                         removeAllTaskViews()
                         if (!mUtils.isInDesktopFirstMode()) {
                             startHome()
