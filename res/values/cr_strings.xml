@@ -29,7 +29,7 @@
     <string name="themed_icons_summary">Allow customize themed icons</string>
     <string name="themed_icon_scale_title">Icon scale</string>
     <string name="themed_icon_color_preset_title">Color preset</string>
-    <string name="themed_icon_color_preset_axicons">Legacy</string>
+    <string name="themed_icon_color_preset_axicons">Axicons</string>
     <string name="themed_icon_color_preset_aosp">AOSP</string>
     <string name="themed_icon_color_preset_custom">Custom</string>
     <string name="themed_icon_background_color_title">Icon background color</string>
@@ -130,4 +130,7 @@
     <string name="widget_data_title">Mobile data widget</string>
     <string name="widget_bt_title">Bluetooth widget</string>
     <string name="photo_widget_onboarding">Click to add new photo</string>
+
+    <!-- Custom icon -->
+    <string name="icon_picker_reset">Back to the app\'s own icon</string>
 </resources>

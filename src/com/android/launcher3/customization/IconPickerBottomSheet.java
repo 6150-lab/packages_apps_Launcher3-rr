@@ -41,6 +41,7 @@ import com.android.launcher3.util.ComponentKey;
 import com.android.launcher3.views.AbstractSlideInView;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -48,6 +49,7 @@ import java.util.Map;
 public class IconPickerBottomSheet extends AbstractSlideInView<BaseActivity> {
     private static final int DEFAULT_CLOSE_DURATION = 200;
     private static final long SEARCH_DEBOUNCE_MS = 300;
+    private static final String ACTION_RESET = "rr.reset";
 
     public interface OnIconChosen {
         void onIconChosen();
@@ -143,9 +145,30 @@ public class IconPickerBottomSheet extends AbstractSlideInView<BaseActivity> {
     private void showPackList() {
         mSearchField.setVisibility(View.GONE);
         mSearchField.setText("");
-        Map<String, CharSequence> packs = mManager.getProviderNames();
+        // RR: Neon always comes first, and an app with its own icon gets a way back.
+        Map<String, CharSequence> packs = new LinkedHashMap<>();
+        packs.put(IconPackManager.neonPack(), getContext().getString(R.string.neon_icons_title));
+        packs.putAll(mManager.getProviderNames());
+        if (!IconDatabase.getByComponent(getContext(), mKey).isEmpty()) {
+            packs.put(ACTION_RESET, getContext().getString(R.string.icon_picker_reset));
+        }
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        mRecyclerView.setAdapter(new PackListAdapter(packs, this::showIconGrid));
+        mRecyclerView.setAdapter(new PackListAdapter(packs, this::onPackPicked));
+    }
+
+    private void onPackPicked(String packPackage) {
+        if (ACTION_RESET.equals(packPackage)) {
+            IconDatabase.resetForComponent(getContext(), mKey);
+        } else if (IconPackManager.neonPack().equals(packPackage)) {
+            IconDatabase.setForComponent(getContext(), mKey, packPackage);
+        } else {
+            showIconGrid(packPackage);
+            return;
+        }
+        if (mCallback != null) {
+            mCallback.onIconChosen();
+        }
+        close(true);
     }
 
     private void showIconGrid(String packPackage) {

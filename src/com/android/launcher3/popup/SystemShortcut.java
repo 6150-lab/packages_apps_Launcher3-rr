@@ -868,9 +868,6 @@ public abstract class SystemShortcut<T extends ActivityContext> extends ItemInfo
                         || itemInfo.getComponentKey() == null) {
                     return null;
                 }
-                if (IconPackManager.get(activity.asContext()).getProviderNames().isEmpty()) {
-                    return null;
-                }
                 return new CustomIcon<>(activity, itemInfo, originalView);
             };
 

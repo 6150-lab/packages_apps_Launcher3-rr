@@ -138,6 +138,11 @@ public class IconPackManager extends BroadcastReceiver {
         return providerTitles;
     }
 
+    /** RR's built-in entry for {@link IconDatabase}: this app's glyph in a neon ring. */
+    public static String neonPack() {
+        return IconResolverNeon.PACK;
+    }
+
     public boolean packContainsActivity(String packPackage, ComponentName componentName) {
         try {
             IconPack pack = mProviders.get(packPackage);
@@ -150,6 +155,9 @@ public class IconPackManager extends BroadcastReceiver {
 
     public IconResolver resolve(ComponentKey key) {
         String packPackage = IconDatabase.getByComponent(mContext, key);
+        if (IconResolverNeon.PACK.equals(packPackage)) {
+            return new IconResolverNeon(mContext, key.componentName.getPackageName());
+        }
         if (mProviders.containsKey(packPackage)) {
             try {
                 IconPack pack = mProviders.get(packPackage);
