@@ -2885,7 +2885,7 @@ public abstract class AbsSwipeUpHandler<
     }
 
     private void postStartSplitScreenFromGesture(int taskId) {
-        runOnRecentsAnimationAndLauncherBound(() -> {
+        mStateCallback.runOnceAtState(STATE_LAUNCHER_PRESENT | STATE_APP_CONTROLLER_RECEIVED, () -> {
             if (mRecentsView == null) {
                 return;
             }
@@ -2905,7 +2905,8 @@ public abstract class AbsSwipeUpHandler<
         if (isSplitScreenOverviewGestureAction()) {
             return mHasSplitScreenGestureStarted ? RECENTS : null;
         }
-        if (mCurrentShift.value < getOverviewGestureThreshold()) {
+        if (mCurrentShift.value < getOverviewGestureThreshold()
+                || !Utilities.isLmoFreeformAvailable(mContext)) {
             return null;
         }
 
