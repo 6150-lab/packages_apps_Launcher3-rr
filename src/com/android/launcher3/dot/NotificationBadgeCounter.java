@@ -15,8 +15,6 @@
  */
 package com.android.launcher3.dot;
 
-import static com.android.systemui.shared.Flags.notificationDotContrastBorder;
-
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -28,7 +26,6 @@ import android.graphics.RectF;
 import androidx.core.graphics.ColorUtils;
 
 import com.android.launcher3.icons.DotRenderer;
-import com.android.launcher3.icons.ShadowGenerator;
 
 /** Draws notification counts using the same anchor and color as notification dots. */
 public class NotificationBadgeCounter {
@@ -38,6 +35,8 @@ public class NotificationBadgeCounter {
     private static final float HORIZONTAL_PADDING_PERCENTAGE = 0.32f;
     private static final double MIN_TEXT_CONTRAST = 4.5;
     private static final int MAX_DISPLAY_COUNT = 99;
+    private static final float SHADOW_FACTOR = 1f / 12;
+    private static final int SHADOW_COLOR = 0x58000000;
 
     private final Paint mBackgroundPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
     private final Paint mTextPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -45,7 +44,8 @@ public class NotificationBadgeCounter {
     private Bitmap mBackgroundWithShadow;
     private int mShadowWidth;
     private int mShadowHeight;
-    private float mBitmapOffset;
+    private float mBitmapOffsetX;
+    private float mBitmapOffsetY;
 
     public void draw(Canvas canvas, DotRenderer.DrawParams params, int dotColor, int count) {
         if (params == null || count <= 0 || params.scale <= 0) {
@@ -81,7 +81,7 @@ public class NotificationBadgeCounter {
         canvas.translate(dotCenterX + offsetX, dotCenterY + offsetY);
         canvas.scale(params.scale, params.scale);
 
-        canvas.drawBitmap(backgroundWithShadow, mBitmapOffset, mBitmapOffset, mBackgroundPaint);
+        canvas.drawBitmap(backgroundWithShadow, mBitmapOffsetX, mBitmapOffsetY, mBackgroundPaint);
 
         mBackgroundPaint.setColor(dotColor);
         mBadgeBounds.set(-badgeWidth / 2f, -badgeHeight / 2f,
@@ -102,10 +102,16 @@ public class NotificationBadgeCounter {
 
     private Bitmap getBackgroundWithShadow(int width, int height) {
         if (mBackgroundWithShadow == null || mShadowWidth != width || mShadowHeight != height) {
-            ShadowGenerator.Builder builder = new ShadowGenerator.Builder(Color.TRANSPARENT);
-            builder.ambientShadowAlpha = notificationDotContrastBorder() ? 255 : 88;
-            mBackgroundWithShadow = builder.setupBlurForSize(height).createPill(width, height);
-            mBitmapOffset = -mBackgroundWithShadow.getHeight() * 0.5f;
+            float blur = height * SHADOW_FACTOR;
+            int margin = (int) Math.ceil(blur * 2);
+            mBackgroundWithShadow = Bitmap.createBitmap(width + margin * 2, height + margin * 2,
+                    Bitmap.Config.ARGB_8888);
+            Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+            paint.setShadowLayer(blur, 0, 0, SHADOW_COLOR);
+            new Canvas(mBackgroundWithShadow).drawRoundRect(margin, margin, margin + width,
+                    margin + height, height / 2f, height / 2f, paint);
+            mBitmapOffsetX = -mBackgroundWithShadow.getWidth() * 0.5f;
+            mBitmapOffsetY = -mBackgroundWithShadow.getHeight() * 0.5f;
             mShadowWidth = width;
             mShadowHeight = height;
         }
