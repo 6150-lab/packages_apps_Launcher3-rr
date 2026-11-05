@@ -8,6 +8,9 @@
         <item>"نمای کلی"</item>
         <item>موارد اخیر باریک (پنل کناری)</item>
         <item>موارد اخیر چرخان (چرخ)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">آیکون‌های نئونی</string>
     <string name="neon_icons_summary">نماد هر برنامه با رنگ تأکیدی شما، درون یک حلقه درخشان. آیکون‌های تمی را فعال می‌کند.</string>

@@ -17,6 +17,9 @@
         <item>"總覽"</item>
         <item>精簡最近任務（側邊欄）</item>
         <item>旋轉最近任務（轉盤）</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">霓虹圖示</string>
     <string name="neon_icons_summary">每個應用程式的圖示以你的強調色顯示，並置於發光的圓環中。開啟主題圖示。</string>

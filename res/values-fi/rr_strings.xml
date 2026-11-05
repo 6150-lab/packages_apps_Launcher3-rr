@@ -8,6 +8,9 @@
         <item>"Viimeisimmät"</item>
         <item>Kapeat viimeaikaiset (sivupaneeli)</item>
         <item>Pyörivät viimeaikaiset (pyörä)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Neon-kuvakkeet</string>
     <string name="neon_icons_summary">Kunkin sovelluksen tunnus korostusvärilläsi hehkuvassa renkaassa. Ottaa teemakuvakkeet käyttöön.</string>

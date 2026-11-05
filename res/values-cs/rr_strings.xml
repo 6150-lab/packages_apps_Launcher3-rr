@@ -8,6 +8,9 @@
         <item>"Přehled"</item>
         <item>Štíhlé poslední (boční panel)</item>
         <item>Otočné poslední (kolo)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Neonové ikony</string>
     <string name="neon_icons_summary">Symbol každé aplikace v barvě zvýraznění uvnitř zářícího kruhu. Zapíná motivové ikony.</string>

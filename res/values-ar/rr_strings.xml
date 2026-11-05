@@ -9,6 +9,9 @@
         <item>"النظرة عامة"</item>
         <item>الأحدث بشكل شريحة (لوحة جانبية)</item>
         <item>الأحدث بشكل عجلة دوّارة</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">أيقونات النيون</string>
     <string name="neon_icons_summary">رمز كل تطبيق بلون التمييز لديك، داخل حلقة متوهجة. يفعّل الأيقونات المتناسقة مع المظهر.</string>

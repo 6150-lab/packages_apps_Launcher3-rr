@@ -15,6 +15,9 @@
         <item>"Récents"</item>
         <item>Récents fins (panneau latéral)</item>
         <item>Récents en rotation (roue)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Icônes néon</string>
     <string name="neon_icons_summary">Le symbole de chaque application dans votre couleur d\'accentuation, dans un anneau lumineux. Active les icônes thématisées.</string>

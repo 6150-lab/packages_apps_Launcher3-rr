@@ -10,6 +10,9 @@
         <item>"최근 사용"</item>
         <item>얇은 최근 앱 (측면 패널)</item>
         <item>회전 최근 앱 (휠)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">네온 아이콘</string>
     <string name="neon_icons_summary">각 앱의 아이콘 글리프를 강조 색상으로 표시하고 빛나는 원 안에 넣습니다. 테마 아이콘을 켭니다.</string>

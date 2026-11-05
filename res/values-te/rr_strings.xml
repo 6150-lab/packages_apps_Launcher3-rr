@@ -8,6 +8,9 @@
         <item>"ఓవర్‌వ్యూ"</item>
         <item>స్లిమ్ ఇటీవలివి (సైడ్ ప్యానెల్)</item>
         <item>స్పిన్ ఇటీవలివి (చక్రం)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">నియాన్ ఐకాన్‌లు</string>
     <string name="neon_icons_summary">ప్రతి యాప్ గ్లిఫ్‌ను మీ యాక్సెంట్ రంగులో, మెరుస్తున్న రింగ్ లోపల చూపుతుంది. థీమ్డ్ ఐకాన్‌లను ఆన్ చేస్తుంది.</string>

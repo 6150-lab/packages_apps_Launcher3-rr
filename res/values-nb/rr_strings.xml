@@ -8,6 +8,9 @@
         <item>"Oversikt"</item>
         <item>Smale nylige apper (sidepanel)</item>
         <item>Snurrende nylige apper (hjul)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Neonikoner</string>
     <string name="neon_icons_summary">Hvert apps symbol i aksentfargen din, inni en lysende ring. Slår på temaikoner.</string>

@@ -8,6 +8,9 @@
         <item>"Краток преглед"</item>
         <item>Тенки неодамнешни (странична панел)</item>
         <item>Ротирачки неодамнешни (тркало)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Неон икони</string>
     <string name="neon_icons_summary">Симболот на секоја апликација во вашата акцентна боја, во сјаен прстен. Ги вклучува тематските икони.</string>

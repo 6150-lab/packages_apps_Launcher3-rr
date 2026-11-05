@@ -8,6 +8,9 @@
         <item>"Prehľad"</item>
         <item>Štíhle nedávne (bočný panel)</item>
         <item>Otáčavé nedávne (koleso)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Neónové ikony</string>
     <string name="neon_icons_summary">Ikona každej aplikácie vo vašej farbe zvýraznenia v žiarivom kruhu. Zapína motívové ikony.</string>

@@ -16,6 +16,9 @@
         <item>"Обзор."</item>
         <item>Узкие недавние (боковая панель)</item>
         <item>Недавние по кругу (колесо)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Неоновые значки</string>
     <string name="neon_icons_summary">Значок каждого приложения в вашем цветовом акценте внутри светящегося кольца. Включает тематические значки.</string>

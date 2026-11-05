@@ -17,6 +17,9 @@
         <item>"Visão geral"</item>
         <item>Recentes estreitos (painel lateral)</item>
         <item>Recentes giratórios (roda)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Ícones neon</string>
     <string name="neon_icons_summary">O glifo de cada app na sua cor de destaque, dentro de um anel luminoso. Ativa ícones temáticos.</string>

@@ -10,6 +10,9 @@
         <item>"Tổng quan"</item>
         <item>Gần đây gọn (bảng bên)</item>
         <item>Gần đây quay (bánh xe)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Biểu tượng neon</string>
     <string name="neon_icons_summary">Biểu tượng mỗi ứng dụng có màu nhấn của bạn, nằm trong một vòng sáng phát quang. Bật biểu tượng theo giao diện.</string>

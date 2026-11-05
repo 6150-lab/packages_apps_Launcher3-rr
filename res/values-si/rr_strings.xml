@@ -8,6 +8,9 @@
         <item>"දළ විශ්ලේෂණය"</item>
         <item>සිහින් මෑත (පැති පුවරුව)</item>
         <item>කරකවන මෑත (රෝදය)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">නියොන් නිරූපක</string>
     <string name="neon_icons_summary">ඔබේ උච්චාරණ වර්ණයෙන් සෑම යෙදුමකම රූපකය දීප්තිමත් වළල්ලක් තුළ පෙන්වයි. තේමා නිරූපක ක්‍රියාත්මක කරයි.</string>

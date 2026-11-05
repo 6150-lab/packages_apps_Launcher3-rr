@@ -8,6 +8,9 @@
         <item>"İcmal"</item>
         <item>Nazik sonuncular (yan panel)</item>
         <item>Fırlanan sonuncular (çarx)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Neon ikonlar</string>
     <string name="neon_icons_summary">Hər tətbiqin simvolu vurğu rənginizdə, parlayan halqanın içində göstərilir. Mövzulu ikonları aktivləşdirir.</string>

@@ -8,6 +8,9 @@
         <item>"Muhtasari"</item>
         <item>Zilizotumika majuzi nyembamba (paneli ya kando)</item>
         <item>Zilizotumika majuzi zinazozunguka (gurudumu)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Aikoni za neon</string>
     <string name="neon_icons_summary">Alama ya kila programu kwa rangi yako ya msisitizo, ndani ya pete inayong\'aa. Huwasha aikoni zenye mandhari.</string>

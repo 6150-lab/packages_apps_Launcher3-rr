@@ -8,6 +8,9 @@
         <item>"অৱলোকন"</item>
         <item>ৰোগা শেহতীয়া (পাৰ্শ্ব পেনেল)</item>
         <item>ঘূৰণীয়া শেহতীয়া (চক্ৰ)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">নিঅন আইকন</string>
     <string name="neon_icons_summary">প্ৰতিটো এপৰ গ্লিফ আপোনাৰ এক্সেণ্ট ৰঙত, এটা জিলিকা বলয়ৰ ভিতৰত। থীমযুক্ত আইকন অন কৰে।</string>

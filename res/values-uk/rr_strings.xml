@@ -10,6 +10,9 @@
         <item>"Огляд"</item>
         <item>Компактні нещодавні (бічна панель)</item>
         <item>Обертові нещодавні (колесо)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Неонові значки</string>
     <string name="neon_icons_summary">Гліф кожного застосунку в колірному акценті всередині світної обводки. Вмикає значки з темою.</string>

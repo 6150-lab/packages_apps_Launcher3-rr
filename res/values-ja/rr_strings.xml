@@ -10,6 +10,9 @@
         <item>"最近"</item>
         <item>スリムな最近 (サイド パネル)</item>
         <item>回転する最近 (ホイール)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">ネオンアイコン</string>
     <string name="neon_icons_summary">各アプリのグリフをアクセントカラーで表示し、光るリングで囲みます。テーマ別アイコンを有効にします。</string>

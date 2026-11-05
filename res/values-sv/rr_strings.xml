@@ -10,6 +10,9 @@
         <item>"Översikt"</item>
         <item>Smal senaste appar (sidopanel)</item>
         <item>Snurrande senaste appar (hjul)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Neonikoner</string>
     <string name="neon_icons_summary">Varje apps symbol i din accentfärg, inom en glödande ring. Aktiverar temanpassade ikoner.</string>

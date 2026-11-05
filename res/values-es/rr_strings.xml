@@ -10,6 +10,9 @@
         <item>"Aplicaciones recientes"</item>
         <item>Recientes finos (panel lateral)</item>
         <item>Recientes en rueda</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_glow_title">Brillo</string>
     <string name="neon_ring_title">Tono de llamada</string>

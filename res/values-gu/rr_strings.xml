@@ -8,6 +8,9 @@
         <item>"ઝલક"</item>
         <item>સ્લિમ તાજેતરના (સાઇડ પેનલ)</item>
         <item>સ્પિન તાજેતરના (વ્હીલ)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">નિયૉન આઇકન</string>
     <string name="neon_icons_summary">દરેક ઍપનો ગ્લિફ તમારા ઍક્સન્ટ રંગમાં, ચમકતી રિંગની અંદર. થીમ્ડ આઇકન ચાલુ કરે છે.</string>

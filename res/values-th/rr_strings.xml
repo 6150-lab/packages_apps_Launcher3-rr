@@ -8,6 +8,9 @@
         <item>"ภาพรวม"</item>
         <item>แอปล่าสุดแบบบาง (แผงด้านข้าง)</item>
         <item>แอปล่าสุดแบบหมุน (วงล้อ)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">ไอคอนนีออน</string>
     <string name="neon_icons_summary">แสดงไอคอนของแต่ละแอปด้วยสีเน้นของคุณภายในวงแหวนเรืองแสง เปิดการใช้ไอคอนตามธีม</string>

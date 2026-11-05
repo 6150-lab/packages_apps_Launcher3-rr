@@ -8,6 +8,9 @@
         <item>"Ikhtisar"</item>
         <item>Terbaharu nipis (panel sisi)</item>
         <item>Terbaharu berputar (roda)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Ikon neon</string>
     <string name="neon_icons_summary">Glif setiap apl dalam warna aksen anda, di dalam cincin bercahaya. Menghidupkan ikon bertema.</string>

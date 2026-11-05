@@ -8,6 +8,9 @@
         <item>"Yfirlit"</item>
         <item>Mjó nýleg forrit (hliðarspjald)</item>
         <item>Snúa nýlegum forritum (hjól)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Neontáknmyndir</string>
     <string name="neon_icons_summary">Tákn hvers forrits í áherslulit þínum, innan ljómandi hrings. Kveikir á þemamiðuðum táknmyndum.</string>

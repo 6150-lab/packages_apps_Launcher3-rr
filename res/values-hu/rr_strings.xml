@@ -10,6 +10,9 @@
         <item>"Áttekintés"</item>
         <item>Vékony legutóbbiak (oldalsáv)</item>
         <item>Forgó legutóbbiak (kerék)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Neonikonok</string>
     <string name="neon_icons_summary">Minden alkalmazás jelvénye a kiemelőszínben, izzó gyűrűben. Témázott ikonokat kapcsol be.</string>

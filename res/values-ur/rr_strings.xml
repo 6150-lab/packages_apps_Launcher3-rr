@@ -8,6 +8,9 @@
         <item>"عمومی جائزہ"</item>
         <item>پتلے حالیہ (سائیڈ پینل)</item>
         <item>گھومتے حالیہ (پہیہ)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">نیین آئیکنز</string>
     <string name="neon_icons_summary">ہر ایپ کا گلیف آپ کے لہجے کے رنگ میں، چمکتے ہوئے حلقے کے اندر۔ تھیمڈ آئیکنز فعال کرتا ہے۔</string>

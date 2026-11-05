@@ -17,6 +17,9 @@
         <item>"Ringkasan"</item>
         <item>Terbaru ramping (panel samping)</item>
         <item>Terbaru berputar (roda)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Ikon neon</string>
     <string name="neon_icons_summary">Glyph setiap aplikasi dengan warna aksen Anda, di dalam cincin bercahaya. Mengaktifkan ikon bertema.</string>

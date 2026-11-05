@@ -8,6 +8,9 @@
         <item>"Επισκόπηση"</item>
         <item>Λεπτά πρόσφατα (πλευρικό panel)</item>
         <item>Περιστρεφόμενα πρόσφατα (τροχός)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Εικονίδια Neon</string>
     <string name="neon_icons_summary">Το εικονίδιο κάθε εφαρμογής με το χρώμα έμφασης, μέσα σε λαμπερό δακτύλιο. Ενεργοποιεί τα εικονίδια θέματος.</string>

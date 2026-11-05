@@ -8,6 +8,9 @@
         <item>"Համատեսք"</item>
         <item>Նեղ վերջինները (կողային վահանակ)</item>
         <item>Պտտվող վերջինները (անիվ)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Նեոնային պատկերակներ</string>
     <string name="neon_icons_summary">Յուրաքանչյուր հավելվածի պատկերանշանը ձեր շեշտադրման գույնով՝ փայլուն շրջանակի մեջ։ Միացնում է թեմայական պատկերակները։</string>

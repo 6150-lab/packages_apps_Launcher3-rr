@@ -8,6 +8,9 @@
         <item>"खास जानकारी"</item>
         <item>पतला हाल ही के ऐप्स (साइड पैनल)</item>
         <item>घूमने वाला हाल ही के ऐप्स (पहिया)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">नियॉन आइकन</string>
     <string name="neon_icons_summary">हर ऐप का ग्लिफ़ आपके एक्सेंट रंग में, चमकती रिंग के अंदर। थीम वाले आइकन चालू करता है।</string>

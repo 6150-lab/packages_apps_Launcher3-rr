@@ -8,6 +8,9 @@
         <item>"Агляд"</item>
         <item>Тонкія нядаўнія (бакавая панэль)</item>
         <item>Круцячыяся нядаўнія (кола)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Неонавыя значкі</string>
     <string name="neon_icons_summary">Гліф кожнай праграмы ў вашым асноўным колеры ўнутры свяцящагася кольца. Уключае тэматычныя значкі.</string>

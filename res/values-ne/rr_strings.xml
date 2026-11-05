@@ -7,6 +7,9 @@
         <item>"सारांश"</item>
         <item>पातलो हालैका (साइड प्यानल)</item>
         <item>घुमाउने हालैका (पाङ्ग्रा)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="glance_content_description">एक नजरमा</string>
     <string name="neon_icons_title">नियन अइकनहरू</string>

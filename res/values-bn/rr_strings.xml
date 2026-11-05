@@ -8,6 +8,9 @@
         <item>"এক নজরে"</item>
         <item>সংকীর্ণ সাম্প্রতিক (পাশের প্যানেল)</item>
         <item>ঘূর্ণায়মান সাম্প্রতিক (চাকা)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">নিয়ন আইকন</string>
     <string name="neon_icons_summary">প্রতিটি অ্যাপের গ্লিফ আপনার অ্যাকসেন্ট রঙে, একটি উজ্জ্বল বৃত্তের ভেতরে। থিমড আইকন চালু করে।</string>

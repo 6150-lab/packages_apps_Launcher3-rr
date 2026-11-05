@@ -5882,6 +5882,10 @@ public abstract class RecentsView<
         taskView.setRecentsTranslation(mTaskStyle.translation);
         taskView.setTranslationZ(mTaskStyle.elevation);
         taskView.setRecentsDim(mTaskStyle.dim);
+        // RR: the front card of a stack carries the accent.
+        float size = orientation.getPrimarySize(taskView);
+        taskView.setRecentsEdge(isStackRecentsStyleActive() && size > 0
+                ? progress * Math.max(0f, 1f - Math.abs(distance) / (size * 0.5f)) : 0f);
         updateLiveTileRecentsStyle(taskView);
     }
 

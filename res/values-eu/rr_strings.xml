@@ -8,6 +8,9 @@
         <item>"Ikuspegi orokorra"</item>
         <item>Azkenaldikoak, alboko panel mehea</item>
         <item>Azkenaldikoak, gurpila</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Neon ikonoak</string>
     <string name="neon_icons_summary">Aplikazio bakoitzaren glifoa zure azentu-koloreko, distira egiten duen eraztun baten barruan. Gai-ikonoak aktibatzen ditu.</string>

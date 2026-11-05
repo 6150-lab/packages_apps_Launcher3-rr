@@ -8,6 +8,9 @@
         <item>"Apžvalga"</item>
         <item>Plona naujausių juosta (šoninis skydelis)</item>
         <item>Sukama naujausių juosta (ratas)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Neoninės piktogramos</string>
     <string name="neon_icons_summary">Kiekvienos programos piktograma jūsų pagrindine spalva, įdėta į švytintį žiedą. Įjungia temines piktogramas.</string>

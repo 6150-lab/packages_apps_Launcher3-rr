@@ -8,6 +8,9 @@
         <item>"მიმოხილვა"</item>
         <item>გამოყენებული აპლიკაციების ვიწრო პანელი (გვერდითი პანელი)</item>
         <item>გამოყენებული აპლიკაციების ბორბალი</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">ნეონის ხატულები</string>
     <string name="neon_icons_summary">თითოეული აპის ხატულა თქვენი აქცენტის ფერით, მბზინავ წრეში. ჩართავს თემურ ხატულებს.</string>

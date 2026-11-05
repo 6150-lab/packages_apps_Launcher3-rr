@@ -15,6 +15,9 @@
         <item>"Übersicht"</item>
         <item>Schmale letzte Apps (Seitenleiste)</item>
         <item>Gedrehte letzte Apps (Rad)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Neon-Symbole</string>
     <string name="neon_icons_summary">Das Symbol jeder App in deiner Akzentfarbe, innerhalb eines leuchtenden Rings. Aktiviert designbasierte Symbole.</string>

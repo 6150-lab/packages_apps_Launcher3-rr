@@ -10,6 +10,9 @@
         <item>"Panoramica"</item>
         <item>Recenti sottili (pannello laterale)</item>
         <item>Recenti a ruota (ruota)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Icone neon</string>
     <string name="neon_icons_summary">Il glifo di ogni app nel tuo colore primario, all\'interno di un anello luminoso. Attiva le icone tematizzate.</string>

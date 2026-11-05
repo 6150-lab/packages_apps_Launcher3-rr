@@ -27,6 +27,7 @@ import android.content.Context
 import android.content.res.Configuration
 import android.graphics.Canvas
 import android.graphics.Color
+import android.graphics.Paint
 import android.graphics.PointF
 import android.graphics.Rect
 import android.graphics.drawable.Drawable
@@ -73,6 +74,7 @@ import com.android.launcher3.util.SplitConfigurationOptions
 import com.android.launcher3.util.SplitConfigurationOptions.STAGE_POSITION_UNDEFINED
 import com.android.launcher3.util.SplitConfigurationOptions.StagePosition
 import com.android.launcher3.util.TraceHelper
+import com.android.launcher3.util.Themes
 import com.android.launcher3.util.TransformingTouchDelegate
 import com.android.launcher3.util.ViewPool
 import com.android.launcher3.util.rects.set
@@ -409,6 +411,40 @@ constructor(
         recentsTranslationY = y
         applyTranslationX()
         applyTranslationY()
+    }
+
+    private var recentsEdgeAlpha = 0f
+    private val recentsEdgePaint by lazy {
+        Paint(Paint.ANTI_ALIAS_FLAG).apply {
+            style = Paint.Style.STROKE
+            strokeWidth = 2 * resources.displayMetrics.density
+            color = Themes.getColorAccent(context)
+        }
+    }
+
+    fun setRecentsEdge(alpha: Float) {
+        if (recentsEdgeAlpha == alpha) return
+        recentsEdgeAlpha = alpha
+        invalidate()
+    }
+
+    override fun dispatchDraw(canvas: Canvas) {
+        super.dispatchDraw(canvas)
+        if (recentsEdgeAlpha <= 0f) return
+        val snapshot = taskContainers.firstOrNull()?.snapshotView ?: return
+        val paint = recentsEdgePaint
+        paint.alpha = (recentsEdgeAlpha * 255).toInt()
+        val inset = paint.strokeWidth / 2
+        val radius = thumbnailFullscreenParams.currentCornerRadius
+        canvas.drawRoundRect(
+            snapshot.left + inset,
+            snapshot.top + inset,
+            snapshot.right - inset,
+            snapshot.bottom - inset,
+            radius,
+            radius,
+            paint,
+        )
     }
 
     fun setRecentsDim(amount: Float) {
@@ -1932,6 +1968,7 @@ constructor(
         recentsScale = 1f
         setRecentsTranslation(0f)
         setRecentsDim(0f)
+        setRecentsEdge(0f)
         translationZ = 0f
         setIconVisibleForGesture(true)
         settledProgressDismiss = 1f

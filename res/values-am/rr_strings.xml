@@ -8,6 +8,9 @@
         <item>"አጠቃላይ ዕይታ"</item>
         <item>ቀጭን የቅርብ ጊዜዎቹ (የጎን ፓነል)</item>
         <item>የሚሽከረከሩ የቅርብ ጊዜዎቹ (ጎማ)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">ኒዮን አዶዎች</string>
     <string name="neon_icons_summary">የእያንዳንዱ መተግበሪያ ምስል በአነጣጠርህ ቀለም፣ በሚያንጸባርቅ ቀለበት ውስጥ ይታያል። ገጽታ ያላቸውን አዶዎች ያበራል።</string>

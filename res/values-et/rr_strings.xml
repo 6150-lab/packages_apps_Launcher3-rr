@@ -8,6 +8,9 @@
         <item>"Ülevaade"</item>
         <item>Kitsas hiljutised (külgpaneel)</item>
         <item>Pöörlev hiljutised (ratas)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Neoonikoonid</string>
     <string name="neon_icons_summary">Iga rakenduse sümbol sinu aktsentvärvis helendava ringi sees. Lülitab sisse teemakohased ikoonid.</string>

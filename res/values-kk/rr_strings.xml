@@ -8,6 +8,9 @@
         <item>"Шолу"</item>
         <item>Ықшам жақындағылар (бүйір панель)</item>
         <item>Айналмалы жақындағылар (дөңгелек)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Неон белгішелері</string>
     <string name="neon_icons_summary">Әр қолданбаның белгішесі акцент түсімен, жарқыраған сақина ішінде көрсетіледі. Тақырыптық белгішелерді қосады.</string>

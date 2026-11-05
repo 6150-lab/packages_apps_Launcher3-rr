@@ -8,6 +8,9 @@
         <item>"Buka konke"</item>
         <item>Okwakamuva okuncane (ipanele elisecaleni)</item>
         <item>Okwakamuva okuzungezayo (isondo)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Izithonjana ze-Neon</string>
     <string name="neon_icons_summary">I-glyph ye-app ngamunye ngombala wakho wokugqamisa, ngaphakathi kwendandatho ekhanyayo. Ivula izithonjana ezine-theme.</string>

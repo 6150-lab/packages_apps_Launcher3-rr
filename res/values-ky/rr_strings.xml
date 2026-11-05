@@ -8,6 +8,9 @@
         <item>"Назар"</item>
         <item>Ичке акыркылар (капталдык панель)</item>
         <item>Айланма акыркылар (дөңгөлөк)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Неон белгилери</string>
     <string name="neon_icons_summary">Ар бир колдонмонун белгиси сиздин акцент түсүңүздө, жаркыраган шакекчеде. Темага ылайыктуу белгилерди күйгүзөт.</string>

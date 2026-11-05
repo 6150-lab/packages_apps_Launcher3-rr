@@ -8,6 +8,9 @@
         <item>"Aplicacions recents"</item>
         <item>Recents estrets (panell lateral)</item>
         <item>Recents giratoris (roda)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Icones de neó</string>
     <string name="neon_icons_summary">El glif de cada aplicació en el teu color d\'accent, dins d\'un anell lluminós. Activa les icones amb tema.</string>

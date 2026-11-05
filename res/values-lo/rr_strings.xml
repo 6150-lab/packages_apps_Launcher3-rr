@@ -8,6 +8,9 @@
         <item>"​ພາບ​ຮວມ"</item>
         <item>ແອັບຫຼ້າສຸດແບບບາງ (ແຜງດ້ານຂ້າງ)</item>
         <item>ແອັບຫຼ້າສຸດແບບໝຸນ (ວົງລໍ້)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">ໄອຄອນນີອອນ</string>
     <string name="neon_icons_summary">ສັນຍະລັກຂອງແຕ່ລະແອັບໃນສີຂອງການເນັ້ນຂອງທ່ານ ພາຍໃນວົງແຫວນເຮືອງແສງ. ເປີດໄອຄອນຕາມຮູບແບບທີ່ກຳນົດເອງ.</string>

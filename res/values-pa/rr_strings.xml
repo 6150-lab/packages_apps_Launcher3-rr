@@ -8,6 +8,9 @@
         <item>"ਰੂਪ-ਰੇਖਾ"</item>
         <item>ਪਤਲਾ ਹਾਲੀਆ (ਸਾਈਡ ਪੈਨਲ)</item>
         <item>ਘੁੰਮਦਾ ਹਾਲੀਆ (ਪਹੀਆ)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">ਨਿਓਨ ਆਈਕਨ</string>
     <string name="neon_icons_summary">ਹਰ ਐਪ ਦਾ ਗਲਿਫ਼ ਤੁਹਾਡੇ ਐਕਸੈਂਟ ਰੰਗ ਵਿੱਚ, ਚਮਕਦੀ ਰਿੰਗ ਦੇ ਅੰਦਰ। ਥੀਮਡ ਆਈਕਨ ਚਾਲੂ ਕਰਦਾ ਹੈ।</string>

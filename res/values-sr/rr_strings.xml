@@ -8,6 +8,9 @@
         <item>"Преглед"</item>
         <item>Танке недавне апликације (бочни панел)</item>
         <item>Окретне недавне апликације (точак)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Неон иконе</string>
     <string name="neon_icons_summary">Симбол сваке апликације у вашој акцентној боји, унутар сјајног прстена. Укључује тематске иконе.</string>

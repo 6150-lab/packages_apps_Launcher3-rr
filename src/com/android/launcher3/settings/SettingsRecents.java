@@ -284,6 +284,9 @@ public class SettingsRecents extends CollapsingToolbarBaseActivity
         private static final String RECENTS_STYLE = "recents_style";
         /** Old wheel switch. Honored only when recents_style was never written. */
         private static final String LEGACY_SLIM_RECENTS = "slim_recents_enabled";
+        /** Card layouts of Overview, entries 3 to 5 of the list. RecentsView reads these. */
+        private static final String[] CARD_STYLES = {"staple", "ios", "oxygen"};
+        private static final int CARD_STYLE_FIRST = 3;
 
         private static int readRecentsStyle(ContentResolver resolver) {
             int style = Settings.System.getInt(resolver, RECENTS_STYLE, -1);
@@ -303,10 +306,19 @@ public class SettingsRecents extends CollapsingToolbarBaseActivity
                 ContentResolver resolver = getContext().getContentResolver();
                 ListPreference list = (ListPreference) preference;
                 list.setSummaryProvider(ListPreference.SimpleSummaryProvider.getInstance());
-                list.setValue(Integer.toString(readRecentsStyle(resolver)));
-                list.setOnPreferenceChangeListener((pref, newValue) ->
-                        Settings.System.putInt(resolver, RECENTS_STYLE,
-                                Integer.parseInt((String) newValue)));
+                int style = readRecentsStyle(resolver);
+                int cardStyle = java.util.Arrays.asList(CARD_STYLES)
+                        .indexOf(LauncherPrefs.RECENTS_STYLE.get(getContext()));
+                list.setValue(Integer.toString(
+                        style == 0 && cardStyle >= 0 ? cardStyle + CARD_STYLE_FIRST : style));
+                list.setOnPreferenceChangeListener((pref, newValue) -> {
+                    int value = Integer.parseInt((String) newValue);
+                    boolean card = value >= CARD_STYLE_FIRST;
+                    LauncherPrefs.get(getContext()).putSync(kotlin.TuplesKt.to(
+                            LauncherPrefs.RECENTS_STYLE,
+                            card ? CARD_STYLES[value - CARD_STYLE_FIRST] : "default"));
+                    return Settings.System.putInt(resolver, RECENTS_STYLE, card ? 0 : value);
+                });
             }
             return true;
         }

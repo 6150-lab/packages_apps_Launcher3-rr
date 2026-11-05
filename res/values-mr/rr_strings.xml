@@ -8,6 +8,9 @@
         <item>"अवलोकन"</item>
         <item>स्लिम अलीकडील (साइड पॅनल)</item>
         <item>स्पिन अलीकडील (चाक)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">निऑन आयकॉन्स</string>
     <string name="neon_icons_summary">प्रत्येक अ‍ॅपचा ग्लिफ तुमच्या अ‍ॅक्सेंट रंगात, चमकणाऱ्या रिंगमध्ये. थीम्ड आयकॉन्स चालू करते.</string>

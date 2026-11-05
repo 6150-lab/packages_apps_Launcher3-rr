@@ -17,6 +17,9 @@
         <item>"概览"</item>
         <item>精简最近任务（侧边栏）</item>
         <item>旋转最近任务（转盘）</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">霓虹图标</string>
     <string name="neon_icons_summary">每个应用的图标以你的强调色显示，并置于发光的圆环中。开启主题图标。</string>

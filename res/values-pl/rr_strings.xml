@@ -10,6 +10,9 @@
         <item>"Przegląd"</item>
         <item>Smukłe ostatnie (panel boczny)</item>
         <item>Obrotowe ostatnie (koło)</item>
+        <item>Stack</item>
+        <item>iOS</item>
+        <item>OxygenOS</item>
     </string-array>
     <string name="neon_icons_title">Neonowe ikony</string>
     <string name="neon_icons_summary">Ikona każdej aplikacji w kolorze akcentu, w świecącym pierścieniu. Włącza ikony w motywie.</string>
