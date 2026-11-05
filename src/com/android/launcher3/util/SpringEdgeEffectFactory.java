@@ -16,6 +16,7 @@ package com.android.launcher3.util;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.view.HapticFeedbackConstants;
 import android.widget.EdgeEffect;
 
 import androidx.annotation.NonNull;
