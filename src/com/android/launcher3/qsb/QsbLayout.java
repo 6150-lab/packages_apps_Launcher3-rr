@@ -18,7 +18,6 @@ import com.android.launcher3.LauncherPrefs;
 import com.android.launcher3.R;
 import com.android.launcher3.Reorderable;
 import com.android.launcher3.Utilities;
-import com.android.launcher3.qsb.QsbContainerView;
 import com.android.launcher3.util.MultiTranslateDelegate;
 import com.android.launcher3.util.Themes;
 import android.view.View;
@@ -137,11 +136,16 @@ public class QsbLayout extends FrameLayout implements Reorderable {
     private void setUpMainSearch() {
         setOnClickListener(view -> {
             try {
-                Intent intent = new Intent();
-                intent.setAction("android.search.action.GLOBAL_SEARCH");
+                Context context = view.getContext();
+                Intent intent;
+                if (Utilities.isGSAEnabled(context)) {
+                    intent = new Intent("android.search.action.GLOBAL_SEARCH")
+                            .setPackage(Utilities.GSA_PACKAGE);
+                } else {
+                    intent = new Intent(Intent.ACTION_WEB_SEARCH);
+                }
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                intent.setPackage(QsbContainerView.getSearchWidgetPackageName(view.getContext()));
-                view.getContext().startActivity(intent);
+                context.startActivity(intent);
             } catch (Exception e) {
                 Log.e(TAG, "Main search launch failed", e);
             }
@@ -150,6 +154,11 @@ public class QsbLayout extends FrameLayout implements Reorderable {
 
     private void setupGIcon() {
         if (gIcon == null) return;
+
+        if (!Utilities.isGSAEnabled(getContext())) {
+            gIcon.setVisibility(View.GONE);
+            return;
+        }
 
         gIcon.setImageResource(mIsThemed
                 ? R.drawable.ic_super_g_themed
@@ -170,6 +179,11 @@ public class QsbLayout extends FrameLayout implements Reorderable {
 
     private void setupLensIcon() {
         if (lensIcon == null) return;
+
+        if (!Utilities.isGSAEnabled(getContext())) {
+            lensIcon.setVisibility(View.GONE);
+            return;
+        }
 
         lensIcon.setImageResource(mIsThemed
                 ? R.drawable.ic_lens_themed
@@ -193,25 +207,13 @@ public class QsbLayout extends FrameLayout implements Reorderable {
     private void setupMicIcon() {
         if (micIcon == null) return;
 
-        if (Utilities.isMusicSearchEnabled(getContext())) {
-            micIcon.setImageResource(mIsThemed
-                    ? R.drawable.ic_music_themed
-                    : R.drawable.ic_music_color);
-        } else {
-            micIcon.setImageResource(mIsThemed
-                    ? R.drawable.ic_mic_themed
-                    : R.drawable.ic_mic_color);
-        }
+        micIcon.setImageResource(mIsThemed
+                ? R.drawable.ic_mic_themed
+                : R.drawable.ic_mic_color);
 
         micIcon.setOnClickListener(view -> {
             try {
-                Intent intent = new Intent();
-                if (Utilities.isMusicSearchEnabled(view.getContext())) {
-                    intent.setAction("com.google.android.googlequicksearchbox.MUSIC_SEARCH");
-                    intent.setPackage(QsbContainerView.getSearchWidgetPackageName(view.getContext()));
-                } else {
-                    intent.setAction("android.intent.action.VOICE_COMMAND");
-                }
+                Intent intent = new Intent("android.intent.action.VOICE_COMMAND");
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 view.getContext().startActivity(intent);
             } catch (Exception e) {

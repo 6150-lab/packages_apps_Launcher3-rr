@@ -19,6 +19,7 @@ package com.android.launcher3.qsb
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.android.launcher3.LauncherPrefs
 import com.android.launcher3.R
 import javax.inject.Inject
 
@@ -26,7 +27,11 @@ import javax.inject.Inject
 open class QsbWidgetFactory @Inject constructor() {
 
     open fun createView(container: ViewGroup): View {
-        return LayoutInflater.from(container.context)
-            .inflate(R.layout.qsb_container_hotseat, container, false)
+        val context = container.context
+        // RR: the launcher draws the bar itself unless a search widget was picked for the dock.
+        val layout =
+            if (LauncherPrefs.isCustomSearchWidgetEnabled(context)) R.layout.qsb_container_hotseat
+            else R.layout.search_container_hotseat
+        return LayoutInflater.from(context).inflate(layout, container, false)
     }
 }
