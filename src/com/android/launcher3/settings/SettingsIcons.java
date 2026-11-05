@@ -344,6 +344,15 @@ public class SettingsIcons extends CollapsingToolbarBaseActivity
                     preference.setVisible(LauncherPrefs.get(getContext())
                             .get(LauncherPrefs.NEON_ICONS));
                     return true;
+                case "pref_themed_icons_category": {
+                    boolean mono = com.android.launcher3.graphics.theme.ThemePreference
+                            .MONO_THEME_VALUE.equals(com.android.launcher3.dagger
+                                    .LauncherComponentProvider.get(getContext())
+                                    .getThemePreference().getValue());
+                    preference.setVisible(mono && !LauncherPrefs.get(getContext())
+                            .get(LauncherPrefs.NEON_ICONS));
+                    return true;
+                }
                 case IconDatabase.KEY_ICON_PACK:
                     setupIconPackPreference(preference);
                     return true;

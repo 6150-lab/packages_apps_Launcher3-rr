@@ -61,40 +61,12 @@
             android:persistent="true" />
     </PreferenceCategory>
 
-    <com.android.launcher3.settings.NotificationDotsPreference
-        android:key="pref_icon_badging"
-        android:title="@string/notification_dots_title"
-        android:persistent="false"
-        android:widgetLayout="@layout/notification_pref_warning" />
-
-    <SwitchPreferenceCompat
-        android:key="pref_notification_badge_count"
-        android:title="@string/notification_badge_count_title"
-        android:summary="@string/notification_badge_count_desc"
-        android:persistent="true"
-        android:defaultValue="false" />
-
-    <com.android.launcher3.settings.preferences.CustomSeekBarPreference
-        android:key="pref_custom_icon_size"
-        android:title="@string/icon_size_title"
-        android:persistent="true"
-        android:max="150"
-        settings:min="50"
-        settings:units="%"
-        android:defaultValue="100" />
-
-    <com.android.launcher3.settings.preferences.CustomSeekBarPreference
-        android:key="pref_custom_font_size"
-        android:title="@string/font_size_title"
-        android:persistent="true"
-        android:max="150"
-        settings:min="50"
-        settings:units="%"
-        android:defaultValue="100" />
-
     <PreferenceCategory
         android:key="pref_themed_icons_category"
         android:title="@string/themed_icons_category_title">
+
+        <com.android.launcher3.settings.preferences.ThemedIconsPreviewPreference
+            android:key="pref_themed_icons_preview" />
 
         <SwitchPreferenceCompat
             android:key="themed_icon_customize"
@@ -140,5 +112,36 @@
             launcher:iconSpaceReserved="false" />
 
     </PreferenceCategory>
+
+    <com.android.launcher3.settings.NotificationDotsPreference
+        android:key="pref_icon_badging"
+        android:title="@string/notification_dots_title"
+        android:persistent="false"
+        android:widgetLayout="@layout/notification_pref_warning" />
+
+    <SwitchPreferenceCompat
+        android:key="pref_notification_badge_count"
+        android:title="@string/notification_badge_count_title"
+        android:summary="@string/notification_badge_count_desc"
+        android:persistent="true"
+        android:defaultValue="false" />
+
+    <com.android.launcher3.settings.preferences.CustomSeekBarPreference
+        android:key="pref_custom_icon_size"
+        android:title="@string/icon_size_title"
+        android:persistent="true"
+        android:max="150"
+        settings:min="50"
+        settings:units="%"
+        android:defaultValue="100" />
+
+    <com.android.launcher3.settings.preferences.CustomSeekBarPreference
+        android:key="pref_custom_font_size"
+        android:title="@string/font_size_title"
+        android:persistent="true"
+        android:max="150"
+        settings:min="50"
+        settings:units="%"
+        android:defaultValue="100" />
 
 </androidx.preference.PreferenceScreen>
