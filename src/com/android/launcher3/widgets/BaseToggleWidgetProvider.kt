@@ -19,6 +19,8 @@ import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
 import android.content.Context
 import android.content.Intent
+import android.os.PowerManager
+import java.util.concurrent.ConcurrentHashMap
 import android.widget.RemoteViews
 
 import kotlinx.coroutines.*
@@ -30,8 +32,6 @@ abstract class BaseToggleWidgetProvider : AppWidgetProvider() {
     abstract fun getLayoutId(): Int
     abstract fun updateWidget(context: Context) 
     abstract fun onUpdate(context: Context) 
-
-    private var job: Job? = null
 
     override fun onUpdate(context: Context, appWidgetManager: AppWidgetManager, appWidgetIds: IntArray) {
         updateWidget(context)
@@ -49,18 +49,26 @@ abstract class BaseToggleWidgetProvider : AppWidgetProvider() {
         stopPolling()
     }
 
+    /** RR: one loop per provider class, because the system makes a new provider per broadcast. */
     protected fun schedulePolling(context: Context) {
         stopPolling()
-        job = CoroutineScope(Dispatchers.Default).launch {
+        val powerManager = context.getSystemService(PowerManager::class.java)
+        jobs[javaClass] = CoroutineScope(Dispatchers.Default).launch {
             while (isActive) {
-                updateWidget(context)
-                delay(1250L)
+                if (powerManager.isInteractive) {
+                    updateWidget(context)
+                }
+                delay(POLL_INTERVAL_MS)
             }
         }
     }
-    
+
     private fun stopPolling() {
-        job?.cancel()
-        job = null
+        jobs.remove(javaClass)?.cancel()
+    }
+
+    private companion object {
+        const val POLL_INTERVAL_MS = 3000L
+        val jobs = ConcurrentHashMap<Class<*>, Job>()
     }
 }

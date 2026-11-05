@@ -21,14 +21,13 @@ import android.content.Context
 import android.os.BatteryManager
 import android.os.Handler
 import android.os.Looper
+import android.os.PowerManager
 import android.widget.RemoteViews
 import kotlinx.coroutines.*
+import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.TimeUnit
 
 abstract class BaseWidgetProvider : AppWidgetProvider() {
-
-    private val coroutineScope = CoroutineScope(Dispatchers.Main)
-    private var job: Job? = null
 
     override fun onUpdate(
         context: Context,
@@ -50,19 +49,25 @@ abstract class BaseWidgetProvider : AppWidgetProvider() {
         cancelPolling()
     }
 
+    /**
+     * RR: one loop per provider class, because the system makes a new provider per broadcast. It
+     * stays off the main thread and sleeps with the screen.
+     */
     private fun schedulePolling(context: Context) {
         cancelPolling()
-        job = coroutineScope.launch {
+        val powerManager = context.getSystemService(PowerManager::class.java)
+        jobs[javaClass] = CoroutineScope(Dispatchers.Default).launch {
             while (isActive) {
-                delay(2000)
-                performScheduledTask(context)
+                delay(POLL_INTERVAL_MS)
+                if (powerManager.isInteractive) {
+                    performScheduledTask(context)
+                }
             }
         }
     }
 
     private fun cancelPolling() {
-        job?.cancel() 
-        job = null
+        jobs.remove(javaClass)?.cancel()
     }
 
     abstract fun getLayoutId(): Int
@@ -70,4 +75,9 @@ abstract class BaseWidgetProvider : AppWidgetProvider() {
     abstract fun onWidgetUpdate(context: Context)
 
     open suspend fun performScheduledTask(context: Context) {}
+
+    private companion object {
+        const val POLL_INTERVAL_MS = 30_000L
+        val jobs = ConcurrentHashMap<Class<*>, Job>()
+    }
 }

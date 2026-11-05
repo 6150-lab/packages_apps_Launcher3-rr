@@ -152,7 +152,10 @@ class BatteryWidgetProvider : BaseWidgetProvider() {
             paint.color = Color.argb(75, Color.red(color), Color.green(color), Color.blue(color))
             canvas.drawArc(arc, minAngle, maxAngle, false, paint)
             paint.color = color
+            // RR: the charge arc glows in the accent, like the neon icons' rings.
+            paint.setShadowLayer(14f, 0f, 0f, color)
             canvas.drawArc(arc, minAngle, (maxAngle / 100) * percentage, false, paint)
+            paint.clearShadowLayer()
             iconDrawable?.let {
                 val arcCenterX = (arc.left + arc.right) / 2
                 val arcCenterY = (arc.top + arc.bottom) / 2

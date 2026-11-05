@@ -140,7 +140,7 @@ class PhotoPickerActivity : AppCompatActivity() {
             val timeStamp = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US).format(Date())
             val imageFileName = "$filePrefix" + "_$timeStamp.png"
 
-            val directory = File(context.getExternalFilesDir(null), "risingOS/$featurePath")
+            val directory = File(context.getExternalFilesDir(null), "widgets/$featurePath")
             if (!directory.exists() && !directory.mkdirs()) {
                 return null
             }

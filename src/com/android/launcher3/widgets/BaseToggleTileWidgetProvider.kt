@@ -19,6 +19,7 @@ import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import android.widget.RemoteViews
 import com.android.launcher3.R
 
@@ -40,7 +41,11 @@ abstract class BaseToggleTileWidgetProvider : BaseToggleWidgetProvider() {
     override fun onReceive(context: Context, intent: Intent) {
         super.onReceive(context, intent)
         if (intent.action == getActionString()) {
-            toggleService(context)
+            try {
+                toggleService(context)
+            } catch (e: SecurityException) {
+                Log.w(TAG, "Not allowed to toggle ${getActionString()}", e)
+            }
             initializeState(context)
             updateWidget(context)
             schedulePolling(context)
@@ -83,4 +88,8 @@ abstract class BaseToggleTileWidgetProvider : BaseToggleWidgetProvider() {
     }
 
     protected abstract fun getAppWidgetIds(context: Context): IntArray
+
+    private companion object {
+        const val TAG = "ToggleTileWidget"
+    }
 }

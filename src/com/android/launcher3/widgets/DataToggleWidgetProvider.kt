@@ -19,8 +19,6 @@ import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
 import android.content.Context
 import android.content.Intent
-import android.net.ConnectivityManager
-import android.net.NetworkCapabilities
 import android.telephony.TelephonyManager
 import android.widget.RemoteViews
 import com.android.launcher3.R
@@ -38,19 +36,12 @@ class DataToggleWidgetProvider : BaseToggleTileWidgetProvider() {
         }
     }
 
-    override fun isServiceActive(context: Context): Boolean {
-        val connectivityManager = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
-        val networkCapabilities = connectivityManager.getNetworkCapabilities(connectivityManager.activeNetwork)
-        return networkCapabilities?.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) == true
-    }
+    override fun isServiceActive(context: Context): Boolean =
+        context.getSystemService(TelephonyManager::class.java).isDataEnabled
 
     override fun toggleService(context: Context) {
-        val telephonyManager = context.getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager
-        try {
-            val method = telephonyManager::class.java.getDeclaredMethod("setDataEnabled", Boolean::class.java)
-            method.isAccessible = true
-            method.invoke(telephonyManager, !isServiceActive(context))
-        } catch (e: Exception) {}
+        val telephonyManager = context.getSystemService(TelephonyManager::class.java)
+        telephonyManager.isDataEnabled = !telephonyManager.isDataEnabled
     }
 
     override fun getIconResource(isActive: Boolean): Int {

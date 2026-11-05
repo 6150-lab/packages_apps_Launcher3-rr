@@ -69,6 +69,11 @@
     <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
+    <!-- RR widgets: the Wi-Fi and mobile data tiles -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+
     <!-- Floating window -->
     <uses-permission android:name="com.libremobileos.permission.START_FREEFORM" />
 
