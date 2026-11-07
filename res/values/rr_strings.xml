@@ -32,4 +32,9 @@
     <!-- At a glance styles -->
     <string name="glance_content_description">At a glance</string>
     <string name="glance_battery_level"><xliff:g id="level" example="80">%1$d</xliff:g>%%</string>
+
+    <!-- Super folders: long-press menu of a home screen folder -->
+    <string name="big_folder_enlarge">Enlarge folder</string>
+    <string name="big_folder_shrink">Shrink folder</string>
+    <string name="big_folder_open">Open folder</string>
 </resources>

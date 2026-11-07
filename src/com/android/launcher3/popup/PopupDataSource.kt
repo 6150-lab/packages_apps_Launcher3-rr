@@ -22,6 +22,7 @@ import android.content.Intent
 import android.os.Process
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import com.android.launcher3.AbstractFloatingView
 import com.android.launcher3.AbstractFloatingViewHelper
 import com.android.launcher3.DropTargetHandler
@@ -29,6 +30,7 @@ import com.android.launcher3.Flags.enableHomeScreenFilesCopyPaste
 import com.android.launcher3.Flags.enableHomeScreenFilesRenaming
 import com.android.launcher3.Launcher
 import com.android.launcher3.LauncherConstants
+import com.android.launcher3.LauncherSettings.Favorites.CONTAINER_DESKTOP
 import com.android.launcher3.LauncherSettings.Favorites.ITEM_TYPE_APPWIDGET
 import com.android.launcher3.LauncherSettings.Favorites.ITEM_TYPE_APP_GROUP
 import com.android.launcher3.LauncherSettings.Favorites.ITEM_TYPE_CUSTOM_APPWIDGET
@@ -44,6 +46,7 @@ import com.android.launcher3.homescreenfiles.HomeScreenFilesRenameDialogFactory
 import com.android.launcher3.homescreenfiles.HomeScreenFilesUtils
 import com.android.launcher3.homescreenfiles.homeScreenFile
 import com.android.launcher3.logging.StatsLogManager.LauncherEvent
+import com.android.launcher3.folder.FolderIcon
 import com.android.launcher3.folder.FolderThumbnailManager
 import com.android.launcher3.model.data.FolderInfo
 import com.android.launcher3.model.data.ItemInfo
@@ -88,6 +91,45 @@ object PopupDataSource {
             }
         }
 
+    // Super folders: a home screen folder switches between 1x1 and 2x2 in one tap.
+    val enlargeFolderPopupData =
+        PopupData(
+            iconResId = R.drawable.ic_big_folder_enlarge,
+            labelResId = R.string.big_folder_enlarge,
+            category = PopupCategory.SYSTEM_SHORTCUT_FIXED,
+        ) { activityContext: ActivityContext, _: ItemInfo, view: View ->
+            resizeFolder(activityContext, view, 2)
+        }
+
+    val shrinkFolderPopupData =
+        PopupData(
+            iconResId = R.drawable.ic_big_folder_shrink,
+            labelResId = R.string.big_folder_shrink,
+            category = PopupCategory.SYSTEM_SHORTCUT_FIXED,
+        ) { activityContext: ActivityContext, _: ItemInfo, view: View ->
+            resizeFolder(activityContext, view, 1)
+        }
+
+    val openFolderPopupData =
+        PopupData(
+            iconResId = R.drawable.ic_big_folder_open,
+            labelResId = R.string.big_folder_open,
+            category = PopupCategory.SYSTEM_SHORTCUT_FIXED,
+        ) { activityContext: ActivityContext, _: ItemInfo, view: View ->
+            AbstractFloatingView.closeAllOpenViews(activityContext)
+            if (view is FolderIcon) {
+                activityContext.itemOnClickListener.onClick(view)
+            }
+        }
+
+    private fun resizeFolder(activityContext: ActivityContext, view: View, span: Int) {
+        AbstractFloatingView.closeAllOpenViews(activityContext)
+        if (activityContext !is Launcher || view !is FolderIcon) return
+        if (!activityContext.workspace.resizeFolderToSize(view, span, span)) {
+            Toast.makeText(activityContext, R.string.out_of_space, Toast.LENGTH_SHORT).show()
+        }
+    }
+
     val resetFolderThumbnailPopupData =
         PopupData(
             iconResId = R.drawable.ic_custom_seekbar_reset,
@@ -103,17 +145,26 @@ object PopupDataSource {
 
 object FolderSystemShortcuts : PopupDataMapper {
 
-    override fun getPopupDataByItemInfo(itemInfo: ItemInfo): List<PopupData>? =
-        if (itemInfo.itemType != ITEM_TYPE_FOLDER) null
-        else if (itemInfo is FolderInfo && itemInfo.hasOption(FolderInfo.FLAG_CUSTOM_THUMBNAIL)) {
-            listOf(
-                PopupDataSource.setFolderThumbnailPopupData,
-                PopupDataSource.resetFolderThumbnailPopupData,
-                PopupDataSource.removePopupData,
-            )
-        } else {
-            listOf(PopupDataSource.setFolderThumbnailPopupData, PopupDataSource.removePopupData)
+    override fun getPopupDataByItemInfo(itemInfo: ItemInfo): List<PopupData>? {
+        if (itemInfo.itemType != ITEM_TYPE_FOLDER) return null
+        return buildList {
+            if (itemInfo.container == CONTAINER_DESKTOP) {
+                add(
+                    if (itemInfo.spanX > 1 || itemInfo.spanY > 1) {
+                        PopupDataSource.shrinkFolderPopupData
+                    } else {
+                        PopupDataSource.enlargeFolderPopupData
+                    }
+                )
+                add(PopupDataSource.openFolderPopupData)
+            }
+            add(PopupDataSource.setFolderThumbnailPopupData)
+            if (itemInfo is FolderInfo && itemInfo.hasOption(FolderInfo.FLAG_CUSTOM_THUMBNAIL)) {
+                add(PopupDataSource.resetFolderThumbnailPopupData)
+            }
+            add(PopupDataSource.removePopupData)
         }
+    }
 }
 
 object AppPairSystemShortcuts : PopupDataMapper {
