@@ -270,44 +270,35 @@ public class PreviewItemManager {
 
             return FolderPreviewLayout.calculateGrid(availableBounds, itemSize, minGap);
         } else {
-            // Match the icon size and spacing used by calculateBackgroundBounds.
-            float standardIconSize = deviceProfile.getWorkspaceProfile().getIconSizePx();
-            float itemScale = 0.85f;
-            float itemSize = standardIconSize * itemScale;
-            float idealPadding = itemSize * 0.20f;
-            float idealGap = itemSize * 0.15f;
-
-            float idealWidth = spanX * itemSize + (spanX - 1) * idealGap + 2 * idealPadding;
-            float idealHeight = spanY * itemSize + (spanY - 1) * idealGap + 2 * idealPadding;
+            // Smaller icons than on the home screen: a 2x2 folder holds three rows of three.
+            int columns = getBigFolderLineCount(spanX);
+            int rows = getBigFolderLineCount(spanY);
 
             float availableWidth = backgroundBounds.width();
             float availableHeight = backgroundBounds.height();
-
-            if (idealWidth > availableWidth || idealHeight > availableHeight) {
-                float fitScale = Math.min(availableWidth / idealWidth, availableHeight / idealHeight);
-                itemSize *= fitScale;
-                idealPadding *= fitScale;
-                idealGap *= fitScale;
-            }
+            float itemSize = Math.min(
+                    availableWidth / getBigFolderLineWeight(columns),
+                    availableHeight / getBigFolderLineWeight(rows));
+            float idealPadding = itemSize * BIG_FOLDER_PADDING_RATIO;
+            float idealGap = itemSize * BIG_FOLDER_GAP_RATIO;
 
             RectF availableBounds = new RectF(backgroundBounds);
             availableBounds.inset(idealPadding, idealPadding);
 
             // Calculate expanding gaps, but clamp them to a maximum of 1.5x idealGap to prevent icons from flying apart
-            float columnGap = spanX > 1 ? Math.min(idealGap * 1.5f, (availableBounds.width() - spanX * itemSize) / (spanX - 1)) : 0f;
-            float rowGap = spanY > 1 ? Math.min(idealGap * 1.5f, (availableBounds.height() - spanY * itemSize) / (spanY - 1)) : 0f;
+            float columnGap = columns > 1 ? Math.min(idealGap * 1.5f, (availableBounds.width() - columns * itemSize) / (columns - 1)) : 0f;
+            float rowGap = rows > 1 ? Math.min(idealGap * 1.5f, (availableBounds.height() - rows * itemSize) / (rows - 1)) : 0f;
 
-            // Center the grid inside the background bounds.
-            float gridWidth = spanX * itemSize + (spanX - 1) * columnGap;
-            float gridHeight = spanY * itemSize + (spanY - 1) * rowGap;
+            float gridWidth = columns * itemSize + (columns - 1) * columnGap;
+            float gridHeight = rows * itemSize + (rows - 1) * rowGap;
 
             // Center the grid inside the background bounds
             float startX = backgroundBounds.left + (backgroundBounds.width() - gridWidth) / 2f;
             float startY = backgroundBounds.top + (backgroundBounds.height() - gridHeight) / 2f;
 
             return new FolderPreviewLayout.Grid(
-                    spanX,
-                    spanY,
+                    columns,
+                    rows,
                     startX,
                     startY,
                     itemSize,
@@ -315,6 +306,19 @@ public class PreviewItemManager {
                     rowGap
             );
         }
+    }
+
+    private static final float BIG_FOLDER_PADDING_RATIO = 0.12f;
+    private static final float BIG_FOLDER_GAP_RATIO = 0.16f;
+
+    /** Icons along one side of a big folder: one and a half per cell, so 3 across 2 cells. */
+    private static int getBigFolderLineCount(int span) {
+        return span + span / 2;
+    }
+
+    /** The length of a line of {@code count} icons, padding included, in icon sizes. */
+    private static float getBigFolderLineWeight(int count) {
+        return count + (count - 1) * BIG_FOLDER_GAP_RATIO + 2 * BIG_FOLDER_PADDING_RATIO;
     }
 
     private FolderPreviewLayout.Grid calculateWorkspacePreviewGrid(
