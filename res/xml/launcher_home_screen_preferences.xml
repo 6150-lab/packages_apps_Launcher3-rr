@@ -305,6 +305,19 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:title="@string/big_folder_category_title">
+
+        <SwitchPreferenceCompat
+            android:key="pref_folders_start_big"
+            android:title="@string/big_folder_start_big_title"
+            android:summary="@string/big_folder_start_big_summary"
+            android:defaultValue="false"
+            android:persistent="true"
+            launcher:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/home_screen_actions">
 
         <Preference

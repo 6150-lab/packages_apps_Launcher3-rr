@@ -446,6 +446,8 @@ constructor(@ApplicationContext private val encryptedContext: Context) {
         @JvmField
         val BIG_FOLDER_SWIPE_TIP_SEEN = backedUpItem("pref_big_folder_swipe_tip_seen", false)
 
+        @JvmField val FOLDERS_START_BIG = backedUpItem("pref_folders_start_big", false)
+
         @JvmField val SHOW_HOTSEAT_QSB = backedUpItem("pref_show_hotseat_qsb", false)
 
         @JvmField val DOCK_SEARCH_WIDGET = backedUpItem("pref_dock_search_widget", "")

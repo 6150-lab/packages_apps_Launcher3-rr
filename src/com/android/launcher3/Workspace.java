@@ -2360,9 +2360,27 @@ public class Workspace<T extends View & PageIndicator> extends PagedView<T>
                 fi.getFolder().addFolderContent(destInfo);
                 fi.getFolder().addFolderContent(sourceInfo);
             }
+            if (container == CONTAINER_DESKTOP
+                    && LauncherPrefs.FOLDERS_START_BIG.get(getContext())) {
+                startFolderBig(fi);
+            }
             return true;
         }
         return false;
+    }
+
+    /** Super folders: a new folder takes 2x2 once its drop has settled, if the page has room. */
+    private void startFolderBig(FolderIcon folderIcon) {
+        folderIcon.postDelayed(() -> {
+            if (!folderIcon.isAttachedToWindow()
+                    || folderIcon.getFolder().isDestroyed()
+                    || !(folderIcon.getTag() instanceof FolderInfo info)
+                    || info.spanX != 1 || info.spanY != 1
+                    || mLauncher.getDragController().isDragging()) {
+                return;
+            }
+            resizeFolderToSize(folderIcon, 2, 2);
+        }, SPRING_LOADED_EXIT_DELAY * 2L);
     }
 
     @Nullable

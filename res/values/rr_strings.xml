@@ -41,4 +41,8 @@
     <string name="big_folder_swipe_tip">Swipe left in the folder for more apps</string>
     <!-- Same tip for right-to-left languages, where the next page is on the left -->
     <string name="big_folder_swipe_tip_rtl">Swipe right in the folder for more apps</string>
+    <!-- Home screen settings: folders -->
+    <string name="big_folder_category_title">Folders</string>
+    <string name="big_folder_start_big_title">New folders start big</string>
+    <string name="big_folder_start_big_summary">When you drop one app on another, the new folder takes 2×2 if the page has room</string>
 </resources>
