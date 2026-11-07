@@ -72,6 +72,7 @@ import com.android.launcher3.Workspace;
 import com.android.launcher3.allapps.ActivityAllAppsContainerView;
 import com.android.launcher3.anim.AnimatedFloat;
 import com.android.launcher3.celllayout.CellLayoutLayoutParams;
+import com.android.launcher3.dot.DotInfo;
 import com.android.launcher3.dot.FolderDotInfo;
 import com.android.launcher3.dot.NotificationBadgeCounter;
 import com.android.launcher3.dragndrop.BaseItemDragListener;
@@ -109,6 +110,7 @@ import com.android.launcher3.views.FloatingIconViewCompanion;
 import com.android.launcher3.widget.PendingAddShortcutInfo;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.function.Predicate;
 
@@ -171,6 +173,8 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
     private boolean mForceHideDot;
     @ViewDebug.ExportedProperty(category = "launcher", deepExport = true)
     private final FolderDotInfo mDotInfo = new FolderDotInfo();
+    // Super folders: the dot of each app, which a big folder shows on the app itself.
+    private final HashMap<ItemInfo, DotInfo> mItemDotInfos = new HashMap<>();
     private DotRenderer mDotRenderer;
     private final NotificationBadgeCounter mNotificationBadgeCounter;
     private final int mDotColor;
@@ -962,8 +966,13 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
     public void updateDotInfo() {
         boolean hadDot = mDotInfo.hasDot();
         mDotInfo.reset();
+        mItemDotInfos.clear();
         for (ItemInfo si : mInfo.getContents()) {
-            mDotInfo.addDotInfo(mActivity.getDotInfoForItem(si));
+            DotInfo dotInfo = mActivity.getDotInfoForItem(si);
+            mDotInfo.addDotInfo(dotInfo);
+            if (dotInfo != null) {
+                mItemDotInfos.put(si, dotInfo);
+            }
         }
         boolean isDotted = mDotInfo.hasDot();
         float newDotScale = isDotted ? 1f : 0f;
@@ -1198,7 +1207,18 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
         canvas.restoreToCount(saveCount);
     }
 
+    @Nullable
+    DotInfo getItemDotInfo(ItemInfo item) {
+        return mItemDotInfos.get(item);
+    }
+
+    /** A big folder puts the dots on its apps instead of on its corner. */
+    boolean shouldDrawItemDots() {
+        return !mForceHideDot && isMultiSpanFolder();
+    }
+
     public void drawDot(Canvas canvas) {
+        if (isMultiSpanFolder()) return;
         if (!mForceHideDot && ((mDotInfo != null && mDotInfo.hasDot()) || mDotScale > 0)) {
             Rect iconBounds = mDotParams.iconBounds;
             // FolderIcon draws the icon to be top-aligned (with padding) & horizontally-centered
@@ -1210,9 +1230,6 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
 
             float iconScale = (float) mBackground.previewSize / iconSize;
             Utilities.scaleRectAboutCenter(iconBounds, iconScale);
-            if (isMultiSpanFolder()) {
-                mBackground.getBounds(iconBounds);
-            }
 
             // If we are animating to the accepting state, animate the dot out.
             mDotParams.scale = Math.max(0, mDotScale - mBackground.getAcceptScaleProgress());

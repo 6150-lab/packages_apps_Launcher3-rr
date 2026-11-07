@@ -25,6 +25,7 @@ import static com.android.launcher3.folder.ClippedFolderIconLayoutRule.MAX_NUM_I
 import static com.android.launcher3.folder.FolderIcon.DROP_IN_ANIMATION_DURATION;
 import static com.android.launcher3.graphics.AutomatedIconDelegate.newAutomatedIcon;
 import static com.android.launcher3.graphics.PreloadIconDelegate.newPendingIcon;
+import static com.android.launcher3.icons.IconNormalizer.ICON_VISIBLE_AREA_FACTOR;
 import static com.android.launcher3.icons.BitmapInfo.FLAG_THEMED;
 import static com.android.launcher3.model.data.ItemInfoWithIcon.FLAG_AUTOMATED;
 
@@ -53,12 +54,16 @@ import com.android.launcher3.BubbleTextView;
 import com.android.launcher3.DeviceProfile;
 import com.android.launcher3.Flags;
 import com.android.launcher3.LauncherAppState;
+import com.android.launcher3.LauncherPrefs;
 import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.apppairs.AppPairIcon;
 import com.android.launcher3.apppairs.AppPairIconDrawingParams;
 import com.android.launcher3.apppairs.AppPairIconGraphic;
+import com.android.launcher3.dot.DotInfo;
+import com.android.launcher3.dot.NotificationBadgeCounter;
 import com.android.launcher3.graphics.AutomatedIconDelegate;
+import com.android.launcher3.icons.DotRenderer;
 import com.android.launcher3.icons.FastBitmapDrawable;
 import com.android.launcher3.model.data.AppPairInfo;
 import com.android.launcher3.model.data.ItemInfo;
@@ -134,6 +139,14 @@ public class PreviewItemManager {
     private final float mPageDotRadius;
     private final float mPageDotsSpace;
 
+    // Super folders: notification dots on the apps of a big folder.
+    private final DotRenderer.DrawParams mItemDotParams = new DotRenderer.DrawParams();
+    private final NotificationBadgeCounter mItemBadgeCounter = new NotificationBadgeCounter();
+    private final int mItemDotColor;
+    private DotRenderer mItemDotRenderer;
+    private int mItemDotRendererSize;
+    private boolean mDrawItemDotCounts;
+
     static final int INITIAL_ITEM_ANIMATION_DURATION = 350;
     private static final int FINAL_ITEM_ANIMATION_DURATION = 200;
 
@@ -149,6 +162,10 @@ public class PreviewItemManager {
         mPageDotRadius = dpToPx(5f) / 2f;
         mPageDotsSpace = dpToPx(8f);
         mPageDotPaint.setColor(Themes.getAttrColor(mContext, R.attr.folderTextColor));
+        mItemDotColor = Themes.getAttrColor(mContext, R.attr.notificationDotColor);
+        mItemDotParams.setDotColor(mItemDotColor);
+        mItemDotParams.shapeInfo =
+                ThemeManager.INSTANCE.get(mContext).getIconState().getIconShapeInfo();
     }
 
     /**
@@ -579,6 +596,7 @@ public class PreviewItemManager {
      * Draws the preview items on {@param canvas}.
      */
     public void draw(Canvas canvas) {
+        mDrawItemDotCounts = LauncherPrefs.NOTIFICATION_BADGE_COUNT.get(mContext);
         int saveCount = canvas.save();
         // The items are drawn in coordinates relative to the preview offset
         PreviewBackground bg = mIcon.getFolderBackground();
@@ -672,8 +690,31 @@ public class PreviewItemManager {
             canvas.scale(mIntrinsicIconSize / bounds.width(), mIntrinsicIconSize / bounds.height());
             d.draw(canvas);
             canvas.restore();
+            drawItemDot(canvas, params);
         }
         canvas.restore();
+    }
+
+    /** Draws an app's own dot, or its count, on its icon in a big folder. */
+    private void drawItemDot(Canvas canvas, PreviewItemDrawingParams params) {
+        if (params.item == null || !mIcon.shouldDrawItemDots()) return;
+        DotInfo dotInfo = mIcon.getItemDotInfo(params.item);
+        if (dotInfo == null) return;
+
+        int size = Math.round(mIntrinsicIconSize);
+        if (mItemDotRenderer == null || mItemDotRendererSize != size) {
+            mItemDotRenderer = new DotRenderer(size);
+            mItemDotRendererSize = size;
+        }
+        mItemDotParams.iconBounds.set(0, 0, size, size);
+        Utilities.scaleRectAboutCenter(mItemDotParams.iconBounds, ICON_VISIBLE_AREA_FACTOR);
+        mItemDotParams.scale = 1f;
+        if (mDrawItemDotCounts) {
+            mItemBadgeCounter.draw(canvas, mItemDotParams, mItemDotColor,
+                    dotInfo.getNotificationCount());
+        } else {
+            mItemDotRenderer.draw(canvas, mItemDotParams);
+        }
     }
 
     public void hidePreviewItem(int index, boolean hidden) {
