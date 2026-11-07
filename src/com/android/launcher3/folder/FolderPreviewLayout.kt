@@ -179,6 +179,10 @@ object FolderPreviewLayout {
         return squareBounds(grid.startX + column * stepX, grid.startY + row * stepY, grid.itemSize)
     }
 
+    /**
+     * Places the apps a folder shows. A big folder shows one [page] of apps, each ready to tap; a
+     * 1x1 folder shows its first apps in one tile.
+     */
     @JvmStatic
     fun calculateSnapshot(
         items: List<ItemInfo>,
@@ -187,8 +191,13 @@ object FolderPreviewLayout {
         intrinsicIconSize: Float,
         isRtl: Boolean,
         folderColumnCount: Int,
+        page: Int,
     ): Snapshot {
         val snapshotBounds = RectF(backgroundBounds)
+        if (grid.capacity > 1) {
+            val pageItems = items.drop(page.coerceAtLeast(0) * grid.capacity).take(grid.capacity)
+            return Snapshot(snapshotBounds, null, calculateDirectPlacements(pageItems, grid, isRtl))
+        }
         val selection = selectItems(items, grid.capacity)
 
         val directPlacements = calculateDirectPlacements(selection.directItems, grid, isRtl)

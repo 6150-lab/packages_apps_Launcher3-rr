@@ -232,6 +232,10 @@ private class FolderResizeTarget(
         }
     }
 
+    override fun onFrameDetached() {
+        folderIcon.requestPageSwipeTip()
+    }
+
     override fun getResizeAnnouncement(context: Context, spanX: Int, spanY: Int): CharSequence =
         context.getString(R.string.folder_resized, spanX, spanY)
 }

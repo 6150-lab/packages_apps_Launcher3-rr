@@ -443,6 +443,9 @@ constructor(@ApplicationContext private val encryptedContext: Context) {
 
         @JvmField val SELECT_TIP_SEEN = backedUpItem("launcher.select_tip_seen", false)
 
+        @JvmField
+        val BIG_FOLDER_SWIPE_TIP_SEEN = backedUpItem("pref_big_folder_swipe_tip_seen", false)
+
         @JvmField val SHOW_HOTSEAT_QSB = backedUpItem("pref_show_hotseat_qsb", false)
 
         @JvmField val DOCK_SEARCH_WIDGET = backedUpItem("pref_dock_search_widget", "")

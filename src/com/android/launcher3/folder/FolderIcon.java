@@ -16,6 +16,7 @@
 
 package com.android.launcher3.folder;
 
+import static com.android.launcher3.LauncherAnimUtils.SPRING_LOADED_EXIT_DELAY;
 import static com.android.launcher3.UtilitiesKt.drawWorkspaceItemSelectionHighlight;
 import static com.android.launcher3.folder.ClippedFolderIconLayoutRule.ICON_OVERLAP_FACTOR;
 import static com.android.launcher3.folder.ClippedFolderIconLayoutRule.MAX_NUM_ITEMS_IN_PREVIEW;
@@ -103,6 +104,7 @@ import com.android.launcher3.util.MultiTranslateDelegate;
 import com.android.launcher3.util.Themes;
 import com.android.launcher3.util.Thunk;
 import com.android.launcher3.views.ActivityContext;
+import com.android.launcher3.views.ArrowTipView;
 import com.android.launcher3.views.FloatingIconViewCompanion;
 import com.android.launcher3.widget.PendingAddShortcutInfo;
 
@@ -114,7 +116,8 @@ import java.util.function.Predicate;
  * An icon that can appear on in the workspace representing an {@link Folder}.
  */
 public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion,
-        DraggableView, Reorderable, Poppable, IconViewController, CustomTouchDelegate {
+        DraggableView, Reorderable, Poppable, IconViewController, CustomTouchDelegate,
+        Workspace.ScrollableContent {
 
     private final MultiTranslateDelegate mTranslateDelegate = new MultiTranslateDelegate(this);
     @Thunk ActivityContext mActivity;
@@ -142,6 +145,9 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
     FolderGridOrganizer mPreviewVerifier;
     final ClippedFolderIconLayoutRule mPreviewLayoutRule;
     private final PreviewItemManager mPreviewItemManager;
+    // Super folders: swipes a big folder through its pages of apps.
+    private BigFolderPager mPager;
+    private boolean mPageSwipeTipPending;
     private PreviewItemDrawingParams mTmpParams = new PreviewItemDrawingParams(0, 0, 0);
     private final List<ItemInfo> mCurrentPreviewItems = new ArrayList<>();
 
@@ -289,6 +295,9 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
 
         mLongPressHelper = new CheckLongPressHelper(this);
         mCustomEventsTouchHandler = new CustomEventsTouchHandler(this, (event) -> {
+            if (mPager.onTouchEvent(event)) {
+                return true;
+            }
             trackPressedPreviewItem(event);
             // Call the superclass onTouchEvent first, because sometimes it changes the state to
             // isPressed() on an ACTION_UP
@@ -302,6 +311,7 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
         }, this::shouldIgnoreTouchDown);
         mPreviewLayoutRule = new ClippedFolderIconLayoutRule();
         mPreviewItemManager = new PreviewItemManager(this);
+        mPager = new BigFolderPager(this, mPreviewItemManager);
         mDotParams = new DotRenderer.DrawParams();
         mDotColor = Themes.getAttrColor(context, R.attr.notificationDotColor);
         mDotParams.setDotColor(mDotColor);
@@ -703,6 +713,8 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
         if (usesWorkspacePreview) {
             mPreviewItemManager.setWorkspacePreviewItemHidden(
                     item, false);
+            // After the home screen is back from drag mode.
+            postDelayed(this::maybeShowPageSwipeTip, SPRING_LOADED_EXIT_DELAY * 2L);
         } else {
             mPreviewItemManager.hidePreviewItem(index, false);
         }
@@ -1079,6 +1091,9 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
         } else {
             if (mCurrentPreviewItems.isEmpty() && !mAnimating) return;
             mPreviewItemManager.draw(canvas);
+            if (isMultiSpanFolder()) {
+                mPreviewItemManager.drawPageDots(canvas);
+            }
         }
 
         if (!mBackground.drawingDelegated()) {
@@ -1242,6 +1257,10 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         super.onLayout(changed, left, top, right, bottom);
+        if (mPageSwipeTipPending) {
+            mPageSwipeTipPending = false;
+            post(this::maybeShowPageSwipeTip);
+        }
         if (shouldShowFolderName() && mFolderName != null && isMultiSpanFolder()) {
             mPreviewItemManager.recomputePreviewDrawingParams();
             Rect bgBounds = new Rect();
@@ -1337,6 +1356,65 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
                 getWidth() - getPaddingRight(),
                 getHeight() - getPaddingBottom());
         return !mTouchArea.contains((int) x, (int) y);
+    }
+
+    /** Super folders: a big home screen folder with more apps than one page can swipe. */
+    boolean canSwipePages() {
+        return isMultiSpanFolder()
+                && usesWorkspacePreviewLayout()
+                && mCustomThumbnail == null
+                && mFolder != null && !mFolder.isOpen()
+                && mPreviewItemManager.getPreviewPageCount() > 1
+                && mActivity instanceof Launcher launcher
+                && launcher.isInState(LauncherState.NORMAL)
+                && !launcher.getDragController().isDragging();
+    }
+
+    @Override
+    public boolean canScrollHorizontally() {
+        return canSwipePages();
+    }
+
+    @Override
+    public boolean canScrollInDirection(int direction) {
+        return mPager.canScroll(direction);
+    }
+
+    /** A page swipe took this touch: it is no tap and no long press. */
+    void onPageSwipeStarted(MotionEvent event) {
+        mPressedPreviewItem = null;
+        MotionEvent cancel = MotionEvent.obtain(event);
+        cancel.setAction(MotionEvent.ACTION_CANCEL);
+        super.onTouchEvent(cancel);
+        mLongPressHelper.onTouchEvent(cancel);
+        cancel.recycle();
+        getParent().requestDisallowInterceptTouchEvent(true);
+    }
+
+    /** Shows once how to swipe a big folder, after its new size is laid out. */
+    public void requestPageSwipeTip() {
+        mPageSwipeTipPending = true;
+        requestLayout();
+    }
+
+    private void maybeShowPageSwipeTip() {
+        if (!canSwipePages() || !isShown() || !(mActivity instanceof Launcher launcher)) return;
+        LauncherPrefs prefs = LauncherPrefs.get(getContext());
+        if (prefs.get(LauncherPrefs.BIG_FOLDER_SWIPE_TIP_SEEN)) return;
+
+        Rect card = new Rect();
+        mBackground.getBounds(card);
+        RectF bounds = new RectF();
+        Utilities.getBoundsForViewInDragLayer(
+                launcher.getDragLayer(), this, card, false, null, bounds);
+        Rect rect = new Rect();
+        bounds.roundOut(rect);
+        String tip = getResources().getString(Utilities.isRtl(getResources())
+                ? R.string.big_folder_swipe_tip_rtl : R.string.big_folder_swipe_tip);
+        if (new ArrowTipView(getContext(), /* isPointingUp= */ true)
+                .showAroundRect(tip, rect.centerX(), rect, Utilities.dpToPx(6f)) != null) {
+            prefs.put(LauncherPrefs.BIG_FOLDER_SWIPE_TIP_SEEN, true);
+        }
     }
 
     /**

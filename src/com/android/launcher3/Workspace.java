@@ -293,6 +293,7 @@ public class Workspace<T extends View & PageIndicator> extends PagedView<T>
     private boolean mAddToExistingFolderOnDrop = false;
 
     private boolean mIsDownOverHorizontalScrollContent;
+    @Nullable private ScrollableContent mDownScrollableContent;
 
     final static float START_DAMPING_TOUCH_SLOP_ANGLE = (float) Math.PI / 6;
     final static float MAX_SWIPE_ANGLE = (float) Math.PI / 3;
@@ -1362,6 +1363,7 @@ public class Workspace<T extends View & PageIndicator> extends PagedView<T>
         float y = ev.getY();
 
         mIsDownOverHorizontalScrollContent = false;
+        mDownScrollableContent = null;
         int childCount = getChildCount();
         if (childCount <= 0) return;
         int currentPage = getCurrentPage();
@@ -1385,15 +1387,23 @@ public class Workspace<T extends View & PageIndicator> extends PagedView<T>
         targetPage.pointToCellExact((int) tempFXY[0], (int) tempFXY[1], coordinates);
         View targetItem = targetPage.getChildAt(coordinates[0], coordinates[1]);
 
-        mIsDownOverHorizontalScrollContent =
-                (targetItem instanceof ScrollableContent sc) && sc.canScrollHorizontally();
+        if (targetItem instanceof ScrollableContent sc && sc.canScrollHorizontally()) {
+            mIsDownOverHorizontalScrollContent = true;
+            mDownScrollableContent = sc;
+        }
     }
 
     @Override
     protected void determineScrollingStart(MotionEvent ev) {
-        if (!isFinishedSwitchingState() || mIsDownOverHorizontalScrollContent) return;
+        if (!isFinishedSwitchingState()) return;
 
         float deltaX = ev.getX() - getDownMotionX();
+        if (mIsDownOverHorizontalScrollContent && (Float.compare(deltaX, 0f) == 0
+                || mDownScrollableContent.canScrollInDirection(deltaX < 0 ? 1 : -1))) {
+            // The content keeps swipes it can follow. One it can't, like a big folder swiped
+            // past its last page, turns the home screen page.
+            return;
+        }
         float absDeltaX = Math.abs(deltaX);
         float absDeltaY = Math.abs(ev.getY() - getDownMotionY());
 
@@ -4361,5 +4371,13 @@ public class Workspace<T extends View & PageIndicator> extends PagedView<T>
 
         /** Returns true if the view can scroll horizontally and thur prevent workspace scroll */
         boolean canScrollHorizontally();
+
+        /**
+         * Returns true if the view can scroll in {@code direction}, as in
+         * {@link View#canScrollHorizontally(int)}. A swipe the other way scrolls the workspace.
+         */
+        default boolean canScrollInDirection(int direction) {
+            return canScrollHorizontally();
+        }
     }
 }

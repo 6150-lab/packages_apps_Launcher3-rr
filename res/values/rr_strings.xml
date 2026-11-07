@@ -37,4 +37,8 @@
     <string name="big_folder_enlarge">Enlarge folder</string>
     <string name="big_folder_shrink">Shrink folder</string>
     <string name="big_folder_open">Open folder</string>
+    <!-- Shown once, under a home screen folder that has more apps than fit -->
+    <string name="big_folder_swipe_tip">Swipe left in the folder for more apps</string>
+    <!-- Same tip for right-to-left languages, where the next page is on the left -->
+    <string name="big_folder_swipe_tip_rtl">Swipe right in the folder for more apps</string>
 </resources>

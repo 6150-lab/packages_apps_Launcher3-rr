@@ -35,6 +35,7 @@ import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Canvas;
+import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PointF;
 import android.graphics.Rect;
@@ -64,6 +65,7 @@ import com.android.launcher3.model.data.ItemInfo;
 import com.android.launcher3.model.data.ItemInfoWithIcon;
 import com.android.launcher3.model.data.WorkspaceItemInfo;
 import com.android.launcher3.graphics.ThemeManager;
+import com.android.launcher3.util.Themes;
 import com.android.launcher3.views.ActivityContext;
 
 import java.util.ArrayList;
@@ -122,6 +124,16 @@ public class PreviewItemManager {
     private float mPageSlideDistance;
     private boolean mShouldSlideInFirstPage;
 
+    // Super folders: the page of apps a big folder shows, and the swipe to the next one.
+    private int mPreviewPage;
+    private float mPageOffset;
+    private int mNeighborPage = -1;
+    private final ArrayList<PreviewItemDrawingParams> mNeighborPageParams = new ArrayList<>();
+    private final Path mCardPath = new Path();
+    private final Paint mPageDotPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+    private final float mPageDotRadius;
+    private final float mPageDotsSpace;
+
     static final int INITIAL_ITEM_ANIMATION_DURATION = 350;
     private static final int FINAL_ITEM_ANIMATION_DURATION = 200;
 
@@ -134,6 +146,9 @@ public class PreviewItemManager {
         mIconSize = ActivityContext.lookupContext(
                 mContext).getDeviceProfile().getFolderProfile().getChildIconSizePx();
         mClipThreshold = dpToPx(1f);
+        mPageDotRadius = dpToPx(5f) / 2f;
+        mPageDotsSpace = dpToPx(8f);
+        mPageDotPaint.setColor(Themes.getAttrColor(mContext, R.attr.folderTextColor));
     }
 
     /**
@@ -198,7 +213,11 @@ public class PreviewItemManager {
                 previousBackgroundBounds = new Rect();
                 mIcon.mBackground.getBounds(previousBackgroundBounds);
                 previousSnapshot = calculateWorkspacePreviewSnapshot(
-                        mIcon.mInfo.getContents(), mPrevSpanX, mPrevSpanY);
+                        mIcon.mInfo.getContents(), mPrevSpanX, mPrevSpanY,
+                        clampPage(mPreviewPage, mPrevSpanX, mPrevSpanY));
+            }
+            if (mPrevSpanX != spanX || mPrevSpanY != spanY) {
+                resetPage();
             }
 
             mIntrinsicIconSize = drawableSize;
@@ -273,9 +292,11 @@ public class PreviewItemManager {
             // Smaller icons than on the home screen: a 2x2 folder holds three rows of three.
             int columns = getBigFolderLineCount(spanX);
             int rows = getBigFolderLineCount(spanY);
+            float dotsSpace =
+                    mIcon.mInfo.getContents().size() > columns * rows ? mPageDotsSpace : 0f;
 
             float availableWidth = backgroundBounds.width();
-            float availableHeight = backgroundBounds.height();
+            float availableHeight = backgroundBounds.height() - dotsSpace;
             float itemSize = Math.min(
                     availableWidth / getBigFolderLineWeight(columns),
                     availableHeight / getBigFolderLineWeight(rows));
@@ -283,6 +304,7 @@ public class PreviewItemManager {
             float idealGap = itemSize * BIG_FOLDER_GAP_RATIO;
 
             RectF availableBounds = new RectF(backgroundBounds);
+            availableBounds.bottom -= dotsSpace;
             availableBounds.inset(idealPadding, idealPadding);
 
             // Calculate expanding gaps, but clamp them to a maximum of 1.5x idealGap to prevent icons from flying apart
@@ -294,7 +316,8 @@ public class PreviewItemManager {
 
             // Center the grid inside the background bounds
             float startX = backgroundBounds.left + (backgroundBounds.width() - gridWidth) / 2f;
-            float startY = backgroundBounds.top + (backgroundBounds.height() - gridHeight) / 2f;
+            float startY = backgroundBounds.top
+                    + (backgroundBounds.height() - dotsSpace - gridHeight) / 2f;
 
             return new FolderPreviewLayout.Grid(
                     columns,
@@ -322,7 +345,12 @@ public class PreviewItemManager {
     }
 
     FolderPreviewLayout.Snapshot calculateWorkspacePreviewSnapshot() {
-        return calculateWorkspacePreviewSnapshot(mIcon.mInfo.getContents());
+        return calculateWorkspacePreviewSnapshot(getPreviewPage());
+    }
+
+    private FolderPreviewLayout.Snapshot calculateWorkspacePreviewSnapshot(int page) {
+        return calculateWorkspacePreviewSnapshot(mIcon.mInfo.getContents(),
+                mIcon.getCurrentSpanX(), mIcon.getCurrentSpanY(), page);
     }
 
     FolderPreviewLayout.Snapshot calculateWorkspacePreviewSnapshotForPage(int page) {
@@ -333,17 +361,24 @@ public class PreviewItemManager {
             pageItems.add((ItemInfo) view.getTag());
         }
 
-        return calculateWorkspacePreviewSnapshot(pageItems);
+        if (!mIcon.isMultiSpanFolder()) {
+            return calculateWorkspacePreviewSnapshot(pageItems,
+                    mIcon.getCurrentSpanX(), mIcon.getCurrentSpanY(), 0);
+        }
+        // A big folder moves only the apps its shown page has.
+        FolderPreviewLayout.Snapshot shown = calculateWorkspacePreviewSnapshot();
+        List<FolderPreviewLayout.ItemPlacement> placements = new ArrayList<>();
+        for (FolderPreviewLayout.ItemPlacement placement : shown.getItems()) {
+            if (pageItems.contains(placement.getItem())) {
+                placements.add(placement);
+            }
+        }
+        return new FolderPreviewLayout.Snapshot(
+                shown.getBackgroundBounds(), shown.getOverviewBounds(), placements);
     }
 
     private FolderPreviewLayout.Snapshot calculateWorkspacePreviewSnapshot(
-            List<ItemInfo> items) {
-        return calculateWorkspacePreviewSnapshot(
-                items, mIcon.getCurrentSpanX(), mIcon.getCurrentSpanY());
-    }
-
-    private FolderPreviewLayout.Snapshot calculateWorkspacePreviewSnapshot(
-            List<ItemInfo> items, int spanX, int spanY) {
+            List<ItemInfo> items, int spanX, int spanY, int page) {
         Rect backgroundBounds = new Rect();
         mIcon.mBackground.getTargetBounds(backgroundBounds);
 
@@ -361,7 +396,109 @@ public class PreviewItemManager {
                 grid,
                 mIntrinsicIconSize,
                 isRtl,
-                folderColumnCount);
+                folderColumnCount,
+                page);
+    }
+
+    /** Apps one page of a big folder holds: three rows of three in a 2x2. */
+    private static int getBigFolderCapacity(int spanX, int spanY) {
+        return getBigFolderLineCount(spanX) * getBigFolderLineCount(spanY);
+    }
+
+    private int getPageCount(int spanX, int spanY) {
+        if (spanX <= 1 && spanY <= 1) return 1;
+        int capacity = getBigFolderCapacity(spanX, spanY);
+        return Math.max(1, (mIcon.mInfo.getContents().size() + capacity - 1) / capacity);
+    }
+
+    private int clampPage(int page, int spanX, int spanY) {
+        return Math.max(0, Math.min(page, getPageCount(spanX, spanY) - 1));
+    }
+
+    int getPreviewPageCount() {
+        return getPageCount(mIcon.getCurrentSpanX(), mIcon.getCurrentSpanY());
+    }
+
+    int getPreviewPage() {
+        return clampPage(mPreviewPage, mIcon.getCurrentSpanX(), mIcon.getCurrentSpanY());
+    }
+
+    /** Width of one page: the folder's card. */
+    float getPageWidth() {
+        Rect bounds = new Rect();
+        mIcon.mBackground.getTargetBounds(bounds);
+        return bounds.width();
+    }
+
+    float getPageOffset() {
+        return mPageOffset;
+    }
+
+    /**
+     * Moves the shown page sideways by {@code offset} pixels during a swipe, showing the page next
+     * to it in the gap. {@code neighborPage} is that page, or -1 for none.
+     */
+    void setPageOffset(float offset, int neighborPage) {
+        if (neighborPage != mNeighborPage) {
+            mNeighborPage = neighborPage;
+            if (neighborPage >= 0) {
+                applySnapshot(calculateWorkspacePreviewSnapshot(neighborPage), mNeighborPageParams);
+            } else {
+                mNeighborPageParams.clear();
+            }
+        }
+        mPageOffset = offset;
+        onParamsChanged();
+    }
+
+    /** Ends a swipe on {@code page}. */
+    void setPreviewPage(int page) {
+        mPreviewPage = Math.max(0, page);
+        mPageOffset = 0;
+        mNeighborPage = -1;
+        mNeighborPageParams.clear();
+        if (mIcon.usesWorkspacePreviewLayout() && mIntrinsicIconSize > 0) {
+            applySnapshot(calculateWorkspacePreviewSnapshot(), mFirstPageParams);
+        }
+        onParamsChanged();
+    }
+
+    private void resetPage() {
+        mPreviewPage = 0;
+        mPageOffset = 0;
+        mNeighborPage = -1;
+        mNeighborPageParams.clear();
+    }
+
+    /** Draws one dot per page under a big folder's apps, the shown page's dot solid. */
+    void drawPageDots(Canvas canvas) {
+        int spanX = mIcon.getCurrentSpanX();
+        int spanY = mIcon.getCurrentSpanY();
+        int count = getPageCount(spanX, spanY);
+        if (count <= 1) return;
+
+        Rect bounds = new Rect();
+        mIcon.mBackground.getBounds(bounds);
+        FolderPreviewLayout.Grid grid =
+                calculateWorkspacePreviewGrid(new RectF(bounds), spanX, spanY);
+        float gridBottom = grid.getStartY() + grid.getRows() * grid.getItemSize()
+                + (grid.getRows() - 1) * grid.getRowGap();
+        float centerY = (gridBottom + bounds.bottom) / 2f;
+
+        int shown = getPreviewPage();
+        if (mNeighborPage >= 0 && Math.abs(mPageOffset) > getPageWidth() / 2) {
+            shown = mNeighborPage;
+        }
+        boolean isRtl = Utilities.isRtl(mIcon.getResources());
+        float step = mPageDotRadius * 3.2f;
+        float startX = bounds.centerX() - (count - 1) * step / 2f;
+        int alpha = mPageDotPaint.getAlpha();
+        for (int i = 0; i < count; i++) {
+            int position = isRtl ? count - 1 - i : i;
+            mPageDotPaint.setAlpha(i == shown ? 255 : 90);
+            canvas.drawCircle(startX + position * step, centerY, mPageDotRadius, mPageDotPaint);
+        }
+        mPageDotPaint.setAlpha(alpha);
     }
 
     @Nullable
@@ -476,6 +613,23 @@ public class PreviewItemManager {
 
         PointF firstPageOffset = new PointF(bg.getPreviewLeft() + firstPageItemsTransX,
                 bg.getPreviewTop());
+        if (mPageOffset != 0 && mIcon.isMultiSpanFolder()) {
+            // A page swipe: both pages slide inside the card.
+            bg.getDrawnShapePath(mCardPath);
+            canvas.clipPath(mCardPath);
+            drawParams(canvas, mFirstPageParams,
+                    new PointF(firstPageOffset.x + mPageOffset, firstPageOffset.y), false, null);
+            if (mNeighborPage >= 0) {
+                float pageWidth = getPageWidth();
+                float neighborOffset = mPageOffset > 0
+                        ? mPageOffset - pageWidth : mPageOffset + pageWidth;
+                drawParams(canvas, mNeighborPageParams,
+                        new PointF(firstPageOffset.x + neighborOffset, firstPageOffset.y),
+                        false, null);
+            }
+            canvas.restoreToCount(saveCount);
+            return;
+        }
         boolean shouldClipFirstPage =
                 (shouldClipResize
                         || Math.abs(firstPageItemsTransX) > mClipThreshold
@@ -788,7 +942,7 @@ public class PreviewItemManager {
     void onFolderClose(int currentPage) {
         // If we are not closing on the first page, we animate the current page preview items
         // out, and animate the first page preview items in.
-        mShouldSlideInFirstPage = currentPage != 0;
+        mShouldSlideInFirstPage = currentPage != 0 && !mIcon.isMultiSpanFolder();
         if (mShouldSlideInFirstPage) {
             Rect backgroundBounds = new Rect();
             mIcon.mBackground.getBounds(backgroundBounds);
@@ -845,6 +999,11 @@ public class PreviewItemManager {
     boolean verifyDrawable(@NonNull Drawable who) {
         for (int i = 0; i < mFirstPageParams.size(); i++) {
             if (mFirstPageParams.get(i).drawable == who) {
+                return true;
+            }
+        }
+        for (int i = 0; i < mNeighborPageParams.size(); i++) {
+            if (mNeighborPageParams.get(i).drawable == who) {
                 return true;
             }
         }

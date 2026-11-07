@@ -127,6 +127,8 @@ object PopupDataSource {
         if (activityContext !is Launcher || view !is FolderIcon) return
         if (!activityContext.workspace.resizeFolderToSize(view, span, span)) {
             Toast.makeText(activityContext, R.string.out_of_space, Toast.LENGTH_SHORT).show()
+        } else if (span > 1) {
+            view.requestPageSwipeTip()
         }
     }
 
