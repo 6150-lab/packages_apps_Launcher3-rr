@@ -115,7 +115,6 @@ import com.android.launcher3.dragndrop.SystemDragItemInfo;
 import com.android.launcher3.dragndrop.SystemDragParams;
 import com.android.launcher3.folder.Folder;
 import com.android.launcher3.folder.FolderIcon;
-import com.android.launcher3.folder.FolderPreviewLayout;
 import com.android.launcher3.folder.PreviewBackground;
 import com.android.launcher3.graphics.DragPreviewProvider;
 import com.android.launcher3.homescreenfiles.HomeScreenFile;
@@ -3854,65 +3853,6 @@ public class Workspace<T extends View & PageIndicator> extends PagedView<T>
             cellLayout.getCountY());
     }
 
-    @Nullable
-    private Point findAutoShrinkFolderSize(FolderIcon folderIcon) {
-        if (folderIcon == null) return null;
-        if (!(folderIcon.getLayoutParams() instanceof CellLayoutLayoutParams lp)) return null;
-        if (!(folderIcon.getTag() instanceof FolderInfo folderInfo)) return null;
-        if (folderInfo.container != CONTAINER_DESKTOP
-                || folderInfo.getContents().size() <= 1) return null;
-
-        CellLayout cellLayout = getParentCellLayoutForView(folderIcon);
-        if (cellLayout == null) return null;
-
-        Rect currentBounds = new Rect();
-        cellLayout.cellToRect(
-                lp.getCellX(),
-                lp.getCellY(),
-                lp.cellHSpan,
-                lp.cellVSpan,
-                currentBounds);
-
-        FolderPreviewLayout.GridUsage usage =
-                folderIcon.calculateWorkspacePreviewGridUsage(
-                        currentBounds.width(),
-                        currentBounds.height(),
-                        lp.cellHSpan,
-                        lp.cellVSpan);
-
-        boolean canShrinkX = lp.cellHSpan > 1 && usage.getHasEmptyColumns();
-        boolean canShrinkY = lp.cellVSpan > 1 && usage.getHasEmptyRows();
-        if (!canShrinkX && !canShrinkY) return null;
-
-        Point bestSize = null;
-        int bestArea = -1;
-        int bestSpanReduction = Integer.MAX_VALUE;
-
-        for (Point candidate : getAllowedFolderSizes(folderIcon)) {
-            boolean grows =
-                    candidate.x > lp.cellHSpan || candidate.y > lp.cellVSpan;
-            boolean shrinksX = candidate.x < lp.cellHSpan;
-            boolean shrinksY = candidate.y < lp.cellVSpan;
-            boolean unchanged = !shrinksX && !shrinksY;
-            boolean shrinksUsedAxis =
-                    (shrinksX && !canShrinkX) || (shrinksY && !canShrinkY);
-
-            if (grows || unchanged || shrinksUsedAxis) continue;
-
-            int area = candidate.x * candidate.y;
-            int spanReduction =
-                    lp.cellHSpan - candidate.x + lp.cellVSpan - candidate.y;
-
-            if (area > bestArea
-                    || (area == bestArea && spanReduction < bestSpanReduction)) {
-                bestSize = candidate;
-                bestArea = area;
-                bestSpanReduction = spanReduction;
-            }
-        }
-        return bestSize;
-    }
-
     public List<Point> getAllowedFolderSizes(FolderIcon folderIcon) {
         if (folderIcon == null) return List.of();
         if (!(folderIcon.getLayoutParams() instanceof CellLayoutLayoutParams lp)) return List.of();
@@ -3922,29 +3862,14 @@ public class Workspace<T extends View & PageIndicator> extends PagedView<T>
         CellLayout cellLayout = getParentCellLayoutForView(folderIcon);
         if (cellLayout == null) return List.of();
 
+        // Any size that fits the page, however many apps the folder holds.
         Rect resizeBounds = getFolderResizeBounds(cellLayout, lp);
-        Rect candidateBounds = new Rect();
         List<Point> allowedSizes = new ArrayList<>();
-
         for (int spanY = 1; spanY <= resizeBounds.height(); spanY++) {
             for (int spanX = 1; spanX <= resizeBounds.width(); spanX++) {
-                cellLayout.cellToRect(
-                        resizeBounds.left,
-                        resizeBounds.top,
-                        spanX,
-                        spanY,
-                        candidateBounds);
-
-                if (folderIcon.isPreviewTightlyWrapped(
-                        candidateBounds.width(),
-                        candidateBounds.height(),
-                        spanX,
-                        spanY)) {
-                    allowedSizes.add(new Point(spanX, spanY));
-                }
+                allowedSizes.add(new Point(spanX, spanY));
             }
         }
-
         return allowedSizes;
     }
 
@@ -3963,55 +3888,7 @@ public class Workspace<T extends View & PageIndicator> extends PagedView<T>
         if (cellLayout == null) return false;
 
         CellAndSpan target = new CellAndSpan(cellX, cellY, spanX, spanY);
-        Rect resizeBounds = getFolderResizeBounds(cellLayout, lp);
-        if (!isFolderResizeTargetWithinBounds(target, resizeBounds)) return false;
-
-        Rect targetBounds = new Rect();
-        cellLayout.cellToRect(cellX, cellY, spanX, spanY, targetBounds);
-
-        return folderIcon.isPreviewTightlyWrapped(
-            targetBounds.width(),
-            targetBounds.height(),
-            spanX,
-            spanY);
-    }
-
-    public boolean autoShrinkFolder(FolderIcon folderIcon) {
-        Point targetSize = findAutoShrinkFolderSize(folderIcon);
-        if (targetSize == null) return false;
-        AppWidgetResizeFrameBase resizeFrame = AbstractFloatingView.getOpenView(
-                mLauncher, AbstractFloatingView.TYPE_WIDGET_RESIZE_FRAME);
-        if (resizeFrame != null && resizeFrame.getViewForAccessibility() == folderIcon) {
-            resizeFrame.close(false);
-        }
-        if (!(folderIcon.getLayoutParams() instanceof CellLayoutLayoutParams lp)) return false;
-
-        int targetCellX =
-                Utilities.isRtl(folderIcon.getResources())
-                        ? lp.getCellX() + lp.cellHSpan - targetSize.x
-                        : lp.getCellX();
-        int targetCellY = lp.getCellY();
-
-        CellAndSpan target = new CellAndSpan(
-                targetCellX,
-                targetCellY,
-                targetSize.x,
-                targetSize.y);
-
-        int[] direction = {
-            calculateResizeDirection(
-                    lp.getCellX(),
-                    lp.cellHSpan,
-                    target.cellX,
-                    target.spanX),
-            calculateResizeDirection(
-                    lp.getCellY(),
-                    lp.cellVSpan,
-                    target.cellY,
-                    target.spanY),
-        };
-
-        return resizeFolder(folderIcon, target, direction);
+        return isFolderResizeTargetWithinBounds(target, getFolderResizeBounds(cellLayout, lp));
     }
 
     public boolean resizeFolderToSize(

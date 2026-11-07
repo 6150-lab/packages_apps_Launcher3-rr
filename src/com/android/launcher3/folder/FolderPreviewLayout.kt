@@ -44,8 +44,6 @@ object FolderPreviewLayout {
             get() = columns * rows
     }
 
-    data class GridUsage(val hasEmptyColumns: Boolean, val hasEmptyRows: Boolean)
-
     data class Snapshot(
         val backgroundBounds: RectF,
         val overviewBounds: RectF?,
@@ -179,24 +177,6 @@ object FolderPreviewLayout {
         val stepY = grid.itemSize + grid.rowGap
 
         return squareBounds(grid.startX + column * stepX, grid.startY + row * stepY, grid.itemSize)
-    }
-
-    @JvmStatic
-    fun isTightlyWrapped(itemCount: Int, grid: Grid): Boolean {
-        val usage = calculateGridUsage(itemCount, grid)
-        return !usage.hasEmptyColumns && !usage.hasEmptyRows
-    }
-
-    @JvmStatic
-    fun calculateGridUsage(itemCount: Int, grid: Grid): GridUsage {
-        val occupiedSlots = minOf(itemCount, grid.capacity)
-        val usedColumns = minOf(occupiedSlots, grid.columns)
-        val usedRows = (occupiedSlots + grid.columns - 1) / grid.columns
-
-        return GridUsage(
-            hasEmptyColumns = usedColumns < grid.columns,
-            hasEmptyRows = usedRows < grid.rows,
-        )
     }
 
     @JvmStatic

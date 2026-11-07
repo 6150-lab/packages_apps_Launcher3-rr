@@ -321,61 +321,6 @@ public class PreviewItemManager {
         return count + (count - 1) * BIG_FOLDER_GAP_RATIO + 2 * BIG_FOLDER_PADDING_RATIO;
     }
 
-    private FolderPreviewLayout.Grid calculateWorkspacePreviewGrid(
-            int availableSpaceX,
-            int availableSpaceY,
-            int spanX,
-            int spanY) {
-        DeviceProfile deviceProfile = mIcon.mActivity.getDeviceProfile();
-        float density = deviceProfile.getWorkspaceProfile().getIconSizePx() / 60.f;
-        int gap = Math.round(8f * density);
-        float backgroundTop = mIcon.getPaddingTop() + deviceProfile.getFolderProfile().getFolderIconOffsetYPx();
-        float labelHeightAndGap = spanX > 1 || spanY > 1
-                ? mIcon.getFolderLabelHeight() + gap + backgroundTop : 0f;
-
-        Rect backgroundBounds = new Rect();
-        PreviewBackground.calculateBackgroundBounds(
-                deviceProfile,
-                availableSpaceX,
-                Math.round(availableSpaceY - labelHeightAndGap),
-                mIcon.getPaddingTop(),
-                spanX,
-                spanY,
-                backgroundBounds);
-        return calculateWorkspacePreviewGrid(new RectF(backgroundBounds), spanX, spanY);
-    }
-
-    FolderPreviewLayout.GridUsage calculateWorkspacePreviewGridUsage(
-            int availableSpaceX,
-            int availableSpaceY,
-            int spanX,
-            int spanY) {
-        FolderPreviewLayout.Grid grid =
-                calculateWorkspacePreviewGrid(availableSpaceX, availableSpaceY, spanX, spanY);
-
-        return FolderPreviewLayout.calculateGridUsage(
-            mIcon.mInfo.getContents().size(),
-            grid);
-    }
-
-    boolean isPreviewTightlyWrapped(
-            int availableSpaceX,
-            int availableSpaceY,
-            int spanX,
-            int spanY) {
-        if (availableSpaceX <= 0
-            || availableSpaceY <= 0
-            || spanX <= 0
-            || spanY <= 0) return false;
-
-        FolderPreviewLayout.Grid grid =
-                calculateWorkspacePreviewGrid(availableSpaceX, availableSpaceY, spanX, spanY);
-
-        return FolderPreviewLayout.isTightlyWrapped(
-            mIcon.mInfo.getContents().size(),
-            grid);
-    }
-
     FolderPreviewLayout.Snapshot calculateWorkspacePreviewSnapshot() {
         return calculateWorkspacePreviewSnapshot(mIcon.mInfo.getContents());
     }

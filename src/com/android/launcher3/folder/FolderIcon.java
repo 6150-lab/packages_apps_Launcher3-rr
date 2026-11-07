@@ -1051,30 +1051,6 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
         return mPreviewItemManager;
     }
 
-    public FolderPreviewLayout.GridUsage calculateWorkspacePreviewGridUsage(
-            int availableSpaceX,
-            int availableSpaceY,
-            int spanX,
-            int spanY) {
-        return mPreviewItemManager.calculateWorkspacePreviewGridUsage(
-                availableSpaceX,
-                availableSpaceY,
-                spanX,
-                spanY);
-    }
-
-    public boolean isPreviewTightlyWrapped(
-            int availableSpaceX,
-            int availableSpaceY,
-            int spanX,
-            int spanY) {
-        return mPreviewItemManager.isPreviewTightlyWrapped(
-            availableSpaceX,
-            availableSpaceY,
-            spanX,
-            spanY);
-    }
-
     @Override
     protected void dispatchDraw(Canvas canvas) {
         // Draw selection highlight before super.dispatchDraw() so that it appears behind the title
@@ -1312,10 +1288,6 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
         mPreviewItemManager.updatePreviewItems(animate);
         mCurrentPreviewItems.clear();
         mCurrentPreviewItems.addAll(getPreviewItemsOnPage(0));
-    }
-
-    void syncPreviewItems() {
-        updatePreviewItems(false);
     }
 
     /**
