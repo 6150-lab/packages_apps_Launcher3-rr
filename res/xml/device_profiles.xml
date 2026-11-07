@@ -262,6 +262,7 @@
         <display-option
             launcher:allAppsBorderSpace="16"
             launcher:allAppsCellHeight="104"
+            launcher:allAppsCellWidth="80"
             launcher:borderSpace="16"
             launcher:canBeDefault="true"
             launcher:horizontalMargin="22"
@@ -555,6 +556,7 @@
         <display-option
             launcher:allAppsBorderSpace="16.0"
             launcher:allAppsCellHeight="104.0"
+            launcher:allAppsCellWidth="61.0"
             launcher:borderSpace="16.0"
             launcher:canBeDefault="true"
             launcher:horizontalMargin="22.0"
