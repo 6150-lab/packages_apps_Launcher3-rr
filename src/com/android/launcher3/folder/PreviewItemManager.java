@@ -137,7 +137,7 @@ public class PreviewItemManager {
     private final Path mCardPath = new Path();
     private final Paint mPageDotPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
     private final float mPageDotRadius;
-    private final float mPageDotsSpace;
+    private float mPageDotsAlpha;
 
     // Super folders: notification dots on the apps of a big folder.
     private final DotRenderer.DrawParams mItemDotParams = new DotRenderer.DrawParams();
@@ -160,8 +160,7 @@ public class PreviewItemManager {
                 mContext).getDeviceProfile().getFolderProfile().getChildIconSizePx();
         mClipThreshold = dpToPx(1f);
         mPageDotRadius = dpToPx(5f) / 2f;
-        mPageDotsSpace = dpToPx(8f);
-        mPageDotPaint.setColor(Themes.getAttrColor(mContext, R.attr.folderTextColor));
+        mPageDotPaint.setColor(Themes.getAttrColor(mContext, R.attr.workspaceTextColor));
         mItemDotColor = Themes.getAttrColor(mContext, R.attr.notificationDotColor);
         mItemDotParams.setDotColor(mItemDotColor);
         mItemDotParams.shapeInfo =
@@ -303,11 +302,9 @@ public class PreviewItemManager {
             // Smaller icons than on the home screen: a 2x2 folder holds three rows of three.
             int columns = getBigFolderLineCount(spanX);
             int rows = getBigFolderLineCount(spanY);
-            float dotsSpace =
-                    mIcon.mInfo.getContents().size() > columns * rows ? mPageDotsSpace : 0f;
 
             float availableWidth = backgroundBounds.width();
-            float availableHeight = backgroundBounds.height() - dotsSpace;
+            float availableHeight = backgroundBounds.height();
             float itemSize = Math.min(
                     availableWidth / getBigFolderLineWeight(columns),
                     availableHeight / getBigFolderLineWeight(rows));
@@ -315,7 +312,6 @@ public class PreviewItemManager {
             float idealGap = itemSize * BIG_FOLDER_GAP_RATIO;
 
             RectF availableBounds = new RectF(backgroundBounds);
-            availableBounds.bottom -= dotsSpace;
             availableBounds.inset(idealPadding, idealPadding);
 
             // Calculate expanding gaps, but clamp them to a maximum of 1.5x idealGap to prevent icons from flying apart
@@ -327,8 +323,7 @@ public class PreviewItemManager {
 
             // Center the grid inside the background bounds
             float startX = backgroundBounds.left + (backgroundBounds.width() - gridWidth) / 2f;
-            float startY = backgroundBounds.top
-                    + (backgroundBounds.height() - dotsSpace - gridHeight) / 2f;
+            float startY = backgroundBounds.top + (backgroundBounds.height() - gridHeight) / 2f;
 
             return new FolderPreviewLayout.Grid(
                     columns,
@@ -481,35 +476,48 @@ public class PreviewItemManager {
         mNeighborPageParams.clear();
     }
 
-    /** Draws one dot per page under a big folder's apps, the shown page's dot solid. */
-    void drawPageDots(Canvas canvas) {
-        int spanX = mIcon.getCurrentSpanX();
-        int spanY = mIcon.getCurrentSpanY();
-        int count = getPageCount(spanX, spanY);
-        if (count <= 1) return;
+    void setPageDotsAlpha(float alpha) {
+        mPageDotsAlpha = alpha;
+        onParamsChanged();
+    }
+
+    /**
+     * Draws one dot per page under a big folder's card, centered on {@code centerY}. The shown
+     * page's dot is solid and stretches toward the page a swipe brings in.
+     */
+    void drawPageDots(Canvas canvas, float centerY) {
+        int count = getPreviewPageCount();
+        if (count <= 1 || mPageDotsAlpha <= 0f) return;
 
         Rect bounds = new Rect();
         mIcon.mBackground.getBounds(bounds);
-        FolderPreviewLayout.Grid grid =
-                calculateWorkspacePreviewGrid(new RectF(bounds), spanX, spanY);
-        float gridBottom = grid.getStartY() + grid.getRows() * grid.getItemSize()
-                + (grid.getRows() - 1) * grid.getRowGap();
-        float centerY = (gridBottom + bounds.bottom) / 2f;
+        boolean isRtl = Utilities.isRtl(mIcon.getResources());
+        float radius = mPageDotRadius;
+        float step = radius * 4.4f;
+        float startX = bounds.centerX() - (count - 1) * step / 2f;
+        int alpha = Math.round(255 * mPageDotsAlpha);
+
+        mPageDotPaint.setAlpha(Math.round(alpha * 0.4f));
+        for (int i = 0; i < count; i++) {
+            float x = startX + (isRtl ? count - 1 - i : i) * step;
+            canvas.drawCircle(x, centerY, radius, mPageDotPaint);
+        }
 
         int shown = getPreviewPage();
-        if (mNeighborPage >= 0 && Math.abs(mPageOffset) > getPageWidth() / 2) {
-            shown = mNeighborPage;
+        float from = startX + (isRtl ? count - 1 - shown : shown) * step;
+        float to = from;
+        float progress = 0f;
+        float pageWidth = getPageWidth();
+        if (mNeighborPage >= 0 && mNeighborPage < count && pageWidth > 0) {
+            to = startX + (isRtl ? count - 1 - mNeighborPage : mNeighborPage) * step;
+            progress = Math.min(1f, Math.abs(mPageOffset) / pageWidth);
         }
-        boolean isRtl = Utilities.isRtl(mIcon.getResources());
-        float step = mPageDotRadius * 3.2f;
-        float startX = bounds.centerX() - (count - 1) * step / 2f;
-        int alpha = mPageDotPaint.getAlpha();
-        for (int i = 0; i < count; i++) {
-            int position = isRtl ? count - 1 - i : i;
-            mPageDotPaint.setAlpha(i == shown ? 255 : 90);
-            canvas.drawCircle(startX + position * step, centerY, mPageDotRadius, mPageDotPaint);
-        }
+        // The leading end gets there in the first half, the trailing end in the second.
+        float lead = from + (to - from) * Math.min(1f, progress * 2f);
+        float trail = from + (to - from) * Math.max(0f, progress * 2f - 1f);
         mPageDotPaint.setAlpha(alpha);
+        canvas.drawRoundRect(Math.min(lead, trail) - radius, centerY - radius,
+                Math.max(lead, trail) + radius, centerY + radius, radius, radius, mPageDotPaint);
     }
 
     @Nullable

@@ -1093,7 +1093,9 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
             if (mCurrentPreviewItems.isEmpty() && !mAnimating) return;
             mPreviewItemManager.draw(canvas);
             if (isMultiSpanFolder()) {
-                mPreviewItemManager.drawPageDots(canvas);
+                Paint.FontMetrics fm = mFolderName.getPaint().getFontMetrics();
+                mPreviewItemManager.drawPageDots(canvas,
+                        getBigFolderLabelTop() + (fm.descent - fm.ascent) / 2f);
             }
         }
 
@@ -1297,6 +1299,12 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
                 + grid.getWorkspaceProfile().getIconSizePx()
                 + grid.getWorkspaceProfile().getIconDrawablePaddingPx()
                 + Math.max(0, mDefaultLabelPaddingTop);
+    }
+
+    /** Fades the page dots in over a big folder's name, or back out. */
+    void setPageDotsAlpha(float alpha) {
+        mPreviewItemManager.setPageDotsAlpha(alpha);
+        mFolderName.setAlpha(1f - alpha);
     }
 
     /** Sets the visibility of the icon's title text */

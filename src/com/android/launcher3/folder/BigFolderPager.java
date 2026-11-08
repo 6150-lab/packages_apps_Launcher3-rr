@@ -12,10 +12,15 @@ import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.ViewConfiguration;
 
+import androidx.annotation.Nullable;
+
 import com.android.app.animation.Interpolators;
 import com.android.launcher3.Utilities;
 
-/** Super folders: swipes a big folder on the home screen through its pages of apps. */
+/**
+ * Super folders: swipes a big folder on the home screen through its pages of apps. While it
+ * moves, page dots take the place of the folder's name, the way OnePlus shows them.
+ */
 final class BigFolderPager {
 
     private static final int SETTLE_DURATION = 250;
@@ -23,6 +28,10 @@ final class BigFolderPager {
     private static final float TURN_FRACTION = 0.3f;
     // How much a swipe moves the apps when there is no page that way.
     private static final float EDGE_RESISTANCE = 0.25f;
+    // The page dots come in quickly, stay a moment after the pages stop, then fade.
+    private static final int DOTS_SHOW_DURATION = 150;
+    private static final int DOTS_HIDE_DURATION = 300;
+    private static final int DOTS_LINGER = 400;
 
     private final FolderIcon mIcon;
     private final PreviewItemManager mPreview;
@@ -36,6 +45,8 @@ final class BigFolderPager {
     private boolean mTracking;
     private boolean mSwiping;
     private ValueAnimator mSettleAnimator;
+    private ValueAnimator mDotsAnimator;
+    private float mDotsAlpha;
 
     BigFolderPager(FolderIcon icon, PreviewItemManager preview) {
         mIcon = icon;
@@ -95,6 +106,7 @@ final class BigFolderPager {
                     mSwiping = true;
                     mSwipeStartX = ev.getX();
                     mIcon.onPageSwipeStarted(ev);
+                    showDots();
                 }
                 moveTo(ev.getX() - mSwipeStartX);
                 return true;
@@ -145,23 +157,61 @@ final class BigFolderPager {
 
         int neighbor = hasPage ? getPageToward(direction) : -1;
         int page = turn ? neighbor : mPreview.getPreviewPage();
-        ValueAnimator settle =
-                ValueAnimator.ofFloat(offset, turn ? Math.signum(offset) * width : 0f);
-        settle.setDuration(SETTLE_DURATION);
-        settle.setInterpolator(Interpolators.DECELERATE_1_5);
-        settle.addUpdateListener(
+        startPageAnimation(offset, turn ? Math.signum(offset) * width : 0f, neighbor, page,
+                SETTLE_DURATION, () -> hideDots(DOTS_LINGER));
+    }
+
+    private void startPageAnimation(float from, float to, int neighbor, int endPage,
+            int duration, @Nullable Runnable onEnd) {
+        ValueAnimator animator = ValueAnimator.ofFloat(from, to);
+        animator.setDuration(duration);
+        animator.setInterpolator(Interpolators.DECELERATE_1_5);
+        animator.addUpdateListener(
                 a -> mPreview.setPageOffset((float) a.getAnimatedValue(), neighbor));
-        settle.addListener(new AnimatorListenerAdapter() {
+        animator.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {
                 if (mSettleAnimator == animation) {
                     mSettleAnimator = null;
                 }
-                mPreview.setPreviewPage(page);
+                mPreview.setPreviewPage(endPage);
+                if (onEnd != null) onEnd.run();
             }
         });
-        mSettleAnimator = settle;
-        settle.start();
+        mSettleAnimator = animator;
+        animator.start();
+    }
+
+    private void showDots() {
+        animateDots(1f, DOTS_SHOW_DURATION, 0);
+    }
+
+    private void hideDots(long delay) {
+        animateDots(0f, DOTS_HIDE_DURATION, delay);
+    }
+
+    private void animateDots(float alpha, long duration, long delay) {
+        if (mDotsAnimator != null) {
+            mDotsAnimator.cancel();
+        }
+        if (mDotsAlpha == alpha) return;
+        ValueAnimator animator = ValueAnimator.ofFloat(mDotsAlpha, alpha);
+        animator.setDuration(duration);
+        animator.setStartDelay(delay);
+        animator.addUpdateListener(a -> {
+            mDotsAlpha = (float) a.getAnimatedValue();
+            mIcon.setPageDotsAlpha(mDotsAlpha);
+        });
+        animator.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                if (mDotsAnimator == animation) {
+                    mDotsAnimator = null;
+                }
+            }
+        });
+        mDotsAnimator = animator;
+        animator.start();
     }
 
     private void recycleVelocityTracker() {
