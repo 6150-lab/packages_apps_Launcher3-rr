@@ -299,37 +299,26 @@ public class PreviewItemManager {
 
             return FolderPreviewLayout.calculateGrid(availableBounds, itemSize, minGap);
         } else {
-            // Smaller icons than on the home screen: a 2x2 folder holds three rows of three.
+            // Super folders: laid out like a OnePlus big folder. A 2x2 holds three rows of three,
+            // each app centered in an even share of the card, so a tall card spaces its rows out.
             int columns = getBigFolderLineCount(spanX);
             int rows = getBigFolderLineCount(spanY);
-
-            float availableWidth = backgroundBounds.width();
-            float availableHeight = backgroundBounds.height();
-            float itemSize = Math.min(
-                    availableWidth / getBigFolderLineWeight(columns),
-                    availableHeight / getBigFolderLineWeight(rows));
-            float idealPadding = itemSize * BIG_FOLDER_PADDING_RATIO;
-            float idealGap = itemSize * BIG_FOLDER_GAP_RATIO;
-
-            RectF availableBounds = new RectF(backgroundBounds);
-            availableBounds.inset(idealPadding, idealPadding);
-
-            // Calculate expanding gaps, but clamp them to a maximum of 1.5x idealGap to prevent icons from flying apart
-            float columnGap = columns > 1 ? Math.min(idealGap * 1.5f, (availableBounds.width() - columns * itemSize) / (columns - 1)) : 0f;
-            float rowGap = rows > 1 ? Math.min(idealGap * 1.5f, (availableBounds.height() - rows * itemSize) / (rows - 1)) : 0f;
-
-            float gridWidth = columns * itemSize + (columns - 1) * columnGap;
-            float gridHeight = rows * itemSize + (rows - 1) * rowGap;
-
-            // Center the grid inside the background bounds
-            float startX = backgroundBounds.left + (backgroundBounds.width() - gridWidth) / 2f;
-            float startY = backgroundBounds.top + (backgroundBounds.height() - gridHeight) / 2f;
+            float padding = Math.min(backgroundBounds.width(), backgroundBounds.height())
+                    * BIG_FOLDER_PADDING;
+            float columnWidth = (backgroundBounds.width() - 2 * padding) / columns;
+            float rowHeight = (backgroundBounds.height() - 2 * padding) / rows;
+            // An icon's shape fills ICON_VISIBLE_AREA_FACTOR of its bounds.
+            float shapeSize = Math.min(BIG_FOLDER_ICON_FILL * Math.min(columnWidth, rowHeight),
+                    deviceProfile.getFolderProfile().getFolderIconSizePx());
+            float itemSize = shapeSize / ICON_VISIBLE_AREA_FACTOR;
+            float columnGap = columnWidth - itemSize;
+            float rowGap = rowHeight - itemSize;
 
             return new FolderPreviewLayout.Grid(
                     columns,
                     rows,
-                    startX,
-                    startY,
+                    backgroundBounds.left + padding + columnGap / 2f,
+                    backgroundBounds.top + padding + rowGap / 2f,
                     itemSize,
                     columnGap,
                     rowGap
@@ -337,17 +326,14 @@ public class PreviewItemManager {
         }
     }
 
-    private static final float BIG_FOLDER_PADDING_RATIO = 0.12f;
-    private static final float BIG_FOLDER_GAP_RATIO = 0.16f;
+    // A big folder's padding, as a share of its card's shorter side, and how much of each app's
+    // share of the card the app's icon fills.
+    private static final float BIG_FOLDER_PADDING = 0.08f;
+    private static final float BIG_FOLDER_ICON_FILL = 0.875f;
 
     /** Icons along one side of a big folder: one and a half per cell, so 3 across 2 cells. */
     private static int getBigFolderLineCount(int span) {
         return span + span / 2;
-    }
-
-    /** The length of a line of {@code count} icons, padding included, in icon sizes. */
-    private static float getBigFolderLineWeight(int count) {
-        return count + (count - 1) * BIG_FOLDER_GAP_RATIO + 2 * BIG_FOLDER_PADDING_RATIO;
     }
 
     FolderPreviewLayout.Snapshot calculateWorkspacePreviewSnapshot() {
