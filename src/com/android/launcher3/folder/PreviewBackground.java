@@ -71,8 +71,9 @@ public class PreviewBackground extends DelegatedCellDrawing {
     @VisibleForTesting protected static final float HOVER_SCALE = 1.1f;
     @VisibleForTesting protected static final int HOVER_ANIMATION_DURATION = 300;
 
-    // Super folders: the least room a big folder's card leaves at the folder's sides, as a share
-    // of a small folder's size.
+    // Super folders: a big folder's card. Its corners and the least room it leaves at the sides
+    // of the folder, as shares of a small folder's size.
+    private static final float BIG_CARD_CORNER = 0.35f;
     private static final float BIG_CARD_MIN_MARGIN = 0.11f;
 
     private final Context mContext;
@@ -97,6 +98,7 @@ public class PreviewBackground extends DelegatedCellDrawing {
     private View mInvalidateDelegate;
 
     int previewSize;
+    private boolean mIsBigCard;
 
     private CellLayout mDrawingDelegate;
 
@@ -241,6 +243,7 @@ public class PreviewBackground extends DelegatedCellDrawing {
 
         DeviceProfile grid = activity.getDeviceProfile();
         previewSize = grid.getFolderProfile().getFolderIconSizePx();
+        mIsBigCard = spanX > 1 || spanY > 1;
 
         calculateBackgroundBounds(
             grid,
@@ -392,7 +395,7 @@ public class PreviewBackground extends DelegatedCellDrawing {
 
     public void drawBackground(Canvas canvas) {
         if (com.android.launcher3.icons.mono.NeonIcons.enabled
-                && com.android.launcher3.icons.mono.NeonIcons.folders) {
+                && com.android.launcher3.icons.mono.NeonIcons.folders && !mIsBigCard) {
             // RR: a neon ring around the folder, like the apps around it.
             float radius = getScaledRadius();
             com.android.launcher3.icons.mono.NeonIcons.drawFolderRing(canvas,
@@ -415,6 +418,16 @@ public class PreviewBackground extends DelegatedCellDrawing {
             ShapeDelegate shape,
             RectF bounds,
             float scale) {
+        if (mIsBigCard) {
+            // A big card keeps round corners of one size: never a pill, never a stretched shape.
+            float radius = previewSize * BIG_CARD_CORNER * scale;
+            if (shape instanceof ShapeDelegate.RoundedSquare roundedSquare
+                    && !(shape instanceof ShapeDelegate.Circle)) {
+                radius = Math.min(radius,
+                        previewSize / 2f * roundedSquare.getRadiusRatio() * scale);
+            }
+            return Math.min(radius, Math.min(bounds.width(), bounds.height()) / 2f);
+        }
         if (!(shape instanceof ShapeDelegate.RoundedSquare roundedSquare)) {
             return 0f;
         }
@@ -437,7 +450,7 @@ public class PreviewBackground extends DelegatedCellDrawing {
             Paint paint) {
         ShapeDelegate shape = getShape();
 
-        if (shape instanceof ShapeDelegate.RoundedSquare) {
+        if (mIsBigCard || shape instanceof ShapeDelegate.RoundedSquare) {
             float radius = getCornerRadius(shape, bounds, scale);
             canvas.drawRoundRect(bounds, radius, radius, paint);
         } else {
@@ -451,7 +464,7 @@ public class PreviewBackground extends DelegatedCellDrawing {
             float scale) {
         ShapeDelegate shape = getShape();
 
-        if (shape instanceof ShapeDelegate.RoundedSquare) {
+        if (mIsBigCard || shape instanceof ShapeDelegate.RoundedSquare) {
             float radius = getCornerRadius(shape, bounds, scale);
             path.addRoundRect(bounds, radius, radius, Path.Direction.CW);
         } else {
@@ -574,7 +587,7 @@ public class PreviewBackground extends DelegatedCellDrawing {
         mPath.reset();
         float scale = mScale;
 
-        if (!Flags.enableLauncherIconShapes()) {
+        if (!Flags.enableLauncherIconShapes() && !mIsBigCard) {
             scale *= ICON_OVERLAP_FACTOR;
         }
 
