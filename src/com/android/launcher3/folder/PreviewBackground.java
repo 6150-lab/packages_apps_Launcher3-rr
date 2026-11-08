@@ -72,9 +72,10 @@ public class PreviewBackground extends DelegatedCellDrawing {
     @VisibleForTesting protected static final int HOVER_ANIMATION_DURATION = 300;
 
     // Super folders: a big folder's card. Its corners and the least room it leaves at the sides
-    // of the folder, as shares of a small folder's size.
+    // of the folder, as shares of a small folder's size, and how much it grows under a drag.
     private static final float BIG_CARD_CORNER = 0.35f;
     private static final float BIG_CARD_MIN_MARGIN = 0.11f;
+    private static final float BIG_CARD_ACCEPT_SCALE = 1.03f;
 
     private final Context mContext;
     private final PorterDuffXfermode mShadowPorterDuffXfermode
@@ -367,7 +368,8 @@ public class PreviewBackground extends DelegatedCellDrawing {
      * 1f and 1 means the scale is at ACCEPT_SCALE_FACTOR. Returns 0 when scaled due to hover.
      */
     float getAcceptScaleProgress() {
-        return mIsHoveredOrAnimating ? 0 : (mScale - 1f) / (ACCEPT_SCALE_FACTOR - 1f);
+        float acceptScale = mIsBigCard ? BIG_CARD_ACCEPT_SCALE : ACCEPT_SCALE_FACTOR;
+        return mIsHoveredOrAnimating ? 0 : (mScale - 1f) / (acceptScale - 1f);
     }
 
     void invalidate() {
@@ -643,7 +645,10 @@ public class PreviewBackground extends DelegatedCellDrawing {
         }
 
         final float startScale = mScale;
-        final float endScale = isAccepting ? ACCEPT_SCALE_FACTOR : (isHovered ? HOVER_SCALE : 1f);
+        final float endScale = isAccepting || isHovered
+                ? (mIsBigCard ? BIG_CARD_ACCEPT_SCALE
+                        : isAccepting ? ACCEPT_SCALE_FACTOR : HOVER_SCALE)
+                : 1f;
         Interpolator interpolator =
                 isAccepting != mIsAccepting ? ACCELERATE_DECELERATE : EMPHASIZED_DECELERATE;
         int duration = isAccepting != mIsAccepting ? CONSUMPTION_ANIMATION_DURATION
