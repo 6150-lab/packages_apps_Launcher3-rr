@@ -233,14 +233,6 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
                 && mFolderName.shouldShowLabel();
     }
 
-    public int getFolderLabelHeight() {
-        if (shouldShowFolderName() && mFolderName != null) {
-            Paint.FontMetrics fm = mFolderName.getPaint().getFontMetrics();
-            return mFolderName.getCompoundDrawablePadding() + (int) Math.ceil(fm.bottom - fm.top);
-        }
-        return 0;
-    }
-
     int getCurrentSpanX() {
         if (!usesWorkspacePreviewLayout()) return 1;
 
@@ -1285,14 +1277,26 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
             int textWidth = mFolderName.getMeasuredWidth();
             int textHeight = mFolderName.getMeasuredHeight();
 
-            float density = mActivity.getDeviceProfile().getWorkspaceProfile().getIconSizePx() / 60.f;
-            int gap = Math.round(8f * density);
-
             int textLeft = bgBounds.left + (bgBounds.width() - textWidth) / 2;
-            int textTop = bgBounds.bottom + gap;
+            int textTop = getBigFolderLabelTop();
 
             mFolderName.layout(textLeft, textTop, textLeft + textWidth, textTop + textHeight);
         }
+    }
+
+    /**
+     * Where a big folder's name goes: under its card, in line with the names of the apps in its
+     * last row, as a small folder's name sits under its icon.
+     */
+    private int getBigFolderLabelTop() {
+        DeviceProfile grid = mActivity.getDeviceProfile();
+        int rowGap = grid.getWorkspaceProfile().getCellLayoutBorderSpacePx().y;
+        int spanY = getCurrentSpanY();
+        float rowHeight = (getMeasuredHeight() - (spanY - 1) * rowGap) / (float) spanY;
+        return Math.round((spanY - 1) * (rowHeight + rowGap)) + getPaddingTop()
+                + grid.getWorkspaceProfile().getIconSizePx()
+                + grid.getWorkspaceProfile().getIconDrawablePaddingPx()
+                + Math.max(0, mDefaultLabelPaddingTop);
     }
 
     /** Sets the visibility of the icon's title text */

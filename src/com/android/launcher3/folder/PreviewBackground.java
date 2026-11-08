@@ -33,6 +33,7 @@ import android.graphics.Color;
 import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.Point;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.RadialGradient;
@@ -69,6 +70,10 @@ public class PreviewBackground extends DelegatedCellDrawing {
 
     @VisibleForTesting protected static final float HOVER_SCALE = 1.1f;
     @VisibleForTesting protected static final int HOVER_ANIMATION_DURATION = 300;
+
+    // Super folders: the least room a big folder's card leaves at the folder's sides, as a share
+    // of a small folder's size.
+    private static final float BIG_CARD_MIN_MARGIN = 0.11f;
 
     private final Context mContext;
     private final PorterDuffXfermode mShadowPorterDuffXfermode
@@ -165,33 +170,32 @@ public class PreviewBackground extends DelegatedCellDrawing {
             backgroundLeft = (availableSpaceX - backgroundWidth) / 2;
             backgroundTop = topPadding + grid.getFolderProfile().getFolderIconOffsetYPx();
         } else {
-            float standardIconSize = grid.getWorkspaceProfile().getIconSizePx();
-            float itemScale = 0.85f;
-            float itemSize = standardIconSize * itemScale;
-            float idealPadding = itemSize * 0.20f;
-            float idealGap = itemSize * 0.15f;
-
-            float idealWidth = spanX * itemSize + (spanX - 1) * idealGap + 2 * idealPadding;
-            float idealHeight = spanY * itemSize + (spanY - 1) * idealGap + 2 * idealPadding;
-
-            availableSpaceX = availableSpaceX > 0 ? availableSpaceX : Math.round(idealWidth);
-            availableSpaceY = availableSpaceY > 0 ? availableSpaceY : Math.round(idealHeight);
-
-            if (idealWidth > availableSpaceX || idealHeight > availableSpaceY) {
-                float fitScale = Math.min((float) availableSpaceX / idealWidth, (float) availableSpaceY / idealHeight);
-                itemSize *= fitScale;
-                idealPadding *= fitScale;
-                idealGap *= fitScale;
-
-                idealWidth = spanX * itemSize + (spanX - 1) * idealGap + 2 * idealPadding;
-                idealHeight = spanY * itemSize + (spanY - 1) * idealGap + 2 * idealPadding;
+            // Super folders: a big folder's card covers its cells the way OnePlus draws one, from
+            // the top of the icons in its first row to the bottom of the icons in its last row.
+            Point cellSize = grid.getWorkspaceProfile().getCellSize();
+            Point border = grid.getWorkspaceProfile().getCellLayoutBorderSpacePx();
+            if (availableSpaceX <= 0) {
+                availableSpaceX = spanX * cellSize.x + (spanX - 1) * border.x;
             }
-
-            backgroundWidth = Math.round(idealWidth);
-            backgroundHeight = Math.round(idealHeight);
-            backgroundLeft = Math.round((availableSpaceX - backgroundWidth) / 2f);
+            if (availableSpaceY <= 0) {
+                availableSpaceY = spanY * cellSize.y + (spanY - 1) * border.y;
+            }
+            float cellWidth = (availableSpaceX - (spanX - 1) * border.x) / (float) spanX;
+            float cellHeight = (availableSpaceY - (spanY - 1) * border.y) / (float) spanY;
 
             backgroundTop = topPadding + grid.getFolderProfile().getFolderIconOffsetYPx();
+            backgroundHeight = Math.round((spanY - 1) * (cellHeight + border.y)) + previewSize;
+
+            // As wide as it is tall where the columns allow it, but no narrower than the icons
+            // around it and no closer to the folder's sides than a small margin.
+            float iconMargin = Math.max(0f, (cellWidth - previewSize) / 2f);
+            float minMargin = Math.min(iconMargin, previewSize * BIG_CARD_MIN_MARGIN);
+            float margin = spanX == 1
+                    ? iconMargin
+                    : Math.max(minMargin,
+                            Math.min(iconMargin, (availableSpaceX - backgroundHeight) / 2f));
+            backgroundLeft = Math.round(margin);
+            backgroundWidth = availableSpaceX - 2 * backgroundLeft;
         }
 
         outBounds.set(

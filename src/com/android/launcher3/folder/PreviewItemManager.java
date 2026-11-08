@@ -245,18 +245,12 @@ public class PreviewItemManager {
             mPrevTopPadding = mIcon.getPaddingTop();
             mPrevUsesWorkspacePreviewLayout = usesWorkspacePreview;
 
-            DeviceProfile deviceProfile = mIcon.mActivity.getDeviceProfile();
-            float density = deviceProfile.getWorkspaceProfile().getIconSizePx() / 60.f;
-            int gap = Math.round(8f * density);
-            float backgroundTop = mIcon.getPaddingTop() + deviceProfile.getFolderProfile().getFolderIconOffsetYPx();
-            float labelHeightAndGap = mIcon.isMultiSpanFolder() ? (mIcon.getFolderLabelHeight() + gap + backgroundTop) : 0f;
-
             mIcon.mBackground.setup(
                     mIcon.getContext(),
                     mIcon.mActivity,
                     mIcon,
                     mTotalWidth,
-                    Math.round(mTotalHeight - labelHeightAndGap),
+                    mTotalHeight,
                     mIcon.getPaddingTop(),
                     spanX,
                     spanY);
