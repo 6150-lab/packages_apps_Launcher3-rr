@@ -459,6 +459,9 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
         CellLayout cl = (CellLayout) getParent().getParent();
 
         mBackground.animateToAccept(cl, lp.getCellX(), lp.getCellY());
+        if (isMultiSpanFolder() && usesWorkspacePreviewLayout()) {
+            mPager.onDropHover();
+        }
         mOpenAlarm.setOnAlarmListener(mOnOpenListener);
         if (SPRING_LOADING_ENABLED &&
                 ((dragInfo instanceof WorkspaceItemFactory)
@@ -503,6 +506,7 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
     public void onDragExit() {
         mBackground.animateToRest();
         mOpenAlarm.cancelAlarm();
+        mPager.onDropHoverExit();
     }
 
     private void onDrop(final ItemInfo item, DragObject d, Rect finalRect,
@@ -610,6 +614,8 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
                 mPreviewItemManager.calculateWorkspacePreviewSnapshot();
 
         getFolder().addFolderContent(item, index, false);
+        // The app now holds the slot the drag kept for it, on the page shown.
+        mPreviewItemManager.setDropPending(false);
 
         FolderPreviewLayout.Snapshot newSnapshot =
                 mPreviewItemManager.calculateWorkspacePreviewSnapshot();
@@ -709,6 +715,7 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
         if (usesWorkspacePreview) {
             mPreviewItemManager.setWorkspacePreviewItemHidden(
                     item, false);
+            mPager.onDropAnimationEnd();
             // After the home screen is back from drag mode.
             postDelayed(this::maybeShowPageSwipeTip, SPRING_LOADED_EXIT_DELAY * 2L);
         } else {
@@ -948,6 +955,7 @@ public class FolderIcon extends FrameLayout implements FloatingIconViewCompanion
             item = d.dragInfo;
         }
         mFolder.notifyDrop();
+        mPager.onDropped();
         onDrop(item, d, null, 1.0f,
                 itemReturnedOnFailedDrop ? item.rank : mInfo.getContents().size(),
                 itemReturnedOnFailedDrop

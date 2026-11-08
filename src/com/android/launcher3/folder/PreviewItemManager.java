@@ -138,6 +138,8 @@ public class PreviewItemManager {
     private final Paint mPageDotPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
     private final float mPageDotRadius;
     private float mPageDotsAlpha;
+    // An app is dragged over the folder and would take the next free slot.
+    private boolean mDropPending;
 
     // Super folders: notification dots on the apps of a big folder.
     private final DotRenderer.DrawParams mItemDotParams = new DotRenderer.DrawParams();
@@ -400,7 +402,21 @@ public class PreviewItemManager {
     private int getPageCount(int spanX, int spanY) {
         if (spanX <= 1 && spanY <= 1) return 1;
         int capacity = getBigFolderCapacity(spanX, spanY);
-        return Math.max(1, (mIcon.mInfo.getContents().size() + capacity - 1) / capacity);
+        int count = mIcon.mInfo.getContents().size() + (mDropPending ? 1 : 0);
+        return Math.max(1, (count + capacity - 1) / capacity);
+    }
+
+    /** Counts the slot an app dragged over the folder would take, or stops counting it. */
+    void setDropPending(boolean pending) {
+        if (mDropPending == pending) return;
+        mDropPending = pending;
+        onParamsChanged();
+    }
+
+    /** The page an app dropped on the folder lands on. */
+    int getDropPage() {
+        return mIcon.mInfo.getContents().size()
+                / getBigFolderCapacity(mIcon.getCurrentSpanX(), mIcon.getCurrentSpanY());
     }
 
     private int clampPage(int page, int spanX, int spanY) {

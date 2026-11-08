@@ -24,6 +24,7 @@ import com.android.launcher3.Utilities;
 final class BigFolderPager {
 
     private static final int SETTLE_DURATION = 250;
+    private static final int FLIP_DURATION = 350;
     // How far a slow swipe has to go, as a share of the page, to turn it.
     private static final float TURN_FRACTION = 0.3f;
     // How much a swipe moves the apps when there is no page that way.
@@ -32,6 +33,8 @@ final class BigFolderPager {
     private static final int DOTS_SHOW_DURATION = 150;
     private static final int DOTS_HIDE_DURATION = 300;
     private static final int DOTS_LINGER = 400;
+    // After an app drops in, how long its page stays before the folder goes back to the first.
+    private static final int DROP_PAGE_LINGER = 600;
 
     private final FolderIcon mIcon;
     private final PreviewItemManager mPreview;
@@ -47,6 +50,10 @@ final class BigFolderPager {
     private ValueAnimator mSettleAnimator;
     private ValueAnimator mDotsAnimator;
     private float mDotsAlpha;
+    private boolean mDropHovering;
+
+    private final Runnable mDropHoverEnd = this::endDropHover;
+    private final Runnable mReturnToFirstPage = this::returnToFirstPage;
 
     BigFolderPager(FolderIcon icon, PreviewItemManager preview) {
         mIcon = icon;
@@ -75,6 +82,7 @@ final class BigFolderPager {
     boolean onTouchEvent(MotionEvent ev) {
         switch (ev.getActionMasked()) {
             case MotionEvent.ACTION_DOWN:
+                mIcon.removeCallbacks(mReturnToFirstPage);
                 if (mSettleAnimator != null) {
                     mSettleAnimator.end();
                 }
@@ -161,6 +169,22 @@ final class BigFolderPager {
                 SETTLE_DURATION, () -> hideDots(DOTS_LINGER));
     }
 
+    /** Slides the folder to {@code page}, the way a swipe would, then runs {@code onEnd}. */
+    private void animateToPage(int page, @Nullable Runnable onEnd) {
+        if (mSettleAnimator != null) {
+            mSettleAnimator.end();
+        }
+        int current = mPreview.getPreviewPage();
+        if (page == current) {
+            if (onEnd != null) onEnd.run();
+            return;
+        }
+        // A later page comes in from the right, or from the left in right-to-left layouts.
+        boolean fromRight = (page > current) != Utilities.isRtl(mIcon.getResources());
+        float width = mPreview.getPageWidth();
+        startPageAnimation(0f, fromRight ? -width : width, page, page, FLIP_DURATION, onEnd);
+    }
+
     private void startPageAnimation(float from, float to, int neighbor, int endPage,
             int duration, @Nullable Runnable onEnd) {
         ValueAnimator animator = ValueAnimator.ofFloat(from, to);
@@ -180,6 +204,50 @@ final class BigFolderPager {
         });
         mSettleAnimator = animator;
         animator.start();
+    }
+
+    /** An app is dragged over the folder: shows the page it would land on. */
+    void onDropHover() {
+        mIcon.removeCallbacks(mDropHoverEnd);
+        mIcon.removeCallbacks(mReturnToFirstPage);
+        mDropHovering = true;
+        mPreview.setDropPending(true);
+        if (mPreview.getPreviewPageCount() > 1) {
+            showDots();
+        }
+        animateToPage(mPreview.getDropPage(), null);
+    }
+
+    /**
+     * The drag left the folder. A drop comes right after this when the app was let go here, so
+     * wait for the next frame before going back.
+     */
+    void onDropHoverExit() {
+        if (mDropHovering) {
+            mIcon.post(mDropHoverEnd);
+        }
+    }
+
+    /** The app was dropped in: keep its page until it lands. */
+    void onDropped() {
+        mIcon.removeCallbacks(mDropHoverEnd);
+        mDropHovering = false;
+    }
+
+    /** The dropped app is in place: go back to the first page after a moment. */
+    void onDropAnimationEnd() {
+        hideDots(DROP_PAGE_LINGER);
+        mIcon.postDelayed(mReturnToFirstPage, DROP_PAGE_LINGER);
+    }
+
+    private void endDropHover() {
+        mDropHovering = false;
+        hideDots(0);
+        returnToFirstPage();
+    }
+
+    private void returnToFirstPage() {
+        animateToPage(0, () -> mPreview.setDropPending(false));
     }
 
     private void showDots() {
