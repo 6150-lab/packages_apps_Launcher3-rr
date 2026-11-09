@@ -152,6 +152,9 @@
         <item>オービット</item>
         <item>ネオンサイン</item>
         <item>ガラス</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">再生中</string>
     <string name="quickspace_vertical_note">メモ</string>

@@ -134,6 +134,9 @@
         <item>Orbit</item>
         <item>ป้ายนีออน</item>
         <item>กระจกใส</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">กำลังเล่น</string>
     <string name="quickspace_vertical_note">หมายเหตุ</string>

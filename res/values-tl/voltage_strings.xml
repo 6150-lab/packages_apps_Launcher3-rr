@@ -132,6 +132,9 @@
         <item>Orbit</item>
         <item>Neon sign</item>
         <item>Glass</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">NAGPE-PLAY</string>
     <string name="quickspace_vertical_note">TALA</string>

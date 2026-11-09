@@ -134,6 +134,9 @@
         <item>ምህዋር</item>
         <item>ኒዮን ምልክት</item>
         <item>ብርጭቆ</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">አሁን በመጫወት ላይ</string>
     <string name="quickspace_vertical_note">ማስታወሻ</string>

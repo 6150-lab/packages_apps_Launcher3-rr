@@ -132,6 +132,9 @@
         <item>Orbit</item>
         <item>नियन साइन</item>
         <item>Glass</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">अहिले बजिरहेको</string>
     <string name="quickspace_vertical_note">नोट</string>

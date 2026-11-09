@@ -150,6 +150,9 @@
         <item>Orbită</item>
         <item>Neon</item>
         <item>Sticlă</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">SE REDĂ ACUM</string>
     <string name="quickspace_vertical_note">NOTĂ</string>

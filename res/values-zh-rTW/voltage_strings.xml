@@ -150,6 +150,9 @@
         <item>軌道</item>
         <item>霓虹燈</item>
         <item>玻璃</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_note">備註</string>
     <string name="quickspace_vertical_weather">天氣</string>

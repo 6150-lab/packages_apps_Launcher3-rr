@@ -33,4 +33,6 @@
         <item>Eigene Farbe der App</item>
     </string-array>
     <string name="neon_folders_title">Auch Ordner</string>
+    <string name="glance_flatline_vitals">Status</string>
+    <string name="glance_flatline_alarm">Wecker <xliff:g id="time" example="6:30">%1$s</xliff:g></string>
 </resources>

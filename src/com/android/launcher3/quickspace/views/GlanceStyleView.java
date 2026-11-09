@@ -50,9 +50,11 @@ public abstract class GlanceStyleView extends FrameLayout implements QuickSpaceS
     public String month;
     public String shortMonth;
     public String dateLine;
+    public String shortDateLine;
     public String greeting;
     public String temperature;
     public String condition;
+    public String city;
     public Drawable weatherIcon;
     public String eventTitle;
     public String eventTime;
@@ -93,6 +95,7 @@ public abstract class GlanceStyleView extends FrameLayout implements QuickSpaceS
   private DateFormat mMonthFormat;
   private DateFormat mShortMonthFormat;
   private DateFormat mDateLineFormat;
+  private DateFormat mShortDateLineFormat;
   private DateFormat mTimeFormat;
   private DateFormat mEventDayFormat;
 
@@ -233,6 +236,7 @@ public abstract class GlanceStyleView extends FrameLayout implements QuickSpaceS
     glance.month = mMonthFormat.format(now);
     glance.shortMonth = mShortMonthFormat.format(now).toUpperCase(locale);
     glance.dateLine = mDateLineFormat.format(now);
+    glance.shortDateLine = mShortDateLineFormat.format(now);
 
     QuickEventsController events = mController.getEventController();
     if (events != null) {
@@ -251,6 +255,7 @@ public abstract class GlanceStyleView extends FrameLayout implements QuickSpaceS
       glance.temperature = emptyToNull(mController.getWeatherTemperature());
       if (glance.temperature != null) {
         glance.weatherIcon = mController.getWeatherIcon();
+        glance.city = emptyToNull(mController.getWeatherCity());
         if (LauncherPrefs.SHOW_QUICKSPACE_WEATHER_TEXT.get(context)) {
           glance.condition = emptyToNull(mController.getWeatherCondition());
         }
@@ -302,6 +307,7 @@ public abstract class GlanceStyleView extends FrameLayout implements QuickSpaceS
     mMonthFormat = format("MMMM", locale, zone);
     mShortMonthFormat = format("MMM", locale, zone);
     mDateLineFormat = format("EEEEMMMd", locale, zone);
+    mShortDateLineFormat = format("EEEMMMd", locale, zone);
     mTimeFormat = format(use24Hour ? "Hm" : "hm", locale, zone);
     mEventDayFormat = format("MMMd", locale, zone);
   }
@@ -340,6 +346,7 @@ public abstract class GlanceStyleView extends FrameLayout implements QuickSpaceS
         events == null ? null : events.getPSAMessage(),
         weather ? mController.getWeatherTemperature() : null,
         weather ? mController.getWeatherCondition() : null,
+        weather ? mController.getWeatherCity() : null,
         weather ? Objects.hashCode(mController.getWeatherIcon()) : 0,
         event == null ? -1L : event.getId(),
         event == null ? null : event.getTitle(),

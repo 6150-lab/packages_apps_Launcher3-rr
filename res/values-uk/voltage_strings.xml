@@ -157,6 +157,9 @@
         <item>Орбіта</item>
         <item>Неонова вивіска</item>
         <item>Скло</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">ЗАРА�  ВІДТВОРЮЄТЬСЯ</string>
     <string name="quickspace_vertical_note">ПРИМІТКА</string>

@@ -132,6 +132,9 @@
         <item>Орбита</item>
         <item>Неон жарнак</item>
         <item>Айнек</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">ОЙНОЛУП ЖАТАТ</string>
     <string name="quickspace_vertical_note">ЭСКЕРТМЕ</string>

@@ -142,6 +142,9 @@
         <item>Orbit</item>
         <item>Neoonsilt</item>
         <item>Klaas</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">ESITATAKSE</string>
     <string name="quickspace_vertical_note">MÄRKMED</string>

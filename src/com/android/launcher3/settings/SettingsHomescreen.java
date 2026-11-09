@@ -498,6 +498,9 @@ public class SettingsHomescreen extends CollapsingToolbarBaseActivity
             boolean isVoltageVerticalStyle = "4".equals(quickspaceStyle);
             boolean isGlanceStyle = "5".equals(quickspaceStyle) || "6".equals(quickspaceStyle)
                     || "7".equals(quickspaceStyle);
+            // The Flatline styles show no events or accessory battery, and always the city.
+            boolean isFlatlineStyle = "8".equals(quickspaceStyle) || "9".equals(quickspaceStyle)
+                    || "10".equals(quickspaceStyle);
 
             if (mVoltageAccent != null) {
                 mVoltageAccent.setVisible(isVoltageAccentStyle);
@@ -517,7 +520,7 @@ public class SettingsHomescreen extends CollapsingToolbarBaseActivity
 
             if (mQuickspaceWeatherCity != null) {
                 mQuickspaceWeatherCity.setVisible(!isVoltagePagedStyle && !isVoltageVerticalStyle
-                        && !isGlanceStyle);
+                        && !isGlanceStyle && !isFlatlineStyle);
             }
 
             if (mQuickspaceWeatherText != null) {

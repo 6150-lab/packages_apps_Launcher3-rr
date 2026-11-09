@@ -137,6 +137,9 @@
         <item>Orbit</item>
         <item>Неонов надпис</item>
         <item>Стъкло</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">ВЪВ ВЪЗПРОИЗВЕЖДАНЕ</string>
     <string name="quickspace_vertical_note">БЕЛЕЖКА</string>

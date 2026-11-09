@@ -132,6 +132,9 @@
         <item>គន្លង</item>
         <item>ស្លាកភ្លើងនេអុង</item>
         <item>កញ្ចក់</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">កំពុងចាក់</string>
     <string name="quickspace_vertical_note">កំណត់ចំណាំ</string>

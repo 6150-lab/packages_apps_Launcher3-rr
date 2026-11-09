@@ -132,6 +132,9 @@
         <item>කක්ෂය</item>
         <item>නියෝන් සං‍ඥාව</item>
         <item>වීදුරු</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">දැන් වාදනය වෙයි</string>
     <string name="quickspace_vertical_note">සටහන</string>

@@ -134,6 +134,9 @@
         <item>Orbita</item>
         <item>Neoninis ženklas</item>
         <item>Stiklas</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">DABAR GROJAMA</string>
     <string name="quickspace_vertical_note">PASTABA</string>

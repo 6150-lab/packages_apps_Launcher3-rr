@@ -134,6 +134,9 @@
         <item>Ijikeleza</item>
         <item>Isibonakaliso sikaneon</item>
         <item>Iglasi</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">KUDLALWAYO</string>
     <string name="quickspace_vertical_note">QAPHELA</string>

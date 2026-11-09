@@ -225,6 +225,9 @@
         <item>Orbit</item>
         <item>Neon sign</item>
         <item>Glass</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string-array name="quickspace_style_values" translatable="false">
         <item>0</item>
@@ -235,6 +238,9 @@
         <item>5</item>
         <item>6</item>
         <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
     </string-array>
 
     <string name="quickspace_vertical_content_description">QuickSpace overview</string>

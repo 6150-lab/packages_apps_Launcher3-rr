@@ -33,4 +33,6 @@
         <item>"ਬੋਲਡ"</item>
     </string-array>
     <string name="neon_folders_title">ਫੋਲਡਰ ਵੀ</string>
+    <string name="glance_flatline_vitals">ਵਾਈਟਲਜ਼</string>
+    <string name="glance_flatline_alarm">ਅਲਾਰਮ <xliff:g id="time" example="6:30">%1$s</xliff:g></string>
 </resources>

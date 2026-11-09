@@ -134,6 +134,9 @@
         <item>অরবিট</item>
         <item>নিয়ন সাইন</item>
         <item>গ্লাস</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">এখন চলছে</string>
     <string name="quickspace_vertical_note">নোট</string>

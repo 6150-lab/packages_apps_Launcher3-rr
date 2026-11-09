@@ -142,6 +142,9 @@
         <item>ஆர்பிட்</item>
         <item>நியான் பலகை</item>
         <item>கண்ணாடி</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">இப்போது இயங்குகிறது</string>
     <string name="quickspace_vertical_note">குறிப்பு</string>

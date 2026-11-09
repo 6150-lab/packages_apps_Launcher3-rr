@@ -33,4 +33,6 @@
         <item>"စာလုံးထူ"</item>
     </string-array>
     <string name="neon_folders_title">ဖိုင်တွဲများပါ ထည့်ရန်</string>
+    <string name="glance_flatline_vitals">အဓိကအချက်အလက်များ</string>
+    <string name="glance_flatline_alarm">နှိုးစက် <xliff:g id="time" example="6:30">%1$s</xliff:g></string>
 </resources>

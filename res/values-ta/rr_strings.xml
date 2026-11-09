@@ -33,4 +33,6 @@
         <item>"தடிமன்"</item>
     </string-array>
     <string name="neon_folders_title">கோப்புறைகளுக்கும்</string>
+    <string name="glance_flatline_vitals">உயிர்நிலைகள்</string>
+    <string name="glance_flatline_alarm">அலாரம் <xliff:g id="time" example="6:30">%1$s</xliff:g></string>
 </resources>

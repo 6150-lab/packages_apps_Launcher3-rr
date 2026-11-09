@@ -133,6 +133,9 @@
         <item>آربٹ</item>
         <item>نیون سائن</item>
         <item>گلاس</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">اب چل رہا ہے</string>
     <string name="quickspace_vertical_note">نوٹ</string>

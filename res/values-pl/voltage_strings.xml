@@ -160,6 +160,9 @@
         <item>Orbita</item>
         <item>Neon</item>
         <item>Szklane</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">ODTWARZANE</string>
     <string name="quickspace_vertical_note">NOTATKA</string>

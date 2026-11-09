@@ -132,6 +132,9 @@
         <item>Orbit</item>
         <item>ປ້າຍນີອອນ</item>
         <item>ແກ້ວ</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">ກຳລັງຫຼິ້ນ</string>
     <string name="quickspace_vertical_note">ໝາຍເຫດ</string>

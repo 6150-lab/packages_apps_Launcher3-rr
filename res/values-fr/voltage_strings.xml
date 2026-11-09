@@ -151,6 +151,9 @@
         <item>Orbite</item>
         <item>Enseigne néon</item>
         <item>Verre</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_note">NOTE</string>
     <string name="quickspace_vertical_weather">MÉTÉO</string>

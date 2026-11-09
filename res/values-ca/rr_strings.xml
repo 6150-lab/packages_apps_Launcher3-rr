@@ -33,4 +33,6 @@
         <item>"Atrevit"</item>
     </string-array>
     <string name="neon_folders_title">També les carpetes</string>
+    <string name="glance_flatline_vitals">Constants vitals</string>
+    <string name="glance_flatline_alarm">Alarma <xliff:g id="time" example="6:30">%1$s</xliff:g></string>
 </resources>

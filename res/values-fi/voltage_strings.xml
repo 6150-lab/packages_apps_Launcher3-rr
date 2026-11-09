@@ -135,6 +135,9 @@
         <item>Kiertorata</item>
         <item>Neonkyltti</item>
         <item>Lasi</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">NYT SOITTAA</string>
     <string name="quickspace_vertical_note">MUISTIINPANO</string>

@@ -130,6 +130,9 @@
         <item>অৰ্বিট</item>
         <item>নিঅন চিহ্ন</item>
         <item>গ্লাছ</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">এতিয়া চলি আছে</string>
     <string name="quickspace_vertical_note">টোকা</string>

@@ -132,6 +132,9 @@
         <item>Orbita</item>
         <item>Neon yozuv</item>
         <item>Oynasimon</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">HOZIR IJRO ETILMOQDA</string>
     <string name="quickspace_vertical_note">ESLATMA</string>

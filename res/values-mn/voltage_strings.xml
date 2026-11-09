@@ -132,6 +132,9 @@
         <item>Орбит</item>
         <item>Неон тэмдэг</item>
         <item>Шил</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">ОДОО ТОГЛОЖ БАЙНА</string>
     <string name="quickspace_vertical_note">ТЭМДЭГЛЭЛ</string>

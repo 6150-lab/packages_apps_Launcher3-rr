@@ -130,6 +130,9 @@
         <item>ଅର୍ବିଟ</item>
         <item>ନିଅନ ସାଇନ</item>
         <item>ଗ୍ଲାସ</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">ବର୍ତ୍ତମାନ ଚାଲୁଛି</string>
     <string name="quickspace_vertical_note">ନୋଟ</string>

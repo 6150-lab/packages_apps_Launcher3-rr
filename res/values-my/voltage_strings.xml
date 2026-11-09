@@ -132,6 +132,9 @@
         <item>Orbit</item>
         <item>နီယွန်ဆိုင်းဘုတ်</item>
         <item>မှန်</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">ယခုဖွင့်နေသည်</string>
     <string name="quickspace_vertical_note">မှတ်ချက်</string>

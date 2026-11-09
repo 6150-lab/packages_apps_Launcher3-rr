@@ -134,6 +134,9 @@
         <item>Orbit</item>
         <item>Neonski znak</item>
         <item>Staklo</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">REPRODUKCIJA</string>
     <string name="quickspace_vertical_note">NAPOMENA</string>

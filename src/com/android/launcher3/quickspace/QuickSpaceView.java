@@ -284,7 +284,7 @@ public class QuickSpaceView extends FrameLayout implements OnDataListener {
 
   /** Styles whose layout root binds its own data through {@link QuickSpaceStyleBinder}. */
   private static boolean isBinderStyle(int style) {
-    return style >= 4 && style <= 7;
+    return style >= 4 && style <= 10;
   }
 
   private void updateView(int style) {
@@ -1711,6 +1711,15 @@ public class QuickSpaceView extends FrameLayout implements OnDataListener {
         break;
       case 7:
         layoutId = R.layout.quickspace_glass;
+        break;
+      case 8:
+        layoutId = R.layout.quickspace_flatline;
+        break;
+      case 9:
+        layoutId = R.layout.quickspace_flatline_vitals;
+        break;
+      case 10:
+        layoutId = R.layout.quickspace_flatline_signature;
         break;
       default:
         layoutId = R.layout.quickspace_doubleline;

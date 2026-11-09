@@ -37,6 +37,7 @@ import androidx.annotation.WorkerThread;
 
 import com.android.launcher3.dagger.LauncherComponentProvider;
 import com.android.launcher3.dot.DotInfo;
+import com.android.launcher3.quickspace.views.FlatlineTraceView;
 import com.android.launcher3.util.PackageUserKey;
 import com.android.launcher3.util.SafeCloseable;
 import com.android.launcher3.util.SettingsCache;
@@ -233,8 +234,17 @@ public class NotificationListener extends NotificationListenerService {
     @Override
     public void onNotificationPosted(final StatusBarNotification sbn) {
         if (sbn != null) {
+            if (spikesFlatline(sbn)) MAIN_EXECUTOR.execute(FlatlineTraceView::pulse);
             mWorkerHandler.obtainMessage(MSG_NOTIFICATION_POSTED, sbn).sendToTarget();
         }
+    }
+
+    /** New alerts spike the Flatline glance, like the lock screen's; updates and ongoing ones don't. */
+    private boolean spikesFlatline(StatusBarNotification sbn) {
+        Notification n = sbn.getNotification();
+        return !getPackageName().equals(sbn.getPackageName()) && !n.isGroupSummary()
+                && (n.flags & (Notification.FLAG_ONGOING_EVENT
+                        | Notification.FLAG_ONLY_ALERT_ONCE)) == 0;
     }
 
     @Override

@@ -134,6 +134,9 @@
         <item>Sporbaugur</item>
         <item>Neonskilti</item>
         <item>Gler</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">SPILAR NÚNA</string>
     <string name="quickspace_vertical_note">ATHUGASEMD</string>

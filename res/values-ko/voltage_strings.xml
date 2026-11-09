@@ -153,6 +153,9 @@
         <item>궤도</item>
         <item>네온 사인</item>
         <item>글래스</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">재생 중</string>
     <string name="quickspace_vertical_note">메모</string>

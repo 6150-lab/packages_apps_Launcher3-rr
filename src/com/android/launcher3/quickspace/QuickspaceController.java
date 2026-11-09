@@ -426,6 +426,10 @@ public class QuickspaceController
     return getConditionText(mWeatherInfo.condition);
   }
 
+  public String getWeatherCity() {
+    return mWeatherInfo == null ? null : mWeatherInfo.city;
+  }
+
   public String getWeatherStateKey() {
     if (mWeatherInfo == null) return null;
 

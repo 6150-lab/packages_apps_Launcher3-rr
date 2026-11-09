@@ -150,6 +150,9 @@
         <item>مدار</item>
         <item>تابلوی نئونی</item>
         <item>شیشه‌ای</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">در حال پخش</string>
     <string name="quickspace_vertical_note">یادداشت</string>

@@ -132,6 +132,9 @@
         <item>ਔਰਬਿਟ</item>
         <item>ਨਿਓਨ ਸਾਈਨ</item>
         <item>ਗਲਾਸ</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">ਹੁਣ ਚੱਲ �रਿਹਾ ਹੈ</string>
     <string name="quickspace_vertical_note">ਨੋਟ</string>

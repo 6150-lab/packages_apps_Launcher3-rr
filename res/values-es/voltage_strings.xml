@@ -155,6 +155,9 @@
         <item>Órbita</item>
         <item>Letrero de neón</item>
         <item>Cristal</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">REPRODUCIENDO</string>
     <string name="quickspace_vertical_note">NOTA</string>

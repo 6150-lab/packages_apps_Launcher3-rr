@@ -756,7 +756,7 @@ public class Workspace<T extends View & PageIndicator> extends PagedView<T>
         int cellVSpan = 1;
         if (style == 2 || style == 3) {
             cellVSpan = minimalMode ? 2 : 3;
-        } else if (style == 4 || style == 6 || style == 7) {
+        } else if (style == 4 || style == 6 || style == 7 || style == 8 || style == 9) {
             cellVSpan = 2;
         }
         return Math.max(1, Math.min(cellVSpan, page.getCountY()));

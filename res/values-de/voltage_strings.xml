@@ -149,6 +149,9 @@
         <item>Orbit</item>
         <item>Neonschild</item>
         <item>Glas</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_note">NOTIZ</string>
     <string name="quickspace_vertical_weather">WETTER</string>

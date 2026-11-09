@@ -141,6 +141,9 @@
         <item>Orbitë</item>
         <item>Tabelë neoni</item>
         <item>Xham</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">NË LUAJTJE</string>
     <string name="quickspace_vertical_note">SHËNIM</string>

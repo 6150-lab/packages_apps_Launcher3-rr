@@ -134,6 +134,9 @@
         <item>Orbīta</item>
         <item>Neona zīme</item>
         <item>Stikls</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">TIEK ATSKAŅOTS</string>
     <string name="quickspace_vertical_note">PIEZĪME</string>

@@ -142,6 +142,9 @@
         <item>Orbita</item>
         <item>Neonski napis</item>
         <item>Steklo</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">PREDVAJA SE</string>
     <string name="quickspace_vertical_note">OPOMBA</string>

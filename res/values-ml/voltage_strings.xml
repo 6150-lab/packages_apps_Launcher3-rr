@@ -132,6 +132,9 @@
         <item>ഓർബിറ്റ്</item>
         <item>നിയോൺ സൈൻ</item>
         <item>Glass</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">ഇപ്പോൾ പ്ലേ ചെയ്യുന്നു</string>
     <string name="quickspace_vertical_note">കുറിപ്പ്</string>

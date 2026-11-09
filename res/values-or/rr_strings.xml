@@ -33,4 +33,6 @@
         <item>"ବୋଲ୍ଡ କରନ୍ତୁ"</item>
     </string-array>
     <string name="neon_folders_title">ଫୋଲ୍ଡରଗୁଡ଼ିକ ମଧ୍ୟ</string>
+    <string name="glance_flatline_vitals">ଭାଇଟାଲସ</string>
+    <string name="glance_flatline_alarm">ଆଲାରାମ <xliff:g id="time" example="6:30">%1$s</xliff:g></string>
 </resources>

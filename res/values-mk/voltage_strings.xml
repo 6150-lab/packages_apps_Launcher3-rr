@@ -132,6 +132,9 @@
         <item>Орбита</item>
         <item>Неонски натпис</item>
         <item>Стакло</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">ВО ТЕК</string>
     <string name="quickspace_vertical_note">ЗАБЕЛЕШКА</string>

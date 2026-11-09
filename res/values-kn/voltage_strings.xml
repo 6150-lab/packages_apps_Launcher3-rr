@@ -132,6 +132,9 @@
         <item>ಆರ್ಬಿಟ್</item>
         <item>ನಿಯಾನ್ ಸೈನ್</item>
         <item>ಗ್ಲಾಸ್</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">ಈಗ ಪ್ಲೇ ಆಗುತ್ತಿದೆ</string>
     <string name="quickspace_vertical_note">ಗಮನಿಸಿ</string>

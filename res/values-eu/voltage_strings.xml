@@ -132,6 +132,9 @@
         <item>Orbita</item>
         <item>Neon eskilarra</item>
         <item>Kristala</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">ORAIN ERREPRODUZITZEN</string>
     <string name="quickspace_vertical_note">OHARRA</string>

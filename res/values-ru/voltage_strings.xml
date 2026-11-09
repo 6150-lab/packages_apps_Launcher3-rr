@@ -157,6 +157,9 @@
         <item>Орбита</item>
         <item>Неоновая вывеска</item>
         <item>Стекло</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_note">ЗАМЕТКА</string>
     <string name="quickspace_vertical_weather">ПОГОДА</string>

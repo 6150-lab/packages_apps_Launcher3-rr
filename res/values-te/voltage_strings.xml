@@ -132,6 +132,9 @@
         <item>ఆర్బిట్</item>
         <item>నియాన్ సైన్</item>
         <item>గ్లాస్‌</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">ప్రస్తుతం ప్లే అవుతోంది</string>
     <string name="quickspace_vertical_note">గమనిక</string>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The Resurrected Remix Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <declare-styleable name="FlatlineTraceView">
+        <!-- A faint monitor grid behind the line. -->
+        <attr name="flatlineGrid" format="boolean" />
+        <!-- The readout line under the trace. -->
+        <attr name="flatlineReadout" format="boolean" />
+    </declare-styleable>
+</resources>

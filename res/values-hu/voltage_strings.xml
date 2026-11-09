@@ -161,6 +161,9 @@
         <item>Pálya</item>
         <item>Neonfelirat</item>
         <item>Üveg</item>
+        <item>Flatline</item>
+        <item>Flatline Vitals</item>
+        <item>Flatline Signature</item>
     </string-array>
     <string name="quickspace_vertical_now_playing">LEJÁTSZÁS ALATT</string>
     <string name="quickspace_vertical_note">MEGJEGYZÉS</string>
