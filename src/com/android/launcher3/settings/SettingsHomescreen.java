@@ -192,6 +192,7 @@ public class SettingsHomescreen extends CollapsingToolbarBaseActivity
         private boolean mPreferenceHighlighted = false;
 
         private static final String KEY_QUICKSPACE_STYLE = "pref_quickspace_style";
+        private static final String KEY_FLATLINE_REST = "pref_quickspace_flatline_rest";
         private static final String KEY_VOLTAGE_ACCENT = "pref_quickspace_voltage_accent";
         private static final String KEY_VOLTAGE_MINIMAL = "pref_quickspace_voltage_minimal";
         private static final String KEY_QUICKSPACE_BATTERY = "pref_quickspace_battery";
@@ -200,6 +201,7 @@ public class SettingsHomescreen extends CollapsingToolbarBaseActivity
         private static final String KEY_CLEAR_HOME_SCREEN = "pref_clear_home_screen";
 
         private ListPreference mQuickspaceStyle;
+        private Preference mFlatlineRest;
         private Preference mVoltageAccent;
         private Preference mVoltageMinimal;
         private Preference mQuickspaceBattery;
@@ -248,6 +250,7 @@ public class SettingsHomescreen extends CollapsingToolbarBaseActivity
             mAutoAddIconsPref = screen.findPreference(SessionCommitReceiver.ADD_ICON_PREFERENCE_KEY);
 
             mQuickspaceStyle = screen.findPreference(KEY_QUICKSPACE_STYLE);
+            mFlatlineRest = screen.findPreference(KEY_FLATLINE_REST);
             mVoltageAccent = screen.findPreference(KEY_VOLTAGE_ACCENT);
             mVoltageMinimal = screen.findPreference(KEY_VOLTAGE_MINIMAL);
             mQuickspaceBattery = screen.findPreference(KEY_QUICKSPACE_BATTERY);
@@ -501,6 +504,10 @@ public class SettingsHomescreen extends CollapsingToolbarBaseActivity
             // The Flatline styles show no events or accessory battery, and always the city.
             boolean isFlatlineStyle = "8".equals(quickspaceStyle) || "9".equals(quickspaceStyle)
                     || "10".equals(quickspaceStyle);
+
+            if (mFlatlineRest != null) {
+                mFlatlineRest.setVisible(isFlatlineStyle);
+            }
 
             if (mVoltageAccent != null) {
                 mVoltageAccent.setVisible(isVoltageAccentStyle);

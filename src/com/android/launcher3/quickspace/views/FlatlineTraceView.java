@@ -16,21 +16,34 @@ import android.text.TextPaint;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.View;
+import com.android.launcher3.LauncherPrefChangeListener;
+import com.android.launcher3.LauncherPrefs;
 import com.android.launcher3.R;
 import java.util.Collections;
 import java.util.Set;
 import java.util.WeakHashMap;
 
 /**
- * The lock screen's Flatline on the home screen: a faint flat line with a scan head drifting
- * across now and then, a steady heartbeat while a song plays, and one bright spike from left to
- * right when a notification lands.
+ * The lock screen's Flatline on the home screen: a steady heartbeat while a song plays and one
+ * bright spike from left to right when a notification lands. While nothing plays the line rests
+ * flat and a scan head drifts across now and then, as on the lock screen; Home settings can have
+ * the head carry a small beat across, or keep a slow heartbeat scrolling instead.
  */
 public class FlatlineTraceView extends View {
   private static final long FRAME_MS = 40;
   private static final long SPIKE_MS = 1100;
   private static final long SCAN_MS = 1400;
   private static final long SCAN_EVERY = 5000;
+  /** The values of the Flatline at rest setting, and how tall its two beats are. */
+  private static final int REST_DOT = 0;
+  private static final int REST_PULSE = 1;
+  private static final int REST_BEAT = 2;
+  private static final float REST_PULSE_AMP = 0.45f;
+  private static final float REST_BEAT_AMP = 0.4f;
+  /** What the trace draws: nothing, the beat scrolling by, or one beat travelling with a head. */
+  private static final int SHAPE_FLAT = 0;
+  private static final int SHAPE_BEAT = 1;
+  private static final int SHAPE_TRAVEL = 2;
   private static final float[] GLOW_WIDTHS = {9f, 4f, 1.8f};
   private static final int[] GLOW_ALPHAS = {0x1E, 0x50, 0xFF};
   private static final float[] GRID_ROWS = {0.25f, 0.5f, 0.75f};
@@ -51,6 +64,12 @@ public class FlatlineTraceView extends View {
   /** Uptime when the last notification spike began, 0 for none. */
   private long mSpikeAt;
   private long mNextScan;
+  private int mRest = REST_DOT;
+  private final LauncherPrefChangeListener mRestListener = key -> {
+    if (LauncherPrefs.QUICKSPACE_FLATLINE_REST.getSharedPrefKey().equals(key)) readRest();
+  };
+  /** One frame pending at most, however often the view is invalidated in between. */
+  private final Runnable mNextFrame = this::invalidate;
 
   public FlatlineTraceView(Context context, AttributeSet attrs) {
     super(context, attrs);
@@ -110,6 +129,9 @@ public class FlatlineTraceView extends View {
   protected void onAttachedToWindow() {
     super.onAttachedToWindow();
     sAttached.add(this);
+    LauncherPrefs.get(getContext())
+        .addListener(mRestListener, LauncherPrefs.QUICKSPACE_FLATLINE_REST);
+    readRest();
     mNextScan = SystemClock.uptimeMillis() + SCAN_EVERY;
     invalidate();
   }
@@ -117,7 +139,23 @@ public class FlatlineTraceView extends View {
   @Override
   protected void onDetachedFromWindow() {
     sAttached.remove(this);
+    LauncherPrefs.get(getContext())
+        .removeListener(mRestListener, LauncherPrefs.QUICKSPACE_FLATLINE_REST);
+    removeCallbacks(mNextFrame);
     super.onDetachedFromWindow();
+  }
+
+  /** The Flatline at rest setting, read when the view appears and whenever it changes. */
+  private void readRest() {
+    int rest;
+    try {
+      rest = Integer.parseInt(LauncherPrefs.QUICKSPACE_FLATLINE_REST.get(getContext()));
+    } catch (NumberFormatException e) {
+      rest = REST_DOT;
+    }
+    if (rest == mRest) return;
+    mRest = rest;
+    invalidate();
   }
 
   @Override
@@ -128,7 +166,9 @@ public class FlatlineTraceView extends View {
     float base = h * 0.52f;
     long now = SystemClock.uptimeMillis();
     boolean spike = mSpikeAt != 0 && now - mSpikeAt < SPIKE_MS;
-    boolean scanning = !mPlaying && !spike && now >= mNextScan && now < mNextScan + SCAN_MS;
+    boolean restBeat = mRest == REST_BEAT && !mPlaying && !spike;
+    boolean scanning = !mPlaying && !spike && !restBeat && now >= mNextScan
+        && now < mNextScan + SCAN_MS;
 
     if (mGrid) {
       mTrace.setStrokeWidth(1f);
@@ -144,14 +184,31 @@ public class FlatlineTraceView extends View {
     canvas.drawLine(0, base, w, base, mTrace);
 
     float amp = h * 0.42f;
-    float period = 180f * mDensity;
-    // The beat scrolls left at a little under one period a second.
-    float shift = (now % 100_000L) / 1000f * period * 0.9f;
+    float period = (mPlaying ? 180f : 260f) * mDensity;
+    // The beat scrolls left: a little under one period a second with a song, a third of one at
+    // rest. Either is a whole number of periods in the 100 s the clock wraps at.
+    float shift = (now % 100_000L) / 1000f * period * (mPlaying ? 0.9f : 0.32f);
     float spikeHead = w * (now - mSpikeAt) / SPIKE_MS;
+    float scanHead = w * (now - mNextScan) / SCAN_MS;
+    int shape = SHAPE_FLAT;
+    float head = 0;
+    if (mPlaying) {
+      shape = SHAPE_BEAT;
+    } else if (spike) {
+      shape = SHAPE_TRAVEL;
+      head = spikeHead;
+    } else if (restBeat) {
+      shape = SHAPE_BEAT;
+      amp *= REST_BEAT_AMP;
+    } else if (scanning && mRest == REST_PULSE) {
+      shape = SHAPE_TRAVEL;
+      head = scanHead;
+      amp *= REST_PULSE_AMP;
+    }
     mPath.rewind();
     float step = 2f * mDensity;
     for (float x = 0; x <= w; x += step) {
-      float y = yAt(x, base, amp, period, shift, spike, spikeHead);
+      float y = yAt(x, base, amp, period, shift, shape, head);
       if (x == 0) mPath.moveTo(x, y);
       else mPath.lineTo(x, y);
     }
@@ -166,10 +223,10 @@ public class FlatlineTraceView extends View {
     // The scan head: a bright dot riding the trace.
     float headX = -1;
     if (spike) headX = spikeHead;
-    else if (scanning) headX = w * (now - mNextScan) / SCAN_MS;
-    else if (mPlaying) headX = w * 0.7f;
+    else if (scanning) headX = scanHead;
+    else if (mPlaying || restBeat) headX = w * 0.7f;
     if (headX >= 0) {
-      float headY = yAt(headX, base, amp, period, shift, spike, spikeHead);
+      float headY = yAt(headX, base, amp, period, shift, shape, head);
       mFill.setColor(alpha(mColor, 0x55));
       canvas.drawCircle(headX, headY, 7f * mDensity, mFill);
       mFill.setColor(mColor);
@@ -179,20 +236,21 @@ public class FlatlineTraceView extends View {
     if (mShowReadout) drawReadout(canvas, w, h);
 
     // Next frame: smooth while something moves, else sleep until the next scan.
-    if (mPlaying || spike || scanning) {
-      postInvalidateDelayed(FRAME_MS);
+    removeCallbacks(mNextFrame);
+    if (mPlaying || spike || scanning || restBeat) {
+      postDelayed(mNextFrame, FRAME_MS);
     } else {
       if (now >= mNextScan + SCAN_MS) mNextScan = now + SCAN_EVERY;
-      postInvalidateDelayed(Math.max(16, mNextScan - now));
+      postDelayed(mNextFrame, Math.max(16, mNextScan - now));
     }
   }
 
-  /** The trace's height at x: the beat scrolling by, the spike around its head, or flat. */
-  private float yAt(float x, float base, float amp, float period, float shift, boolean spike,
-      float spikeHead) {
-    if (mPlaying) return base - amp * beat(((x + shift) % period) / period);
-    if (spike) {
-      float d = (x - spikeHead) / (46f * mDensity);
+  /** The trace's height at x: the beat scrolling by, one beat around its head, or flat. */
+  private float yAt(float x, float base, float amp, float period, float shift, int shape,
+      float head) {
+    if (shape == SHAPE_BEAT) return base - amp * beat(((x + shift) % period) / period);
+    if (shape == SHAPE_TRAVEL) {
+      float d = (x - head) / (46f * mDensity);
       if (d > 0.3f || d < -1.6f) return base;
       return base - amp * beat(0.56f + d * 0.22f);
     }

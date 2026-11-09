@@ -221,6 +221,17 @@
     android:persistent="true"
     launcher:iconSpaceReserved="false" />
 
+<ListPreference
+    android:key="pref_quickspace_flatline_rest"
+    android:title="@string/glance_flatline_rest_title"
+    android:summary="%s"
+    android:dependency="pref_quickspace"
+    android:entries="@array/glance_flatline_rest_entries"
+    android:entryValues="@array/glance_flatline_rest_values"
+    android:defaultValue="0"
+    android:persistent="true"
+    launcher:iconSpaceReserved="false" />
+
 <SwitchPreferenceCompat
     android:key="pref_quickspace_voltage_accent"
     android:title="@string/quickspace_voltage_accent_title"

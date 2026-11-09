@@ -322,6 +322,7 @@ constructor(@ApplicationContext private val encryptedContext: Context) {
         @JvmField val SHOW_QUICKSPACE = backedUpItem("pref_quickspace", true)
         @JvmField val QUICKSPACE_BLACK_TEXT = backedUpItem("pref_quickspace_black_text", false)
 	@JvmField val QUICKSPACE_UI_STYLE = backedUpItem("pref_quickspace_style", "0")
+        @JvmField val QUICKSPACE_FLATLINE_REST = backedUpItem("pref_quickspace_flatline_rest", "0")
         @JvmField val QUICKSPACE_VOLTAGE_ACCENT = backedUpItem("pref_quickspace_voltage_accent", true)
         @JvmField val QUICKSPACE_VOLTAGE_MINIMAL = backedUpItem("pref_quickspace_voltage_minimal", false)
         @JvmField val SHOW_QUICKSPACE_PSONALITY = backedUpItem("pref_quickspace_psonality", true)
