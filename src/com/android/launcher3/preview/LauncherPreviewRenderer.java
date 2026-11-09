@@ -390,7 +390,7 @@ public class LauncherPreviewRenderer extends BaseContext
                 int quickSpaceSpanY = 1;
                 if (quickSpaceStyle == 2 || quickSpaceStyle == 3) {
                     quickSpaceSpanY = minimalMode ? 2 : 3;
-                } else if (quickSpaceStyle == 4) {
+                } else if (quickSpaceStyle == 4 || quickSpaceStyle == 6 || quickSpaceStyle == 7) {
                     quickSpaceSpanY = 2;
                 }
                 quickSpaceSpanY = Math.max(1, Math.min(quickSpaceSpanY, firstScreen.getCountY()));
