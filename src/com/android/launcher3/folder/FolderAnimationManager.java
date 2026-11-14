@@ -384,6 +384,8 @@ public class FolderAnimationManager implements FolderAnimationCreator {
                 mContent.setClipToPadding(mContentClipToPadding);
                 mCellLayout.setClipChildren(mCellLayoutClipChildren);
                 mCellLayout.setClipToPadding(mCellLayoutClipPadding);
+                mFolder.setClipPath(null);
+                mContent.setClipPath(null);
             }
         });
 
