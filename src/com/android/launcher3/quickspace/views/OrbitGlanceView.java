@@ -132,6 +132,10 @@ public class OrbitGlanceView extends GlanceStyleView {
     if (glance.nowPlaying) {
       mLineText.setText(songText(glance));
       bindTap(mLineRow, TAP_EVENT_ACTION);
+    } else if (glance.score != null) {
+      mLineIcon.setImageResource(R.drawable.ic_quickspace_sports);
+      mLineText.setText(scoreText(glance, false));
+      bindTap(mLineRow, TAP_SCORE);
     } else if (glance.batteryLevel >= 0) {
       mLineIcon.setImageResource(glance.batteryAudio
           ? R.drawable.ic_quickspace_minimal_headphones : R.drawable.ic_quickspace_minimal_battery);

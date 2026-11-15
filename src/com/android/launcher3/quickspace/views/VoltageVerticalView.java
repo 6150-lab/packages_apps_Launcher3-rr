@@ -43,6 +43,7 @@ import com.android.launcher3.R;
 import com.android.launcher3.quickspace.QuickBatteryController;
 import com.android.launcher3.quickspace.QuickCalendarController;
 import com.android.launcher3.quickspace.QuickEventsController;
+import com.android.launcher3.quickspace.QuickScoresController;
 import com.android.launcher3.quickspace.QuickSpaceStyleBinder;
 import com.android.launcher3.quickspace.QuickspaceController;
 import com.android.launcher3.quickspace.receivers.QuickSpaceActionReceiver;
@@ -291,6 +292,8 @@ public class VoltageVerticalView extends LinearLayout implements QuickSpaceStyle
     boolean nowPlayingEnabled = LauncherPrefs.SHOW_QUICKSPACE_NOWPLAYING.get(getContext());
     boolean psaEnabled = LauncherPrefs.SHOW_QUICKSPACE_PSONALITY.get(getContext());
     boolean nowPlaying = nowPlayingEnabled && events != null && events.isNowPlaying();
+    // A followed team's game takes the note's row, like the song does.
+    QuickScoresController.Score score = nowPlaying || events == null ? null : events.getScore();
     String temperature = LauncherPrefs.SHOW_QUICKSPACE_WEATHER.get(getContext())
         && mController.isWeatherAvailable() ? mController.getWeatherTemperature() : null;
     String condition = LauncherPrefs.SHOW_QUICKSPACE_WEATHER_TEXT.get(getContext())
@@ -307,12 +310,15 @@ public class VoltageVerticalView extends LinearLayout implements QuickSpaceStyle
         && battery != null && battery.getBatteryLevel() >= 0;
     String batteryText = showBattery ? getResources().getString(R.string.quickspace_vertical_battery_value,
         battery.getDeviceName(), battery.getBatteryLevel()) : null;
-    updateRowVisibility(showWeather, showCalendar, showEvent, showBattery, nowPlaying);
+    updateRowVisibility(showWeather, showCalendar, showEvent, showBattery,
+        nowPlaying || score != null);
     mWeatherValue.setText(joinWeather(temperature, condition));
     mCalendarValue.setText(calendarText);
     mCalendarRow.setOnClickListener(showCalendar ? mCalendarClickListener : null);
     mCalendarRow.setClickable(showCalendar);
-    mEventLabel.setText(nowPlaying ? R.string.quickspace_vertical_now_playing : R.string.quickspace_vertical_note);
+    mEventLabel.setText(nowPlaying ? R.string.quickspace_vertical_now_playing
+        : score != null ? (score.isLive() ? R.string.glance_score_live : R.string.glance_score_game)
+        : R.string.quickspace_vertical_note);
     mEventValue.setText(event);
     mEventValue.setMaxLines(mCompact ? 1 : 2);
     boolean canOpenEvent = showEvent && events != null && events.getAction() != null;
@@ -364,6 +370,7 @@ public class VoltageVerticalView extends LinearLayout implements QuickSpaceStyle
       boolean psaEnabled) {
     if (events == null) return null;
     if (!nowPlaying) {
+      if (events.getScore() != null) return events.getScore().text(getContext());
       if (!psaEnabled) return null;
       return mCompact ? null : events.getPSAMessage();
     }

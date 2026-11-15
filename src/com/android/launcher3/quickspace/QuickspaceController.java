@@ -51,6 +51,7 @@ public class QuickspaceController
   private QuickEventsController mEventsController;
   private QuickBatteryController mBatteryController;
   private QuickCalendarController mCalendarController;
+  private QuickScoresController mScoresController;
 
   private OmniJawsClient mWeatherClient;
   private OmniJawsClient.WeatherInfo mWeatherInfo;
@@ -141,6 +142,7 @@ public class QuickspaceController
     mEventsController = new QuickEventsController(context);
     mBatteryController = new QuickBatteryController(context, this);
     mCalendarController = new QuickCalendarController(context, this::notifyListeners);
+    mScoresController = new QuickScoresController(context, this::onScoresChanged);
 
     mPsaRunnable =
         new Runnable() {
@@ -235,6 +237,10 @@ public class QuickspaceController
     cleanupDeadReferences();
 
     mListeners.add(new WeakReference<>(listener));
+
+    if (mScoresController != null) {
+      mScoresController.start();
+    }
 
     if (mIsResuming) {
       MAIN_EXECUTOR.execute(() -> initializeComponentsDeferred());
@@ -354,6 +360,8 @@ public class QuickspaceController
     if (mCalendarController != null) {
       mCalendarController.onPause();
     }
+    // The scores session stays open while the launcher lives: leaving home only hides it, and
+    // the last game is there again the moment home shows.
   }
 
   public boolean isQuickEvent() {
@@ -503,10 +511,12 @@ public class QuickspaceController
     mHandler.removeCallbacks(mMediaUpdateRunnable);
     stopPsaScheduling();
     if (mCalendarController != null) mCalendarController.onPause();
+    if (mScoresController != null) mScoresController.setShown(false);
   }
 
   public void onResume() {
     mIsResuming = true;
+    if (mScoresController != null) mScoresController.setShown(true);
     updateMediaController();
     if (mBatteryController != null) mBatteryController.onResume();
     if (mCalendarController != null) mCalendarController.onResume();
@@ -549,6 +559,8 @@ public class QuickspaceController
     mBatteryController = null;
     if (mCalendarController != null) mCalendarController.onDestroy();
     mCalendarController = null;
+    if (mScoresController != null) mScoresController.stop();
+    mScoresController = null;
     mCachedWeatherTemp = null;
 
     mWeatherCacheTime = 0;
@@ -715,6 +727,14 @@ public class QuickspaceController
 
     mHandler.removeCallbacks(mMediaUpdateRunnable);
     mHandler.postDelayed(mMediaUpdateRunnable, 50);
+  }
+
+  /** A followed team's game started, scored or ended. */
+  private void onScoresChanged() {
+    if (mDestroyed || mEventsController == null || mScoresController == null) return;
+    mEventsController.setScore(mScoresController.getScore());
+    mEventsController.updateQuickEvents();
+    notifyListeners();
   }
 
   public void triggerChargingEvent() {

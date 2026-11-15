@@ -456,7 +456,8 @@ public class QuickSpaceView extends FrameLayout implements OnDataListener {
     boolean shouldShowPsa =
         mIsQuickEvent
             && (LauncherPrefs.SHOW_QUICKSPACE_PSONALITY.get(getContext())
-                || mController.getEventController().isNowPlaying());
+                || mController.getEventController().isNowPlaying()
+                || mController.getEventController().getScore() != null);
 
     updatePsaContent(shouldShowPsa, useAlternativeQuickspaceUI);
     updateWeatherContent();
@@ -639,7 +640,11 @@ public class QuickSpaceView extends FrameLayout implements OnDataListener {
   }
 
   private boolean shouldShowMinimalPsa() {
-    if (!mIsQuickEvent || !LauncherPrefs.SHOW_QUICKSPACE_PSONALITY.get(getContext())) {
+    boolean score =
+        mController != null
+            && mController.getEventController() != null
+            && mController.getEventController().getScore() != null;
+    if (!mIsQuickEvent || !(score || LauncherPrefs.SHOW_QUICKSPACE_PSONALITY.get(getContext()))) {
       return false;
     }
     return mController != null
@@ -942,6 +947,12 @@ public class QuickSpaceView extends FrameLayout implements OnDataListener {
     boolean showPsaChip = shouldShowMinimalPsa();
     boolean showCalendarChip = minimalMode && shouldShowCalendar();
     QuickBatteryController batController = mController.getBatteryController();
+    if (mMinimalPsaChipIcon != null) {
+      mMinimalPsaChipIcon.setImageResource(
+          mController.getEventController().getScore() != null
+              ? R.drawable.ic_quickspace_sports
+              : R.drawable.ic_quickspace_minimal_psa);
+    }
 
     updateMinimalIconRow(
         minimalMode,

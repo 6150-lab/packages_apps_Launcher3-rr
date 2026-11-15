@@ -50,6 +50,17 @@
         <item>2</item>
     </string-array>
 
+    <!-- At a glance: live scores of the teams followed in the Google app -->
+    <string name="quickspace_scores_title">Live scores</string>
+    <string name="quickspace_scores_summary">Games of the teams you follow in the Google app</string>
+    <!-- A game before it starts: the two teams -->
+    <string name="glance_score_versus"><xliff:g id="first" example="LAL">%1$s</xliff:g> vs <xliff:g id="second" example="PHX">%2$s</xliff:g></string>
+    <!-- Beside a game's score: while it is on, and before it starts or once it ends -->
+    <string name="glance_score_live">LIVE</string>
+    <string name="glance_score_game">GAME</string>
+    <!-- Accessibility action on At a glance: opens the game shown -->
+    <string name="glance_a11y_open_game">Open game</string>
+
     <!-- Super folders: long-press menu of a home screen folder -->
     <string name="big_folder_enlarge">Enlarge folder</string>
     <string name="big_folder_shrink">Shrink folder</string>

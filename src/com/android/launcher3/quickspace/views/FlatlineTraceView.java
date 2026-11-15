@@ -95,6 +95,11 @@ public class FlatlineTraceView extends View {
     }
   }
 
+  /** Whether this line writes a readout under itself. */
+  public boolean hasReadout() {
+    return mShowReadout;
+  }
+
   /** The line in the launcher's text color; the readout keeps its shadow off black text. */
   public void setColors(int color, boolean blackText) {
     mColor = color;

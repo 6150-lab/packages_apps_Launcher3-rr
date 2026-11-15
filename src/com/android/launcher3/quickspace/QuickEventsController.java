@@ -128,6 +128,13 @@ public class QuickEventsController {
 
     private ContextualEvent mActiveContextualEvent = null;
 
+    // Live score of a followed team's game
+    private QuickScoresController.Score mScore;
+    private Drawable mScoreIcon;
+    private final OnClickListener mScoreAction = view -> {
+        if (mScore != null) mScore.open(view);
+    };
+
     // NowPlaying
     private boolean mEventNowPlaying = false;
     private String mNowPlayingTitle;
@@ -458,6 +465,16 @@ public class QuickEventsController {
             mClockExt = mResources.getString(R.string.quickspace_ext_two);
         }
 
+        if (mScore != null) {
+            // A game beats the messages, the random ones and the battery ones alike.
+            mEventTitleSub = mScore.text(mContext);
+            mEventTitleSubAction = mScoreAction;
+            if (mScoreIcon == null) mScoreIcon = mContext.getDrawable(R.drawable.ic_quickspace_sports);
+            mEventSubIcon = mScoreIcon;
+            mIsQuickEvent = true;
+            return;
+        }
+
         if (!LauncherPrefs.SHOW_QUICKSPACE_PSONALITY.get(mContext)) {
             mIsQuickEvent = false;
             return;
@@ -639,7 +656,9 @@ public class QuickEventsController {
         return mEventSubIcon;
     }
 
+    /** The line under the date: a followed team's game while there is one, else the PSA. */
     public String getPSAMessage() {
+        if (mScore != null) return mScore.text(mContext);
         if (!LauncherPrefs.SHOW_QUICKSPACE_PSONALITY.get(mContext)) return null;
         if (mActiveContextualEvent != null && !mActiveContextualEvent.isExpired()) {
             return mActiveContextualEvent.message;
@@ -648,6 +667,7 @@ public class QuickEventsController {
     }
 
     public OnClickListener getPSAAction() {
+        if (mScore != null) return mScoreAction;
         if (mActiveContextualEvent != null && !mActiveContextualEvent.isExpired() && mActiveContextualEvent.clickAction != null) {
             return mActiveContextualEvent.clickAction;
         }
@@ -660,6 +680,19 @@ public class QuickEventsController {
 
     public int getLuckyNumber(int min, int max) {
         return ThreadLocalRandom.current().nextInt(min, max + 1);
+    }
+
+    public void setScore(QuickScoresController.Score score) {
+        mScore = score;
+    }
+
+    /** The game to show, or null. */
+    public QuickScoresController.Score getScore() {
+        return mScore;
+    }
+
+    public OnClickListener getScoreAction() {
+        return mScoreAction;
     }
 
     public void setMediaInfo(String title, String artist, boolean activePlayback) {

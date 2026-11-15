@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.android.launcher3.R;
+import com.android.launcher3.quickspace.QuickScoresController;
 import java.util.Locale;
 
 /**
@@ -38,6 +39,7 @@ public class FlatlineGlanceView extends GlanceStyleView {
   private TextView mVitalsLabel;
   private TextView mVitals;
   private FlatlineTraceView mTrace;
+  private QuickScoresController.Score mLastScore;
 
   public FlatlineGlanceView(Context context, AttributeSet attrs) {
     super(context, attrs);
@@ -58,7 +60,6 @@ public class FlatlineGlanceView extends GlanceStyleView {
     mVitalsLabel = findViewById(R.id.glance_flatline_vitals_label);
     mVitals = findViewById(R.id.glance_flatline_vitals);
     mTrace = findViewById(R.id.glance_flatline_trace);
-    bindTap(mDate, TAP_CALENDAR);
     bindTap(mWeather, TAP_WEATHER);
     bindTap(mVitals, TAP_BATTERY);
   }
@@ -69,8 +70,20 @@ public class FlatlineGlanceView extends GlanceStyleView {
       TransitionManager.beginDelayedTransition(this, new AutoTransition().setDuration(REFLOW_MS));
     }
     Locale locale = getResources().getConfiguration().getLocales().get(0);
+    QuickScoresController.Score score = glance.score;
+    // Someone scored: the line beats once, as it does for a notification.
+    if (score != null && score.scoredSince(mLastScore)) FlatlineTraceView.pulse();
+    mLastScore = score;
+    // Signature has no place for a readout, so a game takes the date's spot while it lasts.
+    boolean scoreForDate = score != null && mPlace == null && !mTrace.hasReadout();
     // The card is narrower, so Vitals shortens the date.
-    mDate.setText(mCard != null ? glance.shortDateLine : glance.dateLine);
+    if (scoreForDate) {
+      mDate.setText(scoreText(glance, false));
+      bindTap(mDate, TAP_SCORE);
+    } else {
+      mDate.setText(mCard != null ? glance.shortDateLine : glance.dateLine);
+      bindTap(mDate, TAP_CALENDAR);
+    }
 
     boolean weather = glance.temperature != null;
     mWeather.setVisibility(weather ? VISIBLE : GONE);
@@ -80,17 +93,35 @@ public class FlatlineGlanceView extends GlanceStyleView {
     mTemperature.setText(glance.temperature);
     String place = join(glance.city, " · ", glance.condition);
     if (mPlace != null) {
-      setText(mPlace, place == null ? null : place.toUpperCase(locale));
-      bindTap(mPlace, weather ? TAP_WEATHER : TAP_NONE);
+      // Vitals: a followed team's game takes the place line while it lasts.
+      if (score != null) {
+        setText(mPlace, scoreText(glance, true));
+        bindTap(mPlace, TAP_SCORE);
+      } else {
+        setText(mPlace, place == null ? null : place.toUpperCase(locale));
+        bindTap(mPlace, weather ? TAP_WEATHER : TAP_NONE);
+      }
     }
 
     mTrace.setPlaying(glance.nowPlaying);
-    String right = glance.nowPlaying ? join(glance.songTitle, " · ", glance.songArtist) : place;
-    mTrace.setReadout(getResources().getString(glance.nowPlaying
-            ? R.string.quickspace_vertical_now_playing : R.string.glance_flatline_idle)
-            .toUpperCase(locale),
-        right == null ? null : right.toUpperCase(locale));
-    bindTap(mTrace, glance.nowPlaying ? TAP_EVENT_ACTION : TAP_NONE);
+    String left;
+    String right;
+    int tap;
+    if (glance.nowPlaying) {
+      left = getResources().getString(R.string.quickspace_vertical_now_playing);
+      right = join(glance.songTitle, " · ", glance.songArtist);
+      tap = TAP_EVENT_ACTION;
+    } else if (score != null) {
+      left = scoreLabel(glance);
+      right = score.text(getContext());
+      tap = TAP_SCORE;
+    } else {
+      left = getResources().getString(R.string.glance_flatline_idle);
+      right = place;
+      tap = TAP_NONE;
+    }
+    mTrace.setReadout(left.toUpperCase(locale), right == null ? null : right.toUpperCase(locale));
+    bindTap(mTrace, mTrace.hasReadout() ? tap : glance.nowPlaying ? TAP_EVENT_ACTION : TAP_NONE);
   }
 
   /** Vitals shows the phone's own battery, so a tap opens its battery usage. */

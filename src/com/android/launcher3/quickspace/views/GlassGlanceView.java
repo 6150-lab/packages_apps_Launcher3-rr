@@ -32,6 +32,7 @@ public class GlassGlanceView extends GlanceStyleView {
   private static final int TILE_SONG = 1;
   private static final int TILE_BATTERY = 2;
   private static final int TILE_PSA = 3;
+  private static final int TILE_SCORE = 4;
 
   private final float mDensity;
   private View mCard;
@@ -82,6 +83,13 @@ public class GlassGlanceView extends GlanceStyleView {
           setText(title, glance.eventTitle);
           setText(subtitle, glance.eventTime);
           bindTap(root, TAP_CALENDAR_EVENT);
+          break;
+        case TILE_SCORE:
+          icon.setImageResource(R.drawable.ic_quickspace_sports);
+          setText(title, glance.score.line(getContext(), false,
+              getResources().getConfiguration().getLocales().get(0)));
+          setText(subtitle, glance.score.status);
+          bindTap(root, TAP_SCORE);
           break;
         case TILE_SONG:
           setText(title, glance.songTitle != null ? glance.songTitle : glance.songArtist);
@@ -165,6 +173,7 @@ public class GlassGlanceView extends GlanceStyleView {
 
     List<Integer> tiles = new ArrayList<>();
     if (glance.eventTitle != null) tiles.add(TILE_EVENT);
+    if (glance.score != null) tiles.add(TILE_SCORE);
     if (glance.nowPlaying) tiles.add(TILE_SONG);
     if (glance.batteryLevel >= 0) tiles.add(TILE_BATTERY);
     if (glance.psa != null) tiles.add(TILE_PSA);

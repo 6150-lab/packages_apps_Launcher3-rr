@@ -119,9 +119,17 @@ public class NeonGlanceView extends GlanceStyleView {
     mDot.setVisibility(weather != null && event != null ? VISIBLE : GONE);
     mInfoRow.setVisibility(mWeather.getVisibility() == VISIBLE || event != null ? VISIBLE : GONE);
 
-    mSongRow.setVisibility(glance.nowPlaying ? VISIBLE : GONE);
+    // The song, or else a followed team's game, glows under the sign.
+    boolean score = !glance.nowPlaying && glance.score != null;
+    mSongRow.setVisibility(glance.nowPlaying || score ? VISIBLE : GONE);
     if (glance.nowPlaying) {
+      mSongIcon.setImageResource(R.drawable.ic_music_note_24dp);
       mSong.setText(upper(join(glance.songTitle, " · ", glance.songArtist), locale));
+      bindTap(mSongRow, TAP_EVENT_ACTION);
+    } else if (score) {
+      mSongIcon.setImageResource(R.drawable.ic_quickspace_sports);
+      mSong.setText(scoreText(glance, true));
+      bindTap(mSongRow, TAP_SCORE);
     }
     updateFlicker();
   }

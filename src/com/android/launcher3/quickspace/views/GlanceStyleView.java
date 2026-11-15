@@ -26,6 +26,7 @@ import com.android.launcher3.R;
 import com.android.launcher3.quickspace.QuickBatteryController;
 import com.android.launcher3.quickspace.QuickCalendarController;
 import com.android.launcher3.quickspace.QuickEventsController;
+import com.android.launcher3.quickspace.QuickScoresController;
 import com.android.launcher3.quickspace.QuickSpaceStyleBinder;
 import com.android.launcher3.quickspace.QuickspaceController;
 import com.android.launcher3.quickspace.receivers.QuickSpaceActionReceiver;
@@ -62,6 +63,8 @@ public abstract class GlanceStyleView extends FrameLayout implements QuickSpaceS
     public String songTitle;
     public String songArtist;
     public String psa;
+    /** A followed team's game; while there is one it takes the PSA's place. */
+    public QuickScoresController.Score score;
     public String batteryName;
     public int batteryLevel = -1;
     public boolean batteryAudio;
@@ -74,6 +77,7 @@ public abstract class GlanceStyleView extends FrameLayout implements QuickSpaceS
   protected static final int TAP_CALENDAR_EVENT = 3;
   protected static final int TAP_EVENT_ACTION = 4;
   protected static final int TAP_BATTERY = 5;
+  protected static final int TAP_SCORE = 6;
 
   protected QuickspaceController mController;
   protected int mTextColor = Color.WHITE;
@@ -248,7 +252,8 @@ public abstract class GlanceStyleView extends FrameLayout implements QuickSpaceS
         glance.songArtist = emptyToNull(events.getNowPlayingArtist());
         glance.nowPlaying = glance.songTitle != null || glance.songArtist != null;
       }
-      glance.psa = emptyToNull(events.getPSAMessage());
+      glance.score = events.getScore();
+      glance.psa = glance.score != null ? null : emptyToNull(events.getPSAMessage());
     }
 
     if (mController.isWeatherAvailable()) {
@@ -344,6 +349,7 @@ public abstract class GlanceStyleView extends FrameLayout implements QuickSpaceS
         events == null ? null : events.getNowPlayingTitle(),
         events == null ? null : events.getNowPlayingArtist(),
         events == null ? null : events.getPSAMessage(),
+        events == null || events.getScore() == null ? null : events.getScore().signature(),
         weather ? mController.getWeatherTemperature() : null,
         weather ? mController.getWeatherCondition() : null,
         weather ? mController.getWeatherCity() : null,
@@ -404,6 +410,9 @@ public abstract class GlanceStyleView extends FrameLayout implements QuickSpaceS
       case TAP_BATTERY:
         openBattery(view);
         break;
+      case TAP_SCORE:
+        openScore(view);
+        break;
       default:
         break;
     }
@@ -428,6 +437,8 @@ public abstract class GlanceStyleView extends FrameLayout implements QuickSpaceS
         return R.id.quickspace_vertical_a11y_event;
       case TAP_BATTERY:
         return R.id.quickspace_vertical_a11y_battery;
+      case TAP_SCORE:
+        return R.id.glance_a11y_score;
       default:
         return View.NO_ID;
     }
@@ -444,6 +455,8 @@ public abstract class GlanceStyleView extends FrameLayout implements QuickSpaceS
       case TAP_EVENT_ACTION:
         return mGlance != null && mGlance.nowPlaying
             ? R.string.quickspace_vertical_a11y_event : R.string.quickspace_vertical_a11y_note;
+      case TAP_SCORE:
+        return R.string.glance_a11y_open_game;
       default:
         return R.string.quickspace_vertical_a11y_battery;
     }
@@ -452,7 +465,7 @@ public abstract class GlanceStyleView extends FrameLayout implements QuickSpaceS
   @Override
   public void onInitializeAccessibilityNodeInfo(AccessibilityNodeInfo info) {
     super.onInitializeAccessibilityNodeInfo(info);
-    for (int tap = TAP_CALENDAR; tap <= TAP_BATTERY; tap++) {
+    for (int tap = TAP_CALENDAR; tap <= TAP_SCORE; tap++) {
       if (findTap(tap) == null) continue;
       info.addAction(new AccessibilityNodeInfo.AccessibilityAction(
           actionId(tap), getResources().getString(actionLabel(tap))));
@@ -461,7 +474,7 @@ public abstract class GlanceStyleView extends FrameLayout implements QuickSpaceS
 
   @Override
   public boolean performAccessibilityAction(int action, Bundle arguments) {
-    for (int tap = TAP_CALENDAR; tap <= TAP_BATTERY; tap++) {
+    for (int tap = TAP_CALENDAR; tap <= TAP_SCORE; tap++) {
       if (actionId(tap) != action) continue;
       View view = findTap(tap);
       return view != null && view.performClick();
@@ -489,6 +502,9 @@ public abstract class GlanceStyleView extends FrameLayout implements QuickSpaceS
     }
     if (glance.nowPlaying) {
       text.append(", ").append(join(glance.songTitle, " — ", glance.songArtist));
+    }
+    if (glance.score != null) {
+      text.append(", ").append(glance.score.text(getContext()));
     }
     if (glance.batteryLevel >= 0) {
       text.append(", ").append(getResources().getString(
@@ -523,6 +539,22 @@ public abstract class GlanceStyleView extends FrameLayout implements QuickSpaceS
     if (mController == null || mController.getEventController() == null) return;
     View.OnClickListener action = mController.getEventController().getAction();
     if (action != null) action.onClick(view);
+  }
+
+  /** Opens Google's page for the game shown. */
+  protected void openScore(View view) {
+    if (mGlance != null && mGlance.score != null) mGlance.score.open(view);
+  }
+
+  /** The game with the teams' logos; {@code upper} for the styles set in capitals. */
+  protected CharSequence scoreText(Glance glance, boolean upper) {
+    return glance.score.text(getContext(), upper, getResources().getConfiguration().getLocales().get(0));
+  }
+
+  /** LIVE while the game is on, GAME before it starts and once it ends. */
+  protected String scoreLabel(Glance glance) {
+    return getResources().getString(glance.score.isLive()
+        ? R.string.glance_score_live : R.string.glance_score_game);
   }
 
   protected void openBattery(View view) {
